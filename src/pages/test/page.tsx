@@ -2,6 +2,6 @@ import React from 'react';
 
 import './style.css';
 
-export const Test = () => {
+export default function  Test (){
   return <div className="test">Hello, test</div>;
 };

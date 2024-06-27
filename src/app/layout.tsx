@@ -1,4 +1,4 @@
-import 'normalize.css';
+// import 'normalize.css'; - BUILD FAIL
 
 export const metadata = {
   title: 'Next.js',
