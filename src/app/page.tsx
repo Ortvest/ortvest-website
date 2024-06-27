@@ -1,11 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Header } from "@/widgets/Header";
+import React, { Fragment } from 'react';
+
+import { Test } from '@pages/test';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-     <Header/>
-    </main>
+    <Fragment>
+      <Test />
+    </Fragment>
   );
 }

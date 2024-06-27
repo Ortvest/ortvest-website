@@ -1,3 +1,109 @@
 {
-  "extends": "next/core-web-vitals"
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
+  },
+
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+
+  "parser": "@typescript-eslint/parser",
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+
+  "plugins": ["react", "@typescript-eslint", "simple-import-sort"],
+
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "import/newline-after-import": ["warn", { "count": 1 }],
+    "react/display-name": "off",
+    "no-extra-boolean-cast": "off",
+    "react/react-in-jsx-scope": "off",
+    "prefer-const": "warn",
+    "react-hooks/rules-of-hooks": "warn",
+    "import/no-unresolved": "off",
+    "import/default": "off",
+    "quotes": ["warn", "single"],
+    "max-len": ["warn", 120],
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/jsx-closing-bracket-location": [
+      1,
+      {
+        "selfClosing": "tag-aligned",
+        "nonEmpty": "after-props"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".tsx"]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      "rules": {
+        "simple-import-sort/imports": [
+          "warn",
+          {
+            "groups": [
+              ["^react"],
+              ["^next"],
+              ["^@app"],
+              ["^@store"],
+              ["^@pages"],
+              ["^@widgets"],
+              ["^@features"],
+              ["^@entities"],
+              ["^@shared"],
+              //add libs that are not part of the React or Next core
+              ["^axios|react-redux|uid|normalize.css"],
+              ["^\\u0000", "^@?\\w"],
+              ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+              ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+              ["^.+\\.?(css)$"]
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }

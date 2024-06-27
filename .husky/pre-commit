@@ -1,0 +1,3 @@
+yarn run lint:fix && yarn run stylelint && yarn run format
+
+exit 1
