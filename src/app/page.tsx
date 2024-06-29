@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import Test from '@pages/test/page';
+import Test from '@pages/test';
 
 export default function Home() {
   return (
