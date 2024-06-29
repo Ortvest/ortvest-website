@@ -1,11 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-import Test from '@pages/test';
+import Main from '@pages/Main';
 
 export default function Home() {
-  return (
-    <Fragment>
-      <Test />
-    </Fragment>
-  );
+  return <Main />;
 }

@@ -1,4 +1,6 @@
-import 'normalize.css';
+import { fontConfig } from '@shared/config/fontConfig';
+
+import '@shared/styles/global.css';
 
 export const metadata = {
   title: 'Next.js',
@@ -8,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={fontConfig.className}>{children}</body>
     </html>
   );
 }

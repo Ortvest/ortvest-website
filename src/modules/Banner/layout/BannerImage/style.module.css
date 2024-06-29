@@ -1,0 +1,8 @@
+.image {
+  min-height: 810px;
+
+  background-image: url('../../../../../public/images/banner-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
