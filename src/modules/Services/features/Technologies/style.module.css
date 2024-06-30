@@ -1,0 +1,40 @@
+.visible {
+  opacity: 1;
+
+  transition: all 0.3s ease-out;
+}
+
+.hidden {
+  height: 0;
+
+  opacity: 0;
+
+  transition: all 0.3s ease-out;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service {
+  height: fit-content;
+  padding: 32px 35px;
+
+  border-radius: 32px;
+
+  background-color: var(--btn-gray);
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  padding: 0 0 15px;
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+}

@@ -9,6 +9,10 @@
 :root {
   --title-black: #1a1919;
   --green: #cdff4e;
+  --bg-gray: #f0f3f5;
+  --btn-gray: #f6f9fa;
+  --txt-gray: #838383;
+  --white: #fff;
 }
 
 .container {

@@ -1,11 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
+import { ReduxProvider } from '@global/store/ReduxProvider';
 import { Banner } from '@modules/Banner';
+import { Services } from '@modules/Services';
 
 export default function Main() {
   return (
-    <Fragment>
+    <ReduxProvider>
       <Banner />
-    </Fragment>
+      <Services />
+    </ReduxProvider>
   );
 }
