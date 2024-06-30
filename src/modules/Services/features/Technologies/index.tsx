@@ -27,18 +27,19 @@ export const Technologies = ({ technologies, isDesign, isDevelopment }: ServiceP
 
   return (
     <section className={condition ? styles.hidden : styles.visible}>
-      {isDevelopment && <Filter />}
+      {isDevelopment ? <Filter /> : null}
       <div className={styles.wrapper}>
-        {filteredTechnologies &&
-          filteredTechnologies.map((technology: TechnologiesData, index: number) => (
-            <div className={styles.service} key={index}>
-              <article className={styles.title}>
-                <Image src={technology.icon} alt="service-icon" />
-                <p>{technology.title}</p>
-              </article>
-              <Image src={technology.levelIcon} alt="levelIcon" />
-            </div>
-          ))}
+        {filteredTechnologies
+          ? filteredTechnologies.map((technology: TechnologiesData, index: number) => (
+              <div className={styles.service} key={index}>
+                <article className={styles.title}>
+                  <Image src={technology.icon} alt="service-icon" />
+                  <p>{technology.title}</p>
+                </article>
+                <Image src={technology.levelIcon} alt="levelIcon" />
+              </div>
+            ))
+          : null}
       </div>
     </section>
   );

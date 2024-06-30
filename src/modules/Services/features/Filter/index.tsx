@@ -24,15 +24,16 @@ export const Filter = () => {
 
   return (
     <section className={styles.wrapper}>
-      {categories &&
-        categories.map((categary: string, index: number) => (
-          <button
-            className={selectedIndex === index ? styles.selected : styles.category}
-            key={index}
-            onClick={(e) => onSelectCategoryHander(e.currentTarget.textContent as string, index)}>
-            {categary}
-          </button>
-        ))}
+      {categories
+        ? categories.map((categary: string, index: number) => (
+            <button
+              className={selectedIndex === index ? styles.selected : styles.category}
+              key={index}
+              onClick={(e) => onSelectCategoryHander(e.currentTarget.textContent as string, index)}>
+              {categary}
+            </button>
+          ))
+        : null}
     </section>
   );
 };
