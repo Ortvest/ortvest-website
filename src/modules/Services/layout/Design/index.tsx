@@ -15,14 +15,14 @@ export const Design = () => {
     <section className={styles.design}>
       <header className={styles.header}>
         <div className={styles.wrapper}>
-          <div className={styles.subtitle}>
+          <article className={styles.subtitle}>
             <Image src={DesignIcon} alt="design-icon" />
             <h3>Design</h3>
-          </div>
-          <div className={styles.description}>
+          </article>
+          <article className={styles.description}>
             <p className={styles.text}>A short description of the product, a few lines long, no more</p>
             <ToggleButton isDesign={true} isDevelopment={false} />
-          </div>
+          </article>
         </div>
       </header>
       <Technologies technologies={DesingTechnologies} isDesign={true} isDevelopment={false} />
