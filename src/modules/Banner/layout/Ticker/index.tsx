@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee';
 import styles from './style.module.css';
 
 export const Ticker = () => {
-  const tickerText = ['222 Completed Projects', '222ml users use our products every day', '222 Happy Clients'];
+  const tickerText = ['64 Completed Projects', '100ml users use our products every day', '50 Happy Clients'];
 
   return (
     <section className={styles.ticker}>
