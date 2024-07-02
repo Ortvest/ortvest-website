@@ -8,6 +8,14 @@
   border-radius: 32px;
 
   background-color: var(--white);
+
+  transition: all 0.3s;
+}
+
+.navigation.gray {
+  background-color: var(--btn-gray);
+
+  transition: all 0.3s;
 }
 
 .list {
@@ -46,6 +54,14 @@
   outline: none;
 
   appearance: none;
+
+  transition: all 0.3s;
+}
+
+.select.white {
+  background-color: var(--white);
+
+  transition: all 0.3s;
 }
 
 .select:hover {

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Link from 'next/link';
 
@@ -11,14 +11,29 @@ import { Navagation } from '@modules/Header/features/Navagation';
 import styles from './style.module.css';
 
 export const Header = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const onHeaderClickHandler = () => {
+    scrollTo({ behavior: 'smooth', top: 0 });
+  };
   return (
-    <header className={styles.header} id="header">
+    <header className={scrollPosition >= 300 ? `${styles.header} ${styles.white}` : styles.header} id="header">
       <div className="container">
         <div className={styles.wrapper}>
-          <h2 className={styles.title}>
-            <Link href={SectionID.HEADER}>Ortvest</Link>
+          <h2 className={styles.title} onClick={onHeaderClickHandler}>
+            Ortvest
           </h2>
-          <Navagation />
+          <Navagation scrollPosition={scrollPosition} />
           <button className={styles.contact}>Contact Us</button>
         </div>
       </div>
