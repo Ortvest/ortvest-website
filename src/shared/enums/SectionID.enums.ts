@@ -1,5 +1,5 @@
 export const enum SectionID {
-  HEADER = '/',
+  HEADER = '#header',
   ABOUT_US = '#about-us',
   BANNER = '#banner',
   DESIGN = '#design',
