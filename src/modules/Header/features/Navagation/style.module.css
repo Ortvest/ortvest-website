@@ -1,0 +1,53 @@
+.navigation {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  padding: 4px;
+
+  border-radius: 32px;
+
+  background-color: var(--white);
+}
+
+.list {
+  list-style: none;
+}
+
+.item {
+  padding: 10px 24px;
+}
+
+.link {
+  color: var(--title-black);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.select {
+  padding: 10px 40px 10px 24px;
+  box-sizing: border-box;
+
+  color: var(--title-black);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  border: none;
+  border-radius: 24px;
+
+  background-color: var(--btn-gray);
+  background-image: url('../../../../../public/icons/SelectIcon.svg');
+  background-repeat: no-repeat;
+  background-position: 90% center;
+
+  outline: none;
+
+  appearance: none;
+}
+
+.select:hover {
+  cursor: pointer;
+}
