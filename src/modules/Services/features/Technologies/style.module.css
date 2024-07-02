@@ -1,13 +1,9 @@
 .visible {
-  opacity: 1;
-
   transition: all 0.3s ease-out;
 }
 
 .hidden {
-  height: 0;
-
-  opacity: 0;
+  display: none;
 
   transition: all 0.3s ease-out;
 }

@@ -1,0 +1,26 @@
+.select {
+  padding: 10px 34px;
+  box-sizing: border-box;
+
+  color: var(--title-black);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  border: 1px solid var(--bg-gray);
+  border-radius: 24px;
+
+  background-image: url('../../../../../public/icons/LangIcon.svg'), url('../../../../../public/icons/SelectIcon.svg');
+  background-repeat: no-repeat;
+  background-position:
+    12% 45%,
+    90% center;
+
+  outline: none;
+
+  appearance: none;
+}
+
+.select:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+
+  background: var(--btn-gray);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 40px 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.title > a {
+  color: var(--title-black);
+  text-decoration: none;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+.contact {
+  padding: 14px 32px;
+
+  color: var(--white);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  border: none;
+  border-radius: 32px;
+
+  background-color: var(--title-black);
+}
+
+.contact:hover {
+  cursor: pointer;
+}

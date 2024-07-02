@@ -12,7 +12,7 @@ import styles from '@modules/Services/style.module.css';
 
 export const Development = () => {
   return (
-    <section className={styles.development}>
+    <section className={styles.development} id="development">
       <header className={styles.header}>
         <div className={styles.wrapper}>
           <article className={styles.subtitle}>
