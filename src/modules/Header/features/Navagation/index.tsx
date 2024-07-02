@@ -10,7 +10,7 @@ import styles from './style.module.css';
 
 export const Navagation = () => {
   const onScrollHandler = (selectedValue: string) => {
-    const section = document.querySelector(`#${selectedValue.toLowerCase()}`);
+    const section = document.querySelector(`#${selectedValue}`);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -27,11 +27,11 @@ export const Navagation = () => {
         className={styles.select}
         defaultValue={'Services'}
         onChange={(e) => onScrollHandler(e.currentTarget.value)}>
-        <option value="Services" disabled>
+        <option value="services" disabled>
           Services
         </option>
-        <option value="Design">Design</option>
-        <option value="Development">Development</option>
+        <option value="design">Design</option>
+        <option value="development">Development</option>
       </select>
       <LangSwitch />
     </nav>

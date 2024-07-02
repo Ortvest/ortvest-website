@@ -5,9 +5,9 @@ import styles from './style.module.css';
 export const LangSwitch = () => {
   return (
     <select className={styles.select}>
-      <option value="Eng">Eng</option>
-      <option value="Ukr">Ukr</option>
-      <option value="Pln">Pln</option>
+      <option value="en-US">Eng</option>
+      <option value="pl-PL">Ukr</option>
+      <option value="uk-UK">Pl</option>
     </select>
   );
 };
