@@ -1,0 +1,12 @@
+.contact {
+  padding: 60px 0;
+
+  background-color: var(--bg-gray);
+}
+
+.wrapper {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}

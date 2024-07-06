@@ -1,0 +1,105 @@
+.wrapper {
+  max-width: 572px;
+}
+
+.description {
+  padding: 24px 0;
+}
+
+.description::after {
+  content: '';
+
+  display: block;
+
+  width: 100%;
+  height: 1px;
+  margin: 36px 0;
+
+  background-color: var(--title-black);
+
+  opacity: 0.1;
+}
+
+.subtitle {
+  padding: 0 0 24px;
+
+  color: var(--title-black);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  padding: 0 0 36px;
+
+  color: var(--title-black);
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.about {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  padding: 0 0 16px;
+}
+
+.mail {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+
+  padding: 0 0 64px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrap > label {
+  color: var(--txt-gray);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.wrap > a,
+.links > a {
+  color: var(--black);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.links > a {
+  position: relative;
+}
+
+.links > a:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  content: '';
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background-color: var(--black);
+}
