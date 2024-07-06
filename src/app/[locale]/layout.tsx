@@ -1,15 +1,18 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 
 import { fontConfig } from '@shared/config/fontConfig';
 
 import '@shared/styles/global.css';
 
-export const metadata = {
-  title: 'Ortvest',
-  description: `We create top-quality web and mobile apps, modern designs,
-	 and smart bots for leading companies and new businesses.`,
-};
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale });
+
+  return {
+    title: 'Ortvest',
+    description: t('metadata-description'),
+  };
+}
 
 export default async function RootLayout({
   children,

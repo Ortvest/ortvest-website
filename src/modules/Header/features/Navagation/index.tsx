@@ -20,7 +20,6 @@ export const Navagation = ({ scrollPosition }: NavagationProps) => {
   const [selectedValue, setSelectedValue] = useState('services');
 
   const onScrollHandler = (selectedValue: string) => {
-    console.log(selectedValue);
     const section = document.querySelector(`#${selectedValue}`);
     setSelectedValue(selectedValue);
     if (section) {
