@@ -9,9 +9,9 @@ export const Fields = () => {
   return (
     <section className={styles.fields}>
       <fieldset className={styles.wrapper}>
-        <input type="text" placeholder={t('full-name')} />
-        <input type="text" placeholder={t('email')} />
-        <textarea placeholder={t('about-project')} maxLength={200} />
+        <input type="text" placeholder={t('full-name')} name="full-name" />
+        <input type="text" placeholder={t('email')} name="email" />
+        <textarea placeholder={t('about-project')} maxLength={200} name="about-project" />
       </fieldset>
     </section>
   );
