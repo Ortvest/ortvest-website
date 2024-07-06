@@ -6,7 +6,7 @@ import { Contact } from '@modules/Contact';
 import { Header } from '@modules/Header';
 import { Services } from '@modules/Services';
 
-export default function Main() {
+export default function Home() {
   return (
     <ReduxProvider>
       <Header />

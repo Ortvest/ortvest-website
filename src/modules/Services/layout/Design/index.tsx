@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { DesingTechnologies } from '@shared/mocks/designTechnologies.mocks';
 
@@ -11,16 +12,17 @@ import DesignIcon from '@public/icons/DesignIcon.svg';
 import styles from '@modules/Services/style.module.css';
 
 export const Design = () => {
+  const t = useTranslations();
   return (
     <section className={styles.design} id="design">
       <header className={styles.header}>
         <div className={styles.wrapper}>
           <article className={styles.subtitle}>
             <Image src={DesignIcon} alt="design-icon" />
-            <h3>Design</h3>
+            <h3>{t('design')}</h3>
           </article>
           <article className={styles.description}>
-            <p className={styles.text}>A short description of the product, a few lines long, no more</p>
+            <p className={styles.text}>{t('services-description')}</p>
             <ToggleButton isDesign={true} isDevelopment={false} />
           </article>
         </div>

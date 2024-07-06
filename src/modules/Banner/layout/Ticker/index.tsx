@@ -1,10 +1,13 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 
+import { useTranslations } from 'next-intl';
+
 import styles from './style.module.css';
 
 export const Ticker = () => {
-  const tickerText = ['64 Completed Projects', '100ml users use our products every day', '50 Happy Clients'];
+  const t = useTranslations();
+  const tickerText = [t('ticker-first'), t('ticker-second'), t('ticker-third')];
 
   return (
     <section className={styles.ticker}>

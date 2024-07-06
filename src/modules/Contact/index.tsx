@@ -7,7 +7,7 @@ import styles from './style.module.css';
 
 export const Contact = () => {
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <div className="container">
         <div className={styles.wrapper}>
           <SocialMedia />
