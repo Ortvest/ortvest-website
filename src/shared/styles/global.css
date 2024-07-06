@@ -11,8 +11,10 @@
   --green: #cdff4e;
   --bg-gray: #f0f3f5;
   --btn-gray: #f6f9fa;
+  --btn-gray-darker: #e3e8eb;
   --txt-gray: #838383;
   --white: #fff;
+  --black: #000;
 }
 
 .container {

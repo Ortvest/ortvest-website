@@ -1,0 +1,41 @@
+.title {
+  padding: 0 0 24px;
+
+  color: var(--txt-gray);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  max-width: 516px;
+}
+
+.button {
+  padding: 12px 32px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+  border: none;
+  border-radius: 28px;
+
+  background-color: var(--btn-gray);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button.selected {
+  color: var(--white);
+
+  background-color: var(--black);
+}

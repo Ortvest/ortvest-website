@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+
+  padding: 40px 0 0;
+}
+
+.privacy {
+  flex-grow: 1;
+
+  color: var(--txt-gray);
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+}
+
+.privacy > a {
+  color: #775cff;
+}
+
+.send {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+  align-items: center;
+
+  max-width: 169px;
+  padding: 16px 24px 16px 32px;
+
+  color: var(--title-black);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 32px;
+
+  background-color: var(--green);
+}
+
+.send:hover {
+  cursor: pointer;
+}
