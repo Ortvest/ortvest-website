@@ -6,7 +6,7 @@
 
 .wrapper {
   display: flex;
-  gap: 100px;
+  gap: 75px;
   justify-content: center;
   align-items: center;
 }

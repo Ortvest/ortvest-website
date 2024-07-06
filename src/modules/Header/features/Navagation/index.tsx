@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { SectionID } from '@shared/enums/SectionID.enums';
 
@@ -15,9 +16,11 @@ interface NavagationProps {
 }
 
 export const Navagation = ({ scrollPosition }: NavagationProps) => {
+  const t = useTranslations();
   const [selectedValue, setSelectedValue] = useState('services');
 
   const onScrollHandler = (selectedValue: string) => {
+    console.log(selectedValue);
     const section = document.querySelector(`#${selectedValue}`);
     setSelectedValue(selectedValue);
     if (section) {
@@ -29,7 +32,7 @@ export const Navagation = ({ scrollPosition }: NavagationProps) => {
     <nav className={scrollPosition >= 300 ? `${styles.navigation} ${styles.gray}` : styles.navigation}>
       <ul className={styles.list}>
         <Link href={SectionID.ABOUT_US} className={styles.link}>
-          <li className={styles.item}>About us</li>
+          <li className={styles.item}>{t('about-us')}</li>
         </Link>
       </ul>
       <select
@@ -37,10 +40,10 @@ export const Navagation = ({ scrollPosition }: NavagationProps) => {
         value={selectedValue}
         onChange={(e) => onScrollHandler(e.currentTarget.value)}>
         <option value="services" disabled>
-          Services
+          {t('services')}
         </option>
-        <option value="design">Design</option>
-        <option value="development">Development</option>
+        <option value="design">{t('design')}</option>
+        <option value="development">{t('development')}</option>
       </select>
       <LangSwitch />
     </nav>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import FastReactionIcon from '@public/icons/FastReactionIcon.svg';
 import SecretsIcon from '@public/icons/SecretsIcon.svg';
@@ -8,17 +9,18 @@ import SecretsIcon from '@public/icons/SecretsIcon.svg';
 import styles from '../style.module.css';
 
 export const Description = () => {
+  const t = useTranslations();
   return (
     <article className={styles.description}>
-      <h5 className={styles.subtitle}>Do you have an idea?</h5>
-      <h2 className={styles.title}>Let`s make it happen!</h2>
+      <h5 className={styles.subtitle}>{t('contact-subtitle')}</h5>
+      <h2 className={styles.title}>{t('contact-title')}</h2>
       <p className={styles.about}>
         <Image src={FastReactionIcon} alt="fast-reaction-icon" />
-        Fast reaction
+        {t('contact-first-quote')}
       </p>
       <p className={styles.about}>
         <Image src={SecretsIcon} alt="secrets-icon" />
-        We know how to keep secrets
+        {t('contact-second-quote')}
       </p>
     </article>
   );

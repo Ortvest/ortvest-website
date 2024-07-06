@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+import { useTranslations } from 'next-intl';
+
 import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
 import { Services } from '@shared/interfaces/Services.interfaces';
 
@@ -10,6 +12,7 @@ import { ContactSlice } from '@global/store/slices/ContactSlice';
 import styles from './style.module.css';
 
 export const ServicesSelection = () => {
+  const t = useTranslations();
   const { services } = useAppSelector((state) => state.ContactReducer);
   const { setSelectedServices } = ContactSlice.actions;
 
@@ -22,7 +25,7 @@ export const ServicesSelection = () => {
 
   return (
     <section className={styles.services}>
-      <h3 className={styles.title}>I`m interested in...</h3>
+      <h3 className={styles.title}>{t('interested')}</h3>
       <article className={styles.wrapper}>
         {services
           ? services.map((service: Services, index: number) => (

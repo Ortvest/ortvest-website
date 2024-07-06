@@ -2,20 +2,23 @@ import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import SendIcon from '@public/icons/SendIcon.svg';
 
 import styles from './style.module.css';
 
 export const Footer = () => {
+  const t = useTranslations();
   return (
     <footer className={styles.footer}>
       <p className={styles.privacy}>
-        By sending this form I confirm that I have read and accept the <Link href="/#">Privacy Policy</Link>
+        {t('policy-text')}
+        <Link href="/#">{t('policy-link')}</Link>
       </p>
       <button className={styles.send}>
         <Image src={SendIcon} alt="send icon" />
-        Send
+        {t('send')}
       </button>
     </footer>
   );

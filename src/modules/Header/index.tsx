@@ -2,15 +2,14 @@
 
 import React, { useEffect, useState } from 'react';
 
-import Link from 'next/link';
-
-import { SectionID } from '@shared/enums/SectionID.enums';
+import { useTranslations } from 'next-intl';
 
 import { Navagation } from '@modules/Header/features/Navagation';
 
 import styles from './style.module.css';
 
 export const Header = () => {
+  const t = useTranslations();
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -26,6 +25,15 @@ export const Header = () => {
   const onHeaderClickHandler = () => {
     scrollTo({ behavior: 'smooth', top: 0 });
   };
+
+  const onContactClickHandler = () => {
+    const contactSection = document.querySelector('#contact');
+
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className={scrollPosition >= 300 ? `${styles.header} ${styles.white}` : styles.header} id="header">
       <div className="container">
@@ -34,7 +42,9 @@ export const Header = () => {
             Ortvest
           </h2>
           <Navagation scrollPosition={scrollPosition} />
-          <button className={styles.contact}>Contact Us</button>
+          <button className={styles.contact} onClick={onContactClickHandler}>
+            {t('contact')}
+          </button>
         </div>
       </div>
     </header>
