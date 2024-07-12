@@ -25,12 +25,13 @@
 }
 
 .wrapper > textarea {
-  max-height: 45px;
   padding: 0;
 
   font-weight: 200;
   font-size: 18px;
   font-family: inherit;
+
+  overflow: hidden;
 
   resize: none;
 }
