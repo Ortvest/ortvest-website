@@ -14,14 +14,16 @@ export const Description = () => {
     <article className={styles.description}>
       <h5 className={styles.subtitle}>{t('contact-subtitle')}</h5>
       <h2 className={styles.title}>{t('contact-title')}</h2>
-      <p className={styles.about}>
-        <Image src={FastReactionIcon} alt="fast-reaction-icon" />
-        {t('contact-first-quote')}
-      </p>
-      <p className={styles.about}>
-        <Image src={SecretsIcon} alt="secrets-icon" />
-        {t('contact-second-quote')}
-      </p>
+      <div className={styles.aboutwrap}>
+        <p className={styles.about}>
+          <Image src={FastReactionIcon} alt="fast-reaction-icon" />
+          {t('contact-first-quote')}
+        </p>
+        <p className={styles.about}>
+          <Image src={SecretsIcon} alt="secrets-icon" />
+          {t('contact-second-quote')}
+        </p>
+      </div>
     </article>
   );
 };

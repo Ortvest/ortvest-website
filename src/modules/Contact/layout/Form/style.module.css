@@ -8,3 +8,9 @@
 
   background-color: var(--white);
 }
+
+@media screen and (width <= 1190px) {
+  .form {
+    max-width: 100%;
+  }
+}

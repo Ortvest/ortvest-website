@@ -24,3 +24,13 @@
 .select:hover {
   cursor: pointer;
 }
+
+@media screen and (width <= 820px) {
+  .select {
+    width: 80%;
+
+    background-position:
+      4% 45%,
+      95% center;
+  }
+}

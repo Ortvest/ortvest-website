@@ -2,11 +2,13 @@
 
 import { ContactReducer } from '@global/store/slices/ContactSlice';
 import { ServicesReducer } from '@global/store/slices/ServicesSlice';
+import { UIReducer } from '@global/store/slices/UISlice';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 const rootReducer = combineReducers({
   ServicesReducer,
   ContactReducer,
+  UIReducer,
 });
 
 export const setupStore = () => {

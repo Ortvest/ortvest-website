@@ -129,3 +129,84 @@
     min-width: 100%;
   }
 }
+
+@media screen and (width <= 1200px) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .header {
+    min-width: auto;
+  }
+
+  .description > .text {
+    display: none;
+  }
+
+  .design,
+  .development {
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 790px) {
+  .title {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .flex {
+    padding: 0;
+  }
+}
+
+@media screen and (width <= 685px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .description > button {
+    display: none;
+  }
+
+  .wrapper {
+    justify-content: center;
+  }
+
+  .services {
+    padding: 30px 0 0;
+  }
+
+  .flex {
+    gap: 20px;
+  }
+
+  .header::after {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (width <= 575px) {
+  .subtitle > img {
+    display: none;
+  }
+
+  .design,
+  .development {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (width <= 485px) {
+  .title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .subtitle > h3 {
+    font-size: 24px;
+  }
+}

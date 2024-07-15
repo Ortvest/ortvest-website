@@ -6,3 +6,15 @@
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (width <= 768px) {
+  .image {
+    min-height: 610px;
+  }
+}
+
+@media screen and (width <= 545px) {
+  .image {
+    min-height: 410px;
+  }
+}

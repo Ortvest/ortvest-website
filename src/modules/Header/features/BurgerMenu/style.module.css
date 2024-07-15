@@ -1,0 +1,41 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 65%;
+  height: 100%;
+  margin-top: 82px;
+
+  background-color: var(--btn-gray);
+
+  transform: translateX(100%);
+
+  transition: all 0.5s;
+}
+
+.menu.opened {
+  transform: translateX(0);
+
+  transition: all 0.5s;
+}
+
+.contact {
+  width: 70%;
+  margin: 10px 0 0 40px;
+  padding: 14px 32px;
+
+  color: var(--white);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  border: none;
+  border-radius: 32px;
+
+  background-color: var(--title-black);
+}
+
+.contact:hover {
+  cursor: pointer;
+}
