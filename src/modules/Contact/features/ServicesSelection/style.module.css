@@ -39,3 +39,25 @@
 
   background-color: var(--black);
 }
+
+@media screen and (width <= 1190px) {
+  .title {
+    text-align: center;
+  }
+
+  .wrapper {
+    justify-content: center;
+
+    max-width: 100%;
+  }
+}
+
+@media screen and (width <= 545px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

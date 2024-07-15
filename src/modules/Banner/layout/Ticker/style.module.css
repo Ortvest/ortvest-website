@@ -44,3 +44,23 @@
 
   background-color: var(--title-black);
 }
+
+@media screen and (width <= 868px) {
+  .item {
+    font-size: 24px;
+  }
+
+  .wrapper {
+    height: 64px;
+  }
+}
+
+@media screen and (width <= 545px) {
+  .item {
+    font-size: 18px;
+  }
+
+  .wrapper {
+    height: 48px;
+  }
+}

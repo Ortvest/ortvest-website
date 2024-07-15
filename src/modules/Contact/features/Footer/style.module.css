@@ -44,3 +44,20 @@
 .send:hover {
   cursor: pointer;
 }
+
+@media screen and (width <= 545px) {
+  .footer {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .privacy {
+    text-align: center;
+  }
+
+  .send {
+    justify-content: center;
+
+    width: 100%;
+  }
+}

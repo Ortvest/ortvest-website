@@ -103,3 +103,90 @@
 
   background-color: var(--black);
 }
+
+@media screen and (width <= 1200px) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (width <= 1190px) {
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .mail {
+    justify-content: center;
+
+    padding: 0 0 24px;
+
+    text-align: center;
+  }
+
+  .aboutwrap {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .about {
+    max-width: fit-content;
+  }
+}
+
+@media screen and (width <= 685px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .description::after {
+    margin: 0;
+  }
+
+  .mail {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 2fr));
+    gap: 15px;
+    place-items: center;
+  }
+
+  .links > a:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media screen and (width <= 550px) {
+  .aboutwrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (width <= 485px) {
+  .title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (width <= 380px) {
+  .about > img {
+    display: none;
+  }
+}

@@ -34,3 +34,41 @@
   font-size: 20px;
   line-height: 32px;
 }
+
+@media screen and (width <= 1095px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 15px;
+    place-items: center;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 510px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  }
+
+  .service {
+    padding: 16px 20px;
+  }
+}
+
+@media screen and (width <= 390px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  }
+
+  .service > img {
+    width: 180px;
+  }
+}
