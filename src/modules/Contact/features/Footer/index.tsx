@@ -20,10 +20,8 @@ export const Footer = () => {
 
   const onSendOrderDataHandler = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    await contactApi
-      .addOrder(orderData)
-      .then(() => setIsSended(true))
-      .catch(() => console.log('Failed'));
+    await contactApi.addOrder(orderData);
+    setIsSended(true);
   };
 
   useEffect(() => {
