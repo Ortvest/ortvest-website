@@ -1,11 +1,13 @@
 'use client';
 
+import { Order } from '@shared/interfaces/Order.interfaces';
 import { Services } from '@shared/interfaces/Services.interfaces';
 
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface ContactState {
   services: Services[];
+  orderData: Order;
 }
 
 const initialState: ContactState = {
@@ -57,6 +59,12 @@ const initialState: ContactState = {
       isSelected: true,
     },
   ],
+  orderData: {
+    clientEmail: '',
+    clientName: '',
+    productDescription: '',
+    selectedServices: [],
+  },
 };
 
 export const ContactSlice = createSlice({
@@ -68,6 +76,9 @@ export const ContactSlice = createSlice({
       if (service) {
         service.isSelected = !service.isSelected;
       }
+    },
+    setOrderData(state, action: PayloadAction<Order>) {
+      state.orderData = action.payload;
     },
   },
 });

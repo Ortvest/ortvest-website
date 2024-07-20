@@ -1,15 +1,22 @@
 'use client';
 
-import React, { ChangeEvent, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import { useTranslations } from 'next-intl';
+
+import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
+
+import { ContactSlice } from '@global/store/slices/ContactSlice';
 
 import styles from './style.module.css';
 
 export const Fields = () => {
   const t = useTranslations();
-  // I'll change this state to object according to postman example, when start working with connecting to API
-  const [aboutProjectValue, setAboutProjectValue] = useState('');
+
+  const dispatch = useAppDispatch();
+  const { orderData } = useAppSelector((state) => state.ContactReducer);
+  const { setOrderData } = ContactSlice.actions;
+
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
@@ -17,23 +24,35 @@ export const Fields = () => {
       textareaRef.current.style.height = '45px';
       textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
     }
-  }, [aboutProjectValue]);
+  }, [orderData.productDescription]);
 
-  const onTextAreaChangeHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    setAboutProjectValue(e.target.value);
+  const onFieldChangeHandler = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    dispatch(setOrderData({ ...orderData, [e.target.name]: e.target.value }));
   };
   return (
     <section className={styles.fields}>
       <fieldset className={styles.wrapper}>
-        <input type="text" placeholder={t('full-name')} name="full-name" />
-        <input type="text" placeholder={t('email')} name="email" />
+        <input
+          type="text"
+          placeholder={t('full-name')}
+          name="clientName"
+          value={orderData.clientName}
+          onChange={(e) => onFieldChangeHandler(e)}
+        />
+        <input
+          type="text"
+          placeholder={t('email')}
+          name="clientEmail"
+          value={orderData.clientEmail}
+          onChange={(e) => onFieldChangeHandler(e)}
+        />
         <textarea
           ref={textareaRef}
-          value={aboutProjectValue}
-          onChange={onTextAreaChangeHandler}
+          value={orderData.productDescription}
+          onChange={(e) => onFieldChangeHandler(e)}
           placeholder={t('about-project')}
           maxLength={200}
-          name="about-project"
+          name="productDescription"
         />
       </fieldset>
     </section>
