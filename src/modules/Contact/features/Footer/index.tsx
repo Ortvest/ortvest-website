@@ -17,11 +17,14 @@ export const Footer = () => {
   const t = useTranslations();
   const { orderData } = useAppSelector((state) => state.ContactReducer);
   const [isSended, setIsSended] = useState(false);
+  const { clientEmail, clientName, productDescription, selectedServices } = orderData;
 
   const onSendOrderDataHandler = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    setIsSended(true);
-    await contactApi.addOrder(orderData);
+    if (clientEmail && clientName && productDescription && selectedServices) {
+      setIsSended(true);
+      await contactApi.addOrder(orderData);
+    }
   };
 
   useEffect(() => {
