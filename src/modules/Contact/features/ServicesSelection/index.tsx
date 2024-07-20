@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { useTranslations } from 'next-intl';
 
@@ -13,8 +13,8 @@ import styles from './style.module.css';
 
 export const ServicesSelection = () => {
   const t = useTranslations();
-  const { services } = useAppSelector((state) => state.ContactReducer);
-  const { setSelectedServices } = ContactSlice.actions;
+  const { services, orderData } = useAppSelector((state) => state.ContactReducer);
+  const { setSelectedServices, setOrderData } = ContactSlice.actions;
 
   const dispatch = useAppDispatch();
 
@@ -22,6 +22,11 @@ export const ServicesSelection = () => {
     event.preventDefault();
     dispatch(setSelectedServices(value));
   };
+
+  useEffect(() => {
+    const selectedServices = services.filter((service) => service.isSelected).map((service) => service.title);
+    dispatch(setOrderData({ ...orderData, selectedServices }));
+  }, [services]);
 
   return (
     <section className={styles.services}>
