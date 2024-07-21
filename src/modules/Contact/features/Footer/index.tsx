@@ -8,10 +8,13 @@ import { useTranslations } from 'next-intl';
 
 import { useAppSelector } from '@shared/hooks/redux.hooks';
 
-import { contactApi } from '@global/api/contact.api';
+
 import SendIcon from '@public/icons/SendIcon.svg';
 
 import styles from './style.module.css';
+
+import { contactApi } from '@global/api/contact.api';
+
 
 export const Footer = () => {
   const t = useTranslations();
@@ -23,7 +26,7 @@ export const Footer = () => {
     e.preventDefault();
     if (clientEmail && clientName && productDescription && selectedServices) {
       setIsSended(true);
-      await contactApi.addOrder(orderData);
+      contactApi.createOrder(orderData);
     }
   };
 
