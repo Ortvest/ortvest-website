@@ -27,5 +27,8 @@
   "policy-link": "Privacy Policy",
   "interested": "I`m interested in...",
   "metadata-description": "We create top-quality web and mobile apps, modern designs, and smart bots for leading companies and new businesses.",
-  "successfully-shipped": "The order has been successfully shipped. We will contact you as soon as possible!"
+  "successfully-sended": "The order has been successfully sended. We will contact you as soon as possible!",
+  "work-finished": "Your work finished here!",
+  "error-occured": "Unexpected error occurred!",
+  "error-subtitle": "We already working with this problem, please try again later"
 }

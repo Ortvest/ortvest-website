@@ -34,6 +34,7 @@ export const Fields = () => {
       <fieldset className={styles.wrapper}>
         <input
           type="text"
+          required={true}
           placeholder={t('full-name')}
           name="clientName"
           value={orderData.clientName}
@@ -41,6 +42,7 @@ export const Fields = () => {
         />
         <input
           type="text"
+          required={true}
           placeholder={t('email')}
           name="clientEmail"
           value={orderData.clientEmail}
@@ -48,6 +50,7 @@ export const Fields = () => {
         />
         <textarea
           ref={textareaRef}
+          required={true}
           value={orderData.productDescription}
           onChange={(e) => onFieldChangeHandler(e)}
           placeholder={t('about-project')}

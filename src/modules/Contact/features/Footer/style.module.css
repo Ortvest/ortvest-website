@@ -45,12 +45,6 @@
   cursor: pointer;
 }
 
-.sended {
-  color: var(--title-black);
-  font-size: 14px;
-  text-align: center;
-}
-
 @media screen and (width <= 545px) {
   .footer {
     flex-direction: column;

@@ -1,59 +1,55 @@
 'use client';
 
-import React, { Fragment, useEffect, useState } from 'react';
+import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { useAppSelector } from '@shared/hooks/redux.hooks';
+import { ModalTypes } from '@shared/enums/ModalTypes.enums';
+import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
 
-
+import { contactApi } from '@global/api/contact.api';
+import { ModalSlice } from '@global/store/slices/ModalSlice';
 import SendIcon from '@public/icons/SendIcon.svg';
 
 import styles from './style.module.css';
 
-import { contactApi } from '@global/api/contact.api';
-
-
 export const Footer = () => {
   const t = useTranslations();
   const { orderData } = useAppSelector((state) => state.ContactReducer);
-  const [isSended, setIsSended] = useState(false);
+  const { setIsModalOpened, setModalType } = ModalSlice.actions;
+  const dispatch = useAppDispatch();
   const { clientEmail, clientName, productDescription, selectedServices } = orderData;
 
   const onSendOrderDataHandler = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     if (clientEmail && clientName && productDescription && selectedServices) {
-      setIsSended(true);
-      contactApi.createOrder(orderData);
+      contactApi
+        .createOrder(orderData)
+        .then(() => {
+          dispatch(setIsModalOpened(true));
+          dispatch(setModalType(ModalTypes.SECCESSFULLY_SENDED));
+        })
+        .catch((error) => {
+          if (error) {
+            dispatch(setIsModalOpened(true));
+            dispatch(setModalType(ModalTypes.SEND_FAILED));
+          }
+        });
     }
   };
 
-  useEffect(() => {
-    if (isSended) {
-      setTimeout(() => {
-        setIsSended(false);
-      }, 5000);
-    }
-  }, [isSended]);
-
   return (
     <footer className={styles.footer}>
-      {isSended ? (
-        <p className={styles.sended}>{t('successfully-shipped')}</p>
-      ) : (
-        <Fragment>
-          <p className={styles.privacy}>
-            {t('policy-text')}
-            <Link href="/#">{t('policy-link')}</Link>
-          </p>
-          <button className={styles.send} onClick={(e) => onSendOrderDataHandler(e)}>
-            <Image src={SendIcon} alt="send icon" />
-            {t('send')}
-          </button>
-        </Fragment>
-      )}
+      <p className={styles.privacy}>
+        {t('policy-text')}
+        <Link href="/#">{t('policy-link')}</Link>
+      </p>
+      <button className={styles.send} onClick={(e) => onSendOrderDataHandler(e)}>
+        <Image src={SendIcon} alt="send icon" />
+        {t('send')}
+      </button>
     </footer>
   );
 };
