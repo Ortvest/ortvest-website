@@ -10,6 +10,7 @@ import { ModalTypes } from '@shared/enums/ModalTypes.enums';
 import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
 
 import { contactApi } from '@global/api/contact.api';
+import { ContactSlice } from '@global/store/slices/ContactSlice';
 import { ModalSlice } from '@global/store/slices/ModalSlice';
 import SendIcon from '@public/icons/SendIcon.svg';
 
@@ -18,6 +19,7 @@ import styles from './style.module.css';
 export const Footer = () => {
   const t = useTranslations();
   const { orderData } = useAppSelector((state) => state.ContactReducer);
+  const { setOrderData } = ContactSlice.actions;
   const { setIsModalOpened, setModalType } = ModalSlice.actions;
   const dispatch = useAppDispatch();
   const { clientEmail, clientName, productDescription, selectedServices } = orderData;
@@ -30,6 +32,7 @@ export const Footer = () => {
         .then(() => {
           dispatch(setIsModalOpened(true));
           dispatch(setModalType(ModalTypes.SECCESSFULLY_SENDED));
+          dispatch(setOrderData({ clientEmail: '', clientName: '', productDescription: '', selectedServices: [] }));
         })
         .catch((error) => {
           if (error) {
