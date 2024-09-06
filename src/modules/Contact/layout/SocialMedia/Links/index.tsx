@@ -16,17 +16,17 @@ export const Links = () => {
         </p>
         <p className={styles.wrap}>
           <label>{t('messagers-label')}</label>
-          <Link href="/#">WhatsApp</Link>
+          <Link href="https://wa.me/+48731728031">WhatsApp</Link>
         </p>
       </article>
       <article className={styles.mail}>
         <div className={styles.wrap}>
           <label>{t('social-label')}</label>
           <div className={styles.links}>
-            <Link href="/#">Linkedin</Link>
+            <Link href="https://www.linkedin.com/company/ortvest">Linkedin</Link>
             <Link href="/#">Instagram</Link>
-            <Link href="/#">Twitter</Link>
-            <Link href="/#">GitHub</Link>
+            <Link href="https://x.com/ortvest">Twitter</Link>
+            <Link href="https://github.com/Ortvest">GitHub</Link>
           </div>
         </div>
       </article>
