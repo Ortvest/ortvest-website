@@ -24,7 +24,6 @@ export const Links = () => {
           <label>{t('social-label')}</label>
           <div className={styles.links}>
             <Link href="https://www.linkedin.com/company/ortvest">Linkedin</Link>
-            <Link href="/#">Instagram</Link>
             <Link href="https://x.com/ortvest">Twitter</Link>
             <Link href="https://github.com/Ortvest">GitHub</Link>
           </div>
