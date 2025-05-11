@@ -25,7 +25,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="icon" href="../../../public/icons/AppLogo.svg" />
+        <link rel="icon" href="/icons/AppLogo.svg"/>
         <title>Ortvest</title>
       </head>
       <body className={fontConfig.className}>
