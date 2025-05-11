@@ -1,11 +1,6 @@
 .banner {
-  padding-top: 132px;
+  padding-top: 160px;
 
   background: var(--btn-gray);
 }
 
-@media screen and (width <= 685px) {
-  .banner {
-    padding-top: 100px;
-  }
-}

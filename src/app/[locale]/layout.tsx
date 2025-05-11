@@ -24,6 +24,10 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
+      <head>
+        <link rel="icon" href="../../../public/icons/AppLogo.svg" />
+        <title>Ortvest</title>
+      </head>
       <body className={fontConfig.className}>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>

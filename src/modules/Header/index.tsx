@@ -2,38 +2,41 @@
 
 import React, { Fragment, useEffect, useState } from 'react';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { Burger } from '@modules/Header/features/Burger';
 import { BurgerMenu } from '@modules/Header/features/BurgerMenu';
 import { Navagation } from '@modules/Header/features/Navagation';
+import AppIconMobile from '@public/icons/AppLogo.svg';
+import AppIcon from '@public/icons/AppLogoHorizontal.svg';
 
 import styles from './style.module.css';
 
 export const Header = () => {
   const t = useTranslations();
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(window?.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      setWindowWidth(window?.innerWidth);
     };
 
-    window.addEventListener('resize', handleResize);
+    window?.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window?.removeEventListener('resize', handleResize);
     };
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollPosition(window.scrollY);
+      setScrollPosition(window?.scrollY);
     };
-    window.addEventListener('scroll', handleScroll);
+    window?.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window?.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -53,9 +56,11 @@ export const Header = () => {
     <header className={scrollPosition >= 300 ? `${styles.header} ${styles.white}` : styles.header} id="header">
       <div className="container">
         <div className={styles.wrapper}>
-          <h2 className={styles.title} onClick={onHeaderClickHandler}>
-            Ortvest
-          </h2>
+          <div>
+            <button className={styles.logoButton} onClick={onHeaderClickHandler}>
+              <Image src={windowWidth <= 820 ? AppIconMobile : AppIcon} alt={'AppIcon'} />
+            </button>
+          </div>
           {windowWidth <= 820 ? null : (
             <Fragment>
               <Navagation scrollPosition={scrollPosition} />
