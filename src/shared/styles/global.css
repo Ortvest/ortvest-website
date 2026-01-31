@@ -1,24 +1,109 @@
-/* TODO: find good normalize */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    font-feature-settings: 'ss01' on, 'cv01' on;
+
+    @apply bg-white text-black antialiased;
+  }
+
+  /* Typography defaults */
+  h1 { @apply text-h1; }
+  h2 { @apply text-h2; }
+  h3 { @apply text-h3; }
+  h4 { @apply text-h4; }
+  p { @apply text-body; }
 }
 
-:root {
-  --title-black: #1a1919;
-  --green: #cdff4e;
-  --bg-gray: #f0f3f5;
-  --btn-gray: #f6f9fa;
-  --btn-gray-darker: #e3e8eb;
-  --txt-gray: #838383;
-  --white: #fff;
-  --black: #000;
+@layer components {
+  /* Main container - 1160px max */
+  .container-main {
+    @apply mx-auto w-full max-w-container px-5 sm:px-6;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-section;
+  }
+
+  .section-padding-lg {
+    @apply py-20 sm:py-section lg:py-section-lg;
+  }
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 15px;
+@layer utilities {
+  @keyframes blobFloat {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+
+    33% {
+      transform: translate(20px, -15px) scale(1.02);
+    }
+
+    66% {
+      transform: translate(-10px, 20px) scale(0.98);
+    }
+  }
+
+  /* Particles: smooth fade-in + subtle float */
+  @keyframes particleFadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0) scale(0.6);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  @keyframes particleFloat {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+      transform: translate(4px, -6px) scale(1);
+    }
+  }
+
+  /* Shake for validation errors */
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(-6px);
+    }
+
+    75% {
+      transform: translateX(6px);
+    }
+  }
+
+  /* Soft blob appear (like reference) — keep translate for centering */
+  @keyframes blobAppear {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.88);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-black to-black/70;
+  }
 }

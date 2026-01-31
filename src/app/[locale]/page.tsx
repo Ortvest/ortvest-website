@@ -1,19 +1,29 @@
-import React from 'react';
-
 import { ReduxProvider } from '@global/store/ReduxProvider';
-import { Banner } from '@modules/Banner';
+import { About } from '@modules/About';
 import { Contact } from '@modules/Contact';
+import { FAQ } from '@modules/FAQ';
+import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
+import { Hero } from '@modules/Hero';
 import { Modal } from '@modules/Modals';
+import { Process } from '@modules/Process';
 import { Services } from '@modules/Services';
+import { Technologies } from '@modules/Technologies';
 
 export default function Home() {
   return (
     <ReduxProvider>
       <Header />
-      <Banner />
-      <Services />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Process />
+        <Technologies />
+        <FAQ />
+        <Contact />
+      </main>
+      <Footer />
       <Modal />
     </ReduxProvider>
   );

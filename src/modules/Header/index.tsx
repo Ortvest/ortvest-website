@@ -1,78 +1,80 @@
 'use client';
 
-import React, { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Burger } from '@modules/Header/features/Burger';
 import { BurgerMenu } from '@modules/Header/features/BurgerMenu';
-import { Navagation } from '@modules/Header/features/Navagation';
+import { Navigation } from '@modules/Header/features/Navagation';
 import AppIconMobile from '@public/icons/AppLogo.svg';
 import AppIcon from '@public/icons/AppLogoHorizontal.svg';
+import { ArrowRight } from 'lucide-react';
 
-import styles from './style.module.css';
-
-export const Header = () => {
-  const t = useTranslations();
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(window?.innerWidth);
+export function Header() {
+  const t = useTranslations('nav');
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window?.innerWidth);
-    };
-
-    window?.addEventListener('resize', handleResize);
-
-    return () => {
-      window?.removeEventListener('resize', handleResize);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 16);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window?.scrollY);
-    };
-    window?.addEventListener('scroll', handleScroll);
-    return () => {
-      window?.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const onHeaderClickHandler = () => {
-    scrollTo({ behavior: 'smooth', top: 0 });
-  };
-
-  const onContactClickHandler = () => {
-    const contactSection = document.querySelector('#contact');
-
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
-    <header className={scrollPosition >= 300 ? `${styles.header} ${styles.white}` : styles.header} id="header">
-      <div className="container">
-        <div className={styles.wrapper}>
-          <div>
-            <button className={styles.logoButton} onClick={onHeaderClickHandler}>
-              <Image src={windowWidth <= 820 ? AppIconMobile : AppIcon} alt={'AppIcon'} />
-            </button>
-          </div>
-          {windowWidth <= 820 ? null : (
-            <Fragment>
-              <Navagation scrollPosition={scrollPosition} />
-              <button className={styles.contact} onClick={onContactClickHandler}>
-                {t('contact')}
-              </button>
-            </Fragment>
-          )}
+    <header
+      id="header"
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+        scrolled ? 'bg-white/95 shadow-sm backdrop-blur-md' : 'bg-white'
+      }`}>
+      <div className="container-main flex h-14 items-center justify-between sm:h-16">
+        {/* Logo */}
+        <Link
+          href="#hero"
+          className="relative z-50 flex shrink-0 transition-opacity hover:opacity-80"
+          aria-label="Home">
+          <Image
+            src={AppIconMobile}
+            alt="Ortvest"
+            width={100}
+            height={28}
+            className="h-7 w-auto object-contain md:hidden"
+            priority
+          />
+          <Image
+            src={AppIcon}
+            alt="Ortvest"
+            width={120}
+            height={32}
+            className="hidden h-8 w-auto object-contain md:block"
+            priority
+          />
+        </Link>
+
+        {/* Desktop nav */}
+        <div className="hidden items-center gap-6 md:flex">
+          <Navigation />
+          <Link
+            href="#contact"
+            className="inline-flex items-center gap-1.5 rounded-full bg-black px-4 py-2 text-sm font-semibold text-white transition hover:bg-black/90">
+            {t('cta')}
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+
+        {/* Mobile */}
+        <div className="flex items-center gap-2 md:hidden">
+          <Link
+            href="#contact"
+            className="inline-flex items-center gap-1 rounded-full bg-black px-3 py-1.5 text-sm font-semibold text-white">
+            {t('cta')}
+          </Link>
           <Burger />
-          <BurgerMenu scrollPosition={scrollPosition} />
         </div>
       </div>
+      <BurgerMenu />
     </header>
   );
-};
+}

@@ -22,6 +22,7 @@
       "@public/*": ["../public/*"],
       "@app/*": ["app/*"],
       "@global/*": ["global/*"],
+      "@lib/*": ["lib/*"],
       "@pages/*": ["pages/*"],
       "@modules/*": ["modules/*"],
       "@shared/*": ["shared/*"]
