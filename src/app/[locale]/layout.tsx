@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
-import { BackgroundEffects } from '@shared/components';
+import { BackgroundEffects, MotionConfigProvider } from '@shared/components';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ortvest.com';
 
@@ -167,7 +167,7 @@ export default async function RootLayout({
       <BackgroundEffects />
       <div className="relative z-10 min-h-screen w-full">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <MotionConfigProvider>{children}</MotionConfigProvider>
         </NextIntlClientProvider>
       </div>
     </div>

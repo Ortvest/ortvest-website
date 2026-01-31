@@ -22,7 +22,8 @@ if (uri) {
 }
 
 export async function getDb(): Promise<Db> {
-  if (!uri || !clientPromise) throw new Error('MONGODB_URI is not set');
+  if (!uri) throw new Error('MONGODB_URI is not set');
+  if (!clientPromise) throw new Error('MongoDB client not initialized');
   const client = await clientPromise;
   return client.db(DB_NAME);
 }

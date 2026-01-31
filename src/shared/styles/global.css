@@ -15,6 +15,7 @@
     @apply bg-white text-black antialiased;
   }
 
+
   /* Typography defaults */
   h1 {
     @apply text-h1;

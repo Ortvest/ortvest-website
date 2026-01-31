@@ -80,6 +80,11 @@ export async function POST(request: NextRequest) {
     });
   } catch (err) {
     console.error('Contact API error:', err);
-    return NextResponse.json({ error: 'Failed to save submission' }, { status: 500 });
+    const message = err instanceof Error ? err.message : 'Failed to save submission';
+    const isConfigError = !process.env.MONGODB_URI && !EXTERNAL_BACKEND;
+    return NextResponse.json(
+      { error: isConfigError ? 'Contact service not configured' : message },
+      { status: isConfigError ? 503 : 500 }
+    );
   }
 }

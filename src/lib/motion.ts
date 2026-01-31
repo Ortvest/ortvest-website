@@ -7,16 +7,16 @@
 export const EASE = [0.22, 1, 0.36, 1] as const;
 export const EASE_OUT = [0.16, 1, 0.3, 1] as const;
 
-// Durations
+// Durations (shorter for snappier feel on mobile)
 export const DURATION = {
-  fast: 0.4,
-  normal: 0.6,
-  slow: 0.85,
+  fast: 0.25,
+  normal: 0.4,
+  slow: 0.5,
 } as const;
 
 // Reveal animations (for scroll-triggered content)
 export const fadeUp = {
-  initial: { opacity: 0, y: 24 },
+  initial: { opacity: 0, y: 16 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: DURATION.slow, ease: EASE },
 };
@@ -33,20 +33,20 @@ export const scaleUp = {
   transition: { duration: DURATION.normal, ease: EASE },
 };
 
-// Stagger container for grids
+// Stagger container for grids (reduced delays for mobile)
 export const staggerContainer = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.05,
+      staggerChildren: 0.04,
+      delayChildren: 0,
     },
   },
 };
 
-// Stagger item (use with staggerContainer)
+// Stagger item (use with staggerContainer, smaller y for mobile)
 export const staggerItem = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 12 },
   visible: {
     opacity: 1,
     y: 0,

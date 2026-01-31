@@ -1,5 +1,6 @@
 export { BackgroundEffects } from './BackgroundEffects';
 export { Button } from './Button';
+export { MotionConfigProvider } from './MotionConfigProvider';
 export { Container } from './Container';
 export { Divider } from './Divider';
 export { IconBadge } from './IconBadge';
