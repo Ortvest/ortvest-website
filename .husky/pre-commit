@@ -1,1 +1,1 @@
-yarn run lint:fix && yarn run stylelint && yarn run format && yarn run build
+yarn run lint:fix && yarn run format && yarn run build

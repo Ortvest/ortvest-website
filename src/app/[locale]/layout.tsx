@@ -1,16 +1,7 @@
-import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { BackgroundEffects } from '@shared/components';
-
-import '@shared/styles/global.css';
-
-const inter = Inter({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-inter',
-  display: 'swap',
-});
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ortvest.com';
 
@@ -21,9 +12,21 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const ogTitle = t('metadata.ogTitle');
   const ogDescription = t('metadata.ogDescription');
 
+  const verification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined;
+
   return {
     title,
     description,
+    verification,
+    icons: {
+      icon: [
+        { url: '/icon', type: 'image/png', sizes: '32x32' },
+        { url: '/icons/AppLogo.svg', type: 'image/svg+xml', sizes: 'any' },
+      ],
+      apple: [{ url: '/apple-icon', type: 'image/png', sizes: '180x180' }],
+    },
     metadataBase: new URL(baseUrl),
     alternates: {
       canonical: `/${locale}`,
@@ -57,7 +60,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-function SchemaOrgScript() {
+type FaqItem = { q: string; a: string };
+
+function SchemaOrgScript({ faq }: { faq?: FaqItem[] }) {
   const organization = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -93,6 +98,19 @@ function SchemaOrgScript() {
     ],
   };
 
+  const faqSchema =
+    faq && faq.length > 0
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faq.map(({ q, a }) => ({
+            '@type': 'Question',
+            name: q,
+            acceptedAnswer: { '@type': 'Answer', text: a },
+          })),
+        }
+      : null;
+
   return (
     <>
       <script
@@ -113,6 +131,14 @@ function SchemaOrgScript() {
           __html: JSON.stringify(services),
         }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
+      )}
     </>
   );
 }
@@ -128,20 +154,25 @@ export default async function RootLayout({
   unstable_setRequestLocale(locale);
   const messages = await getMessages({ locale });
 
+  const faqMessages = (messages?.faq ?? {}) as Record<string, string>;
+  const faqItems: FaqItem[] = [1, 2, 3, 4, 5, 6].flatMap((i) => {
+    const q = faqMessages[`q${i}`];
+    const a = faqMessages[`a${i}`];
+    return q && a ? [{ q, a }] : [];
+  });
+
   return (
-    <html lang={locale} className={inter.variable}>
-      <head>
-        <link rel="icon" href="/icons/AppLogo.svg" type="image/svg+xml" />
-        <SchemaOrgScript />
-      </head>
-      <body className="relative min-h-screen bg-white font-sans antialiased text-black">
-        <BackgroundEffects />
-        <div className="relative z-10 min-h-screen w-full">
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
-          </NextIntlClientProvider>
-        </div>
-      </body>
-    </html>
+    <div
+      className="relative min-h-screen bg-white font-sans antialiased text-black"
+      lang={locale}
+    >
+      <SchemaOrgScript faq={faqItems} />
+      <BackgroundEffects />
+      <div className="relative z-10 min-h-screen w-full">
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </div>
+    </div>
   );
 }

@@ -153,6 +153,12 @@
     "errorTitle": "Coś poszło nie tak",
     "errorText": "Spróbuj później lub napisz na email."
   },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "backHome": "Wróć na stronę główną",
+    "nav": "Nawigacja"
+  },
   "metadata": {
     "title": "Ortvest — Studio IT | Web i Mobile, UI/UX Design, Marketing",
     "description": "Ortvest to studio IT. Tworzymy aplikacje web i mobile, UI/UX design i marketing, który konwertuje. Skontaktuj się po darmową konsultację.",

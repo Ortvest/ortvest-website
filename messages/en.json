@@ -153,6 +153,12 @@
     "errorTitle": "Something went wrong",
     "errorText": "Please try again later or contact us by email."
   },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home",
+    "nav": "Navigation"
+  },
   "metadata": {
     "title": "Ortvest — IT Studio | Web & Mobile Development, UI/UX Design, Marketing",
     "description": "Ortvest is an IT studio. We build web and mobile apps, UI/UX design, and marketing that converts. Get in touch for a free consultation.",

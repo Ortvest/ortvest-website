@@ -1,20 +1,18 @@
-.image {
-  min-height: 810px;
-
-  background-image: url('../../../../../public/images/banner-bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.wrapper {
+  position: relative;
+  min-height: 410px;
+  width: 100%;
+  overflow: hidden;
 }
 
-@media screen and (width <= 768px) {
-  .image {
+@media screen and (width > 545px) {
+  .wrapper {
     min-height: 610px;
   }
 }
 
-@media screen and (width <= 545px) {
-  .image {
-    min-height: 410px;
+@media screen and (width > 768px) {
+  .wrapper {
+    min-height: 810px;
   }
 }
