@@ -9,19 +9,19 @@
     "cta": "Get a quote"
   },
   "hero": {
-    "eyebrow": "Digital Studio",
-    "headline": "We build digital products that sell.",
-    "subheadline": "UI/UX design, web & mobile development, and marketing that turns visitors into customers.",
+    "eyebrow": "IT Studio",
+    "headline": "Full-cycle digital solutions built around your needs.",
+    "subheadline": "Design, development and marketing when you need it.",
     "ctaPrimary": "Get a quote",
     "ctaSecondary": "See services",
-    "trust1": "Fast delivery",
-    "trust2": "Premium quality",
-    "trust3": "Direct communication"
+    "trust1": "Full-cycle expertise",
+    "trust2": "Flexible collaboration",
+    "trust3": "Long-term support"
   },
   "services": {
     "eyebrow": "What we do",
     "title": "Design, development & marketing",
-    "subtitle": "From idea to launch — one place, one team.",
+    "subtitle": "From idea to launch. One place, one team.",
     "design": "Design",
     "designItems": {
       "uiux": "UI/UX Design",
@@ -66,7 +66,7 @@
     "title": "Technologies we use",
     "subtitle": "Modern stack for scalable, maintainable products.",
     "leadersStrip": "Used by industry leaders",
-    "leadersTrust": "The same technologies power Google, Meta, Netflix, and thousands of product teams worldwide. We build on proven, scalable tools.",
+    "leadersTrust": "The same stack powers Google, Meta, Netflix, and thousands of product teams worldwide. We build on proven, production-ready tools.",
     "frontend": "Frontend",
     "backend": "Backend",
     "databases": "Databases",
@@ -75,24 +75,27 @@
   "process": {
     "eyebrow": "How we work",
     "title": "From idea to launch",
-    "subtitle": "A clear, proven process — no surprises.",
+    "subtitle": "A clear process. No surprises.",
     "step1": "Discovery",
-    "step1Desc": "Requirements, scope, and roadmap.",
+    "step1Desc": "Requirements, scope and roadmap.",
     "step2": "Design",
     "step2Desc": "UI/UX and visual direction.",
     "step3": "Development",
     "step3Desc": "Build, iterate, integrate.",
-    "step4": "QA",
-    "step4Desc": "Testing and quality assurance.",
-    "step5": "Launch & Support",
-    "step5Desc": "Deploy and ongoing support."
+    "step4Marketing": "Marketing",
+    "step4MarketingDesc": "Only if you need it. SEO, analytics, campaigns.",
+    "step5": "QA",
+    "step5Desc": "Testing and quality assurance.",
+    "step6": "Launch and Support",
+    "step6Desc": "Deploy and ongoing support.",
+    "stepOptional": "optional"
   },
   "about": {
     "eyebrow": "Who we are",
     "title": "Ortvest is an IT studio",
-    "subtitle": "We solve real business problems with design and technology. No fluff — clear process, solid delivery.",
+    "subtitle": "We solve real business problems with design and technology. No fluff, clear process, solid delivery.",
     "whyTitle": "Why we're different",
-    "why1": "No fluff — we focus on what drives growth.",
+    "why1": "No fluff. We focus on what drives growth.",
     "why2": "Fast delivery without cutting corners.",
     "why3": "Transparent process and direct communication.",
     "valuesTitle": "Values",
@@ -103,19 +106,23 @@
   "faq": {
     "eyebrow": "FAQ",
     "title": "Common questions",
-    "subtitle": "Quick answers about how we work.",
-    "q1": "How long does a typical project take?",
-    "a1": "Depends on scope. A landing page: 2–4 weeks. A full web app: 2–4 months. We'll give a timeline after discovery.",
-    "q2": "Do you work with startups?",
-    "a2": "Yes. We work with startups and established businesses. We adapt to your budget and timeline.",
-    "q3": "What's included in the discovery phase?",
-    "a3": "Requirements gathering, scope definition, tech stack recommendation, and a clear roadmap and quote.",
-    "q4": "Do you offer ongoing support?",
-    "a4": "Yes. After launch we offer maintenance, updates, and support packages.",
-    "q5": "Which technologies do you use?",
-    "a5": "Next.js, React, Vue, NestJS, Go, MongoDB, PostgreSQL, React Native. We choose based on your project.",
-    "q6": "How do we get started?",
-    "a6": "Fill out the contact form or email us. We'll reply within 24 hours and set up a short call."
+    "subtitle": "Clear answers to help you decide.",
+    "q1": "What services do you offer?",
+    "a1": "We cover design, development and marketing within one team.",
+    "q2": "What types of companies do you work with?",
+    "a2": "Startups, growing businesses and established companies. Projects of different scale and complexity.",
+    "q3": "Can I order only one service?",
+    "a3": "Yes. You can work with us on design, development or marketing separately.",
+    "q4": "How does project pricing work?",
+    "a4": "Pricing depends on scope, complexity and timeline. We prepare an individual estimate after a short discovery call.",
+    "q5": "Are all services required?",
+    "a5": "No. We always match the scope to your project needs. You can choose design, development, marketing or any combination.",
+    "q6": "What does the collaboration process look like?",
+    "a6": "Discovery, design, development, optional marketing, launch and support.",
+    "q7": "Do you offer support after launch?",
+    "a7": "Yes. We provide ongoing support, improvements and scaling if needed.",
+    "q8": "How do I start working with you?",
+    "a8": "Simply contact us through the form and we will get back to you shortly."
   },
   "contact": {
     "eyebrow": "Get in touch",
@@ -160,9 +167,9 @@
     "nav": "Navigation"
   },
   "metadata": {
-    "title": "Ortvest — IT Studio | Web & Mobile Development, UI/UX Design, Marketing",
+    "title": "Ortvest. IT Studio. Web & Mobile Development, UI/UX Design, Marketing",
     "description": "Ortvest is an IT studio. We build web and mobile apps, UI/UX design, and marketing that converts. Get in touch for a free consultation.",
-    "ogTitle": "Ortvest — IT Studio | Design, Development, Marketing",
+    "ogTitle": "Ortvest. IT Studio. Design, Development, Marketing",
     "ogDescription": "We build digital products that sell. Web & mobile development, UI/UX design, SEO and marketing. Contact us today."
   }
 }

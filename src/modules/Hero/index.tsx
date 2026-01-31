@@ -4,14 +4,14 @@ import { useTranslations } from 'next-intl';
 
 import { Button, Container } from '@shared/components';
 
-import { fadeUp, staggerContainer, staggerItem, viewport } from '@lib/motion';
+import { staggerContainer, staggerItem, viewport } from '@lib/motion';
 import { motion } from 'framer-motion';
-import { ArrowRight, Award, MessageCircle, Zap } from 'lucide-react';
+import { ArrowRight, Handshake, Headphones, Layers } from 'lucide-react';
 
 const trustBullets = [
-  { key: 'trust1', icon: Zap },
-  { key: 'trust2', icon: Award },
-  { key: 'trust3', icon: MessageCircle },
+  { key: 'trust1', icon: Layers },
+  { key: 'trust2', icon: Handshake },
+  { key: 'trust3', icon: Headphones },
 ] as const;
 
 export function Hero() {

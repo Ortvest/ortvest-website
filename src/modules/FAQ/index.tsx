@@ -17,6 +17,8 @@ const faqItems = [
   { q: 'q4', a: 'a4' },
   { q: 'q5', a: 'a5' },
   { q: 'q6', a: 'a6' },
+  { q: 'q7', a: 'a7' },
+  { q: 'q8', a: 'a8' },
 ] as const;
 
 export function FAQ() {
@@ -45,20 +47,26 @@ export function FAQ() {
             return (
               <div
                 key={q}
-                className="overflow-hidden rounded-2xl border border-black/[0.08] bg-white shadow-card transition-all hover:border-black/15 hover:shadow-card-hover">
+                className="overflow-hidden rounded-2xl border border-black/[0.08] bg-white shadow-card transition-all hover:border-black/15 hover:shadow-card-hover focus-within:ring-2 focus-within:ring-black/10 focus-within:ring-offset-2"
+              >
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-3 px-5 py-4 text-left"
+                  className="flex w-full items-center gap-3 px-5 py-4 text-left transition-colors hover:bg-black/[0.02] focus:outline-none"
                   aria-expanded={isOpen}
                   aria-controls={`faq-answer-${i}`}
-                  id={`faq-question-${i}`}>
+                  id={`faq-question-${i}`}
+                >
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/15">
+                    <HelpCircle className="h-4 w-4 text-black" aria-hidden />
+                  </span>
                   <span className="text-body font-semibold text-black">{t(q)}</span>
                   <motion.span
-                    className="shrink-0 rounded-lg bg-black/[0.04] p-1.5"
+                    className="ml-auto shrink-0 rounded-lg bg-black/[0.04] p-1.5"
                     animate={{ rotate: isOpen ? 180 : 0 }}
-                    transition={{ duration: 0.4, ease: EASE }}>
-                    <ChevronDown className="h-4 w-4 text-black/60" />
+                    transition={{ duration: 0.4, ease: EASE }}
+                  >
+                    <ChevronDown className="h-4 w-4 text-black/60" aria-hidden />
                   </motion.span>
                 </button>
                 <AnimatePresence initial={false}>

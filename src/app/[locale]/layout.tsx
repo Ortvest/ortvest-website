@@ -155,17 +155,14 @@ export default async function RootLayout({
   const messages = await getMessages({ locale });
 
   const faqMessages = (messages?.faq ?? {}) as Record<string, string>;
-  const faqItems: FaqItem[] = [1, 2, 3, 4, 5, 6].flatMap((i) => {
+  const faqItems: FaqItem[] = [1, 2, 3, 4, 5, 6, 7, 8].flatMap((i) => {
     const q = faqMessages[`q${i}`];
     const a = faqMessages[`a${i}`];
     return q && a ? [{ q, a }] : [];
   });
 
   return (
-    <div
-      className="relative min-h-screen bg-white font-sans antialiased text-black"
-      lang={locale}
-    >
+    <div className="relative min-h-screen bg-white font-sans antialiased text-black" lang={locale}>
       <SchemaOrgScript faq={faqItems} />
       <BackgroundEffects />
       <div className="relative z-10 min-h-screen w-full">

@@ -9,19 +9,19 @@
     "cta": "Wyceń projekt"
   },
   "hero": {
-    "eyebrow": "Studio cyfrowe",
-    "headline": "Tworzymy produkty cyfrowe, które sprzedają.",
-    "subheadline": "UI/UX design, rozwój web i mobile oraz marketing, który zamienia odwiedzających w klientów.",
+    "eyebrow": "Studio IT",
+    "headline": "Rozwiązania cyfrowe pełnego cyklu dopasowane do Twoich potrzeb.",
+    "subheadline": "Design, development i marketing wtedy, gdy potrzebujesz.",
     "ctaPrimary": "Wyceń projekt",
     "ctaSecondary": "Zobacz usługi",
-    "trust1": "Szybka realizacja",
-    "trust2": "Wysoka jakość",
-    "trust3": "Bezpośredni kontakt"
+    "trust1": "Ekspertyza pełnego cyklu",
+    "trust2": "Elastyczna współpraca",
+    "trust3": "Długoterminowe wsparcie"
   },
   "services": {
     "eyebrow": "Co robimy",
     "title": "Design, development i marketing",
-    "subtitle": "Od pomysłu do startu — jedno miejsce, jeden zespół.",
+    "subtitle": "Od pomysłu do startu. Jedno miejsce, jeden zespół.",
     "design": "Design",
     "designItems": {
       "uiux": "UI/UX Design",
@@ -66,7 +66,7 @@
     "title": "Technologie",
     "subtitle": "Nowoczesny stos dla skalowalnych produktów.",
     "leadersStrip": "Używane przez liderów branży",
-    "leadersTrust": "Te same technologie wykorzystują Google, Meta, Netflix i tysiące zespołów na świecie. Budujemy na sprawdzonych, skalowalnych narzędziach.",
+    "leadersTrust": "Ten sam stos wykorzystują Google, Meta, Netflix i tysiące zespołów na świecie. Budujemy na sprawdzonych, gotowych do produkcji narzędziach.",
     "frontend": "Frontend",
     "backend": "Backend",
     "databases": "Bazy danych",
@@ -75,24 +75,27 @@
   "process": {
     "eyebrow": "Jak pracujemy",
     "title": "Od pomysłu do startu",
-    "subtitle": "Jasny proces — bez niespodzianek.",
+    "subtitle": "Jasny proces. Bez niespodzianek.",
     "step1": "Discovery",
-    "step1Desc": "Wymagania, zakres, plan.",
+    "step1Desc": "Wymagania, zakres i plan.",
     "step2": "Design",
     "step2Desc": "UI/UX i kierunek wizualny.",
     "step3": "Development",
     "step3Desc": "Budowa, iteracje, integracja.",
-    "step4": "QA",
-    "step4Desc": "Testy i jakość.",
-    "step5": "Launch i wsparcie",
-    "step5Desc": "Wdrożenie i dalsze wsparcie."
+    "step4Marketing": "Marketing",
+    "step4MarketingDesc": "Tylko jeśli potrzebujesz. SEO, analityka, kampanie.",
+    "step5": "QA",
+    "step5Desc": "Testy i jakość.",
+    "step6": "Launch i wsparcie",
+    "step6Desc": "Wdrożenie i dalsze wsparcie.",
+    "stepOptional": "opcjonalnie"
   },
   "about": {
     "eyebrow": "Kim jesteśmy",
     "title": "Ortvest to studio IT",
-    "subtitle": "Rozwiązujemy realne problemy biznesowe designem i technologią. Bez lania wody — jasny proces, solidna realizacja.",
+    "subtitle": "Rozwiązujemy realne problemy biznesowe designem i technologią. Bez lania wody, jasny proces, solidna realizacja.",
     "whyTitle": "Czym się różnimy",
-    "why1": "Bez lania wody — skupiamy się na tym, co napędza wzrost.",
+    "why1": "Bez lania wody. Skupiamy się na tym, co napędza wzrost.",
     "why2": "Szybka realizacja bez cięć w jakości.",
     "why3": "Przejrzysty proces i bezpośredni kontakt.",
     "valuesTitle": "Wartości",
@@ -103,19 +106,23 @@
   "faq": {
     "eyebrow": "FAQ",
     "title": "Częste pytania",
-    "subtitle": "Krótkie odpowiedzi o tym, jak pracujemy.",
-    "q1": "Ile trwa typowy projekt?",
-    "a1": "Zależy od zakresu. Landing: 2–4 tyg. Pełna aplikacja web: 2–4 mies. Damy harmonogram po discovery.",
-    "q2": "Pracujecie ze startupami?",
-    "a2": "Tak. Ze startupami i z ugruntowanymi firmami. Dopasowujemy się do budżetu i terminów.",
-    "q3": "Co wchodzi w fazę discovery?",
-    "a3": "Zbieranie wymagań, określenie zakresu, rekomendacja stacku, jasny plan i wycena.",
-    "q4": "Czy oferujecie wsparcie po starcie?",
-    "a4": "Tak. Po wdrożeniu — utrzymanie, aktualizacje i pakiety wsparcia.",
-    "q5": "Jakich technologii używacie?",
-    "a5": "Next.js, React, Vue, NestJS, Go, MongoDB, PostgreSQL, React Native. Dobieramy pod projekt.",
-    "q6": "Jak zacząć?",
-    "a6": "Wypełnij formularz lub napisz na email. Odpowiemy w 24h i umówimy krótką rozmowę."
+    "subtitle": "Jasne odpowiedzi, które pomogą Ci podjąć decyzję.",
+    "q1": "Jakie usługi oferujecie?",
+    "a1": "Obejmujemy design, development i marketing w jednym zespole.",
+    "q2": "Dla jakich firm pracujecie?",
+    "a2": "Startupy, rozwijające się firmy i ugruntowane przedsiębiorstwa. Projekty różnej skali i złożoności.",
+    "q3": "Czy mogę zamówić tylko jedną usługę?",
+    "a3": "Tak. Możesz współpracować z nami wyłącznie w zakresie designu, developmentu lub marketingu.",
+    "q4": "Jak wygląda wycena projektu?",
+    "a4": "Cena zależy od zakresu, złożoności i terminów. Przygotowujemy indywidualną wycenę po krótkiej rozmowie.",
+    "q5": "Czy wszystkie usługi są obowiązkowe?",
+    "a5": "Nie. Zakres współpracy zawsze dopasowujemy do potrzeb projektu. Możesz wybrać tylko design, development, marketing lub ich dowolne połączenie.",
+    "q6": "Jak wygląda proces współpracy?",
+    "a6": "Discovery, design, development, opcjonalny marketing, launch i wsparcie.",
+    "q7": "Czy oferujecie wsparcie po wdrożeniu?",
+    "a7": "Tak. Zapewniamy ciągłe wsparcie, ulepszenia i skalowanie w razie potrzeby.",
+    "q8": "Jak zacząć współpracę?",
+    "a8": "Wystarczy skontaktować się przez formularz. Odpowiemy wkrótce."
   },
   "contact": {
     "eyebrow": "Kontakt",
@@ -160,9 +167,9 @@
     "nav": "Nawigacja"
   },
   "metadata": {
-    "title": "Ortvest — Studio IT | Web i Mobile, UI/UX Design, Marketing",
+    "title": "Ortvest. Studio IT. Web i Mobile, UI/UX Design, Marketing",
     "description": "Ortvest to studio IT. Tworzymy aplikacje web i mobile, UI/UX design i marketing, który konwertuje. Skontaktuj się po darmową konsultację.",
-    "ogTitle": "Ortvest — Studio IT | Design, Development, Marketing",
+    "ogTitle": "Ortvest. Studio IT. Design, Development, Marketing",
     "ogDescription": "Tworzymy produkty cyfrowe, które sprzedają. Web i mobile, UI/UX, SEO i marketing."
   }
 }

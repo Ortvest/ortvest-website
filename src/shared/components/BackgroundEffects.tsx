@@ -2,7 +2,7 @@
 
 /**
  * Background like reference: soft amorphous blobs in salad green,
- * subtle grid, clearly visible but diffused. No tiny dots — large soft shapes.
+ * subtle grid, clearly visible but diffused. No tiny dots, large soft shapes.
  */
 
 const SALAD = 'rgba(205, 255, 78,';
@@ -30,7 +30,7 @@ const SOFT_BLOBS: {
 export function BackgroundEffects() {
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden>
-      {/* Subtle grid (like reference — fine lines) */}
+      {/* Subtle grid (like reference, fine lines) */}
       <div
         className="absolute inset-0 opacity-[0.4]"
         style={{
@@ -42,7 +42,7 @@ export function BackgroundEffects() {
         }}
       />
 
-      {/* Soft amorphous blobs — salad, like reference purple blobs */}
+      {/* Soft amorphous blobs, salad, like reference purple blobs */}
       <div className="absolute inset-0">
         {SOFT_BLOBS.map((b, i) => (
           <div
@@ -63,7 +63,7 @@ export function BackgroundEffects() {
         ))}
       </div>
 
-      {/* Large oval behind hero right (like reference — main big shape) */}
+      {/* Large oval behind hero right (like reference, main big shape) */}
       <div
         className="absolute right-0 top-0 h-[75%] w-[58%] rounded-full"
         style={{
@@ -90,7 +90,7 @@ export function BackgroundEffects() {
         }}
       />
 
-      {/* Noise — light texture */}
+      {/* Noise, light texture */}
       <div
         className="absolute inset-0 opacity-[0.05]"
         style={{

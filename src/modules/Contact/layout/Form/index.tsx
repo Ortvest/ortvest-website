@@ -173,7 +173,7 @@ export function Form() {
           </AnimatePresence>
         </motion.div>
 
-        {/* Project type — multi-select pills */}
+        {/* Project type: multi-select pills */}
         <div>
           <span className="mb-2 block text-body-sm font-medium text-black">
             {t('projectType')} <span className="text-black/40">(optional)</span>
