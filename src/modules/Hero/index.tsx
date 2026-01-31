@@ -4,8 +4,6 @@ import { useTranslations } from 'next-intl';
 
 import { Button, Container } from '@shared/components';
 
-import { staggerContainer, staggerItem, viewport } from '@lib/motion';
-import { motion } from 'framer-motion';
 import { ArrowRight, Handshake, Headphones, Layers } from 'lucide-react';
 
 const trustBullets = [
@@ -24,55 +22,38 @@ export function Hero() {
       aria-labelledby="hero-heading">
       <Container className="relative z-10">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 lg:items-center">
-          {/* Left content */}
-          <motion.div className="max-w-xl" initial="hidden" animate="visible" variants={staggerContainer}>
-            <motion.div
-              className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-3 py-1.5"
-              variants={staggerItem}>
+          <div className="max-w-xl">
+            <div className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-3 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
               <span className="text-xs font-semibold uppercase tracking-wider text-black/70">{t('eyebrow')}</span>
-            </motion.div>
+            </div>
 
-            <motion.h1
+            <h1
               id="hero-heading"
-              className="mt-5 text-display-sm font-bold leading-[1.1] tracking-tight text-black sm:text-display"
-              variants={staggerItem}>
+              className="mt-5 text-display-sm font-bold leading-[1.1] tracking-tight text-black sm:text-display">
               {t('headline')}
-            </motion.h1>
+            </h1>
 
-            <motion.p className="mt-5 text-body-lg text-black/60 sm:text-xl" variants={staggerItem}>
-              {t('subheadline')}
-            </motion.p>
+            <p className="mt-5 text-body-lg text-black/60 sm:text-xl">{t('subheadline')}</p>
 
-            <motion.div className="mt-8 flex flex-wrap items-center gap-3" variants={staggerItem}>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button href="#contact" variant="primary" size="lg" icon={<ArrowRight className="h-4 w-4" />} iconRight>
                 {t('ctaPrimary')}
               </Button>
               <Button href="#services" variant="ghost" size="lg">
                 {t('ctaSecondary')}
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          {/* Right illustration */}
-          <motion.div
-            className="relative hidden lg:flex justify-end"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-            aria-hidden>
+          <div className="relative hidden lg:flex justify-end" aria-hidden>
             <div className="relative h-80 w-80 xl:h-96 xl:w-96">
-              {/* Abstract tech illustration */}
               <svg viewBox="0 0 400 400" fill="none" className="h-full w-full">
-                {/* Outer ring */}
                 <circle cx="200" cy="200" r="180" stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
                 <circle cx="200" cy="200" r="140" stroke="rgba(0,0,0,0.04)" strokeWidth="1" />
-                {/* Green glow */}
                 <circle cx="200" cy="200" r="100" fill="url(#heroGrad)" />
-                {/* Center accent */}
                 <circle cx="200" cy="200" r="60" fill="rgba(205, 255, 78, 0.3)" />
                 <circle cx="200" cy="200" r="30" fill="rgba(205, 255, 78, 0.5)" />
-                {/* Dots */}
                 <circle cx="200" cy="60" r="4" fill="rgba(0,0,0,0.15)" />
                 <circle cx="340" cy="200" r="4" fill="rgba(0,0,0,0.15)" />
                 <circle cx="200" cy="340" r="4" fill="rgba(0,0,0,0.15)" />
@@ -85,27 +66,21 @@ export function Hero() {
                 </defs>
               </svg>
             </div>
-          </motion.div>
+          </div>
         </div>
 
-        {/* Trust bullets */}
-        <motion.div
-          className="mt-12 border-t border-black/[0.06] pt-8 sm:mt-14 sm:pt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewport}
-          variants={staggerContainer}>
+        <div className="mt-12 border-t border-black/[0.06] pt-8 sm:mt-14 sm:pt-10">
           <ul className="flex flex-wrap justify-center gap-6 sm:gap-10 lg:justify-start" role="list">
             {trustBullets.map(({ key, icon: Icon }) => (
-              <motion.li key={key} className="flex items-center gap-2.5" variants={staggerItem}>
+              <li key={key} className="flex items-center gap-2.5">
                 <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent/15">
                   <Icon className="h-4 w-4 text-black" />
                 </span>
                 <span className="text-sm font-medium text-black/70">{t(key)}</span>
-              </motion.li>
+              </li>
             ))}
           </ul>
-        </motion.div>
+        </div>
       </Container>
     </section>
   );

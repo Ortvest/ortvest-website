@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react';
 
-import { hoverLift, staggerItem } from '@lib/motion';
+import { hoverLift } from '@lib/motion';
 import { motion } from 'framer-motion';
 
 interface InteractiveCardProps {
@@ -13,7 +13,7 @@ interface InteractiveCardProps {
   href?: string;
 }
 
-export function InteractiveCard({ children, icon, className = '', as: Tag = 'article' }: InteractiveCardProps) {
+export function InteractiveCard({ children, icon, className = '' }: InteractiveCardProps) {
   return (
     <motion.div
       className={`
@@ -25,7 +25,6 @@ export function InteractiveCard({ children, icon, className = '', as: Tag = 'art
       `
         .replace(/\s+/g, ' ')
         .trim()}
-      variants={staggerItem}
       {...hoverLift}>
       {/* Subtle shine on hover */}
       <div

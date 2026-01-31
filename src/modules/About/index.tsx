@@ -2,10 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 
-import { Container, InteractiveCard, SectionHeader } from '@shared/components';
+import { Container, InteractiveCard, SectionHeader, SectionReveal } from '@shared/components';
 
-import { staggerContainer, staggerItem, viewport } from '@lib/motion';
-import { motion } from 'framer-motion';
 import { Award, Eye, Handshake, MessageSquare, Target, Users, Zap } from 'lucide-react';
 
 const whyPoints = [
@@ -26,53 +24,42 @@ export function About() {
   return (
     <section id="about" className="section-padding bg-white" aria-labelledby="about-heading">
       <Container>
-        <SectionHeader
-          eyebrow={t('eyebrow')}
-          title={t('title')}
-          description={t('subtitle')}
-          icon={Users}
-          className="mb-10"
-        />
+        <SectionReveal direction="left">
+          <SectionHeader
+            eyebrow={t('eyebrow')}
+            title={t('title')}
+            description={t('subtitle')}
+            icon={Users}
+            className="mb-10"
+          />
 
-        {/* Why we're different */}
-        <div className="mb-10">
-          <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-black/50">{t('whyTitle')}</h3>
-          <motion.div
-            className="grid gap-4 sm:grid-cols-3"
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewport}
-            variants={staggerContainer}>
-            {whyPoints.map(({ key, icon: Icon }) => (
-              <motion.div
-                key={key}
-                className="flex items-start gap-3 rounded-xl border border-black/[0.06] bg-white p-4"
-                variants={staggerItem}>
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/15">
-                  <Icon className="h-4 w-4 text-black" />
-                </span>
-                <p className="text-body-sm text-black/70">{t(key)}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
+          <div className="mb-10">
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-black/50">{t('whyTitle')}</h3>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {whyPoints.map(({ key, icon: Icon }) => (
+                <div
+                  key={key}
+                  className="flex items-start gap-3 rounded-xl border border-black/[0.06] bg-white p-4">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/15">
+                    <Icon className="h-4 w-4 text-black" />
+                  </span>
+                  <p className="text-body-sm text-black/70">{t(key)}</p>
+                </div>
+              ))}
+            </div>
+          </div>
 
-        {/* Values */}
-        <div>
-          <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-black/50">{t('valuesTitle')}</h3>
-          <motion.div
-            className="grid gap-4 sm:grid-cols-3"
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewport}
-            variants={staggerContainer}>
-            {values.map(({ key, icon: Icon }) => (
-              <InteractiveCard key={key} icon={<Icon className="h-5 w-5" />}>
-                <p className="text-h4 text-black">{t(key)}</p>
-              </InteractiveCard>
-            ))}
-          </motion.div>
-        </div>
+          <div>
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-black/50">{t('valuesTitle')}</h3>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {values.map(({ key, icon: Icon }) => (
+                <InteractiveCard key={key} icon={<Icon className="h-5 w-5" />}>
+                  <p className="text-h4 text-black">{t(key)}</p>
+                </InteractiveCard>
+              ))}
+            </div>
+          </div>
+        </SectionReveal>
       </Container>
     </section>
   );

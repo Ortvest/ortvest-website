@@ -1,7 +1,5 @@
 'use client';
 
-import { fadeUp, viewport } from '@lib/motion';
-import { motion } from 'framer-motion';
 import { LucideIcon } from 'lucide-react';
 
 interface SectionHeaderProps {
@@ -24,12 +22,7 @@ export function SectionHeader({
   const alignClass = align === 'center' ? 'text-center mx-auto' : 'text-left';
 
   return (
-    <motion.header
-      className={`max-w-2xl ${alignClass} ${className}`.trim()}
-      initial={fadeUp.initial}
-      whileInView={fadeUp.animate}
-      viewport={viewport}
-      transition={fadeUp.transition}>
+    <header className={`max-w-2xl ${alignClass} ${className}`.trim()}>
       {(eyebrow || Icon) && (
         <div className={`flex items-center gap-2 mb-3 ${align === 'center' ? 'justify-center' : ''}`}>
           {Icon && (
@@ -42,6 +35,6 @@ export function SectionHeader({
       )}
       <h2 className="text-h2 text-black">{title}</h2>
       {description && <p className="mt-3 text-body-lg text-black/60">{description}</p>}
-    </motion.header>
+    </header>
   );
 }

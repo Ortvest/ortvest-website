@@ -6,3 +6,4 @@ export { Divider } from './Divider';
 export { IconBadge } from './IconBadge';
 export { InteractiveCard } from './InteractiveCard';
 export { SectionHeader } from './SectionHeader';
+export { SectionReveal } from './SectionReveal';
