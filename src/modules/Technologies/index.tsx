@@ -86,8 +86,7 @@ export function Technologies() {
               <motion.div
                 key={logo.name}
                 className="flex items-center gap-2 opacity-60 grayscale transition hover:opacity-100 hover:grayscale-0"
-                {...hoverScale}
-              >
+                {...hoverScale}>
                 {logo.path ? (
                   <Image src={logo.path} alt={logo.name} width={24} height={24} className="h-6 w-6" />
                 ) : (
@@ -133,8 +132,7 @@ export function Technologies() {
                         ) : (
                           <span
                             className="flex h-4 w-4 shrink-0 items-center justify-center rounded bg-black/10 text-[10px] font-semibold text-black/60"
-                            aria-hidden
-                          >
+                            aria-hidden>
                             {item.name.charAt(0)}
                           </span>
                         )}

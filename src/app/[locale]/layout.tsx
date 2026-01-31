@@ -12,8 +12,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const ogTitle = t('metadata.ogTitle');
   const ogDescription = t('metadata.ogDescription');
 
-  const verification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+  const verification = process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
     : undefined;
 
   return {

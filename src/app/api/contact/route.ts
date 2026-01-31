@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getCollection } from '@lib/mongodb';
 
 const COLLECTION = 'contact_submissions';
+const EXTERNAL_BACKEND = process.env.BACKEND_APP || process.env.NEXT_PUBLIC_BACKEND_APP;
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 
 export interface ContactBody {
   clientName: string;
@@ -43,12 +45,30 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const collection = await getCollection(COLLECTION);
-    const doc: ContactDoc = {
+    const payload = {
       clientName: body.clientName.trim(),
       clientEmail: body.clientEmail.trim(),
       productDescription: body.productDescription.trim(),
       selectedServices: Array.isArray(body.selectedServices) ? body.selectedServices : [],
+    };
+
+    if (EXTERNAL_BACKEND && ACCESS_TOKEN) {
+      const res = await fetch(`${EXTERNAL_BACKEND.replace(/\/$/, '')}/orders/new`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${ACCESS_TOKEN}`,
+        },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error('External backend error');
+      const data = await res.json();
+      return NextResponse.json(data);
+    }
+
+    const collection = await getCollection(COLLECTION);
+    const doc: ContactDoc = {
+      ...payload,
       createdAt: new Date().toISOString(),
     };
 

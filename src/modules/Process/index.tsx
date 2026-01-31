@@ -48,9 +48,7 @@ export function Process() {
               <h3 className="mt-1 text-h4 text-black">
                 {t(key)}
                 {optional && (
-                  <span className="ml-1.5 text-body-sm font-normal text-black/50">
-                    ({t('stepOptional')})
-                  </span>
+                  <span className="ml-1.5 text-body-sm font-normal text-black/50">({t('stepOptional')})</span>
                 )}
               </h3>
               <p className="mt-2 text-body-sm text-black/60">{t(desc)}</p>
