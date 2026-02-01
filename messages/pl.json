@@ -6,7 +6,8 @@
     "about": "O nas",
     "faq": "FAQ",
     "contact": "Kontakt",
-    "cta": "Wyceń projekt"
+    "cta": "Wyceń projekt",
+    "menuSlogan": "Od pomysłu do startu. Jeden zespół."
   },
   "hero": {
     "eyebrow": "Studio IT",
@@ -145,6 +146,7 @@
   },
   "footer": {
     "nav": "Nawigacja",
+    "getInTouch": "Skontaktuj się",
     "services": "Usługi",
     "technologies": "Technologie",
     "process": "Proces",

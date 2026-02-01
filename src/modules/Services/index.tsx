@@ -82,7 +82,9 @@ export function Services() {
               {marketingPackages.map(({ tier, keys, itemsKey }) => (
                 <InteractiveCard key={tier} icon={<TrendingUp className="h-5 w-5" />}>
                   <h4 className="text-h4 text-black">{t(`marketing${tier}`)}</h4>
-                  <p className="mt-1 text-xs font-medium uppercase tracking-wider text-black/40">{t('whatsIncluded')}</p>
+                  <p className="mt-1 text-xs font-medium uppercase tracking-wider text-black/40">
+                    {t('whatsIncluded')}
+                  </p>
                   <ul className="mt-3 space-y-2" role="list">
                     {keys.map((key) => (
                       <li key={key} className="flex items-center gap-2 text-body-sm text-black/70">

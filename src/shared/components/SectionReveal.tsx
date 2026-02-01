@@ -1,5 +1,6 @@
 'use client';
 
+import { useIsMobile } from '@shared/hooks/useIsMobile';
 import { motion } from 'framer-motion';
 
 type Direction = 'left' | 'right';
@@ -11,6 +12,12 @@ interface SectionRevealProps {
 }
 
 export function SectionReveal({ direction, children, className = '' }: SectionRevealProps) {
+  const isMobile = useIsMobile();
+
+  if (isMobile) {
+    return <div className={className}>{children}</div>;
+  }
+
   const x = direction === 'left' ? -20 : 20;
   return (
     <motion.div

@@ -1,5 +1,7 @@
 'use client';
 
+import { useIsMobile } from '@shared/hooks/useIsMobile';
+
 /**
  * Background like reference: soft amorphous blobs in salad green,
  * subtle grid, clearly visible but diffused. No tiny dots, large soft shapes.
@@ -27,10 +29,15 @@ const SOFT_BLOBS: {
   { left: '35%', top: '35%', width: 260, height: 260, opacity: 0.08, blur: 90, delay: 0.4 },
 ];
 
+/** Mobile: fewer blobs, no animation, reduced blur for scroll performance */
+const MOBILE_BLOBS = SOFT_BLOBS.slice(0, 3).map((b) => ({ ...b, blur: Math.min(b.blur, 60) }));
+
 export function BackgroundEffects() {
+  const isMobile = useIsMobile();
+
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden>
-      {/* Subtle grid (like reference, fine lines) */}
+      {/* Subtle grid */}
       <div
         className="absolute inset-0 opacity-[0.4]"
         style={{
@@ -42,9 +49,9 @@ export function BackgroundEffects() {
         }}
       />
 
-      {/* Soft amorphous blobs, salad, like reference purple blobs */}
+      {/* Soft blobs — simplified on mobile for scroll performance */}
       <div className="absolute inset-0">
-        {SOFT_BLOBS.map((b, i) => (
+        {(isMobile ? MOBILE_BLOBS : SOFT_BLOBS).map((b, i) => (
           <div
             key={i}
             className="absolute rounded-full"
@@ -56,39 +63,38 @@ export function BackgroundEffects() {
               background: `radial-gradient(ellipse 80% 80% at 50% 50%, ${SALAD}${b.opacity}) 0%, transparent 70%)`,
               filter: `blur(${b.blur}px)`,
               transform: 'translate(-50%, -50%)',
-              animation: `blobAppear 1.8s ease-out ${b.delay}s forwards`,
-              opacity: 0,
+              ...(isMobile ? { opacity: 1 } : { animation: `blobAppear 1.8s ease-out ${b.delay}s forwards`, opacity: 0 }),
             }}
           />
         ))}
       </div>
 
-      {/* Large oval behind hero right (like reference, main big shape) */}
-      <div
-        className="absolute right-0 top-0 h-[75%] w-[58%] rounded-full"
-        style={{
-          background: `radial-gradient(ellipse 70% 75% at 85% 25%, ${SALAD}0.22) 0%, transparent 58%)`,
-          filter: 'blur(90px)',
-        }}
-      />
-
-      {/* Mid-right soft area */}
-      <div
-        className="absolute right-[-8%] top-[28%] h-[55%] w-[48%] rounded-full"
-        style={{
-          background: `radial-gradient(ellipse 65% 70% at 72% 48%, ${SALAD}0.18) 0%, transparent 62%)`,
-          filter: 'blur(95px)',
-        }}
-      />
-
-      {/* Lower left soft area */}
-      <div
-        className="absolute bottom-[-5%] left-[-5%] h-[50%] w-[52%] rounded-full"
-        style={{
-          background: `radial-gradient(ellipse 68% 62% at 28% 82%, ${SALAD}0.16) 0%, transparent 58%)`,
-          filter: 'blur(88px)',
-        }}
-      />
+      {/* Large oval, mid-right, lower left — desktop only for scroll perf on mobile */}
+      {!isMobile && (
+        <>
+          <div
+            className="absolute right-0 top-0 h-[75%] w-[58%] rounded-full"
+            style={{
+              background: `radial-gradient(ellipse 70% 75% at 85% 25%, ${SALAD}0.22) 0%, transparent 58%)`,
+              filter: 'blur(90px)',
+            }}
+          />
+          <div
+            className="absolute right-[-8%] top-[28%] h-[55%] w-[48%] rounded-full"
+            style={{
+              background: `radial-gradient(ellipse 65% 70% at 72% 48%, ${SALAD}0.18) 0%, transparent 62%)`,
+              filter: 'blur(95px)',
+            }}
+          />
+          <div
+            className="absolute bottom-[-5%] left-[-5%] h-[50%] w-[52%] rounded-full"
+            style={{
+              background: `radial-gradient(ellipse 68% 62% at 28% 82%, ${SALAD}0.16) 0%, transparent 58%)`,
+              filter: 'blur(88px)',
+            }}
+          />
+        </>
+      )}
 
       {/* Noise, light texture */}
       <div

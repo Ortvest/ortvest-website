@@ -6,7 +6,8 @@
     "about": "About",
     "faq": "FAQ",
     "contact": "Contact",
-    "cta": "Get a quote"
+    "cta": "Get a quote",
+    "menuSlogan": "From idea to launch. One team."
   },
   "hero": {
     "eyebrow": "IT Studio",
@@ -145,6 +146,7 @@
   },
   "footer": {
     "nav": "Navigation",
+    "getInTouch": "Get in touch",
     "services": "Services",
     "technologies": "Technologies",
     "process": "Process",

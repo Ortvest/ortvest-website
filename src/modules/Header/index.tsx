@@ -9,7 +9,6 @@ import { useTranslations } from 'next-intl';
 import { Burger } from '@modules/Header/features/Burger';
 import { BurgerMenu } from '@modules/Header/features/BurgerMenu';
 import { Navigation } from '@modules/Header/features/Navagation';
-import AppIconMobile from '@public/icons/AppLogo.svg';
 import AppIcon from '@public/icons/AppLogoHorizontal.svg';
 import { ArrowRight } from 'lucide-react';
 
@@ -36,19 +35,11 @@ export function Header() {
           className="relative z-50 flex shrink-0 transition-opacity hover:opacity-80"
           aria-label="Home">
           <Image
-            src={AppIconMobile}
-            alt="Ortvest"
-            width={100}
-            height={28}
-            className="h-7 w-auto object-contain md:hidden"
-            priority
-          />
-          <Image
             src={AppIcon}
             alt="Ortvest"
-            width={120}
-            height={32}
-            className="hidden h-8 w-auto object-contain md:block"
+            width={150}
+            height={40}
+            className="h-9 w-auto max-w-[160px] object-contain object-left sm:max-w-none sm:h-10"
             priority
           />
         </Link>

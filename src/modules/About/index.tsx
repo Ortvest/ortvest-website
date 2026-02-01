@@ -37,9 +37,7 @@ export function About() {
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-black/50">{t('whyTitle')}</h3>
             <div className="grid gap-4 sm:grid-cols-3">
               {whyPoints.map(({ key, icon: Icon }) => (
-                <div
-                  key={key}
-                  className="flex items-start gap-3 rounded-xl border border-black/[0.06] bg-white p-4">
+                <div key={key} className="flex items-start gap-3 rounded-xl border border-black/[0.06] bg-white p-4">
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/15">
                     <Icon className="h-4 w-4 text-black" />
                   </span>
