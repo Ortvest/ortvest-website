@@ -3,6 +3,7 @@
 import { ReactNode } from 'react';
 
 import { useIsMobile } from '@shared/hooks/useIsMobile';
+
 import { hoverLift } from '@lib/motion';
 import { motion } from 'framer-motion';
 

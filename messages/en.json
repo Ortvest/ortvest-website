@@ -4,6 +4,7 @@
     "technologies": "Technologies",
     "process": "Process",
     "about": "About",
+    "cases": "Cases",
     "faq": "FAQ",
     "contact": "Contact",
     "cta": "Get a quote",
@@ -144,6 +145,64 @@
     "success": "Message sent. We'll contact you soon.",
     "error": "Something went wrong. Please try again or email us directly."
   },
+  "cases": {
+    "eyebrow": "Our work",
+    "title": "Selected projects",
+    "subtitle": "Real challenges. Proven solutions.",
+    "ndaBanner": "Most of our projects are protected by NDA, which means clients trust us with sensitive products. We're happy to walk you through them on a call.",
+    "filter": {
+      "all": "All",
+      "design": "Design",
+      "development": "Development"
+    },
+    "subfilterLabel": "Type",
+    "categoryBadge": {
+      "design": "Design",
+      "development": "Development",
+      "designAndDevelopment": "Design + Dev",
+      "marketing": "Marketing"
+    },
+    "subcategory": {
+      "design": {
+        "logo": "Logo",
+        "web": "Web",
+        "brand": "Brand"
+      },
+      "development": {
+        "web": "Web",
+        "mobile": "Mobile"
+      }
+    },
+    "hideNDA": "Hide NDA",
+    "emptyState": "Be the first in this category — and we'll turn it into a case study that inspires others.",
+    "beFirstButton": "I want to be first",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "inProgress": "In progress",
+    "designBy": "Design by",
+    "ndaDetails": "Book a call to learn more",
+    "ctaText": "Want to see more? Let's talk about your project.",
+    "ctaButton": "Book a call"
+  },
+  "caseDetail": {
+    "backToCases": "Back to cases",
+    "overview": "Overview",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "techStack": "Tech stack",
+    "category": {
+      "design": "Design",
+      "development": "Development"
+    },
+    "inProgress": "In progress",
+    "designBy": "Design by",
+    "visitWebsite": "Visit website",
+    "ndaText": "We can't share public details, but we'd love to walk you through this on a call.",
+    "bookCall": "Book a call",
+    "ctaTitle": "Have a similar project?",
+    "ctaText": "Let's discuss how we can help you achieve your goals.",
+    "ctaButton": "Get in touch"
+  },
   "footer": {
     "nav": "Navigation",
     "getInTouch": "Get in touch",
@@ -151,6 +210,7 @@
     "technologies": "Technologies",
     "process": "Process",
     "about": "About",
+    "cases": "Cases",
     "faq": "FAQ",
     "contact": "Contact",
     "language": "Language",

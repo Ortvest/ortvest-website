@@ -63,7 +63,9 @@ export function BackgroundEffects() {
               background: `radial-gradient(ellipse 80% 80% at 50% 50%, ${SALAD}${b.opacity}) 0%, transparent 70%)`,
               filter: `blur(${b.blur}px)`,
               transform: 'translate(-50%, -50%)',
-              ...(isMobile ? { opacity: 1 } : { animation: `blobAppear 1.8s ease-out ${b.delay}s forwards`, opacity: 0 }),
+              ...(isMobile
+                ? { opacity: 1 }
+                : { animation: `blobAppear 1.8s ease-out ${b.delay}s forwards`, opacity: 0 }),
             }}
           />
         ))}

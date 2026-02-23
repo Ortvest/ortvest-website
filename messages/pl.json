@@ -4,6 +4,7 @@
     "technologies": "Technologie",
     "process": "Proces",
     "about": "O nas",
+    "cases": "Projekty",
     "faq": "FAQ",
     "contact": "Kontakt",
     "cta": "Wyceń projekt",
@@ -144,6 +145,64 @@
     "success": "Wiadomość wysłana. Wkrótce się odezwiemy.",
     "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz na email."
   },
+  "cases": {
+    "eyebrow": "Nasze projekty",
+    "title": "Wybrane realizacje",
+    "subtitle": "Realne wyzwania. Sprawdzone rozwiązania.",
+    "ndaBanner": "Większość naszych projektów jest objęta NDA, co oznacza, że klienci ufają nam wrażliwe produkty. Chętnie opowiemy o nich podczas rozmowy.",
+    "filter": {
+      "all": "Wszystkie",
+      "design": "Design",
+      "development": "Development"
+    },
+    "subfilterLabel": "Typ",
+    "categoryBadge": {
+      "design": "Design",
+      "development": "Development",
+      "designAndDevelopment": "Design + Dev",
+      "marketing": "Marketing"
+    },
+    "subcategory": {
+      "design": {
+        "logo": "Logo",
+        "web": "Web",
+        "brand": "Brand"
+      },
+      "development": {
+        "web": "Web",
+        "mobile": "Mobile"
+      }
+    },
+    "hideNDA": "Ukryj NDA",
+    "emptyState": "Bądź pierwszy w tej kategorii — a my stworzymy z tego case study, którym będą się inspirować inni.",
+    "beFirstButton": "Chcę być pierwszy",
+    "challenge": "Wyzwanie",
+    "solution": "Rozwiązanie",
+    "inProgress": "W trakcie",
+    "designBy": "Projekt",
+    "ndaDetails": "Umów rozmowę, aby dowiedzieć się więcej",
+    "ctaText": "Chcesz zobaczyć więcej? Porozmawiajmy o Twoim projekcie.",
+    "ctaButton": "Umów rozmowę"
+  },
+  "caseDetail": {
+    "backToCases": "Powrót do projektów",
+    "overview": "Przegląd",
+    "challenge": "Wyzwanie",
+    "solution": "Rozwiązanie",
+    "techStack": "Technologie",
+    "category": {
+      "design": "Design",
+      "development": "Development"
+    },
+    "inProgress": "W trakcie",
+    "designBy": "Projekt",
+    "visitWebsite": "Odwiedź stronę",
+    "ndaText": "Nie możemy udostępnić szczegółów publicznie, ale chętnie opowiemy o tym projekcie podczas rozmowy.",
+    "bookCall": "Umów rozmowę",
+    "ctaTitle": "Masz podobny projekt?",
+    "ctaText": "Porozmawiajmy o tym, jak możemy Ci pomóc.",
+    "ctaButton": "Skontaktuj się"
+  },
   "footer": {
     "nav": "Nawigacja",
     "getInTouch": "Skontaktuj się",
@@ -151,6 +210,7 @@
     "technologies": "Technologie",
     "process": "Proces",
     "about": "O nas",
+    "cases": "Projekty",
     "faq": "FAQ",
     "contact": "Kontakt",
     "language": "Język",

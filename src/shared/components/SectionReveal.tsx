@@ -1,6 +1,7 @@
 'use client';
 
 import { useIsMobile } from '@shared/hooks/useIsMobile';
+
 import { motion } from 'framer-motion';
 
 type Direction = 'left' | 'right';

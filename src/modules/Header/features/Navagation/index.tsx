@@ -7,7 +7,7 @@ import { sectionIds } from '@shared/enums/SectionID.enums';
 
 import { LangSwitch } from '@modules/Header/features/LangSwitch';
 
-const navKeys = ['about', 'services', 'process', 'technologies', 'faq', 'contact'] as const;
+const navKeys = ['about', 'services', 'process', 'technologies', 'cases', 'faq', 'contact'] as const;
 
 export function Navigation() {
   const t = useTranslations('nav');

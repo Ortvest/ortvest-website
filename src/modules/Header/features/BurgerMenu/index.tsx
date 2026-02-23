@@ -1,10 +1,11 @@
 'use client';
 
+import { useEffect } from 'react';
+import { createPortal } from 'react-dom';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { createPortal } from 'react-dom';
 
 import { sectionIds } from '@shared/enums/SectionID.enums';
 import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
@@ -16,7 +17,7 @@ import AppIconHorizontal from '@public/icons/AppLogoHorizontal.svg';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 
-const navKeys = ['about', 'services', 'process', 'technologies', 'faq', 'contact'] as const;
+const navKeys = ['about', 'services', 'process', 'technologies', 'cases', 'faq', 'contact'] as const;
 
 export function BurgerMenu() {
   const t = useTranslations('nav');
@@ -61,9 +62,7 @@ export function BurgerMenu() {
             <X className="h-5 w-5 text-black" strokeWidth={2} />
           </button>
 
-          <nav
-            className="container-main flex flex-1 flex-col gap-1 pb-6 pt-20"
-            aria-label="Mobile navigation">
+          <nav className="container-main flex flex-1 flex-col gap-1 pb-6 pt-20" aria-label="Mobile navigation">
             {navKeys.map((key, i) => (
               <motion.div
                 key={key}

@@ -1,0 +1,50 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#cdff4e"/>
+  
+  <!-- Particles - circles of various sizes -->
+  <circle cx="150" cy="120" r="4" fill="#000000" opacity="0.08"/>
+  <circle cx="280" cy="180" r="6" fill="#000000" opacity="0.06"/>
+  <circle cx="420" cy="140" r="3" fill="#000000" opacity="0.1"/>
+  <circle cx="580" cy="100" r="5" fill="#000000" opacity="0.07"/>
+  <circle cx="720" cy="160" r="4" fill="#000000" opacity="0.09"/>
+  <circle cx="880" cy="110" r="7" fill="#000000" opacity="0.05"/>
+  <circle cx="1020" cy="150" r="3" fill="#000000" opacity="0.08"/>
+  
+  <circle cx="100" cy="300" r="5" fill="#000000" opacity="0.06"/>
+  <circle cx="200" cy="380" r="3" fill="#000000" opacity="0.09"/>
+  <circle cx="350" cy="420" r="6" fill="#000000" opacity="0.07"/>
+  <circle cx="950" cy="320" r="4" fill="#000000" opacity="0.08"/>
+  <circle cx="1080" cy="380" r="5" fill="#000000" opacity="0.06"/>
+  
+  <circle cx="180" cy="520" r="4" fill="#000000" opacity="0.07"/>
+  <circle cx="320" cy="580" r="6" fill="#000000" opacity="0.05"/>
+  <circle cx="480" cy="540" r="3" fill="#000000" opacity="0.09"/>
+  <circle cx="740" cy="560" r="5" fill="#000000" opacity="0.06"/>
+  <circle cx="900" cy="520" r="4" fill="#000000" opacity="0.08"/>
+  <circle cx="1050" cy="580" r="3" fill="#000000" opacity="0.07"/>
+  
+  <!-- Larger decorative circles -->
+  <circle cx="220" cy="250" r="40" fill="#000000" opacity="0.02"/>
+  <circle cx="980" cy="450" r="60" fill="#000000" opacity="0.02"/>
+  <circle cx="850" cy="200" r="35" fill="#000000" opacity="0.03"/>
+  <circle cx="300" cy="500" r="50" fill="#000000" opacity="0.02"/>
+  
+  <!-- Lock icon - centered and properly sized -->
+  <g transform="translate(560, 240)">
+    <!-- Lock body -->
+    <rect x="10" y="40" width="60" height="70" rx="8" fill="#000000" opacity="0.85"/>
+    <!-- Lock shackle -->
+    <path d="M 20 40 L 20 25 Q 20 10 40 10 Q 60 10 60 25 L 60 40" stroke="#000000" stroke-width="7" fill="none" opacity="0.85" stroke-linecap="round"/>
+    <!-- Keyhole circle -->
+    <circle cx="40" cy="65" r="6" fill="#cdff4e"/>
+    <!-- Keyhole slot -->
+    <rect x="37" y="65" width="6" height="14" rx="3" fill="#cdff4e"/>
+  </g>
+  
+  <!-- NDA text -->
+  <text x="600" y="400" font-family="system-ui, -apple-system, 'Inter', sans-serif" font-size="56" font-weight="700" fill="#000000" text-anchor="middle" opacity="0.9">NDA</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="435" font-family="system-ui, -apple-system, 'Inter', sans-serif" font-size="16" font-weight="500" fill="#000000" text-anchor="middle" opacity="0.5">Protected project</text>
+</svg>
