@@ -36,13 +36,11 @@ export const cases: CaseItem[] = [
     stack: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
     isNDA: false,
     url: 'https://yachtmate.club',
-    logo: '/images/ortvest.svg',
-    preview: 'https://ucarecdn.com/361278ce-8995-4f66-8e9f-ea11618da3c4/yachtmate_preview.png',
+    preview: 'https://ucarecdn.com/c5024823-5eff-42e1-81f1-d48d74f1017f/yachtmate10.jpg',
     images: [
-      'https://ucarecdn.com/2b919ef7-242a-4706-86d0-30b2821a5109/settings_yachtmate.png',
-      'https://ucarecdn.com/3c6bc01d-e306-4ecd-9ffb-aa67728ca697/step3_yachtmate.png',
-      'https://ucarecdn.com/4c704b8e-1c0a-496d-a034-8bb6b2e389ee/settings_yachtmate_2.png',
-      'https://ucarecdn.com/b8dca1f2-0516-4ed6-8920-4735a56e8f9c/search_yachtmate2.png',
+      'https://ucarecdn.com/6fd9e852-a71c-45ea-9cdc-a8e3612d1387/yachtmate12.jpg',
+      'https://ucarecdn.com/da2fe23f-711a-4afe-a2a1-64cf69b97366/yachtmate13.jpg',
+      'https://ucarecdn.com/a526dfbe-0323-4c20-b23d-a1981ccb32d6/yachtmate11.jpg',
     ],
     fullDescription:
       "YachtMate is a private social network designed exclusively for yacht club members. The platform provides secure communication channels, event coordination, and member directory features. Built with React and Node.js, the application handles real-time messaging and ensures data privacy for high-profile members. Note: the live website mentions 'Powered by Almo' - that is still our team, now operating under the Ortvest name.",
@@ -57,12 +55,11 @@ export const cases: CaseItem[] = [
     solution: 'Platform with user verification, item tracking, and secure transactions',
     stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
     isNDA: false,
-    preview: 'https://ucarecdn.com/9e920cef-d491-48f4-a1c1-80f9630b25bd/sharing_preview.png',
+    preview: 'https://ucarecdn.com/2a9c6d18-0248-47df-a11d-fa9d07d2d18c/sharingground18.jpg',
     images: [
-      'https://ucarecdn.com/20618798-ba64-4567-b778-4f0145705326/sharing_search.png',
-      'https://ucarecdn.com/986cbb43-6000-41af-8b35-dbfe835ffd13/sharing_profile.png',
-      'https://ucarecdn.com/9828f3e4-c11d-486c-8e91-4e3e2f7ffd8c/sharing_notifications.png',
-      'https://ucarecdn.com/dba67919-32bb-4d05-ade5-f817341f83d1/sharing_upload.png',
+     "https://ucarecdn.com/a88f7a48-2776-4fb4-bbbf-8ec496c2f8b9/sharingground21.jpg",
+     "https://ucarecdn.com/f7be96c3-5e3a-4c81-b808-392cc910af40/sharingground20.jpg",
+     "https://ucarecdn.com/e28c3f30-8f39-48ce-8346-5cef114291c0/sharingground19.jpg"
     ],
     fullDescription:
       'A peer-to-peer sharing platform that enables users to lend and borrow items within their community. Features include user verification, item tracking, insurance integration, and secure payment processing.',
@@ -73,21 +70,16 @@ export const cases: CaseItem[] = [
     designSubcategory: 'web',
     developmentSubcategory: 'web',
     title: 'ProfitCraft',
-    challenge:
-      'US credit-building service needed a trustworthy, conversion-focused website for newcomers',
-    solution:
-      'Designed and developed a clear service website that explains credit growth paths and drives sign-ups',
+    challenge: 'US credit-building service needed a trustworthy, conversion-focused website for newcomers',
+    solution: 'Designed and developed a clear service website that explains credit growth paths and drives sign-ups',
     stack: ['Web Design', 'Frontend Development', 'Marketing Website'],
     isNDA: false,
-    url: 'https://www.profitcraft.info/#services',
-    preview:
-      'https://ucarecdn.com/1027720b-01e0-4d7f-8ca9-2f192b622065/Screenshot20260223at221440.png',
+    url: 'https://www.profitcraft.info',
+    preview: 'https://ucarecdn.com/ecf8871d-5e76-43c4-991a-cc3e0adc3a85/profitcraft14.jpg',
     images: [
-      'https://ucarecdn.com/1027720b-01e0-4d7f-8ca9-2f192b622065/Screenshot20260223at221440.png',
-      'https://ucarecdn.com/3e14ee1d-8ac3-4de4-8f05-eef73b117178/Screenshot20260223at221543.png',
-      'https://ucarecdn.com/ff2b29cb-2979-4d36-a4df-28e282826dc7/Screenshot20260223at221558.png',
-      'https://ucarecdn.com/479beb9b-81d2-4893-b39d-785969768c01/Screenshot20260223at222111.png',
-      'https://ucarecdn.com/2d571d89-d933-4b67-81b7-f26d4bd0216c/Screenshot20260223at222059.png',
+      'https://ucarecdn.com/b975f592-d922-4526-9591-650b4cb13369/profitcraft15.jpg',
+      'https://ucarecdn.com/ec1106ec-5655-4bfb-98b0-dd001e3a0562/profitcraft16.jpg',
+      'https://ucarecdn.com/c906a981-c19d-457f-9e06-c07c2e9e4709/profitcraft17.jpg',
     ],
     fullDescription:
       'ProfitCraft is a website for a US-based company that helps newcomers build strong credit history. We created a design and development solution focused on trust, clarity, and action: explaining how better credit opens access to loans, auto financing, home purchases, and business growth. The product message is direct and motivational, helping users start shaping their financial future with confidence.',
@@ -97,8 +89,10 @@ export const cases: CaseItem[] = [
     category: 'development',
     developmentSubcategory: 'web',
     title: 'Ski&Sail Club',
-    challenge: 'Build a digital platform for a yacht club that makes trip booking and community management seamless for both newcomers and experienced sailors.',
-    solution: 'Developed a web platform where users can explore yacht routes, book trips, and stay connected with the club community — with a clean, immersive UI that reflects the spirit of sailing.',
+    challenge:
+      'Build a digital platform for a yacht club that makes trip booking and community management seamless for both newcomers and experienced sailors.',
+    solution:
+      'Developed a web platform where users can explore yacht routes, book trips, and stay connected with the club community — with a clean, immersive UI that reflects the spirit of sailing.',
     stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
     isNDA: false,
     preview: 'https://ucarecdn.com/8d0eb2fe-a6c7-4a77-8f34-e31b33b30b1d/Screenshot20260223at224814.png',
@@ -106,7 +100,7 @@ export const cases: CaseItem[] = [
       'https://ucarecdn.com/8d0eb2fe-a6c7-4a77-8f34-e31b33b30b1d/Screenshot20260223at224814.png',
       'https://ucarecdn.com/c2305748-a891-413f-a377-d8efdbbaca06/Screenshot20260223at224830.png',
       'https://ucarecdn.com/aa1994d9-3cc7-472d-8625-704cbd63448a/Screenshot20260223at224846.png',
-      "https://ucarecdn.com/da488fa3-7cd8-4358-8ae9-70d48984082b/Screenshot20260223at224858.png"
+      'https://ucarecdn.com/da488fa3-7cd8-4358-8ae9-70d48984082b/Screenshot20260223at224858.png',
     ],
     fullDescription:
       'Ski&Sail Club is a platform for a Ukrainian yacht and ski travel club. The product brings together route discovery, trip booking, and a member community in one place. We focused on translating the emotional side of yachting — freedom, scenic landscapes, unforgettable sunsets — into a digital experience that feels just as inspiring. Built with Next.js and TypeScript on the frontend, the platform is fast, reliable, and ready to scale as the club grows.',
@@ -121,8 +115,7 @@ export const cases: CaseItem[] = [
     stack: ['React', 'TypeScript', 'Nest.js', 'PostgreSQL'],
     isNDA: true,
     inProgress: false,
-    logo: '/images/navexa.svg',
-    preview: '/images/cases/nda-placeholder.svg',
+    preview: 'https://ucarecdn.com/4ef50121-8b70-41ef-980e-a18b9b43c35f/navexa03.jpg',
     images: [],
     fullDescription:
       'Comprehensive logistics management platform for fleet tracking, route optimization, and shipment monitoring. The system integrates with GPS devices and provides real-time analytics for operational efficiency.',
@@ -137,7 +130,7 @@ export const cases: CaseItem[] = [
     stack: ['React Native', 'Typescript', 'Nest.js', 'MongoDB'],
     isNDA: true,
     inProgress: false,
-    preview: '/images/cases/nda-placeholder.svg',
+    preview: 'https://ucarecdn.com/53954ca1-a3f2-4994-8f90-979b1ccae4a9/nda.jpg',
     images: [],
     fullDescription:
       'An intelligent shopping list application that uses AI to track your pantry inventory, suggest recipes based on available ingredients, and remind you when items are running low. The app learns from your shopping patterns to optimize grocery trips.',
@@ -177,11 +170,10 @@ export const cases: CaseItem[] = [
     isNDA: false,
     preview: 'https://ucarecdn.com/ada61fb3-30e3-46ef-96b7-22a5731f49a2/Screenshot20260223at225704.png',
     images: [
-      "https://ucarecdn.com/ada61fb3-30e3-46ef-96b7-22a5731f49a2/Screenshot20260223at225704.png",
-      "https://ucarecdn.com/1a4812d2-2af6-4d1b-aaa5-a2e6b9218210/Screenshot20260223at225725.png",
-      "https://ucarecdn.com/3e7085c5-b68b-4cc5-915e-c1100a63203b/Screenshot20260223at225714.png",
-      "https://ucarecdn.com/b7ee05ac-d3fb-439c-9eda-15f3ccaa8d14/Screenshot20260223at225734.png"
-
+      'https://ucarecdn.com/ada61fb3-30e3-46ef-96b7-22a5731f49a2/Screenshot20260223at225704.png',
+      'https://ucarecdn.com/1a4812d2-2af6-4d1b-aaa5-a2e6b9218210/Screenshot20260223at225725.png',
+      'https://ucarecdn.com/3e7085c5-b68b-4cc5-915e-c1100a63203b/Screenshot20260223at225714.png',
+      'https://ucarecdn.com/b7ee05ac-d3fb-439c-9eda-15f3ccaa8d14/Screenshot20260223at225734.png',
     ],
     designer: {
       name: 'Valeriia Timanovska',
@@ -194,19 +186,37 @@ export const cases: CaseItem[] = [
     id: 'navexa-logo',
     category: 'design',
     designSubcategory: 'logo',
-    title: 'Navexa',
+    title: 'Navexa - Logo',
     challenge: 'Logistics company needed a professional logo that represents navigation and precision',
     solution: 'Created a modern, minimalist logo design with both light and dark variations',
     stack: ['Logo Design', 'Brand Identity', 'Adobe Illustrator'],
     isNDA: true,
-    logo: '/images/navexa.svg',
-    preview: 'https://ucarecdn.com/8d74090b-4f5b-4290-b5a5-059f13b6948e/compressed_navexa_preview.png',
+    preview: 'https://ucarecdn.com/5a9b542a-01c2-448c-b396-64adba6b9796/navexa01.jpg',
     images: [
-      'https://ucarecdn.com/8d74090b-4f5b-4290-b5a5-059f13b6948e/compressed_navexa_preview.png',
-      "https://ucarecdn.com/e9d48e80-dba8-43c6-b059-de3926cf47cb/navexa_symbol.png",
-      'https://ucarecdn.com/7f073d0f-f2d1-40c0-9d7a-397537119dd9/navexa_symbol_loght.png',
+      'https://ucarecdn.com/932799ad-9cce-4744-abe8-d1d319a44054/navexa02.jpg',
+      'https://ucarecdn.com/e344a61d-ab05-4880-ac43-731962f0adb1/navexa04.jpg',
+      'https://ucarecdn.com/5a9b542a-01c2-448c-b396-64adba6b9796/navexa01.jpg',
     ],
     fullDescription:
       'Professional logo design for Navexa, a logistics and fleet management company. The design emphasizes precision, navigation, and modern technology with clean lines and versatile color variations for different applications.',
   },
+  {
+    id: 'ortvest-logo',
+    category: 'design',
+    designSubcategory: 'logo',
+    title: 'Ortvest',
+    challenge: 'IT company needed a professional logo that reflects innovation, technology, and a modern digital identity',
+    solution: 'Created a sleek, minimalist logo design with both light and dark variations, tailored for digital and product environments',
+    stack: ['Logo Design', 'Brand Identity', 'Adobe Illustrator'],
+    isNDA: false,
+    preview: 'https://ucarecdn.com/77da2930-dcad-426e-a258-d7130dff00e9/ortvest05.jpg',
+    images: [
+      'https://ucarecdn.com/1498237f-9629-4a8a-a987-c738bd7efbc0/ortvest06.jpg',
+      'https://ucarecdn.com/ab291b35-619f-49ae-b19d-11e83621a187/ortvest07.jpg',
+      'https://ucarecdn.com/f3eb0800-332f-47b1-adfa-39b21f924c0d/ortvest22.jpg',
+      'https://ucarecdn.com/2d095524-3c27-44ce-9782-fc6cf86b7f3f/ortvest08.jpg'
+    ],
+    fullDescription:
+      'Professional logo design for Ortvest, an IT company focused on modern software solutions and digital transformation. The design emphasizes clarity, innovation, and scalability — with clean geometry and versatile color variations suited for both digital products and corporate use.',
+},
 ];

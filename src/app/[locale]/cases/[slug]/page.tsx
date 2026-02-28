@@ -2,8 +2,8 @@ import { notFound } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
-import { CaseDetail } from '@modules/Cases/features/CaseDetail';
 import { cases } from '@modules/Cases/data';
+import { CaseDetail } from '@modules/Cases/features/CaseDetail';
 
 interface CasePageProps {
   params: {

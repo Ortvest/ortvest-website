@@ -1,16 +1,17 @@
 'use client';
 
+import { useState } from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 import { Container } from '@shared/components';
-import type { CaseItem } from '@modules/Cases/data';
 
-import { ArrowLeft, ExternalLink, Lock } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { EASE } from '@lib/motion';
+import type { CaseItem } from '@modules/Cases/data';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowLeft, ExternalLink, Lock } from 'lucide-react';
 
 interface CaseDetailProps {
   caseItem: CaseItem;
@@ -25,9 +26,7 @@ export function CaseDetail({ caseItem }: CaseDetailProps) {
       : t(`category.${caseItem.category}`);
 
   const hasImages = caseItem.images && caseItem.images.length > 0;
-  const displayImages = hasImages
-    ? caseItem.images!
-    : [caseItem.preview || '/images/cases/placeholder-dev.jpg'];
+  const displayImages = hasImages ? caseItem.images! : [caseItem.preview || '/images/cases/placeholder-dev.jpg'];
   const isLogoCase = caseItem.designSubcategory === 'logo';
 
   return (
@@ -60,9 +59,7 @@ export function CaseDetail({ caseItem }: CaseDetailProps) {
                 {t('inProgress')}
               </span>
             )}
-            <span className="rounded-full bg-black/5 px-3 py-1 text-xs font-medium text-black/60">
-              {categoryLabel}
-            </span>
+            <span className="rounded-full bg-black/5 px-3 py-1 text-xs font-medium text-black/60">{categoryLabel}</span>
           </div>
 
           {caseItem.logo && (
@@ -157,18 +154,14 @@ export function CaseDetail({ caseItem }: CaseDetailProps) {
                   <>
                     <button
                       type="button"
-                      onClick={() =>
-                        setActiveImageIndex((prev) => (prev === 0 ? displayImages.length - 1 : prev - 1))
-                      }
+                      onClick={() => setActiveImageIndex((prev) => (prev === 0 ? displayImages.length - 1 : prev - 1))}
                       className="absolute left-5 top-1/2 -translate-y-1/2 rounded-full border border-black/10 bg-white/95 p-3 shadow-xl backdrop-blur-sm transition-all hover:scale-105 hover:bg-white active:scale-95"
                       aria-label="Previous image">
                       <ArrowLeft className="h-5 w-5 text-black" />
                     </button>
                     <button
                       type="button"
-                      onClick={() =>
-                        setActiveImageIndex((prev) => (prev === displayImages.length - 1 ? 0 : prev + 1))
-                      }
+                      onClick={() => setActiveImageIndex((prev) => (prev === displayImages.length - 1 ? 0 : prev + 1))}
                       className="absolute right-5 top-1/2 -translate-y-1/2 rounded-full border border-black/10 bg-white/95 p-3 shadow-xl backdrop-blur-sm transition-all hover:scale-105 hover:bg-white active:scale-95"
                       aria-label="Next image">
                       <ArrowLeft className="h-5 w-5 rotate-180 text-black" />
@@ -248,9 +241,7 @@ export function CaseDetail({ caseItem }: CaseDetailProps) {
                 <h3 className="text-h4 mb-4 text-black">{t('techStack')}</h3>
                 <div className="flex flex-wrap gap-2">
                   {caseItem.stack.map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-lg bg-black/[0.04] px-3 py-2 text-sm text-black/70">
+                    <span key={tech} className="rounded-lg bg-black/[0.04] px-3 py-2 text-sm text-black/70">
                       {tech}
                     </span>
                   ))}
