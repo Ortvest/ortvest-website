@@ -57,9 +57,9 @@ export const cases: CaseItem[] = [
     isNDA: false,
     preview: 'https://ucarecdn.com/2a9c6d18-0248-47df-a11d-fa9d07d2d18c/sharingground18.jpg',
     images: [
-     "https://ucarecdn.com/a88f7a48-2776-4fb4-bbbf-8ec496c2f8b9/sharingground21.jpg",
-     "https://ucarecdn.com/f7be96c3-5e3a-4c81-b808-392cc910af40/sharingground20.jpg",
-     "https://ucarecdn.com/e28c3f30-8f39-48ce-8346-5cef114291c0/sharingground19.jpg"
+      'https://ucarecdn.com/a88f7a48-2776-4fb4-bbbf-8ec496c2f8b9/sharingground21.jpg',
+      'https://ucarecdn.com/f7be96c3-5e3a-4c81-b808-392cc910af40/sharingground20.jpg',
+      'https://ucarecdn.com/e28c3f30-8f39-48ce-8346-5cef114291c0/sharingground19.jpg',
     ],
     fullDescription:
       'A peer-to-peer sharing platform that enables users to lend and borrow items within their community. Features include user verification, item tracking, insurance integration, and secure payment processing.',
@@ -205,8 +205,10 @@ export const cases: CaseItem[] = [
     category: 'design',
     designSubcategory: 'logo',
     title: 'Ortvest',
-    challenge: 'IT company needed a professional logo that reflects innovation, technology, and a modern digital identity',
-    solution: 'Created a sleek, minimalist logo design with both light and dark variations, tailored for digital and product environments',
+    challenge:
+      'IT company needed a professional logo that reflects innovation, technology, and a modern digital identity',
+    solution:
+      'Created a sleek, minimalist logo design with both light and dark variations, tailored for digital and product environments',
     stack: ['Logo Design', 'Brand Identity', 'Adobe Illustrator'],
     isNDA: false,
     preview: 'https://ucarecdn.com/77da2930-dcad-426e-a258-d7130dff00e9/ortvest05.jpg',
@@ -214,9 +216,9 @@ export const cases: CaseItem[] = [
       'https://ucarecdn.com/1498237f-9629-4a8a-a987-c738bd7efbc0/ortvest06.jpg',
       'https://ucarecdn.com/ab291b35-619f-49ae-b19d-11e83621a187/ortvest07.jpg',
       'https://ucarecdn.com/f3eb0800-332f-47b1-adfa-39b21f924c0d/ortvest22.jpg',
-      'https://ucarecdn.com/2d095524-3c27-44ce-9782-fc6cf86b7f3f/ortvest08.jpg'
+      'https://ucarecdn.com/2d095524-3c27-44ce-9782-fc6cf86b7f3f/ortvest08.jpg',
     ],
     fullDescription:
       'Professional logo design for Ortvest, an IT company focused on modern software solutions and digital transformation. The design emphasizes clarity, innovation, and scalability — with clean geometry and versatile color variations suited for both digital products and corporate use.',
-},
+  },
 ];
