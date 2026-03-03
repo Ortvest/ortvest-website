@@ -125,15 +125,17 @@ export const cases: CaseItem[] = [
     category: 'designAndDevelopment',
     developmentSubcategory: 'web',
     title: 'Teya Logistics',
-    challenge: 'Logistics company needed a modern landing page to clearly present their services and attract new clients',
-    solution: 'Designed and developed a responsive landing page focused on clear service presentation, strong branding, and lead generation',
-    stack: ['React', 'TypeScript', 'Next.js'],
+    challenge:
+      'Logistics company needed a modern landing page to clearly present their services and attract new clients',
+    solution:
+      'Designed and developed a responsive landing page focused on clear service presentation, strong branding, and lead generation',
+    stack: ['Web Design', 'Frontend Development', 'Marketing Website'],
     isNDA: false,
     inProgress: false,
     preview: 'https://ucarecdn.com/bc9d9e0e-14bc-4452-be3a-3cab11e8bbb0/Teya22.jpg',
     images: [
-      "https://ucarecdn.com/eec0be67-5f20-43dd-bff6-7835d2dd52e8/Teya23.jpg",
-      "https://ucarecdn.com/a4f2f266-069f-448e-b844-c3274c5d8380/Teya24.jpg"
+      'https://ucarecdn.com/eec0be67-5f20-43dd-bff6-7835d2dd52e8/Teya23.jpg',
+      'https://ucarecdn.com/a4f2f266-069f-448e-b844-c3274c5d8380/Teya24.jpg',
     ],
     fullDescription:
       'We created a modern landing page for a logistics company focused on presenting transportation services, building trust with potential clients, and increasing conversion. The website highlights key services, company advantages, and provides a simple way for customers to request quotes or get in touch.',
