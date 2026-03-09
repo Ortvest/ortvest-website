@@ -11,53 +11,53 @@
     "menuSlogan": "Od pomysłu do startu. Jeden zespół."
   },
   "hero": {
-    "eyebrow": "Studio IT",
-    "headline": "Rozwiązania cyfrowe pełnego cyklu dopasowane do Twoich potrzeb.",
-    "subheadline": "Design, development i marketing wtedy, gdy potrzebujesz.",
-    "ctaPrimary": "Wyceń projekt",
-    "ctaSecondary": "Zobacz usługi",
-    "trust1": "Ekspertyza pełnego cyklu",
-    "trust2": "Elastyczna współpraca",
-    "trust3": "Długoterminowe wsparcie"
+    "eyebrow": "Partner Cyfrowy",
+    "headline": "Budujemy produkty cyfrowe, które pomagają firmom rosnąć.",
+    "subheadline": "Nie tylko strony internetowe. Łączymy design, development i marketing, aby tworzyć rozwiązania, które przynoszą realne rezultaty biznesowe. Od strategii do startu i dalej.",
+    "ctaPrimary": "Omów projekt",
+    "ctaSecondary": "Zobacz co robimy",
+    "trust1": "Podejście od strategii",
+    "trust2": "Pełny cykl realizacji",
+    "trust3": "Europa, USA i Ukraina"
   },
   "services": {
     "eyebrow": "Co robimy",
     "title": "Design, development i marketing",
-    "subtitle": "Od pomysłu do startu. Jedno miejsce, jeden zespół.",
+    "subtitle": "Obejmujemy pełny cykl cyfrowy. Landing page, strony firmowe, startupy, MVP, e-commerce, SaaS, aplikacje mobilne i redesign, który działa.",
     "design": "Design",
     "designItems": {
-      "uiux": "UI/UX Design",
-      "web": "Web Design",
-      "app": "App Design",
-      "brand": "Brand, logo, prepress",
-      "graphic": "Grafika"
+      "uiux": "UI/UX dla web i mobile",
+      "web": "Landing page i strony firmowe",
+      "app": "Interfejsy SaaS i aplikacji",
+      "brand": "Identyfikacja wizualna i systemy",
+      "graphic": "Prezentacja produktu i materiały marketingowe"
     },
     "development": "Development",
     "devItems": {
-      "web": "Web Development",
-      "mobile": "Mobile Development"
+      "web": "Aplikacje webowe, e-commerce i MVP",
+      "mobile": "Aplikacje iOS i Android"
     },
     "marketing": "Marketing",
     "marketingBasic": "Podstawowy",
     "marketingBasicItems": {
-      "seo": "SEO",
+      "seo": "Optymalizacja SEO",
       "analytics": "Konfiguracja analityki",
       "context": "Reklama kontekstowa",
-      "smm": "SMM",
+      "smm": "Marketing w mediach społecznościowych",
       "targeted": "Reklama targetowana"
     },
     "marketingAdvanced": "Zaawansowany",
     "marketingAdvancedItems": {
-      "email": "Email marketing i autorepondery",
-      "content": "Content marketing",
-      "copy": "Copywriting na landingi",
-      "crm": "CRM marketing i konfiguracja"
+      "email": "Email marketing i automatyzacja",
+      "content": "Strategia treści",
+      "copy": "Copywriting konwersyjny",
+      "crm": "Konfiguracja i marketing CRM"
     },
     "marketingPremium": "Premium",
     "marketingPremiumItems": {
-      "strategy": "Kompleksowa strategia marketingowa",
-      "research": "Badania marketingowe",
-      "competitors": "Analityka konkurencji"
+      "strategy": "Pełna strategia marketingowa",
+      "research": "Badania rynku i odbiorców",
+      "competitors": "Analiza konkurencji"
     },
     "whatsIncluded": "Co w zestawie",
     "getQuote": "Wyceń projekt",
@@ -93,17 +93,17 @@
     "stepOptional": "opcjonalnie"
   },
   "about": {
-    "eyebrow": "Kim jesteśmy",
-    "title": "Ortvest to studio IT",
-    "subtitle": "Rozwiązujemy realne problemy biznesowe designem i technologią. Bez lania wody, jasny proces, solidna realizacja.",
-    "whyTitle": "Czym się różnimy",
-    "why1": "Bez lania wody. Skupiamy się na tym, co napędza wzrost.",
-    "why2": "Szybka realizacja bez cięć w jakości.",
-    "why3": "Przejrzysty proces i bezpośredni kontakt.",
-    "valuesTitle": "Wartości",
-    "value1": "Jakość first",
-    "value2": "Transparentność",
-    "value3": "Partnerstwo"
+    "eyebrow": "Jak pracujemy",
+    "title": "Zaczynamy od celów biznesowych, nie od plików Figma",
+    "subtitle": "Zanim przejdziemy do designu czy kodu, badamy Twój produkt, odbiorców i cele biznesowe. Dlatego nasze rozwiązania konwertują. Pracujemy jak zewnętrzny zespół cyfrowy — przejmując odpowiedzialność od strategii do startu i wsparcia.",
+    "whyTitle": "Nasze podejście",
+    "why1": "Rozumiemy biznes zanim zaprojektujemy lub zbudujemy.",
+    "why2": "Przyjmujemy ograniczoną liczbę projektów, by zachować jakość i skupienie.",
+    "why3": "Pracujemy z klientami w Europie, USA i Ukrainie.",
+    "valuesTitle": "Co nami kieruje",
+    "value1": "Jakość ponad ilość",
+    "value2": "Pełna transparentność",
+    "value3": "Prawdziwe partnerstwo"
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -127,9 +127,9 @@
     "a8": "Wystarczy skontaktować się przez formularz. Odpowiemy wkrótce."
   },
   "contact": {
-    "eyebrow": "Kontakt",
-    "title": "Napisz do nas",
-    "subtitle": "Opisz projekt lub pomysł. Odpowiemy w ciągu 24 godzin.",
+    "eyebrow": "Porozmawiajmy",
+    "title": "Opowiedz o swoim projekcie",
+    "subtitle": "Podziel się celami i wyzwaniami. Pokażemy odpowiednie realizacje i omówimy najlepsze podejście do startu i wzrostu.",
     "name": "Imię",
     "email": "Email",
     "message": "Wiadomość",
