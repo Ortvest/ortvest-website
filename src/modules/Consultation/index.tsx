@@ -16,15 +16,7 @@ const consultationCards = [
   },
   {
     key: 'strategy',
-    items: [
-      'goalsAudience',
-      'competitiveAnalysis',
-      'techStack',
-      'roadmap',
-      'risk',
-      'recording',
-      'credit',
-    ],
+    items: ['goalsAudience', 'competitiveAnalysis', 'techStack', 'roadmap', 'risk', 'recording', 'credit'],
     cta: 'bookSession',
     icon: BadgeCheck,
   },
@@ -71,9 +63,7 @@ export function Consultation() {
                   <span className="text-sm text-white/60">{t(`${key}.duration`)}</span>
                 </div>
 
-                <p className="mt-4 text-xs font-medium uppercase tracking-wider text-white/50">
-                  {t('whatsIncluded')}
-                </p>
+                <p className="mt-4 text-xs font-medium uppercase tracking-wider text-white/50">{t('whatsIncluded')}</p>
                 <ul className="mt-3 space-y-2" role="list">
                   {items.map((itemKey) => (
                     <li key={itemKey} className="flex items-center gap-2 text-body-sm text-white/75">
