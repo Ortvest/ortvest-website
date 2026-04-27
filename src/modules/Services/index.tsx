@@ -28,6 +28,11 @@ const designItems = [
 const devItems = [
   { key: 'web', icon: Globe },
   { key: 'mobile', icon: Smartphone },
+  { key: 'landing', icon: Globe },
+  { key: 'api', icon: Code },
+  { key: 'saas', icon: Layers },
+  { key: 'performance', icon: TrendingUp },
+  { key: 'support', icon: PenTool },
 ] as const;
 
 const marketingPackages = [

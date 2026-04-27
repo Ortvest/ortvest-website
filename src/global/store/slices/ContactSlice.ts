@@ -64,6 +64,8 @@ const initialState: ContactState = {
     clientName: '',
     productDescription: '',
     selectedServices: [],
+    budget: '',
+    consultationType: '',
   },
 };
 

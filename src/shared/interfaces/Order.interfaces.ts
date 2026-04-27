@@ -3,4 +3,6 @@ export interface Order {
   clientName: string;
   productDescription: string;
   selectedServices: string[];
+  budget?: string;
+  consultationType?: string;
 }

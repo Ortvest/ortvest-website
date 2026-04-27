@@ -132,7 +132,7 @@ export const cases: CaseItem[] = [
     stack: ['Web Design', 'Frontend Development', 'Marketing Website'],
     isNDA: false,
     inProgress: false,
-    url: "https://www.teya-logistic.com/",
+    url: 'https://www.teya-logistic.com/',
     preview: 'https://ucarecdn.com/bc9d9e0e-14bc-4452-be3a-3cab11e8bbb0/Teya22.jpg',
     images: [
       'https://ucarecdn.com/eec0be67-5f20-43dd-bff6-7835d2dd52e8/Teya23.jpg',

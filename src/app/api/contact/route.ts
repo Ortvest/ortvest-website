@@ -9,8 +9,10 @@ const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 export interface ContactBody {
   clientName: string;
   clientEmail: string;
-  productDescription: string;
+  productDescription?: string;
   selectedServices: string[];
+  budget?: string;
+  consultationType?: string;
 }
 
 interface ContactDoc {
@@ -18,6 +20,8 @@ interface ContactDoc {
   clientEmail: string;
   productDescription: string;
   selectedServices: string[];
+  budget: string;
+  consultationType: string;
   createdAt: string;
 }
 
@@ -35,8 +39,6 @@ function validate(body: unknown): body is ContactBody {
     b.clientName.trim().length > 0 &&
     typeof b.clientEmail === 'string' &&
     b.clientEmail.trim().length > 0 &&
-    typeof b.productDescription === 'string' &&
-    b.productDescription.trim().length > 0 &&
     Array.isArray(b.selectedServices)
   );
 }
@@ -113,17 +115,16 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     if (!validate(body)) {
-      return NextResponse.json(
-        { error: 'Invalid body: clientName, clientEmail, productDescription required' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Invalid body: clientName and clientEmail are required' }, { status: 400 });
     }
 
     const payload = {
       clientName: body.clientName.trim(),
       clientEmail: body.clientEmail.trim(),
-      productDescription: body.productDescription.trim(),
+      productDescription: typeof body.productDescription === 'string' ? body.productDescription.trim() : '',
       selectedServices: Array.isArray(body.selectedServices) ? body.selectedServices : [],
+      budget: typeof body.budget === 'string' ? body.budget.trim() : '',
+      consultationType: typeof body.consultationType === 'string' ? body.consultationType.trim() : '',
     };
     const createdAt = new Date().toISOString();
 

@@ -16,6 +16,8 @@
     "subheadline": "Not just websites. We combine design, development, and marketing to create solutions that drive real business results. From strategy to launch and beyond.",
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "See what we do",
+    "trustCtaPrefix": "Not sure where to start? -",
+    "trustCtaLink": "Book a free 30-min call",
     "trust1": "Strategy-first approach",
     "trust2": "Full-cycle ownership",
     "trust3": "Europe, USA & Ukraine"
@@ -35,7 +37,12 @@
     "development": "Development",
     "devItems": {
       "web": "Web apps, e-commerce & MVPs",
-      "mobile": "iOS & Android applications"
+      "mobile": "iOS & Android applications",
+      "landing": "Landing pages & corporate websites",
+      "api": "API development & integrations",
+      "saas": "SaaS platforms",
+      "performance": "Performance optimization",
+      "support": "Post-launch support & maintenance"
     },
     "marketing": "Marketing",
     "marketingBasic": "Basic",
@@ -135,6 +142,24 @@
     "message": "Message",
     "messagePlaceholder": "Tell us about your project, goals, or timeline...",
     "projectType": "Project type",
+    "budget": "Budget (optional)",
+    "budgetUnder1k": "Under €1k",
+    "budget1k5k": "€1k–5k",
+    "budget5k15k": "€5k–15k",
+    "budget15kPlus": "€15k+",
+    "consultationType": "Consultation type (optional)",
+    "consultationDiscovery": "Discovery Call (Free)",
+    "consultationStrategy": "Strategy Session (€199)",
+    "budgetMap": {
+      "under1k": "Under €1k",
+      "1k5k": "€1k–5k",
+      "5k15k": "€5k–15k",
+      "15kplus": "€15k+"
+    },
+    "consultationMap": {
+      "discovery": "Discovery Call (Free)",
+      "strategy": "Strategy Session (€199)"
+    },
     "projectTypeDesign": "Design",
     "projectTypeDev": "Development",
     "projectTypeMarketing": "Marketing",
@@ -143,7 +168,49 @@
     "policyText": "By sending this form I agree to the ",
     "policyLink": "Privacy Policy",
     "success": "Message sent. We'll contact you soon.",
-    "error": "Something went wrong. Please try again or email us directly."
+    "error": "Something went wrong. Please try again or email us directly.",
+    "benefits": {
+      "freeDiscovery": "Free 30-min discovery call - we'll review your project and suggest the best approach",
+      "Reply within 24h": "Reply within 24h",
+      "No spam, ever": "No spam, ever"
+    }
+  },
+  "consultation": {
+    "eyebrow": "Consultation",
+    "title": "Choose the right consultation format",
+    "subtitle": "Start with a free discovery call or book a detailed strategy session for complex products.",
+    "whatsIncluded": "What's included",
+    "bookCall": "Book a call",
+    "bookSession": "Book a session",
+    "discoveryBadge": "YOUR FIRST STEP",
+    "strategyBadge": "Most popular before large projects",
+    "discovery": {
+      "title": "Discovery Call",
+      "subtitle": "Not sure where to start? Let's figure it out - no pitch, no pressure.",
+      "price": "Free",
+      "duration": "30 min",
+      "items": {
+        "projectOverview": "Project overview & goals",
+        "feasibility": "Quick feasibility check",
+        "timelineBudget": "Rough timeline & budget estimate",
+        "qa": "Q&A"
+      }
+    },
+    "strategy": {
+      "title": "Strategy Session",
+      "subtitle": "Most projects fail before a single line of code is written. This session prevents that.",
+      "price": "€199",
+      "duration": "90 min",
+      "items": {
+        "goalsAudience": "Deep-dive into business goals & audience",
+        "competitiveAnalysis": "Competitive analysis",
+        "techStack": "Tech stack recommendation",
+        "roadmap": "Full project roadmap with milestones",
+        "risk": "Risk assessment",
+        "recording": "Recorded session + written summary (PDF)",
+        "credit": "Amount is credited toward the project if you proceed"
+      }
+    }
   },
   "cases": {
     "eyebrow": "Our work",

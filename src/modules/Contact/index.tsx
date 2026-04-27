@@ -8,7 +8,7 @@ import { Form } from '@modules/Contact/layout/Form';
 import { CheckCircle, Clock, Mail } from 'lucide-react';
 
 const benefits = [
-  { key: 'Free consultation', icon: CheckCircle },
+  { key: 'freeDiscovery', icon: CheckCircle },
   { key: 'Reply within 24h', icon: Clock },
   { key: 'No spam, ever', icon: Mail },
 ];
@@ -35,7 +35,7 @@ export function Contact() {
                   <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent/15">
                     <Icon className="h-3.5 w-3.5 text-black" />
                   </span>
-                  <span className="text-body-sm text-black/60">{key}</span>
+                  <span className="text-body-sm text-black/60">{t(`benefits.${key}`)}</span>
                 </div>
               ))}
             </div>

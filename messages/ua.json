@@ -16,6 +16,8 @@
     "subheadline": "Не просто сайти. Ми поєднуємо дизайн, розробку та маркетинг, щоб створювати рішення, які приносять реальні бізнес-результати. Від стратегії до запуску і далі.",
     "ctaPrimary": "Обговорити проєкт",
     "ctaSecondary": "Що ми робимо",
+    "trustCtaPrefix": "Не знаєте з чого почати? -",
+    "trustCtaLink": "Запишіться на безкоштовний 30-хв дзвінок",
     "trust1": "Підхід від стратегії",
     "trust2": "Повний цикл реалізації",
     "trust3": "Європа, США та Україна"
@@ -35,7 +37,12 @@
     "development": "Розробка",
     "devItems": {
       "web": "Веб-додатки, e-commerce та MVP",
-      "mobile": "iOS і Android додатки"
+      "mobile": "iOS і Android додатки",
+      "landing": "Лендінг пейджі та корпоративні сайти",
+      "api": "API розробка та інтеграції",
+      "saas": "SaaS платформи",
+      "performance": "Оптимізація продуктивності",
+      "support": "Підтримка після запуску"
     },
     "marketing": "Маркетинг",
     "marketingBasic": "Базовий",
@@ -135,6 +142,24 @@
     "message": "Повідомлення",
     "messagePlaceholder": "Розкажіть про проєкт, цілі або терміни...",
     "projectType": "Тип проєкту",
+    "budget": "Бюджет (optional)",
+    "budgetUnder1k": "До €1k",
+    "budget1k5k": "€1k–5k",
+    "budget5k15k": "€5k–15k",
+    "budget15kPlus": "€15k+",
+    "consultationType": "Тип консультації (optional)",
+    "consultationDiscovery": "Discovery Call (Безкоштовно)",
+    "consultationStrategy": "Strategy Session (€199)",
+    "budgetMap": {
+      "under1k": "До €1k",
+      "1k5k": "€1k–5k",
+      "5k15k": "€5k–15k",
+      "15kplus": "€15k+"
+    },
+    "consultationMap": {
+      "discovery": "Discovery Call (Безкоштовно)",
+      "strategy": "Strategy Session (€199)"
+    },
     "projectTypeDesign": "Дизайн",
     "projectTypeDev": "Розробка",
     "projectTypeMarketing": "Маркетинг",
@@ -143,7 +168,49 @@
     "policyText": "Надсилаючи форму, я погоджуюсь з ",
     "policyLink": "Політикою конфіденційності",
     "success": "Повідомлення надіслано. Скоро зв'яжемося.",
-    "error": "Щось пішло не так. Спробуйте ще раз або напишіть на пошту."
+    "error": "Щось пішло не так. Спробуйте ще раз або напишіть на пошту.",
+    "benefits": {
+      "freeDiscovery": "Безкоштовний 30-хв discovery call - розберемо ваш проєкт і запропонуємо найкращий підхід",
+      "Reply within 24h": "Відповідь протягом 24 год",
+      "No spam, ever": "Без спаму"
+    }
+  },
+  "consultation": {
+    "eyebrow": "Консультація",
+    "title": "Оберіть формат консультації",
+    "subtitle": "Почніть із безкоштовного discovery call або бронюйте глибоку strategy session для складних продуктів.",
+    "whatsIncluded": "Що входить",
+    "bookCall": "Забронювати дзвінок",
+    "bookSession": "Забронювати сесію",
+    "discoveryBadge": "ВАШ ПЕРШИЙ КРОК",
+    "strategyBadge": "Найпопулярніше перед великими проєктами",
+    "discovery": {
+      "title": "Discovery Call",
+      "subtitle": "Не знаєте, з чого почати? Розберемося разом - без продажу та без тиску.",
+      "price": "Безкоштовно",
+      "duration": "30 хв",
+      "items": {
+        "projectOverview": "Огляд проєкту та цілей",
+        "feasibility": "Швидка перевірка реалізовності",
+        "timelineBudget": "Орієнтовні терміни та бюджет",
+        "qa": "Q&A"
+      }
+    },
+    "strategy": {
+      "title": "Strategy Session",
+      "subtitle": "Більшість проєктів провалюється ще до першого рядка коду. Ця сесія допомагає цього уникнути.",
+      "price": "€199",
+      "duration": "90 хв",
+      "items": {
+        "goalsAudience": "Глибокий розбір бізнес-цілей та аудиторії",
+        "competitiveAnalysis": "Конкурентний аналіз",
+        "techStack": "Рекомендація технологічного стеку",
+        "roadmap": "Повна дорожня карта з етапами",
+        "risk": "Оцінка ризиків",
+        "recording": "Запис сесії + письмове резюме (PDF)",
+        "credit": "Суму зараховуємо у вартість проєкту, якщо продовжуємо співпрацю"
+      }
+    }
   },
   "cases": {
     "eyebrow": "Наші роботи",

@@ -16,6 +16,8 @@
     "subheadline": "Nie tylko strony internetowe. Łączymy design, development i marketing, aby tworzyć rozwiązania, które przynoszą realne rezultaty biznesowe. Od strategii do startu i dalej.",
     "ctaPrimary": "Omów projekt",
     "ctaSecondary": "Zobacz co robimy",
+    "trustCtaPrefix": "Nie wiesz, od czego zacząć? -",
+    "trustCtaLink": "Umów darmową 30-min rozmowę",
     "trust1": "Podejście od strategii",
     "trust2": "Pełny cykl realizacji",
     "trust3": "Europa, USA i Ukraina"
@@ -35,7 +37,12 @@
     "development": "Development",
     "devItems": {
       "web": "Aplikacje webowe, e-commerce i MVP",
-      "mobile": "Aplikacje iOS i Android"
+      "mobile": "Aplikacje iOS i Android",
+      "landing": "Landing page i strony firmowe",
+      "api": "Rozwój API i integracje",
+      "saas": "Platformy SaaS",
+      "performance": "Optymalizacja wydajności",
+      "support": "Wsparcie i utrzymanie po wdrożeniu"
     },
     "marketing": "Marketing",
     "marketingBasic": "Podstawowy",
@@ -135,6 +142,24 @@
     "message": "Wiadomość",
     "messagePlaceholder": "Opowiedz o projekcie, celach lub terminach...",
     "projectType": "Typ projektu",
+    "budget": "Budżet (optional)",
+    "budgetUnder1k": "Do €1k",
+    "budget1k5k": "€1k–5k",
+    "budget5k15k": "€5k–15k",
+    "budget15kPlus": "€15k+",
+    "consultationType": "Typ konsultacji (optional)",
+    "consultationDiscovery": "Discovery Call (Darmowe)",
+    "consultationStrategy": "Strategy Session (€199)",
+    "budgetMap": {
+      "under1k": "Do €1k",
+      "1k5k": "€1k–5k",
+      "5k15k": "€5k–15k",
+      "15kplus": "€15k+"
+    },
+    "consultationMap": {
+      "discovery": "Discovery Call (Darmowe)",
+      "strategy": "Strategy Session (€199)"
+    },
     "projectTypeDesign": "Design",
     "projectTypeDev": "Development",
     "projectTypeMarketing": "Marketing",
@@ -143,7 +168,49 @@
     "policyText": "Wysyłając formularz, akceptuję ",
     "policyLink": "Politykę prywatności",
     "success": "Wiadomość wysłana. Wkrótce się odezwiemy.",
-    "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz na email."
+    "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz na email.",
+    "benefits": {
+      "freeDiscovery": "Darmowa 30-minutowa rozmowa discovery - omówimy Twój projekt i zaproponujemy najlepsze podejście",
+      "Reply within 24h": "Odpowiedź w 24h",
+      "No spam, ever": "Zero spamu"
+    }
+  },
+  "consultation": {
+    "eyebrow": "Konsultacja",
+    "title": "Wybierz format konsultacji",
+    "subtitle": "Zacznij od darmowej rozmowy discovery albo umów szczegółową sesję strategiczną dla większych produktów.",
+    "whatsIncluded": "Co zawiera",
+    "bookCall": "Umów rozmowę",
+    "bookSession": "Umów sesję",
+    "discoveryBadge": "TWÓJ PIERWSZY KROK",
+    "strategyBadge": "Najpopularniejsze przed dużymi projektami",
+    "discovery": {
+      "title": "Discovery Call",
+      "subtitle": "Nie wiesz, od czego zacząć? Ustalimy to razem - bez sprzedażowej presji.",
+      "price": "Darmowe",
+      "duration": "30 min",
+      "items": {
+        "projectOverview": "Przegląd projektu i celów",
+        "feasibility": "Szybka ocena wykonalności",
+        "timelineBudget": "Wstępny harmonogram i estymacja budżetu",
+        "qa": "Q&A"
+      }
+    },
+    "strategy": {
+      "title": "Strategy Session",
+      "subtitle": "Większość projektów upada, zanim powstanie pierwsza linia kodu. Ta sesja temu zapobiega.",
+      "price": "€199",
+      "duration": "90 min",
+      "items": {
+        "goalsAudience": "Dogłębna analiza celów biznesowych i odbiorców",
+        "competitiveAnalysis": "Analiza konkurencji",
+        "techStack": "Rekomendacja stacku technologicznego",
+        "roadmap": "Pełna roadmapa projektu z kamieniami milowymi",
+        "risk": "Ocena ryzyk",
+        "recording": "Nagranie sesji + podsumowanie pisemne (PDF)",
+        "credit": "Kwota jest zaliczana na poczet projektu, jeśli podejmiesz współpracę"
+      }
+    }
   },
   "cases": {
     "eyebrow": "Nasze projekty",

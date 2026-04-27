@@ -40,10 +40,16 @@ export function Hero() {
               <Button href="#contact" variant="primary" size="lg" icon={<ArrowRight className="h-4 w-4" />} iconRight>
                 {t('ctaPrimary')}
               </Button>
-              <Button href="#services" variant="ghost" size="lg">
+              <Button href="#services" variant="secondary" size="lg">
                 {t('ctaSecondary')}
               </Button>
             </div>
+            <p className="mt-3 text-sm text-black/55">
+              {t('trustCtaPrefix')}{' '}
+              <a href="#consultation" className="font-medium text-black/70 transition-colors hover:text-black">
+                {t('trustCtaLink')} <span aria-hidden>→</span>
+              </a>
+            </p>
           </div>
 
           <div className="relative hidden lg:flex justify-end" aria-hidden>

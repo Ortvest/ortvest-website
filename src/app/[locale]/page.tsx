@@ -1,6 +1,7 @@
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { About } from '@modules/About';
 import { Cases } from '@modules/Cases';
+import { Consultation } from '@modules/Consultation';
 import { Contact } from '@modules/Contact';
 import { FAQ } from '@modules/FAQ';
 import { Footer } from '@modules/Footer';
@@ -23,6 +24,7 @@ export default function Home() {
         <Technologies />
         <Cases />
         <FAQ />
+        <Consultation />
         <Contact />
       </main>
       <Footer />
