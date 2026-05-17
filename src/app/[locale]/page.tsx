@@ -3,6 +3,7 @@ import { About } from '@modules/About';
 import { Cases } from '@modules/Cases';
 import { Consultation } from '@modules/Consultation';
 import { Contact } from '@modules/Contact';
+import { OrtvestCMS } from '@modules/OrtvestCMS';
 import { FAQ } from '@modules/FAQ';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
@@ -25,6 +26,7 @@ export default function Home() {
         <Cases />
         <FAQ />
         <Consultation />
+        <OrtvestCMS />
         <Contact />
       </main>
       <Footer />

@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Burger } from '@modules/Header/features/Burger';
 import { BurgerMenu } from '@modules/Header/features/BurgerMenu';
@@ -14,7 +15,12 @@ import { ArrowRight } from 'lucide-react';
 
 export function Header() {
   const t = useTranslations('nav');
+  const locale = useLocale();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+
+  const isHomePage = pathname === `/${locale}` || pathname === '/';
+  const logoHref = isHomePage ? '#hero' : `/${locale}`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -31,7 +37,7 @@ export function Header() {
       <div className="container-main flex h-14 items-center justify-between sm:h-16">
         {/* Logo */}
         <Link
-          href="#hero"
+          href={logoHref}
           className="relative z-50 flex shrink-0 transition-opacity hover:opacity-80"
           aria-label="Home">
           <Image

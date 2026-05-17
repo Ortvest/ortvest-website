@@ -11,6 +11,7 @@ import {
   Globe,
   Image as ImageIcon,
   Layers,
+  Link2,
   Palette,
   PenTool,
   Smartphone,
@@ -106,6 +107,36 @@ export function Services() {
                   </Link>
                 </InteractiveCard>
               ))}
+            </div>
+
+            {/* CMS API Integration — standalone service item */}
+            <div className="mt-5 overflow-hidden rounded-2xl border border-accent/20 bg-accent/[0.04] p-5 sm:p-6">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <div className="flex-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent/20">
+                      <Link2 className="h-3.5 w-3.5 text-black" />
+                    </span>
+                    <span className="rounded-full border border-black/[0.10] bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-black/55">
+                      {t('cmsApi.badge')}
+                    </span>
+                  </div>
+                  <h4 className="mt-3 text-h4 text-black">{t('cmsApi.title')}</h4>
+                  <p className="mt-1 text-body-sm text-black/60">{t('cmsApi.description')}</p>
+                </div>
+                <div className="flex shrink-0 flex-row items-center gap-4 sm:flex-col sm:items-end sm:gap-2">
+                  <div className="text-right">
+                    <p className="text-xs text-black/40">{t('cmsApi.priceFrom')}</p>
+                    <p className="text-xl font-bold leading-tight text-black">{t('cmsApi.price')}</p>
+                  </div>
+                  <Link
+                    href="#contact"
+                    className="group inline-flex items-center gap-1.5 rounded-full bg-black px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-black/85">
+                    {t('getQuote')}
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </SectionReveal>

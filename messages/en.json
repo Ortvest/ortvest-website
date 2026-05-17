@@ -68,7 +68,15 @@
     },
     "whatsIncluded": "What's included",
     "getQuote": "Get a quote",
-    "cta": "Tell us what you need"
+    "cta": "Tell us what you need",
+    "cmsIncluded": "Ortvest CMS integration included",
+    "cmsApi": {
+      "badge": "For existing websites",
+      "title": "CMS API Integration",
+      "description": "Connect your existing website to Ortvest CMS. Form submissions go directly to your Orders dashboard.",
+      "priceFrom": "from",
+      "price": "€200"
+    }
   },
   "technologies": {
     "eyebrow": "Stack",
@@ -300,5 +308,122 @@
     "description": "Ortvest is an IT studio. We build web and mobile apps, UI/UX design, and marketing that converts. Get in touch for a free consultation.",
     "ogTitle": "Ortvest. IT Studio. Design, Development, Marketing",
     "ogDescription": "We build digital products that sell. Web & mobile development, UI/UX design, SEO and marketing. Contact us today."
+  },
+  "cmsPage": {
+    "hero": {
+      "eyebrow": "Ortvest CMS",
+      "headline": "Built for agencies, studios & IT teams",
+      "subheadline": "One system to manage orders, projects, tasks, finances and your team — with native API integration to connect your website forms directly to the CMS. Included with every partnership contract.",
+      "ctaPrimary": "Get access",
+      "ctaSecondary": "See pricing"
+    },
+    "showcase": {
+      "eyebrow": "Product overview",
+      "title": "Everything your team needs",
+      "subtitle": "Six interconnected modules that cover the full lifecycle of your business operations.",
+      "addonBadge": "Add-on module · +€10/mo",
+      "dependsLabel": "Dependency:",
+      "placeholderAlt": "interface preview",
+      "apiBlock": {
+        "title": "Website Integration via API",
+        "description": "Connect your website contact form directly to Ortvest CMS. Every submission lands automatically in Orders — no manual entry, no copy-paste.",
+        "badge": "Included in all plans",
+        "step1": "Website form",
+        "step2": "Ortvest API",
+        "step3": "Orders in CMS"
+      },
+      "modules": {
+        "orders": {
+          "name": "Orders",
+          "subtitle": "All incoming client requests in one place",
+          "feature1": "Track leads and submissions",
+          "feature2": "Manage statuses (Pending / Done)",
+          "feature3": "Convert orders into projects instantly",
+          "dependency": "Financials tab requires Transactions module. Project creation requires Projects module."
+        },
+        "projects": {
+          "name": "Projects",
+          "subtitle": "Manage all client projects end-to-end",
+          "feature1": "Filter by status (Planning / Active / Paused / Completed)",
+          "feature2": "Track budget, deadlines and team",
+          "feature3": "Link projects to orders"
+        },
+        "board": {
+          "name": "Board",
+          "subtitle": "Kanban task management per project",
+          "feature1": "Columns: To Do, In Progress, Review, Done + custom",
+          "feature2": "Task cards with priority, assignee and deadline",
+          "feature3": "Add and reorder columns freely",
+          "dependency": "Requires Projects module."
+        },
+        "transactions": {
+          "name": "Transactions",
+          "subtitle": "Manual cash flow tracking — salaries, subscriptions, taxes",
+          "feature1": "Log income and expenses by category",
+          "feature2": "See Total Income, Total Expenses and Net at a glance",
+          "feature3": "Full audit trail with date and author",
+          "addonBadge": "Add-on module · +€10/mo"
+        },
+        "analytics": {
+          "name": "Analytics",
+          "subtitle": "Financial overview — P&L and cash flow",
+          "feature1": "P&L Statement and Cash Flow Statement side by side",
+          "feature2": "Charts: Revenue vs Cash, Net Profit Trend, Orders by Status",
+          "feature3": "Filter by period: 7d / 30d / month / quarter / custom",
+          "dependency": "Works best with Transactions and Orders data.",
+          "addonBadge": "Add-on module · +€10/mo"
+        },
+        "blog": {
+          "name": "Blog",
+          "subtitle": "Create and publish content directly from your CMS",
+          "feature1": "Rich text editor with image uploads, headings, lists and formatting",
+          "feature2": "Post management: title, slug, tags, publish date, draft / published status",
+          "feature3": "Author assignment from your Team",
+          "feature4": "Publishes to your website automatically via API",
+          "feature5": "Multilingual posts support",
+          "dependency": "Content is published to your website via the Ortvest API. Works for both your own blog and client websites built by Ortvest.",
+          "addonBadge": "Add-on module · +€15/mo"
+        },
+        "team": {
+          "name": "Team",
+          "subtitle": "Manage admin accounts and permissions",
+          "feature1": "Invite team members with role assignment (Member / Super Admin)",
+          "feature2": "Granular permission toggles per module",
+          "feature3": "Full control over who can view, edit or delete"
+        }
+      }
+    },
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "Simple, transparent pricing",
+      "subtitle": "Choose the plan that fits your team. Upgrade or downgrade at any time.",
+      "monthly": "Monthly",
+      "annually": "Annually",
+      "save": "Save 17%",
+      "billedAnnually": "Billed annually",
+      "billingLabel": "Billing period",
+      "whatsIncluded": "What's included",
+      "addonLabel": "Expand with add-on modules",
+      "apiFeature": "Website form API integration",
+      "standard": {
+        "name": "Standard",
+        "cta": "Get started"
+      },
+      "partner": {
+        "name": "Partner rate",
+        "subtitle": "For clients with an active contract.",
+        "badge": "For our clients",
+        "cta": "Learn more"
+      }
+    },
+    "cta": {
+      "headline": "Ready to manage your business smarter?",
+      "subheadline": "Get access to Ortvest CMS as part of your contract — or subscribe independently.",
+      "button": "Contact us"
+    },
+    "metadata": {
+      "title": "Ortvest CMS — Business Management System",
+      "description": "Ortvest CMS is a business management system built for agencies, studios and IT teams. Manage orders, projects, tasks, finances and your team in one place."
+    }
   }
 }
