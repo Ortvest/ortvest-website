@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Container, InteractiveCard, SectionHeader, SectionReveal } from '@shared/components';
 
@@ -10,11 +11,10 @@ import { ArrowRight, Check, LayoutDashboard, Plus } from 'lucide-react';
 
 type BillingPeriod = 'monthly' | 'annually';
 
-const includedModules = ['Orders', 'Team', 'Board', 'Projects'];
+const includedModules = ['Orders', 'Projects', 'Board', 'Team'];
 
 const addOns = [
-  { name: 'Transactions', price: '+€10/mo' },
-  { name: 'Analytics', price: '+€10/mo' },
+  { name: 'Analytics & Finance', price: '+€20/mo' },
   { name: 'Blog', price: '+€15/mo' },
 ];
 
@@ -24,7 +24,43 @@ const pricing: Record<'standard' | 'partner', Record<BillingPeriod, string>> = {
 };
 
 export function OrtvestCMS() {
+  const t = useTranslations('cmsPage');
+  const locale = useLocale();
   const [billing, setBilling] = useState<BillingPeriod>('annually');
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+  const [checkoutError, setCheckoutError] = useState<string | null>(null);
+
+  async function startStandardCheckout() {
+    setCheckoutError(null);
+    setCheckoutLoading(true);
+    try {
+      const res = await fetch('/api/cms-subscribe', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({
+          plan:         billing === 'monthly' ? 'monthly' : 'annually',
+          locale,
+          cancel_path:  'home',
+        }),
+      });
+      let data: { url?: string; error?: string } = {};
+      try {
+        data = (await res.json()) as { url?: string; error?: string };
+      } catch {
+        setCheckoutError(t('pricing.checkoutNetwork'));
+        return;
+      }
+      if (!res.ok || !data.url) {
+        setCheckoutError(data.error ?? t('pricing.checkoutFailed'));
+        return;
+      }
+      window.location.assign(data.url);
+    } catch {
+      setCheckoutError(t('pricing.checkoutNetwork'));
+    } finally {
+      setCheckoutLoading(false);
+    }
+  }
 
   return (
     <section id="cms" className="section-padding bg-white" aria-labelledby="cms-heading">
@@ -77,18 +113,12 @@ export function OrtvestCMS() {
               </span>
 
               <div className="mt-1 flex items-baseline gap-1">
-                <span className="text-[2rem] font-bold leading-none text-black">
-                  {pricing.standard[billing]}
-                </span>
+                <span className="text-[2rem] font-bold leading-none text-black">{pricing.standard[billing]}</span>
                 <span className="text-body-sm text-black/45">/mo</span>
               </div>
-              {billing === 'annually' && (
-                <p className="mt-1 text-xs text-black/40">Billed annually</p>
-              )}
+              {billing === 'annually' && <p className="mt-1 text-xs text-black/40">Billed annually</p>}
 
-              <p className="mt-4 text-xs font-medium uppercase tracking-wider text-black/45">
-                What&apos;s included
-              </p>
+              <p className="mt-4 text-xs font-medium uppercase tracking-wider text-black/45">What&apos;s included</p>
               <ul className="mt-3 space-y-2" role="list">
                 {includedModules.map((mod) => (
                   <li key={mod} className="flex items-center gap-2 text-body-sm text-black/70">
@@ -98,11 +128,24 @@ export function OrtvestCMS() {
                 ))}
               </ul>
 
-              <div className="mt-5">
+              <div className="mt-5 flex flex-col gap-3">
+                <button
+                  type="button"
+                  disabled={checkoutLoading}
+                  onClick={startStandardCheckout}
+                  className="inline-flex h-11 items-center justify-center rounded-full border-2 border-black bg-black px-5 text-sm font-semibold text-white transition-colors hover:bg-black/90 disabled:cursor-not-allowed disabled:opacity-60">
+                  {checkoutLoading ? t('pricing.subscribeLoading') : t('pricing.subscribe')}
+                </button>
+                <p className="text-[11px] leading-snug text-black/45">{t('pricing.subscribeNote')}</p>
+                {checkoutError && (
+                  <p className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-xs text-red-800 whitespace-pre-wrap">
+                    {checkoutError}
+                  </p>
+                )}
                 <Link
                   href="#contact"
-                  className="inline-flex h-11 items-center justify-center rounded-full border-2 border-black bg-white px-5 text-sm font-semibold text-black transition-colors hover:bg-black hover:text-white">
-                  Get started
+                  className="text-center text-xs font-medium text-black/50 underline-offset-2 hover:text-black/75 hover:underline">
+                  {t('pricing.contactInstead')}
                 </Link>
               </div>
             </InteractiveCard>
@@ -121,18 +164,12 @@ export function OrtvestCMS() {
               <p className="mt-1 text-body-sm text-white/55">For clients with an active contract.</p>
 
               <div className="mt-3 flex items-baseline gap-1">
-                <span className="text-[2rem] font-bold leading-none text-accent">
-                  {pricing.partner[billing]}
-                </span>
+                <span className="text-[2rem] font-bold leading-none text-accent">{pricing.partner[billing]}</span>
                 <span className="text-body-sm text-white/45">/mo</span>
               </div>
-              {billing === 'annually' && (
-                <p className="mt-1 text-xs text-white/35">Billed annually</p>
-              )}
+              {billing === 'annually' && <p className="mt-1 text-xs text-white/35">Billed annually</p>}
 
-              <p className="mt-4 text-xs font-medium uppercase tracking-wider text-white/45">
-                What&apos;s included
-              </p>
+              <p className="mt-4 text-xs font-medium uppercase tracking-wider text-white/45">What&apos;s included</p>
               <ul className="mt-3 space-y-2" role="list">
                 {includedModules.map((mod) => (
                   <li key={mod} className="flex items-center gap-2 text-body-sm text-white/75">

@@ -1,7 +1,9 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { ReduxProvider } from '@global/store/ReduxProvider';
-import { CMSPage } from '@modules/CMSPage';
+import { fetchCmsBlogPosts } from '@lib/cms-api';
+import { rowsToCardModels } from '@lib/blog-model';
+import { BlogListingClient } from '@modules/Blog/BlogListingClient/BlogListingClient';
 import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
@@ -10,20 +12,19 @@ import { Modal } from '@modules/Modals';
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ortvest.com';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: 'cmsPage.metadata' });
-
+  const t = await getTranslations({ locale, namespace: 'blogPage.metadata' });
   return {
     title: t('title'),
     description: t('description'),
     metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: `/${locale}/cms`,
-      languages: { en: '/en/cms', ua: '/ua/cms', pl: '/pl/cms' },
+      canonical: `/${locale}/blog`,
+      languages: { en: '/en/blog', ua: '/ua/blog', pl: '/pl/blog' },
     },
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: `/${locale}/cms`,
+      url: `/${locale}/blog`,
       siteName: 'Ortvest',
       locale: locale === 'ua' ? 'uk_UA' : locale === 'pl' ? 'pl_PL' : 'en_US',
       type: 'website',
@@ -31,14 +32,16 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function CmsPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
+  const rows = await fetchCmsBlogPosts(locale);
+  const posts = rowsToCardModels(rows);
 
   return (
     <ReduxProvider>
       <Header />
       <main>
-        <CMSPage />
+        <BlogListingClient posts={posts} />
         <Contact />
       </main>
       <Footer />

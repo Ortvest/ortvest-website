@@ -4,6 +4,7 @@
     "technologies": "Technologie",
     "process": "Proces",
     "about": "O nas",
+    "blog": "Blog",
     "cases": "Projekty",
     "faq": "FAQ",
     "contact": "Kontakt",
@@ -75,7 +76,8 @@
       "title": "Integracja API z CMS",
       "description": "Podłącz swoją istniejącą stronę do Ortvest CMS. Zgłoszenia z formularzy trafiają bezpośrednio do Twojego panelu Zamówień.",
       "priceFrom": "od",
-      "price": "€200"
+      "price": "€150",
+      "setupFee": "jednorazowa opłata instalacyjna"
     }
   },
   "technologies": {
@@ -321,9 +323,11 @@
       "eyebrow": "Przegląd produktu",
       "title": "Wszystko, czego potrzebuje Twój zespół",
       "subtitle": "Sześć powiązanych modułów obejmujących pełny cykl operacji biznesowych.",
-      "addonBadge": "Moduł dodatkowy · +€10/mies.",
+      "addonBadge": "Moduł dodatkowy · +€20/mo",
       "dependsLabel": "Zależność:",
       "placeholderAlt": "podgląd interfejsu",
+      "financeNote": "Część modułu dodatkowego Analytics & Finance",
+      "financeBadge": "Analytics & Finance add-on · +€20/mo",
       "apiBlock": {
         "title": "Integracja strony przez API",
         "description": "Podłącz formularz kontaktowy swojej strony bezpośrednio do Ortvest CMS. Każde zgłoszenie trafia automatycznie do Zamówień — bez ręcznego wprowadzania danych.",
@@ -339,7 +343,7 @@
           "feature1": "Śledź leady i zgłoszenia",
           "feature2": "Zarządzaj statusami (Oczekuje / Zrealizowane)",
           "feature3": "Natychmiast konwertuj zamówienia na projekty",
-          "dependency": "Zakładka Finanse wymaga modułu Transakcje. Tworzenie projektu wymaga modułu Projekty."
+          "dependency": "Zakładka Finanse wymaga modułu Analytics & Finance. Tworzenie projektu wymaga modułu Projekty."
         },
         "projects": {
           "name": "Projekty",
@@ -360,18 +364,15 @@
           "name": "Transakcje",
           "subtitle": "Ręczne śledzenie przepływów pieniężnych — pensje, subskrypcje, podatki",
           "feature1": "Rejestruj przychody i wydatki według kategorii",
-          "feature2": "Wyświetlaj całkowite przychody, wydatki i wynik netto",
-          "feature3": "Pełny ślad audytu z datą i autorem",
-          "addonBadge": "Moduł dodatkowy · +€10/mies."
+          "feature2": "Wyświetlaj całkowite przychody, całkowite wydatki i wynik netto",
+          "feature3": "Pełny ślad audytu z datą i autorem"
         },
         "analytics": {
           "name": "Analityka",
           "subtitle": "Przegląd finansowy — P&L i przepływy pieniężne",
           "feature1": "Rachunek zysków i strat oraz przepływy pieniężne obok siebie",
-          "feature2": "Wykresy: Przychody vs Gotówka, Trend zysku netto, Zamówienia wg statusu",
-          "feature3": "Filtruj według okresu: 7d / 30d / miesiąc / kwartał / własny",
-          "dependency": "Działa najlepiej z danymi z Transakcji i Zamówień.",
-          "addonBadge": "Moduł dodatkowy · +€10/mies."
+          "feature2": "Wykresy: Revenue vs Cash, Net Profit Trend, Orders by Status and Service",
+          "feature3": "Filtruj według okresu: 7d / 30d / miesiąc / kwartał / własny"
         },
         "blog": {
           "name": "Blog",
@@ -405,6 +406,12 @@
       "whatsIncluded": "Co jest included",
       "addonLabel": "Rozszerz o moduły dodatkowe",
       "apiFeature": "Integracja API formularzy strony",
+      "subscribe": "Wykup online",
+      "subscribeLoading": "Przekierowywanie…",
+      "subscribeNote": "Płatność przez Stripe (tryb testowy w dev). Po płatności utworzysz konto CMS.",
+      "contactInstead": "Wolisz porozmawiać?",
+      "checkoutFailed": "Nie można otworzyć płatności.",
+      "checkoutNetwork": "Błąd sieci. Spróbuj ponownie.",
       "standard": {
         "name": "Standard",
         "cta": "Rozpocznij"
@@ -424,6 +431,26 @@
     "metadata": {
       "title": "Ortvest CMS — System zarządzania biznesem",
       "description": "Ortvest CMS to system zarządzania biznesem stworzony dla agencji, studiów i zespołów IT. Zarządzaj zamówieniami, projektami, zadaniami, finansami i zespołem w jednym miejscu."
+    }
+  },
+  "blogSection": {
+    "title": "Insights i aktualności",
+    "subtitle": "O designie, programowaniu i budowaniu produktów cyfrowych.",
+    "viewAll": "Wszystkie artykuły →"
+  },
+  "blogPage": {
+    "title": "Blog",
+    "subtitle": "Materiały o designie, rozwoju i wzroście.",
+    "readArticle": "Czytaj artykuł →",
+    "loadMore": "Załaduj więcej",
+    "back": "← Wróć do blogu",
+    "moreArticles": "Więcej artykułów",
+    "emptyTitle": "Nie ma jeszcze artykułów. Zajrzyj wkrótce.",
+    "minRead": "{n} min czytania",
+    "filterAll": "Wszystkie",
+    "metadata": {
+      "title": "Blog | Ortvest",
+      "description": "Artykuły o designie, rozwoju i wzroście od zespołu Ortvest."
     }
   }
 }

@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { sectionIds } from '@shared/enums/SectionID.enums';
 import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
@@ -17,10 +17,11 @@ import AppIconHorizontal from '@public/icons/AppLogoHorizontal.svg';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 
-const navKeys = ['about', 'services', 'process', 'technologies', 'cases', 'faq', 'contact'] as const;
+const navOrder = ['about', 'services', 'process', 'technologies', 'blog', 'cases', 'faq', 'contact'] as const;
 
 export function BurgerMenu() {
   const t = useTranslations('nav');
+  const locale = useLocale();
   const dispatch = useAppDispatch();
   const { isBurgerOpened } = useAppSelector((state) => state.UIReducer);
   const closeMenu = () => dispatch(UISlice.actions.setIsBurgerOpened(false));
@@ -63,18 +64,27 @@ export function BurgerMenu() {
           </button>
 
           <nav className="container-main flex flex-1 flex-col gap-1 pb-6 pt-20" aria-label="Mobile navigation">
-            {navKeys.map((key, i) => (
+            {navOrder.map((key, i) => (
               <motion.div
                 key={key}
                 initial={{ opacity: 0, x: -8 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.04, duration: 0.3, ease: EASE }}>
-                <Link
-                  href={sectionIds[key as keyof typeof sectionIds]}
-                  className="block rounded-lg px-3 py-3 text-lg font-medium text-black transition hover:bg-black/[0.04]"
-                  onClick={closeMenu}>
-                  {t(key)}
-                </Link>
+                {key === 'blog' ? (
+                  <Link
+                    href={`/${locale}/blog`}
+                    className="block rounded-lg px-3 py-3 text-lg font-medium text-black transition hover:bg-black/[0.04]"
+                    onClick={closeMenu}>
+                    {t('blog')}
+                  </Link>
+                ) : (
+                  <Link
+                    href={sectionIds[key as keyof typeof sectionIds]}
+                    className="block rounded-lg px-3 py-3 text-lg font-medium text-black transition hover:bg-black/[0.04]"
+                    onClick={closeMenu}>
+                    {t(key)}
+                  </Link>
+                )}
               </motion.div>
             ))}
             <div className="mt-4 border-t border-black/[0.06] pt-4 px-3">

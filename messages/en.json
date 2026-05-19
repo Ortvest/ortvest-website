@@ -4,6 +4,7 @@
     "technologies": "Technologies",
     "process": "Process",
     "about": "About",
+    "blog": "Blog",
     "cases": "Cases",
     "faq": "FAQ",
     "contact": "Contact",
@@ -75,7 +76,8 @@
       "title": "CMS API Integration",
       "description": "Connect your existing website to Ortvest CMS. Form submissions go directly to your Orders dashboard.",
       "priceFrom": "from",
-      "price": "€200"
+      "price": "€150",
+      "setupFee": "one-time setup fee"
     }
   },
   "technologies": {
@@ -321,9 +323,11 @@
       "eyebrow": "Product overview",
       "title": "Everything your team needs",
       "subtitle": "Six interconnected modules that cover the full lifecycle of your business operations.",
-      "addonBadge": "Add-on module · +€10/mo",
+      "addonBadge": "Add-on module · +€20/mo",
       "dependsLabel": "Dependency:",
       "placeholderAlt": "interface preview",
+      "financeNote": "Part of the Analytics & Finance add-on module",
+      "financeBadge": "Analytics & Finance add-on · +€20/mo",
       "apiBlock": {
         "title": "Website Integration via API",
         "description": "Connect your website contact form directly to Ortvest CMS. Every submission lands automatically in Orders — no manual entry, no copy-paste.",
@@ -339,7 +343,7 @@
           "feature1": "Track leads and submissions",
           "feature2": "Manage statuses (Pending / Done)",
           "feature3": "Convert orders into projects instantly",
-          "dependency": "Financials tab requires Transactions module. Project creation requires Projects module."
+          "dependency": "Financials tab requires Analytics & Finance module. Project creation requires Projects module."
         },
         "projects": {
           "name": "Projects",
@@ -361,17 +365,14 @@
           "subtitle": "Manual cash flow tracking — salaries, subscriptions, taxes",
           "feature1": "Log income and expenses by category",
           "feature2": "See Total Income, Total Expenses and Net at a glance",
-          "feature3": "Full audit trail with date and author",
-          "addonBadge": "Add-on module · +€10/mo"
+          "feature3": "Full audit trail with date and author"
         },
         "analytics": {
           "name": "Analytics",
           "subtitle": "Financial overview — P&L and cash flow",
           "feature1": "P&L Statement and Cash Flow Statement side by side",
-          "feature2": "Charts: Revenue vs Cash, Net Profit Trend, Orders by Status",
-          "feature3": "Filter by period: 7d / 30d / month / quarter / custom",
-          "dependency": "Works best with Transactions and Orders data.",
-          "addonBadge": "Add-on module · +€10/mo"
+          "feature2": "Charts: Revenue vs Cash, Net Profit Trend, Orders by Status and Service",
+          "feature3": "Filter by period: 7d / 30d / month / quarter / custom"
         },
         "blog": {
           "name": "Blog",
@@ -405,6 +406,12 @@
       "whatsIncluded": "What's included",
       "addonLabel": "Expand with add-on modules",
       "apiFeature": "Website form API integration",
+      "subscribe": "Subscribe online",
+      "subscribeLoading": "Redirecting…",
+      "subscribeNote": "Secure payment via Stripe (test mode in development). You'll create your CMS account after checkout.",
+      "contactInstead": "Prefer to talk?",
+      "checkoutFailed": "Could not open the payment page.",
+      "checkoutNetwork": "Network error. Try again.",
       "standard": {
         "name": "Standard",
         "cta": "Get started"
@@ -424,6 +431,26 @@
     "metadata": {
       "title": "Ortvest CMS — Business Management System",
       "description": "Ortvest CMS is a business management system built for agencies, studios and IT teams. Manage orders, projects, tasks, finances and your team in one place."
+    }
+  },
+  "blogSection": {
+    "title": "Insights & Updates",
+    "subtitle": "Thoughts on design, development, and building digital products.",
+    "viewAll": "View all articles →"
+  },
+  "blogPage": {
+    "title": "Blog",
+    "subtitle": "Insights on design, development & growth.",
+    "readArticle": "Read article →",
+    "loadMore": "Load more",
+    "back": "← Back to Blog",
+    "moreArticles": "More articles",
+    "emptyTitle": "No articles yet. Check back soon.",
+    "minRead": "{n} min read",
+    "filterAll": "All",
+    "metadata": {
+      "title": "Blog | Ortvest",
+      "description": "Insights on design, development, and growth from the Ortvest team."
     }
   }
 }

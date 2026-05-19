@@ -128,6 +128,7 @@ export function Services() {
                   <div className="text-right">
                     <p className="text-xs text-black/40">{t('cmsApi.priceFrom')}</p>
                     <p className="text-xl font-bold leading-tight text-black">{t('cmsApi.price')}</p>
+                    <p className="text-[10px] text-black/40">{t('cmsApi.setupFee')}</p>
                   </div>
                   <Link
                     href="#contact"
