@@ -38,9 +38,8 @@ export async function fetchCmsBlogPosts(locale: string): Promise<CmsBlogPostRow[
     if (!res.ok) return [];
     const data = (await res.json()) as unknown;
     if (!Array.isArray(data)) return [];
-    return data.filter(
-      (row): row is CmsBlogPostRow =>
-        Boolean(row && typeof row === 'object' && (row as CmsBlogPostRow).status === 'published')
+    return data.filter((row): row is CmsBlogPostRow =>
+      Boolean(row && typeof row === 'object' && (row as CmsBlogPostRow).status === 'published')
     );
   } catch {
     return [];

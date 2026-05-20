@@ -1,16 +1,14 @@
-import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { Container } from '@shared/components';
+
 import { ReduxProvider } from '@global/store/ReduxProvider';
-import { fetchCmsBlogPostBySlug, fetchCmsBlogPosts } from '@lib/cms-api';
-import {
-  BlogArticleContent,
-  metaDescriptionFromPost,
-  readMinutesFromContent,
-} from '@lib/blog-content';
+import { BlogArticleContent, metaDescriptionFromPost, readMinutesFromContent } from '@lib/blog-content';
 import { formatBlogPostDate } from '@lib/blog-dates';
 import { pickRelatedCards, rowsToCardModels } from '@lib/blog-model';
+import { fetchCmsBlogPostBySlug, fetchCmsBlogPosts } from '@lib/cms-api';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 import { BlogPostCard } from '@modules/Blog/BlogPostCard';
@@ -18,7 +16,6 @@ import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
-import { Container } from '@shared/components';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ortvest.com';
 
@@ -90,9 +87,7 @@ export default async function BlogArticlePage({ params }: Props) {
               {post.tags && post.tags.length > 0 && (
                 <div className="mt-6 flex flex-wrap gap-2">
                   {post.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-accent px-3 py-1 text-body-sm font-medium text-black">
+                    <span key={tag} className="rounded-full bg-accent px-3 py-1 text-body-sm font-medium text-black">
                       {tag}
                     </span>
                   ))}
@@ -117,12 +112,7 @@ export default async function BlogArticlePage({ params }: Props) {
               <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-2xl">
                 {post.cover_image ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={post.cover_image}
-                    alt=""
-                    loading="lazy"
-                    className="h-full w-full object-cover"
-                  />
+                  <img src={post.cover_image} alt="" loading="lazy" className="h-full w-full object-cover" />
                 ) : (
                   <BlogCoverPlaceholder />
                 )}

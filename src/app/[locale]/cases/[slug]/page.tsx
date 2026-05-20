@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
 import { cases } from '@modules/Cases/data';
@@ -19,7 +18,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: CasePageProps) {
-  const { slug } = params;
+  const { slug, locale } = params;
   const caseItem = cases.find((c) => c.id === slug);
 
   if (!caseItem) {
@@ -28,11 +27,10 @@ export async function generateMetadata({ params }: CasePageProps) {
     };
   }
 
-  const t = await getTranslations('cases');
-
+  const t = await getTranslations({ locale, namespace: `caseStudies.${slug}.meta` });
   return {
-    title: `${caseItem.title} | Ortvest`,
-    description: caseItem.challenge,
+    title: t('title'),
+    description: t('description'),
   };
 }
 

@@ -27,7 +27,10 @@ export function plainTextFromTiptap(content: unknown): string {
     const s = content.trim();
     if (!s) return '';
     if (s.startsWith('<')) {
-      return s.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      return s
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
     }
     return s;
   }
@@ -111,9 +114,7 @@ function renderMarks(text: string, marks: TiptapMark[] | undefined, keyPrefix: s
         break;
       case 'code':
         node = (
-          <code
-            key={k}
-            className="rounded px-1.5 py-0.5 font-mono text-sm bg-black/[0.06] text-black/90">
+          <code key={k} className="rounded px-1.5 py-0.5 font-mono text-sm bg-black/[0.06] text-black/90">
             {node}
           </code>
         );
@@ -218,18 +219,14 @@ function renderNode(node: unknown, key: string): React.ReactNode {
       );
     case 'blockquote':
       return (
-        <blockquote
-          key={key}
-          className="my-4 border-l-[3px] border-accent py-1 pl-4 italic text-black/60">
+        <blockquote key={key} className="my-4 border-l-[3px] border-accent py-1 pl-4 italic text-black/60">
           {renderDocContent(content, key)}
         </blockquote>
       );
     case 'codeBlock': {
       const text = codeBlockPlainText(node);
       return (
-        <pre
-          key={key}
-          className="my-4 overflow-x-auto rounded-lg bg-black p-4 text-sm text-white/90">
+        <pre key={key} className="my-4 overflow-x-auto rounded-lg bg-black p-4 text-sm text-white/90">
           <code>{text}</code>
         </pre>
       );
@@ -259,12 +256,7 @@ function renderNode(node: unknown, key: string): React.ReactNode {
 export function BlogArticleContent({ content }: { content: unknown }) {
   if (content == null) return null;
   if (isHtmlString(content)) {
-    return (
-      <div
-        className="blog-article-body"
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
-    );
+    return <div className="blog-article-body" dangerouslySetInnerHTML={{ __html: content }} />;
   }
   if (isTiptapDoc(content)) {
     return <>{renderNode(content, 'root')}</>;

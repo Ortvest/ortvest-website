@@ -1,5 +1,5 @@
-import type { CmsBlogPostRow } from '@lib/cms-api';
 import { excerptFromContent, readMinutesFromContent } from '@lib/blog-content';
+import type { CmsBlogPostRow } from '@lib/cms-api';
 
 export type BlogCardModel = {
   id: string;
@@ -30,9 +30,7 @@ export function rowToCardModel(row: CmsBlogPostRow): BlogCardModel | null {
 
 export function rowsToCardModels(rows: CmsBlogPostRow[]): BlogCardModel[] {
   const list = rows.map(rowToCardModel).filter(Boolean) as BlogCardModel[];
-  return list.sort(
-    (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
-  );
+  return list.sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
 }
 
 export function pickRelatedCards(

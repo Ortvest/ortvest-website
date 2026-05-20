@@ -12,6 +12,8 @@ const trustBullets = [
   { key: 'trust3', icon: Headphones },
 ] as const;
 
+const nicheTagKeys = ['p2p', 'community', 'hospitality', 'conversion', 'logistics'] as const;
+
 export function Hero() {
   const t = useTranslations('hero');
 
@@ -35,6 +37,18 @@ export function Hero() {
             </h1>
 
             <p className="mt-5 text-body-lg text-black/60 sm:text-xl">{t('subheadline')}</p>
+
+            <div className="mt-6 flex flex-wrap gap-2">
+              {nicheTagKeys.map((key) => (
+                <span
+                  key={key}
+                  className={`rounded-full border border-black/15 px-3.5 py-1 text-[13px] ${
+                    key === 'logistics' ? 'text-black/40 opacity-60' : 'text-black/50'
+                  }`}>
+                  {t(`nicheTags.${key}`)}
+                </span>
+              ))}
+            </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button href="#contact" variant="primary" size="lg" icon={<ArrowRight className="h-4 w-4" />} iconRight>

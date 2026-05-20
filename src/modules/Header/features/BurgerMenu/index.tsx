@@ -17,7 +17,7 @@ import AppIconHorizontal from '@public/icons/AppLogoHorizontal.svg';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 
-const navOrder = ['about', 'services', 'process', 'technologies', 'blog', 'cases', 'faq', 'contact'] as const;
+const navOrder = ['about', 'services', 'industries', 'process', 'technologies', 'blog', 'cases', 'faq', 'contact'] as const;
 
 export function BurgerMenu() {
   const t = useTranslations('nav');

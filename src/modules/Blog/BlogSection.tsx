@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
-import { Newspaper } from 'lucide-react';
 
-import { fetchCmsBlogPosts } from '@lib/cms-api';
-import { rowsToCardModels } from '@lib/blog-model';
-
-import { BlogPostCard } from '@modules/Blog/BlogPostCard';
 import { Container, SectionReveal } from '@shared/components';
+
+import { rowsToCardModels } from '@lib/blog-model';
+import { fetchCmsBlogPosts } from '@lib/cms-api';
+import { BlogPostCard } from '@modules/Blog/BlogPostCard';
+import { Newspaper } from 'lucide-react';
 
 export async function BlogSection({ locale }: { locale: string }) {
   const rows = await fetchCmsBlogPosts(locale);
@@ -25,9 +25,7 @@ export async function BlogSection({ locale }: { locale: string }) {
                 <span className="flex h-6 w-6 items-center justify-center rounded-md bg-accent/20">
                   <Newspaper className="h-3.5 w-3.5 text-black" />
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-widest text-black/50">
-                  Blog
-                </span>
+                <span className="text-xs font-semibold uppercase tracking-widest text-black/50">Blog</span>
               </div>
               <h2 id="blog-heading" className="text-h2 text-black">
                 {t('title')}

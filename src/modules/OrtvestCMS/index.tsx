@@ -35,12 +35,12 @@ export function OrtvestCMS() {
     setCheckoutLoading(true);
     try {
       const res = await fetch('/api/cms-subscribe', {
-        method:  'POST',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify({
-          plan:         billing === 'monthly' ? 'monthly' : 'annually',
+        body: JSON.stringify({
+          plan: billing === 'monthly' ? 'monthly' : 'annually',
           locale,
-          cancel_path:  'home',
+          cancel_path: 'home',
         }),
       });
       let data: { url?: string; error?: string } = {};

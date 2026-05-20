@@ -1,11 +1,10 @@
 'use client';
 
-import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 
-import type { BlogCardModel } from '@lib/blog-model';
 import { formatBlogPostDate } from '@lib/blog-dates';
-
+import type { BlogCardModel } from '@lib/blog-model';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 
@@ -40,18 +39,14 @@ export function BlogPostCard({ post }: Props) {
         {post.tags.length > 0 && (
           <div className="mb-3 flex flex-wrap gap-1.5">
             {post.tags.slice(0, 3).map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full bg-accent px-3 py-1 text-body-sm font-medium text-black">
+              <span key={tag} className="rounded-full bg-accent px-3 py-1 text-body-sm font-medium text-black">
                 {tag}
               </span>
             ))}
           </div>
         )}
 
-        <h3 className="text-h3 line-clamp-2 text-black transition group-hover:text-black/90">
-          {post.title}
-        </h3>
+        <h3 className="text-h3 line-clamp-2 text-black transition group-hover:text-black/90">{post.title}</h3>
 
         <p className="mt-2 line-clamp-2 flex-1 text-body text-black/55">{post.excerpt}</p>
 

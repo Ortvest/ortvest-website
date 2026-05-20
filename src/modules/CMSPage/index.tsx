@@ -81,12 +81,12 @@ export function CMSPage() {
     setCheckoutLoading(true);
     try {
       const res = await fetch('/api/cms-subscribe', {
-        method:  'POST',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify({
-          plan:         billing === 'monthly' ? 'monthly' : 'annually',
+        body: JSON.stringify({
+          plan: billing === 'monthly' ? 'monthly' : 'annually',
           locale,
-          cancel_path:  'cms',
+          cancel_path: 'cms',
         }),
       });
       let data: { url?: string; error?: string } = {};
@@ -477,9 +477,7 @@ export function CMSPage() {
                     key={key}
                     className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-2 text-sm">
                     <Plus className="h-3.5 w-3.5 shrink-0 text-accent" />
-                    <span className="font-medium text-white">
-                      {label ?? t(`showcase.modules.${moduleKey}.name`)}
-                    </span>
+                    <span className="font-medium text-white">{label ?? t(`showcase.modules.${moduleKey}.name`)}</span>
                     <span className="text-white/45">{price}</span>
                   </div>
                 ))}

@@ -1,8 +1,8 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { ReduxProvider } from '@global/store/ReduxProvider';
-import { fetchCmsBlogPosts } from '@lib/cms-api';
 import { rowsToCardModels } from '@lib/blog-model';
+import { fetchCmsBlogPosts } from '@lib/cms-api';
 import { BlogListingClient } from '@modules/Blog/BlogListingClient/BlogListingClient';
 import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';

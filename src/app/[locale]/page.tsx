@@ -13,8 +13,8 @@ import { FAQ } from '@modules/FAQ';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Hero } from '@modules/Hero';
+import { Industries } from '@modules/Industries';
 import { Modal } from '@modules/Modals';
-import { OrtvestCMS } from '@modules/OrtvestCMS';
 import { Process } from '@modules/Process';
 import { Services } from '@modules/Services';
 import { Technologies } from '@modules/Technologies';
@@ -29,15 +29,15 @@ export default function Home({ params: { locale } }: { params: { locale: string 
         <Hero />
         <About />
         <Services />
+        <Industries />
         <Process />
+        <Technologies />
         <Cases />
         <FAQ />
         <Consultation />
-        <OrtvestCMS />
         <Suspense fallback={<BlogSectionSkeleton />}>
           <BlogSection locale={locale} />
         </Suspense>
-        <Technologies />
         <Contact />
       </main>
       <Footer />

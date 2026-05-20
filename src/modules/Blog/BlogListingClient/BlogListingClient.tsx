@@ -2,16 +2,16 @@
 
 import { useMemo, useState } from 'react';
 
-import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 
-import type { BlogCardModel } from '@lib/blog-model';
+import { Container } from '@shared/components';
+
 import { formatBlogPostDate } from '@lib/blog-dates';
-
-import { BlogPostCard } from '@modules/Blog/BlogPostCard';
+import type { BlogCardModel } from '@lib/blog-model';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
-import { Container } from '@shared/components';
+import { BlogPostCard } from '@modules/Blog/BlogPostCard';
 import { FileText } from 'lucide-react';
 
 const GRID_PAGE = 9;
@@ -103,17 +103,13 @@ export function BlogListingClient({ posts }: Props) {
                 {hero.tags.length > 0 && (
                   <div className="mb-3 flex flex-wrap gap-1.5">
                     {hero.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-full bg-accent px-3 py-1 text-body-sm font-medium text-black">
+                      <span key={tag} className="rounded-full bg-accent px-3 py-1 text-body-sm font-medium text-black">
                         {tag}
                       </span>
                     ))}
                   </div>
                 )}
-                <h2 className="text-display-sm line-clamp-3 font-bold text-black sm:text-[2rem]">
-                  {hero.title}
-                </h2>
+                <h2 className="text-display-sm line-clamp-3 font-bold text-black sm:text-[2rem]">{hero.title}</h2>
                 <p className="mt-3 line-clamp-3 text-body-lg text-black/55">{hero.excerpt}</p>
                 <div className="mt-4 flex flex-wrap items-center gap-2 text-body-sm text-black/50">
                   <AuthorAvatar name={hero.authorName} size={32} />

@@ -1,0 +1,743 @@
+{
+  "shared": {
+    "process": {
+      "title": "Як ми це будували",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Змоделювали цілі, user flow, обмеження та edge cases до коду."
+        },
+        "design": {
+          "title": "Design",
+          "description": "UX, візуальну мову та ключові екрани відповідно до стратегії продукту."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Реалізували ключові функції, інтеграції та критичні для швидкодії шляхи."
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Запуск з моніторингом, онбордингом і підтримкою після релізу."
+        }
+      }
+    },
+    "features": {
+      "title": "Ключові функції",
+      "subtitle": "Що ми спроєктували та реалізували в цьому проєкті."
+    },
+    "gallery": {
+      "screens": "Екрани продукту",
+      "work": "Галерея проєкту",
+      "brand": "Брендові матеріали"
+    },
+    "nextCase": {
+      "label": "Наступний кейс"
+    },
+    "cta": {
+      "p2p": {
+        "title": "Будуєте P2P або маркетплейс?",
+        "subtitle": "Давайте обговоримо вашу ідею.",
+        "button": "Написати нам"
+      },
+      "community": {
+        "title": "Будуєте платформу спільноти?",
+        "subtitle": "Давайте обговоримо ваш продукт.",
+        "button": "Написати нам"
+      },
+      "logistics": {
+        "title": "Будуєте логістичний продукт?",
+        "subtitle": "Обговоримо ваше операційне ПЗ.",
+        "button": "Написати нам"
+      },
+      "conversion": {
+        "title": "Потрібен сайт з високою конверсією?",
+        "subtitle": "Допрацюємо меседж і дизайн.",
+        "button": "Написати нам"
+      },
+      "brand": {
+        "title": "Потрібна айдентика бренду?",
+        "subtitle": "Створимо щось запам’ятовуване.",
+        "button": "Написати нам"
+      },
+      "product": {
+        "title": "Є ідея продукту?",
+        "subtitle": "Обговоримо scope, терміни та підхід.",
+        "button": "Написати нам"
+      }
+    }
+  },
+  "yachtmate": {
+    "meta": {
+      "title": "YachtMate — Приватна мережа яхт-клубу | Ortvest",
+      "description": "Безпечна мережа учасників з верифікацією, чатом у реальному часі та подіями."
+    },
+    "hero": {
+      "subtitle": "Приватна соцмережа для членів яхт-клубу — безпечна комунікація, події та верифікований каталог."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Платформа спільноти"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Design + Dev"
+      },
+      "platform": {
+        "label": "Платформа",
+        "value": "Web"
+      }
+    },
+    "challenge": "Клубам потрібна закрита мережа без публічних каналів. Виклик: чат, верифікація та події під суворим контролем приватності.",
+    "solution": "YachtMate з верифікацією, ролями, чатом і інструментами подій. React і Node.js — низька затримка та приватність даних.",
+    "features": {
+      "subtitle": "Core mechanics that keep a private club network secure and useful day to day.",
+      "items": {
+        "verification": {
+          "title": "Member verification",
+          "description": "Invite-only onboarding and identity checks so only verified club members get access."
+        },
+        "messaging": {
+          "title": "Real-time messaging",
+          "description": "Private channels and direct messages with low-latency delivery for active communities."
+        },
+        "events": {
+          "title": "Event coordination",
+          "description": "Create, share, and RSVP to club events without leaving the platform."
+        },
+        "directory": {
+          "title": "Member directory",
+          "description": "Searchable profiles with roles and contact preferences controlled by each member."
+        },
+        "privacy": {
+          "title": "Privacy controls",
+          "description": "Granular visibility settings so members choose what the club can see."
+        },
+        "roles": {
+          "title": "Role-based access",
+          "description": "Admins, officers, and members each see the tools and data relevant to their role."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Стрічка та оголошення",
+        "2": "Управління подіями",
+        "3": "Інтерфейс чату"
+      }
+    }
+  },
+  "sharingground": {
+    "meta": {
+      "title": "SharingGround — P2P платформа обміну речами | Ortvest",
+      "description": "P2P з верифікацією, ескроу, відстеженням і страхуванням."
+    },
+    "hero": {
+      "subtitle": "P2P-платформа оренди та обміну речами в спільноті — верифікація, відстеження, безпечні платежі."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "P2P Marketplace"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Design + Dev"
+      },
+      "platform": {
+        "label": "Платформа",
+        "value": "Web + Mobile"
+      }
+    },
+    "challenge": "Незнайомі довіряють одне одному речі. Як забезпечити відповідальність і спори без посередництва в кожній угоді?",
+    "solution": "Шар довіри: верифікація, логи стану, страхування, відгуки. Ескроу до підтвердження обміну обома сторонами.",
+    "features": {
+      "subtitle": "The product mechanics that make community sharing work at scale.",
+      "items": {
+        "verification": {
+          "title": "User verification",
+          "description": "Identity checks and profile trust scores to establish accountability between strangers."
+        },
+        "tracking": {
+          "title": "Item tracking",
+          "description": "Condition logs before and after each exchange with photo evidence and timestamps."
+        },
+        "escrow": {
+          "title": "Escrow payments",
+          "description": "Funds held securely and released only after both parties confirm the completed exchange."
+        },
+        "reviews": {
+          "title": "Review system",
+          "description": "Two-way reviews that build trust over time and surface reliable community members."
+        },
+        "insurance": {
+          "title": "Insurance integration",
+          "description": "Optional item insurance for high-value goods — embedded directly in the listing flow."
+        },
+        "messaging": {
+          "title": "In-app messaging",
+          "description": "Secure chat between borrower and lender without exposing personal contact details."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Flow оголошення",
+        "2": "Дашборд орендаря",
+        "3": "Верифікація та довіра"
+      }
+    }
+  },
+  "profitcraft": {
+    "meta": {
+      "title": "ProfitCraft — Сайт credit-building | Ortvest",
+      "description": "Конверсійний сайт для послуги кредитної історії в США."
+    },
+    "hero": {
+      "subtitle": "Сайт на довірі — шляхи побудови кредиту та ліди для новачків у фінансовій системі США."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Conversion Site"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Design + Dev"
+      },
+      "platform": {
+        "label": "Платформа",
+        "value": "Web"
+      }
+    },
+    "challenge": "Новачки не розуміють роль кредиту. Потрібен сайт, що будує довіру та конвертує без жаргону.",
+    "solution": "Наратив: проблема, шлях, доказ, дія. Типографіка, trust signals і CTA до контакту.",
+    "features": {
+      "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
+      "items": {
+        "valueProp": {
+          "title": "Clear value proposition",
+          "description": "Headlines and sections that immediately answer why credit-building matters now."
+        },
+        "trust": {
+          "title": "Trust signals",
+          "description": "Social proof, credentials, and reassurance blocks placed at decision points."
+        },
+        "paths": {
+          "title": "Service paths",
+          "description": "Structured journeys for loans, auto, home, and business — each with dedicated messaging."
+        },
+        "leads": {
+          "title": "Lead capture",
+          "description": "Forms and CTAs tuned for low friction without sacrificing lead quality."
+        },
+        "responsive": {
+          "title": "Responsive layout",
+          "description": "Consistent experience across mobile and desktop where most research happens."
+        },
+        "seo": {
+          "title": "SEO foundation",
+          "description": "Semantic structure and metadata so organic traffic finds the right pages."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Hero та value prop",
+        "2": "Секція послуг",
+        "3": "Контакт і конверсія"
+      }
+    }
+  },
+  "skisailclub": {
+    "meta": {
+      "title": "Ski&Sail Club — Бронювання яхтенних поїздок | Ortvest",
+      "description": "Платформа клубу: маршрути, бронювання, спільнота."
+    },
+    "hero": {
+      "subtitle": "Цифровий дім клубу — маршрути, бронювання та спільнота яхтсменів."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Hospitality + Community"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Development"
+      },
+      "platform": {
+        "label": "Платформа",
+        "value": "Web"
+      }
+    },
+    "challenge": "Одна платформа для новачків і досвідчених — поїздки, бронювання, емоція вітрильності.",
+    "solution": "Швидка платформа Next.js з бронюванням, маршрутами та профілями в єдиному досвіді.",
+    "features": {
+      "subtitle": "Booking and community tools that reflect the spirit of sailing.",
+      "items": {
+        "routes": {
+          "title": "Route discovery",
+          "description": "Browse yacht routes with rich imagery, details, and availability at a glance."
+        },
+        "booking": {
+          "title": "Trip booking",
+          "description": "Streamlined reservation flow from discovery to confirmation."
+        },
+        "community": {
+          "title": "Member community",
+          "description": "Profiles and club updates that keep members engaged between trips."
+        },
+        "profiles": {
+          "title": "Member profiles",
+          "description": "Personal pages with sailing history and club participation."
+        },
+        "content": {
+          "title": "Immersive UI",
+          "description": "Visual design that translates sunsets, open water, and adventure into digital form."
+        },
+        "performance": {
+          "title": "Performance & scale",
+          "description": "Fast loads and a stack ready to grow as the club adds routes and members."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Маршрути",
+        "2": "Бронювання",
+        "3": "Спільнота",
+        "4": "Деталі поїздки"
+      }
+    }
+  },
+  "navexa": {
+    "meta": {
+      "title": "Navexa — Логістична платформа | Ortvest",
+      "description": "Флот, маршрути, моніторинг відправлень і маркетинг продукту. NDA."
+    },
+    "hero": {
+      "subtitle": "Логістична платформа — флот, маршрути, моніторинг і маркетинг для позиціонування та залучення B2B-клієнтів."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Logistics SaaS"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Development + Marketing"
+      },
+      "platform": {
+        "label": "Платформа",
+        "value": "Web"
+      }
+    },
+    "challenge": "Єдина операційна система та маркетинг, який чітко пояснює цінність платформи й залучає B2B-клієнтів.",
+    "solution": "Dashboard з GPS і аналітикою, а також маркетингові матеріали та меседжинг для операторів флотів.",
+    "features": {
+      "subtitle": "Operational tools that connect fleet, routes, and shipments in one view.",
+      "items": {
+        "fleet": {
+          "title": "Fleet overview",
+          "description": "Live map and status for every vehicle in the fleet."
+        },
+        "tracking": {
+          "title": "Real-time tracking",
+          "description": "GPS integration for accurate position and ETA updates."
+        },
+        "routes": {
+          "title": "Route optimization",
+          "description": "Smarter routing that reduces cost and delivery time."
+        },
+        "analytics": {
+          "title": "Operations analytics",
+          "description": "Dashboards for KPIs, delays, and fleet utilization."
+        },
+        "shipments": {
+          "title": "Shipment monitoring",
+          "description": "End-to-end visibility from pickup to delivery."
+        },
+        "integrations": {
+          "title": "Device integrations",
+          "description": "Connects with GPS hardware and existing logistics workflows."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Dashboard флоту",
+        "2": "Планування маршрутів",
+        "3": "Відстеження відправлень"
+      }
+    }
+  },
+  "teya": {
+    "meta": {
+      "title": "Teya Logistics — Лендінг | Ortvest",
+      "description": "Сучасний лендінг логістичної компанії під ліди."
+    },
+    "hero": {
+      "subtitle": "Лендінг транспортної компанії — послуги, брендинг і швидкий запит ціни."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Marketing Site"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Design + Dev"
+      },
+      "platform": {
+        "label": "Платформа",
+        "value": "Web"
+      }
+    },
+    "challenge": "Чітко подати послуги та довіру без перевантаження логістичним жаргоном.",
+    "solution": "Адаптивний лендінг з блоками послуг, перевагами та CTA на запит пропозиції.",
+    "features": {
+      "subtitle": "Marketing patterns that turn traffic into qualified leads.",
+      "items": {
+        "services": {
+          "title": "Service presentation",
+          "description": "Clear blocks for each transportation offering with scannable copy."
+        },
+        "branding": {
+          "title": "Strong branding",
+          "description": "Visual identity applied consistently across hero, sections, and footer."
+        },
+        "leads": {
+          "title": "Lead generation",
+          "description": "Quote and contact flows placed where intent peaks."
+        },
+        "responsive": {
+          "title": "Fully responsive",
+          "description": "Polished layout on mobile where many B2B buyers first research."
+        },
+        "trust": {
+          "title": "Trust building",
+          "description": "Credentials, coverage areas, and proof points that reduce hesitation."
+        },
+        "contact": {
+          "title": "Easy contact",
+          "description": "Multiple touchpoints — form, phone, and quick inquiry — without friction."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Hero та послуги",
+        "2": "Деталі послуг"
+      }
+    }
+  },
+  "mie": {
+    "meta": {
+      "title": "Mie — Розумний список покупок з AI | Ortvest",
+      "description": "Додаток з AI, запасами та нагадуваннями. NDA."
+    },
+    "hero": {
+      "subtitle": "Список покупок з AI — запаси комори, рецепти та нагадування."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Mobile App"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Development"
+      },
+      "platform": {
+        "label": "Платформа",
+        "value": "iOS + Android"
+      }
+    },
+    "challenge": "Списки не працюють без реального стану комори. AI має відстежувати запаси та пропонувати покупки.",
+    "solution": "React Native з AI, підбором рецептів і навчанням на звичках користувача.",
+    "features": {
+      "subtitle": "AI features that make grocery planning feel effortless.",
+      "items": {
+        "inventory": {
+          "title": "Pantry tracking",
+          "description": "Know what's in stock and what's running low without manual spreadsheets."
+        },
+        "ai": {
+          "title": "AI suggestions",
+          "description": "Smart recommendations based on habits, seasonality, and usage patterns."
+        },
+        "recipes": {
+          "title": "Recipe matching",
+          "description": "Suggest meals you can cook with ingredients already on hand."
+        },
+        "reminders": {
+          "title": "Smart reminders",
+          "description": "Timely nudges before you run out of essentials."
+        },
+        "patterns": {
+          "title": "Pattern learning",
+          "description": "Adapts to how often you buy and what you typically need."
+        },
+        "lists": {
+          "title": "Unified lists",
+          "description": "One place for shopping, sharing, and checking off items on the go."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Список покупок",
+        "2": "Запаси комори",
+        "3": "Рецепти"
+      }
+    }
+  },
+  "reskin": {
+    "meta": {
+      "title": "[Re.] skin&hair — Айдентика бренду | Ortvest",
+      "description": "Мінімалістична айдентика beauty-лінійки."
+    },
+    "hero": {
+      "subtitle": "Мінімалістична система бренду для догляду за шкірою та волоссям — premium і цілісність."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Brand Identity"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Design"
+      },
+      "platform": {
+        "label": "Обсяг",
+        "value": "Print + Digital"
+      }
+    },
+    "challenge": "Бренд у насиченій категорії — premium без холодного мінімалізму.",
+    "solution": "Логотип, палітра, типографіка, упаковка та гайдлайни — органічні форми та теплі нейтралі.",
+    "features": {
+      "subtitle": "Deliverables that form a cohesive, premium brand language.",
+      "items": {
+        "logo": {
+          "title": "Logo system",
+          "description": "Primary mark and variations for product, packaging, and digital."
+        },
+        "palette": {
+          "title": "Color palette",
+          "description": "Warm neutrals and accent tones that signal quality and calm."
+        },
+        "typography": {
+          "title": "Typography",
+          "description": "Type pairing for headlines, body, and product labels."
+        },
+        "packaging": {
+          "title": "Packaging direction",
+          "description": "Layout principles for bottles, boxes, and retail presence."
+        },
+        "guidelines": {
+          "title": "Brand guidelines",
+          "description": "Rules for spacing, color use, and tone across channels."
+        },
+        "applications": {
+          "title": "Applications",
+          "description": "Mockups showing the system on web, social, and print."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Логотип",
+        "2": "Колір і типографіка",
+        "3": "Упаковка",
+        "4": "Застосування"
+      }
+    }
+  },
+  "gambit": {
+    "meta": {
+      "title": "Gambit — UI веб-сайту | Ortvest",
+      "description": "Сучасний UI з ієрархією та типографікою."
+    },
+    "hero": {
+      "subtitle": "Сучасний UI — типографіка, ієрархія та whitespace під конверсію."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "UI Design"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Design"
+      },
+      "platform": {
+        "label": "Обсяг",
+        "value": "Web UI"
+      }
+    },
+    "challenge": "Візуальне оновлення без втрати впізнаваності бренду.",
+    "solution": "Типографічна шкала, компоненти та whitespace — чітка ієрархія на кожній секції.",
+    "features": {
+      "subtitle": "Design decisions that balance aesthetics with usability.",
+      "items": {
+        "hierarchy": {
+          "title": "Visual hierarchy",
+          "description": "Clear levels of headline, subhead, and body that guide the eye."
+        },
+        "typography": {
+          "title": "Bold typography",
+          "description": "Expressive type choices that reinforce brand personality."
+        },
+        "whitespace": {
+          "title": "Strategic whitespace",
+          "description": "Breathing room that reduces noise and highlights CTAs."
+        },
+        "components": {
+          "title": "UI components",
+          "description": "Reusable cards, buttons, and sections for consistent implementation."
+        },
+        "responsive": {
+          "title": "Responsive layouts",
+          "description": "Grid and breakpoints planned for seamless dev handoff."
+        },
+        "handoff": {
+          "title": "Dev-ready handoff",
+          "description": "Organized Figma files with specs for efficient build."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Головна",
+        "2": "Внутрішня сторінка",
+        "3": "Компоненти",
+        "4": "Mobile"
+      }
+    }
+  },
+  "navexa-logo": {
+    "meta": {
+      "title": "Логотип Navexa | Ortvest",
+      "description": "Логотип логістики — точність і світлі/темні варіанти."
+    },
+    "hero": {
+      "subtitle": "Логотип логістичної компанії — навігація, точність, варіанти для будь-якого носія."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Logo Design"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Design"
+      },
+      "platform": {
+        "label": "Обсяг",
+        "value": "Print + Digital"
+      }
+    },
+    "challenge": "Логотип для dashboard, транспорту та документів — світлий і темний фон.",
+    "solution": "Мінімалістичний знак з геометрією та кольоровими варіантами для масштабування.",
+    "features": {
+      "subtitle": "Logo system built for logistics and product environments.",
+      "items": {
+        "mark": {
+          "title": "Primary mark",
+          "description": "Distinct symbol that reads at small sizes and large formats."
+        },
+        "variations": {
+          "title": "Logo variations",
+          "description": "Horizontal, stacked, and icon-only lockups for different spaces."
+        },
+        "color": {
+          "title": "Color system",
+          "description": "Palettes tuned for dashboards, print, and vehicle applications."
+        },
+        "typography": {
+          "title": "Wordmark",
+          "description": "Custom lettering paired with the symbol for full lockups."
+        },
+        "applications": {
+          "title": "Real applications",
+          "description": "Mockups on vehicles, uniforms, and digital interfaces."
+        },
+        "guidelines": {
+          "title": "Usage rules",
+          "description": "Clear spacing, minimum size, and do/don't examples."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Основний логотип",
+        "2": "Темний варіант",
+        "3": "Мокапи"
+      }
+    }
+  },
+  "ortvest-logo": {
+    "meta": {
+      "title": "Логотип Ortvest | Ortvest",
+      "description": "Знак IT-студії — інновації та масштабованість."
+    },
+    "hero": {
+      "subtitle": "Знак IT-студії — геометрія, інновації, варіанти для продукту та корпорації."
+    },
+    "stats": {
+      "projectType": {
+        "label": "Тип проєкту",
+        "value": "Logo Design"
+      },
+      "deliverables": {
+        "label": "Результат",
+        "value": "Design"
+      },
+      "platform": {
+        "label": "Обсяг",
+        "value": "Digital-first"
+      }
+    },
+    "challenge": "Логотип від favicon до deck і UI продуктів.",
+    "solution": "Знак з light/dark варіантами та digital-first гайдлайнами.",
+    "features": {
+      "subtitle": "A flexible identity for a product-focused IT studio.",
+      "items": {
+        "mark": {
+          "title": "Primary mark",
+          "description": "Memorable symbol that works alone or with the wordmark."
+        },
+        "geometry": {
+          "title": "Clean geometry",
+          "description": "Precise shapes that stay sharp at any resolution."
+        },
+        "color": {
+          "title": "Color modes",
+          "description": "Light, dark, and monochrome versions for any background."
+        },
+        "darkLight": {
+          "title": "Light & dark lockups",
+          "description": "Ready for headers, footers, and product chrome."
+        },
+        "product": {
+          "title": "Product-ready",
+          "description": "Sized and spaced for apps, docs, and developer tools."
+        },
+        "guidelines": {
+          "title": "Brand guidelines",
+          "description": "Usage rules for partners and internal teams."
+        }
+      }
+    },
+    "gallery": {
+      "captions": {
+        "1": "Основний логотип",
+        "2": "Темний режим",
+        "3": "Продуктові застосування",
+        "4": "Розширення"
+      }
+    }
+  }
+}

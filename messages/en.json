@@ -1,6 +1,7 @@
 {
   "nav": {
     "services": "Services",
+    "industries": "Industries",
     "technologies": "Technologies",
     "process": "Process",
     "about": "About",
@@ -12,9 +13,16 @@
     "menuSlogan": "From idea to launch. One team."
   },
   "hero": {
-    "eyebrow": "Digital Partner",
-    "headline": "We build digital products that help businesses grow.",
-    "subheadline": "Not just websites. We combine design, development, and marketing to create solutions that drive real business results. From strategy to launch and beyond.",
+    "eyebrow": "Industry-focused IT Studio",
+    "headline": "We build digital products for P2P, community, hospitality, and conversion-driven businesses.",
+    "subheadline": "Not just websites. We combine design, development, and marketing — with deep knowledge of the industries we work in. From strategy to launch and beyond.",
+    "nicheTags": {
+      "p2p": "P2P",
+      "community": "Community",
+      "hospitality": "Hospitality",
+      "conversion": "Conversion Sites",
+      "logistics": "Logistics"
+    },
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "See what we do",
     "trustCtaPrefix": "Not sure where to start? -",
@@ -80,6 +88,54 @@
       "setupFee": "one-time setup fee"
     }
   },
+  "industries": {
+    "eyebrow": "Industries",
+    "title": "We know your industry.",
+    "subtitle": "We don't build generic products. We work in specific industries where we understand the logic, the users, and the real challenges.",
+    "logisticsNote": "We also work with logistics startups and SMEs building fleet management, shipment tracking, and route optimization platforms.",
+    "niches": {
+      "p2p": {
+        "title": "P2P Platforms",
+        "description": "We build peer-to-peer platforms where trust is the product. Sharing, rental, and exchange platforms with verification, escrow payments, item tracking, and dispute resolution — built so strangers can transact with confidence.",
+        "tags": [
+          "Sharing economy",
+          "Peer rental",
+          "Trust & safety",
+          "Escrow payments"
+        ]
+      },
+      "community": {
+        "title": "Community",
+        "description": "We design and build private networks, club platforms, and professional communities where engagement feels natural — not forced. Real-time messaging, member roles, events, and content in one place. We know the difference between a \"website\" and a \"platform where people actually return.\"",
+        "tags": [
+          "Private networks",
+          "Member portals",
+          "Real-time chat",
+          "Events"
+        ]
+      },
+      "hospitality": {
+        "title": "Hospitality",
+        "description": "From yacht clubs to boutique hotels — hospitality businesses need digital experiences as premium as their service. We build booking systems, club management platforms, and guest-facing products where every detail matters. We've built for yacht clubs and sailing communities — we know this world.",
+        "tags": [
+          "Booking systems",
+          "Club platforms",
+          "Yacht & travel",
+          "Premium UX"
+        ]
+      },
+      "conversion": {
+        "title": "Conversion Websites",
+        "description": "A website that looks good but doesn't convert is a liability. We build landing pages and corporate websites for tech and fintech startups in Europe and the US — with UX strategy, conversion copywriting direction, and analytics setup baked in from day one.",
+        "tags": [
+          "Landing pages",
+          "Corporate sites",
+          "CRO",
+          "Fintech & tech startups"
+        ]
+      }
+    }
+  },
   "technologies": {
     "eyebrow": "Stack",
     "title": "Technologies we use",
@@ -129,7 +185,7 @@
     "q1": "What services do you offer?",
     "a1": "We cover design, development and marketing within one team.",
     "q2": "What types of companies do you work with?",
-    "a2": "Startups, growing businesses and established companies. Projects of different scale and complexity.",
+    "a2": "We work with companies building P2P platforms, community networks, hospitality products, and conversion-focused websites. We also take on logistics startup projects. Our clients are typically based in Europe and the US — from early-stage startups to established businesses launching new digital products.",
     "q3": "Can I order only one service?",
     "a3": "Yes. You can work with us on design, development or marketing separately.",
     "q4": "How does project pricing work?",
@@ -150,18 +206,18 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "messagePlaceholder": "Tell us about your project, goals, or timeline...",
+    "messagePlaceholder": "What are you building and when do you want to launch?",
     "projectType": "Project type",
     "budget": "Budget (optional)",
-    "budgetUnder1k": "Under €1k",
+    "budgetUnder1k": "Small task / consultation",
     "budget1k5k": "€1k–5k",
     "budget5k15k": "€5k–15k",
     "budget15kPlus": "€15k+",
-    "consultationType": "Consultation type (optional)",
+    "consultationType": "Consultation type",
     "consultationDiscovery": "Discovery Call (Free)",
     "consultationStrategy": "Strategy Session (€199)",
     "budgetMap": {
-      "under1k": "Under €1k",
+      "under1k": "Small task / consultation",
       "1k5k": "€1k–5k",
       "5k15k": "€5k–15k",
       "15kplus": "€15k+"
@@ -170,9 +226,12 @@
       "discovery": "Discovery Call (Free)",
       "strategy": "Strategy Session (€199)"
     },
-    "projectTypeDesign": "Design",
-    "projectTypeDev": "Development",
-    "projectTypeMarketing": "Marketing",
+    "projectTypeP2p": "P2P",
+    "projectTypeCommunity": "Community",
+    "projectTypeHospitality": "Hospitality",
+    "projectTypeConversion": "Conversion Site",
+    "projectTypeLogistics": "Logistics",
+    "projectTypeOther": "Other",
     "send": "Send message",
     "trustCopy": "Reply within 24h",
     "policyText": "By sending this form I agree to the ",
@@ -225,41 +284,905 @@
   "cases": {
     "eyebrow": "Our work",
     "title": "Selected projects",
-    "subtitle": "Real challenges. Proven solutions.",
-    "ndaBanner": "Most of our projects are protected by NDA, which means clients trust us with sensitive products. We're happy to walk you through them on a call.",
-    "filter": {
-      "all": "All",
-      "design": "Design",
-      "development": "Development"
+    "subtitle": "Work across P2P, community, hospitality, conversion sites, and logistics.",
+    "ndaBanner": "Most NDA projects can be discussed on a call.",
+    "filterIndustries": {
+      "all": "All projects",
+      "p2p": "P2P",
+      "community": "Community",
+      "hospitality": "Hospitality",
+      "conversion": "Conversion Sites",
+      "logistics": "Logistics"
     },
-    "subfilterLabel": "Type",
+    "ndaProtected": "NDA protected",
+    "viewCaseStudy": "View case study →",
+    "ndaNote": "Details available on a call",
+    "brandSectionTitle": "Brand & identity work",
+    "emptyState": "No projects in this industry yet — be the first and we'll turn it into a case study.",
+    "beFirstButton": "Discuss your project",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "inProgress": "In progress",
+    "designBy": "Design by",
+    "ndaDetails": "Book a call to learn more",
+    "ctaText": "Have a project in P2P, community, hospitality, or logistics? Let's discuss it.",
+    "ctaButton": "Book a call",
+    "ctaSecondary": "Get a quote",
     "categoryBadge": {
       "design": "Design",
       "development": "Development",
       "designAndDevelopment": "Design + Dev",
       "marketing": "Marketing"
     },
-    "subcategory": {
-      "design": {
-        "logo": "Logo",
-        "web": "Web",
-        "brand": "Brand"
+    "items": {
+      "yachtmate": {
+        "summary": "Private network for yacht club members with real-time communication.",
+        "result": "Secure club platform with real-time chat, member roles, and event management."
       },
-      "development": {
-        "web": "Web",
-        "mobile": "Mobile"
+      "sharingground": {
+        "summary": "Peer-to-peer item sharing platform with trust and logistics system.",
+        "result": "Full P2P marketplace with verification, reviews, and item tracking."
+      },
+      "profitcraft": {
+        "summary": "Conversion-focused website for a US credit-building service.",
+        "result": "Trust-first marketing website for newcomers to the US financial system."
+      },
+      "skisailclub": {
+        "summary": "Digital platform for a yacht club — trip booking and community management.",
+        "result": "Seamless booking and community platform for both newcomers and experienced sailors."
+      },
+      "navexa": {
+        "summary": "Logistics platform for fleet and shipments — with product marketing support.",
+        "result": "Operations dashboard plus marketing to position the product and attract B2B clients."
+      },
+      "teya": {
+        "summary": "Modern landing page for a logistics company to attract new clients.",
+        "result": "Clean marketing website that clearly presents services and drives inbound leads."
+      },
+      "mie": {
+        "summary": "AI-powered smart shopping list that tracks inventory and suggests purchases.",
+        "result": "Intelligent shopping assistant with inventory tracking and smart reminders."
+      },
+      "reskin": {
+        "summary": "Modern brand identity for a skin and hair care product line.",
+        "result": "Minimalist brand system with organic shapes and a premium feel."
+      },
+      "gambit": {
+        "summary": "Modern website UI redesign with strong visual hierarchy.",
+        "result": "Clean interface with bold typography and strategic use of whitespace."
+      },
+      "navexa-logo": {
+        "summary": "Professional logo for a logistics and fleet management company.",
+        "result": "Versatile logo with light and dark variations for digital and print."
+      },
+      "ortvest-logo": {
+        "summary": "Brand identity for an IT company focused on digital products.",
+        "result": "Sleek, scalable logo suited for product and corporate use."
+      }
+    }
+  },
+  "caseStudies": {
+    "shared": {
+      "process": {
+        "title": "How we built it",
+        "steps": {
+          "discovery": {
+            "title": "Discovery",
+            "description": "Mapped goals, user flows, constraints, and edge cases before writing code."
+          },
+          "design": {
+            "title": "Design",
+            "description": "Shaped UX, visual language, and key screens aligned with the product strategy."
+          },
+          "build": {
+            "title": "Build",
+            "description": "Implemented core features, integrations, and performance-critical paths."
+          },
+          "launch": {
+            "title": "Launch",
+            "description": "Deployed with monitoring, onboarding, and post-launch support."
+          }
+        }
+      },
+      "features": {
+        "title": "Key features",
+        "subtitle": "What we designed and built for this project."
+      },
+      "gallery": {
+        "screens": "Product screens",
+        "work": "Project gallery",
+        "brand": "Brand deliverables"
+      },
+      "nextCase": {
+        "label": "Next case"
+      },
+      "cta": {
+        "p2p": {
+          "title": "Building a P2P or marketplace product?",
+          "subtitle": "Let's talk about your idea.",
+          "button": "Get in touch"
+        },
+        "community": {
+          "title": "Building a community or member platform?",
+          "subtitle": "Let's talk about your product.",
+          "button": "Get in touch"
+        },
+        "logistics": {
+          "title": "Building a logistics or fleet product?",
+          "subtitle": "Let's discuss your operations software.",
+          "button": "Get in touch"
+        },
+        "conversion": {
+          "title": "Need a high-converting website or landing page?",
+          "subtitle": "Let's shape your message and design.",
+          "button": "Get in touch"
+        },
+        "brand": {
+          "title": "Need a brand identity or visual system?",
+          "subtitle": "Let's create something memorable.",
+          "button": "Get in touch"
+        },
+        "product": {
+          "title": "Have a product idea to build?",
+          "subtitle": "Let's discuss scope, timeline, and approach.",
+          "button": "Get in touch"
+        }
       }
     },
-    "hideNDA": "Hide NDA",
-    "emptyState": "Be the first in this category — and we'll turn it into a case study that inspires others.",
-    "beFirstButton": "I want to be first",
-    "challenge": "Challenge",
-    "solution": "Solution",
-    "inProgress": "In progress",
-    "designBy": "Design by",
-    "ndaDetails": "Book a call to learn more",
-    "ctaText": "Want to see more? Let's talk about your project.",
-    "ctaButton": "Book a call"
+    "yachtmate": {
+      "meta": {
+        "title": "YachtMate — Private Yacht Club Network | Ortvest",
+        "description": "How Ortvest built a secure member network with verification, real-time messaging, events, and role-based access for yacht clubs."
+      },
+      "hero": {
+        "subtitle": "A private social network for yacht club members — secure communication, events, and a verified member directory in one place."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Community Platform"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design + Dev"
+        },
+        "platform": {
+          "label": "Platform",
+          "value": "Web"
+        }
+      },
+      "challenge": "Yacht clubs needed a closed network where high-profile members could communicate without exposing personal data on public channels. The challenge: real-time messaging, member verification, and event coordination — all behind strict privacy controls.",
+      "solution": "We built YachtMate as an exclusive platform with member verification, role-based permissions, real-time chat, and event tools. React and Node.js power low-latency messaging while keeping member data private and access-controlled.",
+      "features": {
+        "subtitle": "Core mechanics that keep a private club network secure and useful day to day.",
+        "items": {
+          "verification": {
+            "title": "Member verification",
+            "description": "Invite-only onboarding and identity checks so only verified club members get access."
+          },
+          "messaging": {
+            "title": "Real-time messaging",
+            "description": "Private channels and direct messages with low-latency delivery for active communities."
+          },
+          "events": {
+            "title": "Event coordination",
+            "description": "Create, share, and RSVP to club events without leaving the platform."
+          },
+          "directory": {
+            "title": "Member directory",
+            "description": "Searchable profiles with roles and contact preferences controlled by each member."
+          },
+          "privacy": {
+            "title": "Privacy controls",
+            "description": "Granular visibility settings so members choose what the club can see."
+          },
+          "roles": {
+            "title": "Role-based access",
+            "description": "Admins, officers, and members each see the tools and data relevant to their role."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Member feed & announcements",
+          "2": "Event management",
+          "3": "Messaging interface"
+        }
+      },
+      "sections": {
+        "brand": {
+          "title": "Brand & Identity",
+          "description": "We started with the brand — logo, color palette, typography, and visual language that reflects the premium, close-knit nature of a private yacht club."
+        },
+        "design": {
+          "title": "UX & Design",
+          "description": "Designed the full platform experience — member profiles, real-time chat, event management, and admin dashboard. Every screen was built around trust and simplicity."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Built a full-stack platform with real-time messaging, role-based access, and a private event system. Deployed and ready for real members from day one."
+        }
+      }
+    },
+    "sharingground": {
+      "meta": {
+        "title": "SharingGround — P2P Item Sharing Platform | Ortvest",
+        "description": "How Ortvest built a peer-to-peer sharing platform with user verification, escrow payments, item tracking, and insurance integration."
+      },
+      "hero": {
+        "subtitle": "A peer-to-peer platform that lets people lend and borrow items within their community — with built-in trust, tracking, and secure payments."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "P2P Marketplace"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design + Dev"
+        },
+        "platform": {
+          "label": "Platform",
+          "value": "Web + Mobile"
+        }
+      },
+      "challenge": "Building a P2P sharing platform where strangers trust each other with their belongings. The core problem: how do you create accountability, prevent fraud, and handle disputes — without being the middleman for every transaction?",
+      "solution": "We built a trust layer from the ground up — identity verification, item condition logging, insurance integration, and a transparent review system. Payments are held in escrow and released only when both sides confirm the exchange.",
+      "features": {
+        "subtitle": "The product mechanics that make community sharing work at scale.",
+        "items": {
+          "verification": {
+            "title": "User verification",
+            "description": "Identity checks and profile trust scores to establish accountability between strangers."
+          },
+          "tracking": {
+            "title": "Item tracking",
+            "description": "Condition logs before and after each exchange with photo evidence and timestamps."
+          },
+          "escrow": {
+            "title": "Escrow payments",
+            "description": "Funds held securely and released only after both parties confirm the completed exchange."
+          },
+          "reviews": {
+            "title": "Review system",
+            "description": "Two-way reviews that build trust over time and surface reliable community members."
+          },
+          "insurance": {
+            "title": "Insurance integration",
+            "description": "Optional item insurance for high-value goods — embedded directly in the listing flow."
+          },
+          "messaging": {
+            "title": "In-app messaging",
+            "description": "Secure chat between borrower and lender without exposing personal contact details."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Item listing flow",
+          "2": "Borrower dashboard",
+          "3": "Trust & verification screen"
+        }
+      },
+      "sections": {
+        "design": {
+          "title": "UX & Design",
+          "description": "Designed the complete borrower and lender flows — from listing an item to completing an exchange. Trust signals were built into every screen."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Built the full platform — identity verification, escrow payment logic, item condition logging with photo evidence, two-way review system, and in-app messaging."
+        }
+      }
+    },
+    "profitcraft": {
+      "meta": {
+        "title": "ProfitCraft — Credit-Building Website | Ortvest",
+        "description": "How Ortvest designed and built a conversion-focused website for a US credit-building service targeting newcomers."
+      },
+      "hero": {
+        "subtitle": "A trust-first marketing website that explains credit growth paths and drives sign-ups for newcomers to the US financial system."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Conversion Site"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design + Dev"
+        },
+        "platform": {
+          "label": "Platform",
+          "value": "Web"
+        }
+      },
+      "challenge": "Newcomers to the US often don't know how credit unlocks loans, housing, and business growth. ProfitCraft needed a site that builds trust fast, explains complex financial concepts simply, and converts visitors into leads.",
+      "solution": "We designed a clear narrative structure — problem, path, proof, action — with strong typography, trust signals, and focused CTAs. The site explains services without jargon and guides users toward consultation or sign-up.",
+      "features": {
+        "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
+        "items": {
+          "valueProp": {
+            "title": "Clear value proposition",
+            "description": "Headlines and sections that immediately answer why credit-building matters now."
+          },
+          "trust": {
+            "title": "Trust signals",
+            "description": "Social proof, credentials, and reassurance blocks placed at decision points."
+          },
+          "paths": {
+            "title": "Service paths",
+            "description": "Structured journeys for loans, auto, home, and business — each with dedicated messaging."
+          },
+          "leads": {
+            "title": "Lead capture",
+            "description": "Forms and CTAs tuned for low friction without sacrificing lead quality."
+          },
+          "responsive": {
+            "title": "Responsive layout",
+            "description": "Consistent experience across mobile and desktop where most research happens."
+          },
+          "seo": {
+            "title": "SEO foundation",
+            "description": "Semantic structure and metadata so organic traffic finds the right pages."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Homepage hero & value prop",
+          "2": "Service detail section",
+          "3": "Contact & conversion flow"
+        }
+      },
+      "sections": {
+        "strategy": {
+          "title": "Strategy & Copy Direction",
+          "description": "Mapped the target audience — newcomers unfamiliar with the US credit system. Built the messaging around trust, simplicity, and a clear path from zero to a working credit score."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Designed a clean, trust-first landing page where every section answers a specific objection a newcomer might have before signing up."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Built a fast, SEO-optimised website with conversion-focused structure, analytics integration, and smooth CTA flows."
+        }
+      }
+    },
+    "skisailclub": {
+      "meta": {
+        "title": "Ski&Sail Club — Yacht Trip Booking Platform | Ortvest",
+        "description": "How Ortvest built a yacht club platform for route discovery, trip booking, and community management."
+      },
+      "hero": {
+        "subtitle": "A digital home for a yacht and ski travel club — discover routes, book trips, and stay connected with the community."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Hospitality + Community"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Development"
+        },
+        "platform": {
+          "label": "Platform",
+          "value": "Web"
+        }
+      },
+      "challenge": "The club needed one platform for newcomers and experienced sailors — trip discovery, booking, and community — while capturing the emotional side of yachting: freedom, scenery, and adventure.",
+      "solution": "We built a fast Next.js platform with immersive visuals, clear booking flows, and member profiles. Route pages, trip management, and community features live in a single cohesive experience ready to scale.",
+      "features": {
+        "subtitle": "Booking and community tools that reflect the spirit of sailing.",
+        "items": {
+          "routes": {
+            "title": "Route discovery",
+            "description": "Browse yacht routes with rich imagery, details, and availability at a glance."
+          },
+          "booking": {
+            "title": "Trip booking",
+            "description": "Streamlined reservation flow from discovery to confirmation."
+          },
+          "community": {
+            "title": "Member community",
+            "description": "Profiles and club updates that keep members engaged between trips."
+          },
+          "profiles": {
+            "title": "Member profiles",
+            "description": "Personal pages with sailing history and club participation."
+          },
+          "content": {
+            "title": "Immersive UI",
+            "description": "Visual design that translates sunsets, open water, and adventure into digital form."
+          },
+          "performance": {
+            "title": "Performance & scale",
+            "description": "Fast loads and a stack ready to grow as the club adds routes and members."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Route discovery",
+          "2": "Trip booking flow",
+          "3": "Community overview",
+          "4": "Trip details"
+        }
+      },
+      "sections": {
+        "design": {
+          "title": "UX & Design",
+          "description": "Designed a platform that serves two audiences — first-timers exploring sailing and experienced members managing trips. Clean, premium, effortless."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Built the booking engine, member area, trip management system, and community features. Integrated with payment processing for trip deposits."
+        }
+      }
+    },
+    "navexa": {
+      "meta": {
+        "title": "Navexa — Logistics Management Platform | Ortvest",
+        "description": "How Ortvest built a logistics platform for fleet tracking, route optimization, and shipment monitoring. NDA project."
+      },
+      "hero": {
+        "subtitle": "A unified logistics platform for fleet tracking, route optimization, and shipment monitoring — plus marketing to support client acquisition and product positioning."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Logistics SaaS"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Development + Marketing"
+        },
+        "platform": {
+          "label": "Platform",
+          "value": "Web"
+        }
+      },
+      "challenge": "A logistics company needed one system to see fleet position, optimize routes, and monitor shipments — replacing spreadsheets and disconnected tools with real-time operational visibility. They also needed marketing support to present the product clearly and attract new B2B clients.",
+      "solution": "We delivered a custom dashboard integrating GPS data, route optimization, and shipment analytics, alongside marketing materials and messaging that explain the platform's value to fleet operators and logistics teams.",
+      "features": {
+        "subtitle": "Operational tools that connect fleet, routes, and shipments in one view.",
+        "items": {
+          "fleet": {
+            "title": "Fleet overview",
+            "description": "Live map and status for every vehicle in the fleet."
+          },
+          "tracking": {
+            "title": "Real-time tracking",
+            "description": "GPS integration for accurate position and ETA updates."
+          },
+          "routes": {
+            "title": "Route optimization",
+            "description": "Smarter routing that reduces cost and delivery time."
+          },
+          "analytics": {
+            "title": "Operations analytics",
+            "description": "Dashboards for KPIs, delays, and fleet utilization."
+          },
+          "shipments": {
+            "title": "Shipment monitoring",
+            "description": "End-to-end visibility from pickup to delivery."
+          },
+          "integrations": {
+            "title": "Device integrations",
+            "description": "Connects with GPS hardware and existing logistics workflows."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Fleet dashboard",
+          "2": "Route planning",
+          "3": "Shipment tracking"
+        }
+      },
+      "sections": {
+        "development": {
+          "title": "Platform Development",
+          "description": "Built an end-to-end logistics platform connecting fleet management, route optimization, and real-time shipment tracking into one unified system."
+        }
+      }
+    },
+    "teya": {
+      "meta": {
+        "title": "Teya Logistics — Company Landing Page | Ortvest",
+        "description": "How Ortvest designed and developed a modern logistics landing page focused on lead generation and clear service presentation."
+      },
+      "hero": {
+        "subtitle": "A modern landing page for a logistics company — clear services, strong branding, and a simple path to request a quote."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Marketing Site"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design + Dev"
+        },
+        "platform": {
+          "label": "Platform",
+          "value": "Web"
+        }
+      },
+      "challenge": "Teya needed to present transportation services clearly, build trust with new clients, and convert visitors into quote requests — without overwhelming them with logistics jargon.",
+      "solution": "We designed and built a responsive landing page with focused service blocks, company advantages, and prominent contact CTAs. The layout guides visitors from understanding to action in a few scrolls.",
+      "features": {
+        "subtitle": "Marketing patterns that turn traffic into qualified leads.",
+        "items": {
+          "services": {
+            "title": "Service presentation",
+            "description": "Clear blocks for each transportation offering with scannable copy."
+          },
+          "branding": {
+            "title": "Strong branding",
+            "description": "Visual identity applied consistently across hero, sections, and footer."
+          },
+          "leads": {
+            "title": "Lead generation",
+            "description": "Quote and contact flows placed where intent peaks."
+          },
+          "responsive": {
+            "title": "Fully responsive",
+            "description": "Polished layout on mobile where many B2B buyers first research."
+          },
+          "trust": {
+            "title": "Trust building",
+            "description": "Credentials, coverage areas, and proof points that reduce hesitation."
+          },
+          "contact": {
+            "title": "Easy contact",
+            "description": "Multiple touchpoints — form, phone, and quick inquiry — without friction."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Hero & services overview",
+          "2": "Service detail & advantages"
+        }
+      },
+      "sections": {
+        "design": {
+          "title": "Design",
+          "description": "Designed a bold, professional website that clearly communicates the company's services and builds trust with potential clients from the first scroll."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Built a fast, conversion-optimised website with lead capture forms, analytics setup, and SEO foundation."
+        }
+      }
+    },
+    "mie": {
+      "meta": {
+        "title": "Mie — AI Smart Shopping List | Ortvest",
+        "description": "How Ortvest built an AI-powered shopping app with inventory tracking, recipe suggestions, and smart reminders. NDA project."
+      },
+      "hero": {
+        "subtitle": "An intelligent shopping list that tracks pantry inventory, suggests recipes, and reminds you what to buy — powered by AI."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Mobile App"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Development"
+        },
+        "platform": {
+          "label": "Platform",
+          "value": "iOS + Android"
+        }
+      },
+      "challenge": "Shopping lists fail when they don't reflect what's actually in the pantry. Mie needed to track inventory intelligently, reduce waste, and suggest what to buy based on habits and recipes.",
+      "solution": "We built a React Native app with AI-driven inventory tracking, recipe matching from available ingredients, and smart reminders. The system learns shopping patterns to optimize grocery trips over time.",
+      "features": {
+        "subtitle": "AI features that make grocery planning feel effortless.",
+        "items": {
+          "inventory": {
+            "title": "Pantry tracking",
+            "description": "Know what's in stock and what's running low without manual spreadsheets."
+          },
+          "ai": {
+            "title": "AI suggestions",
+            "description": "Smart recommendations based on habits, seasonality, and usage patterns."
+          },
+          "recipes": {
+            "title": "Recipe matching",
+            "description": "Suggest meals you can cook with ingredients already on hand."
+          },
+          "reminders": {
+            "title": "Smart reminders",
+            "description": "Timely nudges before you run out of essentials."
+          },
+          "patterns": {
+            "title": "Pattern learning",
+            "description": "Adapts to how often you buy and what you typically need."
+          },
+          "lists": {
+            "title": "Unified lists",
+            "description": "One place for shopping, sharing, and checking off items on the go."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Shopping list home",
+          "2": "Inventory view",
+          "3": "Recipe suggestions"
+        }
+      }
+    },
+    "reskin": {
+      "meta": {
+        "title": "[Re.] skin&hair — Brand Identity | Ortvest",
+        "description": "How Ortvest created a minimalist brand identity for a modern beauty line — logo, palette, typography, and packaging direction."
+      },
+      "hero": {
+        "subtitle": "A minimalist brand system for a skin and hair care line — organic shapes, premium feel, and consistency across touchpoints."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Brand Identity"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design"
+        },
+        "platform": {
+          "label": "Scope",
+          "value": "Print + Digital"
+        }
+      },
+      "challenge": "A beauty brand entering a crowded market needed identity that feels premium and clean without cold minimalism — communicating quality and trust at first glance.",
+      "solution": "We developed a full brand system: logo mark, color palette, typography, packaging direction, and usage guidelines. Organic shapes and warm neutrals balance modern simplicity with approachable luxury.",
+      "features": {
+        "subtitle": "Deliverables that form a cohesive, premium brand language.",
+        "items": {
+          "logo": {
+            "title": "Logo system",
+            "description": "Primary mark and variations for product, packaging, and digital."
+          },
+          "palette": {
+            "title": "Color palette",
+            "description": "Warm neutrals and accent tones that signal quality and calm."
+          },
+          "typography": {
+            "title": "Typography",
+            "description": "Type pairing for headlines, body, and product labels."
+          },
+          "packaging": {
+            "title": "Packaging direction",
+            "description": "Layout principles for bottles, boxes, and retail presence."
+          },
+          "guidelines": {
+            "title": "Brand guidelines",
+            "description": "Rules for spacing, color use, and tone across channels."
+          },
+          "applications": {
+            "title": "Applications",
+            "description": "Mockups showing the system on web, social, and print."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Logo & primary mark",
+          "2": "Color & typography",
+          "3": "Packaging mockups",
+          "4": "Brand applications"
+        }
+      },
+      "sections": {
+        "brand": {
+          "title": "Brand Identity",
+          "description": "Developed the complete brand identity — logo, visual system, packaging direction, and brand guidelines for a clean, modern beauty brand."
+        }
+      }
+    },
+    "gambit": {
+      "meta": {
+        "title": "Gambit — Website UI Design | Ortvest",
+        "description": "How Ortvest designed a modern website UI with strong hierarchy, bold typography, and strategic whitespace."
+      },
+      "hero": {
+        "subtitle": "A modern website UI with bold typography, clear hierarchy, and whitespace that guides attention — designed for impact and usability."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "UI Design"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design"
+        },
+        "platform": {
+          "label": "Scope",
+          "value": "Web UI"
+        }
+      },
+      "challenge": "The site needed a visual refresh that feels contemporary and credible — improving scanability and conversion without losing brand recognition.",
+      "solution": "We redesigned key pages with a strong type scale, consistent component library, and deliberate whitespace. Every section has a clear hierarchy so users know where to look and what to do next.",
+      "features": {
+        "subtitle": "Design decisions that balance aesthetics with usability.",
+        "items": {
+          "hierarchy": {
+            "title": "Visual hierarchy",
+            "description": "Clear levels of headline, subhead, and body that guide the eye."
+          },
+          "typography": {
+            "title": "Bold typography",
+            "description": "Expressive type choices that reinforce brand personality."
+          },
+          "whitespace": {
+            "title": "Strategic whitespace",
+            "description": "Breathing room that reduces noise and highlights CTAs."
+          },
+          "components": {
+            "title": "UI components",
+            "description": "Reusable cards, buttons, and sections for consistent implementation."
+          },
+          "responsive": {
+            "title": "Responsive layouts",
+            "description": "Grid and breakpoints planned for seamless dev handoff."
+          },
+          "handoff": {
+            "title": "Dev-ready handoff",
+            "description": "Organized Figma files with specs for efficient build."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Homepage layout",
+          "2": "Interior page",
+          "3": "Component details",
+          "4": "Mobile views"
+        }
+      },
+      "sections": {
+        "design": {
+          "title": "UI Redesign",
+          "description": "Redesigned the visual language — typography, spacing, hierarchy, and color — to create a site that commands attention and guides the visitor toward action."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Implemented the new design with performance optimisation, smooth animations, and clean component structure."
+        }
+      }
+    },
+    "navexa-logo": {
+      "meta": {
+        "title": "Navexa Logo — Brand Identity | Ortvest",
+        "description": "Logo design for Navexa logistics — navigation, precision, and versatile light and dark variations."
+      },
+      "hero": {
+        "subtitle": "A professional logo for a logistics company — precision, navigation, and modern technology in a versatile mark."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Logo Design"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design"
+        },
+        "platform": {
+          "label": "Scope",
+          "value": "Print + Digital"
+        }
+      },
+      "challenge": "Navexa needed a logo that communicates navigation and operational precision — working on dashboards, vehicles, documents, and marketing in both light and dark contexts.",
+      "solution": "We created a minimalist mark with clean geometry and color variations for digital products and print. The system scales from favicon to fleet branding without losing clarity.",
+      "features": {
+        "subtitle": "Logo system built for logistics and product environments.",
+        "items": {
+          "mark": {
+            "title": "Primary mark",
+            "description": "Distinct symbol that reads at small sizes and large formats."
+          },
+          "variations": {
+            "title": "Logo variations",
+            "description": "Horizontal, stacked, and icon-only lockups for different spaces."
+          },
+          "color": {
+            "title": "Color system",
+            "description": "Palettes tuned for dashboards, print, and vehicle applications."
+          },
+          "typography": {
+            "title": "Wordmark",
+            "description": "Custom lettering paired with the symbol for full lockups."
+          },
+          "applications": {
+            "title": "Real applications",
+            "description": "Mockups on vehicles, uniforms, and digital interfaces."
+          },
+          "guidelines": {
+            "title": "Usage rules",
+            "description": "Clear spacing, minimum size, and do/don't examples."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Primary logo",
+          "2": "Dark variation",
+          "3": "Application mockups"
+        }
+      }
+    },
+    "ortvest-logo": {
+      "meta": {
+        "title": "Ortvest Logo — Brand Identity | Ortvest",
+        "description": "Logo and brand mark for Ortvest IT studio — innovation, clarity, and scalable digital identity."
+      },
+      "hero": {
+        "subtitle": "Brand mark for an IT studio — clean geometry, innovation, and variations built for product and corporate use."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Logo Design"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design"
+        },
+        "platform": {
+          "label": "Scope",
+          "value": "Digital-first"
+        }
+      },
+      "challenge": "Ortvest needed a logo that reflects modern software craftsmanship — clear at favicon size, strong on pitch decks, and consistent across product UIs and marketing.",
+      "solution": "We designed a sleek mark with light and dark variations, strict geometry, and guidelines for digital-first use. The identity scales from app icons to large-format print without rework.",
+      "features": {
+        "subtitle": "A flexible identity for a product-focused IT studio.",
+        "items": {
+          "mark": {
+            "title": "Primary mark",
+            "description": "Memorable symbol that works alone or with the wordmark."
+          },
+          "geometry": {
+            "title": "Clean geometry",
+            "description": "Precise shapes that stay sharp at any resolution."
+          },
+          "color": {
+            "title": "Color modes",
+            "description": "Light, dark, and monochrome versions for any background."
+          },
+          "darkLight": {
+            "title": "Light & dark lockups",
+            "description": "Ready for headers, footers, and product chrome."
+          },
+          "product": {
+            "title": "Product-ready",
+            "description": "Sized and spaced for apps, docs, and developer tools."
+          },
+          "guidelines": {
+            "title": "Brand guidelines",
+            "description": "Usage rules for partners and internal teams."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Primary logo",
+          "2": "Dark mode variation",
+          "3": "Product applications",
+          "4": "Brand extensions"
+        }
+      }
+    }
   },
   "caseDetail": {
     "backToCases": "Back to cases",
@@ -306,10 +1229,10 @@
     "nav": "Navigation"
   },
   "metadata": {
-    "title": "Ortvest. IT Studio. Web & Mobile Development, UI/UX Design, Marketing",
-    "description": "Ortvest is an IT studio. We build web and mobile apps, UI/UX design, and marketing that converts. Get in touch for a free consultation.",
-    "ogTitle": "Ortvest. IT Studio. Design, Development, Marketing",
-    "ogDescription": "We build digital products that sell. Web & mobile development, UI/UX design, SEO and marketing. Contact us today."
+    "title": "Ortvest — IT Studio for P2P, Community, Hospitality & Conversion Platforms",
+    "description": "Ortvest builds digital products for P2P platforms, community networks, hospitality businesses, and conversion-focused websites. Design, development, and marketing — with industry expertise.",
+    "ogTitle": "Ortvest — P2P, Community, Hospitality & Conversion Platforms",
+    "ogDescription": "Digital products for P2P platforms, community networks, hospitality, and conversion-focused websites — design, development, and marketing with industry expertise."
   },
   "cmsPage": {
     "hero": {
