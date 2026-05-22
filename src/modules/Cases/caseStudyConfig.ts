@@ -22,14 +22,7 @@ import {
   Zap,
 } from 'lucide-react';
 
-
-export type CaseStudyCtaTemplate =
-  | 'p2p'
-  | 'community'
-  | 'logistics'
-  | 'conversion'
-  | 'brand'
-  | 'product';
+export type CaseStudyCtaTemplate = 'p2p' | 'community' | 'logistics' | 'conversion' | 'brand' | 'product';
 
 export type CaseStudyGalleryType = 'screens' | 'work' | 'brand';
 
@@ -99,6 +92,7 @@ export const CASE_STUDY_ORDER = [
   'skisailclub',
   'navexa',
   'teya',
+  'pachaca',
   'gambit',
   'reskin',
 ];
@@ -183,6 +177,18 @@ export const CASE_STUDY_CONFIG: Record<string, CaseStudyConfig> = {
       { key: 'responsive', icon: 'layout' },
       { key: 'trust', icon: 'shield-check' },
       { key: 'contact', icon: 'message' },
+    ],
+  },
+  pachaca: {
+    ctaTemplate: 'conversion',
+    galleryType: 'screens',
+    featureKeys: [
+      { key: 'booking', icon: 'calendar' },
+      { key: 'mobile', icon: 'layout' },
+      { key: 'web', icon: 'globe' },
+      { key: 'cms', icon: 'layers' },
+      { key: 'notifications', icon: 'bell' },
+      { key: 'payments', icon: 'credit-card' },
     ],
   },
   mie: {

@@ -14,14 +14,16 @@
   },
   "hero": {
     "eyebrow": "Studio IT z ekspertyzą branżową",
-    "headline": "Tworzymy produkty cyfrowe dla P2P, społeczności, hospitality i biznesów nastawionych na konwersję.",
+    "headline": "Tworzymy produkty cyfrowe dla P2P, społeczności, hospitality, konwersji, agritech i sporttech.",
     "subheadline": "Nie tylko strony internetowe. Łączymy design, development i marketing — z głęboką wiedzą o branżach, w których pracujemy. Od strategii do startu i dalej.",
     "nicheTags": {
       "p2p": "P2P",
       "community": "Społeczności",
       "hospitality": "Hospitality",
       "conversion": "Strony konwersyjne",
-      "logistics": "Logistyka"
+      "logistics": "Logistyka",
+      "agritech": "Agritech",
+      "sporttech": "Sporttech"
     },
     "ctaPrimary": "Omów projekt",
     "ctaSecondary": "Zobacz co robimy",
@@ -97,43 +99,42 @@
       "p2p": {
         "title": "Platformy P2P",
         "description": "Budujemy platformy peer-to-peer, gdzie zaufanie jest produktem. Sharing, wynajem i wymiana z weryfikacją, płatnościami escrow, śledzeniem przedmiotów i rozwiązywaniem sporów — aby nieznajomi mogli bezpiecznie współpracować.",
-        "tags": [
-          "Sharing economy",
-          "Wynajem peer-to-peer",
-          "Trust & safety",
-          "Płatności escrow"
-        ]
+        "tags": ["Sharing economy", "Wynajem peer-to-peer", "Trust & safety", "Płatności escrow"]
       },
       "community": {
         "title": "Społeczności",
         "description": "Projektujemy i budujemy zamknięte sieci, platformy klubowe i społeczności zawodowe, gdzie interakcja jest naturalna — nie wymuszona. Czaty, role, wydarzenia i treści w jednym miejscu. Znamy różnicę między „stroną” a „platformą, do której ludzie wracają”.",
-        "tags": [
-          "Sieci prywatne",
-          "Portale członkowskie",
-          "Czat na żywo",
-          "Wydarzenia"
-        ]
+        "tags": ["Sieci prywatne", "Portale członkowskie", "Czat na żywo", "Wydarzenia"]
       },
       "hospitality": {
         "title": "Hospitality",
         "description": "Od klubów jachtowych po butikowe hotele — hospitality potrzebuje cyfrowego doświadczenia tak premium jak sam serwis. Budujemy rezerwacje, platformy klubowe i produkty dla gości, gdzie liczy się każdy detal. Budowaliśmy dla klubów jachtowych — znamy tę branżę.",
-        "tags": [
-          "Systemy rezerwacji",
-          "Platformy klubowe",
-          "Jachty i podróże",
-          "Premium UX"
-        ]
+        "tags": ["Systemy rezerwacji", "Platformy klubowe", "Jachty i podróże", "Premium UX"]
       },
       "conversion": {
         "title": "Strony konwersyjne",
         "description": "Strona, która wygląda dobrze, ale nie konwertuje, to strata pieniędzy. Tworzymy landing page i strony korporacyjne dla startupów tech i fintech w Europie i USA — ze strategią UX, kierunkiem copy i analityką od pierwszego dnia.",
-        "tags": [
-          "Landing page",
-          "Strony korporacyjne",
-          "CRO",
-          "Startupy tech i fintech"
-        ]
+        "tags": ["Landing page", "Strony korporacyjne", "CRO", "Startupy tech i fintech"]
+      },
+      "logistics": {
+        "title": "Logistyka",
+        "description": "Pracujemy ze startupami i MŚP logistycznymi nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras. Dwa case studies opublikowane — więcej w toku.",
+        "tags": ["Zarządzanie flotą", "Śledzenie przesyłek", "Optymalizacja tras", "Logistics SaaS"]
+      },
+      "agritech": {
+        "title": "Agritech",
+        "description": "Budujemy platformy do zarządzania farmą, analityki plonów i widoczności łańcucha dostaw. Jeśli działasz w tej przestrzeni — porozmawiajmy zanim opublikujemy case studies.",
+        "tags": ["Zarządzanie farmą", "Analityka plonów", "Łańcuch dostaw", "Platformy IoT"]
+      },
+      "sporttech": {
+        "title": "Sporttech",
+        "description": "Platformy do śledzenia sportowców, zarządzania klubami i angażowania kibiców. Naprawdę dobre produkty cyfrowe w sporcie są wciąż rzadkością — jesteśmy tu, by to zmienić.",
+        "tags": ["Śledzenie sportowców", "Zarządzanie klubem", "Zaangażowanie kibiców", "Analityka wyników"]
       }
+    },
+    "comingSoon": {
+      "badge": "Rozwijamy",
+      "cta": "Porozmawiajmy teraz"
     }
   },
   "technologies": {
@@ -231,6 +232,8 @@
     "projectTypeHospitality": "Hospitality",
     "projectTypeConversion": "Strona konwersyjna",
     "projectTypeLogistics": "Logistyka",
+    "projectTypeAgritech": "Agritech",
+    "projectTypeSporttech": "Sporttech",
     "projectTypeOther": "Inne",
     "send": "Wyślij",
     "trustCopy": "Odpowiedź w 24h",
@@ -291,8 +294,10 @@
       "p2p": "P2P",
       "community": "Społeczności",
       "hospitality": "Hospitality",
+      "sporttech": "Sporttech",
       "conversion": "Strony konwersyjne",
-      "logistics": "Logistyka"
+      "logistics": "Logistyka",
+      "agritech": "Agritech"
     },
     "ndaProtected": "Chronione NDA",
     "viewCaseStudy": "Zobacz case study →",
@@ -338,6 +343,10 @@
       "teya": {
         "summary": "Nowoczesny landing page firmy logistycznej pozyskujący klientów.",
         "result": "Strona marketingowa jasno prezentująca usługi i generująca leady."
+      },
+      "pachaca": {
+        "summary": "Platforma full-stack dla serwisu sprzątania i pralni chemicznej — aplikacje mobilne, serwis web i wewnętrzny system zarządzania zbudowane od zera.",
+        "result": "Kompletny ekosystem cyfrowy dla biznesu on-demand — od pierwszego dotknięcia klienta po ostatnią aktualizację statusu przez zespół operacyjny."
       },
       "mie": {
         "summary": "Inteligentna lista zakupów z AI śledzącą zapasy i sugerującą zakupy.",
@@ -856,6 +865,52 @@
         "development": {
           "title": "Development",
           "description": "Zbudowaliśmy szybką, zorientowaną na konwersję stronę z formularzami do pozyskiwania leadów, konfiguracją analityki i fundamentem SEO."
+        }
+      }
+    },
+    "pachaca": {
+      "meta": {
+        "title": "Pachaca — Platforma sprzątania on-demand | Ortvest",
+        "description": "Platforma full-stack dla serwisu sprzątania: aplikacje iOS i Android, serwis web do rezerwacji oraz wewnętrzny CMS operacyjny."
+      },
+      "hero": {
+        "subtitle": "Platforma full-stack dla serwisu sprzątania i pralni chemicznej — aplikacje mobilne, serwis web i wewnętrzny system zarządzania zbudowane od zera."
+      },
+      "stats": {
+        "platforms": {
+          "label": "Platformy",
+          "value": "iOS · Android · Web"
+        },
+        "type": {
+          "label": "Typ projektu",
+          "value": "Full-stack"
+        },
+        "geo": {
+          "label": "Geografia",
+          "value": "Ukraina · 3 miasta"
+        }
+      },
+      "challenge": "Pachaca musiała zdigitalizować usługę sprzątania i pralni chemicznej on-demand w kilku miastach Ukrainy — szybka rezerwacja mobilna dla klientów i pełna kontrola nad zamówieniami, sprzątaczami i strefami obsługi dla zespołu operacyjnego.",
+      "solution": "Zbudowaliśmy cały stos cyfrowy od zera: natywne aplikacje iOS i Android dla klientów, pełny serwis web dla użytkowników desktopowych oraz customowy wewnętrzny CMS dopasowany do codziennej pracy zespołu Pachaca.",
+      "cms": {
+        "internal": "Narzędzie wewnętrzne — zrzuty ekranu niedostępne."
+      },
+      "sections": {
+        "overview": {
+          "title": "Przegląd",
+          "description": "Pachaca to usługa sprzątania i pralni chemicznej on-demand działająca w kilku miastach Ukrainy. Klienci rezerwują profesjonalne sprzątanie mieszkań, mebli i odzieży — szybko i w pełni online. Zbudowaliśmy całą infrastrukturę cyfrową: aplikacje mobilne, serwis web i wewnętrzny system operacyjny."
+        },
+        "mobile": {
+          "title": "Aplikacje mobilne — iOS i Android",
+          "description": "Natywne aplikacje mobilne dla iOS i Android zbudowane wokół szybkości i prostoty — wybierz usługę, wybierz termin, potwierdź rezerwację w mniej niż minutę. Powiadomienia push informują klienta na każdym etapie — od potwierdzenia po przyjazd sprzątacza."
+        },
+        "web": {
+          "title": "Serwis web",
+          "description": "Pełny serwis web dający użytkownikom desktopowym ten sam płynny proces rezerwacji — wybór usługi, planowanie, zarządzanie adresami, historia zamówień i płatności. Szybki, zoptymalizowany pod konwersję."
+        },
+        "cms": {
+          "title": "Wewnętrzny system zarządzania",
+          "description": "Customowy wewnętrzny CMS dający zespołowi operacyjnemu Pachaca pełną kontrolę — zarządzanie zamówieniami, przypisywanie sprzątaczy, śledzenie stref obsługi i monitorowanie statusów w czasie rzeczywistym we wszystkich miastach."
         }
       }
     },

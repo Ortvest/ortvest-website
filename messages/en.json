@@ -14,14 +14,16 @@
   },
   "hero": {
     "eyebrow": "Industry-focused IT Studio",
-    "headline": "We build digital products for P2P, community, hospitality, and conversion-driven businesses.",
+    "headline": "We build digital products for P2P, community, hospitality, conversion, agritech and sporttech businesses.",
     "subheadline": "Not just websites. We combine design, development, and marketing — with deep knowledge of the industries we work in. From strategy to launch and beyond.",
     "nicheTags": {
       "p2p": "P2P",
       "community": "Community",
       "hospitality": "Hospitality",
       "conversion": "Conversion Sites",
-      "logistics": "Logistics"
+      "logistics": "Logistics",
+      "agritech": "Agritech",
+      "sporttech": "Sporttech"
     },
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "See what we do",
@@ -97,43 +99,42 @@
       "p2p": {
         "title": "P2P Platforms",
         "description": "We build peer-to-peer platforms where trust is the product. Sharing, rental, and exchange platforms with verification, escrow payments, item tracking, and dispute resolution — built so strangers can transact with confidence.",
-        "tags": [
-          "Sharing economy",
-          "Peer rental",
-          "Trust & safety",
-          "Escrow payments"
-        ]
+        "tags": ["Sharing economy", "Peer rental", "Trust & safety", "Escrow payments"]
       },
       "community": {
         "title": "Community",
         "description": "We design and build private networks, club platforms, and professional communities where engagement feels natural — not forced. Real-time messaging, member roles, events, and content in one place. We know the difference between a \"website\" and a \"platform where people actually return.\"",
-        "tags": [
-          "Private networks",
-          "Member portals",
-          "Real-time chat",
-          "Events"
-        ]
+        "tags": ["Private networks", "Member portals", "Real-time chat", "Events"]
       },
       "hospitality": {
         "title": "Hospitality",
         "description": "From yacht clubs to boutique hotels — hospitality businesses need digital experiences as premium as their service. We build booking systems, club management platforms, and guest-facing products where every detail matters. We've built for yacht clubs and sailing communities — we know this world.",
-        "tags": [
-          "Booking systems",
-          "Club platforms",
-          "Yacht & travel",
-          "Premium UX"
-        ]
+        "tags": ["Booking systems", "Club platforms", "Yacht & travel", "Premium UX"]
       },
       "conversion": {
         "title": "Conversion Websites",
         "description": "A website that looks good but doesn't convert is a liability. We build landing pages and corporate websites for tech and fintech startups in Europe and the US — with UX strategy, conversion copywriting direction, and analytics setup baked in from day one.",
-        "tags": [
-          "Landing pages",
-          "Corporate sites",
-          "CRO",
-          "Fintech & tech startups"
-        ]
+        "tags": ["Landing pages", "Corporate sites", "CRO", "Fintech & tech startups"]
+      },
+      "logistics": {
+        "title": "Logistics",
+        "description": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization. Two cases live — more in progress.",
+        "tags": ["Fleet management", "Shipment tracking", "Route optimization", "Logistics SaaS"]
+      },
+      "agritech": {
+        "title": "Agritech",
+        "description": "Building platforms for farm management, crop analytics, and supply chain visibility. If you're working in this space — let's talk before we publish the cases.",
+        "tags": ["Farm management", "Crop analytics", "Supply chain", "IoT platforms"]
+      },
+      "sporttech": {
+        "title": "Sporttech",
+        "description": "Platforms for athlete tracking, club management, and fan engagement. Great digital products in sports are still rare — we're here to change that.",
+        "tags": ["Athlete tracking", "Club management", "Fan engagement", "Performance analytics"]
       }
+    },
+    "comingSoon": {
+      "badge": "Expanding",
+      "cta": "Let's talk early"
     }
   },
   "technologies": {
@@ -231,6 +232,8 @@
     "projectTypeHospitality": "Hospitality",
     "projectTypeConversion": "Conversion Site",
     "projectTypeLogistics": "Logistics",
+    "projectTypeAgritech": "Agritech",
+    "projectTypeSporttech": "Sporttech",
     "projectTypeOther": "Other",
     "send": "Send message",
     "trustCopy": "Reply within 24h",
@@ -291,8 +294,10 @@
       "p2p": "P2P",
       "community": "Community",
       "hospitality": "Hospitality",
+      "sporttech": "Sporttech",
       "conversion": "Conversion Sites",
-      "logistics": "Logistics"
+      "logistics": "Logistics",
+      "agritech": "Agritech"
     },
     "ndaProtected": "NDA protected",
     "viewCaseStudy": "View case study →",
@@ -338,6 +343,10 @@
       "teya": {
         "summary": "Modern landing page for a logistics company to attract new clients.",
         "result": "Clean marketing website that clearly presents services and drives inbound leads."
+      },
+      "pachaca": {
+        "summary": "A full-stack cleaning and dry-cleaning service platform — mobile apps, web service, and an internal management system built from scratch.",
+        "result": "A complete digital ecosystem for an on-demand service business — from the customer's first tap to the operations team's last status update."
       },
       "mie": {
         "summary": "AI-powered smart shopping list that tracks inventory and suggests purchases.",
@@ -856,6 +865,52 @@
         "development": {
           "title": "Development",
           "description": "Built a fast, conversion-optimised website with lead capture forms, analytics setup, and SEO foundation."
+        }
+      }
+    },
+    "pachaca": {
+      "meta": {
+        "title": "Pachaca — On-Demand Cleaning Platform | Ortvest",
+        "description": "How Ortvest built a full-stack cleaning service platform with iOS and Android apps, a web booking service, and an internal operations CMS."
+      },
+      "hero": {
+        "subtitle": "A full-stack cleaning and dry-cleaning service platform — mobile apps, web service, and an internal management system built from scratch."
+      },
+      "stats": {
+        "platforms": {
+          "label": "Platforms",
+          "value": "iOS · Android · Web"
+        },
+        "type": {
+          "label": "Project type",
+          "value": "Full-stack"
+        },
+        "geo": {
+          "label": "Geography",
+          "value": "Ukraine · 3 cities"
+        }
+      },
+      "challenge": "Pachaca needed to digitise an on-demand cleaning and dry-cleaning business across multiple Ukrainian cities — giving customers a fast mobile booking experience while giving the operations team real-time control over orders, cleaners, and service areas.",
+      "solution": "We built the entire digital stack from scratch: native iOS and Android apps for customers, a full web service for desktop users, and a custom internal CMS tailored to how the Pachaca team manages daily operations.",
+      "cms": {
+        "internal": "Internal tool — screenshots not available."
+      },
+      "sections": {
+        "overview": {
+          "title": "Overview",
+          "description": "Pachaca is an on-demand cleaning and dry-cleaning service operating across multiple cities in Ukraine. Customers book professional cleaning for apartments, furniture, and clothing — quickly and entirely online. We built the entire digital infrastructure: customer-facing mobile apps, a web service, and an internal operations system."
+        },
+        "mobile": {
+          "title": "Mobile Apps — iOS & Android",
+          "description": "Native mobile apps for iOS and Android built around speed and simplicity — choose a service, pick a time, confirm the booking in under a minute. Push notifications keep customers informed at every step, from confirmation to the cleaner arriving at the door."
+        },
+        "web": {
+          "title": "Web Service",
+          "description": "A full web service giving desktop users the same seamless booking experience — service selection, scheduling, address management, order history, and payment processing. Built for speed, optimised for conversion."
+        },
+        "cms": {
+          "title": "Internal Management System",
+          "description": "A custom internal CMS giving the Pachaca operations team full control — managing orders, assigning cleaners, tracking service areas, and monitoring real-time status across all cities. Built for how the team actually works."
         }
       }
     },

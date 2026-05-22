@@ -1,12 +1,13 @@
 export type CaseCategory = 'design' | 'development' | 'designAndDevelopment';
 export type DesignSubcategory = 'logo' | 'web' | 'brand';
 export type DevelopmentSubcategory = 'web' | 'mobile';
-export type CaseIndustry = 'logistics' | 'community' | 'p2p' | 'hospitality' | 'conversion';
+export type CaseIndustry = 'logistics' | 'community' | 'p2p' | 'hospitality' | 'conversion' | 'sporttech' | 'agritech';
 export type CaseServiceTag = 'marketing';
 
 export interface CaseSection {
   id: string;
   images?: string[];
+  isInternal?: boolean;
 }
 
 export interface CaseItem {
@@ -35,6 +36,8 @@ export interface CaseItem {
   fullDescription?: string;
   portfolio?: boolean;
   sections?: CaseSection[];
+  platforms?: string[];
+  statKeys?: string[];
 }
 
 const portfolioCases: CaseItem[] = [
@@ -44,7 +47,7 @@ const portfolioCases: CaseItem[] = [
     designSubcategory: 'web',
     developmentSubcategory: 'web',
     title: 'YachtMate',
-    industries: ['community', 'hospitality'],
+    industries: ['community', 'hospitality', 'sporttech'],
     challenge: 'Private network for yacht club members needed secure, real-time communication',
     solution: 'Built exclusive social platform with member verification and real-time messaging',
     stack: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
@@ -60,7 +63,7 @@ const portfolioCases: CaseItem[] = [
       'https://ucarecdn.com/a526dfbe-0323-4c20-b23d-a1981ccb32d6/yachtmate11.jpg',
     ],
     fullDescription:
-      "YachtMate is a private social network designed exclusively for yacht club members. The platform provides secure communication channels, event coordination, and member directory features.",
+      'YachtMate is a private social network designed exclusively for yacht club members. The platform provides secure communication channels, event coordination, and member directory features.',
     sections: [
       {
         id: 'brand',
@@ -68,9 +71,7 @@ const portfolioCases: CaseItem[] = [
       },
       {
         id: 'design',
-        images: [
-          'https://ucarecdn.com/6fd9e852-a71c-45ea-9cdc-a8e3612d1387/yachtmate12.jpg',
-        ],
+        images: ['https://ucarecdn.com/6fd9e852-a71c-45ea-9cdc-a8e3612d1387/yachtmate12.jpg'],
       },
       {
         id: 'development',
@@ -113,9 +114,7 @@ const portfolioCases: CaseItem[] = [
       },
       {
         id: 'development',
-        images: [
-          'https://ucarecdn.com/e28c3f30-8f39-48ce-8346-5cef114291c0/sharingground19.jpg',
-        ],
+        images: ['https://ucarecdn.com/e28c3f30-8f39-48ce-8346-5cef114291c0/sharingground19.jpg'],
       },
     ],
   },
@@ -156,9 +155,7 @@ const portfolioCases: CaseItem[] = [
       },
       {
         id: 'development',
-        images: [
-          'https://ucarecdn.com/c906a981-c19d-457f-9e06-c07c2e9e4709/profitcraft17.jpg',
-        ],
+        images: ['https://ucarecdn.com/c906a981-c19d-457f-9e06-c07c2e9e4709/profitcraft17.jpg'],
       },
     ],
   },
@@ -167,7 +164,7 @@ const portfolioCases: CaseItem[] = [
     category: 'development',
     developmentSubcategory: 'web',
     title: 'Ski&Sail Club',
-    industries: ['hospitality', 'community'],
+    industries: ['hospitality', 'community', 'sporttech'],
     challenge:
       'Build a digital platform for a yacht club that makes trip booking and community management seamless for both newcomers and experienced sailors.',
     solution:
@@ -184,8 +181,7 @@ const portfolioCases: CaseItem[] = [
       'https://ucarecdn.com/aa1994d9-3cc7-472d-8625-704cbd63448a/Screenshot20260223at224846.png',
       'https://ucarecdn.com/da488fa3-7cd8-4358-8ae9-70d48984082b/Screenshot20260223at224858.png',
     ],
-    fullDescription:
-      'Ski&Sail Club is a platform for a Ukrainian yacht and ski travel club.',
+    fullDescription: 'Ski&Sail Club is a platform for a Ukrainian yacht and ski travel club.',
     sections: [
       {
         id: 'design',
@@ -255,16 +251,59 @@ const portfolioCases: CaseItem[] = [
     sections: [
       {
         id: 'design',
-        images: [
-          'https://ucarecdn.com/eec0be67-5f20-43dd-bff6-7835d2dd52e8/Teya23.jpg',
-        ],
+        images: ['https://ucarecdn.com/eec0be67-5f20-43dd-bff6-7835d2dd52e8/Teya23.jpg'],
       },
       {
         id: 'development',
+        images: ['https://ucarecdn.com/a4f2f266-069f-448e-b844-c3274c5d8380/Teya24.jpg'],
+      },
+    ],
+  },
+  {
+    id: 'pachaca',
+    category: 'designAndDevelopment',
+    developmentSubcategory: 'mobile',
+    title: 'Pachaca',
+    industries: ['p2p'],
+    challenge:
+      'An on-demand cleaning service needed a complete digital ecosystem across mobile, web, and internal operations.',
+    solution:
+      'Built native iOS and Android apps, a web booking service, and a custom internal CMS for order and team management.',
+    stack: ['React Native', 'iOS', 'Android', 'React', 'Node.js', 'PostgreSQL'],
+    isNDA: false,
+    coverImage: 'https://ucarecdn.com/7da2223d-3a35-48f7-9706-9189a658e32e/PACHACA01.jpg',
+    preview: 'https://ucarecdn.com/7da2223d-3a35-48f7-9706-9189a658e32e/PACHACA01.jpg',
+    accentColor: '#1a1a2e',
+    portfolio: true,
+    platforms: ['iOS', 'Android', 'Web'],
+    statKeys: ['platforms', 'type', 'geo'],
+    images: [
+      'https://ucarecdn.com/ffc84efa-9502-4dd6-9f12-905d3c129af9/PACHACA02.jpg',
+      'https://ucarecdn.com/7da2223d-3a35-48f7-9706-9189a658e32e/PACHACA01.jpg',
+      'https://ucarecdn.com/1c4ec832-b792-47cb-a274-706b7cb6028b/PACHACA03.jpg',
+      'https://ucarecdn.com/2de0d329-4b74-4c6e-9d75-d9ee2b50b328/PACHACA04.jpg',
+    ],
+    sections: [
+      {
+        id: 'overview',
         images: [
-          'https://ucarecdn.com/a4f2f266-069f-448e-b844-c3274c5d8380/Teya24.jpg',
+          'https://ucarecdn.com/ffc84efa-9502-4dd6-9f12-905d3c129af9/PACHACA02.jpg',
+          'https://ucarecdn.com/7da2223d-3a35-48f7-9706-9189a658e32e/PACHACA01.jpg',
         ],
       },
+      {
+        id: 'mobile',
+        images: [
+          'https://ucarecdn.com/2e8bd6c5-01c6-407d-918b-7f173588b6f4/pachcaca06.jpg',
+          'https://ucarecdn.com/2de0d329-4b74-4c6e-9d75-d9ee2b50b328/PACHACA04.jpg',
+        ],
+      },
+      { id: 'web', images: [
+        'https://ucarecdn.com/abb9960d-5741-49db-9f83-ef365446daac/pachcaca05.jpg',
+        'https://ucarecdn.com/1c4ec832-b792-47cb-a274-706b7cb6028b/PACHACA03.jpg',
+        
+      ] },
+      { id: 'cms', images: [], isInternal: true },
     ],
   },
   {
@@ -334,8 +373,7 @@ const portfolioCases: CaseItem[] = [
       name: 'Valeriia Timanovska',
       url: 'https://www.behance.net/vt_doruda/projects',
     },
-    fullDescription:
-      'Complete brand identity for a modern beauty brand specializing in skin and hair care products.',
+    fullDescription: 'Complete brand identity for a modern beauty brand specializing in skin and hair care products.',
     sections: [
       {
         id: 'brand',
@@ -369,8 +407,7 @@ export const brandCases: CaseItem[] = [
       'https://ucarecdn.com/e344a61d-ab05-4880-ac43-731962f0adb1/navexa04.jpg',
       'https://ucarecdn.com/5a9b542a-01c2-448c-b396-64adba6b9796/navexa01.jpg',
     ],
-    fullDescription:
-      'Professional logo design for Navexa, a logistics and fleet management company.',
+    fullDescription: 'Professional logo design for Navexa, a logistics and fleet management company.',
   },
   {
     id: 'ortvest-logo',
@@ -393,8 +430,7 @@ export const brandCases: CaseItem[] = [
       'https://ucarecdn.com/f3eb0800-332f-47b1-adfa-39b21f924c0d/ortvest22.jpg',
       'https://ucarecdn.com/2d095524-3c27-44ce-9782-fc6cf86b7f3f/ortvest08.jpg',
     ],
-    fullDescription:
-      'Professional logo design for Ortvest, an IT company focused on modern software solutions.',
+    fullDescription: 'Professional logo design for Ortvest, an IT company focused on modern software solutions.',
   },
 ];
 

@@ -12,7 +12,8 @@ const trustBullets = [
   { key: 'trust3', icon: Headphones },
 ] as const;
 
-const nicheTagKeys = ['p2p', 'community', 'hospitality', 'conversion', 'logistics'] as const;
+const nicheTagKeys = ['p2p', 'community', 'hospitality', 'sporttech', 'conversion', 'logistics', 'agritech'] as const;
+const dimmedTags = new Set(['logistics', 'agritech']);
 
 export function Hero() {
   const t = useTranslations('hero');
@@ -43,7 +44,7 @@ export function Hero() {
                 <span
                   key={key}
                   className={`rounded-full border border-black/15 px-3.5 py-1 text-[13px] ${
-                    key === 'logistics' ? 'text-black/40 opacity-60' : 'text-black/50'
+                    dimmedTags.has(key) ? 'text-black/35 opacity-50' : 'text-black/50'
                   }`}>
                   {t(`nicheTags.${key}`)}
                 </span>

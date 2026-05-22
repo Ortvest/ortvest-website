@@ -15,7 +15,15 @@ import { EASE } from '@lib/motion';
 import { AnimatePresence, motion } from 'framer-motion';
 import { AlertCircle, ArrowRight, Check } from 'lucide-react';
 
-type ProjectTypeOption = 'p2p' | 'community' | 'hospitality' | 'conversion' | 'logistics' | 'other';
+type ProjectTypeOption =
+  | 'p2p'
+  | 'community'
+  | 'hospitality'
+  | 'conversion'
+  | 'logistics'
+  | 'agritech'
+  | 'sporttech'
+  | 'other';
 type BudgetOption = 'under1k' | '1k5k' | '5k15k' | '15kplus';
 type ConsultationOption = 'discovery' | 'strategy';
 
@@ -33,6 +41,8 @@ const PROJECT_OPTIONS: {
     | 'projectTypeHospitality'
     | 'projectTypeConversion'
     | 'projectTypeLogistics'
+    | 'projectTypeAgritech'
+    | 'projectTypeSporttech'
     | 'projectTypeOther';
 }[] = [
   { value: 'p2p', labelKey: 'projectTypeP2p' },
@@ -40,6 +50,8 @@ const PROJECT_OPTIONS: {
   { value: 'hospitality', labelKey: 'projectTypeHospitality' },
   { value: 'conversion', labelKey: 'projectTypeConversion' },
   { value: 'logistics', labelKey: 'projectTypeLogistics' },
+  { value: 'agritech', labelKey: 'projectTypeAgritech' },
+  { value: 'sporttech', labelKey: 'projectTypeSporttech' },
   { value: 'other', labelKey: 'projectTypeOther' },
 ];
 

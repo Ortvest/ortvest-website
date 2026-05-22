@@ -8,10 +8,10 @@ import { useLocale, useTranslations } from 'next-intl';
 
 import { Container, SectionReveal } from '@shared/components';
 
+import { getCaseStudyConfig, getNextCaseSlug } from '@modules/Cases/caseStudyConfig';
 import type { CaseItem } from '@modules/Cases/data';
 import { cases } from '@modules/Cases/data';
-import { getCaseStudyConfig, getNextCaseSlug } from '@modules/Cases/caseStudyConfig';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Lock } from 'lucide-react';
 
 const STAT_KEYS = ['projectType', 'deliverables', 'platform'] as const;
 const MAX_THUMBS = 3;
@@ -32,6 +32,8 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
   const tCases = useTranslations('cases');
 
   const [activeThumb, setActiveThumb] = useState<number | null>(null);
+
+  const statKeys = caseItem.statKeys ?? STAT_KEYS;
 
   const mainImage = caseItem.coverImage ?? caseItem.preview ?? '';
   const thumbImages = caseItem.images ?? [];
@@ -82,6 +84,19 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
             </div>
 
             <h1 className="text-display-sm font-bold text-black sm:text-display">{caseItem.title}</h1>
+
+            {caseItem.platforms && caseItem.platforms.length > 0 && (
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {caseItem.platforms.map((platform) => (
+                  <span
+                    key={platform}
+                    className="rounded-md border border-black/[0.12] bg-black/[0.02] px-2.5 py-1 text-[11px] font-medium tracking-wide text-black/45">
+                    {platform}
+                  </span>
+                ))}
+              </div>
+            )}
+
             <p className="mt-4 max-w-3xl text-body-lg text-black/60">{t('hero.subtitle')}</p>
 
             {mainImage && (
@@ -125,10 +140,8 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
         <Container>
           <SectionReveal direction="left">
             <div className="grid gap-4 sm:grid-cols-3">
-              {STAT_KEYS.map((key) => (
-                <div
-                  key={key}
-                  className="rounded-2xl border border-black/[0.08] bg-white p-5 shadow-sm">
+              {statKeys.map((key) => (
+                <div key={key} className="rounded-2xl border border-black/[0.08] bg-white p-5 shadow-sm">
                   <p className="text-xs font-semibold uppercase tracking-widest text-black/45">
                     {t(`stats.${key}.label`)}
                   </p>
@@ -174,27 +187,34 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
                   <p className="mt-6 max-w-3xl text-body leading-relaxed text-black/70">
                     {t(`sections.${section.id}.description`)}
                   </p>
-                  {section.images && section.images.length > 0 && (
-                    <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                      {section.images.map((img, i) => (
-                        <div
-                          key={`${img}-${i}`}
-                          className="relative aspect-video overflow-hidden rounded-2xl border border-black/[0.08]">
-                          <Image
-                            src={img}
-                            alt=""
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 50vw"
-                          />
-                        </div>
-                      ))}
+                  {section.isInternal ? (
+                    <div className="mt-8 rounded-2xl border border-black/[0.08] bg-black/[0.02] px-6 py-10 text-center">
+                      <Lock className="mx-auto h-5 w-5 text-black/35" strokeWidth={1.5} />
+                      <p className="mt-3 text-sm text-black/50">{t('cms.internal')}</p>
                     </div>
+                  ) : (
+                    section.images &&
+                    section.images.length > 0 && (
+                      <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                        {section.images.map((img, i) => (
+                          <div
+                            key={`${img}-${i}`}
+                            className="relative aspect-video overflow-hidden rounded-2xl border border-black/[0.08]">
+                            <Image
+                              src={img}
+                              alt=""
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 768px) 100vw, 50vw"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    )
                   )}
                 </div>
                 {index < caseItem.sections!.length - 1 && (
-                  <div
-                    style={{ position: 'relative', textAlign: 'center', margin: '48px 0' }}>
+                  <div style={{ position: 'relative', textAlign: 'center', margin: '48px 0' }}>
                     <hr style={{ border: 'none', borderTop: '0.5px solid var(--color-border-tertiary)' }} />
                     <span
                       style={{

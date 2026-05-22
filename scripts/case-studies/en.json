@@ -84,12 +84,30 @@
     "features": {
       "subtitle": "Core mechanics that keep a private club network secure and useful day to day.",
       "items": {
-        "verification": { "title": "Member verification", "description": "Invite-only onboarding and identity checks so only verified club members get access." },
-        "messaging": { "title": "Real-time messaging", "description": "Private channels and direct messages with low-latency delivery for active communities." },
-        "events": { "title": "Event coordination", "description": "Create, share, and RSVP to club events without leaving the platform." },
-        "directory": { "title": "Member directory", "description": "Searchable profiles with roles and contact preferences controlled by each member." },
-        "privacy": { "title": "Privacy controls", "description": "Granular visibility settings so members choose what the club can see." },
-        "roles": { "title": "Role-based access", "description": "Admins, officers, and members each see the tools and data relevant to their role." }
+        "verification": {
+          "title": "Member verification",
+          "description": "Invite-only onboarding and identity checks so only verified club members get access."
+        },
+        "messaging": {
+          "title": "Real-time messaging",
+          "description": "Private channels and direct messages with low-latency delivery for active communities."
+        },
+        "events": {
+          "title": "Event coordination",
+          "description": "Create, share, and RSVP to club events without leaving the platform."
+        },
+        "directory": {
+          "title": "Member directory",
+          "description": "Searchable profiles with roles and contact preferences controlled by each member."
+        },
+        "privacy": {
+          "title": "Privacy controls",
+          "description": "Granular visibility settings so members choose what the club can see."
+        },
+        "roles": {
+          "title": "Role-based access",
+          "description": "Admins, officers, and members each see the tools and data relevant to their role."
+        }
       }
     },
     "gallery": {
@@ -114,12 +132,30 @@
     "features": {
       "subtitle": "The product mechanics that make community sharing work at scale.",
       "items": {
-        "verification": { "title": "User verification", "description": "Identity checks and profile trust scores to establish accountability between strangers." },
-        "tracking": { "title": "Item tracking", "description": "Condition logs before and after each exchange with photo evidence and timestamps." },
-        "escrow": { "title": "Escrow payments", "description": "Funds held securely and released only after both parties confirm the completed exchange." },
-        "reviews": { "title": "Review system", "description": "Two-way reviews that build trust over time and surface reliable community members." },
-        "insurance": { "title": "Insurance integration", "description": "Optional item insurance for high-value goods — embedded directly in the listing flow." },
-        "messaging": { "title": "In-app messaging", "description": "Secure chat between borrower and lender without exposing personal contact details." }
+        "verification": {
+          "title": "User verification",
+          "description": "Identity checks and profile trust scores to establish accountability between strangers."
+        },
+        "tracking": {
+          "title": "Item tracking",
+          "description": "Condition logs before and after each exchange with photo evidence and timestamps."
+        },
+        "escrow": {
+          "title": "Escrow payments",
+          "description": "Funds held securely and released only after both parties confirm the completed exchange."
+        },
+        "reviews": {
+          "title": "Review system",
+          "description": "Two-way reviews that build trust over time and surface reliable community members."
+        },
+        "insurance": {
+          "title": "Insurance integration",
+          "description": "Optional item insurance for high-value goods — embedded directly in the listing flow."
+        },
+        "messaging": {
+          "title": "In-app messaging",
+          "description": "Secure chat between borrower and lender without exposing personal contact details."
+        }
       }
     },
     "gallery": {
@@ -144,12 +180,30 @@
     "features": {
       "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
       "items": {
-        "valueProp": { "title": "Clear value proposition", "description": "Headlines and sections that immediately answer why credit-building matters now." },
-        "trust": { "title": "Trust signals", "description": "Social proof, credentials, and reassurance blocks placed at decision points." },
-        "paths": { "title": "Service paths", "description": "Structured journeys for loans, auto, home, and business — each with dedicated messaging." },
-        "leads": { "title": "Lead capture", "description": "Forms and CTAs tuned for low friction without sacrificing lead quality." },
-        "responsive": { "title": "Responsive layout", "description": "Consistent experience across mobile and desktop where most research happens." },
-        "seo": { "title": "SEO foundation", "description": "Semantic structure and metadata so organic traffic finds the right pages." }
+        "valueProp": {
+          "title": "Clear value proposition",
+          "description": "Headlines and sections that immediately answer why credit-building matters now."
+        },
+        "trust": {
+          "title": "Trust signals",
+          "description": "Social proof, credentials, and reassurance blocks placed at decision points."
+        },
+        "paths": {
+          "title": "Service paths",
+          "description": "Structured journeys for loans, auto, home, and business — each with dedicated messaging."
+        },
+        "leads": {
+          "title": "Lead capture",
+          "description": "Forms and CTAs tuned for low friction without sacrificing lead quality."
+        },
+        "responsive": {
+          "title": "Responsive layout",
+          "description": "Consistent experience across mobile and desktop where most research happens."
+        },
+        "seo": {
+          "title": "SEO foundation",
+          "description": "Semantic structure and metadata so organic traffic finds the right pages."
+        }
       }
     },
     "gallery": {
@@ -174,12 +228,30 @@
     "features": {
       "subtitle": "Booking and community tools that reflect the spirit of sailing.",
       "items": {
-        "routes": { "title": "Route discovery", "description": "Browse yacht routes with rich imagery, details, and availability at a glance." },
-        "booking": { "title": "Trip booking", "description": "Streamlined reservation flow from discovery to confirmation." },
-        "community": { "title": "Member community", "description": "Profiles and club updates that keep members engaged between trips." },
-        "profiles": { "title": "Member profiles", "description": "Personal pages with sailing history and club participation." },
-        "content": { "title": "Immersive UI", "description": "Visual design that translates sunsets, open water, and adventure into digital form." },
-        "performance": { "title": "Performance & scale", "description": "Fast loads and a stack ready to grow as the club adds routes and members." }
+        "routes": {
+          "title": "Route discovery",
+          "description": "Browse yacht routes with rich imagery, details, and availability at a glance."
+        },
+        "booking": {
+          "title": "Trip booking",
+          "description": "Streamlined reservation flow from discovery to confirmation."
+        },
+        "community": {
+          "title": "Member community",
+          "description": "Profiles and club updates that keep members engaged between trips."
+        },
+        "profiles": {
+          "title": "Member profiles",
+          "description": "Personal pages with sailing history and club participation."
+        },
+        "content": {
+          "title": "Immersive UI",
+          "description": "Visual design that translates sunsets, open water, and adventure into digital form."
+        },
+        "performance": {
+          "title": "Performance & scale",
+          "description": "Fast loads and a stack ready to grow as the club adds routes and members."
+        }
       }
     },
     "gallery": {
@@ -205,11 +277,26 @@
       "subtitle": "Operational tools that connect fleet, routes, and shipments in one view.",
       "items": {
         "fleet": { "title": "Fleet overview", "description": "Live map and status for every vehicle in the fleet." },
-        "tracking": { "title": "Real-time tracking", "description": "GPS integration for accurate position and ETA updates." },
-        "routes": { "title": "Route optimization", "description": "Smarter routing that reduces cost and delivery time." },
-        "analytics": { "title": "Operations analytics", "description": "Dashboards for KPIs, delays, and fleet utilization." },
-        "shipments": { "title": "Shipment monitoring", "description": "End-to-end visibility from pickup to delivery." },
-        "integrations": { "title": "Device integrations", "description": "Connects with GPS hardware and existing logistics workflows." }
+        "tracking": {
+          "title": "Real-time tracking",
+          "description": "GPS integration for accurate position and ETA updates."
+        },
+        "routes": {
+          "title": "Route optimization",
+          "description": "Smarter routing that reduces cost and delivery time."
+        },
+        "analytics": {
+          "title": "Operations analytics",
+          "description": "Dashboards for KPIs, delays, and fleet utilization."
+        },
+        "shipments": {
+          "title": "Shipment monitoring",
+          "description": "End-to-end visibility from pickup to delivery."
+        },
+        "integrations": {
+          "title": "Device integrations",
+          "description": "Connects with GPS hardware and existing logistics workflows."
+        }
       }
     },
     "gallery": {
@@ -234,12 +321,27 @@
     "features": {
       "subtitle": "Marketing patterns that turn traffic into qualified leads.",
       "items": {
-        "services": { "title": "Service presentation", "description": "Clear blocks for each transportation offering with scannable copy." },
-        "branding": { "title": "Strong branding", "description": "Visual identity applied consistently across hero, sections, and footer." },
+        "services": {
+          "title": "Service presentation",
+          "description": "Clear blocks for each transportation offering with scannable copy."
+        },
+        "branding": {
+          "title": "Strong branding",
+          "description": "Visual identity applied consistently across hero, sections, and footer."
+        },
         "leads": { "title": "Lead generation", "description": "Quote and contact flows placed where intent peaks." },
-        "responsive": { "title": "Fully responsive", "description": "Polished layout on mobile where many B2B buyers first research." },
-        "trust": { "title": "Trust building", "description": "Credentials, coverage areas, and proof points that reduce hesitation." },
-        "contact": { "title": "Easy contact", "description": "Multiple touchpoints — form, phone, and quick inquiry — without friction." }
+        "responsive": {
+          "title": "Fully responsive",
+          "description": "Polished layout on mobile where many B2B buyers first research."
+        },
+        "trust": {
+          "title": "Trust building",
+          "description": "Credentials, coverage areas, and proof points that reduce hesitation."
+        },
+        "contact": {
+          "title": "Easy contact",
+          "description": "Multiple touchpoints — form, phone, and quick inquiry — without friction."
+        }
       }
     },
     "gallery": {
@@ -264,12 +366,27 @@
     "features": {
       "subtitle": "AI features that make grocery planning feel effortless.",
       "items": {
-        "inventory": { "title": "Pantry tracking", "description": "Know what's in stock and what's running low without manual spreadsheets." },
-        "ai": { "title": "AI suggestions", "description": "Smart recommendations based on habits, seasonality, and usage patterns." },
-        "recipes": { "title": "Recipe matching", "description": "Suggest meals you can cook with ingredients already on hand." },
+        "inventory": {
+          "title": "Pantry tracking",
+          "description": "Know what's in stock and what's running low without manual spreadsheets."
+        },
+        "ai": {
+          "title": "AI suggestions",
+          "description": "Smart recommendations based on habits, seasonality, and usage patterns."
+        },
+        "recipes": {
+          "title": "Recipe matching",
+          "description": "Suggest meals you can cook with ingredients already on hand."
+        },
         "reminders": { "title": "Smart reminders", "description": "Timely nudges before you run out of essentials." },
-        "patterns": { "title": "Pattern learning", "description": "Adapts to how often you buy and what you typically need." },
-        "lists": { "title": "Unified lists", "description": "One place for shopping, sharing, and checking off items on the go." }
+        "patterns": {
+          "title": "Pattern learning",
+          "description": "Adapts to how often you buy and what you typically need."
+        },
+        "lists": {
+          "title": "Unified lists",
+          "description": "One place for shopping, sharing, and checking off items on the go."
+        }
       }
     },
     "gallery": {
@@ -294,16 +411,36 @@
     "features": {
       "subtitle": "Deliverables that form a cohesive, premium brand language.",
       "items": {
-        "logo": { "title": "Logo system", "description": "Primary mark and variations for product, packaging, and digital." },
-        "palette": { "title": "Color palette", "description": "Warm neutrals and accent tones that signal quality and calm." },
+        "logo": {
+          "title": "Logo system",
+          "description": "Primary mark and variations for product, packaging, and digital."
+        },
+        "palette": {
+          "title": "Color palette",
+          "description": "Warm neutrals and accent tones that signal quality and calm."
+        },
         "typography": { "title": "Typography", "description": "Type pairing for headlines, body, and product labels." },
-        "packaging": { "title": "Packaging direction", "description": "Layout principles for bottles, boxes, and retail presence." },
-        "guidelines": { "title": "Brand guidelines", "description": "Rules for spacing, color use, and tone across channels." },
-        "applications": { "title": "Applications", "description": "Mockups showing the system on web, social, and print." }
+        "packaging": {
+          "title": "Packaging direction",
+          "description": "Layout principles for bottles, boxes, and retail presence."
+        },
+        "guidelines": {
+          "title": "Brand guidelines",
+          "description": "Rules for spacing, color use, and tone across channels."
+        },
+        "applications": {
+          "title": "Applications",
+          "description": "Mockups showing the system on web, social, and print."
+        }
       }
     },
     "gallery": {
-      "captions": { "1": "Logo & primary mark", "2": "Color & typography", "3": "Packaging mockups", "4": "Brand applications" }
+      "captions": {
+        "1": "Logo & primary mark",
+        "2": "Color & typography",
+        "3": "Packaging mockups",
+        "4": "Brand applications"
+      }
     }
   },
   "gambit": {
@@ -324,12 +461,30 @@
     "features": {
       "subtitle": "Design decisions that balance aesthetics with usability.",
       "items": {
-        "hierarchy": { "title": "Visual hierarchy", "description": "Clear levels of headline, subhead, and body that guide the eye." },
-        "typography": { "title": "Bold typography", "description": "Expressive type choices that reinforce brand personality." },
-        "whitespace": { "title": "Strategic whitespace", "description": "Breathing room that reduces noise and highlights CTAs." },
-        "components": { "title": "UI components", "description": "Reusable cards, buttons, and sections for consistent implementation." },
-        "responsive": { "title": "Responsive layouts", "description": "Grid and breakpoints planned for seamless dev handoff." },
-        "handoff": { "title": "Dev-ready handoff", "description": "Organized Figma files with specs for efficient build." }
+        "hierarchy": {
+          "title": "Visual hierarchy",
+          "description": "Clear levels of headline, subhead, and body that guide the eye."
+        },
+        "typography": {
+          "title": "Bold typography",
+          "description": "Expressive type choices that reinforce brand personality."
+        },
+        "whitespace": {
+          "title": "Strategic whitespace",
+          "description": "Breathing room that reduces noise and highlights CTAs."
+        },
+        "components": {
+          "title": "UI components",
+          "description": "Reusable cards, buttons, and sections for consistent implementation."
+        },
+        "responsive": {
+          "title": "Responsive layouts",
+          "description": "Grid and breakpoints planned for seamless dev handoff."
+        },
+        "handoff": {
+          "title": "Dev-ready handoff",
+          "description": "Organized Figma files with specs for efficient build."
+        }
       }
     },
     "gallery": {
@@ -354,11 +509,26 @@
     "features": {
       "subtitle": "Logo system built for logistics and product environments.",
       "items": {
-        "mark": { "title": "Primary mark", "description": "Distinct symbol that reads at small sizes and large formats." },
-        "variations": { "title": "Logo variations", "description": "Horizontal, stacked, and icon-only lockups for different spaces." },
-        "color": { "title": "Color system", "description": "Palettes tuned for dashboards, print, and vehicle applications." },
-        "typography": { "title": "Wordmark", "description": "Custom lettering paired with the symbol for full lockups." },
-        "applications": { "title": "Real applications", "description": "Mockups on vehicles, uniforms, and digital interfaces." },
+        "mark": {
+          "title": "Primary mark",
+          "description": "Distinct symbol that reads at small sizes and large formats."
+        },
+        "variations": {
+          "title": "Logo variations",
+          "description": "Horizontal, stacked, and icon-only lockups for different spaces."
+        },
+        "color": {
+          "title": "Color system",
+          "description": "Palettes tuned for dashboards, print, and vehicle applications."
+        },
+        "typography": {
+          "title": "Wordmark",
+          "description": "Custom lettering paired with the symbol for full lockups."
+        },
+        "applications": {
+          "title": "Real applications",
+          "description": "Mockups on vehicles, uniforms, and digital interfaces."
+        },
         "guidelines": { "title": "Usage rules", "description": "Clear spacing, minimum size, and do/don't examples." }
       }
     },
@@ -387,13 +557,21 @@
         "mark": { "title": "Primary mark", "description": "Memorable symbol that works alone or with the wordmark." },
         "geometry": { "title": "Clean geometry", "description": "Precise shapes that stay sharp at any resolution." },
         "color": { "title": "Color modes", "description": "Light, dark, and monochrome versions for any background." },
-        "darkLight": { "title": "Light & dark lockups", "description": "Ready for headers, footers, and product chrome." },
+        "darkLight": {
+          "title": "Light & dark lockups",
+          "description": "Ready for headers, footers, and product chrome."
+        },
         "product": { "title": "Product-ready", "description": "Sized and spaced for apps, docs, and developer tools." },
         "guidelines": { "title": "Brand guidelines", "description": "Usage rules for partners and internal teams." }
       }
     },
     "gallery": {
-      "captions": { "1": "Primary logo", "2": "Dark mode variation", "3": "Product applications", "4": "Brand extensions" }
+      "captions": {
+        "1": "Primary logo",
+        "2": "Dark mode variation",
+        "3": "Product applications",
+        "4": "Brand extensions"
+      }
     }
   }
 }
