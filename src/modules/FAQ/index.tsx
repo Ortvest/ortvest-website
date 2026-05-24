@@ -2,91 +2,95 @@
 
 import { useState } from 'react';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { Container, SectionHeader, SectionReveal } from '@shared/components';
+import { IconArrowRight, IconChevronDown, IconHelpCircle } from '@tabler/icons-react';
 
-import { EASE } from '@lib/motion';
-import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronDown, HelpCircle } from 'lucide-react';
-
-const faqItems = [
-  { q: 'q1', a: 'a1' },
-  { q: 'q2', a: 'a2' },
-  { q: 'q3', a: 'a3' },
-  { q: 'q4', a: 'a4' },
-  { q: 'q5', a: 'a5' },
-  { q: 'q6', a: 'a6' },
-  { q: 'q7', a: 'a7' },
-  { q: 'q8', a: 'a8' },
-] as const;
+const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7'] as const;
 
 export function FAQ() {
   const t = useTranslations('faq');
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const items = FAQ_KEYS.map((key) => ({
+    q: t(key),
+    a: t(key.replace('q', 'a') as 'a1'),
+  }));
+
   return (
-    <section id="faq" className="section-padding bg-white" aria-labelledby="faq-heading">
-      <Container>
-        <SectionReveal direction="left">
-          <SectionHeader
-            eyebrow={t('eyebrow')}
-            title={t('title')}
-            description={t('subtitle')}
-            icon={HelpCircle}
-            className="mb-10"
-          />
-
-          <div className="mx-auto max-w-2xl space-y-3">
-            {faqItems.map(({ q, a }, i) => {
-              const isOpen = openIndex === i;
-
-              return (
-                <motion.div
-                  key={q}
-                  layout
-                  transition={{ duration: 0.35, ease: EASE }}
-                  className="overflow-hidden rounded-2xl border border-black/[0.08] bg-white shadow-card transition-all hover:border-black/15 hover:shadow-card-hover focus-within:ring-2 focus-within:ring-black/10 focus-within:ring-offset-2">
-                  <button
-                    type="button"
-                    onClick={() => setOpenIndex(isOpen ? null : i)}
-                    className="flex w-full items-center gap-3 px-5 py-4 text-left transition-colors hover:bg-black/[0.02] focus:outline-none"
-                    aria-expanded={isOpen}
-                    aria-controls={`faq-answer-${i}`}
-                    id={`faq-question-${i}`}
-                    style={{ WebkitTapHighlightColor: 'transparent' }}>
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/15">
-                      <HelpCircle className="h-4 w-4 text-black" aria-hidden />
-                    </span>
-
-                    <span className="text-body font-semibold text-black">{t(q)}</span>
-
-                    <motion.span
-                      className="ml-auto shrink-0 rounded-lg bg-black/[0.04] p-1.5"
-                      animate={{ rotate: isOpen ? 180 : 0 }}
-                      transition={{ duration: 0.35, ease: EASE }}>
-                      <ChevronDown className="h-4 w-4 text-black/60" aria-hidden />
-                    </motion.span>
-                  </button>
-
-                  {/* answer */}
-                  <motion.div layout className="overflow-hidden" transition={{ duration: 0.35, ease: EASE }}>
-                    {isOpen ? (
-                      <div
-                        id={`faq-answer-${i}`}
-                        role="region"
-                        aria-labelledby={`faq-question-${i}`}
-                        className="border-t border-black/[0.06] px-5 py-4 text-body-sm text-black/60">
-                        {t(a)}
-                      </div>
-                    ) : null}
-                  </motion.div>
-                </motion.div>
-              );
-            })}
+    <section id="faq" className="bg-black px-6 py-20" aria-labelledby="faq-heading">
+      <div className="mx-auto max-w-[1160px]">
+        {/* Header */}
+        <div className="mb-10 text-center">
+          <div className="mb-3 flex items-center justify-center gap-2">
+            <IconHelpCircle size={13} className="text-accent" />
+            <span className="text-xs uppercase tracking-widest text-accent">FAQ</span>
           </div>
-        </SectionReveal>
-      </Container>
+          <h2 id="faq-heading" className="mb-3 text-h1 font-bold text-white">
+            {t('title')}
+          </h2>
+          <p className="text-body text-zinc-600">{t('subtitle')}</p>
+        </div>
+
+        {/* FAQ list */}
+        <div className="mx-auto flex max-w-[680px] flex-col">
+          {items.map(({ q, a }, i) => {
+            const isOpen = openIndex === i;
+
+            return (
+              <div
+                key={FAQ_KEYS[i]}
+                className={`border-b border-zinc-900 ${i === 0 ? 'border-t border-zinc-900' : ''}`}>
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                  className="flex w-full cursor-pointer items-center gap-4 py-5"
+                  aria-expanded={isOpen}>
+                  <span className="min-w-[20px] text-xs tabular-nums text-accent">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <span
+                    className={`flex-1 text-left text-[15px] font-medium leading-snug transition-colors duration-200 ${
+                      isOpen ? 'text-white' : 'text-zinc-400'
+                    }`}>
+                    {q}
+                  </span>
+                  <span
+                    className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border transition-all duration-200 ${
+                      isOpen ? 'border-[#cdff4e30] text-accent' : 'border-zinc-800 text-zinc-600'
+                    }`}>
+                    <IconChevronDown
+                      size={13}
+                      className={`transition-transform duration-200 ${isOpen ? 'rotate-180 text-accent' : 'text-zinc-600'}`}
+                    />
+                  </span>
+                </button>
+
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease ${
+                    isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}>
+                  <p className="pb-5 pl-[34px] text-body-sm leading-relaxed text-zinc-500">{a}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* CTA */}
+        <div className="mt-14 text-center">
+          <p className="mb-4 text-sm text-zinc-600">
+            {t('cta.text')} {t('cta.sub')}
+          </p>
+          <Link
+            href="#contact"
+            className="inline-flex cursor-pointer items-center gap-2 rounded-full border-none bg-accent px-[22px] py-[11px] text-sm font-bold text-black transition hover:opacity-85">
+            {t('cta.btn')}
+            <IconArrowRight size={13} />
+          </Link>
+        </div>
+      </div>
     </section>
   );
 }

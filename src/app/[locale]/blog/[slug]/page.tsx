@@ -109,12 +109,14 @@ export default async function BlogArticlePage({ params }: Props) {
                 <span>{t('minRead', { n: readMin })}</span>
               </div>
 
-              <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-2xl">
+              <div className="relative mt-8 w-full overflow-hidden rounded-2xl">
                 {post.cover_image ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={post.cover_image} alt="" loading="lazy" className="h-full w-full object-cover" />
+                  <img src={post.cover_image} alt="" loading="lazy" className="block h-auto w-full" />
                 ) : (
-                  <BlogCoverPlaceholder />
+                  <div className="aspect-video">
+                    <BlogCoverPlaceholder />
+                  </div>
                 )}
               </div>
 

@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 
-import { ChevronDown } from 'lucide-react';
+import { IconChevronDown } from '@tabler/icons-react';
 
 const locales = [
   { code: 'en', label: 'EN' },
@@ -51,7 +51,7 @@ export function LangSwitch() {
         aria-expanded={open}
         aria-controls="lang-listbox">
         <span>{current.label}</span>
-        <ChevronDown
+        <IconChevronDown
           className={`h-4 w-4 shrink-0 text-black/50 transition-transform ${open ? 'rotate-180' : ''}`}
           aria-hidden
         />

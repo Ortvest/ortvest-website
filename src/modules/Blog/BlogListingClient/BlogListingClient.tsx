@@ -12,7 +12,7 @@ import type { BlogCardModel } from '@lib/blog-model';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 import { BlogPostCard } from '@modules/Blog/BlogPostCard';
-import { FileText } from 'lucide-react';
+import { IconFileText } from '@tabler/icons-react';
 
 const GRID_PAGE = 9;
 
@@ -57,7 +57,7 @@ export function BlogListingClient({ posts }: Props) {
 
         {!hero ? (
           <div className="flex flex-col items-center justify-center py-20 text-center">
-            <FileText className="mb-4 h-14 w-14 text-black/25" strokeWidth={1.25} />
+            <IconFileText className="mb-4 h-14 w-14 text-black/25" />
             <p className="max-w-md text-body-lg text-black/50">{t('emptyTitle')}</p>
           </div>
         ) : (
@@ -83,18 +83,13 @@ export function BlogListingClient({ posts }: Props) {
             )}
 
             {/* Hero */}
-            <article className="mb-10 overflow-hidden rounded-2xl border border-black/[0.08] bg-white shadow-card lg:flex lg:min-h-[280px]">
-              <div className="relative aspect-video w-full shrink-0 lg:aspect-auto lg:w-[60%] lg:min-h-[280px]">
+            <article className="mb-10 overflow-hidden rounded-2xl border border-black/[0.08] bg-white shadow-card lg:flex">
+              <div className="relative w-full shrink-0 overflow-hidden lg:w-[60%]">
                 {hero.cover_image ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={hero.cover_image}
-                    alt=""
-                    loading="lazy"
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
+                  <img src={hero.cover_image} alt="" loading="lazy" className="block h-auto w-full" />
                 ) : (
-                  <div className="absolute inset-0">
+                  <div className="aspect-video">
                     <BlogCoverPlaceholder />
                   </div>
                 )}

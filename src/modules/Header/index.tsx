@@ -11,7 +11,6 @@ import { Burger } from '@modules/Header/features/Burger';
 import { BurgerMenu } from '@modules/Header/features/BurgerMenu';
 import { Navigation } from '@modules/Header/features/Navagation';
 import AppIcon from '@public/icons/AppLogoHorizontal.svg';
-import { ArrowRight } from 'lucide-react';
 
 export function Header() {
   const t = useTranslations('nav');
@@ -55,9 +54,8 @@ export function Header() {
           <Navigation />
           <Link
             href="#contact"
-            className="inline-flex items-center gap-1.5 rounded-full bg-black px-4 py-2 text-sm font-semibold text-white transition hover:bg-black/90">
+            className="rounded-full bg-accent px-4 py-2 text-sm font-semibold text-black transition hover:bg-accent-dark">
             {t('cta')}
-            <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
 

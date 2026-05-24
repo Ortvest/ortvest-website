@@ -6,33 +6,33 @@ import { useTranslations } from 'next-intl';
 import { Container, InteractiveCard, SectionHeader, SectionReveal } from '@shared/components';
 
 import {
-  ArrowRight,
-  Code,
-  Globe,
-  Image as ImageIcon,
-  Layers,
-  Palette,
-  PenTool,
-  Smartphone,
-  TrendingUp,
-} from 'lucide-react';
+  IconArrowRight,
+  IconCode,
+  IconDeviceMobile,
+  IconPalette,
+  IconPencil,
+  IconPhoto,
+  IconStack2,
+  IconTrendingUp,
+  IconWorld,
+} from '@tabler/icons-react';
 
 const designItems = [
-  { key: 'uiux', icon: Layers },
-  { key: 'web', icon: Globe },
-  { key: 'app', icon: Smartphone },
-  { key: 'brand', icon: PenTool },
-  { key: 'graphic', icon: ImageIcon },
+  { key: 'uiux', icon: IconStack2 },
+  { key: 'web', icon: IconWorld },
+  { key: 'app', icon: IconDeviceMobile },
+  { key: 'brand', icon: IconPencil },
+  { key: 'graphic', icon: IconPhoto },
 ] as const;
 
 const devItems = [
-  { key: 'web', icon: Globe },
-  { key: 'mobile', icon: Smartphone },
-  { key: 'landing', icon: Globe },
-  { key: 'api', icon: Code },
-  { key: 'saas', icon: Layers },
-  { key: 'performance', icon: TrendingUp },
-  { key: 'support', icon: PenTool },
+  { key: 'web', icon: IconWorld },
+  { key: 'mobile', icon: IconDeviceMobile },
+  { key: 'landing', icon: IconWorld },
+  { key: 'api', icon: IconCode },
+  { key: 'saas', icon: IconStack2 },
+  { key: 'performance', icon: IconTrendingUp },
+  { key: 'support', icon: IconPencil },
 ] as const;
 
 const marketingPackages = [
@@ -52,12 +52,12 @@ export function Services() {
             eyebrow={t('eyebrow')}
             title={t('title')}
             description={t('subtitle')}
-            icon={Layers}
+            icon={IconStack2}
             className="mb-12"
           />
 
           <div className="grid gap-5 sm:grid-cols-2">
-            <InteractiveCard icon={<Palette className="h-5 w-5" />}>
+            <InteractiveCard icon={<IconPalette className="h-5 w-5" />}>
               <h3 className="text-h4 text-black">{t('design')}</h3>
               <ul className="mt-4 space-y-2.5" role="list">
                 {designItems.map(({ key, icon: Icon }) => (
@@ -68,7 +68,7 @@ export function Services() {
                 ))}
               </ul>
             </InteractiveCard>
-            <InteractiveCard icon={<Code className="h-5 w-5" />}>
+            <InteractiveCard icon={<IconCode className="h-5 w-5" />}>
               <h3 className="text-h4 text-black">{t('development')}</h3>
               <ul className="mt-4 space-y-2.5" role="list">
                 {devItems.map(({ key, icon: Icon }) => (
@@ -85,7 +85,7 @@ export function Services() {
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-black/50">{t('marketing')}</h3>
             <div className="grid gap-5 sm:grid-cols-3">
               {marketingPackages.map(({ tier, keys, itemsKey }) => (
-                <InteractiveCard key={tier} icon={<TrendingUp className="h-5 w-5" />}>
+                <InteractiveCard key={tier} icon={<IconTrendingUp className="h-5 w-5" />}>
                   <h4 className="text-h4 text-black">{t(`marketing${tier}`)}</h4>
                   <p className="mt-1 text-xs font-medium uppercase tracking-wider text-black/40">
                     {t('whatsIncluded')}
@@ -102,7 +102,7 @@ export function Services() {
                     href="#contact"
                     className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-black transition hover:text-accent-dark group">
                     {t('getQuote')}
-                    <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                    <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                   </Link>
                 </InteractiveCard>
               ))}

@@ -11,7 +11,7 @@ import { Container, SectionReveal } from '@shared/components';
 import { getCaseStudyConfig, getNextCaseSlug } from '@modules/Cases/caseStudyConfig';
 import type { CaseItem } from '@modules/Cases/data';
 import { cases } from '@modules/Cases/data';
-import { ArrowLeft, ArrowRight, Lock } from 'lucide-react';
+import { IconArrowLeft, IconArrowRight, IconLock } from '@tabler/icons-react';
 
 const STAT_KEYS = ['projectType', 'deliverables', 'platform'] as const;
 const MAX_THUMBS = 3;
@@ -51,7 +51,7 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
           <Link
             href={`/${locale}/#cases`}
             className="inline-flex items-center gap-2 text-sm font-medium text-black/60 transition hover:text-black">
-            <ArrowLeft className="h-4 w-4" />
+            <IconArrowLeft className="h-4 w-4" />
             {tDetail('backToCases')}
           </Link>
         </Container>
@@ -189,7 +189,7 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
                   </p>
                   {section.isInternal ? (
                     <div className="mt-8 rounded-2xl border border-black/[0.08] bg-black/[0.02] px-6 py-10 text-center">
-                      <Lock className="mx-auto h-5 w-5 text-black/35" strokeWidth={1.5} />
+                      <IconLock className="mx-auto h-5 w-5 text-black/35" />
                       <p className="mt-3 text-sm text-black/50">{t('cms.internal')}</p>
                     </div>
                   ) : (
@@ -285,7 +285,7 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
                 href={`/${locale}/#contact`}
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-black transition hover:bg-accent-dark">
                 {tShared(`cta.${config.ctaTemplate}.button`)}
-                <ArrowRight className="h-4 w-4" />
+                <IconArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </SectionReveal>
@@ -314,7 +314,7 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
                   ))}
                 </div>
               </div>
-              <ArrowRight className="h-5 w-5 shrink-0 text-black/40 transition group-hover:translate-x-1 group-hover:text-black" />
+              <IconArrowRight className="h-5 w-5 shrink-0 text-black/40 transition group-hover:translate-x-1 group-hover:text-black" />
             </Link>
           </Container>
         </section>

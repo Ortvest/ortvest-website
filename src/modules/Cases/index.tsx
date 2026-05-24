@@ -8,8 +8,8 @@ import { useTranslations } from 'next-intl';
 import { Container, SectionHeader, SectionReveal } from '@shared/components';
 
 import { EASE } from '@lib/motion';
+import { IconArrowRight, IconBriefcase } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ArrowRight, Briefcase } from 'lucide-react';
 
 import { CaseCard } from './CaseCard';
 import { type CaseIndustry, portfolioGridCases } from './data';
@@ -44,7 +44,7 @@ export function Cases() {
             eyebrow={t('eyebrow')}
             title={t('title')}
             description={t('subtitle')}
-            icon={Briefcase}
+            icon={IconBriefcase}
             className="mb-8"
           />
 
@@ -100,11 +100,18 @@ export function Cases() {
                   href="#contact"
                   className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-black/90">
                   {t('beFirstButton')}
-                  <ArrowRight className="h-4 w-4" />
+                  <IconArrowRight className="h-4 w-4" />
                 </a>
               </motion.div>
             )}
           </AnimatePresence>
+
+          <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.06] pt-8">
+            <p className="text-[15px] text-black/70">{t('bottomCtaText')}</p>
+            <a href="#contact" className="text-sm font-medium text-black transition hover:underline">
+              {t('bottomCtaLink')}
+            </a>
+          </div>
 
           <div className="mt-12 text-center">
             <p className="mx-auto mb-6 max-w-xl text-body-sm text-black/60">{t('ctaText')}</p>
@@ -113,7 +120,7 @@ export function Cases() {
                 href="#consultation"
                 className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-black/90">
                 {t('ctaButton')}
-                <ArrowRight className="h-4 w-4" />
+                <IconArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="#contact"

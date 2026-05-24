@@ -21,17 +21,19 @@ export function BlogPostCard({ post }: Props) {
     <Link
       href={`/${locale}/blog/${post.slug}`}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/[0.08] bg-white shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover">
-      <div className="relative aspect-video w-full shrink-0 overflow-hidden rounded-t-2xl">
+      <div className="relative w-full shrink-0 overflow-hidden rounded-t-2xl">
         {post.cover_image ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={post.cover_image}
             alt=""
             loading="lazy"
-            className="h-full w-full object-cover transition duration-200 group-hover:scale-[1.02]"
+            className="block h-auto w-full transition duration-200 group-hover:scale-[1.02]"
           />
         ) : (
-          <BlogCoverPlaceholder />
+          <div className="aspect-video">
+            <BlogCoverPlaceholder />
+          </div>
         )}
       </div>
 

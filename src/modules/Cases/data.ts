@@ -298,11 +298,13 @@ const portfolioCases: CaseItem[] = [
           'https://ucarecdn.com/2de0d329-4b74-4c6e-9d75-d9ee2b50b328/PACHACA04.jpg',
         ],
       },
-      { id: 'web', images: [
-        'https://ucarecdn.com/abb9960d-5741-49db-9f83-ef365446daac/pachcaca05.jpg',
-        'https://ucarecdn.com/1c4ec832-b792-47cb-a274-706b7cb6028b/PACHACA03.jpg',
-        
-      ] },
+      {
+        id: 'web',
+        images: [
+          'https://ucarecdn.com/abb9960d-5741-49db-9f83-ef365446daac/pachcaca05.jpg',
+          'https://ucarecdn.com/1c4ec832-b792-47cb-a274-706b7cb6028b/PACHACA03.jpg',
+        ],
+      },
       { id: 'cms', images: [], isInternal: true },
     ],
   },

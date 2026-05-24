@@ -4,20 +4,28 @@ import { useTranslations } from 'next-intl';
 
 import { Container, InteractiveCard, SectionHeader, SectionReveal } from '@shared/components';
 
-import { BarChart3, CheckCircle, Code, PenTool, Rocket, Search, Workflow } from 'lucide-react';
+import {
+  IconChartBar,
+  IconCircleCheck,
+  IconCode,
+  IconGitCommit,
+  IconPencil,
+  IconRocket,
+  IconSearch,
+} from '@tabler/icons-react';
 
 const steps: Array<{
   key: string;
   desc: string;
-  icon: typeof Search;
+  icon: typeof IconSearch;
   optional?: boolean;
 }> = [
-  { key: 'step1', desc: 'step1Desc', icon: Search },
-  { key: 'step2', desc: 'step2Desc', icon: PenTool },
-  { key: 'step3', desc: 'step3Desc', icon: Code },
-  { key: 'step4Marketing', desc: 'step4MarketingDesc', icon: BarChart3, optional: true },
-  { key: 'step5', desc: 'step5Desc', icon: CheckCircle },
-  { key: 'step6', desc: 'step6Desc', icon: Rocket },
+  { key: 'step1', desc: 'step1Desc', icon: IconSearch },
+  { key: 'step2', desc: 'step2Desc', icon: IconPencil },
+  { key: 'step3', desc: 'step3Desc', icon: IconCode },
+  { key: 'step4Marketing', desc: 'step4MarketingDesc', icon: IconChartBar, optional: true },
+  { key: 'step5', desc: 'step5Desc', icon: IconCircleCheck },
+  { key: 'step6', desc: 'step6Desc', icon: IconRocket },
 ];
 
 export function Process() {
@@ -31,7 +39,7 @@ export function Process() {
             eyebrow={t('eyebrow')}
             title={t('title')}
             description={t('subtitle')}
-            icon={Workflow}
+            icon={IconGitCommit}
             className="mb-10"
           />
 

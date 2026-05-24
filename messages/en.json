@@ -1,10 +1,12 @@
 {
   "nav": {
     "services": "Services",
+    "what": "What we do",
     "industries": "Industries",
     "technologies": "Technologies",
     "process": "Process",
     "about": "About",
+    "team": "Team",
     "blog": "Blog",
     "cases": "Cases",
     "faq": "FAQ",
@@ -12,10 +14,46 @@
     "cta": "Get a quote",
     "menuSlogan": "From idea to launch. One team."
   },
+  "divider": {
+    "years": "years combined experience",
+    "products": "products shipped",
+    "niches": "industry niches"
+  },
   "hero": {
-    "eyebrow": "Industry-focused IT Studio",
-    "headline": "We build digital products for P2P, community, hospitality, conversion, agritech and sporttech businesses.",
-    "subheadline": "Not just websites. We combine design, development, and marketing — with deep knowledge of the industries we work in. From strategy to launch and beyond.",
+    "badge": "Available for new projects",
+    "title1": "We build digital",
+    "title2": "products that",
+    "title3": "people ",
+    "title3em": "love.",
+    "subtitle": "Not a generic studio. We work in specific industries — P2P, community, hospitality, sporttech — and we know the problems your users actually face.",
+    "cta": {
+      "primary": "Discuss your project",
+      "secondary": "See what we do"
+    },
+    "freecall": {
+      "text": "Not sure?",
+      "link": "Book a free 30-min call →"
+    },
+    "nodes": {
+      "p2p": "P2P",
+      "community": "Community",
+      "hospitality": "Hospitality",
+      "sporttech": "Sporttech",
+      "conversion": "Conversion",
+      "logistics": "Logistics",
+      "agritech": "Agritech"
+    },
+    "stats": {
+      "products": "products shipped",
+      "niches": "industry niches",
+      "years": "years building",
+      "projectsValue": "20+",
+      "projectsLabel": "products shipped",
+      "industriesValue": "6",
+      "industriesLabel": "industry niches",
+      "yearsValue": "4",
+      "yearsLabel": "years building"
+    },
     "nicheTags": {
       "p2p": "P2P",
       "community": "Community",
@@ -90,6 +128,150 @@
       "setupFee": "one-time setup fee"
     }
   },
+  "servicesSection": {
+    "label": "Services",
+    "title": "Everything to launch and grow.",
+    "subtitle": "From strategy to code to go-to-market — we build, ship, and scale digital products end to end.",
+    "tabs": {
+      "what": "What we do",
+      "industries": "Industries",
+      "process": "Process",
+      "technologies": "Technologies"
+    },
+    "included": "What's included",
+    "tapToSee": "Tap to see what's included",
+    "tapToLearn": "Tap to learn more",
+    "getQuote": "Get a quote",
+    "optional": "Optional",
+    "expanding": "Expanding into",
+    "comingSoon": "Coming soon",
+    "letsTalk": "Let's talk early",
+    "design": {
+      "title": "Design",
+      "desc": "UX research, wireframes, and production-ready UI systems built in Figma.",
+      "i1": "UI/UX for web & mobile",
+      "i2": "Landing pages & corporate sites",
+      "i3": "SaaS & app interfaces",
+      "i4": "Brand identity & visual systems",
+      "i5": "Product presentation & marketing assets"
+    },
+    "dev": {
+      "title": "Development",
+      "desc": "Custom web and mobile applications built for performance and scale.",
+      "i1": "Web apps, e-commerce & MVPs",
+      "i2": "iOS & Android applications",
+      "i3": "API development & integrations",
+      "i4": "SaaS platforms & real-time systems",
+      "i5": "Performance optimization & support"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "desc": "Full go-to-market support — from SEO and ads to content strategy and CRM. Available as an add-on.",
+      "basic": "Basic",
+      "advanced": "Advanced",
+      "premium": "Premium",
+      "b1": "SEO optimization",
+      "b2": "Analytics setup",
+      "b3": "Targeted advertising",
+      "b4": "Social media marketing",
+      "a1": "Email marketing & automation",
+      "a2": "Content strategy",
+      "a3": "Conversion copywriting",
+      "a4": "CRM setup & marketing",
+      "p1": "Full marketing strategy",
+      "p2": "Market & audience research",
+      "p3": "Competitive analysis",
+      "p4": "Brand positioning"
+    },
+    "ind": {
+      "p2p": {
+        "title": "P2P Platforms",
+        "desc": "We build peer-to-peer platforms where trust is the product — with verification, escrow payments, and dispute resolution.",
+        "t1": "Sharing economy",
+        "t2": "Peer rental",
+        "t3": "Escrow"
+      },
+      "community": {
+        "title": "Community",
+        "desc": "Community platforms connecting people around shared interests — with roles, permissions, real-time chat and events.",
+        "t1": "Private networks",
+        "t2": "Member portals",
+        "t3": "Events"
+      },
+      "hospitality": {
+        "title": "Hospitality",
+        "desc": "Premium digital experiences for hospitality — real-time booking engines and luxury travel platforms.",
+        "t1": "Booking systems",
+        "t2": "Yacht & travel",
+        "t3": "Premium UX"
+      },
+      "sporttech": {
+        "title": "Sporttech",
+        "desc": "Technology for the sports world — from athlete dashboards to fan engagement apps and club operations.",
+        "t1": "Athlete tracking",
+        "t2": "Fan engagement",
+        "t3": "Analytics"
+      },
+      "conversion": {
+        "title": "Conversion Websites",
+        "desc": "High-performance websites built to convert visitors into leads and customers — fast, persuasive, and optimised from day one.",
+        "t1": "Landing pages",
+        "t2": "Lead gen",
+        "t3": "A/B testing",
+        "t4": "CRO"
+      },
+      "logistics": {
+        "title": "Logistics",
+        "desc": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization.",
+        "t1": "Fleet management",
+        "t2": "Shipment tracking",
+        "t3": "Route optimization",
+        "t4": "Logistics SaaS"
+      },
+      "agritech": {
+        "title": "Agritech",
+        "desc": "Building platforms for farm management, crop analytics, and supply chain visibility.",
+        "t1": "Farm management",
+        "t2": "Crop analytics",
+        "t3": "Supply chain",
+        "t4": "IoT platforms"
+      }
+    },
+    "process": {
+      "1": {
+        "title": "Discovery",
+        "desc": "We dig into your business, users, and competitors. Define the problem before touching a pixel or line of code.",
+        "dur": "1–2 weeks"
+      },
+      "2": {
+        "title": "Design",
+        "desc": "Wireframes, user flows, and high-fidelity UI. You approve every screen before development starts.",
+        "dur": "2–4 weeks"
+      },
+      "3": {
+        "title": "Development",
+        "desc": "1-week sprints with demos every cycle. Working software, never a black box.",
+        "dur": "6–16 weeks"
+      },
+      "4": {
+        "title": "Marketing",
+        "desc": "Landing pages, SEO setup, analytics, and go-to-market strategy. Available as an add-on.",
+        "dur": "2–4 weeks"
+      },
+      "5": {
+        "title": "Launch & Support",
+        "desc": "Deployment, monitoring, and post-launch iterations. We stay after go-live.",
+        "dur": "Ongoing"
+      }
+    },
+    "tech": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Databases",
+      "realtime": "Real-time",
+      "infra": "Infrastructure"
+    }
+  },
   "industries": {
     "eyebrow": "Industries",
     "title": "We know your industry.",
@@ -135,7 +317,9 @@
     "comingSoon": {
       "badge": "Expanding",
       "cta": "Let's talk early"
-    }
+    },
+    "seeCase": "See a real example",
+    "clickToLearn": "Click to learn more"
   },
   "technologies": {
     "eyebrow": "Stack",
@@ -166,10 +350,50 @@
     "step6Desc": "Deploy and ongoing support.",
     "stepOptional": "optional"
   },
+  "approach": {
+    "label": "Our approach",
+    "title": "We ask hard questions before we open Figma.",
+    "subtitle": "Most studios start with design. We start with understanding — who are the users, where do similar products fail, what does success look like in 6 months.",
+    "quote": {
+      "text": "Design comes after ",
+      "em": "clarity.",
+      "body": "We understand the business before we design or build. We take a limited number of projects to maintain quality and focus. We work with clients in Europe, USA, and Ukraine."
+    },
+    "how": {
+      "label": "How we work",
+      "1": {
+        "title": "Business first",
+        "desc": "We understand the business before we design or build anything."
+      },
+      "2": {
+        "title": "Limited projects",
+        "desc": "We take a limited number of projects to maintain quality and focus."
+      },
+      "3": {
+        "title": "Global clients",
+        "desc": "We work with clients in Europe, USA, and Ukraine."
+      }
+    },
+    "values": {
+      "label": "What drives us",
+      "1": {
+        "title": "Quality over quantity",
+        "desc": "We'd rather do fewer projects exceptionally well than spread thin across many."
+      },
+      "2": {
+        "title": "Full transparency",
+        "desc": "You always know what's being built, why, and what's coming next. No surprises."
+      },
+      "3": {
+        "title": "True partnership",
+        "desc": "We treat your product like it's ours. Your success is the only metric that matters."
+      }
+    }
+  },
   "about": {
-    "eyebrow": "How we work",
-    "title": "We start from business goals, not Figma files",
-    "subtitle": "Before jumping into design or code, we study your product, audience, and business objectives. That's why our solutions convert. We work like an external digital team — taking ownership from strategy to launch and support.",
+    "eyebrow": "Our approach",
+    "title": "We ask hard questions before we open Figma.",
+    "subtitle": "Most studios start with design. We start with understanding. Who are the users? Where do similar products fail? What does success look like in 6 months? Design comes after clarity.",
     "whyTitle": "Our approach",
     "why1": "We understand the business before we design or build.",
     "why2": "We take a limited number of projects to maintain quality and focus.",
@@ -177,74 +401,145 @@
     "valuesTitle": "What drives us",
     "value1": "Quality over quantity",
     "value2": "Full transparency",
-    "value3": "True partnership"
+    "value3": "True partnership",
+    "step1Title": "Discovery first",
+    "step1Desc": "We map user flows, edge cases, and business logic before touching a single pixel. This is where most projects are won or lost.",
+    "step2Title": "Design with intent",
+    "step2Desc": "Every screen has a job. We design around user behaviour, not aesthetic preference. Pretty is a byproduct of functional.",
+    "step3Title": "Build to last",
+    "step3Desc": "Clean architecture, tested code, documented systems. You own what we build — and your next developer will thank us.",
+    "step4Title": "Launch and stay",
+    "step4Desc": "We don't disappear after launch. Most of our clients come back for the next product."
+  },
+  "team": {
+    "label": "The team",
+    "title": "The people responsible for your product.",
+    "subtitle": "Two founders and a team of designers, developers, and marketers — all working directly on your project.",
+    "member1": {
+      "role": "Founder & CEO",
+      "quote": "Your first call. Knows your industry before the project starts."
+    },
+    "member2": {
+      "role": "Co-founder & CMO",
+      "quote": "Makes sure your product launches with a message that converts."
+    },
+    "member3": {
+      "role": "CTO",
+      "quote": "Makes sure what we promise gets built — on time and without shortcuts."
+    },
+    "dmytro": {
+      "name": "Dmytro Kazantsev",
+      "role": "Co-founder & CEO",
+      "fact": "Your first call. Knows your industry before the project starts."
+    },
+    "yevheniia": {
+      "name": "Yevheniia Sadvari",
+      "role": "Co-founder & CMO",
+      "fact": "Makes sure your product launches with a message that converts."
+    },
+    "sergey": {
+      "name": "Sergey Bekharsky",
+      "role": "CTO",
+      "fact": "Makes sure what we promise gets built — on time and without shortcuts."
+    }
   },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Common questions",
     "subtitle": "Clear answers to help you decide.",
+    "cta": {
+      "text": "Still have questions?",
+      "sub": "We're happy to answer them directly.",
+      "btn": "Book a free call"
+    },
     "q1": "What services do you offer?",
-    "a1": "We cover design, development and marketing within one team.",
+    "a1": "We offer end-to-end product development: UX/UI design, web and mobile development, and marketing. You can order all three or just what you need.",
     "q2": "What types of companies do you work with?",
-    "a2": "We work with companies building P2P platforms, community networks, hospitality products, and conversion-focused websites. We also take on logistics startup projects. Our clients are typically based in Europe and the US — from early-stage startups to established businesses launching new digital products.",
+    "a2": "Startups and scale-ups in specific industries — P2P, community, hospitality, sporttech, and conversion-focused products. We prefer clients who know what they want to build.",
     "q3": "Can I order only one service?",
-    "a3": "Yes. You can work with us on design, development or marketing separately.",
+    "a3": "Yes. Design-only, development-only, or marketing-only engagements are all possible. We'll scope the project accordingly.",
     "q4": "How does project pricing work?",
-    "a4": "Pricing depends on scope, complexity and timeline. We prepare an individual estimate after a short discovery call.",
-    "q5": "Are all services required?",
-    "a5": "No. We always match the scope to your project needs. You can choose design, development, marketing or any combination.",
-    "q6": "What does the collaboration process look like?",
-    "a6": "Discovery, design, development, optional marketing, launch and support.",
-    "q7": "Do you offer support after launch?",
-    "a7": "Yes. We provide ongoing support, improvements and scaling if needed.",
+    "a4": "We work with fixed-scope projects and retainer agreements. After a discovery call we send a detailed proposal with a clear price and timeline — no surprises.",
+    "q5": "What does the collaboration process look like?",
+    "a5": "Discovery → Design → Development → Launch. 1-week sprints with demos every cycle. You always know what's being built and what's next.",
+    "q6": "Do you offer support after launch?",
+    "a6": "Yes. We offer retainer plans for ongoing development, bug fixes, and feature iterations. Most clients stay with us after launch.",
+    "q7": "How do I start working with you?",
+    "a7": "Fill out the contact form or book a free 30-min discovery call. We'll review your project and get back to you within 24 hours.",
     "q8": "How do I start working with you?",
     "a8": "Simply contact us through the form and we will get back to you shortly."
   },
   "contact": {
-    "eyebrow": "Let's talk",
+    "label": "Let's talk",
     "title": "Tell us about your project",
     "subtitle": "Share your goals and challenges. We'll show relevant cases and discuss the best approach for launch and growth.",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "messagePlaceholder": "What are you building and when do you want to launch?",
-    "projectType": "Project type",
-    "budget": "Budget (optional)",
-    "budgetUnder1k": "Small task / consultation",
-    "budget1k5k": "€1k–5k",
-    "budget5k15k": "€5k–15k",
-    "budget15kPlus": "€15k+",
-    "consultationType": "Consultation type",
-    "consultationDiscovery": "Discovery Call (Free)",
-    "consultationStrategy": "Strategy Session (€199)",
-    "budgetMap": {
-      "under1k": "Small task / consultation",
+    "trust": {
+      "reply": "Reply within 24h",
+      "nospam": "No spam, ever",
+      "call": "Free 30-min discovery call"
+    },
+    "steps": {
+      "label": "What happens next",
+      "1": {
+        "title": "You fill the form",
+        "desc": "Tell us what you're building, your budget, and when you want to launch."
+      },
+      "2": {
+        "title": "We review & respond",
+        "desc": "Within 24h we'll send you relevant cases and a proposed approach."
+      },
+      "3": {
+        "title": "Discovery call",
+        "desc": "Free 30-min call to align on scope, timeline, and next steps."
+      },
+      "4": {
+        "title": "Proposal & kickoff",
+        "desc": "We send a detailed proposal. If it fits — we start."
+      }
+    },
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@company.com"
+      },
+      "projectType": "Project type",
+      "budget": "Budget",
+      "consultation": "Consultation type",
+      "message": {
+        "label": "Message",
+        "placeholder": "What are you building and when do you want to launch?"
+      },
+      "optional": "(optional)",
+      "submit": "Send message",
+      "reply": "Reply within 24h",
+      "privacy": "By sending this form I agree to the",
+      "privacyLink": "Privacy Policy",
+      "successTitle": "Message sent!",
+      "successDesc": "We'll get back to you within 24h."
+    },
+    "projectTypes": {
+      "p2p": "P2P",
+      "community": "Community",
+      "hospitality": "Hospitality",
+      "conversion": "Conversion Site",
+      "sporttech": "Sporttech",
+      "logistics": "Logistics",
+      "agritech": "Agritech",
+      "other": "Other"
+    },
+    "budget": {
+      "small": "Small task / consult",
       "1k5k": "€1k–5k",
       "5k15k": "€5k–15k",
-      "15kplus": "€15k+"
+      "15k": "€15k+"
     },
-    "consultationMap": {
+    "consultation": {
       "discovery": "Discovery Call (Free)",
       "strategy": "Strategy Session (€199)"
-    },
-    "projectTypeP2p": "P2P",
-    "projectTypeCommunity": "Community",
-    "projectTypeHospitality": "Hospitality",
-    "projectTypeConversion": "Conversion Site",
-    "projectTypeLogistics": "Logistics",
-    "projectTypeAgritech": "Agritech",
-    "projectTypeSporttech": "Sporttech",
-    "projectTypeOther": "Other",
-    "send": "Send message",
-    "trustCopy": "Reply within 24h",
-    "policyText": "By sending this form I agree to the ",
-    "policyLink": "Privacy Policy",
-    "success": "Message sent. We'll contact you soon.",
-    "error": "Something went wrong. Please try again or email us directly.",
-    "benefits": {
-      "freeDiscovery": "Free 30-min discovery call - we'll review your project and suggest the best approach",
-      "Reply within 24h": "Reply within 24h",
-      "No spam, ever": "No spam, ever"
     }
   },
   "consultation": {
@@ -313,6 +608,18 @@
     "ctaText": "Have a project in P2P, community, hospitality, or logistics? Let's discuss it.",
     "ctaButton": "Book a call",
     "ctaSecondary": "Get a quote",
+    "bottomCtaText": "Working on something in one of these spaces?",
+    "bottomCtaLink": "Let's talk about it →",
+    "nicheCta": {
+      "p2p": "Building a P2P product?",
+      "community": "Building a community platform?",
+      "hospitality": "Building for hospitality?",
+      "sporttech": "Building a sports platform?",
+      "conversion": "Need a conversion-focused site?",
+      "logistics": "Building a logistics platform?",
+      "agritech": "Building an agritech platform?",
+      "letsTalk": "Let's talk →"
+    },
     "categoryBadge": {
       "design": "Design",
       "development": "Development",
@@ -1415,6 +1722,15 @@
     "title": "Insights & Updates",
     "subtitle": "Thoughts on design, development, and building digital products.",
     "viewAll": "View all articles →"
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Insights & Updates",
+    "subtitle": "Thoughts on design, development, and building digital products.",
+    "viewAll": "View all articles",
+    "readArticle": "Read article",
+    "minRead": "{n} min read",
+    "filterAll": "All"
   },
   "blogPage": {
     "title": "Blog",

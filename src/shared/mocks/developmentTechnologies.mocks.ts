@@ -35,7 +35,7 @@ export const developmentTechnologies: TechnologiesData[] = [
     title: 'TypeScript',
     icon: TSIcon,
     levelIcon: LevelFourIcon,
-    fieldOfUsage: 'frontend' || 'backend',
+    fieldOfUsage: 'frontend, backend',
   },
   {
     title: 'Redux',
@@ -53,7 +53,7 @@ export const developmentTechnologies: TechnologiesData[] = [
     title: 'GraphQL',
     icon: GraphIcon,
     levelIcon: LevelFiveIcon,
-    fieldOfUsage: 'frontend' || 'backend',
+    fieldOfUsage: 'frontend, backend',
   },
   {
     title: 'Nest',

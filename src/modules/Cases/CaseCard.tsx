@@ -4,13 +4,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { Lock } from 'lucide-react';
+import { IconLock } from '@tabler/icons-react';
 
 import type { CaseItem } from './data';
 
 type CaseCardProps = {
   caseItem: CaseItem;
   compact?: boolean;
+};
+
+const NICHE_CTA_KEYS: Partial<Record<string, string>> = {
+  p2p: 'p2p',
+  community: 'community',
+  hospitality: 'hospitality',
+  sporttech: 'sporttech',
+  conversion: 'conversion',
+  logistics: 'logistics',
+  agritech: 'agritech',
 };
 
 export function CaseCard({ caseItem, compact = false }: CaseCardProps) {
@@ -35,7 +45,7 @@ export function CaseCard({ caseItem, compact = false }: CaseCardProps) {
           />
         ) : caseItem.isNDA ? (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-white/50">
-            <Lock className="h-6 w-6" strokeWidth={1.5} />
+            <IconLock className="h-6 w-6" />
             <span className="text-[13px] font-medium">{t('ndaProtected')}</span>
           </div>
         ) : (
@@ -83,6 +93,27 @@ export function CaseCard({ caseItem, compact = false }: CaseCardProps) {
         ) : (
           <span className="mt-1 text-xs italic text-black/40">{t('ndaNote')}</span>
         )}
+
+        {(() => {
+          const firstIndustry = caseItem.industries?.[0];
+          const nicheKey = firstIndustry && NICHE_CTA_KEYS[firstIndustry];
+          if (!nicheKey || caseItem.isNDA) return null;
+          return (
+            <p className="mt-3 border-t border-black/[0.06] pt-3 text-xs text-black/40">
+              {t(`nicheCta.${nicheKey}`)}{' '}
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="font-medium text-black/60 underline-offset-2 transition hover:text-black hover:underline">
+                {t('nicheCta.letsTalk')}
+              </button>
+            </p>
+          );
+        })()}
       </div>
     </>
   );

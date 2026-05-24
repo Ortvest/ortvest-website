@@ -5,20 +5,20 @@ import { useTranslations } from 'next-intl';
 
 import { Container, SectionReveal } from '@shared/components';
 
-import { ArrowRight, BadgeCheck, CalendarClock } from 'lucide-react';
+import { IconArrowRight, IconCalendar, IconCircleCheck } from '@tabler/icons-react';
 
 const consultationCards = [
   {
     key: 'discovery',
     items: ['projectOverview', 'feasibility', 'timelineBudget', 'qa'],
     cta: 'bookCall',
-    icon: CalendarClock,
+    icon: IconCalendar,
   },
   {
     key: 'strategy',
     items: ['goalsAudience', 'competitiveAnalysis', 'techStack', 'roadmap', 'risk', 'recording', 'credit'],
     cta: 'bookSession',
-    icon: BadgeCheck,
+    icon: IconCircleCheck,
   },
 ] as const;
 
@@ -77,7 +77,7 @@ export function Consultation() {
                   href="#contact"
                   className="group mt-5 inline-flex items-center gap-1 text-sm font-semibold text-white transition hover:text-accent">
                   {t(cta)}
-                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                  <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </article>
             ))}

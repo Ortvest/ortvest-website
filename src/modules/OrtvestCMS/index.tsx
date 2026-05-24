@@ -7,7 +7,7 @@ import { useLocale, useTranslations } from 'next-intl';
 
 import { Container, InteractiveCard, SectionHeader, SectionReveal } from '@shared/components';
 
-import { ArrowRight, Check, LayoutDashboard, Plus } from 'lucide-react';
+import { IconArrowRight, IconCheck, IconLayoutGrid, IconPlus } from '@tabler/icons-react';
 
 type BillingPeriod = 'monthly' | 'annually';
 
@@ -70,7 +70,7 @@ export function OrtvestCMS() {
             eyebrow="Business Management"
             title="Ortvest CMS"
             description="Our own business management system — included with every partnership contract at a special rate."
-            icon={LayoutDashboard}
+            icon={IconLayoutGrid}
             className="mb-10"
           />
 
@@ -107,7 +107,7 @@ export function OrtvestCMS() {
           {/* Pricing cards */}
           <div className="grid gap-5 sm:grid-cols-2">
             {/* Standard */}
-            <InteractiveCard icon={<LayoutDashboard className="h-5 w-5" />}>
+            <InteractiveCard icon={<IconLayoutGrid className="h-5 w-5" />}>
               <span className="mb-3 inline-flex rounded-full border border-black/[0.12] bg-black/[0.04] px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-black/55">
                 Standard
               </span>
@@ -122,7 +122,7 @@ export function OrtvestCMS() {
               <ul className="mt-3 space-y-2" role="list">
                 {includedModules.map((mod) => (
                   <li key={mod} className="flex items-center gap-2 text-body-sm text-black/70">
-                    <Check className="h-3.5 w-3.5 shrink-0 text-black/40" />
+                    <IconCheck className="h-3.5 w-3.5 shrink-0 text-black/40" />
                     {mod}
                   </li>
                 ))}
@@ -153,7 +153,7 @@ export function OrtvestCMS() {
             {/* Partner rate — dark exclusive card */}
             <article className="relative flex flex-col overflow-hidden rounded-2xl bg-black p-6 shadow-card">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-accent/20 text-white">
-                <LayoutDashboard className="h-5 w-5" />
+                <IconLayoutGrid className="h-5 w-5" />
               </div>
 
               <span className="mb-3 inline-flex rounded-full border border-accent/60 bg-accent/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent">
@@ -173,7 +173,7 @@ export function OrtvestCMS() {
               <ul className="mt-3 space-y-2" role="list">
                 {includedModules.map((mod) => (
                   <li key={mod} className="flex items-center gap-2 text-body-sm text-white/75">
-                    <Check className="h-3.5 w-3.5 shrink-0 text-accent/80" />
+                    <IconCheck className="h-3.5 w-3.5 shrink-0 text-accent/80" />
                     {mod}
                   </li>
                 ))}
@@ -184,7 +184,7 @@ export function OrtvestCMS() {
                   href="#contact"
                   className="group inline-flex items-center gap-1.5 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-black shadow-sm transition-colors hover:bg-accent-dark">
                   Learn more
-                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                  <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>
             </article>
@@ -200,7 +200,7 @@ export function OrtvestCMS() {
                 <div
                   key={name}
                   className="inline-flex items-center gap-2 rounded-full border border-black/[0.10] bg-black/[0.03] px-4 py-2 text-sm">
-                  <Plus className="h-3.5 w-3.5 shrink-0 text-black/35" />
+                  <IconPlus className="h-3.5 w-3.5 shrink-0 text-black/35" />
                   <span className="font-medium text-black/75">{name}</span>
                   <span className="text-black/45">{price}</span>
                 </div>
@@ -220,7 +220,7 @@ export function OrtvestCMS() {
               href="/cms"
               className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-black/85">
               Explore Ortvest CMS
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>
         </SectionReveal>

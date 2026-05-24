@@ -2,19 +2,27 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Divider } from '@shared/components';
-import { sectionIds } from '@shared/enums/SectionID.enums';
 
 import { LangSwitch } from '@modules/Header/features/LangSwitch';
 import AppLogo from '@public/icons/AppLogoHorizontal.svg';
-import { ArrowUpRight } from 'lucide-react';
+import { IconArrowUpRight } from '@tabler/icons-react';
 
-const navKeys = ['about', 'services', 'process', 'technologies', 'cases', 'faq', 'contact'] as const;
+const footerNavItems = [
+  { key: 'about', href: '#about' },
+  { key: 'team', href: '#team' },
+  { key: 'services', href: '#services' },
+  { key: 'cases', href: '#cases' },
+  { key: 'blog', href: 'blog' as const },
+  { key: 'faq', href: '#faq' },
+] as const;
 
 export function Footer() {
   const t = useTranslations('footer');
+  const tNav = useTranslations('nav');
+  const locale = useLocale();
 
   return (
     <footer className="w-full bg-white" role="contentinfo" aria-label="Site footer">
@@ -32,12 +40,12 @@ export function Footer() {
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-widest text-black/40">{t('nav')}</h3>
             <ul className="mt-3 space-y-2" role="list">
-              {navKeys.map((key) => (
+              {footerNavItems.map(({ key, href }) => (
                 <li key={key}>
                   <Link
-                    href={sectionIds[key as keyof typeof sectionIds]}
+                    href={href === 'blog' ? `/${locale}/blog` : href}
                     className="text-body-sm text-black/70 transition hover:text-black">
-                    {t(key)}
+                    {tNav(key)}
                   </Link>
                 </li>
               ))}
@@ -59,7 +67,7 @@ export function Footer() {
               href="#contact"
               className="mt-3 inline-flex items-center gap-1 text-body-sm font-medium text-black transition hover:text-accent-dark group">
               {t('getInTouch')}
-              <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <IconArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
         </div>

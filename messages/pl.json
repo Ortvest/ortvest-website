@@ -5,6 +5,7 @@
     "technologies": "Technologie",
     "process": "Proces",
     "about": "O nas",
+    "team": "Zespół",
     "blog": "Blog",
     "cases": "Projekty",
     "faq": "FAQ",
@@ -12,10 +13,46 @@
     "cta": "Wyceń projekt",
     "menuSlogan": "Od pomysłu do startu. Jeden zespół."
   },
+  "divider": {
+    "years": "lat łącznego doświadczenia",
+    "products": "produktów wdrożonych",
+    "niches": "niszy branżowych"
+  },
   "hero": {
-    "eyebrow": "Studio IT z ekspertyzą branżową",
-    "headline": "Tworzymy produkty cyfrowe dla P2P, społeczności, hospitality, konwersji, agritech i sporttech.",
-    "subheadline": "Nie tylko strony internetowe. Łączymy design, development i marketing — z głęboką wiedzą o branżach, w których pracujemy. Od strategii do startu i dalej.",
+    "badge": "Dostępni dla nowych projektów",
+    "title1": "Budujemy cyfrowe",
+    "title2": "produkty, które",
+    "title3": "ludzie ",
+    "title3em": "kochają.",
+    "subtitle": "Nie generyczne studio. Pracujemy w konkretnych branżach — P2P, społeczności, hospitality, sporttech — i znamy problemy Twoich użytkowników od środka.",
+    "cta": {
+      "primary": "Omów projekt",
+      "secondary": "Zobacz co robimy"
+    },
+    "freecall": {
+      "text": "Nie wiesz?",
+      "link": "Umów darmową 30-min rozmowę →"
+    },
+    "nodes": {
+      "p2p": "P2P",
+      "community": "Społeczności",
+      "hospitality": "Gościnność",
+      "sporttech": "Sporttech",
+      "conversion": "Konwersja",
+      "logistics": "Logistyka",
+      "agritech": "Agrotech"
+    },
+    "stats": {
+      "products": "produktów wdrożonych",
+      "niches": "niszy branżowych",
+      "years": "lat budowania",
+      "projectsValue": "20+",
+      "projectsLabel": "produktów wdrożonych",
+      "industriesValue": "6",
+      "industriesLabel": "niszy branżowych",
+      "yearsValue": "4",
+      "yearsLabel": "lat budowania"
+    },
     "nicheTags": {
       "p2p": "P2P",
       "community": "Społeczności",
@@ -90,6 +127,150 @@
       "setupFee": "jednorazowa opłata instalacyjna"
     }
   },
+  "servicesSection": {
+    "label": "Usługi",
+    "title": "Wszystko do startu i wzrostu.",
+    "subtitle": "Od strategii przez kod do wejścia na rynek — budujemy, wdrażamy i skalujemy produkty cyfrowe.",
+    "tabs": {
+      "what": "Co robimy",
+      "industries": "Branże",
+      "process": "Proces",
+      "technologies": "Technologie"
+    },
+    "included": "Co zawiera",
+    "tapToSee": "Kliknij, aby zobaczyć",
+    "tapToLearn": "Kliknij, aby dowiedzieć się więcej",
+    "getQuote": "Zapytaj o wycenę",
+    "optional": "Opcjonalnie",
+    "expanding": "Rozwijamy kierunek",
+    "comingSoon": "Wkrótce",
+    "letsTalk": "Porozmawiajmy wcześniej",
+    "design": {
+      "title": "Design",
+      "desc": "Badania UX, wireframe'y i gotowe systemy UI w Figmie.",
+      "i1": "UI/UX dla web i mobile",
+      "i2": "Landing pages i strony korporacyjne",
+      "i3": "Interfejsy SaaS i aplikacji",
+      "i4": "Tożsamość marki i systemy wizualne",
+      "i5": "Prezentacje produktów i materiały marketingowe"
+    },
+    "dev": {
+      "title": "Development",
+      "desc": "Dedykowane aplikacje webowe i mobilne na wydajność i skalę.",
+      "i1": "Aplikacje webowe, e-commerce i MVP",
+      "i2": "Aplikacje iOS i Android",
+      "i3": "Rozwój API i integracje",
+      "i4": "Platformy SaaS i systemy real-time",
+      "i5": "Optymalizacja wydajności i wsparcie"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "desc": "Pełne wsparcie wejścia na rynek — od SEO i reklam po strategię contentową i CRM.",
+      "basic": "Podstawowy",
+      "advanced": "Rozszerzony",
+      "premium": "Premium",
+      "b1": "Optymalizacja SEO",
+      "b2": "Konfiguracja analityki",
+      "b3": "Reklama targetowana",
+      "b4": "Marketing w mediach społecznościowych",
+      "a1": "Email marketing i automatyzacja",
+      "a2": "Strategia contentowa",
+      "a3": "Copywriting konwersyjny",
+      "a4": "Konfiguracja CRM i marketing",
+      "p1": "Pełna strategia marketingowa",
+      "p2": "Badanie rynku i odbiorców",
+      "p3": "Analiza konkurencji",
+      "p4": "Pozycjonowanie marki"
+    },
+    "ind": {
+      "p2p": {
+        "title": "Platformy P2P",
+        "desc": "Budujemy platformy P2P, gdzie zaufanie jest produktem — z weryfikacją, płatnościami escrow i rozwiązywaniem sporów.",
+        "t1": "Ekonomia współdzielenia",
+        "t2": "Wynajem P2P",
+        "t3": "Escrow"
+      },
+      "community": {
+        "title": "Społeczności",
+        "desc": "Platformy dla społeczności — z rolami, uprawnieniami, czatem w czasie rzeczywistym i wydarzeniami.",
+        "t1": "Sieci prywatne",
+        "t2": "Portale członkowskie",
+        "t3": "Wydarzenia"
+      },
+      "hospitality": {
+        "title": "Hospitality",
+        "desc": "Premium rozwiązania cyfrowe dla branży hotelarskiej — systemy rezerwacji i luksusowe platformy travel.",
+        "t1": "Systemy rezerwacji",
+        "t2": "Jachty i podróże",
+        "t3": "Premium UX"
+      },
+      "sporttech": {
+        "title": "Sporttech",
+        "desc": "Technologie dla sportu — od dashboardów zawodników po aplikacje dla kibiców i zarządzanie klubem.",
+        "t1": "Śledzenie zawodników",
+        "t2": "Zaangażowanie kibiców",
+        "t3": "Analityka"
+      },
+      "conversion": {
+        "title": "Strony konwersyjne",
+        "desc": "Wysokowydajne strony konwertujące odwiedzających w leady i klientów.",
+        "t1": "Landing pages",
+        "t2": "Generowanie leadów",
+        "t3": "Testy A/B",
+        "t4": "CRO"
+      },
+      "logistics": {
+        "title": "Logistyka",
+        "desc": "Pracujemy ze startupami i SME nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras.",
+        "t1": "Zarządzanie flotą",
+        "t2": "Śledzenie przesyłek",
+        "t3": "Optymalizacja tras",
+        "t4": "Logistyczny SaaS"
+      },
+      "agritech": {
+        "title": "Agritech",
+        "desc": "Budujemy platformy do zarządzania gospodarstwami, analizy plonów i widoczności łańcucha dostaw.",
+        "t1": "Zarządzanie gospodarstwem",
+        "t2": "Analityka plonów",
+        "t3": "Łańcuch dostaw",
+        "t4": "Platformy IoT"
+      }
+    },
+    "process": {
+      "1": {
+        "title": "Discovery",
+        "desc": "Zagłębiamy się w Twój biznes, użytkowników i konkurencję. Definiujemy problem przed pierwszym pikselem.",
+        "dur": "1–2 tygodnie"
+      },
+      "2": {
+        "title": "Design",
+        "desc": "Wireframe'y, przepływy i gotowe UI. Zatwierdzasz każdy ekran przed startem developmentu.",
+        "dur": "2–4 tygodnie"
+      },
+      "3": {
+        "title": "Development",
+        "desc": "Jednotygodniowe sprinty z demo każdego cyklu. Zawsze działający produkt, żadnych czarnych skrzynek.",
+        "dur": "6–16 tygodni"
+      },
+      "4": {
+        "title": "Marketing",
+        "desc": "Landing pages, SEO, analityka i strategia wejścia na rynek. Dostępne jako dodatek.",
+        "dur": "2–4 tygodnie"
+      },
+      "5": {
+        "title": "Launch i wsparcie",
+        "desc": "Wdrożenie, monitoring i iteracje po launchu. Pozostajemy z Tobą.",
+        "dur": "Ciągłe"
+      }
+    },
+    "tech": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Bazy danych",
+      "realtime": "Real-time",
+      "infra": "Infrastruktura"
+    }
+  },
   "industries": {
     "eyebrow": "Branże",
     "title": "Znamy Twoją branżę.",
@@ -135,7 +316,8 @@
     "comingSoon": {
       "badge": "Rozwijamy",
       "cta": "Porozmawiajmy teraz"
-    }
+    },
+    "seeCase": "Zobacz prawdziwy przykład"
   },
   "technologies": {
     "eyebrow": "Stack",
@@ -166,10 +348,50 @@
     "step6Desc": "Wdrożenie i dalsze wsparcie.",
     "stepOptional": "opcjonalnie"
   },
+  "approach": {
+    "label": "Nasze podejście",
+    "title": "Zadajemy trudne pytania zanim otworzymy Figmę.",
+    "subtitle": "Większość studiów zaczyna od designu. My zaczynamy od zrozumienia — kim są użytkownicy, gdzie podobne produkty zawodzą, jak wygląda sukces za 6 miesięcy.",
+    "quote": {
+      "text": "Design przychodzi po ",
+      "em": "jasności.",
+      "body": "Rozumiemy biznes zanim zaczniemy projektować lub budować. Przyjmujemy ograniczoną liczbę projektów, aby zachować jakość i skupienie. Pracujemy z klientami z Europy, USA i Ukrainy."
+    },
+    "how": {
+      "label": "Jak pracujemy",
+      "1": {
+        "title": "Biznes na pierwszym miejscu",
+        "desc": "Rozumiemy biznes zanim zaczniemy projektować lub budować cokolwiek."
+      },
+      "2": {
+        "title": "Ograniczona liczba projektów",
+        "desc": "Przyjmujemy ograniczoną liczbę projektów, aby zachować jakość i skupienie."
+      },
+      "3": {
+        "title": "Globalni klienci",
+        "desc": "Pracujemy z klientami z Europy, USA i Ukrainy."
+      }
+    },
+    "values": {
+      "label": "Co nami kieruje",
+      "1": {
+        "title": "Jakość ponad ilość",
+        "desc": "Wolimy zrobić mniej projektów wyjątkowo dobrze niż rozpraszać się na wiele."
+      },
+      "2": {
+        "title": "Pełna przejrzystość",
+        "desc": "Zawsze wiesz, co jest budowane, dlaczego i co będzie dalej. Żadnych niespodzianek."
+      },
+      "3": {
+        "title": "Prawdziwe partnerstwo",
+        "desc": "Traktujemy Twój produkt jak własny. Twój sukces to jedyna miara, która się liczy."
+      }
+    }
+  },
   "about": {
-    "eyebrow": "Jak pracujemy",
-    "title": "Zaczynamy od celów biznesowych, nie od plików Figma",
-    "subtitle": "Zanim przejdziemy do designu czy kodu, badamy Twój produkt, odbiorców i cele biznesowe. Dlatego nasze rozwiązania konwertują. Pracujemy jak zewnętrzny zespół cyfrowy — przejmując odpowiedzialność od strategii do startu i wsparcia.",
+    "eyebrow": "Nasze podejście",
+    "title": "Zadajemy trudne pytania zanim otworzymy Figmę.",
+    "subtitle": "Większość studiów zaczyna od designu. My zaczynamy od zrozumienia. Kim są użytkownicy? Gdzie podobne produkty zawodzą? Jak wygląda sukces za 6 miesięcy? Design przychodzi po klarowności.",
     "whyTitle": "Nasze podejście",
     "why1": "Rozumiemy biznes zanim zaprojektujemy lub zbudujemy.",
     "why2": "Przyjmujemy ograniczoną liczbę projektów, by zachować jakość i skupienie.",
@@ -177,74 +399,145 @@
     "valuesTitle": "Co nami kieruje",
     "value1": "Jakość ponad ilość",
     "value2": "Pełna transparentność",
-    "value3": "Prawdziwe partnerstwo"
+    "value3": "Prawdziwe partnerstwo",
+    "step1Title": "Najpierw discovery",
+    "step1Desc": "Mapujemy przepływy użytkowników, edge case'y i logikę biznesową zanim dotkniemy pojedynczego piksela. Tu wygrywa lub przegrywa większość projektów.",
+    "step2Title": "Design z intencją",
+    "step2Desc": "Każdy ekran ma zadanie. Projektujemy wokół zachowań użytkownika, nie preferencji estetycznych. Ładność to produkt uboczny funkcjonalności.",
+    "step3Title": "Budujemy na długo",
+    "step3Desc": "Czysta architektura, przetestowany kod, udokumentowane systemy. Jesteś właścicielem tego co budujemy — i Twój następny programista nam podziękuje.",
+    "step4Title": "Start i wsparcie",
+    "step4Desc": "Nie znikamy po starcie. Większość naszych klientów wraca po kolejny produkt."
+  },
+  "team": {
+    "label": "Zespół",
+    "title": "Ludzie odpowiedzialni za Twój produkt.",
+    "subtitle": "Dwoje założycieli i zespół designerów, deweloperów i marketerów — wszyscy pracują bezpośrednio nad Twoim projektem.",
+    "member1": {
+      "role": "Założyciel i CEO",
+      "quote": "Twój pierwszy telefon. Zna Twoją branżę zanim projekt się zacznie."
+    },
+    "member2": {
+      "role": "Współzałożycielka i CMO",
+      "quote": "Dba o to, żeby Twój produkt wyszedł z przekazem, który konwertuje."
+    },
+    "member3": {
+      "role": "CTO",
+      "quote": "Dba o to, żeby wszystko co obiecujemy zostało zbudowane — na czas i bez skrótów."
+    },
+    "dmytro": {
+      "name": "Dmytro Kazantsev",
+      "role": "Founder & CEO",
+      "fact": "Odrzucił więcej projektów niż wziął. Wierzy, że nisza bije generic za każdym razem."
+    },
+    "yevheniia": {
+      "name": "Yevheniia Sadvari",
+      "role": "Co-Founder & CMO",
+      "fact": "Uważa, że launch bez jasnego przekazu to tylko data premiery. Marketing zaczyna się przed pierwszym pikselem."
+    },
+    "sergey": {
+      "name": "Sergey Bekharsky",
+      "role": "CTO",
+      "fact": "Pisze kod backendowy, którego nikt nie widzi. Bierze to do siebie."
+    }
   },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Częste pytania",
     "subtitle": "Jasne odpowiedzi, które pomogą Ci podjąć decyzję.",
+    "cta": {
+      "text": "Masz jeszcze pytania?",
+      "sub": "Chętnie odpowiemy bezpośrednio.",
+      "btn": "Umów darmową rozmowę"
+    },
     "q1": "Jakie usługi oferujecie?",
-    "a1": "Obejmujemy design, development i marketing w jednym zespole.",
+    "a1": "Oferujemy pełny cykl rozwoju produktu: design UX/UI, development web i mobile oraz marketing. Możesz zamówić wszystko lub tylko to, czego potrzebujesz.",
     "q2": "Dla jakich firm pracujecie?",
-    "a2": "Pracujemy z firmami budującymi platformy P2P, sieci społecznościowe, produkty hospitality i strony konwersyjne. Bierzemy też projekty logistycznych startupów. Nasi klienci to głównie Europa i USA — od wczesnych startupów po dojrzałe firmy uruchamiające nowe produkty cyfrowe.",
+    "a2": "Startupy i scale-upy w konkretnych branżach — P2P, społeczności, hospitality, sporttech i produkty konwersyjne. Preferujemy klientów, którzy wiedzą, co chcą budować.",
     "q3": "Czy mogę zamówić tylko jedną usługę?",
-    "a3": "Tak. Możesz współpracować z nami wyłącznie w zakresie designu, developmentu lub marketingu.",
+    "a3": "Tak. Możliwe są osobne projekty tylko design, development lub marketing. Dopasujemy zakres do Twoich potrzeb.",
     "q4": "Jak wygląda wycena projektu?",
-    "a4": "Cena zależy od zakresu, złożoności i terminów. Przygotowujemy indywidualną wycenę po krótkiej rozmowie.",
-    "q5": "Czy wszystkie usługi są obowiązkowe?",
-    "a5": "Nie. Zakres współpracy zawsze dopasowujemy do potrzeb projektu. Możesz wybrać tylko design, development, marketing lub ich dowolne połączenie.",
-    "q6": "Jak wygląda proces współpracy?",
-    "a6": "Discovery, design, development, opcjonalny marketing, launch i wsparcie.",
-    "q7": "Czy oferujecie wsparcie po wdrożeniu?",
-    "a7": "Tak. Zapewniamy ciągłe wsparcie, ulepszenia i skalowanie w razie potrzeby.",
+    "a4": "Pracujemy w modelu fixed-scope i retainer. Po rozmowie discovery wysyłamy szczegółową propozycję z jasną ceną i harmonogramem — bez niespodzianek.",
+    "q5": "Jak wygląda proces współpracy?",
+    "a5": "Discovery → Design → Development → Launch. 1-tygodniowe sprinty z demo w każdym cyklu. Zawsze wiesz, co jest budowane i co dalej.",
+    "q6": "Czy oferujecie wsparcie po wdrożeniu?",
+    "a6": "Tak. Oferujemy plany retainer na bieżący development, poprawki błędów i nowe funkcje. Większość klientów zostaje z nami po launchu.",
+    "q7": "Jak zacząć współpracę?",
+    "a7": "Wypełnij formularz kontaktowy lub umów darmową 30-min rozmowę discovery. Przeanalizujemy projekt i odpowiemy w ciągu 24 godzin.",
     "q8": "Jak zacząć współpracę?",
     "a8": "Wystarczy skontaktować się przez formularz. Odpowiemy wkrótce."
   },
   "contact": {
-    "eyebrow": "Porozmawiajmy",
+    "label": "Porozmawiajmy",
     "title": "Opowiedz o swoim projekcie",
     "subtitle": "Podziel się celami i wyzwaniami. Pokażemy odpowiednie realizacje i omówimy najlepsze podejście do startu i wzrostu.",
-    "name": "Imię",
-    "email": "Email",
-    "message": "Wiadomość",
-    "messagePlaceholder": "Co budujesz i kiedy chcesz uruchomić?",
-    "projectType": "Typ projektu",
-    "budget": "Budżet (optional)",
-    "budgetUnder1k": "Małe zadanie / konsultacja",
-    "budget1k5k": "€1k–5k",
-    "budget5k15k": "€5k–15k",
-    "budget15kPlus": "€15k+",
-    "consultationType": "Typ konsultacji",
-    "consultationDiscovery": "Discovery Call (Darmowe)",
-    "consultationStrategy": "Strategy Session (€199)",
-    "budgetMap": {
-      "under1k": "Małe zadanie / konsultacja",
+    "trust": {
+      "reply": "Odpowiedź w 24h",
+      "nospam": "Zero spamu",
+      "call": "Darmowa 30-min rozmowa discovery"
+    },
+    "steps": {
+      "label": "Co dalej",
+      "1": {
+        "title": "Wypełniasz formularz",
+        "desc": "Opowiedz, co budujesz, jaki masz budżet i kiedy chcesz uruchomić."
+      },
+      "2": {
+        "title": "Przeglądamy i odpowiadamy",
+        "desc": "W ciągu 24h wyślemy odpowiednie case studies i proponowane podejście."
+      },
+      "3": {
+        "title": "Rozmowa discovery",
+        "desc": "Darmowa 30-min rozmowa, aby uzgodnić zakres, harmonogram i kolejne kroki."
+      },
+      "4": {
+        "title": "Propozycja i start",
+        "desc": "Wysyłamy szczegółową propozycję. Jeśli pasuje — zaczynamy."
+      }
+    },
+    "form": {
+      "name": {
+        "label": "Imię",
+        "placeholder": "Twoje imię"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@company.com"
+      },
+      "projectType": "Typ projektu",
+      "budget": "Budżet",
+      "consultation": "Typ konsultacji",
+      "message": {
+        "label": "Wiadomość",
+        "placeholder": "Co budujesz i kiedy chcesz uruchomić?"
+      },
+      "optional": "(optional)",
+      "submit": "Wyślij wiadomość",
+      "reply": "Odpowiedź w 24h",
+      "privacy": "Wysyłając formularz, akceptuję",
+      "privacyLink": "Politykę prywatności",
+      "successTitle": "Wiadomość wysłana!",
+      "successDesc": "Odezwiemy się w ciągu 24h."
+    },
+    "projectTypes": {
+      "p2p": "P2P",
+      "community": "Społeczności",
+      "hospitality": "Hospitality",
+      "conversion": "Strona konwersyjna",
+      "sporttech": "Sporttech",
+      "logistics": "Logistyka",
+      "agritech": "Agritech",
+      "other": "Inne"
+    },
+    "budget": {
+      "small": "Małe zadanie / konsultacja",
       "1k5k": "€1k–5k",
       "5k15k": "€5k–15k",
-      "15kplus": "€15k+"
+      "15k": "€15k+"
     },
-    "consultationMap": {
+    "consultation": {
       "discovery": "Discovery Call (Darmowe)",
       "strategy": "Strategy Session (€199)"
-    },
-    "projectTypeP2p": "P2P",
-    "projectTypeCommunity": "Społeczności",
-    "projectTypeHospitality": "Hospitality",
-    "projectTypeConversion": "Strona konwersyjna",
-    "projectTypeLogistics": "Logistyka",
-    "projectTypeAgritech": "Agritech",
-    "projectTypeSporttech": "Sporttech",
-    "projectTypeOther": "Inne",
-    "send": "Wyślij",
-    "trustCopy": "Odpowiedź w 24h",
-    "policyText": "Wysyłając formularz, akceptuję ",
-    "policyLink": "Politykę prywatności",
-    "success": "Wiadomość wysłana. Wkrótce się odezwiemy.",
-    "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz na email.",
-    "benefits": {
-      "freeDiscovery": "Darmowa 30-minutowa rozmowa discovery - omówimy Twój projekt i zaproponujemy najlepsze podejście",
-      "Reply within 24h": "Odpowiedź w 24h",
-      "No spam, ever": "Zero spamu"
     }
   },
   "consultation": {
@@ -313,6 +606,18 @@
     "ctaText": "Masz projekt w P2P, społeczności, hospitality lub logistyce? Porozmawiajmy.",
     "ctaButton": "Umów rozmowę",
     "ctaSecondary": "Wyceń projekt",
+    "bottomCtaText": "Pracujesz nad czymś w jednej z tych nisz?",
+    "bottomCtaLink": "Porozmawiajmy o tym →",
+    "nicheCta": {
+      "p2p": "Budujesz produkt P2P?",
+      "community": "Budujesz platformę społecznościową?",
+      "hospitality": "Budujesz dla hospitality?",
+      "sporttech": "Budujesz platformę sportową?",
+      "conversion": "Potrzebujesz strony konwersyjnej?",
+      "logistics": "Budujesz platformę logistyczną?",
+      "agritech": "Budujesz platformę agritech?",
+      "letsTalk": "Porozmawiajmy →"
+    },
     "categoryBadge": {
       "design": "Design",
       "development": "Development",
@@ -1415,6 +1720,15 @@
     "title": "Insights i aktualności",
     "subtitle": "O designie, programowaniu i budowaniu produktów cyfrowych.",
     "viewAll": "Wszystkie artykuły →"
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Insights i aktualności",
+    "subtitle": "O designie, programowaniu i budowaniu produktów cyfrowych.",
+    "viewAll": "Wszystkie artykuły",
+    "readArticle": "Czytaj artykuł",
+    "minRead": "{n} min czytania",
+    "filterAll": "Wszystkie"
   },
   "blogPage": {
     "title": "Blog",

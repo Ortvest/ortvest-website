@@ -6,36 +6,35 @@ import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
 import { Container, InteractiveCard, SectionHeader, SectionReveal } from '@shared/components';
+import type { TablerIcon } from '@shared/types/icon.types';
 
 import { EASE } from '@lib/motion';
-import { AnimatePresence, motion } from 'framer-motion';
 import {
-  ArrowRight,
-  BarChart2,
-  Check,
-  CreditCard,
-  FolderOpen,
-  Inbox,
-  LayoutDashboard,
-  LayoutGrid,
-  Link2,
-  PenLine,
-  Plus,
-  Users,
-  Zap,
-} from 'lucide-react';
+  IconArchive,
+  IconArrowRight,
+  IconBolt,
+  IconChartBar,
+  IconCheck,
+  IconCreditCard,
+  IconLayoutGrid,
+  IconLink,
+  IconPencil,
+  IconPlus,
+  IconUsers,
+} from '@tabler/icons-react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 type BillingPeriod = 'monthly' | 'annually';
 type ModuleKey = 'orders' | 'projects' | 'board' | 'transactions' | 'analytics' | 'blog' | 'team';
 
-const MODULES: { key: ModuleKey; Icon: React.ComponentType<{ className?: string }>; addon: boolean }[] = [
-  { key: 'orders', Icon: Inbox, addon: false },
-  { key: 'projects', Icon: FolderOpen, addon: false },
-  { key: 'board', Icon: LayoutGrid, addon: false },
-  { key: 'transactions', Icon: CreditCard, addon: true },
-  { key: 'analytics', Icon: BarChart2, addon: true },
-  { key: 'blog', Icon: PenLine, addon: true },
-  { key: 'team', Icon: Users, addon: false },
+const MODULES: { key: ModuleKey; Icon: TablerIcon; addon: boolean }[] = [
+  { key: 'orders', Icon: IconArchive, addon: false },
+  { key: 'projects', Icon: IconArchive, addon: false },
+  { key: 'board', Icon: IconLayoutGrid, addon: false },
+  { key: 'transactions', Icon: IconCreditCard, addon: true },
+  { key: 'analytics', Icon: IconChartBar, addon: true },
+  { key: 'blog', Icon: IconPencil, addon: true },
+  { key: 'team', Icon: IconUsers, addon: false },
 ];
 
 const HAS_DEPENDENCY = new Set<ModuleKey>(['orders', 'board', 'blog']);
@@ -132,7 +131,7 @@ export function CMSPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, ease: EASE }}>
               <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-accent">
-                <LayoutDashboard className="h-3.5 w-3.5" />
+                <IconLayoutGrid className="h-3.5 w-3.5" />
                 {t('hero.eyebrow')}
               </span>
 
@@ -147,7 +146,7 @@ export function CMSPage() {
                   href="#contact"
                   className="inline-flex h-12 items-center gap-2 rounded-full bg-accent px-6 text-sm font-semibold text-black shadow-sm transition-colors hover:bg-accent-dark">
                   {t('hero.ctaPrimary')}
-                  <ArrowRight className="h-4 w-4" />
+                  <IconArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   href="#cms-pricing"
@@ -168,7 +167,7 @@ export function CMSPage() {
               eyebrow={t('showcase.eyebrow')}
               title={t('showcase.title')}
               description={t('showcase.subtitle')}
-              icon={LayoutGrid}
+              icon={IconLayoutGrid}
               className="mb-10"
             />
 
@@ -276,7 +275,7 @@ export function CMSPage() {
                           <div className="flex items-start justify-between gap-3">
                             <div className="flex items-center gap-2">
                               <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-accent/20">
-                                <Link2 className="h-3.5 w-3.5 text-black" />
+                                <IconLink className="h-3.5 w-3.5 text-black" />
                               </span>
                               <p className="text-sm font-semibold text-black">{t('showcase.apiBlock.title')}</p>
                             </div>
@@ -302,7 +301,9 @@ export function CMSPage() {
                                 <span className="rounded-lg border border-black/[0.10] bg-white px-3 py-1.5 text-xs font-medium text-black/70 shadow-sm">
                                   {label}
                                 </span>
-                                {idx < arr.length - 1 && <ArrowRight className="h-3.5 w-3.5 shrink-0 text-black/30" />}
+                                {idx < arr.length - 1 && (
+                                  <IconArrowRight className="h-3.5 w-3.5 shrink-0 text-black/30" />
+                                )}
                               </div>
                             ))}
                           </div>
@@ -371,7 +372,7 @@ export function CMSPage() {
               {/* Standard */}
               <article className="relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white">
-                  <LayoutDashboard className="h-5 w-5" />
+                  <IconLayoutGrid className="h-5 w-5" />
                 </div>
                 <span className="mb-3 inline-flex rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white/60">
                   {t('pricing.standard.name')}
@@ -389,12 +390,12 @@ export function CMSPage() {
                 <ul className="mt-3 flex-1 space-y-2" role="list">
                   {INCLUDED_MODULES.map((mod) => (
                     <li key={mod} className="flex items-center gap-2 text-body-sm text-white/70">
-                      <Check className="h-3.5 w-3.5 shrink-0 text-white/40" />
+                      <IconCheck className="h-3.5 w-3.5 shrink-0 text-white/40" />
                       {t(`showcase.modules.${mod}.name`)}
                     </li>
                   ))}
                   <li className="flex items-center gap-2 text-body-sm text-white/70">
-                    <Zap className="h-3.5 w-3.5 shrink-0 text-accent/70" />
+                    <IconBolt className="h-3.5 w-3.5 shrink-0 text-accent/70" />
                     {t('pricing.apiFeature')}
                   </li>
                 </ul>
@@ -424,7 +425,7 @@ export function CMSPage() {
               {/* Partner rate */}
               <article className="relative flex flex-col overflow-hidden rounded-2xl bg-accent p-6 shadow-glow">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-black/10 text-black">
-                  <LayoutDashboard className="h-5 w-5" />
+                  <IconLayoutGrid className="h-5 w-5" />
                 </div>
                 <span className="mb-3 inline-flex rounded-full border border-black/20 bg-black/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-black/70">
                   {t('pricing.partner.badge')}
@@ -445,12 +446,12 @@ export function CMSPage() {
                 <ul className="mt-3 flex-1 space-y-2" role="list">
                   {INCLUDED_MODULES.map((mod) => (
                     <li key={mod} className="flex items-center gap-2 text-body-sm text-black/80">
-                      <Check className="h-3.5 w-3.5 shrink-0 text-black/50" />
+                      <IconCheck className="h-3.5 w-3.5 shrink-0 text-black/50" />
                       {t(`showcase.modules.${mod}.name`)}
                     </li>
                   ))}
                   <li className="flex items-center gap-2 text-body-sm text-black/80">
-                    <Zap className="h-3.5 w-3.5 shrink-0 text-black/50" />
+                    <IconBolt className="h-3.5 w-3.5 shrink-0 text-black/50" />
                     {t('pricing.apiFeature')}
                   </li>
                 </ul>
@@ -460,7 +461,7 @@ export function CMSPage() {
                     href="#contact"
                     className="group inline-flex items-center gap-1.5 rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-black/85">
                     {t('pricing.partner.cta')}
-                    <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                    <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                   </Link>
                 </div>
               </article>
@@ -476,7 +477,7 @@ export function CMSPage() {
                   <div
                     key={key}
                     className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-2 text-sm">
-                    <Plus className="h-3.5 w-3.5 shrink-0 text-accent" />
+                    <IconPlus className="h-3.5 w-3.5 shrink-0 text-accent" />
                     <span className="font-medium text-white">{label ?? t(`showcase.modules.${moduleKey}.name`)}</span>
                     <span className="text-white/45">{price}</span>
                   </div>
@@ -501,7 +502,7 @@ export function CMSPage() {
                   href="#contact"
                   className="group inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-black shadow-sm transition-colors hover:bg-accent-dark">
                   {t('cta.button')}
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>
             </div>

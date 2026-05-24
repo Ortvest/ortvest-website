@@ -16,8 +16,11 @@ import { Hero } from '@modules/Hero';
 import { Industries } from '@modules/Industries';
 import { Modal } from '@modules/Modals';
 import { Process } from '@modules/Process';
-import { Services } from '@modules/Services';
+import { ServicesSection } from '@modules/Services/ServicesSection';
+import { Team } from '@modules/Team';
 import { Technologies } from '@modules/Technologies';
+
+import { SectionDivider } from '../../components/SectionDivider';
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
@@ -27,17 +30,21 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       <Header />
       <main>
         <Hero />
+        <SectionDivider />
         <About />
-        <Services />
-        <Industries />
-        <Process />
-        <Technologies />
+        <Team />
+        <Suspense fallback={<div className="section-padding bg-zinc-950" />}>
+          <ServicesSection />
+        </Suspense>
+        {/* <Industries /> */}
+        {/* <Process /> */}
+        {/* <Technologies /> */}
         <Cases />
-        <FAQ />
         <Consultation />
         <Suspense fallback={<BlogSectionSkeleton />}>
           <BlogSection locale={locale} />
         </Suspense>
+        <FAQ />
         <Contact />
       </main>
       <Footer />

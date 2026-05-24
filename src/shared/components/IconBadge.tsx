@@ -1,10 +1,10 @@
-import { LucideIcon } from 'lucide-react';
+import type { TablerIcon } from '@shared/types/icon.types';
 
 type BadgeSize = 'sm' | 'md' | 'lg';
 type BadgeVariant = 'default' | 'accent' | 'muted';
 
 interface IconBadgeProps {
-  icon: LucideIcon;
+  icon: TablerIcon;
   size?: BadgeSize;
   variant?: BadgeVariant;
   className?: string;
@@ -22,11 +22,11 @@ const variantClasses: Record<BadgeVariant, string> = {
   muted: 'bg-black/[0.04] text-black/60',
 };
 
-export function IconBadge({ icon: Icon, size = 'md', variant = 'default', className = '' }: IconBadgeProps) {
+export function IconBadge({ icon: IconComponent, size = 'md', variant = 'default', className = '' }: IconBadgeProps) {
   const { container, icon } = sizeClasses[size];
   return (
     <div className={`flex items-center justify-center ${container} ${variantClasses[variant]} ${className}`.trim()}>
-      <Icon className={icon} />
+      <IconComponent className={icon} />
     </div>
   );
 }

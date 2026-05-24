@@ -4,371 +4,231 @@ import { useState } from 'react';
 
 import { useTranslations } from 'next-intl';
 
-import { Button } from '@shared/components';
-import { ModalTypes } from '@shared/enums/ModalTypes.enums';
-import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
-
 import { contactApi } from '@global/api/contact.api';
-import { ContactSlice } from '@global/store/slices/ContactSlice';
-import { ModalSlice } from '@global/store/slices/ModalSlice';
-import { EASE } from '@lib/motion';
-import { AnimatePresence, motion } from 'framer-motion';
-import { AlertCircle, ArrowRight, Check } from 'lucide-react';
+import { IconArrowRight, IconCircleCheck, IconLoader2 } from '@tabler/icons-react';
 
-type ProjectTypeOption =
+type ProjectType =
   | 'p2p'
   | 'community'
   | 'hospitality'
   | 'conversion'
+  | 'sporttech'
   | 'logistics'
   | 'agritech'
-  | 'sporttech'
   | 'other';
-type BudgetOption = 'under1k' | '1k5k' | '5k15k' | '15kplus';
+
+type BudgetOption = 'small' | '1k5k' | '5k15k' | '15k';
 type ConsultationOption = 'discovery' | 'strategy';
 
-const inputBase = [
-  'w-full rounded-xl border border-black/[0.08] bg-white px-4 py-3 text-body text-black outline-none',
-  'transition-colors hover:border-black/15 focus:border-accent focus:ring-2 focus:ring-accent/20',
-].join(' ');
-const inputError = 'border-red-400 focus:border-red-400 focus:ring-red-100';
-
-const PROJECT_OPTIONS: {
-  value: ProjectTypeOption;
-  labelKey:
-    | 'projectTypeP2p'
-    | 'projectTypeCommunity'
-    | 'projectTypeHospitality'
-    | 'projectTypeConversion'
-    | 'projectTypeLogistics'
-    | 'projectTypeAgritech'
-    | 'projectTypeSporttech'
-    | 'projectTypeOther';
-}[] = [
-  { value: 'p2p', labelKey: 'projectTypeP2p' },
-  { value: 'community', labelKey: 'projectTypeCommunity' },
-  { value: 'hospitality', labelKey: 'projectTypeHospitality' },
-  { value: 'conversion', labelKey: 'projectTypeConversion' },
-  { value: 'logistics', labelKey: 'projectTypeLogistics' },
-  { value: 'agritech', labelKey: 'projectTypeAgritech' },
-  { value: 'sporttech', labelKey: 'projectTypeSporttech' },
-  { value: 'other', labelKey: 'projectTypeOther' },
+const PROJECT_TYPES: ProjectType[] = [
+  'p2p',
+  'community',
+  'hospitality',
+  'conversion',
+  'sporttech',
+  'logistics',
+  'agritech',
+  'other',
 ];
 
-const BUDGET_OPTIONS: {
-  value: BudgetOption;
-  labelKey: 'budgetUnder1k' | 'budget1k5k' | 'budget5k15k' | 'budget15kPlus';
-}[] = [
-  { value: 'under1k', labelKey: 'budgetUnder1k' },
-  { value: '1k5k', labelKey: 'budget1k5k' },
-  { value: '5k15k', labelKey: 'budget5k15k' },
-  { value: '15kplus', labelKey: 'budget15kPlus' },
-];
+const BUDGET_OPTIONS: BudgetOption[] = ['small', '1k5k', '5k15k', '15k'];
+const CONSULTATION_OPTIONS: ConsultationOption[] = ['discovery', 'strategy'];
 
-const CONSULTATION_OPTIONS: {
-  value: ConsultationOption;
-  labelKey: 'consultationDiscovery' | 'consultationStrategy';
-}[] = [
-  { value: 'discovery', labelKey: 'consultationDiscovery' },
-  { value: 'strategy', labelKey: 'consultationStrategy' },
-];
+const inputClass =
+  'w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm text-zinc-950 placeholder:text-zinc-300 transition focus:border-zinc-400 focus:outline-none';
 
-export function Form() {
+const pillBase =
+  'cursor-pointer select-none rounded-full border border-zinc-200 px-3 py-1.5 text-xs text-zinc-500 transition hover:border-zinc-400 hover:text-zinc-950';
+
+const pillSelected =
+  'border-accent bg-accent font-medium text-black hover:border-accent hover:text-black';
+
+export function ContactForm() {
   const t = useTranslations('contact');
-  const dispatch = useAppDispatch();
-  const { orderData } = useAppSelector((state) => state.ContactReducer);
-  const { setOrderData } = ContactSlice.actions;
-  const { setIsModalOpened, setModalType } = ModalSlice.actions;
-  const [touched, setTouched] = useState<Record<string, boolean>>({});
-  const [submitError, setSubmitError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [projectTypes, setProjectTypes] = useState<ProjectTypeOption[]>([]);
-  const [selectedBudget, setSelectedBudget] = useState<BudgetOption | null>(null);
-  const [selectedConsultation, setSelectedConsultation] = useState<ConsultationOption | null>(null);
-  const [shakeKey, setShakeKey] = useState(0);
 
-  const toggleProjectType = (value: ProjectTypeOption) => {
-    setProjectTypes((prev) => (prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value]));
-    setSubmitError(null);
-  };
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [selectedTypes, setSelectedTypes] = useState<ProjectType[]>([]);
+  const [selectedBudget, setSelectedBudget] = useState('');
+  const [selectedConsultation, setSelectedConsultation] = useState<ConsultationOption>('discovery');
+  const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
-  const toggleBudget = (value: BudgetOption) => {
-    const next = selectedBudget === value ? null : value;
-    setSelectedBudget(next);
-    dispatch(setOrderData({ ...orderData, budget: next ? t(`budgetMap.${next}`) : '' }));
-    setSubmitError(null);
-  };
-
-  const toggleConsultationType = (value: ConsultationOption) => {
-    const next = selectedConsultation === value ? null : value;
-    setSelectedConsultation(next);
-    dispatch(setOrderData({ ...orderData, consultationType: next ? t(`consultationMap.${next}`) : '' }));
-    setSubmitError(null);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    dispatch(setOrderData({ ...orderData, [name]: value }));
-    setSubmitError(null);
-  };
-
-  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setTouched((prev) => ({ ...prev, [e.target.name]: true }));
+  const toggleProjectType = (type: ProjectType) => {
+    setSelectedTypes((prev) => (prev.includes(type) ? prev.filter((item) => item !== type) : [...prev, type]));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setTouched({ clientName: true, clientEmail: true });
-    const { clientName, clientEmail, productDescription, budget, consultationType } = orderData;
-    if (!clientName?.trim() || !clientEmail?.trim()) {
-      setSubmitError(t('error'));
-      setShakeKey((prev) => prev + 1);
-      return;
-    }
-    const payload = {
-      clientName: clientName.trim(),
-      clientEmail: clientEmail.trim(),
-      productDescription: (productDescription || '').trim(),
-      selectedServices: [...projectTypes],
-      budget: budget || '',
-      consultationType: consultationType || '',
-    };
-    setLoading(true);
+    if (!name.trim() || !email.trim()) return;
+
+    setIsSubmitting(true);
     try {
-      await contactApi.createOrder(payload);
-      dispatch(setIsModalOpened(true));
-      dispatch(setModalType(ModalTypes.SECCESSFULLY_SENDED));
-      dispatch(
-        setOrderData({
-          clientEmail: '',
-          clientName: '',
-          productDescription: '',
-          selectedServices: [],
-          budget: '',
-          consultationType: '',
-        })
-      );
-      setProjectTypes([]);
-      setSelectedBudget(null);
-      setSelectedConsultation(null);
-      setSubmitError(null);
-      setTouched({});
+      await contactApi.createOrder({
+        clientName: name.trim(),
+        clientEmail: email.trim(),
+        productDescription: message.trim(),
+        selectedServices: selectedTypes,
+        budget: selectedBudget ? t(`budget.${selectedBudget}` as `budget.${BudgetOption}`) : '',
+        consultationType: t(`consultation.${selectedConsultation}`),
+      });
+      setIsSuccess(true);
     } catch {
-      dispatch(setIsModalOpened(true));
-      dispatch(setModalType(ModalTypes.SEND_FAILED));
-      setSubmitError(t('error'));
+      // Keep form visible on error — user can retry
     } finally {
-      setLoading(false);
+      setIsSubmitting(false);
     }
   };
 
-  const nameError = touched.clientName && !orderData.clientName?.trim();
-  const emailError = touched.clientEmail && !orderData.clientEmail?.trim();
+  if (isSuccess) {
+    return (
+      <div className="flex flex-col items-center py-12 text-center">
+        <IconCircleCheck size={32} className="text-green-500" />
+        <h3 className="mt-3 text-h3 font-semibold text-zinc-950">{t('form.successTitle')}</h3>
+        <p className="mt-1 text-sm text-zinc-400">{t('form.successDesc')}</p>
+      </div>
+    );
+  }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="w-full rounded-2xl border border-black/[0.06] bg-white p-5 shadow-card sm:p-6">
-      <div className="space-y-4">
-        <motion.div
-          key={`name-${shakeKey}`}
-          animate={nameError ? { x: [0, -8, 8, -8, 8, 0] } : {}}
-          transition={{ duration: 0.4, ease: EASE }}>
-          <label htmlFor="contact-name" className="mb-1.5 block text-body-sm font-medium text-black">
-            {t('name')}
+    <form onSubmit={handleSubmit} className="w-full">
+      {/* Name + Email */}
+      <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <div>
+          <label htmlFor="contact-name" className="mb-1.5 block text-sm font-medium text-zinc-500">
+            {t('form.name.label')}
           </label>
           <input
             id="contact-name"
             type="text"
-            name="clientName"
-            value={orderData.clientName}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder={t('form.name.placeholder')}
             autoComplete="name"
-            className={`${inputBase} ${nameError ? inputError : ''}`}
-            placeholder={t('name')}
-            aria-invalid={!!nameError}
+            required
+            className={inputClass}
           />
-          <AnimatePresence>
-            {nameError && (
-              <motion.p
-                className="mt-1.5 flex items-center gap-1.5 text-body-sm text-red-600"
-                initial={{ opacity: 0, y: -4 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -4 }}
-                transition={{ duration: 0.3, ease: EASE }}
-                role="alert">
-                <AlertCircle className="h-3.5 w-3.5" />
-                {t('name')} is required
-              </motion.p>
-            )}
-          </AnimatePresence>
-        </motion.div>
-
-        <motion.div
-          key={`email-${shakeKey}`}
-          animate={emailError ? { x: [0, -8, 8, -8, 8, 0] } : {}}
-          transition={{ duration: 0.4, ease: EASE }}>
-          <label htmlFor="contact-email" className="mb-1.5 block text-body-sm font-medium text-black">
-            {t('email')}
+        </div>
+        <div>
+          <label htmlFor="contact-email" className="mb-1.5 block text-sm font-medium text-zinc-500">
+            {t('form.email.label')}
           </label>
           <input
             id="contact-email"
             type="email"
-            name="clientEmail"
-            value={orderData.clientEmail}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder={t('form.email.placeholder')}
             autoComplete="email"
-            className={`${inputBase} ${emailError ? inputError : ''}`}
-            placeholder={t('email')}
-            aria-invalid={!!emailError}
-          />
-          <AnimatePresence>
-            {emailError && (
-              <motion.p
-                className="mt-1.5 flex items-center gap-1.5 text-body-sm text-red-600"
-                initial={{ opacity: 0, y: -4 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -4 }}
-                transition={{ duration: 0.3, ease: EASE }}
-                role="alert">
-                <AlertCircle className="h-3.5 w-3.5" />
-                {t('email')} is required
-              </motion.p>
-            )}
-          </AnimatePresence>
-        </motion.div>
-
-        <div>
-          <span className="mb-2 block text-body-sm font-medium text-black">
-            {t('projectType')} <span className="text-black/40">(optional)</span>
-          </span>
-          <div className="flex flex-wrap gap-2" role="group" aria-label={t('projectType')}>
-            {PROJECT_OPTIONS.map(({ value, labelKey }) => {
-              const isSelected = projectTypes.includes(value);
-              return (
-                <button
-                  key={value}
-                  type="button"
-                  onClick={() => toggleProjectType(value)}
-                  className={`
-                    inline-flex items-center gap-1.5 rounded-full border px-4 py-2 text-body-sm font-medium transition
-                    ${
-                      isSelected
-                        ? 'border-accent bg-accent/15 text-black'
-                        : 'border-black/[0.12] bg-white text-black/70 hover:border-black/20 hover:bg-black/[0.03]'
-                    }
-                  `}>
-                  {isSelected && <Check className="h-3.5 w-3.5" />}
-                  {t(labelKey)}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        <div>
-          <span className="mb-2 block text-body-sm font-medium text-black">{t('budget')}</span>
-          <div className="flex flex-wrap gap-2" role="group" aria-label={t('budget')}>
-            {BUDGET_OPTIONS.map(({ value, labelKey }) => {
-              const isSelected = selectedBudget === value;
-              return (
-                <button
-                  key={value}
-                  type="button"
-                  onClick={() => toggleBudget(value)}
-                  className={`
-                    inline-flex items-center gap-1.5 rounded-full border px-4 py-2 text-body-sm font-medium transition
-                    ${
-                      isSelected
-                        ? 'border-accent bg-accent/15 text-black'
-                        : 'border-black/[0.12] bg-white text-black/70 hover:border-black/20 hover:bg-black/[0.03]'
-                    }
-                  `}>
-                  {isSelected && <Check className="h-3.5 w-3.5" />}
-                  {t(labelKey)}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        <div>
-          <span className="mb-2 block text-body-sm font-medium text-black">{t('consultationType')}</span>
-          <div className="flex flex-wrap gap-2" role="group" aria-label={t('consultationType')}>
-            {CONSULTATION_OPTIONS.map(({ value, labelKey }) => {
-              const isSelected = selectedConsultation === value;
-              return (
-                <button
-                  key={value}
-                  type="button"
-                  onClick={() => toggleConsultationType(value)}
-                  className={`
-                    inline-flex items-center gap-1.5 rounded-full border px-4 py-2 text-body-sm font-medium transition
-                    ${
-                      isSelected
-                        ? 'border-accent bg-accent/15 text-black'
-                        : 'border-black/[0.12] bg-white text-black/70 hover:border-black/20 hover:bg-black/[0.03]'
-                    }
-                  `}>
-                  {isSelected && <Check className="h-3.5 w-3.5" />}
-                  {t(labelKey)}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        <div>
-          <label htmlFor="contact-message" className="mb-1.5 block text-body-sm font-medium text-black">
-            {t('message')} <span className="text-black/40">(optional)</span>
-          </label>
-          <textarea
-            id="contact-message"
-            name="productDescription"
-            value={orderData.productDescription}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            rows={4}
-            maxLength={2000}
-            className={`${inputBase} resize-y`}
-            placeholder={t('messagePlaceholder')}
+            required
+            className={inputClass}
           />
         </div>
-
-        <AnimatePresence>
-          {submitError && (
-            <motion.div
-              className="rounded-lg border border-red-200 bg-red-50 p-3"
-              initial={{ opacity: 0, y: -8, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -8, scale: 0.95 }}
-              transition={{ duration: 0.35, ease: EASE }}>
-              <p className="flex items-center gap-2 text-body-sm text-red-700" role="alert">
-                <AlertCircle className="h-4 w-4 shrink-0" />
-                {submitError}
-              </p>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
-          <Button type="submit" variant="primary" size="lg" icon={<ArrowRight className="h-4 w-4" />} iconRight>
-            {loading ? 'Sending...' : t('send')}
-          </Button>
-          <p className="text-body-sm text-black/50">{t('trustCopy')}</p>
-        </div>
-
-        <p className="text-xs text-black/40">
-          {t('policyText')}
-          <a href="#" className="underline hover:text-black">
-            {t('policyLink')}
-          </a>
-        </p>
       </div>
+
+      {/* Project type */}
+      <div className="mb-4">
+        <div className="mb-2 flex items-center gap-1">
+          <span className="text-sm font-medium text-zinc-500">{t('form.projectType')}</span>
+          <span className="ml-1 text-xs text-zinc-400">{t('form.optional')}</span>
+        </div>
+        <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.projectType')}>
+          {PROJECT_TYPES.map((type) => {
+            const isSelected = selectedTypes.includes(type);
+            return (
+              <button
+                key={type}
+                type="button"
+                onClick={() => toggleProjectType(type)}
+                className={`${pillBase} ${isSelected ? pillSelected : ''}`}>
+                {t(`projectTypes.${type}`)}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Budget */}
+      <div className="mb-4">
+        <div className="mb-2 flex items-center gap-1">
+          <span className="text-sm font-medium text-zinc-500">{t('form.budget')}</span>
+          <span className="ml-1 text-xs text-zinc-400">{t('form.optional')}</span>
+        </div>
+        <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.budget')}>
+          {BUDGET_OPTIONS.map((budget) => {
+            const isSelected = selectedBudget === budget;
+            return (
+              <button
+                key={budget}
+                type="button"
+                onClick={() => setSelectedBudget(isSelected ? '' : budget)}
+                className={`${pillBase} ${isSelected ? pillSelected : ''}`}>
+                {t(`budget.${budget}`)}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Consultation type */}
+      <div className="mb-4">
+        <div className="mb-2">
+          <span className="text-sm font-medium text-zinc-500">{t('form.consultation')}</span>
+        </div>
+        <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.consultation')}>
+          {CONSULTATION_OPTIONS.map((option) => {
+            const isSelected = selectedConsultation === option;
+            return (
+              <button
+                key={option}
+                type="button"
+                onClick={() => setSelectedConsultation(option)}
+                className={`${pillBase} ${isSelected ? pillSelected : ''}`}>
+                {t(`consultation.${option}`)}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Message */}
+      <div className="mb-4">
+        <div className="mb-1.5 flex items-center gap-1">
+          <label htmlFor="contact-message" className="text-sm font-medium text-zinc-500">
+            {t('form.message.label')}
+          </label>
+          <span className="ml-1 text-xs text-zinc-400">{t('form.optional')}</span>
+        </div>
+        <textarea
+          id="contact-message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder={t('form.message.placeholder')}
+          rows={4}
+          className={`${inputClass} h-24 resize-none`}
+        />
+      </div>
+
+      {/* Submit row */}
+      <div className="mt-4 flex items-center justify-between">
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="flex items-center gap-2 rounded-full bg-zinc-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent hover:text-black active:scale-[0.98] disabled:opacity-60">
+          {t('form.submit')}
+          {isSubmitting ? <IconLoader2 size={14} className="animate-spin" /> : <IconArrowRight size={14} />}
+        </button>
+        <span className="text-xs text-zinc-300">{t('form.reply')}</span>
+      </div>
+
+      {/* Privacy */}
+      <p className="mt-3 text-xs text-zinc-300">
+        {t('form.privacy')}{' '}
+        <a href="#" className="cursor-pointer text-zinc-400 underline">
+          {t('form.privacyLink')}
+        </a>
+      </p>
     </form>
   );
 }
