@@ -58,11 +58,11 @@ export function FAQ() {
                   </span>
                   <span
                     className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border transition-all duration-200 ${
-                      isOpen ? 'border-[#cdff4e30] text-accent' : 'border-zinc-800 text-zinc-600'
+                      isOpen ? 'border-accent/30' : 'border-zinc-800'
                     }`}>
                     <IconChevronDown
                       size={13}
-                      className={`transition-transform duration-200 ${isOpen ? 'rotate-180 text-accent' : 'text-zinc-600'}`}
+                      className={`text-accent transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
                     />
                   </span>
                 </button>
