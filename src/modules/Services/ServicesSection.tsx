@@ -33,6 +33,7 @@ import {
   IconPalette,
   IconPlant,
   IconPlugConnected,
+  type IconProps,
   IconRefresh,
   IconServer,
   IconStarFilled,
@@ -40,7 +41,6 @@ import {
   IconTrendingUp,
   IconTruck,
   IconUsers,
-  type IconProps,
 } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
 

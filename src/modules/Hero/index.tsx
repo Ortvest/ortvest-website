@@ -11,10 +11,10 @@ import {
   IconCode,
   IconPhone,
   IconPlant,
+  type IconProps,
   IconStar,
   IconTruck,
   IconUsers,
-  type IconProps,
 } from '@tabler/icons-react';
 
 type SatelliteNodeProps = {

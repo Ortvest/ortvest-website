@@ -40,8 +40,7 @@ const inputClass =
 const pillBase =
   'cursor-pointer select-none rounded-full border border-zinc-200 px-3 py-1.5 text-xs text-zinc-500 transition hover:border-zinc-400 hover:text-zinc-950';
 
-const pillSelected =
-  'border-accent bg-accent font-medium text-black hover:border-accent hover:text-black';
+const pillSelected = 'border-accent bg-accent font-medium text-black hover:border-accent hover:text-black';
 
 export function ContactForm() {
   const t = useTranslations('contact');
