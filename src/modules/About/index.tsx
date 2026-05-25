@@ -35,7 +35,7 @@ export async function About() {
             <span className="text-xs uppercase tracking-widest text-accent">{t('label')}</span>
           </div>
           <h2 className="mx-auto mb-4 max-w-2xl text-h1 font-bold leading-tight text-white">{t('title')}</h2>
-          <p className="mx-auto max-w-xl text-body leading-relaxed text-zinc-500">{t('subtitle')}</p>
+          <p className="mx-auto max-w-xl text-body leading-relaxed text-zinc-400">{t('subtitle')}</p>
         </div>
 
         {/* Block 1 — Quote card */}
@@ -49,25 +49,25 @@ export async function About() {
             {t('quote.text')}
             <span className="text-accent">{t('quote.em')}</span>
           </p>
-          <p className="max-w-2xl text-body-sm leading-relaxed text-zinc-500">{t('quote.body')}</p>
+          <p className="max-w-2xl text-body-sm leading-relaxed text-zinc-400">{t('quote.body')}</p>
         </div>
 
         {/* Block 2 — How we work */}
-        <p className="mb-4 text-[10px] uppercase tracking-widest text-zinc-600">{t('how.label')}</p>
+        <p className="mb-4 text-[10px] uppercase tracking-widest text-zinc-500">{t('how.label')}</p>
         <div className="mb-10 grid grid-cols-1 gap-3 sm:grid-cols-3">
           {howWeWork.map(({ id, Icon, index }) => (
             <div
               key={id}
               className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 transition-colors duration-200 hover:border-zinc-700">
-              <Icon size={18} className="mb-3 text-zinc-500" />
+              <Icon size={18} className="mb-3 text-zinc-400" />
               <p className="mb-1 text-[15px] font-semibold text-white">{t(`how.${index}.title`)}</p>
-              <p className="text-body-sm leading-relaxed text-zinc-500">{t(`how.${index}.desc`)}</p>
+              <p className="text-body-sm leading-relaxed text-zinc-400">{t(`how.${index}.desc`)}</p>
             </div>
           ))}
         </div>
 
         {/* Block 3 — What drives us */}
-        <p className="mb-4 text-[10px] uppercase tracking-widest text-zinc-600">{t('values.label')}</p>
+        <p className="mb-4 text-[10px] uppercase tracking-widest text-zinc-500">{t('values.label')}</p>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           {whatDrivesUs.map(({ id, Icon, index }) => (
             <div
@@ -77,7 +77,7 @@ export async function About() {
                 <Icon size={18} className="text-accent" />
               </div>
               <p className="mb-2 text-[16px] font-semibold text-white">{t(`values.${index}.title`)}</p>
-              <p className="text-body-sm leading-relaxed text-zinc-500">{t(`values.${index}.desc`)}</p>
+              <p className="text-body-sm leading-relaxed text-zinc-400">{t(`values.${index}.desc`)}</p>
             </div>
           ))}
         </div>

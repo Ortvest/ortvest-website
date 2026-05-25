@@ -37,7 +37,7 @@ function SatelliteNode({ left, top, circleClass, icon: Icon, iconSize, label, di
           <Icon size={iconSize} className="text-accent" />
         </div>
       </div>
-      <span className="text-[10px] text-zinc-500">{label}</span>
+      <span className="text-[10px] text-zinc-400">{label}</span>
     </div>
   );
 }
@@ -80,7 +80,7 @@ export function Hero() {
             </h1>
 
             {/* Subtitle */}
-            <p className="mb-7 max-w-[400px] text-[15px] leading-[1.75] text-zinc-500">{t('subtitle')}</p>
+            <p className="mb-7 max-w-[400px] text-[15px] leading-[1.75] text-zinc-400">{t('subtitle')}</p>
 
             {/* CTAs */}
             <div className="mb-5 flex flex-wrap items-center gap-2.5">
@@ -98,10 +98,10 @@ export function Hero() {
             </div>
 
             {/* Free call */}
-            <div className="flex items-center gap-1.5 text-[12px] text-zinc-600">
-              <IconPhone size={13} className="text-zinc-600" />
+            <div className="flex items-center gap-1.5 text-[12px] text-zinc-400">
+              <IconPhone size={13} className="text-zinc-400" />
               <span>{t('freecall.text')}</span>
-              <Link href="#contact" className="text-zinc-500 underline">
+              <Link href="#contact" className="text-zinc-400 underline">
                 {t('freecall.link')}
               </Link>
             </div>

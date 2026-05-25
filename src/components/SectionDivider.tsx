@@ -14,23 +14,23 @@ export async function SectionDivider() {
               <p className="text-[24px] font-extrabold tracking-tight text-white">
                 15<span className="text-accent">+</span>
               </p>
-              <p className="mt-0.5 text-[11px] text-zinc-600">{t('years')}</p>
+              <p className="mt-0.5 text-[11px] text-zinc-400">{t('years')}</p>
             </div>
 
-            <span className="text-zinc-700">·</span>
+            <span className="text-zinc-500">·</span>
 
             <div className="text-center">
               <p className="text-[24px] font-extrabold tracking-tight text-white">
                 10<span className="text-accent">+</span>
               </p>
-              <p className="mt-0.5 text-[11px] text-zinc-600">{t('products')}</p>
+              <p className="mt-0.5 text-[11px] text-zinc-400">{t('products')}</p>
             </div>
 
-            <span className="text-zinc-700">·</span>
+            <span className="text-zinc-500">·</span>
 
             <div className="text-center">
               <p className="text-[24px] font-extrabold tracking-tight text-white">7</p>
-              <p className="mt-0.5 text-[11px] text-zinc-600">{t('niches')}</p>
+              <p className="mt-0.5 text-[11px] text-zinc-400">{t('niches')}</p>
             </div>
           </div>
 

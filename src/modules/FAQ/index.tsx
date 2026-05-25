@@ -30,7 +30,7 @@ export function FAQ() {
           <h2 id="faq-heading" className="mb-3 text-h1 font-bold text-white">
             {t('title')}
           </h2>
-          <p className="text-body text-zinc-600">{t('subtitle')}</p>
+          <p className="text-body text-zinc-400">{t('subtitle')}</p>
         </div>
 
         {/* FAQ list */}
@@ -71,7 +71,7 @@ export function FAQ() {
                   className={`overflow-hidden transition-all duration-300 ease ${
                     isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'
                   }`}>
-                  <p className="pb-5 pl-[34px] text-body-sm leading-relaxed text-zinc-500">{a}</p>
+                  <p className="pb-5 pl-[34px] text-body-sm leading-relaxed text-zinc-400">{a}</p>
                 </div>
               </div>
             );
@@ -80,7 +80,7 @@ export function FAQ() {
 
         {/* CTA */}
         <div className="mt-14 text-center">
-          <p className="mb-4 text-sm text-zinc-600">
+          <p className="mb-4 text-sm text-zinc-400">
             {t('cta.text')} {t('cta.sub')}
           </p>
           <Link

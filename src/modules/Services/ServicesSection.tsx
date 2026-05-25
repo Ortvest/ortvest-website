@@ -301,7 +301,7 @@ function WhatWeDoTab({
               </div>
               <IconChevronDown
                 size={15}
-                className={`transition-transform duration-300 ${isOpen ? 'rotate-180 text-zinc-400' : 'text-zinc-600'}`}
+                className={`text-accent transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
               />
             </div>
 
@@ -314,11 +314,11 @@ function WhatWeDoTab({
               )}
             </div>
 
-            <p className="mb-3 text-body-sm leading-relaxed text-zinc-500">{t(descKey)}</p>
+            <p className="mb-3 text-body-sm leading-relaxed text-zinc-400">{t(descKey)}</p>
 
             <div className="flex flex-wrap gap-1">
               {tags.map((tag) => (
-                <span key={tag} className="rounded-full border border-zinc-800 px-2 py-0.5 text-xs text-zinc-600">
+                <span key={tag} className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-400">
                   {tag}
                 </span>
               ))}
@@ -331,7 +331,7 @@ function WhatWeDoTab({
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { delay: 0.12, duration: 0.18 } }}
                   exit={{ opacity: 0, transition: { duration: 0.08 } }}
-                  className="mt-2 select-none text-xs text-zinc-700">
+                  className="mt-2 select-none text-xs text-zinc-500">
                   {t('tapToSee')}
                 </motion.p>
               )}
@@ -341,7 +341,7 @@ function WhatWeDoTab({
               {isOpen && (
                 <motion.div key="body" {...expandBody} className="overflow-hidden">
                   <div className="mt-4 border-t border-zinc-800 pt-3">
-                    <p className="mb-2 text-[10px] uppercase tracking-widest text-zinc-600">{t('included')}</p>
+                    <p className="mb-2 text-[10px] uppercase tracking-widest text-zinc-500">{t('included')}</p>
 
                     {tiers ? (
                       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -435,7 +435,7 @@ function IndustriesTab({
 
               <div className="mt-2 flex flex-wrap gap-1">
                 {tagKeys.map((tagKey) => (
-                  <span key={tagKey} className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-500">
+                  <span key={tagKey} className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-400">
                     {t(`ind.${key}.${tagKey}`)}
                   </span>
                 ))}
@@ -448,7 +448,7 @@ function IndustriesTab({
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { delay: 0.12, duration: 0.18 } }}
                     exit={{ opacity: 0, transition: { duration: 0.08 } }}
-                    className="mt-2 select-none text-xs text-zinc-600">
+                    className="mt-2 select-none text-xs text-zinc-500">
                     {t('tapToLearn')}
                   </motion.p>
                 ) : (
@@ -464,7 +464,7 @@ function IndustriesTab({
 
       <div className="flex items-center gap-3">
         <div className="h-px flex-1 bg-zinc-800" />
-        <span className="text-[10px] uppercase tracking-widest text-zinc-600">{t('expanding')}</span>
+        <span className="text-[10px] uppercase tracking-widest text-zinc-500">{t('expanding')}</span>
         <div className="h-px flex-1 bg-zinc-800" />
       </div>
 
@@ -475,19 +475,19 @@ function IndustriesTab({
             className="flex flex-col rounded-2xl border border-dashed border-zinc-800 bg-zinc-900 p-5 transition-colors duration-200 hover:border-zinc-700">
             <div className="flex items-start justify-between">
               <div className="flex h-[38px] w-[38px] items-center justify-center rounded-xl bg-zinc-800">
-                <Icon size={18} className="text-zinc-600" />
+                <Icon size={18} className="text-zinc-400" />
               </div>
-              <span className="rounded-full border border-zinc-800 px-2 py-0.5 text-[10px] uppercase tracking-wide text-zinc-600">
+              <span className="rounded-full border border-zinc-700 px-2 py-0.5 text-[10px] uppercase tracking-wide text-zinc-500">
                 {t('comingSoon')}
               </span>
             </div>
 
-            <h3 className="mb-2 mt-3 text-h4 font-semibold text-zinc-500">{t(`ind.${key}.title`)}</h3>
-            <p className="mb-3 text-body-sm leading-relaxed text-zinc-600">{t(`ind.${key}.desc`)}</p>
+            <h3 className="mb-2 mt-3 text-h4 font-semibold text-zinc-400">{t(`ind.${key}.title`)}</h3>
+            <p className="mb-3 text-body-sm leading-relaxed text-zinc-400">{t(`ind.${key}.desc`)}</p>
 
             <div className="flex flex-wrap gap-1">
               {tagKeys.map((tagKey) => (
-                <span key={tagKey} className="rounded-full border border-zinc-900 px-2 py-0.5 text-xs text-zinc-700">
+                <span key={tagKey} className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-400">
                   {t(`ind.${key}.${tagKey}`)}
                 </span>
               ))}
@@ -495,7 +495,7 @@ function IndustriesTab({
 
             <a
               href="#contact"
-              className="mt-3 inline-flex items-center gap-1 text-sm text-zinc-600 transition-colors hover:text-accent">
+              className="mt-3 inline-flex items-center gap-1 text-sm text-zinc-400 transition-colors hover:text-accent">
               {t('letsTalk')}
               <IconArrowRight size={13} />
             </a>
@@ -547,7 +547,7 @@ function ProcessTab({
                     ? 'border border-accent bg-accent text-black'
                     : step.optional
                       ? 'border border-dashed border-accent/50 bg-accent/10 text-accent hover:bg-accent/15'
-                      : 'border border-zinc-700 bg-transparent text-zinc-500 hover:border-zinc-500 hover:text-zinc-300',
+                      : 'border border-zinc-700 bg-transparent text-zinc-400 hover:border-zinc-500 hover:text-zinc-300',
                 ].join(' ')}>
                 {step.id + 1}
               </button>
@@ -582,12 +582,12 @@ function ProcessTab({
                         {step.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-500">
+                            className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-400">
                             {tag}
                           </span>
                         ))}
                       </div>
-                      <div className="mt-2 flex items-center gap-1 text-xs text-zinc-600">
+                      <div className="mt-2 flex items-center gap-1 text-xs text-zinc-400">
                         <IconClock size={13} />
                         <span>{t(`process.${step.stepKey}.dur`)}</span>
                       </div>
@@ -610,12 +610,12 @@ function TechnologiesTab({ t }: { t: TFn }) {
     <div className="grid gap-8 sm:grid-cols-2">
       {techGroups.map(({ labelKey, items }) => (
         <div key={labelKey}>
-          <p className="mb-3 text-[10px] font-semibold uppercase tracking-widest text-zinc-600">{t(labelKey)}</p>
+          <p className="mb-3 text-[10px] font-semibold uppercase tracking-widest text-zinc-500">{t(labelKey)}</p>
           <div className="flex flex-wrap gap-2">
             {items.map(({ name, Icon, isTabler }) => (
               <div
                 key={name}
-                className="flex items-center gap-1.5 rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1.5 text-xs text-zinc-400 transition-colors duration-150 hover:border-zinc-700 hover:text-zinc-300">
+                className="flex items-center gap-1.5 rounded-full border border-zinc-700 bg-zinc-900 px-3 py-1.5 text-xs text-zinc-400 transition-colors duration-150 hover:border-zinc-600 hover:text-zinc-300">
                 {isTabler ? <Icon size={15} className="text-zinc-400" /> : <Icon size={15} color="currentColor" />}
                 {name}
               </div>
