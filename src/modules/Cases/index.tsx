@@ -1,40 +1,18 @@
 'use client';
 
-import { useState } from 'react';
-
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Container, SectionHeader, SectionReveal } from '@shared/components';
 
-import { EASE } from '@lib/motion';
 import { IconArrowRight, IconBriefcase } from '@tabler/icons-react';
-import { AnimatePresence, motion } from 'framer-motion';
 
 import { CaseCard } from './CaseCard';
-import { type CaseIndustry, portfolioGridCases } from './data';
-
-type IndustryFilter = 'all' | CaseIndustry;
-
-const FILTER_KEYS: IndustryFilter[] = [
-  'all',
-  'p2p',
-  'community',
-  'hospitality',
-  'sporttech',
-  'conversion',
-  'logistics',
-  'agritech',
-];
+import { featuredHomeCases } from './data';
 
 export function Cases() {
   const t = useTranslations('cases');
-  const [activeFilter, setActiveFilter] = useState<IndustryFilter>('all');
-
-  const filteredCases =
-    activeFilter === 'all'
-      ? portfolioGridCases
-      : portfolioGridCases.filter((c) => c.industries?.includes(activeFilter));
+  const locale = useLocale();
 
   return (
     <section id="cases" className="section-padding bg-white" aria-labelledby="cases-heading">
@@ -52,59 +30,20 @@ export function Cases() {
             <p className="text-body-sm text-black/70">{t('ndaBanner')}</p>
           </div>
 
-          <div className="mb-8 flex flex-wrap gap-2">
-            {FILTER_KEYS.map((filter) => (
-              <button
-                key={filter}
-                type="button"
-                onClick={() => setActiveFilter(filter)}
-                className={`rounded-full px-4 py-2 text-sm font-medium transition ${
-                  activeFilter === filter
-                    ? 'bg-black text-white'
-                    : 'border border-black/10 bg-transparent text-black/70 hover:bg-black/[0.04]'
-                }`}>
-                {t(`filterIndustries.${filter}`)}
-              </button>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredHomeCases.map((caseItem) => (
+              <CaseCard key={caseItem.id} caseItem={caseItem} />
             ))}
           </div>
 
-          <AnimatePresence mode="popLayout">
-            {filteredCases.length > 0 ? (
-              <motion.div
-                key={activeFilter}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.25, ease: EASE }}
-                className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {filteredCases.map((caseItem) => (
-                  <motion.div
-                    key={caseItem.id}
-                    layout
-                    initial={{ opacity: 0, scale: 0.98 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.98 }}
-                    transition={{ duration: 0.2, ease: EASE }}>
-                    <CaseCard caseItem={caseItem} />
-                  </motion.div>
-                ))}
-              </motion.div>
-            ) : (
-              <motion.div
-                key="empty"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="flex flex-col items-center justify-center py-16 text-center">
-                <p className="mb-6 max-w-lg text-body-lg text-black/70">{t('emptyState')}</p>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-black/90">
-                  {t('beFirstButton')}
-                  <IconArrowRight className="h-4 w-4" />
-                </a>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <div className="mt-10 text-center">
+            <Link
+              href={`/${locale}/cases`}
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-6 py-3 text-sm font-medium text-zinc-950 transition hover:border-zinc-400">
+              {t('section.viewAll')}
+              <IconArrowRight size={14} />
+            </Link>
+          </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.06] pt-8">
             <p className="text-[15px] text-black/70">{t('bottomCtaText')}</p>

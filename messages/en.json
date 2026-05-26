@@ -516,8 +516,10 @@
       "optional": "(optional)",
       "submit": "Send message",
       "reply": "Reply within 24h",
-      "privacy": "By sending this form I agree to the",
+      "legalConsent": "I agree to the",
+      "legalConsentAnd": "and",
       "privacyLink": "Privacy Policy",
+      "termsLink": "Terms of Use",
       "successTitle": "Message sent!",
       "successDesc": "We'll get back to you within 24h."
     },
@@ -594,6 +596,29 @@
       "logistics": "Logistics",
       "agritech": "Agritech"
     },
+    "section": {
+      "viewAll": "View all cases"
+    },
+    "page": {
+      "label": "OUR WORK",
+      "title": "Selected projects",
+      "subtitle": "Work across P2P, community, hospitality, conversion sites, and logistics. Most NDA projects can be discussed on a call.",
+      "filter": {
+        "all": "All"
+      },
+      "viewCase": "View case study",
+      "nda": "NDA · details on call",
+      "cta": {
+        "title": "Working on something in one of these spaces?",
+        "sub": "Have a project in P2P, community, hospitality, or logistics? Let's discuss it.",
+        "primary": "Discuss your project",
+        "secondary": "Book a free call"
+      },
+      "metadata": {
+        "title": "Selected projects | Ortvest",
+        "description": "Work across P2P, community, hospitality, conversion sites, and logistics. Most NDA projects can be discussed on a call."
+      }
+    },
     "ndaProtected": "NDA protected",
     "viewCaseStudy": "View case study →",
     "ndaNote": "Details available on a call",
@@ -636,8 +661,12 @@
         "result": "Full P2P marketplace with verification, reviews, and item tracking."
       },
       "profitcraft": {
-        "summary": "Conversion-focused website for a US credit-building service.",
-        "result": "Trust-first marketing website for newcomers to the US financial system."
+        "summary": "Credit-building site — one product in the ProfitCraft ecosystem together with ProfitCraft Auto.",
+        "result": "Trust-first marketing site; we also built an internal CMS that cannot be shown publicly."
+      },
+      "profitcraftauto": {
+        "summary": "Personal auto broker site — the auto arm of the unified ProfitCraft system with ProfitCraft (credit).",
+        "result": "Conversion-focused site with applications and mobile UI; internal CMS delivered but not public."
       },
       "skisailclub": {
         "summary": "Digital platform for a yacht club — trip booking and community management.",
@@ -711,6 +740,9 @@
       },
       "nextCase": {
         "label": "Next case"
+      },
+      "relatedProduct": {
+        "label": "Part of the same ProfitCraft system — see also"
       },
       "cta": {
         "p2p": {
@@ -897,7 +929,7 @@
         "description": "How Ortvest designed and built a conversion-focused website for a US credit-building service targeting newcomers."
       },
       "hero": {
-        "subtitle": "A trust-first marketing website that explains credit growth paths and drives sign-ups for newcomers to the US financial system."
+        "subtitle": "The credit-building face of the ProfitCraft ecosystem — one system with ProfitCraft Auto for car approvals and financing, plus an internal CMS we cannot showcase publicly."
       },
       "stats": {
         "projectType": {
@@ -906,15 +938,18 @@
         },
         "deliverables": {
           "label": "Deliverables",
-          "value": "Design + Dev"
+          "value": "Design + Dev + CMS"
         },
         "platform": {
           "label": "Platform",
-          "value": "Web"
+          "value": "ProfitCraft ecosystem · Web"
         }
       },
-      "challenge": "Newcomers to the US often don't know how credit unlocks loans, housing, and business growth. ProfitCraft needed a site that builds trust fast, explains complex financial concepts simply, and converts visitors into leads.",
-      "solution": "We designed a clear narrative structure — problem, path, proof, action — with strong typography, trust signals, and focused CTAs. The site explains services without jargon and guides users toward consultation or sign-up.",
+      "challenge": "ProfitCraft and ProfitCraft Auto are a single US product family: credit-building on one site, personal auto brokerage on the other. Newcomers need trust and simple paths on the credit site, while operations rely on shared tooling — including a CMS we are not allowed to publish.",
+      "solution": "We designed the credit site as the trust and education layer of the unified system — clear narrative, service paths, and CTAs aligned with Auto. Alongside the public marketing sites, we delivered an internal CMS for the team; screenshots stay private.",
+      "cms": {
+        "internal": "We also built an internal CMS for the ProfitCraft team — screenshots are not available for publication."
+      },
       "features": {
         "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
         "items": {
@@ -963,6 +998,89 @@
         "development": {
           "title": "Development",
           "description": "Built a fast, SEO-optimised website with conversion-focused structure, analytics integration, and smooth CTA flows."
+        },
+        "cms": {
+          "title": "Internal CMS",
+          "description": "A custom CMS for ProfitCraft operations — content, leads, and workflows across the credit and auto products. Built for the team’s daily work; not available for public screenshots."
+        }
+      }
+    },
+    "profitcraftauto": {
+      "meta": {
+        "title": "ProfitCraft Auto — Personal Auto Broker Website | Ortvest",
+        "description": "Conversion site for the auto-broker arm of the ProfitCraft ecosystem — unified with the credit-building product and backed by an internal CMS."
+      },
+      "hero": {
+        "subtitle": "The auto-broker surface of the ProfitCraft system — paired with ProfitCraft (credit-building), with shared brand logic and an internal CMS we cannot show publicly."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Project type",
+          "value": "Conversion Site"
+        },
+        "deliverables": {
+          "label": "Deliverables",
+          "value": "Design + Dev + CMS"
+        },
+        "platform": {
+          "label": "Platform",
+          "value": "ProfitCraft ecosystem · Web + Mobile UI"
+        }
+      },
+      "challenge": "ProfitCraft Auto is the car-financing and brokerage side of the same ProfitCraft ecosystem as the credit site. Buyers with any credit history need fast trust and simple applications, while the business runs on shared operations tooling — including a CMS that stays off-portfolio.",
+      "solution": "We built Auto as the conversion layer of the unified system — green brand, social proof, step-by-step flow, and application forms on desktop and mobile, visually aligned with ProfitCraft. The internal CMS supports operations but is not published in the case study gallery.",
+      "cms": {
+        "internal": "We also built an internal CMS for the ProfitCraft team — screenshots are not available for publication."
+      },
+      "features": {
+        "subtitle": "Conversion patterns tailored to auto financing and broker trust.",
+        "items": {
+          "hero": {
+            "title": "Hero & positioning",
+            "description": "Clear “personal auto broker” promise with proof points and dual CTAs — apply now or learn more."
+          },
+          "application": {
+            "title": "Application flows",
+            "description": "Short lead forms with preferred contact method and optional context fields."
+          },
+          "process": {
+            "title": "How it works",
+            "description": "Four-step journey from application to keys — scannable on mobile and desktop."
+          },
+          "trust": {
+            "title": "Trust & social proof",
+            "description": "Client avatars, satisfaction stats, and reassurance copy at decision points."
+          },
+          "stats": {
+            "title": "Stats bar",
+            "description": "1000+ clients, nationwide coverage, 24/7 support, and any credit history called out upfront."
+          },
+          "responsive": {
+            "title": "Responsive UI",
+            "description": "Mobile mockups and layouts that preserve hierarchy and CTA prominence on small screens."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Brand identity & hero",
+          "2": "Homepage & stats",
+          "3": "Application & contact",
+          "4": "Mobile experience"
+        }
+      },
+      "sections": {
+        "design": {
+          "title": "Design",
+          "description": "Crafted the visual system, homepage hero, stats blocks, step-by-step process, and application screens with a premium automotive feel."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Built a fast marketing site with conversion-focused structure, form flows, analytics hooks, and polished responsive behavior."
+        },
+        "cms": {
+          "title": "Internal CMS",
+          "description": "Shared operations CMS for the ProfitCraft ecosystem — the same internal tool behind credit and auto, tailored to broker workflows. Not shown publicly."
         }
       }
     },
@@ -1576,7 +1694,9 @@
     "faq": "FAQ",
     "contact": "Contact",
     "language": "Language",
-    "follow": "Follow us"
+    "follow": "Follow us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use"
   },
   "modals": {
     "successTitle": "Message sent",

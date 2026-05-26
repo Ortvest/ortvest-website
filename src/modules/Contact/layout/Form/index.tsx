@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 
-import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { contactApi } from '@global/api/contact.api';
 import { IconArrowRight, IconCircleCheck, IconLoader2 } from '@tabler/icons-react';
@@ -44,6 +45,7 @@ const pillSelected = 'border-accent bg-accent font-medium text-black hover:borde
 
 export function ContactForm() {
   const t = useTranslations('contact');
+  const locale = useLocale();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -51,6 +53,7 @@ export function ContactForm() {
   const [selectedBudget, setSelectedBudget] = useState('');
   const [selectedConsultation, setSelectedConsultation] = useState<ConsultationOption>('discovery');
   const [message, setMessage] = useState('');
+  const [acceptedLegal, setAcceptedLegal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -60,7 +63,7 @@ export function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim() || !email.trim()) return;
+    if (!name.trim() || !email.trim() || !acceptedLegal) return;
 
     setIsSubmitting(true);
     try {
@@ -209,25 +212,45 @@ export function ContactForm() {
         />
       </div>
 
+      {/* Legal consent */}
+      <div className="mt-4 flex items-start gap-2.5">
+        <input
+          id="contact-legal"
+          type="checkbox"
+          checked={acceptedLegal}
+          onChange={(e) => setAcceptedLegal(e.target.checked)}
+          required
+          className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer rounded border-zinc-300 accent-accent text-black focus:ring-2 focus:ring-accent focus:ring-offset-1"
+        />
+        <label htmlFor="contact-legal" className="cursor-pointer text-xs leading-relaxed text-zinc-400">
+          {t('form.legalConsent')}{' '}
+          <Link
+            href={`/${locale}/privacy-policy`}
+            onClick={(e) => e.stopPropagation()}
+            className="text-zinc-600 underline underline-offset-2 transition hover:text-black">
+            {t('form.privacyLink')}
+          </Link>{' '}
+          {t('form.legalConsentAnd')}{' '}
+          <Link
+            href={`/${locale}/terms-of-use`}
+            onClick={(e) => e.stopPropagation()}
+            className="text-zinc-600 underline underline-offset-2 transition hover:text-black">
+            {t('form.termsLink')}
+          </Link>
+        </label>
+      </div>
+
       {/* Submit row */}
       <div className="mt-4 flex items-center justify-between">
         <button
           type="submit"
-          disabled={isSubmitting}
-          className="flex items-center gap-2 rounded-full bg-zinc-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent hover:text-black active:scale-[0.98] disabled:opacity-60">
+          disabled={isSubmitting || !acceptedLegal}
+          className="flex items-center gap-2 rounded-full bg-zinc-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent hover:text-black active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60">
           {t('form.submit')}
           {isSubmitting ? <IconLoader2 size={14} className="animate-spin" /> : <IconArrowRight size={14} />}
         </button>
         <span className="text-xs text-zinc-300">{t('form.reply')}</span>
       </div>
-
-      {/* Privacy */}
-      <p className="mt-3 text-xs text-zinc-300">
-        {t('form.privacy')}{' '}
-        <a href="#" className="cursor-pointer text-zinc-400 underline">
-          {t('form.privacyLink')}
-        </a>
-      </p>
     </form>
   );
 }

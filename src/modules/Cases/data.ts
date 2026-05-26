@@ -38,6 +38,8 @@ export interface CaseItem {
   sections?: CaseSection[];
   platforms?: string[];
   statKeys?: string[];
+  /** Another case in the same product family (e.g. ProfitCraft + ProfitCraft Auto). */
+  relatedCaseId?: string;
 }
 
 const portfolioCases: CaseItem[] = [
@@ -125,8 +127,11 @@ const portfolioCases: CaseItem[] = [
     developmentSubcategory: 'web',
     title: 'ProfitCraft',
     industries: ['conversion'],
-    challenge: 'US credit-building service needed a trustworthy, conversion-focused website for newcomers',
-    solution: 'Designed and developed a clear service website that explains credit growth paths and drives sign-ups',
+    challenge:
+      'ProfitCraft (credit-building) and ProfitCraft Auto (auto broker) are one US ecosystem — separate public sites, shared operations. The credit site had to build trust and explain paths simply while matching the Auto product family',
+    solution:
+      'Designed the credit-building site as part of the unified ProfitCraft system alongside Auto — consistent trust patterns, service paths, and CTAs. We also built an internal CMS for the team; it cannot be shown publicly',
+    relatedCaseId: 'profitcraftauto',
     stack: ['Web Design', 'Frontend Development', 'Marketing Website'],
     isNDA: false,
     url: 'https://www.profitcraft.info',
@@ -140,7 +145,7 @@ const portfolioCases: CaseItem[] = [
       'https://ucarecdn.com/c906a981-c19d-457f-9e06-c07c2e9e4709/profitcraft17.jpg',
     ],
     fullDescription:
-      'ProfitCraft is a website for a US-based company that helps newcomers build strong credit history.',
+      'ProfitCraft is the credit-building site in a unified US ecosystem together with ProfitCraft Auto. We also developed an internal CMS that is not available for public showcase.',
     sections: [
       {
         id: 'strategy',
@@ -157,6 +162,51 @@ const portfolioCases: CaseItem[] = [
         id: 'development',
         images: ['https://ucarecdn.com/c906a981-c19d-457f-9e06-c07c2e9e4709/profitcraft17.jpg'],
       },
+      { id: 'cms', images: [], isInternal: true },
+    ],
+  },
+  {
+    id: 'profitcraftauto',
+    category: 'designAndDevelopment',
+    designSubcategory: 'web',
+    developmentSubcategory: 'web',
+    title: 'ProfitCraft Auto',
+    industries: ['conversion'],
+    challenge:
+      'ProfitCraft Auto is the auto-broker arm of the same ProfitCraft ecosystem as the credit-building site. Buyers with any credit history needed a conversion site that fits the family brand and drives applications',
+    solution:
+      'Built the Auto landing as the second public surface of the unified ProfitCraft system — trust-first flows, applications, and mobile UI aligned with the credit site. Internal CMS was delivered for operations but cannot be published',
+    relatedCaseId: 'profitcraft',
+    stack: ['Web Design', 'Frontend Development', 'Marketing Website'],
+    isNDA: false,
+    coverImage: 'https://ucarecdn.com/b2afe98c-95ab-44af-be27-584e9dd5a79a/pachcaca07.png',
+    preview: 'https://ucarecdn.com/b2afe98c-95ab-44af-be27-584e9dd5a79a/pachcaca07.png',
+    accentColor: '#1a4d3e',
+    portfolio: true,
+    images: [
+      'https://ucarecdn.com/4c111d5d-0e42-4cd4-a311-726f341a65ed/pachcaca.png',
+      'https://ucarecdn.com/1af223b4-68c9-4a51-b2cc-61cf52d5d6a7/pachcaca10.png',
+      'https://ucarecdn.com/b57afd5f-c6ac-4f47-bb8f-8d66712b8e7a/pachcaca12.png',
+      'https://ucarecdn.com/e7b8636f-6fe0-4f01-afda-945972c6ba93/1mplll.png',
+    ],
+    fullDescription:
+      'ProfitCraft Auto is the auto-broker marketing site in the unified ProfitCraft ecosystem together with the credit-building product. An internal CMS was also built but is not shown publicly.',
+    sections: [
+      {
+        id: 'design',
+        images: [
+          'https://ucarecdn.com/4c111d5d-0e42-4cd4-a311-726f341a65ed/pachcaca.png',
+          'https://ucarecdn.com/1af223b4-68c9-4a51-b2cc-61cf52d5d6a7/pachcaca10.png',
+        ],
+      },
+      {
+        id: 'development',
+        images: [
+          'https://ucarecdn.com/b57afd5f-c6ac-4f47-bb8f-8d66712b8e7a/pachcaca12.png',
+          'https://ucarecdn.com/e7b8636f-6fe0-4f01-afda-945972c6ba93/1mplll.png',
+        ],
+      },
+      { id: 'cms', images: [], isInternal: true },
     ],
   },
   {
@@ -355,7 +405,7 @@ const portfolioCases: CaseItem[] = [
     category: 'design',
     designSubcategory: 'brand',
     title: '[Re.] skin&hair',
-    industries: [],
+    industries: ['conversion'],
     challenge: 'Beauty brand needed modern, clean identity for skin and hair care line',
     solution: 'Minimalist brand system with organic shapes and premium feel',
     stack: ['Brand Identity', 'Visual Design', 'Adobe Illustrator'],
@@ -441,3 +491,10 @@ export const cases: CaseItem[] = [...portfolioCases, ...brandCases];
 
 /** Homepage portfolio grid */
 export const portfolioGridCases = portfolioCases;
+
+/** Featured on homepage Cases section (order preserved) */
+export const featuredHomeCaseIds = ['yachtmate', 'sharingground', 'pachaca'] as const;
+
+export const featuredHomeCases = featuredHomeCaseIds
+  .map((id) => portfolioCases.find((c) => c.id === id))
+  .filter((c): c is CaseItem => c != null);

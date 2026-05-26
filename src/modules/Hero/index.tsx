@@ -56,7 +56,10 @@ export function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section id="hero" className="bg-black px-6 py-10 md:px-12 md:py-14" aria-labelledby="hero-heading">
+    <section
+      id="hero"
+      className="bg-black px-6 pb-10 pt-24 sm:px-6 sm:pt-10 sm:pb-10 md:px-12 md:py-14"
+      aria-labelledby="hero-heading">
       <style>{`
         @keyframes hero-center-pulse {
           0%, 100% { transform: translate(-50%, -50%) scale(1); }

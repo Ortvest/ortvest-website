@@ -514,8 +514,10 @@
       "optional": "(optional)",
       "submit": "Wyślij wiadomość",
       "reply": "Odpowiedź w 24h",
-      "privacy": "Wysyłając formularz, akceptuję",
+      "legalConsent": "Akceptuję",
+      "legalConsentAnd": "oraz",
       "privacyLink": "Politykę prywatności",
+      "termsLink": "Regulamin",
       "successTitle": "Wiadomość wysłana!",
       "successDesc": "Odezwiemy się w ciągu 24h."
     },
@@ -592,6 +594,29 @@
       "logistics": "Logistyka",
       "agritech": "Agritech"
     },
+    "section": {
+      "viewAll": "Zobacz wszystkie projekty"
+    },
+    "page": {
+      "label": "NASZE PROJEKTY",
+      "title": "Wybrane projekty",
+      "subtitle": "Prace w obszarach P2P, społeczności, hospitality, stron konwersyjnych i logistyki. Większość projektów NDA można omówić na rozmowie.",
+      "filter": {
+        "all": "Wszystkie"
+      },
+      "viewCase": "Zobacz case study",
+      "nda": "NDA · szczegóły na rozmowie",
+      "cta": {
+        "title": "Pracujesz nad czymś w tych obszarach?",
+        "sub": "Masz projekt w P2P, społeczności, hospitality lub logistyce? Porozmawiajmy.",
+        "primary": "Omów projekt",
+        "secondary": "Zarezerwuj rozmowę"
+      },
+      "metadata": {
+        "title": "Wybrane projekty | Ortvest",
+        "description": "Prace w obszarach P2P, społeczności, hospitality, stron konwersyjnych i logistyki. Większość projektów NDA można omówić na rozmowie."
+      }
+    },
     "ndaProtected": "Chronione NDA",
     "viewCaseStudy": "Zobacz case study →",
     "ndaNote": "Szczegóły dostępne podczas rozmowy",
@@ -634,8 +659,12 @@
         "result": "Pełny marketplace P2P z weryfikacją, opiniami i śledzeniem przedmiotów."
       },
       "profitcraft": {
-        "summary": "Strona konwersyjna dla amerykańskiej usługi budowania historii kredytowej.",
-        "result": "Strona oparta na zaufaniu dla nowych mieszkańców systemu finansowego USA."
+        "summary": "Strona credit-building — jeden produkt w ekosystemie ProfitCraft razem z ProfitCraft Auto.",
+        "result": "Strona marketingowa oparta na zaufaniu; zbudowaliśmy też wewnętrzny CMS, którego nie możemy pokazać publicznie."
+      },
+      "profitcraftauto": {
+        "summary": "Strona personal auto broker — auto-odnoga zunifikowanego systemu ProfitCraft z ProfitCraft (kredyt).",
+        "result": "Strona konwersyjna z wnioskami i UI mobilnym; wewnętrzny CMS dostarczony, ale niepubliczny."
       },
       "skisailclub": {
         "summary": "Platforma cyfrowa dla klubu jachtowego — rezerwacje i społeczność.",
@@ -709,6 +738,9 @@
       },
       "nextCase": {
         "label": "Następny projekt"
+      },
+      "relatedProduct": {
+        "label": "Część tego samego systemu ProfitCraft — zobacz też"
       },
       "cta": {
         "p2p": {
@@ -895,7 +927,7 @@
         "description": "Strona konwersyjna dla usługi budowania kredytu w USA."
       },
       "hero": {
-        "subtitle": "Strona oparta na zaufaniu — ścieżki budowania kredytu i leady dla nowych mieszkańców USA."
+        "subtitle": "Warstwa credit-building ekosystemu ProfitCraft — jeden system z ProfitCraft Auto dla aut i finansowania; wewnętrznego CMS nie pokazujemy publicznie."
       },
       "stats": {
         "projectType": {
@@ -904,15 +936,18 @@
         },
         "deliverables": {
           "label": "Zakres",
-          "value": "Design + Dev"
+          "value": "Design + Dev + CMS"
         },
         "platform": {
           "label": "Platforma",
-          "value": "Web"
+          "value": "Ekosystem ProfitCraft · Web"
         }
       },
-      "challenge": "Nowi mieszkańcy USA nie znają roli kredytu. Potrzebna była strona budująca zaufanie i konwertująca bez żargonu.",
-      "solution": "Narracja: problem, ścieżka, dowód, akcja. Typografia, sygnały zaufania i CTA prowadzące do kontaktu.",
+      "challenge": "ProfitCraft i ProfitCraft Auto to jedna rodzina produktów w USA: budowanie kredytu na jednej stronie, auto broker na drugiej. Potrzebne zaufanie i proste ścieżki na stronie kredytowej, a operacje opierają się na wspólnych narzędziach — w tym CMS, którego nie publikujemy.",
+      "solution": "Zaprojektowaliśmy stronę kredytową jako warstwę zaufania i edukacji w zunifikowanym systemie — jasna narracja, ścieżki usług i CTA spójne z Auto. Obok publicznych stron dostarczyliśmy wewnętrzny CMS dla zespołu; zrzuty ekranu pozostają prywatne.",
+      "cms": {
+        "internal": "Zbudowaliśmy też wewnętrzny CMS dla zespołu ProfitCraft — zrzuty ekranu nie są dostępne do publikacji."
+      },
       "features": {
         "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
         "items": {
@@ -961,6 +996,89 @@
         "development": {
           "title": "Development",
           "description": "Zbudowaliśmy szybką, zoptymalizowaną pod SEO stronę z konwersyjną strukturą, integracją analityki i płynnymi przepływami CTA."
+        },
+        "cms": {
+          "title": "Wewnętrzny CMS",
+          "description": "Niestandardowy CMS operacyjny ProfitCraft — treści, leady i procesy dla produktów kredytowych i auto. Do codziennej pracy zespołu; bez publicznych zrzutów ekranu."
+        }
+      }
+    },
+    "profitcraftauto": {
+      "meta": {
+        "title": "ProfitCraft Auto — Strona personal auto broker | Ortvest",
+        "description": "Strona konwersyjna dla auto brokera w ekosystemie ProfitCraft — zunifikowana z produktem kredytowym i wewnętrznym CMS."
+      },
+      "hero": {
+        "subtitle": "Warstwa auto-brokera systemu ProfitCraft — w parze z ProfitCraft (credit-building), wspólna logika marki i wewnętrzny CMS, którego nie pokazujemy publicznie."
+      },
+      "stats": {
+        "projectType": {
+          "label": "Typ projektu",
+          "value": "Conversion Site"
+        },
+        "deliverables": {
+          "label": "Rezultat",
+          "value": "Design + Dev + CMS"
+        },
+        "platform": {
+          "label": "Platforma",
+          "value": "Ekosystem ProfitCraft · Web + Mobile UI"
+        }
+      },
+      "challenge": "ProfitCraft Auto to strona aut i finansowania w tym samym ekosystemie ProfitCraft co produkt kredytowy. Kupujący z dowolną historią kredytową potrzebują szybkiego zaufania i prostych wniosków, a biznes działa na wspólnych narzędziach operacyjnych — w tym CMS poza portfolio.",
+      "solution": "Zbudowaliśmy Auto jako warstwę konwersji zunifikowanego systemu — zielony brand, social proof, proces krok po kroku i formularze na desktop i mobile, spójne wizualnie z ProfitCraft. Wewnętrzny CMS wspiera operacje, ale nie jest publikowany w galerii case study.",
+      "cms": {
+        "internal": "Zbudowaliśmy też wewnętrzny CMS dla zespołu ProfitCraft — zrzuty ekranu nie są dostępne do publikacji."
+      },
+      "features": {
+        "subtitle": "Wzorce konwersji dopasowane do finansowania aut i zaufania do brokera.",
+        "items": {
+          "hero": {
+            "title": "Hero i pozycjonowanie",
+            "description": "Jasna obietnica personal auto broker z dowodami i dwoma CTA — złóż wniosek lub dowiedz się więcej."
+          },
+          "application": {
+            "title": "Formularze zgłoszeń",
+            "description": "Krótkie formularze z preferowaną formą kontaktu i opcjonalnym kontekstem."
+          },
+          "process": {
+            "title": "Jak to działa",
+            "description": "Cztery kroki od zgłoszenia do kluczyków — czytelne na mobile i desktop."
+          },
+          "trust": {
+            "title": "Zaufanie i social proof",
+            "description": "Awatary klientów, statystyki satysfakcji i tekst wspierający w punktach decyzji."
+          },
+          "stats": {
+            "title": "Pasek statystyk",
+            "description": "1000+ klientów, działanie w całym kraju, wsparcie 24/7 i dowolna historia kredytowa."
+          },
+          "responsive": {
+            "title": "Responsywny UI",
+            "description": "Makiety mobile z zachowaną hierarchią i widocznymi CTA na małych ekranach."
+          }
+        }
+      },
+      "gallery": {
+        "captions": {
+          "1": "Identyfikacja wizualna i hero",
+          "2": "Strona główna i statystyki",
+          "3": "Zgłoszenie i kontakt",
+          "4": "Wersja mobilna"
+        }
+      },
+      "sections": {
+        "design": {
+          "title": "Design",
+          "description": "System wizualny, hero, bloki statystyk, proces krok po kroku i ekrany zgłoszeń w premium automotive stylu."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Szybka strona marketingowa z konwersyjną strukturą, formularzami, analityką i responsywnością."
+        },
+        "cms": {
+          "title": "Wewnętrzny CMS",
+          "description": "Wspólny CMS operacyjny ekosystemu ProfitCraft — ten sam wewnętrzny tool za kredytem i autem, pod workflow brokera. Niepokazywany publicznie."
         }
       }
     },
@@ -1574,7 +1692,9 @@
     "faq": "FAQ",
     "contact": "Kontakt",
     "language": "Język",
-    "follow": "Obserwuj nas"
+    "follow": "Obserwuj nas",
+    "privacyPolicy": "Polityka prywatności",
+    "termsOfUse": "Regulamin"
   },
   "modals": {
     "successTitle": "Wiadomość wysłana",

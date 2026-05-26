@@ -91,6 +91,7 @@ export const CASE_STUDY_ORDER = [
   'yachtmate',
   'sharingground',
   'profitcraft',
+  'profitcraftauto',
   'skisailclub',
   'navexa',
   'teya',
@@ -143,6 +144,18 @@ export const CASE_STUDY_CONFIG: Record<string, CaseStudyConfig> = {
       { key: 'leads', icon: 'zap' },
       { key: 'responsive', icon: 'layout' },
       { key: 'seo', icon: 'globe' },
+    ],
+  },
+  profitcraftauto: {
+    ctaTemplate: 'conversion',
+    galleryType: 'work',
+    featureKeys: [
+      { key: 'hero', icon: 'sparkles' },
+      { key: 'application', icon: 'zap' },
+      { key: 'process', icon: 'book-open' },
+      { key: 'trust', icon: 'shield-check' },
+      { key: 'stats', icon: 'bar-chart' },
+      { key: 'responsive', icon: 'layout' },
     ],
   },
   skisailclub: {

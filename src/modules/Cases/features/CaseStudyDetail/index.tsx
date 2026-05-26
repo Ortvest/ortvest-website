@@ -41,6 +41,9 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
 
   const nextSlug = getNextCaseSlug(studyId);
   const nextCaseItem = cases.find((c) => c.id === nextSlug);
+  const relatedCaseItem = caseItem.relatedCaseId
+    ? cases.find((c) => c.id === caseItem.relatedCaseId)
+    : undefined;
 
   const hasSections = (caseItem.sections?.length ?? 0) > 0;
 
@@ -98,6 +101,17 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
             )}
 
             <p className="mt-4 max-w-3xl text-body-lg text-black/60">{t('hero.subtitle')}</p>
+
+            {relatedCaseItem && !relatedCaseItem.isNDA && (
+              <p className="mt-4 text-sm text-black/55">
+                {tShared('relatedProduct.label')}{' '}
+                <Link
+                  href={`/${locale}/cases/${relatedCaseItem.id}`}
+                  className="font-medium text-black underline-offset-2 hover:text-accent-dark hover:underline">
+                  {relatedCaseItem.title}
+                </Link>
+              </p>
+            )}
 
             {mainImage && (
               <div className="mt-8 overflow-hidden rounded-2xl border border-black/[0.08] shadow-card">
