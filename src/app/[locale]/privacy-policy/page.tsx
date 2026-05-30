@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
+import { LegalPageLayout } from '@shared/components/LegalPageLayout';
+import { LegalList, LegalParagraph, LegalSection, LegalSubheading } from '@shared/components/LegalSection';
+
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
-import { LegalPageLayout } from '@shared/components/LegalPageLayout';
-import { LegalList, LegalParagraph, LegalSection, LegalSubheading } from '@shared/components/LegalSection';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Ortvest',
@@ -51,7 +52,9 @@ export default function PrivacyPolicyPage({ params: { locale } }: { params: { lo
         </LegalSection>
 
         <LegalSection number="3" title="What Data We Collect">
-          <LegalParagraph>When you submit the contact form on our Website, we collect the following data:</LegalParagraph>
+          <LegalParagraph>
+            When you submit the contact form on our Website, we collect the following data:
+          </LegalParagraph>
           <LegalSubheading>3.1 Data you provide directly (contact form)</LegalSubheading>
           <LegalList
             items={[
@@ -126,7 +129,8 @@ export default function PrivacyPolicyPage({ params: { locale } }: { params: { lo
 
         <LegalSection number="6" title="Data Sharing">
           <LegalParagraph>
-            We do not sell your personal data. We may share data with trusted third parties only to the extent necessary:
+            We do not sell your personal data. We may share data with trusted third parties only to the extent
+            necessary:
           </LegalParagraph>
           <LegalList
             items={[

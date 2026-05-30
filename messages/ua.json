@@ -506,7 +506,7 @@
         "label": "Email",
         "placeholder": "you@company.com"
       },
-    "projectType": "Тип проєкту",
+      "projectType": "Тип проєкту",
       "budget": "Бюджет",
       "consultation": "Тип консультації",
       "message": {

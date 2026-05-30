@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
+import { LegalPageLayout } from '@shared/components/LegalPageLayout';
+import { LegalList, LegalParagraph, LegalSection, LegalSubheading } from '@shared/components/LegalSection';
+
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
-import { LegalPageLayout } from '@shared/components/LegalPageLayout';
-import { LegalList, LegalParagraph, LegalSection, LegalSubheading } from '@shared/components/LegalSection';
 
 export const metadata: Metadata = {
   title: 'Terms of Use | Ortvest',
@@ -36,14 +37,10 @@ export default function TermsOfUsePage({ params: { locale } }: { params: { local
         </LegalSection>
 
         <LegalSection number="2" title="Services Described on the Website">
-          <LegalParagraph>The Website presents information about services provided by Ortvest, including:</LegalParagraph>
-          <LegalList
-            items={[
-              'Web and mobile application development',
-              'UI/UX design',
-              'Digital marketing services',
-            ]}
-          />
+          <LegalParagraph>
+            The Website presents information about services provided by Ortvest, including:
+          </LegalParagraph>
+          <LegalList items={['Web and mobile application development', 'UI/UX design', 'Digital marketing services']} />
           <LegalParagraph>
             The content of the Website is for informational purposes only and does not constitute a binding offer within
             the meaning of the Polish Civil Code, unless explicitly stated otherwise in a separate written agreement.
@@ -82,9 +79,7 @@ export default function TermsOfUsePage({ params: { locale } }: { params: { local
               'Other applicable intellectual property laws',
             ]}
           />
-          <LegalParagraph>
-            You may NOT, without the prior written consent of the Company:
-          </LegalParagraph>
+          <LegalParagraph>You may NOT, without the prior written consent of the Company:</LegalParagraph>
           <LegalList
             items={[
               'Copy, reproduce, distribute, or publish any content from the Website',
@@ -185,14 +180,15 @@ export default function TermsOfUsePage({ params: { locale } }: { params: { local
             this page with a revised &quot;Last updated&quot; date.
           </LegalParagraph>
           <LegalParagraph>
-            Continued use of the Website after publication of the updated Terms constitutes acceptance of the changes. If
-            you do not agree with the updated Terms, you must discontinue use of the Website.
+            Continued use of the Website after publication of the updated Terms constitutes acceptance of the changes.
+            If you do not agree with the updated Terms, you must discontinue use of the Website.
           </LegalParagraph>
         </LegalSection>
 
         <LegalSection number="11" title="Governing Law and Jurisdiction">
           <LegalParagraph>
-            These Terms are governed by and construed in accordance with the law of the Republic of Poland, in particular:
+            These Terms are governed by and construed in accordance with the law of the Republic of Poland, in
+            particular:
           </LegalParagraph>
           <LegalList
             items={[
@@ -208,14 +204,14 @@ export default function TermsOfUsePage({ params: { locale } }: { params: { local
           <LegalSubheading>11.1 Clients in the United States</LegalSubheading>
           <LegalParagraph>
             If you are accessing the Website from the United States, you acknowledge that the Website is operated from
-            Poland and governed by Polish and EU law. No representations are made that the content of the Website complies
-            with US federal or state laws. Use of the Website from the US is at your own discretion and risk. The Company
-            does not target US consumers; these Terms apply exclusively in a B2B context.
+            Poland and governed by Polish and EU law. No representations are made that the content of the Website
+            complies with US federal or state laws. Use of the Website from the US is at your own discretion and risk.
+            The Company does not target US consumers; these Terms apply exclusively in a B2B context.
           </LegalParagraph>
           <LegalSubheading>11.2 Clients in Ukraine</LegalSubheading>
           <LegalParagraph>
-            If you are accessing the Website from Ukraine, you acknowledge that the governing law of these Terms is Polish
-            law and that any contractual relationship between you and the Company shall be subject to Polish
+            If you are accessing the Website from Ukraine, you acknowledge that the governing law of these Terms is
+            Polish law and that any contractual relationship between you and the Company shall be subject to Polish
             jurisdiction. The parties may agree in a separate written contract to alternative dispute resolution
             mechanisms (e.g., ICC arbitration) if needed for a specific engagement.
           </LegalParagraph>

@@ -87,9 +87,7 @@ export function Footer() {
               <LangSwitch />
             </div>
             <div className="h-5 w-px shrink-0 bg-zinc-200" aria-hidden />
-            <Link
-              href="#contact"
-              className="flex shrink-0 items-center gap-1.5 text-[13px] font-medium text-zinc-950">
+            <Link href="#contact" className="flex shrink-0 items-center gap-1.5 text-[13px] font-medium text-zinc-950">
               {t('getInTouch')}
               <IconArrowUpRight size={14} stroke={1.75} aria-hidden />
             </Link>
@@ -113,6 +111,15 @@ export function Footer() {
               <IconArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
+        </div>
+
+        <div className="mt-10 border-t border-zinc-100 pt-6 md:container-main md:mx-auto">
+          <p className="text-center text-body-sm text-black/50">
+            Ortvest sp. z o.o. &nbsp;|&nbsp; NIP: 7812111756 &nbsp;|&nbsp; KRS: 0001244461
+          </p>
+          <p className="mt-1 text-center text-body-sm text-black/50">
+            ul. Szamarzewskiego 21/2, Poznan, Poland
+          </p>
         </div>
       </div>
     </footer>

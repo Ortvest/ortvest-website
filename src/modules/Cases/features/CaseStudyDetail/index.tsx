@@ -41,9 +41,7 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
 
   const nextSlug = getNextCaseSlug(studyId);
   const nextCaseItem = cases.find((c) => c.id === nextSlug);
-  const relatedCaseItem = caseItem.relatedCaseId
-    ? cases.find((c) => c.id === caseItem.relatedCaseId)
-    : undefined;
+  const relatedCaseItem = caseItem.relatedCaseId ? cases.find((c) => c.id === caseItem.relatedCaseId) : undefined;
 
   const hasSections = (caseItem.sections?.length ?? 0) > 0;
 
