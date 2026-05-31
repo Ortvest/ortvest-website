@@ -8,7 +8,6 @@ import { Divider } from '@shared/components';
 
 import { LangSwitch } from '@modules/Header/features/LangSwitch';
 import AppLogo from '@public/icons/AppLogoHorizontal.svg';
-import { IconArrowUpRight } from '@tabler/icons-react';
 
 const footerNavItems = [
   { key: 'about', href: '#about' },
@@ -87,9 +86,8 @@ export function Footer() {
               <LangSwitch />
             </div>
             <div className="h-5 w-px shrink-0 bg-zinc-200" aria-hidden />
-            <Link href="#contact" className="flex shrink-0 items-center gap-1.5 text-[13px] font-medium text-zinc-950">
-              {t('getInTouch')}
-              <IconArrowUpRight size={14} stroke={1.75} aria-hidden />
+            <Link href="mailto:contact@ortvest.com" className="flex shrink-0 items-center text-[13px] font-medium text-zinc-950">
+              contact@ortvest.com
             </Link>
           </div>
 
@@ -104,12 +102,11 @@ export function Footer() {
           {/* Contact CTA */}
           <div className="hidden sm:block">
             <h3 className="text-xs font-semibold uppercase tracking-widest text-black/40">{t('contact')}</h3>
-            <Link
-              href="#contact"
-              className="group mt-3 inline-flex items-center gap-1 text-body-sm font-medium text-black transition hover:text-accent-dark">
-              {t('getInTouch')}
-              <IconArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
+            <a
+              href="mailto:contact@ortvest.com"
+              className="group mt-3 inline-flex text-body-sm font-medium text-black transition hover:text-black/70">
+              contact@ortvest.com
+            </a>
           </div>
         </div>
 
@@ -117,9 +114,7 @@ export function Footer() {
           <p className="text-center text-body-sm text-black/50">
             Ortvest sp. z o.o. &nbsp;|&nbsp; NIP: 7812111756 &nbsp;|&nbsp; KRS: 0001244461
           </p>
-          <p className="mt-1 text-center text-body-sm text-black/50">
-            ul. Szamarzewskiego 21/2, Poznan, Poland
-          </p>
+          <p className="mt-1 text-center text-body-sm text-black/50">ul. Szamarzewskiego 21/2, Poznan, Poland</p>
         </div>
       </div>
     </footer>

@@ -1,0 +1,7 @@
+.review-card__text::before {
+  content: '"';
+}
+
+.review-card__text::after {
+  content: '"';
+}

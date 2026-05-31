@@ -1866,5 +1866,34 @@
       "title": "Blog | Ortvest",
       "description": "Insights on design, development, and growth from the Ortvest team."
     }
+  },
+  "reviews": {
+    "label": "Reviews",
+    "title": "What clients say.",
+    "cta": {
+      "text": "Worked with us? We'd love to hear from you.",
+      "link": "Leave a review"
+    },
+    "form": {
+      "title": "Leave a review",
+      "subtitle": "Your feedback helps us improve and helps others make the right choice.",
+      "rating": "Rating",
+      "name": "Your name",
+      "namePlaceholder": "John Smith",
+      "role": "Your role",
+      "rolePlaceholder": "CEO / Founder / CTO",
+      "company": "Company",
+      "companyPlaceholder": "Company name",
+      "text": "Your review",
+      "textPlaceholder": "Tell us about your experience working with Ortvest.",
+      "submit": "Submit review",
+      "submitting": "Submitting...",
+      "error": "Something went wrong. Please try again.",
+      "success": {
+        "title": "Thank you!",
+        "text": "Your review has been submitted and will appear after moderation.",
+        "back": "Back to home"
+      }
+    }
   }
 }

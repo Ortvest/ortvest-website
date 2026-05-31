@@ -1,0 +1,135 @@
+'use client';
+
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+
+import { animate, motion, useMotionValue, type PanInfo } from 'framer-motion';
+
+import { EASE } from '@lib/motion';
+
+import { ReviewCard, type ReviewItem } from './ReviewCard';
+
+const PER_PAGE = 3;
+const AUTOPLAY_MS = 7000;
+
+function chunkReviews(reviews: ReviewItem[], size: number) {
+  const pages: ReviewItem[][] = [];
+  for (let i = 0; i < reviews.length; i += size) {
+    pages.push(reviews.slice(i, i + size));
+  }
+  return pages;
+}
+
+export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
+  const pages = useMemo(() => chunkReviews(reviews, PER_PAGE), [reviews]);
+  const pageCount = pages.length;
+  const [activePage, setActivePage] = useState(0);
+  const [slideWidth, setSlideWidth] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const x = useMotionValue(0);
+
+  const goTo = useCallback(
+    (index: number) => {
+      if (pageCount <= 1) return;
+      setActivePage(Math.max(0, Math.min(pageCount - 1, index)));
+    },
+    [pageCount]
+  );
+
+  useEffect(() => {
+    const node = containerRef.current;
+    if (!node) return;
+
+    const measure = () => setSlideWidth(node.offsetWidth);
+    measure();
+
+    const observer = new ResizeObserver(measure);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (slideWidth === 0) return;
+    animate(x, -activePage * slideWidth, { duration: 0.45, ease: EASE });
+  }, [activePage, slideWidth, x]);
+
+  useEffect(() => {
+    if (pageCount <= 1) return;
+    const timer = window.setInterval(() => {
+      setActivePage((prev) => (prev + 1) % pageCount);
+    }, AUTOPLAY_MS);
+    return () => window.clearInterval(timer);
+  }, [pageCount]);
+
+  const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+    if (slideWidth === 0) return;
+
+    const threshold = slideWidth * 0.18;
+    let next = activePage;
+
+    if (info.offset.x < -threshold || info.velocity.x < -400) {
+      next = activePage + 1;
+    } else if (info.offset.x > threshold || info.velocity.x > 400) {
+      next = activePage - 1;
+    }
+
+    goTo(next);
+  };
+
+  if (pageCount <= 1) {
+    return (
+      <div className="grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {reviews.map((review) => (
+          <ReviewCard key={review._id} review={review} />
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <div ref={containerRef} className="overflow-hidden" aria-roledescription="carousel">
+        <motion.div
+          className="flex cursor-grab select-none active:cursor-grabbing"
+          style={{ x }}
+          drag="x"
+          dragElastic={0.08}
+          dragMomentum={false}
+          dragConstraints={
+            slideWidth > 0
+              ? { left: -(pageCount - 1) * slideWidth, right: 0 }
+              : undefined
+          }
+          onDragEnd={handleDragEnd}>
+          {pages.map((pageReviews, pageIndex) => (
+            <div
+              key={pageIndex}
+              className="grid w-full shrink-0 grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {pageReviews.map((review) => (
+                <ReviewCard key={review._id} review={review} />
+              ))}
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
+      <div className="mt-8 flex items-center justify-center gap-2" role="tablist" aria-label="Reviews pagination">
+        {pages.map((_, index) => {
+          const isActive = index === activePage;
+          return (
+            <button
+              key={index}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              aria-label={`Page ${index + 1}`}
+              onClick={() => goTo(index)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                isActive ? 'w-7 bg-black' : 'w-2 bg-black/20 hover:bg-black/35'
+              }`}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
+}

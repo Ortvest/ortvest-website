@@ -16,6 +16,7 @@ import { Hero } from '@modules/Hero';
 import { Industries } from '@modules/Industries';
 import { Modal } from '@modules/Modals';
 import { Process } from '@modules/Process';
+import { Reviews } from '@modules/Reviews';
 import { ServicesSection } from '@modules/Services/ServicesSection';
 import { Team } from '@modules/Team';
 import { Technologies } from '@modules/Technologies';
@@ -39,11 +40,14 @@ export default function Home({ params: { locale } }: { params: { locale: string 
         {/* <Industries /> */}
         {/* <Process /> */}
         {/* <Technologies /> */}
+        <Reviews />
         <Cases />
+        
         <Consultation />
         <Suspense fallback={<BlogSectionSkeleton />}>
           <BlogSection locale={locale} />
         </Suspense>
+   
         <FAQ />
         <Contact />
       </main>

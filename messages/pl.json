@@ -1864,5 +1864,34 @@
       "title": "Blog | Ortvest",
       "description": "Artykuły o designie, rozwoju i wzroście od zespołu Ortvest."
     }
+  },
+  "reviews": {
+    "label": "Opinie",
+    "title": "Co mówią klienci.",
+    "cta": {
+      "text": "Pracowaliście z nami? Chętnie poznamy Waszą opinię.",
+      "link": "Zostaw opinię"
+    },
+    "form": {
+      "title": "Zostaw opinię",
+      "subtitle": "Twoja opinia pomaga nam się rozwijać i pomaga innym podjąć właściwą decyzję.",
+      "rating": "Ocena",
+      "name": "Twoje imię",
+      "namePlaceholder": "Jan Kowalski",
+      "role": "Twoja rola",
+      "rolePlaceholder": "CEO / Founder / CTO",
+      "company": "Firma",
+      "companyPlaceholder": "Nazwa firmy",
+      "text": "Twoja opinia",
+      "textPlaceholder": "Opowiedz o swoim doświadczeniu współpracy z Ortvest.",
+      "submit": "Wyślij opinię",
+      "submitting": "Wysyłanie...",
+      "error": "Coś poszło nie tak. Spróbuj ponownie.",
+      "success": {
+        "title": "Dziękujemy!",
+        "text": "Twoja opinia została wysłana i pojawi się po moderacji.",
+        "back": "Wróć na stronę główną"
+      }
+    }
   }
 }
