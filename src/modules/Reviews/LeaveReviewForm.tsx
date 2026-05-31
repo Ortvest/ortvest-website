@@ -31,10 +31,12 @@ export function LeaveReviewForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [acceptedConsent, setAcceptedConsent] = useState(false);
   const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!acceptedConsent) return;
     setIsSubmitting(true);
     setError('');
 
@@ -164,16 +166,35 @@ export function LeaveReviewForm() {
             rows={5}
             className={`${inputClass} resize-none`}
           />
-          <p className="mt-1 text-right text-xs text-zinc-400">
-            {formData.text.length}/1000
-          </p>
+          <p className="mt-1 text-right text-xs text-zinc-400">{formData.text.length}/1000</p>
         </div>
 
         {error && <p className="text-sm text-red-500">{error}</p>}
 
+        <div className="flex items-start gap-2.5">
+          <input
+            id="review-consent"
+            type="checkbox"
+            checked={acceptedConsent}
+            onChange={(e) => setAcceptedConsent(e.target.checked)}
+            required
+            className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer rounded border-zinc-300 accent-accent text-black focus:ring-2 focus:ring-accent focus:ring-offset-1"
+          />
+          <label htmlFor="review-consent" className="cursor-pointer text-xs leading-relaxed text-zinc-400">
+            {t('consent')}{' '}
+            <Link
+              href={`/${locale}/privacy-policy`}
+              onClick={(e) => e.stopPropagation()}
+              className="text-zinc-600 underline underline-offset-2 transition hover:text-black">
+              {t('consentPrivacyLink')}
+            </Link>
+            .
+          </label>
+        </div>
+
         <button
           type="submit"
-          disabled={isSubmitting}
+          disabled={isSubmitting || !acceptedConsent}
           className="inline-flex w-fit items-center gap-2 rounded-full bg-zinc-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent hover:text-black disabled:cursor-not-allowed disabled:opacity-60">
           {isSubmitting ? (
             <>

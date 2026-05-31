@@ -1,8 +1,8 @@
-import { ObjectId } from 'mongodb';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { isAdminAuthorized } from '@lib/admin-auth';
-import { getReviewsCollection, toAdminReview, type ReviewDoc } from '@lib/models/review';
+import { getReviewsCollection, type ReviewDoc, toAdminReview } from '@lib/models/review';
+import { ObjectId } from 'mongodb';
 
 type RouteContext = { params: { id: string } };
 

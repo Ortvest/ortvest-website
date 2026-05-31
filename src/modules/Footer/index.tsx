@@ -86,7 +86,9 @@ export function Footer() {
               <LangSwitch />
             </div>
             <div className="h-5 w-px shrink-0 bg-zinc-200" aria-hidden />
-            <Link href="mailto:contact@ortvest.com" className="flex shrink-0 items-center text-[13px] font-medium text-zinc-950">
+            <Link
+              href="mailto:contact@ortvest.com"
+              className="flex shrink-0 items-center text-[13px] font-medium text-zinc-950">
               contact@ortvest.com
             </Link>
           </div>

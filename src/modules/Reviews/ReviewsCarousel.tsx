@@ -2,9 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-import { animate, motion, useMotionValue, type PanInfo } from 'framer-motion';
-
 import { EASE } from '@lib/motion';
+import { animate, motion, type PanInfo, useMotionValue } from 'framer-motion';
 
 import { ReviewCard, type ReviewItem } from './ReviewCard';
 
@@ -94,11 +93,7 @@ export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
           drag="x"
           dragElastic={0.08}
           dragMomentum={false}
-          dragConstraints={
-            slideWidth > 0
-              ? { left: -(pageCount - 1) * slideWidth, right: 0 }
-              : undefined
-          }
+          dragConstraints={slideWidth > 0 ? { left: -(pageCount - 1) * slideWidth, right: 0 } : undefined}
           onDragEnd={handleDragEnd}>
           {pages.map((pageReviews, pageIndex) => (
             <div

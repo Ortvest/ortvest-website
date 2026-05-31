@@ -1,6 +1,5 @@
-import { ObjectId } from 'mongodb';
-
 import { getCollection } from '@lib/mongodb';
+import { ObjectId } from 'mongodb';
 
 export const REVIEWS_COLLECTION = 'reviews';
 

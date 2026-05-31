@@ -53,9 +53,10 @@ export default function PrivacyPolicyPage({ params: { locale } }: { params: { lo
 
         <LegalSection number="3" title="What Data We Collect">
           <LegalParagraph>
-            When you submit the contact form on our Website, we collect the following data:
+            When you submit the contact form or review form on our Website, we collect the following data:
           </LegalParagraph>
-          <LegalSubheading>3.1 Data you provide directly (contact form)</LegalSubheading>
+          <LegalSubheading>3.1 Data you provide directly (contact form &amp; review form)</LegalSubheading>
+          <LegalParagraph>Contact form:</LegalParagraph>
           <LegalList
             items={[
               'Name – your first and/or last name',
@@ -66,7 +67,17 @@ export default function PrivacyPolicyPage({ params: { locale } }: { params: { lo
               'Message (optional) – a free-text description of your project and timeline',
             ]}
           />
-          <LegalSubheading>3.2 Data collected automatically</LegalSubheading>
+          <LegalSubheading>3.2 Data you provide via the Review Form</LegalSubheading>
+          <LegalList
+            items={[
+              'Name – your first and/or last name',
+              'Role – your job title or position',
+              'Company – the name of your organisation',
+              'Rating – a numeric or star rating of your experience',
+              'Review text – a free-text description of your experience working with us',
+            ]}
+          />
+          <LegalSubheading>3.3 Data collected automatically</LegalSubheading>
           <LegalList
             items={[
               'IP address',
@@ -106,6 +117,15 @@ export default function PrivacyPolicyPage({ params: { locale } }: { params: { lo
           <LegalParagraph>
             Legal basis: Art. 6(1)(c) GDPR – compliance with applicable legal obligations (e.g., accounting, tax
             records).
+          </LegalParagraph>
+          <LegalSubheading>4.5 Publishing and displaying client reviews</LegalSubheading>
+          <LegalParagraph>
+            We process review form data to publish client testimonials on our Website, subject to moderation.
+          </LegalParagraph>
+          <LegalParagraph>
+            Legal basis: Art. 6(1)(a) GDPR – consent. By submitting the review form, you voluntarily provide data
+            intended for public display. You may withdraw consent at any time by contacting contact@ortvest.com, and we
+            will remove your review.
           </LegalParagraph>
         </LegalSection>
 
@@ -179,6 +199,7 @@ export default function PrivacyPolicyPage({ params: { locale } }: { params: { lo
               'Inquiry data: up to 3 years from the last contact, or until you request deletion',
               'Client data (if a contract is concluded): 5 years from the end of the business relationship (tax and accounting requirements)',
               'Analytics data: as per the settings of the analytics provider (typically up to 26 months)',
+              'Review data: retained for as long as the review is published on the Website, or until you request deletion by contacting contact@ortvest.com',
             ]}
           />
         </LegalSection>

@@ -1887,6 +1887,8 @@
       "submit": "Wyślij opinię",
       "submitting": "Wysyłanie...",
       "error": "Coś poszło nie tak. Spróbuj ponownie.",
+      "consent": "Wysyłając opinię, potwierdzasz, że opiera się ona na Twoim rzeczywistym doświadczeniu współpracy z Ortvest, i wyrażasz zgodę na jej publikację na tej stronie zgodnie z naszą",
+      "consentPrivacyLink": "Polityką prywatności",
       "success": {
         "title": "Dziękujemy!",
         "text": "Twoja opinia została wysłana i pojawi się po moderacji.",

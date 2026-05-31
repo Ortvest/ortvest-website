@@ -1889,6 +1889,8 @@
       "submit": "Submit review",
       "submitting": "Submitting...",
       "error": "Something went wrong. Please try again.",
+      "consent": "By submitting this review, you confirm that it is based on your genuine experience with Ortvest, and you consent to its publication on this website in accordance with our",
+      "consentPrivacyLink": "Privacy Policy",
       "success": {
         "title": "Thank you!",
         "text": "Your review has been submitted and will appear after moderation.",

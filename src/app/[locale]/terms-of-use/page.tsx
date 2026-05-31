@@ -67,6 +67,36 @@ export default function TermsOfUsePage({ params: { locale } }: { params: { local
           </LegalParagraph>
         </LegalSection>
 
+        <LegalSection number="3A" title="Review Form">
+          <LegalSubheading>3A.1 User obligations when submitting a review</LegalSubheading>
+          <LegalParagraph>By submitting a review, you represent and warrant that:</LegalParagraph>
+          <LegalList
+            items={[
+              'You are a current or former client of Ortvest and have personally experienced the services you describe',
+              'All information provided is truthful, accurate, and based on genuine experience',
+              'Your review does not contain false, misleading, defamatory, offensive, or unlawful content',
+              'You are acting on behalf of a business entity and are authorised to do so',
+            ]}
+          />
+          <LegalSubheading>3A.2 Licence to publish</LegalSubheading>
+          <LegalParagraph>
+            By submitting a review, you grant Ortvest a non-exclusive, royalty-free, worldwide, perpetual licence to
+            publish, display, reproduce, and promote your review (including your name, role, and company) on the Website
+            and in marketing materials. You may request removal of your review at any time by contacting
+            contact@ortvest.com.
+          </LegalParagraph>
+          <LegalSubheading>3A.3 Moderation</LegalSubheading>
+          <LegalParagraph>
+            The Company reserves the right to moderate, edit for formatting, decline to publish, or remove any submitted
+            review at its sole discretion, including reviews that violate these Terms or applicable law.
+          </LegalParagraph>
+          <LegalSubheading>3A.4 No compensation</LegalSubheading>
+          <LegalParagraph>
+            Submission of a review is voluntary and does not entitle you to any compensation, discount, or benefit unless
+            explicitly agreed in writing.
+          </LegalParagraph>
+        </LegalSection>
+
         <LegalSection number="4" title="Intellectual Property">
           <LegalParagraph>
             All content published on the Website – including but not limited to texts, graphics, logos, icons, images,

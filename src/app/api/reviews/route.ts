@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-import { getReviewsCollection, toPublicReview, type ReviewDoc } from '@lib/models/review';
+import { getReviewsCollection, type ReviewDoc, toPublicReview } from '@lib/models/review';
 import { parseCreateReviewInput } from '@lib/review-validation';
 
 export async function GET() {

@@ -42,12 +42,12 @@ export default function Home({ params: { locale } }: { params: { locale: string 
         {/* <Technologies /> */}
         <Reviews />
         <Cases />
-        
+
         <Consultation />
         <Suspense fallback={<BlogSectionSkeleton />}>
           <BlogSection locale={locale} />
         </Suspense>
-   
+
         <FAQ />
         <Contact />
       </main>
