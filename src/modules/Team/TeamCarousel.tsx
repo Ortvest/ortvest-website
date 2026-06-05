@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { EASE } from '@lib/motion';
 import { animate, motion, type PanInfo, useMotionValue } from 'framer-motion';
 
-import { TeamCard, type DisciplineItem } from './TeamCard';
+import { type DisciplineItem, TeamCard } from './TeamCard';
 
 const AUTOPLAY_MS = 7000;
 
@@ -17,13 +17,7 @@ type TeamCarouselProps = {
   getYearsLabel: (id: DisciplineItem['id']) => string;
 };
 
-export function TeamCarousel({
-  disciplines,
-  getTitle,
-  getDescription,
-  getYears,
-  getYearsLabel,
-}: TeamCarouselProps) {
+export function TeamCarousel({ disciplines, getTitle, getDescription, getYears, getYearsLabel }: TeamCarouselProps) {
   const slideCount = disciplines.length;
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideWidth, setSlideWidth] = useState(0);
