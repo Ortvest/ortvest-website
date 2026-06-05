@@ -413,34 +413,25 @@
   },
   "team": {
     "label": "The team",
-    "title": "The people responsible for your product.",
-    "subtitle": "Two founders and a team of designers, developers, and marketers — all working directly on your project.",
-    "member1": {
-      "role": "Founder & CEO",
-      "quote": "Your first call. Knows your industry before the project starts."
+    "title": "The expertise behind your product.",
+    "subtitle": "Developers, designers, and marketers — each bringing deep experience to every project we take on.",
+    "developers": {
+      "title": "Developers",
+      "description": "We build fast, clean, and without shortcuts. From complex backend architecture to pixel-perfect frontend — our engineers have shipped products across fintech, e-commerce, and SaaS that users actually love to use.",
+      "years": "15+",
+      "yearsLabel": "years of experience"
     },
-    "member2": {
-      "role": "Co-founder & CMO",
-      "quote": "Makes sure your product launches with a message that converts."
+    "designers": {
+      "title": "Designers",
+      "description": "Interfaces that make people stop scrolling. Our designers work at the intersection of aesthetics and usability — crafting brand identities, UI systems, and interactive experiences that look premium and convert.",
+      "years": "10+",
+      "yearsLabel": "years of experience"
     },
-    "member3": {
-      "role": "CTO",
-      "quote": "Makes sure what we promise gets built — on time and without shortcuts."
-    },
-    "dmytro": {
-      "name": "Dmytro Kazantsev",
-      "role": "Co-founder & CEO",
-      "fact": "Your first call. Knows your industry before the project starts."
-    },
-    "yevheniia": {
-      "name": "Yevheniia Sadvari",
-      "role": "Co-founder & CMO",
-      "fact": "Makes sure your product launches with a message that converts."
-    },
-    "sergey": {
-      "name": "Sergey Bekharsky",
-      "role": "CTO",
-      "fact": "Makes sure what we promise gets built — on time and without shortcuts."
+    "marketing": {
+      "title": "Marketing",
+      "description": "Launches that get noticed. We pair sharp positioning with data-driven execution — SEO, paid ads, and content strategy that builds real traction, not vanity metrics. Your product deserves an audience that actually converts.",
+      "years": "10+",
+      "yearsLabel": "years of experience"
     }
   },
   "faq": {

@@ -7,7 +7,6 @@ import { animate, motion, type PanInfo, useMotionValue } from 'framer-motion';
 
 import { ReviewCard, type ReviewItem } from './ReviewCard';
 
-const PER_PAGE = 3;
 const AUTOPLAY_MS = 7000;
 
 function chunkReviews(reviews: ReviewItem[], size: number) {
@@ -18,8 +17,14 @@ function chunkReviews(reviews: ReviewItem[], size: number) {
   return pages;
 }
 
-export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
-  const pages = useMemo(() => chunkReviews(reviews, PER_PAGE), [reviews]);
+type ReviewsSliderProps = {
+  reviews: ReviewItem[];
+  perPage: number;
+  gridClassName?: string;
+};
+
+function ReviewsSlider({ reviews, perPage, gridClassName }: ReviewsSliderProps) {
+  const pages = useMemo(() => chunkReviews(reviews, perPage), [reviews, perPage]);
   const pageCount = pages.length;
   const [activePage, setActivePage] = useState(0);
   const [slideWidth, setSlideWidth] = useState(0);
@@ -28,11 +33,14 @@ export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
 
   const goTo = useCallback(
     (index: number) => {
-      if (pageCount <= 1) return;
       setActivePage(Math.max(0, Math.min(pageCount - 1, index)));
     },
     [pageCount]
   );
+
+  useEffect(() => {
+    setActivePage((prev) => Math.min(prev, Math.max(0, pageCount - 1)));
+  }, [pageCount]);
 
   useEffect(() => {
     const node = containerRef.current;
@@ -60,7 +68,7 @@ export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
   }, [pageCount]);
 
   const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
-    if (slideWidth === 0) return;
+    if (slideWidth === 0 || pageCount <= 1) return;
 
     const threshold = slideWidth * 0.18;
     let next = activePage;
@@ -76,7 +84,7 @@ export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
 
   if (pageCount <= 1) {
     return (
-      <div className="grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className={gridClassName ?? 'grid items-stretch gap-4'}>
         {reviews.map((review) => (
           <ReviewCard key={review._id} review={review} />
         ))}
@@ -96,9 +104,7 @@ export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
           dragConstraints={slideWidth > 0 ? { left: -(pageCount - 1) * slideWidth, right: 0 } : undefined}
           onDragEnd={handleDragEnd}>
           {pages.map((pageReviews, pageIndex) => (
-            <div
-              key={pageIndex}
-              className="grid w-full shrink-0 grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div key={pageIndex} className={`w-full shrink-0 ${gridClassName ?? 'grid items-stretch gap-4'}`}>
               {pageReviews.map((review) => (
                 <ReviewCard key={review._id} review={review} />
               ))}
@@ -126,5 +132,31 @@ export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
         })}
       </div>
     </div>
+  );
+}
+
+export function ReviewsCarousel({ reviews }: { reviews: ReviewItem[] }) {
+  return (
+    <>
+      <div className="md:hidden">
+        <ReviewsSlider reviews={reviews} perPage={1} />
+      </div>
+
+      <div className="hidden md:block">
+        {reviews.length <= 3 ? (
+          <div className="grid items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {reviews.map((review) => (
+              <ReviewCard key={review._id} review={review} />
+            ))}
+          </div>
+        ) : (
+          <ReviewsSlider
+            reviews={reviews}
+            perPage={3}
+            gridClassName="grid items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3"
+          />
+        )}
+      </div>
+    </>
   );
 }

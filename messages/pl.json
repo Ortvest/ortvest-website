@@ -411,34 +411,25 @@
   },
   "team": {
     "label": "Zespół",
-    "title": "Ludzie odpowiedzialni za Twój produkt.",
-    "subtitle": "Dwoje założycieli i zespół designerów, deweloperów i marketerów — wszyscy pracują bezpośrednio nad Twoim projektem.",
-    "member1": {
-      "role": "Założyciel i CEO",
-      "quote": "Twój pierwszy telefon. Zna Twoją branżę zanim projekt się zacznie."
+    "title": "Ekspertyza za Twoim produktem.",
+    "subtitle": "Deweloperzy, designerzy i marketerzy — każdy z głębokim doświadczeniem w każdym projekcie, który podejmujemy.",
+    "developers": {
+      "title": "Deweloperzy",
+      "description": "Budujemy szybko, czysto i bez skrótów. Od złożonej architektury backendu po pixel-perfect frontend — nasi inżynierowie wdrażali produkty w fintech, e-commerce i SaaS, z których użytkownicy naprawdę lubią korzystać.",
+      "years": "15+",
+      "yearsLabel": "lat doświadczenia"
     },
-    "member2": {
-      "role": "Współzałożycielka i CMO",
-      "quote": "Dba o to, żeby Twój produkt wyszedł z przekazem, który konwertuje."
+    "designers": {
+      "title": "Designerzy",
+      "description": "Interfejsy, przy których ludzie przestają scrollować. Nasi designerzy pracują na styku estetyki i użyteczności — tworzą tożsamości marek, systemy UI i interaktywne doświadczenia, które wyglądają premium i konwertują.",
+      "years": "10+",
+      "yearsLabel": "lat doświadczenia"
     },
-    "member3": {
-      "role": "CTO",
-      "quote": "Dba o to, żeby wszystko co obiecujemy zostało zbudowane — na czas i bez skrótów."
-    },
-    "dmytro": {
-      "name": "Dmytro Kazantsev",
-      "role": "Founder & CEO",
-      "fact": "Odrzucił więcej projektów niż wziął. Wierzy, że nisza bije generic za każdym razem."
-    },
-    "yevheniia": {
-      "name": "Yevheniia Sadvari",
-      "role": "Co-Founder & CMO",
-      "fact": "Uważa, że launch bez jasnego przekazu to tylko data premiery. Marketing zaczyna się przed pierwszym pikselem."
-    },
-    "sergey": {
-      "name": "Sergey Bekharsky",
-      "role": "CTO",
-      "fact": "Pisze kod backendowy, którego nikt nie widzi. Bierze to do siebie."
+    "marketing": {
+      "title": "Marketing",
+      "description": "Launche, które są zauważane. Łączymy ostre pozycjonowanie z data-driven execution — SEO, płatne reklamy i strategię contentową, która buduje realny traction, a nie vanity metrics. Twój produkt zasługuje na publiczność, która naprawdę konwertuje.",
+      "years": "10+",
+      "yearsLabel": "lat doświadczenia"
     }
   },
   "faq": {

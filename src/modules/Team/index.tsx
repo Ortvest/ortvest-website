@@ -1,33 +1,32 @@
 'use client';
 
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { Container, SectionReveal } from '@shared/components';
 
-import { IconUsers } from '@tabler/icons-react';
+import { IconCode, IconPalette, IconTrendingUp, IconUsers } from '@tabler/icons-react';
 
-const TRANSFORM = '/-/resize/600x/-/quality/smart/-/format/auto/';
-const photoUrl = (uuid: string) => `https://ucarecdn.com/${uuid}${TRANSFORM}`;
+import { TeamCard } from './TeamCard';
+import { TeamCarousel } from './TeamCarousel';
 
-const members = [
+const disciplines = [
   {
-    id: 'dmytro',
-    memberKey: 'member1' as const,
-    photo: photoUrl('dba1ff91-71c3-4d10-a1ee-3973385a16ff'),
-    name: 'Dmytro Kazantsev',
+    id: 'developers',
+    Icon: IconCode,
+    iconBg: 'bg-blue-50',
+    iconColor: 'text-blue-600',
   },
   {
-    id: 'yevheniia',
-    memberKey: 'member2' as const,
-    photo: photoUrl('3a183cf5-7481-452c-8331-04db474f4750'),
-    name: 'Yevheniia Sadvari',
+    id: 'designers',
+    Icon: IconPalette,
+    iconBg: 'bg-violet-50',
+    iconColor: 'text-violet-600',
   },
   {
-    id: 'sergey',
-    memberKey: 'member3' as const,
-    photo: photoUrl('80358094-381a-473a-8055-20882e4b62f0'),
-    name: 'Sergey Bekharsky',
+    id: 'marketing',
+    Icon: IconTrendingUp,
+    iconBg: 'bg-emerald-50',
+    iconColor: 'text-emerald-600',
   },
 ] as const;
 
@@ -60,53 +59,26 @@ export function Team() {
             <p className="mt-3 max-w-xl text-body text-zinc-400">{t('subtitle')}</p>
           </header>
 
-          {/* Vertical list of horizontal cards */}
-          <div className="flex flex-col gap-0 sm:gap-4">
-            {members.map(({ id, memberKey, photo, name }) => (
-              <div
-                key={id}
-                className="relative mb-3 flex flex-row items-center gap-3 overflow-hidden rounded-2xl border border-zinc-200 bg-white p-4 transition duration-200 hover:border-zinc-400 sm:mb-0 sm:grid sm:grid-cols-[140px_1fr] sm:items-stretch sm:gap-0 sm:p-0">
-                {/* Mobile — round avatar */}
-                <div className="h-[60px] w-[60px] flex-shrink-0 overflow-hidden rounded-full border-2 border-zinc-100 sm:hidden">
-                  <Image
-                    src={photo}
-                    alt={name}
-                    width={60}
-                    height={60}
-                    className="h-full w-full"
-                    style={{ objectFit: 'cover', objectPosition: 'center 10%' }}
-                  />
-                </div>
+          <div className="md:hidden">
+            <TeamCarousel
+              disciplines={disciplines}
+              getTitle={(id) => t(`${id}.title`)}
+              getDescription={(id) => t(`${id}.description`)}
+              getYears={(id) => t(`${id}.years`)}
+              getYearsLabel={(id) => t(`${id}.yearsLabel`)}
+            />
+          </div>
 
-                {/* Desktop — rectangular photo */}
-                <div className="relative hidden min-h-0 overflow-hidden bg-zinc-100 sm:block sm:h-full sm:w-full">
-                  <Image
-                    src={photo}
-                    alt={name}
-                    fill
-                    sizes="140px"
-                    className="object-cover"
-                    style={{ objectPosition: '50% 25%' }}
-                  />
-                </div>
-
-                {/* Mobile — text */}
-                <div className="flex min-w-0 flex-col gap-0.5 sm:hidden">
-                  <p className="text-[14px] font-bold text-zinc-950">{name}</p>
-                  <p className="mb-1.5 mt-0.5 text-[10px] uppercase tracking-wider text-zinc-400">
-                    {t(`${memberKey}.role`)}
-                  </p>
-                  <p className="text-[12px] italic leading-relaxed text-zinc-400">{t(`${memberKey}.quote`)}</p>
-                </div>
-
-                {/* Desktop — text */}
-                <div className="hidden flex-1 flex-col justify-center bg-white p-6 sm:flex">
-                  <p className="text-h3 font-semibold text-zinc-950">{name}</p>
-                  <p className="mb-4 mt-1 text-xs uppercase tracking-widest text-zinc-400">{t(`${memberKey}.role`)}</p>
-                  <hr className="mb-4 border-t border-zinc-100" />
-                  <p className="text-body-sm italic leading-relaxed text-zinc-400">{t(`${memberKey}.quote`)}</p>
-                </div>
-              </div>
+          <div className="hidden gap-4 md:grid md:grid-cols-3">
+            {disciplines.map((discipline) => (
+              <TeamCard
+                key={discipline.id}
+                discipline={discipline}
+                title={t(`${discipline.id}.title`)}
+                description={t(`${discipline.id}.description`)}
+                years={t(`${discipline.id}.years`)}
+                yearsLabel={t(`${discipline.id}.yearsLabel`)}
+              />
             ))}
           </div>
         </SectionReveal>

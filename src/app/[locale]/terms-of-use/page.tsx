@@ -92,8 +92,8 @@ export default function TermsOfUsePage({ params: { locale } }: { params: { local
           </LegalParagraph>
           <LegalSubheading>3A.4 No compensation</LegalSubheading>
           <LegalParagraph>
-            Submission of a review is voluntary and does not entitle you to any compensation, discount, or benefit unless
-            explicitly agreed in writing.
+            Submission of a review is voluntary and does not entitle you to any compensation, discount, or benefit
+            unless explicitly agreed in writing.
           </LegalParagraph>
         </LegalSection>
 
