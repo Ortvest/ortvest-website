@@ -15,7 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/63c5de22f23862b55ca6ffe2/script.js" strategy="afterInteractive" />
+        <Script
+          id="cookieyes"
+          src="https://cdn-cookieyes.com/client_data/63c5de22f23862b55ca6ffe2/script.js"
+          strategy="beforeInteractive"
+        />
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
