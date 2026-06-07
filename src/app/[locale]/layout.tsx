@@ -3,7 +3,7 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-in
 
 import { BackgroundEffects, MotionConfigProvider } from '@shared/components';
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ortvest.com';
+const baseUrl = 'https://www.ortvest.com';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale });

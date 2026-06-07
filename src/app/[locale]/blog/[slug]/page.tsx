@@ -17,7 +17,7 @@ import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ortvest.com';
+const baseUrl = 'https://www.ortvest.com';
 
 interface Props {
   params: { locale: string; slug: string };

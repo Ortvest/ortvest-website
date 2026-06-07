@@ -7,7 +7,7 @@ import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ortvest.com';
+const baseUrl = 'https://www.ortvest.com';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'cases.page' });
