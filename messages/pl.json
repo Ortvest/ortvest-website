@@ -24,7 +24,7 @@
     "title2": "produkty, które",
     "title3": "ludzie ",
     "title3em": "kochają.",
-    "subtitle": "Nie generyczne studio. Pracujemy w konkretnych branżach — P2P, społeczności, hospitality, sporttech — i znamy problemy Twoich użytkowników od środka.",
+    "subtitle": "Nie generyczne studio. Pracujemy w konkretnych branżach — P2P, społeczności, logistyka i agritech — i znamy problemy Twoich użytkowników od środka.",
     "cta": {
       "primary": "Omów projekt",
       "secondary": "Zobacz co robimy"
@@ -36,9 +36,6 @@
     "nodes": {
       "p2p": "P2P",
       "community": "Społeczności",
-      "hospitality": "Gościnność",
-      "sporttech": "Sporttech",
-      "conversion": "Konwersja",
       "logistics": "Logistyka",
       "agritech": "Agrotech"
     },
@@ -48,7 +45,7 @@
       "years": "lat budowania",
       "projectsValue": "20+",
       "projectsLabel": "produktów wdrożonych",
-      "industriesValue": "6",
+      "industriesValue": "4",
       "industriesLabel": "niszy branżowych",
       "yearsValue": "4",
       "yearsLabel": "lat budowania"
@@ -56,11 +53,8 @@
     "nicheTags": {
       "p2p": "P2P",
       "community": "Społeczności",
-      "hospitality": "Hospitality",
-      "conversion": "Strony konwersyjne",
       "logistics": "Logistyka",
-      "agritech": "Agritech",
-      "sporttech": "Sporttech"
+      "agritech": "Agritech"
     },
     "ctaPrimary": "Omów projekt",
     "ctaSecondary": "Zobacz co robimy",
@@ -105,7 +99,7 @@
     "marketingAdvancedItems": {
       "email": "Email marketing i automatyzacja",
       "content": "Strategia treści",
-      "copy": "Copywriting konwersyjny",
+      "copy": "Copywriting perswazyjny",
       "crm": "Konfiguracja i marketing CRM"
     },
     "marketingPremium": "Premium",
@@ -175,7 +169,7 @@
       "b4": "Marketing w mediach społecznościowych",
       "a1": "Email marketing i automatyzacja",
       "a2": "Strategia contentowa",
-      "a3": "Copywriting konwersyjny",
+      "a3": "Copywriting perswazyjny",
       "a4": "Konfiguracja CRM i marketing",
       "p1": "Pełna strategia marketingowa",
       "p2": "Badanie rynku i odbiorców",
@@ -196,28 +190,6 @@
         "t1": "Sieci prywatne",
         "t2": "Portale członkowskie",
         "t3": "Wydarzenia"
-      },
-      "hospitality": {
-        "title": "Hospitality",
-        "desc": "Premium rozwiązania cyfrowe dla branży hotelarskiej — systemy rezerwacji i luksusowe platformy travel.",
-        "t1": "Systemy rezerwacji",
-        "t2": "Jachty i podróże",
-        "t3": "Premium UX"
-      },
-      "sporttech": {
-        "title": "Sporttech",
-        "desc": "Technologie dla sportu — od dashboardów zawodników po aplikacje dla kibiców i zarządzanie klubem.",
-        "t1": "Śledzenie zawodników",
-        "t2": "Zaangażowanie kibiców",
-        "t3": "Analityka"
-      },
-      "conversion": {
-        "title": "Strony konwersyjne",
-        "desc": "Wysokowydajne strony konwertujące odwiedzających w leady i klientów.",
-        "t1": "Landing pages",
-        "t2": "Generowanie leadów",
-        "t3": "Testy A/B",
-        "t4": "CRO"
       },
       "logistics": {
         "title": "Logistyka",
@@ -287,16 +259,6 @@
         "description": "Projektujemy i budujemy zamknięte sieci, platformy klubowe i społeczności zawodowe, gdzie interakcja jest naturalna — nie wymuszona. Czaty, role, wydarzenia i treści w jednym miejscu. Znamy różnicę między „stroną” a „platformą, do której ludzie wracają”.",
         "tags": ["Sieci prywatne", "Portale członkowskie", "Czat na żywo", "Wydarzenia"]
       },
-      "hospitality": {
-        "title": "Hospitality",
-        "description": "Od klubów jachtowych po butikowe hotele — hospitality potrzebuje cyfrowego doświadczenia tak premium jak sam serwis. Budujemy rezerwacje, platformy klubowe i produkty dla gości, gdzie liczy się każdy detal. Budowaliśmy dla klubów jachtowych — znamy tę branżę.",
-        "tags": ["Systemy rezerwacji", "Platformy klubowe", "Jachty i podróże", "Premium UX"]
-      },
-      "conversion": {
-        "title": "Strony konwersyjne",
-        "description": "Strona, która wygląda dobrze, ale nie konwertuje, to strata pieniędzy. Tworzymy landing page i strony korporacyjne dla startupów tech i fintech w Europie i USA — ze strategią UX, kierunkiem copy i analityką od pierwszego dnia.",
-        "tags": ["Landing page", "Strony korporacyjne", "CRO", "Startupy tech i fintech"]
-      },
       "logistics": {
         "title": "Logistyka",
         "description": "Pracujemy ze startupami i MŚP logistycznymi nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras. Dwa case studies opublikowane — więcej w toku.",
@@ -306,11 +268,6 @@
         "title": "Agritech",
         "description": "Budujemy platformy do zarządzania farmą, analityki plonów i widoczności łańcucha dostaw. Jeśli działasz w tej przestrzeni — porozmawiajmy zanim opublikujemy case studies.",
         "tags": ["Zarządzanie farmą", "Analityka plonów", "Łańcuch dostaw", "Platformy IoT"]
-      },
-      "sporttech": {
-        "title": "Sporttech",
-        "description": "Platformy do śledzenia sportowców, zarządzania klubami i angażowania kibiców. Naprawdę dobre produkty cyfrowe w sporcie są wciąż rzadkością — jesteśmy tu, by to zmienić.",
-        "tags": ["Śledzenie sportowców", "Zarządzanie klubem", "Zaangażowanie kibiców", "Analityka wyników"]
       }
     },
     "comingSoon": {
@@ -444,7 +401,7 @@
     "q1": "Jakie usługi oferujecie?",
     "a1": "Oferujemy pełny cykl rozwoju produktu: design UX/UI, development web i mobile oraz marketing. Możesz zamówić wszystko lub tylko to, czego potrzebujesz.",
     "q2": "Dla jakich firm pracujecie?",
-    "a2": "Startupy i scale-upy w konkretnych branżach — P2P, społeczności, hospitality, sporttech i produkty konwersyjne. Preferujemy klientów, którzy wiedzą, co chcą budować.",
+    "a2": "Startupy i scale-upy w konkretnych branżach — P2P, społeczności, logistyka i agritech. Preferujemy klientów, którzy wiedzą, co chcą budować.",
     "q3": "Czy mogę zamówić tylko jedną usługę?",
     "a3": "Tak. Możliwe są osobne projekty tylko design, development lub marketing. Dopasujemy zakres do Twoich potrzeb.",
     "q4": "Jak wygląda wycena projektu?",
@@ -515,9 +472,6 @@
     "projectTypes": {
       "p2p": "P2P",
       "community": "Społeczności",
-      "hospitality": "Hospitality",
-      "conversion": "Strona konwersyjna",
-      "sporttech": "Sporttech",
       "logistics": "Logistyka",
       "agritech": "Agritech",
       "other": "Inne"
@@ -573,15 +527,12 @@
   "cases": {
     "eyebrow": "Nasze projekty",
     "title": "Wybrane realizacje",
-    "subtitle": "Projekty w P2P, społecznościach, hospitality, stronach konwersyjnych i logistyce.",
+    "subtitle": "Projekty w P2P, społecznościach, logistyce i agritech.",
     "ndaBanner": "Większość projektów NDA można omówić podczas rozmowy.",
     "filterIndustries": {
       "all": "Wszystkie projekty",
       "p2p": "P2P",
       "community": "Społeczności",
-      "hospitality": "Hospitality",
-      "sporttech": "Sporttech",
-      "conversion": "Strony konwersyjne",
       "logistics": "Logistyka",
       "agritech": "Agritech"
     },
@@ -591,7 +542,7 @@
     "page": {
       "label": "NASZE PROJEKTY",
       "title": "Wybrane projekty",
-      "subtitle": "Prace w obszarach P2P, społeczności, hospitality, stron konwersyjnych i logistyki. Większość projektów NDA można omówić na rozmowie.",
+      "subtitle": "Prace w obszarach P2P, społeczności, logistyki i agritech. Większość projektów NDA można omówić na rozmowie.",
       "filter": {
         "all": "Wszystkie"
       },
@@ -599,13 +550,13 @@
       "nda": "NDA · szczegóły na rozmowie",
       "cta": {
         "title": "Pracujesz nad czymś w tych obszarach?",
-        "sub": "Masz projekt w P2P, społeczności, hospitality lub logistyce? Porozmawiajmy.",
+        "sub": "Masz projekt w P2P, społeczności, logistyce lub agritech? Porozmawiajmy.",
         "primary": "Omów projekt",
         "secondary": "Zarezerwuj rozmowę"
       },
       "metadata": {
         "title": "Wybrane projekty | Ortvest",
-        "description": "Prace w obszarach P2P, społeczności, hospitality, stron konwersyjnych i logistyki. Większość projektów NDA można omówić na rozmowie."
+        "description": "Prace w obszarach P2P, społeczności, logistyki i agritech. Większość projektów NDA można omówić na rozmowie."
       }
     },
     "ndaProtected": "Chronione NDA",
@@ -619,7 +570,7 @@
     "inProgress": "W trakcie",
     "designBy": "Projekt",
     "ndaDetails": "Umów rozmowę, aby dowiedzieć się więcej",
-    "ctaText": "Masz projekt w P2P, społeczności, hospitality lub logistyce? Porozmawiajmy.",
+    "ctaText": "Masz projekt w P2P, społeczności, logistyce lub agritech? Porozmawiajmy.",
     "ctaButton": "Umów rozmowę",
     "ctaSecondary": "Wyceń projekt",
     "bottomCtaText": "Pracujesz nad czymś w jednej z tych nisz?",
@@ -627,9 +578,6 @@
     "nicheCta": {
       "p2p": "Budujesz produkt P2P?",
       "community": "Budujesz platformę społecznościową?",
-      "hospitality": "Budujesz dla hospitality?",
-      "sporttech": "Budujesz platformę sportową?",
-      "conversion": "Potrzebujesz strony konwersyjnej?",
       "logistics": "Budujesz platformę logistyczną?",
       "agritech": "Budujesz platformę agritech?",
       "letsTalk": "Porozmawiajmy →"
@@ -655,7 +603,7 @@
       },
       "profitcraftauto": {
         "summary": "Strona personal auto broker — auto-odnoga zunifikowanego systemu ProfitCraft z ProfitCraft (kredyt).",
-        "result": "Strona konwersyjna z wnioskami i UI mobilnym; wewnętrzny CMS dostarczony, ale niepubliczny."
+        "result": "Strona marketingowa z wnioskami i UI mobilnym; wewnętrzny CMS dostarczony, ale niepubliczny."
       },
       "skisailclub": {
         "summary": "Platforma cyfrowa dla klubu jachtowego — rezerwacje i społeczność.",
@@ -747,11 +695,6 @@
         "logistics": {
           "title": "Budujesz produkt logistyczny?",
           "subtitle": "Omówmy Twoje oprogramowanie operacyjne.",
-          "button": "Napisz do nas"
-        },
-        "conversion": {
-          "title": "Potrzebujesz strony z wysoką konwersją?",
-          "subtitle": "Dopracujmy przekaz i design.",
           "button": "Napisz do nas"
         },
         "brand": {
@@ -915,7 +858,7 @@
     "profitcraft": {
       "meta": {
         "title": "ProfitCraft — Strona credit-building | Ortvest",
-        "description": "Strona konwersyjna dla usługi budowania kredytu w USA."
+        "description": "Strona marketingowa dla usługi budowania kredytu w USA — z naciskiem na generowanie leadów."
       },
       "hero": {
         "subtitle": "Warstwa credit-building ekosystemu ProfitCraft — jeden system z ProfitCraft Auto dla aut i finansowania; wewnętrznego CMS nie pokazujemy publicznie."
@@ -923,7 +866,7 @@
       "stats": {
         "projectType": {
           "label": "Typ projektu",
-          "value": "Strona konwersyjna"
+          "value": "Strona marketingowa"
         },
         "deliverables": {
           "label": "Zakres",
@@ -940,7 +883,7 @@
         "internal": "Zbudowaliśmy też wewnętrzny CMS dla zespołu ProfitCraft — zrzuty ekranu nie są dostępne do publikacji."
       },
       "features": {
-        "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
+        "subtitle": "Wzorce zaufania, które zamieniają złożone tematy finansowe w pewne działania.",
         "items": {
           "valueProp": {
             "title": "Clear value proposition",
@@ -972,7 +915,7 @@
         "captions": {
           "1": "Hero i value prop",
           "2": "Sekcja usług",
-          "3": "Kontakt i konwersja"
+          "3": "Kontakt i leady"
         }
       },
       "sections": {
@@ -986,7 +929,7 @@
         },
         "development": {
           "title": "Development",
-          "description": "Zbudowaliśmy szybką, zoptymalizowaną pod SEO stronę z konwersyjną strukturą, integracją analityki i płynnymi przepływami CTA."
+          "description": "Zbudowaliśmy szybką, zoptymalizowaną pod SEO stronę ze strukturą pod generowanie leadów, integracją analityki i płynnymi przepływami CTA."
         },
         "cms": {
           "title": "Wewnętrzny CMS",
@@ -997,7 +940,7 @@
     "profitcraftauto": {
       "meta": {
         "title": "ProfitCraft Auto — Strona personal auto broker | Ortvest",
-        "description": "Strona konwersyjna dla auto brokera w ekosystemie ProfitCraft — zunifikowana z produktem kredytowym i wewnętrznym CMS."
+        "description": "Strona marketingowa dla auto brokera w ekosystemie ProfitCraft — zunifikowana z produktem kredytowym i wewnętrznym CMS."
       },
       "hero": {
         "subtitle": "Warstwa auto-brokera systemu ProfitCraft — w parze z ProfitCraft (credit-building), wspólna logika marki i wewnętrzny CMS, którego nie pokazujemy publicznie."
@@ -1005,7 +948,7 @@
       "stats": {
         "projectType": {
           "label": "Typ projektu",
-          "value": "Conversion Site"
+          "value": "Strona marketingowa"
         },
         "deliverables": {
           "label": "Rezultat",
@@ -1017,12 +960,12 @@
         }
       },
       "challenge": "ProfitCraft Auto to strona aut i finansowania w tym samym ekosystemie ProfitCraft co produkt kredytowy. Kupujący z dowolną historią kredytową potrzebują szybkiego zaufania i prostych wniosków, a biznes działa na wspólnych narzędziach operacyjnych — w tym CMS poza portfolio.",
-      "solution": "Zbudowaliśmy Auto jako warstwę konwersji zunifikowanego systemu — zielony brand, social proof, proces krok po kroku i formularze na desktop i mobile, spójne wizualnie z ProfitCraft. Wewnętrzny CMS wspiera operacje, ale nie jest publikowany w galerii case study.",
+      "solution": "Zbudowaliśmy Auto jako warstwę marketingową zunifikowanego systemu — zielony brand, social proof, proces krok po kroku i formularze na desktop i mobile, spójne wizualnie z ProfitCraft. Wewnętrzny CMS wspiera operacje, ale nie jest publikowany w galerii case study.",
       "cms": {
         "internal": "Zbudowaliśmy też wewnętrzny CMS dla zespołu ProfitCraft — zrzuty ekranu nie są dostępne do publikacji."
       },
       "features": {
-        "subtitle": "Wzorce konwersji dopasowane do finansowania aut i zaufania do brokera.",
+        "subtitle": "Wzorce zaufania dopasowane do finansowania aut i zaufania do brokera.",
         "items": {
           "hero": {
             "title": "Hero i pozycjonowanie",
@@ -1065,7 +1008,7 @@
         },
         "development": {
           "title": "Development",
-          "description": "Szybka strona marketingowa z konwersyjną strukturą, formularzami, analityką i responsywnością."
+          "description": "Szybka strona marketingowa ze strukturą pod generowanie leadów, formularzami, analityką i responsywnością."
         },
         "cms": {
           "title": "Wewnętrzny CMS",
@@ -1084,7 +1027,7 @@
       "stats": {
         "projectType": {
           "label": "Typ projektu",
-          "value": "Hospitality + Community"
+          "value": "Społeczności"
         },
         "deliverables": {
           "label": "Zakres",
@@ -1278,7 +1221,7 @@
         },
         "development": {
           "title": "Development",
-          "description": "Zbudowaliśmy szybką, zorientowaną na konwersję stronę z formularzami do pozyskiwania leadów, konfiguracją analityki i fundamentem SEO."
+          "description": "Zbudowaliśmy szybką stronę zoptymalizowaną pod generowanie leadów z formularzami do pozyskiwania leadów, konfiguracją analityki i fundamentem SEO."
         }
       }
     },
@@ -1700,10 +1643,10 @@
     "nav": "Nawigacja"
   },
   "metadata": {
-    "title": "Ortvest — Studio IT dla P2P, Społeczności, Hospitality i Stron Konwersyjnych",
-    "description": "Ortvest tworzy produkty cyfrowe dla platform P2P, sieci społecznościowych, hospitality i stron konwersyjnych. Design, development i marketing z ekspertyzą branżową.",
-    "ogTitle": "Ortvest — P2P, Społeczności, Hospitality i Konwersja",
-    "ogDescription": "Produkty cyfrowe dla P2P, społeczności, hospitality i stron konwersyjnych — design, development i marketing."
+    "title": "Ortvest — Studio IT dla P2P, Społeczności, Logistyki i Agritech",
+    "description": "Ortvest buduje produkty cyfrowe dla platform P2P, sieci społecznościowych, logistyki i agritech — design, development i marketing z głęboką ekspertyzą branżową.",
+    "ogTitle": "Ortvest — P2P, Społeczności, Logistyka i Agritech",
+    "ogDescription": "Ortvest buduje produkty cyfrowe dla platform P2P, sieci społecznościowych, logistyki i agritech — design, development i marketing z głęboką ekspertyzą branżową."
   },
   "cmsPage": {
     "hero": {

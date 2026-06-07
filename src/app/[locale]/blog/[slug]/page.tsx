@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: Props) {
     openGraph: {
       title: post.title,
       description,
+      url: `${baseUrl}/${locale}/blog/${slug}`,
       type: 'article',
       publishedTime: post.published_at ?? undefined,
       images: ogImage,
@@ -51,7 +52,7 @@ export async function generateMetadata({ params }: Props) {
       images: post.cover_image ? [post.cover_image] : undefined,
     },
     alternates: {
-      canonical: `/${locale}/blog/${slug}`,
+      canonical: `${baseUrl}/${locale}/blog/${slug}`,
     },
   };
 }

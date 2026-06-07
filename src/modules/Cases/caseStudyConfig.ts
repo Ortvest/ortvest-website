@@ -24,7 +24,7 @@ import {
   IconWorld,
 } from '@tabler/icons-react';
 
-export type CaseStudyCtaTemplate = 'p2p' | 'community' | 'logistics' | 'conversion' | 'brand' | 'product';
+export type CaseStudyCtaTemplate = 'p2p' | 'community' | 'logistics' | 'brand' | 'product';
 
 export type CaseStudyGalleryType = 'screens' | 'work' | 'brand';
 
@@ -135,7 +135,7 @@ export const CASE_STUDY_CONFIG: Record<string, CaseStudyConfig> = {
     ],
   },
   profitcraft: {
-    ctaTemplate: 'conversion',
+    ctaTemplate: 'product',
     galleryType: 'work',
     featureKeys: [
       { key: 'valueProp', icon: 'sparkles' },
@@ -147,7 +147,7 @@ export const CASE_STUDY_CONFIG: Record<string, CaseStudyConfig> = {
     ],
   },
   profitcraftauto: {
-    ctaTemplate: 'conversion',
+    ctaTemplate: 'product',
     galleryType: 'work',
     featureKeys: [
       { key: 'hero', icon: 'sparkles' },
@@ -195,7 +195,7 @@ export const CASE_STUDY_CONFIG: Record<string, CaseStudyConfig> = {
     ],
   },
   pachaca: {
-    ctaTemplate: 'conversion',
+    ctaTemplate: 'product',
     galleryType: 'screens',
     featureKeys: [
       { key: 'booking', icon: 'calendar' },
@@ -231,7 +231,7 @@ export const CASE_STUDY_CONFIG: Record<string, CaseStudyConfig> = {
     ],
   },
   gambit: {
-    ctaTemplate: 'conversion',
+    ctaTemplate: 'product',
     galleryType: 'work',
     featureKeys: [
       { key: 'hierarchy', icon: 'layout' },

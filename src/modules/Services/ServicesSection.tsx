@@ -20,7 +20,6 @@ import {
   SiTypescript,
 } from '@icons-pack/react-simple-icons';
 import {
-  IconAnchor,
   IconArrowRight,
   IconArrowsExchange,
   IconBrandAws,
@@ -29,14 +28,12 @@ import {
   IconChevronDown,
   IconClock,
   IconCode,
-  IconMouse,
   IconPalette,
   IconPlant,
   IconPlugConnected,
   type IconProps,
   IconRefresh,
   IconServer,
-  IconStarFilled,
   IconTopologyStar,
   IconTrendingUp,
   IconTruck,
@@ -69,7 +66,7 @@ const industries: {
   id: number;
   Icon: AnyIcon;
   number: string;
-  key: 'p2p' | 'community' | 'hospitality' | 'sporttech' | 'conversion';
+  key: 'p2p' | 'community' | 'logistics' | 'agritech';
   tagKeys: string[];
   colSpan2?: boolean;
 }[] = [
@@ -89,43 +86,15 @@ const industries: {
   },
   {
     id: 2,
-    Icon: IconAnchor as AnyIcon,
+    Icon: IconTruck as AnyIcon,
     number: '03',
-    key: 'hospitality',
-    tagKeys: ['t1', 't2', 't3'],
-  },
-  {
-    id: 3,
-    Icon: IconStarFilled as AnyIcon,
-    number: '04',
-    key: 'sporttech',
-    tagKeys: ['t1', 't2', 't3'],
-  },
-  {
-    id: 4,
-    Icon: IconMouse as AnyIcon,
-    number: '05',
-    key: 'conversion',
-    tagKeys: ['t1', 't2', 't3', 't4'],
-    colSpan2: true,
-  },
-];
-
-const expandingIndustries: {
-  id: string;
-  Icon: React.ComponentType<IconProps>;
-  key: 'logistics' | 'agritech';
-  tagKeys: string[];
-}[] = [
-  {
-    id: 'logistics',
-    Icon: IconTruck,
     key: 'logistics',
     tagKeys: ['t1', 't2', 't3', 't4'],
   },
   {
-    id: 'agritech',
-    Icon: IconPlant,
+    id: 3,
+    Icon: IconPlant as AnyIcon,
+    number: '04',
     key: 'agritech',
     tagKeys: ['t1', 't2', 't3', 't4'],
   },
@@ -460,47 +429,6 @@ function IndustriesTab({
             </div>
           );
         })}
-      </div>
-
-      <div className="flex items-center gap-3">
-        <div className="h-px flex-1 bg-zinc-800" />
-        <span className="text-[10px] uppercase tracking-widest text-zinc-500">{t('expanding')}</span>
-        <div className="h-px flex-1 bg-zinc-800" />
-      </div>
-
-      <div className="grid gap-3 sm:grid-cols-2">
-        {expandingIndustries.map(({ id, Icon, key, tagKeys }) => (
-          <div
-            key={id}
-            className="flex flex-col rounded-2xl border border-dashed border-zinc-800 bg-zinc-900 p-5 transition-colors duration-200 hover:border-zinc-700">
-            <div className="flex items-start justify-between">
-              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-xl bg-zinc-800">
-                <Icon size={18} className="text-zinc-400" />
-              </div>
-              <span className="rounded-full border border-zinc-700 px-2 py-0.5 text-[10px] uppercase tracking-wide text-zinc-500">
-                {t('comingSoon')}
-              </span>
-            </div>
-
-            <h3 className="mb-2 mt-3 text-h4 font-semibold text-zinc-400">{t(`ind.${key}.title`)}</h3>
-            <p className="mb-3 text-body-sm leading-relaxed text-zinc-400">{t(`ind.${key}.desc`)}</p>
-
-            <div className="flex flex-wrap gap-1">
-              {tagKeys.map((tagKey) => (
-                <span key={tagKey} className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-400">
-                  {t(`ind.${key}.${tagKey}`)}
-                </span>
-              ))}
-            </div>
-
-            <a
-              href="#contact"
-              className="mt-3 inline-flex items-center gap-1 text-sm text-zinc-400 transition-colors hover:text-accent">
-              {t('letsTalk')}
-              <IconArrowRight size={13} />
-            </a>
-          </div>
-        ))}
       </div>
     </div>
   );

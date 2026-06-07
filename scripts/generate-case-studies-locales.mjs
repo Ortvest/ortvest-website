@@ -51,11 +51,6 @@ const pl = deepMerge(en, {
         subtitle: 'Omówmy Twoje oprogramowanie operacyjne.',
         button: 'Napisz do nas',
       },
-      conversion: {
-        title: 'Potrzebujesz strony z wysoką konwersją?',
-        subtitle: 'Dopracujmy przekaz i design.',
-        button: 'Napisz do nas',
-      },
       brand: {
         title: 'Potrzebujesz identyfikacji wizualnej?',
         subtitle: 'Stwórzmy coś zapadającego w pamięć.',
@@ -100,11 +95,6 @@ const ua = deepMerge(en, {
       logistics: {
         title: 'Будуєте логістичний продукт?',
         subtitle: 'Обговоримо ваше операційне ПЗ.',
-        button: 'Написати нам',
-      },
-      conversion: {
-        title: 'Потрібен сайт з високою конверсією?',
-        subtitle: 'Допрацюємо меседж і дизайн.',
         button: 'Написати нам',
       },
       brand: {
@@ -181,7 +171,7 @@ const caseLocales = {
       },
       hero: { subtitle: 'Cyfrowy dom klubu — trasy, rezerwacje i społeczność żeglarzy.' },
       stats: {
-        projectType: { label: 'Typ projektu', value: 'Hospitality + Community' },
+        projectType: { label: 'Typ projektu', value: 'Community' },
         deliverables: { label: 'Zakres', value: 'Development' },
         platform: { label: 'Platforma', value: 'Web' },
       },
@@ -326,7 +316,7 @@ const caseLocales = {
       },
       hero: { subtitle: 'Сайт на довірі — шляхи побудови кредиту та ліди для новачків у фінансовій системі США.' },
       stats: {
-        projectType: { label: 'Тип проєкту', value: 'Conversion Site' },
+        projectType: { label: 'Тип проєкту', value: 'Marketing Website' },
         deliverables: { label: 'Результат', value: 'Design + Dev' },
         platform: { label: 'Платформа', value: 'Web' },
       },
@@ -340,7 +330,7 @@ const caseLocales = {
       },
       hero: { subtitle: 'Цифровий дім клубу — маршрути, бронювання та спільнота яхтсменів.' },
       stats: {
-        projectType: { label: 'Тип проєкту', value: 'Hospitality + Community' },
+        projectType: { label: 'Тип проєкту', value: 'Community' },
         deliverables: { label: 'Результат', value: 'Development' },
         platform: { label: 'Платформа', value: 'Web' },
       },

@@ -16,9 +16,6 @@ type CaseCardProps = {
 const NICHE_CTA_KEYS: Partial<Record<string, string>> = {
   p2p: 'p2p',
   community: 'community',
-  hospitality: 'hospitality',
-  sporttech: 'sporttech',
-  conversion: 'conversion',
   logistics: 'logistics',
   agritech: 'agritech',
 };

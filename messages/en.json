@@ -25,7 +25,7 @@
     "title2": "products that",
     "title3": "people ",
     "title3em": "love.",
-    "subtitle": "Not a generic studio. We work in specific industries — P2P, community, hospitality, sporttech — and we know the problems your users actually face.",
+    "subtitle": "Not a generic studio. We work in specific industries — P2P, community, logistics, and agritech — and we know the problems your users actually face.",
     "cta": {
       "primary": "Discuss your project",
       "secondary": "See what we do"
@@ -37,9 +37,6 @@
     "nodes": {
       "p2p": "P2P",
       "community": "Community",
-      "hospitality": "Hospitality",
-      "sporttech": "Sporttech",
-      "conversion": "Conversion",
       "logistics": "Logistics",
       "agritech": "Agritech"
     },
@@ -49,7 +46,7 @@
       "years": "years building",
       "projectsValue": "20+",
       "projectsLabel": "products shipped",
-      "industriesValue": "6",
+      "industriesValue": "4",
       "industriesLabel": "industry niches",
       "yearsValue": "4",
       "yearsLabel": "years building"
@@ -57,11 +54,8 @@
     "nicheTags": {
       "p2p": "P2P",
       "community": "Community",
-      "hospitality": "Hospitality",
-      "conversion": "Conversion Sites",
       "logistics": "Logistics",
-      "agritech": "Agritech",
-      "sporttech": "Sporttech"
+      "agritech": "Agritech"
     },
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "See what we do",
@@ -106,7 +100,7 @@
     "marketingAdvancedItems": {
       "email": "Email marketing & automation",
       "content": "Content strategy",
-      "copy": "Conversion copywriting",
+      "copy": "Persuasive copywriting",
       "crm": "CRM setup & marketing"
     },
     "marketingPremium": "Premium",
@@ -176,7 +170,7 @@
       "b4": "Social media marketing",
       "a1": "Email marketing & automation",
       "a2": "Content strategy",
-      "a3": "Conversion copywriting",
+      "a3": "Persuasive copywriting",
       "a4": "CRM setup & marketing",
       "p1": "Full marketing strategy",
       "p2": "Market & audience research",
@@ -197,28 +191,6 @@
         "t1": "Private networks",
         "t2": "Member portals",
         "t3": "Events"
-      },
-      "hospitality": {
-        "title": "Hospitality",
-        "desc": "Premium digital experiences for hospitality — real-time booking engines and luxury travel platforms.",
-        "t1": "Booking systems",
-        "t2": "Yacht & travel",
-        "t3": "Premium UX"
-      },
-      "sporttech": {
-        "title": "Sporttech",
-        "desc": "Technology for the sports world — from athlete dashboards to fan engagement apps and club operations.",
-        "t1": "Athlete tracking",
-        "t2": "Fan engagement",
-        "t3": "Analytics"
-      },
-      "conversion": {
-        "title": "Conversion Websites",
-        "desc": "High-performance websites built to convert visitors into leads and customers — fast, persuasive, and optimised from day one.",
-        "t1": "Landing pages",
-        "t2": "Lead gen",
-        "t3": "A/B testing",
-        "t4": "CRO"
       },
       "logistics": {
         "title": "Logistics",
@@ -288,16 +260,6 @@
         "description": "We design and build private networks, club platforms, and professional communities where engagement feels natural — not forced. Real-time messaging, member roles, events, and content in one place. We know the difference between a \"website\" and a \"platform where people actually return.\"",
         "tags": ["Private networks", "Member portals", "Real-time chat", "Events"]
       },
-      "hospitality": {
-        "title": "Hospitality",
-        "description": "From yacht clubs to boutique hotels — hospitality businesses need digital experiences as premium as their service. We build booking systems, club management platforms, and guest-facing products where every detail matters. We've built for yacht clubs and sailing communities — we know this world.",
-        "tags": ["Booking systems", "Club platforms", "Yacht & travel", "Premium UX"]
-      },
-      "conversion": {
-        "title": "Conversion Websites",
-        "description": "A website that looks good but doesn't convert is a liability. We build landing pages and corporate websites for tech and fintech startups in Europe and the US — with UX strategy, conversion copywriting direction, and analytics setup baked in from day one.",
-        "tags": ["Landing pages", "Corporate sites", "CRO", "Fintech & tech startups"]
-      },
       "logistics": {
         "title": "Logistics",
         "description": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization. Two cases live — more in progress.",
@@ -307,11 +269,6 @@
         "title": "Agritech",
         "description": "Building platforms for farm management, crop analytics, and supply chain visibility. If you're working in this space — let's talk before we publish the cases.",
         "tags": ["Farm management", "Crop analytics", "Supply chain", "IoT platforms"]
-      },
-      "sporttech": {
-        "title": "Sporttech",
-        "description": "Platforms for athlete tracking, club management, and fan engagement. Great digital products in sports are still rare — we're here to change that.",
-        "tags": ["Athlete tracking", "Club management", "Fan engagement", "Performance analytics"]
       }
     },
     "comingSoon": {
@@ -446,7 +403,7 @@
     "q1": "What services do you offer?",
     "a1": "We offer end-to-end product development: UX/UI design, web and mobile development, and marketing. You can order all three or just what you need.",
     "q2": "What types of companies do you work with?",
-    "a2": "Startups and scale-ups in specific industries — P2P, community, hospitality, sporttech, and conversion-focused products. We prefer clients who know what they want to build.",
+    "a2": "Startups and scale-ups in specific industries — P2P, community, logistics, and agritech. We prefer clients who know what they want to build.",
     "q3": "Can I order only one service?",
     "a3": "Yes. Design-only, development-only, or marketing-only engagements are all possible. We'll scope the project accordingly.",
     "q4": "How does project pricing work?",
@@ -517,9 +474,6 @@
     "projectTypes": {
       "p2p": "P2P",
       "community": "Community",
-      "hospitality": "Hospitality",
-      "conversion": "Conversion Site",
-      "sporttech": "Sporttech",
       "logistics": "Logistics",
       "agritech": "Agritech",
       "other": "Other"
@@ -575,15 +529,12 @@
   "cases": {
     "eyebrow": "Our work",
     "title": "Selected projects",
-    "subtitle": "Work across P2P, community, hospitality, conversion sites, and logistics.",
+    "subtitle": "Work across P2P, community, logistics, and agritech.",
     "ndaBanner": "Most NDA projects can be discussed on a call.",
     "filterIndustries": {
       "all": "All projects",
       "p2p": "P2P",
       "community": "Community",
-      "hospitality": "Hospitality",
-      "sporttech": "Sporttech",
-      "conversion": "Conversion Sites",
       "logistics": "Logistics",
       "agritech": "Agritech"
     },
@@ -593,7 +544,7 @@
     "page": {
       "label": "OUR WORK",
       "title": "Selected projects",
-      "subtitle": "Work across P2P, community, hospitality, conversion sites, and logistics. Most NDA projects can be discussed on a call.",
+      "subtitle": "Work across P2P, community, logistics, and agritech. Most NDA projects can be discussed on a call.",
       "filter": {
         "all": "All"
       },
@@ -601,13 +552,13 @@
       "nda": "NDA · details on call",
       "cta": {
         "title": "Working on something in one of these spaces?",
-        "sub": "Have a project in P2P, community, hospitality, or logistics? Let's discuss it.",
+        "sub": "Have a project in P2P, community, logistics, or agritech? Let's discuss it.",
         "primary": "Discuss your project",
         "secondary": "Book a free call"
       },
       "metadata": {
         "title": "Selected projects | Ortvest",
-        "description": "Work across P2P, community, hospitality, conversion sites, and logistics. Most NDA projects can be discussed on a call."
+        "description": "Work across P2P, community, logistics, and agritech. Most NDA projects can be discussed on a call."
       }
     },
     "ndaProtected": "NDA protected",
@@ -621,7 +572,7 @@
     "inProgress": "In progress",
     "designBy": "Design by",
     "ndaDetails": "Book a call to learn more",
-    "ctaText": "Have a project in P2P, community, hospitality, or logistics? Let's discuss it.",
+    "ctaText": "Have a project in P2P, community, logistics, or agritech? Let's discuss it.",
     "ctaButton": "Book a call",
     "ctaSecondary": "Get a quote",
     "bottomCtaText": "Working on something in one of these spaces?",
@@ -629,9 +580,6 @@
     "nicheCta": {
       "p2p": "Building a P2P product?",
       "community": "Building a community platform?",
-      "hospitality": "Building for hospitality?",
-      "sporttech": "Building a sports platform?",
-      "conversion": "Need a conversion-focused site?",
       "logistics": "Building a logistics platform?",
       "agritech": "Building an agritech platform?",
       "letsTalk": "Let's talk →"
@@ -657,7 +605,7 @@
       },
       "profitcraftauto": {
         "summary": "Personal auto broker site — the auto arm of the unified ProfitCraft system with ProfitCraft (credit).",
-        "result": "Conversion-focused site with applications and mobile UI; internal CMS delivered but not public."
+        "result": "Marketing website with applications and mobile UI; internal CMS delivered but not public."
       },
       "skisailclub": {
         "summary": "Digital platform for a yacht club — trip booking and community management.",
@@ -749,11 +697,6 @@
         "logistics": {
           "title": "Building a logistics or fleet product?",
           "subtitle": "Let's discuss your operations software.",
-          "button": "Get in touch"
-        },
-        "conversion": {
-          "title": "Need a high-converting website or landing page?",
-          "subtitle": "Let's shape your message and design.",
           "button": "Get in touch"
         },
         "brand": {
@@ -917,7 +860,7 @@
     "profitcraft": {
       "meta": {
         "title": "ProfitCraft — Credit-Building Website | Ortvest",
-        "description": "How Ortvest designed and built a conversion-focused website for a US credit-building service targeting newcomers."
+        "description": "How Ortvest designed and built a lead-generation marketing website for a US credit-building service targeting newcomers."
       },
       "hero": {
         "subtitle": "The credit-building face of the ProfitCraft ecosystem — one system with ProfitCraft Auto for car approvals and financing, plus an internal CMS we cannot showcase publicly."
@@ -925,7 +868,7 @@
       "stats": {
         "projectType": {
           "label": "Project type",
-          "value": "Conversion Site"
+          "value": "Marketing Website"
         },
         "deliverables": {
           "label": "Deliverables",
@@ -942,7 +885,7 @@
         "internal": "We also built an internal CMS for the ProfitCraft team — screenshots are not available for publication."
       },
       "features": {
-        "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
+        "subtitle": "Trust patterns that turn complex financial topics into confident action.",
         "items": {
           "valueProp": {
             "title": "Clear value proposition",
@@ -974,7 +917,7 @@
         "captions": {
           "1": "Homepage hero & value prop",
           "2": "Service detail section",
-          "3": "Contact & conversion flow"
+          "3": "Contact & lead flow"
         }
       },
       "sections": {
@@ -988,7 +931,7 @@
         },
         "development": {
           "title": "Development",
-          "description": "Built a fast, SEO-optimised website with conversion-focused structure, analytics integration, and smooth CTA flows."
+          "description": "Built a fast, SEO-optimised website with lead-generation structure, analytics integration, and smooth CTA flows."
         },
         "cms": {
           "title": "Internal CMS",
@@ -999,7 +942,7 @@
     "profitcraftauto": {
       "meta": {
         "title": "ProfitCraft Auto — Personal Auto Broker Website | Ortvest",
-        "description": "Conversion site for the auto-broker arm of the ProfitCraft ecosystem — unified with the credit-building product and backed by an internal CMS."
+        "description": "Marketing website for the auto-broker arm of the ProfitCraft ecosystem — unified with the credit-building product and backed by an internal CMS."
       },
       "hero": {
         "subtitle": "The auto-broker surface of the ProfitCraft system — paired with ProfitCraft (credit-building), with shared brand logic and an internal CMS we cannot show publicly."
@@ -1007,7 +950,7 @@
       "stats": {
         "projectType": {
           "label": "Project type",
-          "value": "Conversion Site"
+          "value": "Marketing Website"
         },
         "deliverables": {
           "label": "Deliverables",
@@ -1019,12 +962,12 @@
         }
       },
       "challenge": "ProfitCraft Auto is the car-financing and brokerage side of the same ProfitCraft ecosystem as the credit site. Buyers with any credit history need fast trust and simple applications, while the business runs on shared operations tooling — including a CMS that stays off-portfolio.",
-      "solution": "We built Auto as the conversion layer of the unified system — green brand, social proof, step-by-step flow, and application forms on desktop and mobile, visually aligned with ProfitCraft. The internal CMS supports operations but is not published in the case study gallery.",
+      "solution": "We built Auto as the marketing layer of the unified system — green brand, social proof, step-by-step flow, and application forms on desktop and mobile, visually aligned with ProfitCraft. The internal CMS supports operations but is not published in the case study gallery.",
       "cms": {
         "internal": "We also built an internal CMS for the ProfitCraft team — screenshots are not available for publication."
       },
       "features": {
-        "subtitle": "Conversion patterns tailored to auto financing and broker trust.",
+        "subtitle": "Trust patterns tailored to auto financing and broker trust.",
         "items": {
           "hero": {
             "title": "Hero & positioning",
@@ -1067,7 +1010,7 @@
         },
         "development": {
           "title": "Development",
-          "description": "Built a fast marketing site with conversion-focused structure, form flows, analytics hooks, and polished responsive behavior."
+          "description": "Built a fast marketing site with lead-generation structure, form flows, analytics hooks, and polished responsive behavior."
         },
         "cms": {
           "title": "Internal CMS",
@@ -1086,7 +1029,7 @@
       "stats": {
         "projectType": {
           "label": "Project type",
-          "value": "Hospitality + Community"
+          "value": "Community"
         },
         "deliverables": {
           "label": "Deliverables",
@@ -1280,7 +1223,7 @@
         },
         "development": {
           "title": "Development",
-          "description": "Built a fast, conversion-optimised website with lead capture forms, analytics setup, and SEO foundation."
+          "description": "Built a fast, lead-generation-optimised website with lead capture forms, analytics setup, and SEO foundation."
         }
       }
     },
@@ -1322,7 +1265,7 @@
         },
         "web": {
           "title": "Web Service",
-          "description": "A full web service giving desktop users the same seamless booking experience — service selection, scheduling, address management, order history, and payment processing. Built for speed, optimised for conversion."
+          "description": "A full web service giving desktop users the same seamless booking experience — service selection, scheduling, address management, order history, and payment processing. Built for speed, optimised for bookings."
         },
         "cms": {
           "title": "Internal Management System",
@@ -1481,7 +1424,7 @@
           "value": "Web UI"
         }
       },
-      "challenge": "The site needed a visual refresh that feels contemporary and credible — improving scanability and conversion without losing brand recognition.",
+      "challenge": "The site needed a visual refresh that feels contemporary and credible — improving scanability and engagement without losing brand recognition.",
       "solution": "We redesigned key pages with a strong type scale, consistent component library, and deliberate whitespace. Every section has a clear hierarchy so users know where to look and what to do next.",
       "features": {
         "subtitle": "Design decisions that balance aesthetics with usability.",
@@ -1702,10 +1645,10 @@
     "nav": "Navigation"
   },
   "metadata": {
-    "title": "Ortvest — IT Studio for P2P, Community, Hospitality & Conversion Platforms",
-    "description": "Ortvest builds digital products for P2P platforms, community networks, hospitality businesses, and conversion-focused websites. Design, development, and marketing — with industry expertise.",
-    "ogTitle": "Ortvest — P2P, Community, Hospitality & Conversion Platforms",
-    "ogDescription": "Digital products for P2P platforms, community networks, hospitality, and conversion-focused websites — design, development, and marketing with industry expertise."
+    "title": "Ortvest — IT Studio for P2P, Community, Logistics & Agritech",
+    "description": "Ortvest builds digital products for P2P platforms, community networks, logistics, and agritech — design, development, and marketing with deep industry expertise.",
+    "ogTitle": "Ortvest — P2P, Community, Logistics & Agritech",
+    "ogDescription": "Ortvest builds digital products for P2P platforms, community networks, logistics, and agritech — design, development, and marketing with deep industry expertise."
   },
   "cmsPage": {
     "hero": {

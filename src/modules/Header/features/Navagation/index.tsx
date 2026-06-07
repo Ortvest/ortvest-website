@@ -18,7 +18,7 @@ export const servicesDropdownItems = [
   {
     key: 'industries' as const,
     Icon: IconBuildingSkyscraper,
-    sublabel: 'P2P, Community, Sporttech…',
+    sublabel: 'P2P, Community, Logistics…',
     href: '?tab=industries#services',
   },
   {

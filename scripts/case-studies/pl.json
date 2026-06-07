@@ -49,11 +49,6 @@
         "subtitle": "Omówmy Twoje oprogramowanie operacyjne.",
         "button": "Napisz do nas"
       },
-      "conversion": {
-        "title": "Potrzebujesz strony z wysoką konwersją?",
-        "subtitle": "Dopracujmy przekaz i design.",
-        "button": "Napisz do nas"
-      },
       "brand": {
         "title": "Potrzebujesz identyfikacji wizualnej?",
         "subtitle": "Stwórzmy coś zapadającego w pamięć.",
@@ -213,7 +208,7 @@
     "challenge": "Nowi mieszkańcy USA nie znają roli kredytu. Potrzebna była strona budująca zaufanie i konwertująca bez żargonu.",
     "solution": "Narracja: problem, ścieżka, dowód, akcja. Typografia, sygnały zaufania i CTA prowadzące do kontaktu.",
     "features": {
-      "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
+      "subtitle": "Trust patterns that turn complex financial topics into confident action.",
       "items": {
         "valueProp": {
           "title": "Clear value proposition",
@@ -260,7 +255,7 @@
     "stats": {
       "projectType": {
         "label": "Typ projektu",
-        "value": "Hospitality + Community"
+        "value": "Community"
       },
       "deliverables": {
         "label": "Zakres",

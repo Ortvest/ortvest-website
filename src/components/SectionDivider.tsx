@@ -34,7 +34,7 @@ export async function SectionDivider() {
 
             <div className="flex flex-col items-center sm:min-w-0">
               <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
-                7
+                4
               </p>
               <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
                 {t('niches')}

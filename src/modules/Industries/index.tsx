@@ -7,34 +7,25 @@ import { useTranslations } from 'next-intl';
 import { Container, SectionHeader, SectionReveal } from '@shared/components';
 import type { TablerIcon } from '@shared/types/icon.types';
 
-import { accordionContent, hoverLift } from '@lib/motion';
+import { accordionContent } from '@lib/motion';
 import {
-  IconAnchor,
-  IconArrowRight,
   IconArrowsExchange,
+  IconArrowRight,
   IconChevronDown,
   IconLayoutDashboard,
   IconPlant,
-  IconStarFilled,
-  IconTrendingUp,
   IconTruck,
   IconUsers,
 } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-const nicheKeys = ['p2p', 'community', 'hospitality', 'sporttech', 'conversion'] as const;
-const expandingKeys = ['logistics', 'agritech'] as const;
+const nicheKeys = ['p2p', 'community', 'logistics', 'agritech'] as const;
 
 type NicheKey = (typeof nicheKeys)[number];
-type ExpandingKey = (typeof expandingKeys)[number];
-type IndustryKey = NicheKey | ExpandingKey;
 
-const nicheIcons: Record<IndustryKey, TablerIcon> = {
+const nicheIcons: Record<NicheKey, TablerIcon> = {
   p2p: IconArrowsExchange,
   community: IconUsers,
-  hospitality: IconAnchor,
-  sporttech: IconStarFilled,
-  conversion: IconTrendingUp,
   logistics: IconTruck,
   agritech: IconPlant,
 };
@@ -42,23 +33,22 @@ const nicheIcons: Record<IndustryKey, TablerIcon> = {
 const nicheIconSizes: Record<NicheKey, string> = {
   p2p: 'h-[22px] w-[22px]',
   community: 'h-6 w-6',
-  hospitality: 'h-5 w-5',
-  sporttech: 'h-[26px] w-[26px]',
-  conversion: 'h-5 w-5',
+  logistics: 'h-5 w-5',
+  agritech: 'h-5 w-5',
 };
 
 const nicheCaseLinks: Partial<Record<NicheKey, string>> = {
   community: '/cases/yachtmate',
+  logistics: '/cases/navexa',
 };
 
 type NicheCardProps = {
-  nicheKey: IndustryKey;
+  nicheKey: NicheKey;
   icon: TablerIcon;
   iconClassName: string;
   tags: string[];
   index?: number;
   caseLink?: string;
-  expanding?: boolean;
   isOpen: boolean;
   onToggle: () => void;
 };
@@ -70,7 +60,6 @@ function NicheCard({
   tags,
   index,
   caseLink,
-  expanding = false,
   isOpen,
   onToggle,
 }: NicheCardProps) {
@@ -88,11 +77,7 @@ function NicheCard({
         'border shadow-card transition-colors transition-shadow duration-300',
         'hover:shadow-card-hover',
         isOpen ? 'border-accent/50 shadow-card-hover' : 'border-black/[0.08] hover:border-accent/20',
-        expanding ? 'border-dashed opacity-75' : '',
-      ]
-        .filter(Boolean)
-        .join(' ')}>
-      {/* shimmer overlay */}
+      ].join(' ')}>
       <div
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         style={{
@@ -101,7 +86,6 @@ function NicheCard({
         aria-hidden
       />
 
-      {/* icon + chevron row */}
       <div className="relative z-10 mb-4 flex items-start justify-between">
         <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/15 text-black transition-transform duration-300 group-hover:scale-105">
           <Icon className={iconClassName} />
@@ -112,38 +96,23 @@ function NicheCard({
         />
       </div>
 
-      {/* main content */}
       <div className="relative z-10 flex flex-1 flex-col">
-        {expanding && (
-          <div className="mb-1 flex items-center gap-2">
-            <span className="rounded-full bg-black/[0.04] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-black/40">
-              {t('comingSoon.badge')}
-            </span>
-          </div>
-        )}
-
         {index !== undefined && (
           <span className="text-xs font-bold text-accent">{String(index + 1).padStart(2, '0')}</span>
         )}
 
-        <h3
-          className={`${index !== undefined ? 'mt-1' : 'mt-2'} text-h4 ${expanding ? 'text-black/70' : 'text-black'}`}>
+        <h3 className={`${index !== undefined ? 'mt-1' : 'mt-2'} text-h4 text-black`}>
           {t(`niches.${nicheKey}.title`)}
         </h3>
 
         <div className="mt-4 flex flex-wrap gap-1.5">
           {tags.map((tag) => (
-            <span
-              key={tag}
-              className={`rounded-full border px-3.5 py-1 text-xs ${
-                expanding ? 'border-black/[0.07] text-black/35' : 'border-black/10 text-black/55'
-              }`}>
+            <span key={tag} className="rounded-full border border-black/10 px-3.5 py-1 text-xs text-black/55">
               {tag}
             </span>
           ))}
         </div>
 
-        {/* "click to learn more" hint — fades out when card opens */}
         <AnimatePresence>
           {!isOpen && (
             <motion.p
@@ -157,29 +126,17 @@ function NicheCard({
           )}
         </AnimatePresence>
 
-        {/* accordion body */}
         <AnimatePresence>
           {isOpen && (
             <motion.div key="desc" {...accordionContent} className="overflow-hidden">
               <div className="pt-3">
-                <p className={`text-body-sm ${expanding ? 'text-black/45' : 'text-black/60'}`}>
-                  {t(`niches.${nicheKey}.description`)}
-                </p>
+                <p className="text-body-sm text-black/60">{t(`niches.${nicheKey}.description`)}</p>
                 {caseLink && (
                   <a
                     href={caseLink}
                     onClick={(e) => e.stopPropagation()}
                     className="mt-3 inline-block text-xs text-black/35 transition duration-150 hover:text-black/70">
                     {t('seeCase')} →
-                  </a>
-                )}
-                {expanding && (
-                  <a
-                    href="#contact"
-                    onClick={(e) => e.stopPropagation()}
-                    className="mt-4 inline-flex w-fit items-center gap-1 text-[12px] font-medium text-black/40 transition hover:text-black/70">
-                    {t('comingSoon.cta')}
-                    <IconArrowRight className="h-3 w-3" aria-hidden />
                   </a>
                 )}
               </div>
@@ -193,9 +150,9 @@ function NicheCard({
 
 export function Industries() {
   const t = useTranslations('industries');
-  const [openKey, setOpenKey] = useState<IndustryKey | null>(null);
+  const [openKey, setOpenKey] = useState<NicheKey | null>(null);
 
-  const toggle = (key: IndustryKey) => setOpenKey((prev) => (prev === key ? null : key));
+  const toggle = (key: NicheKey) => setOpenKey((prev) => (prev === key ? null : key));
 
   return (
     <section id="industries" className="section-padding bg-white" aria-labelledby="industries-heading">
@@ -219,21 +176,6 @@ export function Industries() {
                 tags={t.raw(`niches.${key}.tags`) as string[]}
                 index={i}
                 caseLink={nicheCaseLinks[key]}
-                isOpen={openKey === key}
-                onToggle={() => toggle(key)}
-              />
-            ))}
-          </div>
-
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
-            {expandingKeys.map((key) => (
-              <NicheCard
-                key={key}
-                nicheKey={key}
-                icon={nicheIcons[key]}
-                iconClassName="h-5 w-5 opacity-60"
-                tags={t.raw(`niches.${key}.tags`) as string[]}
-                expanding
                 isOpen={openKey === key}
                 onToggle={() => toggle(key)}
               />

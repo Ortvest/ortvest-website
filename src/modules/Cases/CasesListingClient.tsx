@@ -12,16 +12,7 @@ import { type CaseIndustry, portfolioGridCases } from './data';
 
 type FilterKey = 'all' | CaseIndustry;
 
-const FILTER_KEYS: FilterKey[] = [
-  'all',
-  'p2p',
-  'community',
-  'hospitality',
-  'sporttech',
-  'conversion',
-  'logistics',
-  'agritech',
-];
+const FILTER_KEYS: FilterKey[] = ['all', 'p2p', 'community', 'logistics', 'agritech'];
 
 export function CasesListingClient() {
   const t = useTranslations('cases');

@@ -49,11 +49,6 @@
         "subtitle": "Let's discuss your operations software.",
         "button": "Get in touch"
       },
-      "conversion": {
-        "title": "Need a high-converting website or landing page?",
-        "subtitle": "Let's shape your message and design.",
-        "button": "Get in touch"
-      },
       "brand": {
         "title": "Need a brand identity or visual system?",
         "subtitle": "Let's create something memorable.",
@@ -165,20 +160,20 @@
   "profitcraft": {
     "meta": {
       "title": "ProfitCraft — Credit-Building Website | Ortvest",
-      "description": "How Ortvest designed and built a conversion-focused website for a US credit-building service targeting newcomers."
+      "description": "How Ortvest designed and built a lead-generation website for a US credit-building service targeting newcomers."
     },
     "hero": {
       "subtitle": "A trust-first marketing website that explains credit growth paths and drives sign-ups for newcomers to the US financial system."
     },
     "stats": {
-      "projectType": { "label": "Project type", "value": "Conversion Site" },
+      "projectType": { "label": "Project type", "value": "Marketing Website" },
       "deliverables": { "label": "Deliverables", "value": "Design + Dev" },
       "platform": { "label": "Platform", "value": "Web" }
     },
     "challenge": "Newcomers to the US often don't know how credit unlocks loans, housing, and business growth. ProfitCraft needed a site that builds trust fast, explains complex financial concepts simply, and converts visitors into leads.",
     "solution": "We designed a clear narrative structure — problem, path, proof, action — with strong typography, trust signals, and focused CTAs. The site explains services without jargon and guides users toward consultation or sign-up.",
     "features": {
-      "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
+      "subtitle": "Trust patterns that turn complex financial topics into confident action.",
       "items": {
         "valueProp": {
           "title": "Clear value proposition",
@@ -207,7 +202,7 @@
       }
     },
     "gallery": {
-      "captions": { "1": "Homepage hero & value prop", "2": "Service detail section", "3": "Contact & conversion flow" }
+      "captions": { "1": "Homepage hero & value prop", "2": "Service detail section", "3": "Contact & lead flow" }
     }
   },
   "skisailclub": {
@@ -219,7 +214,7 @@
       "subtitle": "A digital home for a yacht and ski travel club — discover routes, book trips, and stay connected with the community."
     },
     "stats": {
-      "projectType": { "label": "Project type", "value": "Hospitality + Community" },
+      "projectType": { "label": "Project type", "value": "Community" },
       "deliverables": { "label": "Deliverables", "value": "Development" },
       "platform": { "label": "Platform", "value": "Web" }
     },
@@ -456,7 +451,7 @@
       "deliverables": { "label": "Deliverables", "value": "Design" },
       "platform": { "label": "Scope", "value": "Web UI" }
     },
-    "challenge": "The site needed a visual refresh that feels contemporary and credible — improving scanability and conversion without losing brand recognition.",
+    "challenge": "The site needed a visual refresh that feels contemporary and credible — improving scanability and engagement without losing brand recognition.",
     "solution": "We redesigned key pages with a strong type scale, consistent component library, and deliberate whitespace. Every section has a clear hierarchy so users know where to look and what to do next.",
     "features": {
       "subtitle": "Design decisions that balance aesthetics with usability.",

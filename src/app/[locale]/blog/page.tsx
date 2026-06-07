@@ -18,13 +18,17 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     description: t('description'),
     metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: `/${locale}/blog`,
-      languages: { en: '/en/blog', ua: '/ua/blog', pl: '/pl/blog' },
+      canonical: `${baseUrl}/${locale}/blog`,
+      languages: {
+        en: `${baseUrl}/en/blog`,
+        ua: `${baseUrl}/ua/blog`,
+        pl: `${baseUrl}/pl/blog`,
+      },
     },
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: `/${locale}/blog`,
+      url: `${baseUrl}/${locale}/blog`,
       siteName: 'Ortvest',
       locale: locale === 'ua' ? 'uk_UA' : locale === 'pl' ? 'pl_PL' : 'en_US',
       type: 'website',

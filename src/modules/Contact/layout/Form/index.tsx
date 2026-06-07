@@ -8,29 +8,12 @@ import { useLocale, useTranslations } from 'next-intl';
 import { contactApi } from '@global/api/contact.api';
 import { IconArrowRight, IconCircleCheck, IconLoader2 } from '@tabler/icons-react';
 
-type ProjectType =
-  | 'p2p'
-  | 'community'
-  | 'hospitality'
-  | 'conversion'
-  | 'sporttech'
-  | 'logistics'
-  | 'agritech'
-  | 'other';
+type ProjectType = 'p2p' | 'community' | 'logistics' | 'agritech' | 'other';
 
 type BudgetOption = 'small' | '1k5k' | '5k15k' | '15k';
 type ConsultationOption = 'discovery' | 'strategy';
 
-const PROJECT_TYPES: ProjectType[] = [
-  'p2p',
-  'community',
-  'hospitality',
-  'conversion',
-  'sporttech',
-  'logistics',
-  'agritech',
-  'other',
-];
+const PROJECT_TYPES: ProjectType[] = ['p2p', 'community', 'logistics', 'agritech', 'other'];
 
 const BUDGET_OPTIONS: BudgetOption[] = ['small', '1k5k', '5k15k', '15k'];
 const CONSULTATION_OPTIONS: ConsultationOption[] = ['discovery', 'strategy'];

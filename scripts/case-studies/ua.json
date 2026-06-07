@@ -49,11 +49,6 @@
         "subtitle": "Обговоримо ваше операційне ПЗ.",
         "button": "Написати нам"
       },
-      "conversion": {
-        "title": "Потрібен сайт з високою конверсією?",
-        "subtitle": "Допрацюємо меседж і дизайн.",
-        "button": "Написати нам"
-      },
       "brand": {
         "title": "Потрібна айдентика бренду?",
         "subtitle": "Створимо щось запам’ятовуване.",
@@ -199,7 +194,7 @@
     "stats": {
       "projectType": {
         "label": "Тип проєкту",
-        "value": "Conversion Site"
+        "value": "Marketing Website"
       },
       "deliverables": {
         "label": "Результат",
@@ -213,7 +208,7 @@
     "challenge": "Новачки не розуміють роль кредиту. Потрібен сайт, що будує довіру та конвертує без жаргону.",
     "solution": "Наратив: проблема, шлях, доказ, дія. Типографіка, trust signals і CTA до контакту.",
     "features": {
-      "subtitle": "Conversion patterns that turn complex financial topics into confident action.",
+      "subtitle": "Trust patterns that turn complex financial topics into confident action.",
       "items": {
         "valueProp": {
           "title": "Clear value proposition",
@@ -260,7 +255,7 @@
     "stats": {
       "projectType": {
         "label": "Тип проєкту",
-        "value": "Hospitality + Community"
+        "value": "Community"
       },
       "deliverables": {
         "label": "Результат",

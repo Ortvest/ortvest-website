@@ -1,7 +1,7 @@
 export type CaseCategory = 'design' | 'development' | 'designAndDevelopment';
 export type DesignSubcategory = 'logo' | 'web' | 'brand';
 export type DevelopmentSubcategory = 'web' | 'mobile';
-export type CaseIndustry = 'logistics' | 'community' | 'p2p' | 'hospitality' | 'conversion' | 'sporttech' | 'agritech';
+export type CaseIndustry = 'logistics' | 'community' | 'p2p' | 'agritech';
 export type CaseServiceTag = 'marketing';
 
 export interface CaseSection {
@@ -49,7 +49,7 @@ const portfolioCases: CaseItem[] = [
     designSubcategory: 'web',
     developmentSubcategory: 'web',
     title: 'YachtMate',
-    industries: ['community', 'hospitality', 'sporttech'],
+    industries: ['community'],
     challenge: 'Private network for yacht club members needed secure, real-time communication',
     solution: 'Built exclusive social platform with member verification and real-time messaging',
     stack: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
@@ -126,7 +126,7 @@ const portfolioCases: CaseItem[] = [
     designSubcategory: 'web',
     developmentSubcategory: 'web',
     title: 'ProfitCraft',
-    industries: ['conversion'],
+    industries: ['community'],
     challenge:
       'ProfitCraft (credit-building) and ProfitCraft Auto (auto broker) are one US ecosystem — separate public sites, shared operations. The credit site had to build trust and explain paths simply while matching the Auto product family',
     solution:
@@ -171,9 +171,9 @@ const portfolioCases: CaseItem[] = [
     designSubcategory: 'web',
     developmentSubcategory: 'web',
     title: 'ProfitCraft Auto',
-    industries: ['conversion'],
+    industries: ['community'],
     challenge:
-      'ProfitCraft Auto is the auto-broker arm of the same ProfitCraft ecosystem as the credit-building site. Buyers with any credit history needed a conversion site that fits the family brand and drives applications',
+      'ProfitCraft Auto is the auto-broker arm of the same ProfitCraft ecosystem as the credit-building site. Buyers with any credit history needed a marketing website that fits the family brand and drives applications',
     solution:
       'Built the Auto landing as the second public surface of the unified ProfitCraft system — trust-first flows, applications, and mobile UI aligned with the credit site. Internal CMS was delivered for operations but cannot be published',
     relatedCaseId: 'profitcraft',
@@ -214,7 +214,7 @@ const portfolioCases: CaseItem[] = [
     category: 'development',
     developmentSubcategory: 'web',
     title: 'Ski&Sail Club',
-    industries: ['hospitality', 'community', 'sporttech'],
+    industries: ['community'],
     challenge:
       'Build a digital platform for a yacht club that makes trip booking and community management seamless for both newcomers and experienced sailors.',
     solution:
@@ -279,7 +279,7 @@ const portfolioCases: CaseItem[] = [
     category: 'designAndDevelopment',
     developmentSubcategory: 'web',
     title: 'Teya Logistics',
-    industries: ['logistics', 'conversion'],
+    industries: ['logistics'],
     challenge:
       'Logistics company needed a modern landing page to clearly present their services and attract new clients',
     solution:
@@ -363,7 +363,7 @@ const portfolioCases: CaseItem[] = [
     category: 'design',
     designSubcategory: 'web',
     title: 'Gambit',
-    industries: ['conversion'],
+    industries: ['community'],
     challenge: 'Website UI needed modern design with strong visual hierarchy',
     solution: 'Clean interface with bold typography and strategic use of whitespace',
     stack: ['UI Design', 'Web Design', 'Figma'],
@@ -405,7 +405,7 @@ const portfolioCases: CaseItem[] = [
     category: 'design',
     designSubcategory: 'brand',
     title: '[Re.] skin&hair',
-    industries: ['conversion'],
+    industries: ['community'],
     challenge: 'Beauty brand needed modern, clean identity for skin and hair care line',
     solution: 'Minimalist brand system with organic shapes and premium feel',
     stack: ['Brand Identity', 'Visual Design', 'Adobe Illustrator'],
