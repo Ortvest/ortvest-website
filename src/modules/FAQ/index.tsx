@@ -25,7 +25,7 @@ export function FAQ() {
         <div className="mb-10 text-center">
           <div className="mb-3 flex items-center justify-center gap-2">
             <IconHelpCircle size={13} className="text-accent" />
-            <span className="text-xs uppercase tracking-widest text-accent">FAQ</span>
+            <span className="text-xs uppercase tracking-widest text-accent">{t('eyebrow')}</span>
           </div>
           <h2 id="faq-heading" className="mb-3 text-h1 font-bold text-white">
             {t('title')}

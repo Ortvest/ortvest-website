@@ -93,7 +93,7 @@ export function LeaveReviewForm() {
                 type="button"
                 onClick={() => setFormData((prev) => ({ ...prev, rating: star }))}
                 className="cursor-pointer p-0.5 transition hover:scale-110"
-                aria-label={`${star} stars`}>
+                aria-label={t('starsAriaLabel', { n: star })}>
                 <IconStar
                   size={28}
                   className={star <= formData.rating ? 'fill-accent text-accent' : 'text-zinc-200'}

@@ -1667,6 +1667,8 @@
       "placeholderAlt": "interface preview",
       "financeNote": "Part of the Analytics & Finance add-on module",
       "financeBadge": "Analytics & Finance add-on · +€20/mo",
+      "analyticsFinanceGroup": "Analytics & Finance",
+      "addonBadgeShort": "Add-on",
       "apiBlock": {
         "title": "Website Integration via API",
         "description": "Connect your website contact form directly to Ortvest CMS. Every submission lands automatically in Orders — no manual entry, no copy-paste.",
@@ -1770,6 +1772,16 @@
     "metadata": {
       "title": "Ortvest CMS — Business Management System",
       "description": "Ortvest CMS is a business management system built for agencies, studios and IT teams. Manage orders, projects, tasks, finances and your team in one place."
+    },
+    "widget": {
+      "eyebrow": "Business Management",
+      "title": "Ortvest CMS",
+      "description": "Our own business management system — included with every partnership contract at a special rate.",
+      "perMonth": "/mo",
+      "analyticsFinance": "Analytics & Finance",
+      "exploreTitle": "Want to see Ortvest CMS in action?",
+      "exploreDesc": "Explore the full overview — screenshots, modules, and how it works.",
+      "exploreButton": "Explore Ortvest CMS"
     }
   },
   "blogSection": {
@@ -1823,6 +1835,7 @@
       "submit": "Submit review",
       "submitting": "Submitting...",
       "error": "Something went wrong. Please try again.",
+      "starsAriaLabel": "{n} stars",
       "consent": "By submitting this review, you confirm that it is based on your genuine experience with Ortvest, and you consent to its publication on this website in accordance with our",
       "consentPrivacyLink": "Privacy Policy",
       "success": {

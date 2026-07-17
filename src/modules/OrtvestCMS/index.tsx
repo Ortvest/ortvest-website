@@ -13,9 +13,11 @@ type BillingPeriod = 'monthly' | 'annually';
 
 const includedModules = ['Orders', 'Projects', 'Board', 'Team'];
 
-const addOns = [
-  { name: 'Analytics & Finance', price: '+€20/mo' },
-  { name: 'Blog', price: '+€15/mo' },
+type AddOnItem = { nameKey: string; price: string };
+
+const addOns: AddOnItem[] = [
+  { nameKey: 'analyticsFinance', price: '+€20/mo' },
+  { nameKey: 'blog', price: '+€15/mo' },
 ];
 
 const pricing: Record<'standard' | 'partner', Record<BillingPeriod, string>> = {
@@ -67,9 +69,9 @@ export function OrtvestCMS() {
       <Container>
         <SectionReveal direction="right">
           <SectionHeader
-            eyebrow="Business Management"
-            title="Ortvest CMS"
-            description="Our own business management system — included with every partnership contract at a special rate."
+            eyebrow={t('widget.eyebrow')}
+            title={t('widget.title')}
+            description={t('widget.description')}
             icon={IconLayoutGrid}
             className="mb-10"
           />
@@ -79,7 +81,7 @@ export function OrtvestCMS() {
             <div
               className="inline-flex rounded-full border border-black/[0.08] bg-black/[0.03] p-1"
               role="group"
-              aria-label="Billing period">
+              aria-label={t('pricing.billingLabel')}>
               <button
                 type="button"
                 onClick={() => setBilling('monthly')}
@@ -87,7 +89,7 @@ export function OrtvestCMS() {
                 className={`rounded-full px-5 py-2 text-sm font-semibold transition-colors ${
                   billing === 'monthly' ? 'bg-black text-white shadow-sm' : 'text-black/55 hover:text-black'
                 }`}>
-                Monthly
+                {t('pricing.monthly')}
               </button>
               <button
                 type="button"
@@ -96,9 +98,9 @@ export function OrtvestCMS() {
                 className={`inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold transition-colors ${
                   billing === 'annually' ? 'bg-black text-white shadow-sm' : 'text-black/55 hover:text-black'
                 }`}>
-                Annually
+                {t('pricing.annually')}
                 <span className="rounded-full bg-accent px-2 py-0.5 text-[10px] font-bold text-black leading-none">
-                  Save 17%
+                  {t('pricing.save')}
                 </span>
               </button>
             </div>
@@ -109,16 +111,18 @@ export function OrtvestCMS() {
             {/* Standard */}
             <InteractiveCard icon={<IconLayoutGrid className="h-5 w-5" />}>
               <span className="mb-3 inline-flex rounded-full border border-black/[0.12] bg-black/[0.04] px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-black/55">
-                Standard
+                {t('pricing.standard.name')}
               </span>
 
               <div className="mt-1 flex items-baseline gap-1">
                 <span className="text-[2rem] font-bold leading-none text-black">{pricing.standard[billing]}</span>
-                <span className="text-body-sm text-black/45">/mo</span>
+                <span className="text-body-sm text-black/45">{t('widget.perMonth')}</span>
               </div>
-              {billing === 'annually' && <p className="mt-1 text-xs text-black/40">Billed annually</p>}
+              {billing === 'annually' && <p className="mt-1 text-xs text-black/40">{t('pricing.billedAnnually')}</p>}
 
-              <p className="mt-4 text-xs font-medium uppercase tracking-wider text-black/45">What&apos;s included</p>
+              <p className="mt-4 text-xs font-medium uppercase tracking-wider text-black/45">
+                {t('pricing.whatsIncluded')}
+              </p>
               <ul className="mt-3 space-y-2" role="list">
                 {includedModules.map((mod) => (
                   <li key={mod} className="flex items-center gap-2 text-body-sm text-black/70">
@@ -157,19 +161,22 @@ export function OrtvestCMS() {
               </div>
 
               <span className="mb-3 inline-flex rounded-full border border-accent/60 bg-accent/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent">
-                For our clients
+                {t('pricing.partner.badge')}
               </span>
 
-              <h3 className="text-h4 text-white">Partner rate</h3>
-              <p className="mt-1 text-body-sm text-white/55">For clients with an active contract.</p>
+              <h3 className="text-h4 text-white">{t('pricing.partner.name')}</h3>
+              <p className="mt-1 text-body-sm text-white/55">{t('pricing.partner.subtitle')}</p>
 
               <div className="mt-3 flex items-baseline gap-1">
                 <span className="text-[2rem] font-bold leading-none text-accent">{pricing.partner[billing]}</span>
-                <span className="text-body-sm text-white/45">/mo</span>
+                <span className="text-body-sm text-white/45">{t('widget.perMonth')}</span>
               </div>
-              {billing === 'annually' && <p className="mt-1 text-xs text-white/35">Billed annually</p>}
-
-              <p className="mt-4 text-xs font-medium uppercase tracking-wider text-white/45">What&apos;s included</p>
+              {billing === 'annually' && (
+                <p className="mt-1 text-xs text-white/35">{t('pricing.billedAnnually')}</p>
+              )}
+              <p className="mt-4 text-xs font-medium uppercase tracking-wider text-white/45">
+                {t('pricing.whatsIncluded')}
+              </p>
               <ul className="mt-3 space-y-2" role="list">
                 {includedModules.map((mod) => (
                   <li key={mod} className="flex items-center gap-2 text-body-sm text-white/75">
@@ -183,7 +190,7 @@ export function OrtvestCMS() {
                 <Link
                   href="#contact"
                   className="group inline-flex items-center gap-1.5 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-black shadow-sm transition-colors hover:bg-accent-dark">
-                  Learn more
+                  {t('pricing.partner.cta')}
                   <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>
@@ -193,15 +200,17 @@ export function OrtvestCMS() {
           {/* Add-on modules */}
           <div className="mt-10 text-center">
             <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-black/45">
-              Expand your CMS with add-on modules
+              {t('pricing.addonLabel')}
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {addOns.map(({ name, price }) => (
+              {addOns.map(({ nameKey, price }) => (
                 <div
-                  key={name}
+                  key={nameKey}
                   className="inline-flex items-center gap-2 rounded-full border border-black/[0.10] bg-black/[0.03] px-4 py-2 text-sm">
                   <IconPlus className="h-3.5 w-3.5 shrink-0 text-black/35" />
-                  <span className="font-medium text-black/75">{name}</span>
+                  <span className="font-medium text-black/75">
+                    {nameKey === 'blog' ? t('showcase.modules.blog.name') : t('widget.analyticsFinance')}
+                  </span>
                   <span className="text-black/45">{price}</span>
                 </div>
               ))}
@@ -211,15 +220,13 @@ export function OrtvestCMS() {
           {/* CMS overview CTA */}
           <div className="mt-12 flex flex-col items-center gap-4 rounded-2xl border border-black/[0.07] bg-black/[0.02] px-6 py-8 text-center sm:flex-row sm:justify-between sm:text-left">
             <div>
-              <p className="text-h4 text-black">Want to see Ortvest CMS in action?</p>
-              <p className="mt-1 text-body-sm text-black/55">
-                Explore the full overview — screenshots, modules, and how it works.
-              </p>
+              <p className="text-h4 text-black">{t('widget.exploreTitle')}</p>
+              <p className="mt-1 text-body-sm text-black/55">{t('widget.exploreDesc')}</p>
             </div>
             <Link
               href="/cms"
               className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-black/85">
-              Explore Ortvest CMS
+              {t('widget.exploreButton')}
               <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>

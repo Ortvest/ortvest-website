@@ -1,6 +1,7 @@
 {
   "nav": {
     "services": "Usługi",
+    "what": "Co robimy",
     "industries": "Branże",
     "technologies": "Technologie",
     "process": "Proces",
@@ -274,7 +275,8 @@
       "badge": "Rozwijamy",
       "cta": "Porozmawiajmy teraz"
     },
-    "seeCase": "Zobacz prawdziwy przykład"
+    "seeCase": "Zobacz prawdziwy przykład",
+    "clickToLearn": "Kliknij, aby dowiedzieć się więcej"
   },
   "technologies": {
     "eyebrow": "Stack",
@@ -1665,6 +1667,8 @@
       "placeholderAlt": "podgląd interfejsu",
       "financeNote": "Część modułu dodatkowego Analytics & Finance",
       "financeBadge": "Analytics & Finance add-on · +€20/mo",
+      "analyticsFinanceGroup": "Analityka i finanse",
+      "addonBadgeShort": "Dod.",
       "apiBlock": {
         "title": "Integracja strony przez API",
         "description": "Podłącz formularz kontaktowy swojej strony bezpośrednio do Ortvest CMS. Każde zgłoszenie trafia automatycznie do Zamówień — bez ręcznego wprowadzania danych.",
@@ -1768,6 +1772,16 @@
     "metadata": {
       "title": "Ortvest CMS — System zarządzania biznesem",
       "description": "Ortvest CMS to system zarządzania biznesem stworzony dla agencji, studiów i zespołów IT. Zarządzaj zamówieniami, projektami, zadaniami, finansami i zespołem w jednym miejscu."
+    },
+    "widget": {
+      "eyebrow": "Zarządzanie biznesem",
+      "title": "Ortvest CMS",
+      "description": "Własny system zarządzania biznesem — dostępny w ramach każdej umowy partnerskiej w specjalnej cenie.",
+      "perMonth": "/mies.",
+      "analyticsFinance": "Analityka i finanse",
+      "exploreTitle": "Chcesz zobaczyć Ortvest CMS w akcji?",
+      "exploreDesc": "Sprawdź pełny przegląd — zrzuty ekranu, moduły i zasadę działania.",
+      "exploreButton": "Sprawdź Ortvest CMS"
     }
   },
   "blogSection": {
@@ -1821,6 +1835,7 @@
       "submit": "Wyślij opinię",
       "submitting": "Wysyłanie...",
       "error": "Coś poszło nie tak. Spróbuj ponownie.",
+      "starsAriaLabel": "{n} gwiazdek",
       "consent": "Wysyłając opinię, potwierdzasz, że opiera się ona na Twoim rzeczywistym doświadczeniu współpracy z Ortvest, i wyrażasz zgodę na jej publikację na tej stronie zgodnie z naszą",
       "consentPrivacyLink": "Polityką prywatności",
       "success": {

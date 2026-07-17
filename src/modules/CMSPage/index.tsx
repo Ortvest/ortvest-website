@@ -51,8 +51,8 @@ const FEATURE_COUNT: Record<ModuleKey, number> = {
 
 const INCLUDED_MODULES: ModuleKey[] = ['orders', 'projects', 'board', 'team'];
 
-const ADDON_ITEMS: { key: string; label?: string; moduleKey?: ModuleKey; price: string }[] = [
-  { key: 'analytics-finance', label: 'Analytics & Finance', price: '+€20/mo' },
+const ADDON_ITEMS: { key: string; moduleKey?: ModuleKey; price: string }[] = [
+  { key: 'analytics-finance', price: '+€20/mo' },
   { key: 'blog', moduleKey: 'blog', price: '+€15/mo' },
 ];
 
@@ -179,7 +179,9 @@ export function CMSPage() {
                   style={{ backgroundColor: HERO_BG }}
                   aria-label="CMS modules">
                   <div className="mb-3 hidden px-3 py-1 lg:block">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/30">Ortvest CMS</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/30">
+                      {t('hero.eyebrow')}
+                    </span>
                   </div>
 
                   {MODULES.map(({ key, Icon, addon }) => (
@@ -187,10 +189,10 @@ export function CMSPage() {
                       {key === 'transactions' && (
                         <div className="mr-2 mt-4 flex shrink-0 items-center justify-between gap-2 px-3 py-1 lg:mr-0 lg:w-full">
                           <span className="whitespace-nowrap text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                            Analytics & Finance
+                            {t('showcase.analyticsFinanceGroup')}
                           </span>
                           <span className="hidden whitespace-nowrap rounded bg-accent/15 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent lg:inline">
-                            Add-on
+                            {t('showcase.addonBadgeShort')}
                           </span>
                         </div>
                       )}
@@ -209,7 +211,7 @@ export function CMSPage() {
                         </span>
                         {addon && !FINANCE_MODULES.has(key) && (
                           <span className="ml-auto hidden whitespace-nowrap rounded bg-accent/15 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-accent lg:inline">
-                            Add-on
+                            {t('showcase.addonBadgeShort')}
                           </span>
                         )}
                       </button>
@@ -473,12 +475,14 @@ export function CMSPage() {
                 {t('pricing.addonLabel')}
               </p>
               <div className="flex flex-wrap justify-center gap-3">
-                {ADDON_ITEMS.map(({ key, label, moduleKey, price }) => (
+                {ADDON_ITEMS.map(({ key, moduleKey, price }) => (
                   <div
                     key={key}
                     className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-2 text-sm">
                     <IconPlus className="h-3.5 w-3.5 shrink-0 text-accent" />
-                    <span className="font-medium text-white">{label ?? t(`showcase.modules.${moduleKey}.name`)}</span>
+                    <span className="font-medium text-white">
+                      {moduleKey ? t(`showcase.modules.${moduleKey}.name`) : t('showcase.analyticsFinanceGroup')}
+                    </span>
                     <span className="text-white/45">{price}</span>
                   </div>
                 ))}
