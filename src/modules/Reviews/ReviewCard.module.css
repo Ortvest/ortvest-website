@@ -1,7 +1,6 @@
-.review-card__text::before {
-  content: '"';
-}
-
-.review-card__text::after {
-  content: '"';
+.review-card__text--clamped {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }

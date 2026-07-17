@@ -1816,6 +1816,12 @@
   "reviews": {
     "label": "Reviews",
     "title": "What clients say.",
+    "readMore": "Read more",
+    "readLess": "Show less",
+    "ratingAriaLabel": "{n} out of 5 stars",
+    "avatarAlt": "Avatar of {name}",
+    "paginationLabel": "Reviews pagination",
+    "pageLabel": "Page {n}",
     "cta": {
       "text": "Worked with us? We'd love to hear from you.",
       "link": "Leave a review"

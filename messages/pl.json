@@ -1816,6 +1816,12 @@
   "reviews": {
     "label": "Opinie",
     "title": "Co mówią klienci.",
+    "readMore": "Czytaj więcej",
+    "readLess": "Zwiń",
+    "ratingAriaLabel": "{n} na 5 gwiazdek",
+    "avatarAlt": "Awatar {name}",
+    "paginationLabel": "Paginacja opinii",
+    "pageLabel": "Strona {n}",
     "cta": {
       "text": "Pracowaliście z nami? Chętnie poznamy Waszą opinię.",
       "link": "Zostaw opinię"

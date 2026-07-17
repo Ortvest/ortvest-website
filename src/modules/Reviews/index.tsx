@@ -9,29 +9,19 @@ import { Container, SectionHeader, SectionReveal } from '@shared/components';
 
 import { IconArrowRight, IconStar } from '@tabler/icons-react';
 
-import { ReviewCardSkeleton } from './ReviewCard';
+import { ReviewCardSkeleton, type ReviewItem } from './ReviewCard';
 import { ReviewsCarousel } from './ReviewsCarousel';
-
-interface Review {
-  _id: string;
-  name: string;
-  role: string;
-  company: string;
-  text: string;
-  rating: number;
-  createdAt: string;
-}
 
 export function Reviews() {
   const t = useTranslations('reviews');
   const locale = useLocale();
-  const [reviews, setReviews] = useState<Review[]>([]);
+  const [reviews, setReviews] = useState<ReviewItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch('/api/reviews')
       .then((res) => res.json())
-      .then((data: { reviews?: Review[] }) => {
+      .then((data: { reviews?: ReviewItem[] }) => {
         setReviews(data.reviews ?? []);
       })
       .catch(() => setReviews([]))
@@ -53,7 +43,7 @@ export function Reviews() {
           />
 
           {isLoading ? (
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {[1, 2, 3].map((i) => (
                 <ReviewCardSkeleton key={i} />
               ))}
