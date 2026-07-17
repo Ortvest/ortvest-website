@@ -63,18 +63,18 @@
   },
   "yachtmate": {
     "meta": {
-      "title": "YachtMate — Private Yacht Club Network | Ortvest",
+      "title": "YachtMate – Private Yacht Club Network | Ortvest",
       "description": "How Ortvest built a secure member network with verification, real-time messaging, events, and role-based access for yacht clubs."
     },
     "hero": {
-      "subtitle": "A private social network for yacht club members — secure communication, events, and a verified member directory in one place."
+      "subtitle": "A private social network for yacht club members – secure communication, events, and a verified member directory in one place."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "Community Platform" },
       "deliverables": { "label": "Deliverables", "value": "Design + Dev" },
       "platform": { "label": "Platform", "value": "Web" }
     },
-    "challenge": "Yacht clubs needed a closed network where high-profile members could communicate without exposing personal data on public channels. The challenge: real-time messaging, member verification, and event coordination — all behind strict privacy controls.",
+    "challenge": "Yacht clubs needed a closed network where high-profile members could communicate without exposing personal data on public channels. The challenge: real-time messaging, member verification, and event coordination – all behind strict privacy controls.",
     "solution": "We built YachtMate as an exclusive platform with member verification, role-based permissions, real-time chat, and event tools. React and Node.js power low-latency messaging while keeping member data private and access-controlled.",
     "features": {
       "subtitle": "Core mechanics that keep a private club network secure and useful day to day.",
@@ -111,19 +111,19 @@
   },
   "sharingground": {
     "meta": {
-      "title": "SharingGround — P2P Item Sharing Platform | Ortvest",
+      "title": "SharingGround – P2P Item Sharing Platform | Ortvest",
       "description": "How Ortvest built a peer-to-peer sharing platform with user verification, escrow payments, item tracking, and insurance integration."
     },
     "hero": {
-      "subtitle": "A peer-to-peer platform that lets people lend and borrow items within their community — with built-in trust, tracking, and secure payments."
+      "subtitle": "A peer-to-peer platform that lets people lend and borrow items within their community – with built-in trust, tracking, and secure payments."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "P2P Marketplace" },
       "deliverables": { "label": "Deliverables", "value": "Design + Dev" },
       "platform": { "label": "Platform", "value": "Web + Mobile" }
     },
-    "challenge": "Building a P2P sharing platform where strangers trust each other with their belongings. The core problem: how do you create accountability, prevent fraud, and handle disputes — without being the middleman for every transaction?",
-    "solution": "We built a trust layer from the ground up — identity verification, item condition logging, insurance integration, and a transparent review system. Payments are held in escrow and released only when both sides confirm the exchange.",
+    "challenge": "Building a P2P sharing platform where strangers trust each other with their belongings. The core problem: how do you create accountability, prevent fraud, and handle disputes – without being the middleman for every transaction?",
+    "solution": "We built a trust layer from the ground up – identity verification, item condition logging, insurance integration, and a transparent review system. Payments are held in escrow and released only when both sides confirm the exchange.",
     "features": {
       "subtitle": "The product mechanics that make community sharing work at scale.",
       "items": {
@@ -145,7 +145,7 @@
         },
         "insurance": {
           "title": "Insurance integration",
-          "description": "Optional item insurance for high-value goods — embedded directly in the listing flow."
+          "description": "Optional item insurance for high-value goods – embedded directly in the listing flow."
         },
         "messaging": {
           "title": "In-app messaging",
@@ -159,7 +159,7 @@
   },
   "profitcraft": {
     "meta": {
-      "title": "ProfitCraft — Credit-Building Website | Ortvest",
+      "title": "ProfitCraft – Credit-Building Website | Ortvest",
       "description": "How Ortvest designed and built a lead-generation website for a US credit-building service targeting newcomers."
     },
     "hero": {
@@ -171,7 +171,7 @@
       "platform": { "label": "Platform", "value": "Web" }
     },
     "challenge": "Newcomers to the US often don't know how credit unlocks loans, housing, and business growth. ProfitCraft needed a site that builds trust fast, explains complex financial concepts simply, and converts visitors into leads.",
-    "solution": "We designed a clear narrative structure — problem, path, proof, action — with strong typography, trust signals, and focused CTAs. The site explains services without jargon and guides users toward consultation or sign-up.",
+    "solution": "We designed a clear narrative structure – problem, path, proof, action – with strong typography, trust signals, and focused CTAs. The site explains services without jargon and guides users toward consultation or sign-up.",
     "features": {
       "subtitle": "Trust patterns that turn complex financial topics into confident action.",
       "items": {
@@ -185,7 +185,7 @@
         },
         "paths": {
           "title": "Service paths",
-          "description": "Structured journeys for loans, auto, home, and business — each with dedicated messaging."
+          "description": "Structured journeys for loans, auto, home, and business – each with dedicated messaging."
         },
         "leads": {
           "title": "Lead capture",
@@ -207,18 +207,18 @@
   },
   "skisailclub": {
     "meta": {
-      "title": "Ski&Sail Club — Yacht Trip Booking Platform | Ortvest",
+      "title": "Ski&Sail Club – Yacht Trip Booking Platform | Ortvest",
       "description": "How Ortvest built a yacht club platform for route discovery, trip booking, and community management."
     },
     "hero": {
-      "subtitle": "A digital home for a yacht and ski travel club — discover routes, book trips, and stay connected with the community."
+      "subtitle": "A digital home for a yacht and ski travel club – discover routes, book trips, and stay connected with the community."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "Community" },
       "deliverables": { "label": "Deliverables", "value": "Development" },
       "platform": { "label": "Platform", "value": "Web" }
     },
-    "challenge": "The club needed one platform for newcomers and experienced sailors — trip discovery, booking, and community — while capturing the emotional side of yachting: freedom, scenery, and adventure.",
+    "challenge": "The club needed one platform for newcomers and experienced sailors – trip discovery, booking, and community – while capturing the emotional side of yachting: freedom, scenery, and adventure.",
     "solution": "We built a fast Next.js platform with immersive visuals, clear booking flows, and member profiles. Route pages, trip management, and community features live in a single cohesive experience ready to scale.",
     "features": {
       "subtitle": "Booking and community tools that reflect the spirit of sailing.",
@@ -255,18 +255,18 @@
   },
   "navexa": {
     "meta": {
-      "title": "Navexa — Logistics Management Platform | Ortvest",
+      "title": "Navexa – Logistics Management Platform | Ortvest",
       "description": "How Ortvest built a logistics platform for fleet tracking, route optimization, and shipment monitoring. NDA project."
     },
     "hero": {
-      "subtitle": "A unified logistics platform for fleet tracking, route optimization, and shipment monitoring — plus marketing to support client acquisition and product positioning."
+      "subtitle": "A unified logistics platform for fleet tracking, route optimization, and shipment monitoring – plus marketing to support client acquisition and product positioning."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "Logistics SaaS" },
       "deliverables": { "label": "Deliverables", "value": "Development + Marketing" },
       "platform": { "label": "Platform", "value": "Web" }
     },
-    "challenge": "A logistics company needed one system to see fleet position, optimize routes, and monitor shipments — replacing spreadsheets and disconnected tools with real-time operational visibility. They also needed marketing support to present the product clearly and attract new B2B clients.",
+    "challenge": "A logistics company needed one system to see fleet position, optimize routes, and monitor shipments – replacing spreadsheets and disconnected tools with real-time operational visibility. They also needed marketing support to present the product clearly and attract new B2B clients.",
     "solution": "We delivered a custom dashboard integrating GPS data, route optimization, and shipment analytics, alongside marketing materials and messaging that explain the platform's value to fleet operators and logistics teams.",
     "features": {
       "subtitle": "Operational tools that connect fleet, routes, and shipments in one view.",
@@ -300,18 +300,18 @@
   },
   "teya": {
     "meta": {
-      "title": "Teya Logistics — Company Landing Page | Ortvest",
+      "title": "Teya Logistics – Company Landing Page | Ortvest",
       "description": "How Ortvest designed and developed a modern logistics landing page focused on lead generation and clear service presentation."
     },
     "hero": {
-      "subtitle": "A modern landing page for a logistics company — clear services, strong branding, and a simple path to request a quote."
+      "subtitle": "A modern landing page for a logistics company – clear services, strong branding, and a simple path to request a quote."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "Marketing Site" },
       "deliverables": { "label": "Deliverables", "value": "Design + Dev" },
       "platform": { "label": "Platform", "value": "Web" }
     },
-    "challenge": "Teya needed to present transportation services clearly, build trust with new clients, and convert visitors into quote requests — without overwhelming them with logistics jargon.",
+    "challenge": "Teya needed to present transportation services clearly, build trust with new clients, and convert visitors into quote requests – without overwhelming them with logistics jargon.",
     "solution": "We designed and built a responsive landing page with focused service blocks, company advantages, and prominent contact CTAs. The layout guides visitors from understanding to action in a few scrolls.",
     "features": {
       "subtitle": "Marketing patterns that turn traffic into qualified leads.",
@@ -335,7 +335,7 @@
         },
         "contact": {
           "title": "Easy contact",
-          "description": "Multiple touchpoints — form, phone, and quick inquiry — without friction."
+          "description": "Multiple touchpoints – form, phone, and quick inquiry – without friction."
         }
       }
     },
@@ -345,11 +345,11 @@
   },
   "mie": {
     "meta": {
-      "title": "Mie — AI Smart Shopping List | Ortvest",
+      "title": "Mie – AI Smart Shopping List | Ortvest",
       "description": "How Ortvest built an AI-powered shopping app with inventory tracking, recipe suggestions, and smart reminders. NDA project."
     },
     "hero": {
-      "subtitle": "An intelligent shopping list that tracks pantry inventory, suggests recipes, and reminds you what to buy — powered by AI."
+      "subtitle": "An intelligent shopping list that tracks pantry inventory, suggests recipes, and reminds you what to buy – powered by AI."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "Mobile App" },
@@ -390,18 +390,18 @@
   },
   "reskin": {
     "meta": {
-      "title": "[Re.] skin&hair — Brand Identity | Ortvest",
-      "description": "How Ortvest created a minimalist brand identity for a modern beauty line — logo, palette, typography, and packaging direction."
+      "title": "[Re.] skin&hair – Brand Identity | Ortvest",
+      "description": "How Ortvest created a minimalist brand identity for a modern beauty line – logo, palette, typography, and packaging direction."
     },
     "hero": {
-      "subtitle": "A minimalist brand system for a skin and hair care line — organic shapes, premium feel, and consistency across touchpoints."
+      "subtitle": "A minimalist brand system for a skin and hair care line – organic shapes, premium feel, and consistency across touchpoints."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "Brand Identity" },
       "deliverables": { "label": "Deliverables", "value": "Design" },
       "platform": { "label": "Scope", "value": "Print + Digital" }
     },
-    "challenge": "A beauty brand entering a crowded market needed identity that feels premium and clean without cold minimalism — communicating quality and trust at first glance.",
+    "challenge": "A beauty brand entering a crowded market needed identity that feels premium and clean without cold minimalism – communicating quality and trust at first glance.",
     "solution": "We developed a full brand system: logo mark, color palette, typography, packaging direction, and usage guidelines. Organic shapes and warm neutrals balance modern simplicity with approachable luxury.",
     "features": {
       "subtitle": "Deliverables that form a cohesive, premium brand language.",
@@ -440,18 +440,18 @@
   },
   "gambit": {
     "meta": {
-      "title": "Gambit — Website UI Design | Ortvest",
+      "title": "Gambit – Website UI Design | Ortvest",
       "description": "How Ortvest designed a modern website UI with strong hierarchy, bold typography, and strategic whitespace."
     },
     "hero": {
-      "subtitle": "A modern website UI with bold typography, clear hierarchy, and whitespace that guides attention — designed for impact and usability."
+      "subtitle": "A modern website UI with bold typography, clear hierarchy, and whitespace that guides attention – designed for impact and usability."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "UI Design" },
       "deliverables": { "label": "Deliverables", "value": "Design" },
       "platform": { "label": "Scope", "value": "Web UI" }
     },
-    "challenge": "The site needed a visual refresh that feels contemporary and credible — improving scanability and engagement without losing brand recognition.",
+    "challenge": "The site needed a visual refresh that feels contemporary and credible – improving scanability and engagement without losing brand recognition.",
     "solution": "We redesigned key pages with a strong type scale, consistent component library, and deliberate whitespace. Every section has a clear hierarchy so users know where to look and what to do next.",
     "features": {
       "subtitle": "Design decisions that balance aesthetics with usability.",
@@ -488,18 +488,18 @@
   },
   "navexa-logo": {
     "meta": {
-      "title": "Navexa Logo — Brand Identity | Ortvest",
-      "description": "Logo design for Navexa logistics — navigation, precision, and versatile light and dark variations."
+      "title": "Navexa Logo – Brand Identity | Ortvest",
+      "description": "Logo design for Navexa logistics – navigation, precision, and versatile light and dark variations."
     },
     "hero": {
-      "subtitle": "A professional logo for a logistics company — precision, navigation, and modern technology in a versatile mark."
+      "subtitle": "A professional logo for a logistics company – precision, navigation, and modern technology in a versatile mark."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "Logo Design" },
       "deliverables": { "label": "Deliverables", "value": "Design" },
       "platform": { "label": "Scope", "value": "Print + Digital" }
     },
-    "challenge": "Navexa needed a logo that communicates navigation and operational precision — working on dashboards, vehicles, documents, and marketing in both light and dark contexts.",
+    "challenge": "Navexa needed a logo that communicates navigation and operational precision – working on dashboards, vehicles, documents, and marketing in both light and dark contexts.",
     "solution": "We created a minimalist mark with clean geometry and color variations for digital products and print. The system scales from favicon to fleet branding without losing clarity.",
     "features": {
       "subtitle": "Logo system built for logistics and product environments.",
@@ -533,18 +533,18 @@
   },
   "ortvest-logo": {
     "meta": {
-      "title": "Ortvest Logo — Brand Identity | Ortvest",
-      "description": "Logo and brand mark for Ortvest IT studio — innovation, clarity, and scalable digital identity."
+      "title": "Ortvest Logo – Brand Identity | Ortvest",
+      "description": "Logo and brand mark for Ortvest IT studio – innovation, clarity, and scalable digital identity."
     },
     "hero": {
-      "subtitle": "Brand mark for an IT studio — clean geometry, innovation, and variations built for product and corporate use."
+      "subtitle": "Brand mark for an IT studio – clean geometry, innovation, and variations built for product and corporate use."
     },
     "stats": {
       "projectType": { "label": "Project type", "value": "Logo Design" },
       "deliverables": { "label": "Deliverables", "value": "Design" },
       "platform": { "label": "Scope", "value": "Digital-first" }
     },
-    "challenge": "Ortvest needed a logo that reflects modern software craftsmanship — clear at favicon size, strong on pitch decks, and consistent across product UIs and marketing.",
+    "challenge": "Ortvest needed a logo that reflects modern software craftsmanship – clear at favicon size, strong on pitch decks, and consistent across product UIs and marketing.",
     "solution": "We designed a sleek mark with light and dark variations, strict geometry, and guidelines for digital-first use. The identity scales from app icons to large-format print without rework.",
     "features": {
       "subtitle": "A flexible identity for a product-focused IT studio.",

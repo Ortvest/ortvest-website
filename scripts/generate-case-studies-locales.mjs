@@ -112,13 +112,13 @@ const caseLocales = {
   pl: {
     yachtmate: {
       meta: {
-        title: 'YachtMate — Prywatna sieć klubu jachtowego | Ortvest',
+        title: 'YachtMate – Prywatna sieć klubu jachtowego | Ortvest',
         description:
           'Jak Ortvest zbudowało bezpieczną sieć członków z weryfikacją, czatem na żywo i zarządzaniem wydarzeniami.',
       },
       hero: {
         subtitle:
-          'Prywatna sieć społecznościowa dla członków klubu jachtowego — bezpieczna komunikacja, wydarzenia i zweryfikowany katalog.',
+          'Prywatna sieć społecznościowa dla członków klubu jachtowego – bezpieczna komunikacja, wydarzenia i zweryfikowany katalog.',
       },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Platforma społecznościowa' },
@@ -132,12 +132,12 @@ const caseLocales = {
     },
     sharingground: {
       meta: {
-        title: 'SharingGround — Platforma P2P do wymiany rzeczy | Ortvest',
+        title: 'SharingGround – Platforma P2P do wymiany rzeczy | Ortvest',
         description: 'Platforma peer-to-peer z weryfikacją, escrow, śledzeniem przedmiotów i ubezpieczeniem.',
       },
       hero: {
         subtitle:
-          'Platforma P2P do wypożyczania i wymiany rzeczy w społeczności — z weryfikacją, śledzeniem i bezpiecznymi płatnościami.',
+          'Platforma P2P do wypożyczania i wymiany rzeczy w społeczności – z weryfikacją, śledzeniem i bezpiecznymi płatnościami.',
       },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Marketplace P2P' },
@@ -151,10 +151,10 @@ const caseLocales = {
     },
     profitcraft: {
       meta: {
-        title: 'ProfitCraft — Strona credit-building | Ortvest',
+        title: 'ProfitCraft – Strona credit-building | Ortvest',
         description: 'Strona konwersyjna dla usługi budowania kredytu w USA.',
       },
-      hero: { subtitle: 'Strona oparta na zaufaniu — ścieżki budowania kredytu i leady dla nowych mieszkańców USA.' },
+      hero: { subtitle: 'Strona oparta na zaufaniu – ścieżki budowania kredytu i leady dla nowych mieszkańców USA.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Strona konwersyjna' },
         deliverables: { label: 'Zakres', value: 'Design + Dev' },
@@ -166,26 +166,26 @@ const caseLocales = {
     },
     skisailclub: {
       meta: {
-        title: 'Ski&Sail Club — Rezerwacja rejsów | Ortvest',
+        title: 'Ski&Sail Club – Rezerwacja rejsów | Ortvest',
         description: 'Platforma klubu: trasy, rezerwacje i społeczność.',
       },
-      hero: { subtitle: 'Cyfrowy dom klubu — trasy, rezerwacje i społeczność żeglarzy.' },
+      hero: { subtitle: 'Cyfrowy dom klubu – trasy, rezerwacje i społeczność żeglarzy.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Community' },
         deliverables: { label: 'Zakres', value: 'Development' },
         platform: { label: 'Platforma', value: 'Web' },
       },
-      challenge: 'Jedna platforma dla nowicjuszy i doświadczonych — rejsy, booking i społeczność z emocją żeglarstwa.',
+      challenge: 'Jedna platforma dla nowicjuszy i doświadczonych – rejsy, booking i społeczność z emocją żeglarstwa.',
       solution: 'Szybka platforma Next.js z bookingiem, trasami i profilami członków w spójnym doświadczeniu.',
     },
     navexa: {
       meta: {
-        title: 'Navexa — Platforma logistyczna | Ortvest',
+        title: 'Navexa – Platforma logistyczna | Ortvest',
         description: 'Flota, trasy, monitoring przesyłek oraz marketing produktu. Projekt NDA.',
       },
       hero: {
         subtitle:
-          'Platforma logistyczna — flota, trasy, monitoring oraz marketing wspierający pozycjonowanie i pozyskiwanie klientów B2B.',
+          'Platforma logistyczna – flota, trasy, monitoring oraz marketing wspierający pozycjonowanie i pozyskiwanie klientów B2B.',
       },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Logistics SaaS' },
@@ -198,10 +198,10 @@ const caseLocales = {
     },
     teya: {
       meta: {
-        title: 'Teya Logistics — Landing page | Ortvest',
+        title: 'Teya Logistics – Landing page | Ortvest',
         description: 'Nowoczesna strona logistyczna pod leady.',
       },
-      hero: { subtitle: 'Landing dla firmy transportowej — usługi, branding i szybka wycena.' },
+      hero: { subtitle: 'Landing dla firmy transportowej – usługi, branding i szybka wycena.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Strona marketingowa' },
         deliverables: { label: 'Zakres', value: 'Design + Dev' },
@@ -212,10 +212,10 @@ const caseLocales = {
     },
     mie: {
       meta: {
-        title: 'Mie — Inteligentna lista zakupów AI | Ortvest',
+        title: 'Mie – Inteligentna lista zakupów AI | Ortvest',
         description: 'Aplikacja z AI, stanem spiżarni i przypomnieniami. NDA.',
       },
-      hero: { subtitle: 'Lista zakupów z AI — stan spiżarni, przepisy i przypomnienia.' },
+      hero: { subtitle: 'Lista zakupów z AI – stan spiżarni, przepisy i przypomnienia.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Aplikacja mobilna' },
         deliverables: { label: 'Zakres', value: 'Development' },
@@ -226,43 +226,43 @@ const caseLocales = {
     },
     reskin: {
       meta: {
-        title: '[Re.] skin&hair — Identyfikacja marki | Ortvest',
+        title: '[Re.] skin&hair – Identyfikacja marki | Ortvest',
         description: 'Minimalistyczna identyfikacja linii beauty.',
       },
-      hero: { subtitle: 'Minimalistyczny system marki dla pielęgnacji skóry i włosów — premium i spójność.' },
+      hero: { subtitle: 'Minimalistyczny system marki dla pielęgnacji skóry i włosów – premium i spójność.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Identyfikacja marki' },
         deliverables: { label: 'Zakres', value: 'Design' },
         platform: { label: 'Zakres', value: 'Print + Digital' },
       },
-      challenge: 'Marka w tłumie kategorii beauty — premium bez chłodnego minimalizmu.',
-      solution: 'Logo, paleta, typografia, opakowania i wytyczne — organiczne kształty i ciepłe neutrale.',
+      challenge: 'Marka w tłumie kategorii beauty – premium bez chłodnego minimalizmu.',
+      solution: 'Logo, paleta, typografia, opakowania i wytyczne – organiczne kształty i ciepłe neutrale.',
     },
     gambit: {
-      meta: { title: 'Gambit — UI strony www | Ortvest', description: 'Nowoczesny UI z hierarchią i typografią.' },
-      hero: { subtitle: 'Nowoczesny UI — typografia, hierarchia i whitespace pod konwersję.' },
+      meta: { title: 'Gambit – UI strony www | Ortvest', description: 'Nowoczesny UI z hierarchią i typografią.' },
+      hero: { subtitle: 'Nowoczesny UI – typografia, hierarchia i whitespace pod konwersję.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'UI Design' },
         deliverables: { label: 'Zakres', value: 'Design' },
         platform: { label: 'Zakres', value: 'Web UI' },
       },
       challenge: 'Odświeżenie wizualne bez utraty rozpoznawalności marki.',
-      solution: 'Skala typograficzna, komponenty i whitespace — jasna hierarchia na każdej sekcji.',
+      solution: 'Skala typograficzna, komponenty i whitespace – jasna hierarchia na każdej sekcji.',
     },
     'navexa-logo': {
-      meta: { title: 'Logo Navexa | Ortvest', description: 'Logo logistyczne — precyzja i warianty jasne/ciemne.' },
-      hero: { subtitle: 'Logo dla firmy logistycznej — nawigacja, precyzja, warianty na każde medium.' },
+      meta: { title: 'Logo Navexa | Ortvest', description: 'Logo logistyczne – precyzja i warianty jasne/ciemne.' },
+      hero: { subtitle: 'Logo dla firmy logistycznej – nawigacja, precyzja, warianty na każde medium.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Logo' },
         deliverables: { label: 'Zakres', value: 'Design' },
         platform: { label: 'Zakres', value: 'Print + Digital' },
       },
-      challenge: 'Logo na dashboardy, pojazdy i dokumenty — jasne i ciemne tło.',
+      challenge: 'Logo na dashboardy, pojazdy i dokumenty – jasne i ciemne tło.',
       solution: 'Minimalistyczny znak z geometrią i wariantami kolorystycznymi do skalowania.',
     },
     'ortvest-logo': {
-      meta: { title: 'Logo Ortvest | Ortvest', description: 'Znak studia IT — innowacja i skalowalność.' },
-      hero: { subtitle: 'Znak studia IT — geometria, innowacja, warianty pod produkt i korporację.' },
+      meta: { title: 'Logo Ortvest | Ortvest', description: 'Znak studia IT – innowacja i skalowalność.' },
+      hero: { subtitle: 'Znak studia IT – geometria, innowacja, warianty pod produkt i korporację.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Logo' },
         deliverables: { label: 'Zakres', value: 'Design' },
@@ -275,11 +275,11 @@ const caseLocales = {
   ua: {
     yachtmate: {
       meta: {
-        title: 'YachtMate — Приватна мережа яхт-клубу | Ortvest',
+        title: 'YachtMate – Приватна мережа яхт-клубу | Ortvest',
         description: 'Безпечна мережа учасників з верифікацією, чатом у реальному часі та подіями.',
       },
       hero: {
-        subtitle: 'Приватна соцмережа для членів яхт-клубу — безпечна комунікація, події та верифікований каталог.',
+        subtitle: 'Приватна соцмережа для членів яхт-клубу – безпечна комунікація, події та верифікований каталог.',
       },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Платформа спільноти' },
@@ -289,15 +289,15 @@ const caseLocales = {
       challenge:
         'Клубам потрібна закрита мережа без публічних каналів. Виклик: чат, верифікація та події під суворим контролем приватності.',
       solution:
-        'YachtMate з верифікацією, ролями, чатом і інструментами подій. React і Node.js — низька затримка та приватність даних.',
+        'YachtMate з верифікацією, ролями, чатом і інструментами подій. React і Node.js – низька затримка та приватність даних.',
     },
     sharingground: {
       meta: {
-        title: 'SharingGround — P2P платформа обміну речами | Ortvest',
+        title: 'SharingGround – P2P платформа обміну речами | Ortvest',
         description: 'P2P з верифікацією, ескроу, відстеженням і страхуванням.',
       },
       hero: {
-        subtitle: 'P2P-платформа оренди та обміну речами в спільноті — верифікація, відстеження, безпечні платежі.',
+        subtitle: 'P2P-платформа оренди та обміну речами в спільноті – верифікація, відстеження, безпечні платежі.',
       },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'P2P Marketplace' },
@@ -311,10 +311,10 @@ const caseLocales = {
     },
     profitcraft: {
       meta: {
-        title: 'ProfitCraft — Сайт credit-building | Ortvest',
+        title: 'ProfitCraft – Сайт credit-building | Ortvest',
         description: 'Конверсійний сайт для послуги кредитної історії в США.',
       },
-      hero: { subtitle: 'Сайт на довірі — шляхи побудови кредиту та ліди для новачків у фінансовій системі США.' },
+      hero: { subtitle: 'Сайт на довірі – шляхи побудови кредиту та ліди для новачків у фінансовій системі США.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Marketing Website' },
         deliverables: { label: 'Результат', value: 'Design + Dev' },
@@ -325,26 +325,26 @@ const caseLocales = {
     },
     skisailclub: {
       meta: {
-        title: 'Ski&Sail Club — Бронювання яхтенних поїздок | Ortvest',
+        title: 'Ski&Sail Club – Бронювання яхтенних поїздок | Ortvest',
         description: 'Платформа клубу: маршрути, бронювання, спільнота.',
       },
-      hero: { subtitle: 'Цифровий дім клубу — маршрути, бронювання та спільнота яхтсменів.' },
+      hero: { subtitle: 'Цифровий дім клубу – маршрути, бронювання та спільнота яхтсменів.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Community' },
         deliverables: { label: 'Результат', value: 'Development' },
         platform: { label: 'Платформа', value: 'Web' },
       },
-      challenge: 'Одна платформа для новачків і досвідчених — поїздки, бронювання, емоція вітрильності.',
+      challenge: 'Одна платформа для новачків і досвідчених – поїздки, бронювання, емоція вітрильності.',
       solution: 'Швидка платформа Next.js з бронюванням, маршрутами та профілями в єдиному досвіді.',
     },
     navexa: {
       meta: {
-        title: 'Navexa — Логістична платформа | Ortvest',
+        title: 'Navexa – Логістична платформа | Ortvest',
         description: 'Флот, маршрути, моніторинг відправлень і маркетинг продукту. NDA.',
       },
       hero: {
         subtitle:
-          'Логістична платформа — флот, маршрути, моніторинг і маркетинг для позиціонування та залучення B2B-клієнтів.',
+          'Логістична платформа – флот, маршрути, моніторинг і маркетинг для позиціонування та залучення B2B-клієнтів.',
       },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Logistics SaaS' },
@@ -356,10 +356,10 @@ const caseLocales = {
     },
     teya: {
       meta: {
-        title: 'Teya Logistics — Лендінг | Ortvest',
+        title: 'Teya Logistics – Лендінг | Ortvest',
         description: 'Сучасний лендінг логістичної компанії під ліди.',
       },
-      hero: { subtitle: 'Лендінг транспортної компанії — послуги, брендинг і швидкий запит ціни.' },
+      hero: { subtitle: 'Лендінг транспортної компанії – послуги, брендинг і швидкий запит ціни.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Marketing Site' },
         deliverables: { label: 'Результат', value: 'Design + Dev' },
@@ -370,10 +370,10 @@ const caseLocales = {
     },
     mie: {
       meta: {
-        title: 'Mie — Розумний список покупок з AI | Ortvest',
+        title: 'Mie – Розумний список покупок з AI | Ortvest',
         description: 'Додаток з AI, запасами та нагадуваннями. NDA.',
       },
-      hero: { subtitle: 'Список покупок з AI — запаси комори, рецепти та нагадування.' },
+      hero: { subtitle: 'Список покупок з AI – запаси комори, рецепти та нагадування.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Mobile App' },
         deliverables: { label: 'Результат', value: 'Development' },
@@ -384,43 +384,43 @@ const caseLocales = {
     },
     reskin: {
       meta: {
-        title: '[Re.] skin&hair — Айдентика бренду | Ortvest',
+        title: '[Re.] skin&hair – Айдентика бренду | Ortvest',
         description: 'Мінімалістична айдентика beauty-лінійки.',
       },
-      hero: { subtitle: 'Мінімалістична система бренду для догляду за шкірою та волоссям — premium і цілісність.' },
+      hero: { subtitle: 'Мінімалістична система бренду для догляду за шкірою та волоссям – premium і цілісність.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Brand Identity' },
         deliverables: { label: 'Результат', value: 'Design' },
         platform: { label: 'Обсяг', value: 'Print + Digital' },
       },
-      challenge: 'Бренд у насиченій категорії — premium без холодного мінімалізму.',
-      solution: 'Логотип, палітра, типографіка, упаковка та гайдлайни — органічні форми та теплі нейтралі.',
+      challenge: 'Бренд у насиченій категорії – premium без холодного мінімалізму.',
+      solution: 'Логотип, палітра, типографіка, упаковка та гайдлайни – органічні форми та теплі нейтралі.',
     },
     gambit: {
-      meta: { title: 'Gambit — UI веб-сайту | Ortvest', description: 'Сучасний UI з ієрархією та типографікою.' },
-      hero: { subtitle: 'Сучасний UI — типографіка, ієрархія та whitespace під конверсію.' },
+      meta: { title: 'Gambit – UI веб-сайту | Ortvest', description: 'Сучасний UI з ієрархією та типографікою.' },
+      hero: { subtitle: 'Сучасний UI – типографіка, ієрархія та whitespace під конверсію.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'UI Design' },
         deliverables: { label: 'Результат', value: 'Design' },
         platform: { label: 'Обсяг', value: 'Web UI' },
       },
       challenge: 'Візуальне оновлення без втрати впізнаваності бренду.',
-      solution: 'Типографічна шкала, компоненти та whitespace — чітка ієрархія на кожній секції.',
+      solution: 'Типографічна шкала, компоненти та whitespace – чітка ієрархія на кожній секції.',
     },
     'navexa-logo': {
-      meta: { title: 'Логотип Navexa | Ortvest', description: 'Логотип логістики — точність і світлі/темні варіанти.' },
-      hero: { subtitle: 'Логотип логістичної компанії — навігація, точність, варіанти для будь-якого носія.' },
+      meta: { title: 'Логотип Navexa | Ortvest', description: 'Логотип логістики – точність і світлі/темні варіанти.' },
+      hero: { subtitle: 'Логотип логістичної компанії – навігація, точність, варіанти для будь-якого носія.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Logo Design' },
         deliverables: { label: 'Результат', value: 'Design' },
         platform: { label: 'Обсяг', value: 'Print + Digital' },
       },
-      challenge: 'Логотип для dashboard, транспорту та документів — світлий і темний фон.',
+      challenge: 'Логотип для dashboard, транспорту та документів – світлий і темний фон.',
       solution: 'Мінімалістичний знак з геометрією та кольоровими варіантами для масштабування.',
     },
     'ortvest-logo': {
-      meta: { title: 'Логотип Ortvest | Ortvest', description: 'Знак IT-студії — інновації та масштабованість.' },
-      hero: { subtitle: 'Знак IT-студії — геометрія, інновації, варіанти для продукту та корпорації.' },
+      meta: { title: 'Логотип Ortvest | Ortvest', description: 'Знак IT-студії – інновації та масштабованість.' },
+      hero: { subtitle: 'Знак IT-студії – геометрія, інновації, варіанти для продукту та корпорації.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Logo Design' },
         deliverables: { label: 'Результат', value: 'Design' },

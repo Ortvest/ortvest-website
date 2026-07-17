@@ -25,7 +25,7 @@
     "title2": "products that",
     "title3": "people ",
     "title3em": "love.",
-    "subtitle": "Not a generic studio. We work in specific industries — P2P, community, logistics, and agritech — and we know the problems your users actually face.",
+    "subtitle": "Not a generic studio. We work in specific industries – P2P, community, logistics, and agritech – and we know the problems your users actually face.",
     "cta": {
       "primary": "Discuss your project",
       "secondary": "See what we do"
@@ -125,7 +125,7 @@
   "servicesSection": {
     "label": "Services",
     "title": "Everything to launch and grow.",
-    "subtitle": "From strategy to code to go-to-market — we build, ship, and scale digital products end to end.",
+    "subtitle": "From strategy to code to go-to-market – we build, ship, and scale digital products end to end.",
     "tabs": {
       "what": "What we do",
       "industries": "Industries",
@@ -160,7 +160,7 @@
     },
     "marketing": {
       "title": "Marketing",
-      "desc": "Full go-to-market support — from SEO and ads to content strategy and CRM. Available as an add-on.",
+      "desc": "Full go-to-market support – from SEO and ads to content strategy and CRM. Available as an add-on.",
       "basic": "Basic",
       "advanced": "Advanced",
       "premium": "Premium",
@@ -180,14 +180,14 @@
     "ind": {
       "p2p": {
         "title": "P2P Platforms",
-        "desc": "We build peer-to-peer platforms where trust is the product — with verification, escrow payments, and dispute resolution.",
+        "desc": "We build peer-to-peer platforms where trust is the product – with verification, escrow payments, and dispute resolution.",
         "t1": "Sharing economy",
         "t2": "Peer rental",
         "t3": "Escrow"
       },
       "community": {
         "title": "Community",
-        "desc": "Community platforms connecting people around shared interests — with roles, permissions, real-time chat and events.",
+        "desc": "Community platforms connecting people around shared interests – with roles, permissions, real-time chat and events.",
         "t1": "Private networks",
         "t2": "Member portals",
         "t3": "Events"
@@ -252,22 +252,22 @@
     "niches": {
       "p2p": {
         "title": "P2P Platforms",
-        "description": "We build peer-to-peer platforms where trust is the product. Sharing, rental, and exchange platforms with verification, escrow payments, item tracking, and dispute resolution — built so strangers can transact with confidence.",
+        "description": "We build peer-to-peer platforms where trust is the product. Sharing, rental, and exchange platforms with verification, escrow payments, item tracking, and dispute resolution – built so strangers can transact with confidence.",
         "tags": ["Sharing economy", "Peer rental", "Trust & safety", "Escrow payments"]
       },
       "community": {
         "title": "Community",
-        "description": "We design and build private networks, club platforms, and professional communities where engagement feels natural — not forced. Real-time messaging, member roles, events, and content in one place. We know the difference between a \"website\" and a \"platform where people actually return.\"",
+        "description": "We design and build private networks, club platforms, and professional communities where engagement feels natural – not forced. Real-time messaging, member roles, events, and content in one place. We know the difference between a \"website\" and a \"platform where people actually return.\"",
         "tags": ["Private networks", "Member portals", "Real-time chat", "Events"]
       },
       "logistics": {
         "title": "Logistics",
-        "description": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization. Two cases live — more in progress.",
+        "description": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization. Two cases live – more in progress.",
         "tags": ["Fleet management", "Shipment tracking", "Route optimization", "Logistics SaaS"]
       },
       "agritech": {
         "title": "Agritech",
-        "description": "Building platforms for farm management, crop analytics, and supply chain visibility. If you're working in this space — let's talk before we publish the cases.",
+        "description": "Building platforms for farm management, crop analytics, and supply chain visibility. If you're working in this space – let's talk before we publish the cases.",
         "tags": ["Farm management", "Crop analytics", "Supply chain", "IoT platforms"]
       }
     },
@@ -310,7 +310,7 @@
   "approach": {
     "label": "Our approach",
     "title": "We ask hard questions before we open Figma.",
-    "subtitle": "Most studios start with design. We start with understanding — who are the users, where do similar products fail, what does success look like in 6 months.",
+    "subtitle": "Most studios start with design. We start with understanding – who are the users, where do similar products fail, what does success look like in 6 months.",
     "quote": {
       "text": "Design comes after ",
       "em": "clarity.",
@@ -364,29 +364,29 @@
     "step2Title": "Design with intent",
     "step2Desc": "Every screen has a job. We design around user behaviour, not aesthetic preference. Pretty is a byproduct of functional.",
     "step3Title": "Build to last",
-    "step3Desc": "Clean architecture, tested code, documented systems. You own what we build — and your next developer will thank us.",
+    "step3Desc": "Clean architecture, tested code, documented systems. You own what we build – and your next developer will thank us.",
     "step4Title": "Launch and stay",
     "step4Desc": "We don't disappear after launch. Most of our clients come back for the next product."
   },
   "team": {
     "label": "The team",
     "title": "The expertise behind your product.",
-    "subtitle": "Developers, designers, and marketers — each bringing deep experience to every project we take on.",
+    "subtitle": "Developers, designers, and marketers – each bringing deep experience to every project we take on.",
     "developers": {
       "title": "Developers",
-      "description": "We build fast, clean, and without shortcuts. From complex backend architecture to pixel-perfect frontend — our engineers have shipped products across fintech, e-commerce, and SaaS that users actually love to use.",
+      "description": "We build fast, clean, and without shortcuts. From complex backend architecture to pixel-perfect frontend – our engineers have shipped products across fintech, e-commerce, and SaaS that users actually love to use.",
       "years": "15+",
       "yearsLabel": "years of experience"
     },
     "designers": {
       "title": "Designers",
-      "description": "Interfaces that make people stop scrolling. Our designers work at the intersection of aesthetics and usability — crafting brand identities, UI systems, and interactive experiences that look premium and convert.",
+      "description": "Interfaces that make people stop scrolling. Our designers work at the intersection of aesthetics and usability – crafting brand identities, UI systems, and interactive experiences that look premium and convert.",
       "years": "10+",
       "yearsLabel": "years of experience"
     },
     "marketing": {
       "title": "Marketing",
-      "description": "Launches that get noticed. We pair sharp positioning with data-driven execution — SEO, paid ads, and content strategy that builds real traction, not vanity metrics. Your product deserves an audience that actually converts.",
+      "description": "Launches that get noticed. We pair sharp positioning with data-driven execution – SEO, paid ads, and content strategy that builds real traction, not vanity metrics. Your product deserves an audience that actually converts.",
       "years": "10+",
       "yearsLabel": "years of experience"
     }
@@ -403,11 +403,11 @@
     "q1": "What services do you offer?",
     "a1": "We offer end-to-end product development: UX/UI design, web and mobile development, and marketing. You can order all three or just what you need.",
     "q2": "What types of companies do you work with?",
-    "a2": "Startups and scale-ups in specific industries — P2P, community, logistics, and agritech. We prefer clients who know what they want to build.",
+    "a2": "Startups and scale-ups in specific industries – P2P, community, logistics, and agritech. We prefer clients who know what they want to build.",
     "q3": "Can I order only one service?",
     "a3": "Yes. Design-only, development-only, or marketing-only engagements are all possible. We'll scope the project accordingly.",
     "q4": "How does project pricing work?",
-    "a4": "We work with fixed-scope projects and retainer agreements. After a discovery call we send a detailed proposal with a clear price and timeline — no surprises.",
+    "a4": "We work with fixed-scope projects and retainer agreements. After a discovery call we send a detailed proposal with a clear price and timeline – no surprises.",
     "q5": "What does the collaboration process look like?",
     "a5": "Discovery → Design → Development → Launch. 1-week sprints with demos every cycle. You always know what's being built and what's next.",
     "q6": "Do you offer support after launch?",
@@ -442,7 +442,7 @@
       },
       "4": {
         "title": "Proposal & kickoff",
-        "desc": "We send a detailed proposal. If it fits — we start."
+        "desc": "We send a detailed proposal. If it fits – we start."
       }
     },
     "form": {
@@ -565,7 +565,7 @@
     "viewCaseStudy": "View case study →",
     "ndaNote": "Details available on a call",
     "brandSectionTitle": "Brand & identity work",
-    "emptyState": "No projects in this industry yet — be the first and we'll turn it into a case study.",
+    "emptyState": "No projects in this industry yet – be the first and we'll turn it into a case study.",
     "beFirstButton": "Discuss your project",
     "challenge": "Challenge",
     "solution": "Solution",
@@ -600,19 +600,19 @@
         "result": "Full P2P marketplace with verification, reviews, and item tracking."
       },
       "profitcraft": {
-        "summary": "Credit-building site — one product in the ProfitCraft ecosystem together with ProfitCraft Auto.",
+        "summary": "Credit-building site – one product in the ProfitCraft ecosystem together with ProfitCraft Auto.",
         "result": "Trust-first marketing site; we also built an internal CMS that cannot be shown publicly."
       },
       "profitcraftauto": {
-        "summary": "Personal auto broker site — the auto arm of the unified ProfitCraft system with ProfitCraft (credit).",
+        "summary": "Personal auto broker site – the auto arm of the unified ProfitCraft system with ProfitCraft (credit).",
         "result": "Marketing website with applications and mobile UI; internal CMS delivered but not public."
       },
       "skisailclub": {
-        "summary": "Digital platform for a yacht club — trip booking and community management.",
+        "summary": "Digital platform for a yacht club – trip booking and community management.",
         "result": "Seamless booking and community platform for both newcomers and experienced sailors."
       },
       "navexa": {
-        "summary": "Logistics platform for fleet and shipments — with product marketing support.",
+        "summary": "Logistics platform for fleet and shipments – with product marketing support.",
         "result": "Operations dashboard plus marketing to position the product and attract B2B clients."
       },
       "teya": {
@@ -620,8 +620,8 @@
         "result": "Clean marketing website that clearly presents services and drives inbound leads."
       },
       "pachaca": {
-        "summary": "A full-stack cleaning and dry-cleaning service platform — mobile apps, web service, and an internal management system built from scratch.",
-        "result": "A complete digital ecosystem for an on-demand service business — from the customer's first tap to the operations team's last status update."
+        "summary": "A full-stack cleaning and dry-cleaning service platform – mobile apps, web service, and an internal management system built from scratch.",
+        "result": "A complete digital ecosystem for an on-demand service business – from the customer's first tap to the operations team's last status update."
       },
       "mie": {
         "summary": "AI-powered smart shopping list that tracks inventory and suggests purchases.",
@@ -681,7 +681,7 @@
         "label": "Next case"
       },
       "relatedProduct": {
-        "label": "Part of the same ProfitCraft system — see also"
+        "label": "Part of the same ProfitCraft system – see also"
       },
       "cta": {
         "p2p": {
@@ -713,11 +713,11 @@
     },
     "yachtmate": {
       "meta": {
-        "title": "YachtMate — Private Yacht Club Network | Ortvest",
+        "title": "YachtMate – Private Yacht Club Network | Ortvest",
         "description": "How Ortvest built a secure member network with verification, real-time messaging, events, and role-based access for yacht clubs."
       },
       "hero": {
-        "subtitle": "A private social network for yacht club members — secure communication, events, and a verified member directory in one place."
+        "subtitle": "A private social network for yacht club members – secure communication, events, and a verified member directory in one place."
       },
       "stats": {
         "projectType": {
@@ -733,7 +733,7 @@
           "value": "Web"
         }
       },
-      "challenge": "Yacht clubs needed a closed network where high-profile members could communicate without exposing personal data on public channels. The challenge: real-time messaging, member verification, and event coordination — all behind strict privacy controls.",
+      "challenge": "Yacht clubs needed a closed network where high-profile members could communicate without exposing personal data on public channels. The challenge: real-time messaging, member verification, and event coordination – all behind strict privacy controls.",
       "solution": "We built YachtMate as an exclusive platform with member verification, role-based permissions, real-time chat, and event tools. React and Node.js power low-latency messaging while keeping member data private and access-controlled.",
       "features": {
         "subtitle": "Core mechanics that keep a private club network secure and useful day to day.",
@@ -774,11 +774,11 @@
       "sections": {
         "brand": {
           "title": "Brand & Identity",
-          "description": "We started with the brand — logo, color palette, typography, and visual language that reflects the premium, close-knit nature of a private yacht club."
+          "description": "We started with the brand – logo, color palette, typography, and visual language that reflects the premium, close-knit nature of a private yacht club."
         },
         "design": {
           "title": "UX & Design",
-          "description": "Designed the full platform experience — member profiles, real-time chat, event management, and admin dashboard. Every screen was built around trust and simplicity."
+          "description": "Designed the full platform experience – member profiles, real-time chat, event management, and admin dashboard. Every screen was built around trust and simplicity."
         },
         "development": {
           "title": "Development",
@@ -788,11 +788,11 @@
     },
     "sharingground": {
       "meta": {
-        "title": "SharingGround — P2P Item Sharing Platform | Ortvest",
+        "title": "SharingGround – P2P Item Sharing Platform | Ortvest",
         "description": "How Ortvest built a peer-to-peer sharing platform with user verification, escrow payments, item tracking, and insurance integration."
       },
       "hero": {
-        "subtitle": "A peer-to-peer platform that lets people lend and borrow items within their community — with built-in trust, tracking, and secure payments."
+        "subtitle": "A peer-to-peer platform that lets people lend and borrow items within their community – with built-in trust, tracking, and secure payments."
       },
       "stats": {
         "projectType": {
@@ -808,8 +808,8 @@
           "value": "Web + Mobile"
         }
       },
-      "challenge": "Building a P2P sharing platform where strangers trust each other with their belongings. The core problem: how do you create accountability, prevent fraud, and handle disputes — without being the middleman for every transaction?",
-      "solution": "We built a trust layer from the ground up — identity verification, item condition logging, insurance integration, and a transparent review system. Payments are held in escrow and released only when both sides confirm the exchange.",
+      "challenge": "Building a P2P sharing platform where strangers trust each other with their belongings. The core problem: how do you create accountability, prevent fraud, and handle disputes – without being the middleman for every transaction?",
+      "solution": "We built a trust layer from the ground up – identity verification, item condition logging, insurance integration, and a transparent review system. Payments are held in escrow and released only when both sides confirm the exchange.",
       "features": {
         "subtitle": "The product mechanics that make community sharing work at scale.",
         "items": {
@@ -831,7 +831,7 @@
           },
           "insurance": {
             "title": "Insurance integration",
-            "description": "Optional item insurance for high-value goods — embedded directly in the listing flow."
+            "description": "Optional item insurance for high-value goods – embedded directly in the listing flow."
           },
           "messaging": {
             "title": "In-app messaging",
@@ -849,21 +849,21 @@
       "sections": {
         "design": {
           "title": "UX & Design",
-          "description": "Designed the complete borrower and lender flows — from listing an item to completing an exchange. Trust signals were built into every screen."
+          "description": "Designed the complete borrower and lender flows – from listing an item to completing an exchange. Trust signals were built into every screen."
         },
         "development": {
           "title": "Development",
-          "description": "Built the full platform — identity verification, escrow payment logic, item condition logging with photo evidence, two-way review system, and in-app messaging."
+          "description": "Built the full platform – identity verification, escrow payment logic, item condition logging with photo evidence, two-way review system, and in-app messaging."
         }
       }
     },
     "profitcraft": {
       "meta": {
-        "title": "ProfitCraft — Credit-Building Website | Ortvest",
+        "title": "ProfitCraft – Credit-Building Website | Ortvest",
         "description": "How Ortvest designed and built a lead-generation marketing website for a US credit-building service targeting newcomers."
       },
       "hero": {
-        "subtitle": "The credit-building face of the ProfitCraft ecosystem — one system with ProfitCraft Auto for car approvals and financing, plus an internal CMS we cannot showcase publicly."
+        "subtitle": "The credit-building face of the ProfitCraft ecosystem – one system with ProfitCraft Auto for car approvals and financing, plus an internal CMS we cannot showcase publicly."
       },
       "stats": {
         "projectType": {
@@ -879,10 +879,10 @@
           "value": "ProfitCraft ecosystem · Web"
         }
       },
-      "challenge": "ProfitCraft and ProfitCraft Auto are a single US product family: credit-building on one site, personal auto brokerage on the other. Newcomers need trust and simple paths on the credit site, while operations rely on shared tooling — including a CMS we are not allowed to publish.",
-      "solution": "We designed the credit site as the trust and education layer of the unified system — clear narrative, service paths, and CTAs aligned with Auto. Alongside the public marketing sites, we delivered an internal CMS for the team; screenshots stay private.",
+      "challenge": "ProfitCraft and ProfitCraft Auto are a single US product family: credit-building on one site, personal auto brokerage on the other. Newcomers need trust and simple paths on the credit site, while operations rely on shared tooling – including a CMS we are not allowed to publish.",
+      "solution": "We designed the credit site as the trust and education layer of the unified system – clear narrative, service paths, and CTAs aligned with Auto. Alongside the public marketing sites, we delivered an internal CMS for the team; screenshots stay private.",
       "cms": {
-        "internal": "We also built an internal CMS for the ProfitCraft team — screenshots are not available for publication."
+        "internal": "We also built an internal CMS for the ProfitCraft team – screenshots are not available for publication."
       },
       "features": {
         "subtitle": "Trust patterns that turn complex financial topics into confident action.",
@@ -897,7 +897,7 @@
           },
           "paths": {
             "title": "Service paths",
-            "description": "Structured journeys for loans, auto, home, and business — each with dedicated messaging."
+            "description": "Structured journeys for loans, auto, home, and business – each with dedicated messaging."
           },
           "leads": {
             "title": "Lead capture",
@@ -923,7 +923,7 @@
       "sections": {
         "strategy": {
           "title": "Strategy & Copy Direction",
-          "description": "Mapped the target audience — newcomers unfamiliar with the US credit system. Built the messaging around trust, simplicity, and a clear path from zero to a working credit score."
+          "description": "Mapped the target audience – newcomers unfamiliar with the US credit system. Built the messaging around trust, simplicity, and a clear path from zero to a working credit score."
         },
         "design": {
           "title": "Design",
@@ -935,17 +935,17 @@
         },
         "cms": {
           "title": "Internal CMS",
-          "description": "A custom CMS for ProfitCraft operations — content, leads, and workflows across the credit and auto products. Built for the team’s daily work; not available for public screenshots."
+          "description": "A custom CMS for ProfitCraft operations – content, leads, and workflows across the credit and auto products. Built for the team’s daily work; not available for public screenshots."
         }
       }
     },
     "profitcraftauto": {
       "meta": {
-        "title": "ProfitCraft Auto — Personal Auto Broker Website | Ortvest",
-        "description": "Marketing website for the auto-broker arm of the ProfitCraft ecosystem — unified with the credit-building product and backed by an internal CMS."
+        "title": "ProfitCraft Auto – Personal Auto Broker Website | Ortvest",
+        "description": "Marketing website for the auto-broker arm of the ProfitCraft ecosystem – unified with the credit-building product and backed by an internal CMS."
       },
       "hero": {
-        "subtitle": "The auto-broker surface of the ProfitCraft system — paired with ProfitCraft (credit-building), with shared brand logic and an internal CMS we cannot show publicly."
+        "subtitle": "The auto-broker surface of the ProfitCraft system – paired with ProfitCraft (credit-building), with shared brand logic and an internal CMS we cannot show publicly."
       },
       "stats": {
         "projectType": {
@@ -961,17 +961,17 @@
           "value": "ProfitCraft ecosystem · Web + Mobile UI"
         }
       },
-      "challenge": "ProfitCraft Auto is the car-financing and brokerage side of the same ProfitCraft ecosystem as the credit site. Buyers with any credit history need fast trust and simple applications, while the business runs on shared operations tooling — including a CMS that stays off-portfolio.",
-      "solution": "We built Auto as the marketing layer of the unified system — green brand, social proof, step-by-step flow, and application forms on desktop and mobile, visually aligned with ProfitCraft. The internal CMS supports operations but is not published in the case study gallery.",
+      "challenge": "ProfitCraft Auto is the car-financing and brokerage side of the same ProfitCraft ecosystem as the credit site. Buyers with any credit history need fast trust and simple applications, while the business runs on shared operations tooling – including a CMS that stays off-portfolio.",
+      "solution": "We built Auto as the marketing layer of the unified system – green brand, social proof, step-by-step flow, and application forms on desktop and mobile, visually aligned with ProfitCraft. The internal CMS supports operations but is not published in the case study gallery.",
       "cms": {
-        "internal": "We also built an internal CMS for the ProfitCraft team — screenshots are not available for publication."
+        "internal": "We also built an internal CMS for the ProfitCraft team – screenshots are not available for publication."
       },
       "features": {
         "subtitle": "Trust patterns tailored to auto financing and broker trust.",
         "items": {
           "hero": {
             "title": "Hero & positioning",
-            "description": "Clear “personal auto broker” promise with proof points and dual CTAs — apply now or learn more."
+            "description": "Clear “personal auto broker” promise with proof points and dual CTAs – apply now or learn more."
           },
           "application": {
             "title": "Application flows",
@@ -979,7 +979,7 @@
           },
           "process": {
             "title": "How it works",
-            "description": "Four-step journey from application to keys — scannable on mobile and desktop."
+            "description": "Four-step journey from application to keys – scannable on mobile and desktop."
           },
           "trust": {
             "title": "Trust & social proof",
@@ -1014,17 +1014,17 @@
         },
         "cms": {
           "title": "Internal CMS",
-          "description": "Shared operations CMS for the ProfitCraft ecosystem — the same internal tool behind credit and auto, tailored to broker workflows. Not shown publicly."
+          "description": "Shared operations CMS for the ProfitCraft ecosystem – the same internal tool behind credit and auto, tailored to broker workflows. Not shown publicly."
         }
       }
     },
     "skisailclub": {
       "meta": {
-        "title": "Ski&Sail Club — Yacht Trip Booking Platform | Ortvest",
+        "title": "Ski&Sail Club – Yacht Trip Booking Platform | Ortvest",
         "description": "How Ortvest built a yacht club platform for route discovery, trip booking, and community management."
       },
       "hero": {
-        "subtitle": "A digital home for a yacht and ski travel club — discover routes, book trips, and stay connected with the community."
+        "subtitle": "A digital home for a yacht and ski travel club – discover routes, book trips, and stay connected with the community."
       },
       "stats": {
         "projectType": {
@@ -1040,7 +1040,7 @@
           "value": "Web"
         }
       },
-      "challenge": "The club needed one platform for newcomers and experienced sailors — trip discovery, booking, and community — while capturing the emotional side of yachting: freedom, scenery, and adventure.",
+      "challenge": "The club needed one platform for newcomers and experienced sailors – trip discovery, booking, and community – while capturing the emotional side of yachting: freedom, scenery, and adventure.",
       "solution": "We built a fast Next.js platform with immersive visuals, clear booking flows, and member profiles. Route pages, trip management, and community features live in a single cohesive experience ready to scale.",
       "features": {
         "subtitle": "Booking and community tools that reflect the spirit of sailing.",
@@ -1082,7 +1082,7 @@
       "sections": {
         "design": {
           "title": "UX & Design",
-          "description": "Designed a platform that serves two audiences — first-timers exploring sailing and experienced members managing trips. Clean, premium, effortless."
+          "description": "Designed a platform that serves two audiences – first-timers exploring sailing and experienced members managing trips. Clean, premium, effortless."
         },
         "development": {
           "title": "Development",
@@ -1092,11 +1092,11 @@
     },
     "navexa": {
       "meta": {
-        "title": "Navexa — Logistics Management Platform | Ortvest",
+        "title": "Navexa – Logistics Management Platform | Ortvest",
         "description": "How Ortvest built a logistics platform for fleet tracking, route optimization, and shipment monitoring. NDA project."
       },
       "hero": {
-        "subtitle": "A unified logistics platform for fleet tracking, route optimization, and shipment monitoring — plus marketing to support client acquisition and product positioning."
+        "subtitle": "A unified logistics platform for fleet tracking, route optimization, and shipment monitoring – plus marketing to support client acquisition and product positioning."
       },
       "stats": {
         "projectType": {
@@ -1112,7 +1112,7 @@
           "value": "Web"
         }
       },
-      "challenge": "A logistics company needed one system to see fleet position, optimize routes, and monitor shipments — replacing spreadsheets and disconnected tools with real-time operational visibility. They also needed marketing support to present the product clearly and attract new B2B clients.",
+      "challenge": "A logistics company needed one system to see fleet position, optimize routes, and monitor shipments – replacing spreadsheets and disconnected tools with real-time operational visibility. They also needed marketing support to present the product clearly and attract new B2B clients.",
       "solution": "We delivered a custom dashboard integrating GPS data, route optimization, and shipment analytics, alongside marketing materials and messaging that explain the platform's value to fleet operators and logistics teams.",
       "features": {
         "subtitle": "Operational tools that connect fleet, routes, and shipments in one view.",
@@ -1159,11 +1159,11 @@
     },
     "teya": {
       "meta": {
-        "title": "Teya Logistics — Company Landing Page | Ortvest",
+        "title": "Teya Logistics – Company Landing Page | Ortvest",
         "description": "How Ortvest designed and developed a modern logistics landing page focused on lead generation and clear service presentation."
       },
       "hero": {
-        "subtitle": "A modern landing page for a logistics company — clear services, strong branding, and a simple path to request a quote."
+        "subtitle": "A modern landing page for a logistics company – clear services, strong branding, and a simple path to request a quote."
       },
       "stats": {
         "projectType": {
@@ -1179,7 +1179,7 @@
           "value": "Web"
         }
       },
-      "challenge": "Teya needed to present transportation services clearly, build trust with new clients, and convert visitors into quote requests — without overwhelming them with logistics jargon.",
+      "challenge": "Teya needed to present transportation services clearly, build trust with new clients, and convert visitors into quote requests – without overwhelming them with logistics jargon.",
       "solution": "We designed and built a responsive landing page with focused service blocks, company advantages, and prominent contact CTAs. The layout guides visitors from understanding to action in a few scrolls.",
       "features": {
         "subtitle": "Marketing patterns that turn traffic into qualified leads.",
@@ -1206,7 +1206,7 @@
           },
           "contact": {
             "title": "Easy contact",
-            "description": "Multiple touchpoints — form, phone, and quick inquiry — without friction."
+            "description": "Multiple touchpoints – form, phone, and quick inquiry – without friction."
           }
         }
       },
@@ -1229,11 +1229,11 @@
     },
     "pachaca": {
       "meta": {
-        "title": "Pachaca — On-Demand Cleaning Platform | Ortvest",
+        "title": "Pachaca – On-Demand Cleaning Platform | Ortvest",
         "description": "How Ortvest built a full-stack cleaning service platform with iOS and Android apps, a web booking service, and an internal operations CMS."
       },
       "hero": {
-        "subtitle": "A full-stack cleaning and dry-cleaning service platform — mobile apps, web service, and an internal management system built from scratch."
+        "subtitle": "A full-stack cleaning and dry-cleaning service platform – mobile apps, web service, and an internal management system built from scratch."
       },
       "stats": {
         "platforms": {
@@ -1249,37 +1249,37 @@
           "value": "Ukraine · 3 cities"
         }
       },
-      "challenge": "Pachaca needed to digitise an on-demand cleaning and dry-cleaning business across multiple Ukrainian cities — giving customers a fast mobile booking experience while giving the operations team real-time control over orders, cleaners, and service areas.",
+      "challenge": "Pachaca needed to digitise an on-demand cleaning and dry-cleaning business across multiple Ukrainian cities – giving customers a fast mobile booking experience while giving the operations team real-time control over orders, cleaners, and service areas.",
       "solution": "We built the entire digital stack from scratch: native iOS and Android apps for customers, a full web service for desktop users, and a custom internal CMS tailored to how the Pachaca team manages daily operations.",
       "cms": {
-        "internal": "Internal tool — screenshots not available."
+        "internal": "Internal tool – screenshots not available."
       },
       "sections": {
         "overview": {
           "title": "Overview",
-          "description": "Pachaca is an on-demand cleaning and dry-cleaning service operating across multiple cities in Ukraine. Customers book professional cleaning for apartments, furniture, and clothing — quickly and entirely online. We built the entire digital infrastructure: customer-facing mobile apps, a web service, and an internal operations system."
+          "description": "Pachaca is an on-demand cleaning and dry-cleaning service operating across multiple cities in Ukraine. Customers book professional cleaning for apartments, furniture, and clothing – quickly and entirely online. We built the entire digital infrastructure: customer-facing mobile apps, a web service, and an internal operations system."
         },
         "mobile": {
-          "title": "Mobile Apps — iOS & Android",
-          "description": "Native mobile apps for iOS and Android built around speed and simplicity — choose a service, pick a time, confirm the booking in under a minute. Push notifications keep customers informed at every step, from confirmation to the cleaner arriving at the door."
+          "title": "Mobile Apps – iOS & Android",
+          "description": "Native mobile apps for iOS and Android built around speed and simplicity – choose a service, pick a time, confirm the booking in under a minute. Push notifications keep customers informed at every step, from confirmation to the cleaner arriving at the door."
         },
         "web": {
           "title": "Web Service",
-          "description": "A full web service giving desktop users the same seamless booking experience — service selection, scheduling, address management, order history, and payment processing. Built for speed, optimised for bookings."
+          "description": "A full web service giving desktop users the same seamless booking experience – service selection, scheduling, address management, order history, and payment processing. Built for speed, optimised for bookings."
         },
         "cms": {
           "title": "Internal Management System",
-          "description": "A custom internal CMS giving the Pachaca operations team full control — managing orders, assigning cleaners, tracking service areas, and monitoring real-time status across all cities. Built for how the team actually works."
+          "description": "A custom internal CMS giving the Pachaca operations team full control – managing orders, assigning cleaners, tracking service areas, and monitoring real-time status across all cities. Built for how the team actually works."
         }
       }
     },
     "mie": {
       "meta": {
-        "title": "Mie — AI Smart Shopping List | Ortvest",
+        "title": "Mie – AI Smart Shopping List | Ortvest",
         "description": "How Ortvest built an AI-powered shopping app with inventory tracking, recipe suggestions, and smart reminders. NDA project."
       },
       "hero": {
-        "subtitle": "An intelligent shopping list that tracks pantry inventory, suggests recipes, and reminds you what to buy — powered by AI."
+        "subtitle": "An intelligent shopping list that tracks pantry inventory, suggests recipes, and reminds you what to buy – powered by AI."
       },
       "stats": {
         "projectType": {
@@ -1336,11 +1336,11 @@
     },
     "reskin": {
       "meta": {
-        "title": "[Re.] skin&hair — Brand Identity | Ortvest",
-        "description": "How Ortvest created a minimalist brand identity for a modern beauty line — logo, palette, typography, and packaging direction."
+        "title": "[Re.] skin&hair – Brand Identity | Ortvest",
+        "description": "How Ortvest created a minimalist brand identity for a modern beauty line – logo, palette, typography, and packaging direction."
       },
       "hero": {
-        "subtitle": "A minimalist brand system for a skin and hair care line — organic shapes, premium feel, and consistency across touchpoints."
+        "subtitle": "A minimalist brand system for a skin and hair care line – organic shapes, premium feel, and consistency across touchpoints."
       },
       "stats": {
         "projectType": {
@@ -1356,7 +1356,7 @@
           "value": "Print + Digital"
         }
       },
-      "challenge": "A beauty brand entering a crowded market needed identity that feels premium and clean without cold minimalism — communicating quality and trust at first glance.",
+      "challenge": "A beauty brand entering a crowded market needed identity that feels premium and clean without cold minimalism – communicating quality and trust at first glance.",
       "solution": "We developed a full brand system: logo mark, color palette, typography, packaging direction, and usage guidelines. Organic shapes and warm neutrals balance modern simplicity with approachable luxury.",
       "features": {
         "subtitle": "Deliverables that form a cohesive, premium brand language.",
@@ -1398,17 +1398,17 @@
       "sections": {
         "brand": {
           "title": "Brand Identity",
-          "description": "Developed the complete brand identity — logo, visual system, packaging direction, and brand guidelines for a clean, modern beauty brand."
+          "description": "Developed the complete brand identity – logo, visual system, packaging direction, and brand guidelines for a clean, modern beauty brand."
         }
       }
     },
     "gambit": {
       "meta": {
-        "title": "Gambit — Website UI Design | Ortvest",
+        "title": "Gambit – Website UI Design | Ortvest",
         "description": "How Ortvest designed a modern website UI with strong hierarchy, bold typography, and strategic whitespace."
       },
       "hero": {
-        "subtitle": "A modern website UI with bold typography, clear hierarchy, and whitespace that guides attention — designed for impact and usability."
+        "subtitle": "A modern website UI with bold typography, clear hierarchy, and whitespace that guides attention – designed for impact and usability."
       },
       "stats": {
         "projectType": {
@@ -1424,7 +1424,7 @@
           "value": "Web UI"
         }
       },
-      "challenge": "The site needed a visual refresh that feels contemporary and credible — improving scanability and engagement without losing brand recognition.",
+      "challenge": "The site needed a visual refresh that feels contemporary and credible – improving scanability and engagement without losing brand recognition.",
       "solution": "We redesigned key pages with a strong type scale, consistent component library, and deliberate whitespace. Every section has a clear hierarchy so users know where to look and what to do next.",
       "features": {
         "subtitle": "Design decisions that balance aesthetics with usability.",
@@ -1466,7 +1466,7 @@
       "sections": {
         "design": {
           "title": "UI Redesign",
-          "description": "Redesigned the visual language — typography, spacing, hierarchy, and color — to create a site that commands attention and guides the visitor toward action."
+          "description": "Redesigned the visual language – typography, spacing, hierarchy, and color – to create a site that commands attention and guides the visitor toward action."
         },
         "development": {
           "title": "Development",
@@ -1476,11 +1476,11 @@
     },
     "navexa-logo": {
       "meta": {
-        "title": "Navexa Logo — Brand Identity | Ortvest",
-        "description": "Logo design for Navexa logistics — navigation, precision, and versatile light and dark variations."
+        "title": "Navexa Logo – Brand Identity | Ortvest",
+        "description": "Logo design for Navexa logistics – navigation, precision, and versatile light and dark variations."
       },
       "hero": {
-        "subtitle": "A professional logo for a logistics company — precision, navigation, and modern technology in a versatile mark."
+        "subtitle": "A professional logo for a logistics company – precision, navigation, and modern technology in a versatile mark."
       },
       "stats": {
         "projectType": {
@@ -1496,7 +1496,7 @@
           "value": "Print + Digital"
         }
       },
-      "challenge": "Navexa needed a logo that communicates navigation and operational precision — working on dashboards, vehicles, documents, and marketing in both light and dark contexts.",
+      "challenge": "Navexa needed a logo that communicates navigation and operational precision – working on dashboards, vehicles, documents, and marketing in both light and dark contexts.",
       "solution": "We created a minimalist mark with clean geometry and color variations for digital products and print. The system scales from favicon to fleet branding without losing clarity.",
       "features": {
         "subtitle": "Logo system built for logistics and product environments.",
@@ -1537,11 +1537,11 @@
     },
     "ortvest-logo": {
       "meta": {
-        "title": "Ortvest Logo — Brand Identity | Ortvest",
-        "description": "Logo and brand mark for Ortvest IT studio — innovation, clarity, and scalable digital identity."
+        "title": "Ortvest Logo – Brand Identity | Ortvest",
+        "description": "Logo and brand mark for Ortvest IT studio – innovation, clarity, and scalable digital identity."
       },
       "hero": {
-        "subtitle": "Brand mark for an IT studio — clean geometry, innovation, and variations built for product and corporate use."
+        "subtitle": "Brand mark for an IT studio – clean geometry, innovation, and variations built for product and corporate use."
       },
       "stats": {
         "projectType": {
@@ -1557,7 +1557,7 @@
           "value": "Digital-first"
         }
       },
-      "challenge": "Ortvest needed a logo that reflects modern software craftsmanship — clear at favicon size, strong on pitch decks, and consistent across product UIs and marketing.",
+      "challenge": "Ortvest needed a logo that reflects modern software craftsmanship – clear at favicon size, strong on pitch decks, and consistent across product UIs and marketing.",
       "solution": "We designed a sleek mark with light and dark variations, strict geometry, and guidelines for digital-first use. The identity scales from app icons to large-format print without rework.",
       "features": {
         "subtitle": "A flexible identity for a product-focused IT studio.",
@@ -1645,16 +1645,16 @@
     "nav": "Navigation"
   },
   "metadata": {
-    "title": "Ortvest — IT Studio for P2P, Community, Logistics & Agritech",
-    "description": "Ortvest builds digital products for P2P platforms, community networks, logistics, and agritech — design, development, and marketing with deep industry expertise.",
-    "ogTitle": "Ortvest — P2P, Community, Logistics & Agritech",
-    "ogDescription": "Ortvest builds digital products for P2P platforms, community networks, logistics, and agritech — design, development, and marketing with deep industry expertise."
+    "title": "Ortvest – IT Studio for P2P, Community, Logistics & Agritech",
+    "description": "Ortvest builds digital products for P2P platforms, community networks, logistics, and agritech – design, development, and marketing with deep industry expertise.",
+    "ogTitle": "Ortvest – P2P, Community, Logistics & Agritech",
+    "ogDescription": "Ortvest builds digital products for P2P platforms, community networks, logistics, and agritech – design, development, and marketing with deep industry expertise."
   },
   "cmsPage": {
     "hero": {
       "eyebrow": "Ortvest CMS",
       "headline": "Built for agencies, studios & IT teams",
-      "subheadline": "One system to manage orders, projects, tasks, finances and your team — with native API integration to connect your website forms directly to the CMS. Included with every partnership contract.",
+      "subheadline": "One system to manage orders, projects, tasks, finances and your team – with native API integration to connect your website forms directly to the CMS. Included with every partnership contract.",
       "ctaPrimary": "Get access",
       "ctaSecondary": "See pricing"
     },
@@ -1671,7 +1671,7 @@
       "addonBadgeShort": "Add-on",
       "apiBlock": {
         "title": "Website Integration via API",
-        "description": "Connect your website contact form directly to Ortvest CMS. Every submission lands automatically in Orders — no manual entry, no copy-paste.",
+        "description": "Connect your website contact form directly to Ortvest CMS. Every submission lands automatically in Orders – no manual entry, no copy-paste.",
         "badge": "Included in all plans",
         "step1": "Website form",
         "step2": "Ortvest API",
@@ -1703,14 +1703,14 @@
         },
         "transactions": {
           "name": "Transactions",
-          "subtitle": "Manual cash flow tracking — salaries, subscriptions, taxes",
+          "subtitle": "Manual cash flow tracking – salaries, subscriptions, taxes",
           "feature1": "Log income and expenses by category",
           "feature2": "See Total Income, Total Expenses and Net at a glance",
           "feature3": "Full audit trail with date and author"
         },
         "analytics": {
           "name": "Analytics",
-          "subtitle": "Financial overview — P&L and cash flow",
+          "subtitle": "Financial overview – P&L and cash flow",
           "feature1": "P&L Statement and Cash Flow Statement side by side",
           "feature2": "Charts: Revenue vs Cash, Net Profit Trend, Orders by Status and Service",
           "feature3": "Filter by period: 7d / 30d / month / quarter / custom"
@@ -1766,21 +1766,21 @@
     },
     "cta": {
       "headline": "Ready to manage your business smarter?",
-      "subheadline": "Get access to Ortvest CMS as part of your contract — or subscribe independently.",
+      "subheadline": "Get access to Ortvest CMS as part of your contract – or subscribe independently.",
       "button": "Contact us"
     },
     "metadata": {
-      "title": "Ortvest CMS — Business Management System",
+      "title": "Ortvest CMS – Business Management System",
       "description": "Ortvest CMS is a business management system built for agencies, studios and IT teams. Manage orders, projects, tasks, finances and your team in one place."
     },
     "widget": {
       "eyebrow": "Business Management",
       "title": "Ortvest CMS",
-      "description": "Our own business management system — included with every partnership contract at a special rate.",
+      "description": "Our own business management system – included with every partnership contract at a special rate.",
       "perMonth": "/mo",
       "analyticsFinance": "Analytics & Finance",
       "exploreTitle": "Want to see Ortvest CMS in action?",
-      "exploreDesc": "Explore the full overview — screenshots, modules, and how it works.",
+      "exploreDesc": "Explore the full overview – screenshots, modules, and how it works.",
       "exploreButton": "Explore Ortvest CMS"
     }
   },

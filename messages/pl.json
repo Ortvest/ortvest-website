@@ -25,7 +25,7 @@
     "title2": "produkty, które",
     "title3": "ludzie ",
     "title3em": "kochają.",
-    "subtitle": "Nie generyczne studio. Pracujemy w konkretnych branżach — P2P, społeczności, logistyka i agritech — i znamy problemy Twoich użytkowników od środka.",
+    "subtitle": "Nie generyczne studio. Pracujemy w konkretnych branżach – P2P, społeczności, logistyka i agritech – i znamy problemy Twoich użytkowników od środka.",
     "cta": {
       "primary": "Omów projekt",
       "secondary": "Zobacz co robimy"
@@ -125,7 +125,7 @@
   "servicesSection": {
     "label": "Usługi",
     "title": "Wszystko do startu i wzrostu.",
-    "subtitle": "Od strategii przez kod do wejścia na rynek — budujemy, wdrażamy i skalujemy produkty cyfrowe.",
+    "subtitle": "Od strategii przez kod do wejścia na rynek – budujemy, wdrażamy i skalujemy produkty cyfrowe.",
     "tabs": {
       "what": "Co robimy",
       "industries": "Branże",
@@ -160,7 +160,7 @@
     },
     "marketing": {
       "title": "Marketing",
-      "desc": "Pełne wsparcie wejścia na rynek — od SEO i reklam po strategię contentową i CRM.",
+      "desc": "Pełne wsparcie wejścia na rynek – od SEO i reklam po strategię contentową i CRM.",
       "basic": "Podstawowy",
       "advanced": "Rozszerzony",
       "premium": "Premium",
@@ -180,14 +180,14 @@
     "ind": {
       "p2p": {
         "title": "Platformy P2P",
-        "desc": "Budujemy platformy P2P, gdzie zaufanie jest produktem — z weryfikacją, płatnościami escrow i rozwiązywaniem sporów.",
+        "desc": "Budujemy platformy P2P, gdzie zaufanie jest produktem – z weryfikacją, płatnościami escrow i rozwiązywaniem sporów.",
         "t1": "Ekonomia współdzielenia",
         "t2": "Wynajem P2P",
         "t3": "Escrow"
       },
       "community": {
         "title": "Społeczności",
-        "desc": "Platformy dla społeczności — z rolami, uprawnieniami, czatem w czasie rzeczywistym i wydarzeniami.",
+        "desc": "Platformy dla społeczności – z rolami, uprawnieniami, czatem w czasie rzeczywistym i wydarzeniami.",
         "t1": "Sieci prywatne",
         "t2": "Portale członkowskie",
         "t3": "Wydarzenia"
@@ -252,22 +252,22 @@
     "niches": {
       "p2p": {
         "title": "Platformy P2P",
-        "description": "Budujemy platformy peer-to-peer, gdzie zaufanie jest produktem. Sharing, wynajem i wymiana z weryfikacją, płatnościami escrow, śledzeniem przedmiotów i rozwiązywaniem sporów — aby nieznajomi mogli bezpiecznie współpracować.",
+        "description": "Budujemy platformy peer-to-peer, gdzie zaufanie jest produktem. Sharing, wynajem i wymiana z weryfikacją, płatnościami escrow, śledzeniem przedmiotów i rozwiązywaniem sporów – aby nieznajomi mogli bezpiecznie współpracować.",
         "tags": ["Sharing economy", "Wynajem peer-to-peer", "Trust & safety", "Płatności escrow"]
       },
       "community": {
         "title": "Społeczności",
-        "description": "Projektujemy i budujemy zamknięte sieci, platformy klubowe i społeczności zawodowe, gdzie interakcja jest naturalna — nie wymuszona. Czaty, role, wydarzenia i treści w jednym miejscu. Znamy różnicę między „stroną” a „platformą, do której ludzie wracają”.",
+        "description": "Projektujemy i budujemy zamknięte sieci, platformy klubowe i społeczności zawodowe, gdzie interakcja jest naturalna – nie wymuszona. Czaty, role, wydarzenia i treści w jednym miejscu. Znamy różnicę między „stroną” a „platformą, do której ludzie wracają”.",
         "tags": ["Sieci prywatne", "Portale członkowskie", "Czat na żywo", "Wydarzenia"]
       },
       "logistics": {
         "title": "Logistyka",
-        "description": "Pracujemy ze startupami i MŚP logistycznymi nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras. Dwa case studies opublikowane — więcej w toku.",
+        "description": "Pracujemy ze startupami i MŚP logistycznymi nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras. Dwa case studies opublikowane – więcej w toku.",
         "tags": ["Zarządzanie flotą", "Śledzenie przesyłek", "Optymalizacja tras", "Logistics SaaS"]
       },
       "agritech": {
         "title": "Agritech",
-        "description": "Budujemy platformy do zarządzania farmą, analityki plonów i widoczności łańcucha dostaw. Jeśli działasz w tej przestrzeni — porozmawiajmy zanim opublikujemy case studies.",
+        "description": "Budujemy platformy do zarządzania farmą, analityki plonów i widoczności łańcucha dostaw. Jeśli działasz w tej przestrzeni – porozmawiajmy zanim opublikujemy case studies.",
         "tags": ["Zarządzanie farmą", "Analityka plonów", "Łańcuch dostaw", "Platformy IoT"]
       }
     },
@@ -310,7 +310,7 @@
   "approach": {
     "label": "Nasze podejście",
     "title": "Zadajemy trudne pytania zanim otworzymy Figmę.",
-    "subtitle": "Większość studiów zaczyna od designu. My zaczynamy od zrozumienia — kim są użytkownicy, gdzie podobne produkty zawodzą, jak wygląda sukces za 6 miesięcy.",
+    "subtitle": "Większość studiów zaczyna od designu. My zaczynamy od zrozumienia – kim są użytkownicy, gdzie podobne produkty zawodzą, jak wygląda sukces za 6 miesięcy.",
     "quote": {
       "text": "Design przychodzi po ",
       "em": "jasności.",
@@ -364,29 +364,29 @@
     "step2Title": "Design z intencją",
     "step2Desc": "Każdy ekran ma zadanie. Projektujemy wokół zachowań użytkownika, nie preferencji estetycznych. Ładność to produkt uboczny funkcjonalności.",
     "step3Title": "Budujemy na długo",
-    "step3Desc": "Czysta architektura, przetestowany kod, udokumentowane systemy. Jesteś właścicielem tego co budujemy — i Twój następny programista nam podziękuje.",
+    "step3Desc": "Czysta architektura, przetestowany kod, udokumentowane systemy. Jesteś właścicielem tego co budujemy – i Twój następny programista nam podziękuje.",
     "step4Title": "Start i wsparcie",
     "step4Desc": "Nie znikamy po starcie. Większość naszych klientów wraca po kolejny produkt."
   },
   "team": {
     "label": "Zespół",
     "title": "Ekspertyza za Twoim produktem.",
-    "subtitle": "Deweloperzy, designerzy i marketerzy — każdy z głębokim doświadczeniem w każdym projekcie, który podejmujemy.",
+    "subtitle": "Deweloperzy, designerzy i marketerzy – każdy z głębokim doświadczeniem w każdym projekcie, który podejmujemy.",
     "developers": {
       "title": "Deweloperzy",
-      "description": "Budujemy szybko, czysto i bez skrótów. Od złożonej architektury backendu po pixel-perfect frontend — nasi inżynierowie wdrażali produkty w fintech, e-commerce i SaaS, z których użytkownicy naprawdę lubią korzystać.",
+      "description": "Budujemy szybko, czysto i bez skrótów. Od złożonej architektury backendu po pixel-perfect frontend – nasi inżynierowie wdrażali produkty w fintech, e-commerce i SaaS, z których użytkownicy naprawdę lubią korzystać.",
       "years": "15+",
       "yearsLabel": "lat doświadczenia"
     },
     "designers": {
       "title": "Designerzy",
-      "description": "Interfejsy, przy których ludzie przestają scrollować. Nasi designerzy pracują na styku estetyki i użyteczności — tworzą tożsamości marek, systemy UI i interaktywne doświadczenia, które wyglądają premium i konwertują.",
+      "description": "Interfejsy, przy których ludzie przestają scrollować. Nasi designerzy pracują na styku estetyki i użyteczności – tworzą tożsamości marek, systemy UI i interaktywne doświadczenia, które wyglądają premium i konwertują.",
       "years": "10+",
       "yearsLabel": "lat doświadczenia"
     },
     "marketing": {
       "title": "Marketing",
-      "description": "Launche, które są zauważane. Łączymy ostre pozycjonowanie z data-driven execution — SEO, płatne reklamy i strategię contentową, która buduje realny traction, a nie vanity metrics. Twój produkt zasługuje na publiczność, która naprawdę konwertuje.",
+      "description": "Launche, które są zauważane. Łączymy ostre pozycjonowanie z data-driven execution – SEO, płatne reklamy i strategię contentową, która buduje realny traction, a nie vanity metrics. Twój produkt zasługuje na publiczność, która naprawdę konwertuje.",
       "years": "10+",
       "yearsLabel": "lat doświadczenia"
     }
@@ -403,11 +403,11 @@
     "q1": "Jakie usługi oferujecie?",
     "a1": "Oferujemy pełny cykl rozwoju produktu: design UX/UI, development web i mobile oraz marketing. Możesz zamówić wszystko lub tylko to, czego potrzebujesz.",
     "q2": "Dla jakich firm pracujecie?",
-    "a2": "Startupy i scale-upy w konkretnych branżach — P2P, społeczności, logistyka i agritech. Preferujemy klientów, którzy wiedzą, co chcą budować.",
+    "a2": "Startupy i scale-upy w konkretnych branżach – P2P, społeczności, logistyka i agritech. Preferujemy klientów, którzy wiedzą, co chcą budować.",
     "q3": "Czy mogę zamówić tylko jedną usługę?",
     "a3": "Tak. Możliwe są osobne projekty tylko design, development lub marketing. Dopasujemy zakres do Twoich potrzeb.",
     "q4": "Jak wygląda wycena projektu?",
-    "a4": "Pracujemy w modelu fixed-scope i retainer. Po rozmowie discovery wysyłamy szczegółową propozycję z jasną ceną i harmonogramem — bez niespodzianek.",
+    "a4": "Pracujemy w modelu fixed-scope i retainer. Po rozmowie discovery wysyłamy szczegółową propozycję z jasną ceną i harmonogramem – bez niespodzianek.",
     "q5": "Jak wygląda proces współpracy?",
     "a5": "Discovery → Design → Development → Launch. 1-tygodniowe sprinty z demo w każdym cyklu. Zawsze wiesz, co jest budowane i co dalej.",
     "q6": "Czy oferujecie wsparcie po wdrożeniu?",
@@ -442,7 +442,7 @@
       },
       "4": {
         "title": "Propozycja i start",
-        "desc": "Wysyłamy szczegółową propozycję. Jeśli pasuje — zaczynamy."
+        "desc": "Wysyłamy szczegółową propozycję. Jeśli pasuje – zaczynamy."
       }
     },
     "form": {
@@ -565,7 +565,7 @@
     "viewCaseStudy": "Zobacz case study →",
     "ndaNote": "Szczegóły dostępne podczas rozmowy",
     "brandSectionTitle": "Branding i identyfikacja wizualna",
-    "emptyState": "Brak projektów w tej branży — bądź pierwszy, a stworzymy z tego case study.",
+    "emptyState": "Brak projektów w tej branży – bądź pierwszy, a stworzymy z tego case study.",
     "beFirstButton": "Omów projekt",
     "challenge": "Wyzwanie",
     "solution": "Rozwiązanie",
@@ -600,19 +600,19 @@
         "result": "Pełny marketplace P2P z weryfikacją, opiniami i śledzeniem przedmiotów."
       },
       "profitcraft": {
-        "summary": "Strona credit-building — jeden produkt w ekosystemie ProfitCraft razem z ProfitCraft Auto.",
+        "summary": "Strona credit-building – jeden produkt w ekosystemie ProfitCraft razem z ProfitCraft Auto.",
         "result": "Strona marketingowa oparta na zaufaniu; zbudowaliśmy też wewnętrzny CMS, którego nie możemy pokazać publicznie."
       },
       "profitcraftauto": {
-        "summary": "Strona personal auto broker — auto-odnoga zunifikowanego systemu ProfitCraft z ProfitCraft (kredyt).",
+        "summary": "Strona personal auto broker – auto-odnoga zunifikowanego systemu ProfitCraft z ProfitCraft (kredyt).",
         "result": "Strona marketingowa z wnioskami i UI mobilnym; wewnętrzny CMS dostarczony, ale niepubliczny."
       },
       "skisailclub": {
-        "summary": "Platforma cyfrowa dla klubu jachtowego — rezerwacje i społeczność.",
+        "summary": "Platforma cyfrowa dla klubu jachtowego – rezerwacje i społeczność.",
         "result": "Platforma rezerwacji i społeczności dla początkujących i doświadczonych żeglarzy."
       },
       "navexa": {
-        "summary": "Platforma logistyczna — flota i przesyłki oraz marketing produktu.",
+        "summary": "Platforma logistyczna – flota i przesyłki oraz marketing produktu.",
         "result": "Panel operacyjny i marketing pozycjonujący produkt i pozyskujący klientów B2B."
       },
       "teya": {
@@ -620,8 +620,8 @@
         "result": "Strona marketingowa jasno prezentująca usługi i generująca leady."
       },
       "pachaca": {
-        "summary": "Platforma full-stack dla serwisu sprzątania i pralni chemicznej — aplikacje mobilne, serwis web i wewnętrzny system zarządzania zbudowane od zera.",
-        "result": "Kompletny ekosystem cyfrowy dla biznesu on-demand — od pierwszego dotknięcia klienta po ostatnią aktualizację statusu przez zespół operacyjny."
+        "summary": "Platforma full-stack dla serwisu sprzątania i pralni chemicznej – aplikacje mobilne, serwis web i wewnętrzny system zarządzania zbudowane od zera.",
+        "result": "Kompletny ekosystem cyfrowy dla biznesu on-demand – od pierwszego dotknięcia klienta po ostatnią aktualizację statusu przez zespół operacyjny."
       },
       "mie": {
         "summary": "Inteligentna lista zakupów z AI śledzącą zapasy i sugerującą zakupy.",
@@ -681,7 +681,7 @@
         "label": "Następny projekt"
       },
       "relatedProduct": {
-        "label": "Część tego samego systemu ProfitCraft — zobacz też"
+        "label": "Część tego samego systemu ProfitCraft – zobacz też"
       },
       "cta": {
         "p2p": {
@@ -713,11 +713,11 @@
     },
     "yachtmate": {
       "meta": {
-        "title": "YachtMate — Prywatna sieć klubu jachtowego | Ortvest",
+        "title": "YachtMate – Prywatna sieć klubu jachtowego | Ortvest",
         "description": "Jak Ortvest zbudowało bezpieczną sieć członków z weryfikacją, czatem na żywo i zarządzaniem wydarzeniami."
       },
       "hero": {
-        "subtitle": "Prywatna sieć społecznościowa dla członków klubu jachtowego — bezpieczna komunikacja, wydarzenia i zweryfikowany katalog."
+        "subtitle": "Prywatna sieć społecznościowa dla członków klubu jachtowego – bezpieczna komunikacja, wydarzenia i zweryfikowany katalog."
       },
       "stats": {
         "projectType": {
@@ -774,11 +774,11 @@
       "sections": {
         "brand": {
           "title": "Marka i identyfikacja",
-          "description": "Zaczęliśmy od marki — logo, paleta kolorów, typografia i język wizualny odzwierciedlający ekskluzywny charakter prywatnego klubu jachtowego."
+          "description": "Zaczęliśmy od marki – logo, paleta kolorów, typografia i język wizualny odzwierciedlający ekskluzywny charakter prywatnego klubu jachtowego."
         },
         "design": {
           "title": "UX i design",
-          "description": "Zaprojektowaliśmy pełne doświadczenie platformy — profile członków, czat w czasie rzeczywistym, zarządzanie wydarzeniami i panel administratora."
+          "description": "Zaprojektowaliśmy pełne doświadczenie platformy – profile członków, czat w czasie rzeczywistym, zarządzanie wydarzeniami i panel administratora."
         },
         "development": {
           "title": "Development",
@@ -788,11 +788,11 @@
     },
     "sharingground": {
       "meta": {
-        "title": "SharingGround — Platforma P2P do wymiany rzeczy | Ortvest",
+        "title": "SharingGround – Platforma P2P do wymiany rzeczy | Ortvest",
         "description": "Platforma peer-to-peer z weryfikacją, escrow, śledzeniem przedmiotów i ubezpieczeniem."
       },
       "hero": {
-        "subtitle": "Platforma P2P do wypożyczania i wymiany rzeczy w społeczności — z weryfikacją, śledzeniem i bezpiecznymi płatnościami."
+        "subtitle": "Platforma P2P do wypożyczania i wymiany rzeczy w społeczności – z weryfikacją, śledzeniem i bezpiecznymi płatnościami."
       },
       "stats": {
         "projectType": {
@@ -831,7 +831,7 @@
           },
           "insurance": {
             "title": "Insurance integration",
-            "description": "Optional item insurance for high-value goods — embedded directly in the listing flow."
+            "description": "Optional item insurance for high-value goods – embedded directly in the listing flow."
           },
           "messaging": {
             "title": "In-app messaging",
@@ -849,21 +849,21 @@
       "sections": {
         "design": {
           "title": "UX i design",
-          "description": "Zaprojektowaliśmy kompletne przepływy dla pożyczającego i wynajmującego — od wystawienia przedmiotu do zakończenia wymiany."
+          "description": "Zaprojektowaliśmy kompletne przepływy dla pożyczającego i wynajmującego – od wystawienia przedmiotu do zakończenia wymiany."
         },
         "development": {
           "title": "Development",
-          "description": "Zbudowaliśmy pełną platformę — weryfikacja tożsamości, logika płatności escrow, dokumentacja stanu przedmiotów, system recenzji i wbudowany czat."
+          "description": "Zbudowaliśmy pełną platformę – weryfikacja tożsamości, logika płatności escrow, dokumentacja stanu przedmiotów, system recenzji i wbudowany czat."
         }
       }
     },
     "profitcraft": {
       "meta": {
-        "title": "ProfitCraft — Strona credit-building | Ortvest",
-        "description": "Strona marketingowa dla usługi budowania kredytu w USA — z naciskiem na generowanie leadów."
+        "title": "ProfitCraft – Strona credit-building | Ortvest",
+        "description": "Strona marketingowa dla usługi budowania kredytu w USA – z naciskiem na generowanie leadów."
       },
       "hero": {
-        "subtitle": "Warstwa credit-building ekosystemu ProfitCraft — jeden system z ProfitCraft Auto dla aut i finansowania; wewnętrznego CMS nie pokazujemy publicznie."
+        "subtitle": "Warstwa credit-building ekosystemu ProfitCraft – jeden system z ProfitCraft Auto dla aut i finansowania; wewnętrznego CMS nie pokazujemy publicznie."
       },
       "stats": {
         "projectType": {
@@ -879,10 +879,10 @@
           "value": "Ekosystem ProfitCraft · Web"
         }
       },
-      "challenge": "ProfitCraft i ProfitCraft Auto to jedna rodzina produktów w USA: budowanie kredytu na jednej stronie, auto broker na drugiej. Potrzebne zaufanie i proste ścieżki na stronie kredytowej, a operacje opierają się na wspólnych narzędziach — w tym CMS, którego nie publikujemy.",
-      "solution": "Zaprojektowaliśmy stronę kredytową jako warstwę zaufania i edukacji w zunifikowanym systemie — jasna narracja, ścieżki usług i CTA spójne z Auto. Obok publicznych stron dostarczyliśmy wewnętrzny CMS dla zespołu; zrzuty ekranu pozostają prywatne.",
+      "challenge": "ProfitCraft i ProfitCraft Auto to jedna rodzina produktów w USA: budowanie kredytu na jednej stronie, auto broker na drugiej. Potrzebne zaufanie i proste ścieżki na stronie kredytowej, a operacje opierają się na wspólnych narzędziach – w tym CMS, którego nie publikujemy.",
+      "solution": "Zaprojektowaliśmy stronę kredytową jako warstwę zaufania i edukacji w zunifikowanym systemie – jasna narracja, ścieżki usług i CTA spójne z Auto. Obok publicznych stron dostarczyliśmy wewnętrzny CMS dla zespołu; zrzuty ekranu pozostają prywatne.",
       "cms": {
-        "internal": "Zbudowaliśmy też wewnętrzny CMS dla zespołu ProfitCraft — zrzuty ekranu nie są dostępne do publikacji."
+        "internal": "Zbudowaliśmy też wewnętrzny CMS dla zespołu ProfitCraft – zrzuty ekranu nie są dostępne do publikacji."
       },
       "features": {
         "subtitle": "Wzorce zaufania, które zamieniają złożone tematy finansowe w pewne działania.",
@@ -897,7 +897,7 @@
           },
           "paths": {
             "title": "Service paths",
-            "description": "Structured journeys for loans, auto, home, and business — each with dedicated messaging."
+            "description": "Structured journeys for loans, auto, home, and business – each with dedicated messaging."
           },
           "leads": {
             "title": "Lead capture",
@@ -923,7 +923,7 @@
       "sections": {
         "strategy": {
           "title": "Strategia i copywriting",
-          "description": "Zdefiniowaliśmy grupę docelową — nowych mieszkańców USA nieznajomych z systemem kredytowym. Zbudowaliśmy komunikację wokół zaufania i prostej ścieżki do dobrego scoringu."
+          "description": "Zdefiniowaliśmy grupę docelową – nowych mieszkańców USA nieznajomych z systemem kredytowym. Zbudowaliśmy komunikację wokół zaufania i prostej ścieżki do dobrego scoringu."
         },
         "design": {
           "title": "Design",
@@ -935,17 +935,17 @@
         },
         "cms": {
           "title": "Wewnętrzny CMS",
-          "description": "Niestandardowy CMS operacyjny ProfitCraft — treści, leady i procesy dla produktów kredytowych i auto. Do codziennej pracy zespołu; bez publicznych zrzutów ekranu."
+          "description": "Niestandardowy CMS operacyjny ProfitCraft – treści, leady i procesy dla produktów kredytowych i auto. Do codziennej pracy zespołu; bez publicznych zrzutów ekranu."
         }
       }
     },
     "profitcraftauto": {
       "meta": {
-        "title": "ProfitCraft Auto — Strona personal auto broker | Ortvest",
-        "description": "Strona marketingowa dla auto brokera w ekosystemie ProfitCraft — zunifikowana z produktem kredytowym i wewnętrznym CMS."
+        "title": "ProfitCraft Auto – Strona personal auto broker | Ortvest",
+        "description": "Strona marketingowa dla auto brokera w ekosystemie ProfitCraft – zunifikowana z produktem kredytowym i wewnętrznym CMS."
       },
       "hero": {
-        "subtitle": "Warstwa auto-brokera systemu ProfitCraft — w parze z ProfitCraft (credit-building), wspólna logika marki i wewnętrzny CMS, którego nie pokazujemy publicznie."
+        "subtitle": "Warstwa auto-brokera systemu ProfitCraft – w parze z ProfitCraft (credit-building), wspólna logika marki i wewnętrzny CMS, którego nie pokazujemy publicznie."
       },
       "stats": {
         "projectType": {
@@ -961,17 +961,17 @@
           "value": "Ekosystem ProfitCraft · Web + Mobile UI"
         }
       },
-      "challenge": "ProfitCraft Auto to strona aut i finansowania w tym samym ekosystemie ProfitCraft co produkt kredytowy. Kupujący z dowolną historią kredytową potrzebują szybkiego zaufania i prostych wniosków, a biznes działa na wspólnych narzędziach operacyjnych — w tym CMS poza portfolio.",
-      "solution": "Zbudowaliśmy Auto jako warstwę marketingową zunifikowanego systemu — zielony brand, social proof, proces krok po kroku i formularze na desktop i mobile, spójne wizualnie z ProfitCraft. Wewnętrzny CMS wspiera operacje, ale nie jest publikowany w galerii case study.",
+      "challenge": "ProfitCraft Auto to strona aut i finansowania w tym samym ekosystemie ProfitCraft co produkt kredytowy. Kupujący z dowolną historią kredytową potrzebują szybkiego zaufania i prostych wniosków, a biznes działa na wspólnych narzędziach operacyjnych – w tym CMS poza portfolio.",
+      "solution": "Zbudowaliśmy Auto jako warstwę marketingową zunifikowanego systemu – zielony brand, social proof, proces krok po kroku i formularze na desktop i mobile, spójne wizualnie z ProfitCraft. Wewnętrzny CMS wspiera operacje, ale nie jest publikowany w galerii case study.",
       "cms": {
-        "internal": "Zbudowaliśmy też wewnętrzny CMS dla zespołu ProfitCraft — zrzuty ekranu nie są dostępne do publikacji."
+        "internal": "Zbudowaliśmy też wewnętrzny CMS dla zespołu ProfitCraft – zrzuty ekranu nie są dostępne do publikacji."
       },
       "features": {
         "subtitle": "Wzorce zaufania dopasowane do finansowania aut i zaufania do brokera.",
         "items": {
           "hero": {
             "title": "Hero i pozycjonowanie",
-            "description": "Jasna obietnica personal auto broker z dowodami i dwoma CTA — złóż wniosek lub dowiedz się więcej."
+            "description": "Jasna obietnica personal auto broker z dowodami i dwoma CTA – złóż wniosek lub dowiedz się więcej."
           },
           "application": {
             "title": "Formularze zgłoszeń",
@@ -979,7 +979,7 @@
           },
           "process": {
             "title": "Jak to działa",
-            "description": "Cztery kroki od zgłoszenia do kluczyków — czytelne na mobile i desktop."
+            "description": "Cztery kroki od zgłoszenia do kluczyków – czytelne na mobile i desktop."
           },
           "trust": {
             "title": "Zaufanie i social proof",
@@ -1014,17 +1014,17 @@
         },
         "cms": {
           "title": "Wewnętrzny CMS",
-          "description": "Wspólny CMS operacyjny ekosystemu ProfitCraft — ten sam wewnętrzny tool za kredytem i autem, pod workflow brokera. Niepokazywany publicznie."
+          "description": "Wspólny CMS operacyjny ekosystemu ProfitCraft – ten sam wewnętrzny tool za kredytem i autem, pod workflow brokera. Niepokazywany publicznie."
         }
       }
     },
     "skisailclub": {
       "meta": {
-        "title": "Ski&Sail Club — Rezerwacja rejsów | Ortvest",
+        "title": "Ski&Sail Club – Rezerwacja rejsów | Ortvest",
         "description": "Platforma klubu: trasy, rezerwacje i społeczność."
       },
       "hero": {
-        "subtitle": "Cyfrowy dom klubu — trasy, rezerwacje i społeczność żeglarzy."
+        "subtitle": "Cyfrowy dom klubu – trasy, rezerwacje i społeczność żeglarzy."
       },
       "stats": {
         "projectType": {
@@ -1040,7 +1040,7 @@
           "value": "Web"
         }
       },
-      "challenge": "Jedna platforma dla nowicjuszy i doświadczonych — rejsy, booking i społeczność z emocją żeglarstwa.",
+      "challenge": "Jedna platforma dla nowicjuszy i doświadczonych – rejsy, booking i społeczność z emocją żeglarstwa.",
       "solution": "Szybka platforma Next.js z bookingiem, trasami i profilami członków w spójnym doświadczeniu.",
       "features": {
         "subtitle": "Booking and community tools that reflect the spirit of sailing.",
@@ -1082,7 +1082,7 @@
       "sections": {
         "design": {
           "title": "UX i design",
-          "description": "Zaprojektowaliśmy platformę dla dwóch grup — nowych żeglarzy odkrywających sport i doświadczonych członków zarządzających rejsami. Czysto, premium, bez wysiłku."
+          "description": "Zaprojektowaliśmy platformę dla dwóch grup – nowych żeglarzy odkrywających sport i doświadczonych członków zarządzających rejsami. Czysto, premium, bez wysiłku."
         },
         "development": {
           "title": "Development",
@@ -1092,11 +1092,11 @@
     },
     "navexa": {
       "meta": {
-        "title": "Navexa — Platforma logistyczna | Ortvest",
+        "title": "Navexa – Platforma logistyczna | Ortvest",
         "description": "Flota, trasy, monitoring przesyłek oraz marketing produktu. Projekt NDA."
       },
       "hero": {
-        "subtitle": "Platforma logistyczna — flota, trasy, monitoring oraz marketing wspierający pozycjonowanie i pozyskiwanie klientów B2B."
+        "subtitle": "Platforma logistyczna – flota, trasy, monitoring oraz marketing wspierający pozycjonowanie i pozyskiwanie klientów B2B."
       },
       "stats": {
         "projectType": {
@@ -1159,11 +1159,11 @@
     },
     "teya": {
       "meta": {
-        "title": "Teya Logistics — Landing page | Ortvest",
+        "title": "Teya Logistics – Landing page | Ortvest",
         "description": "Nowoczesna strona logistyczna pod leady."
       },
       "hero": {
-        "subtitle": "Landing dla firmy transportowej — usługi, branding i szybka wycena."
+        "subtitle": "Landing dla firmy transportowej – usługi, branding i szybka wycena."
       },
       "stats": {
         "projectType": {
@@ -1206,7 +1206,7 @@
           },
           "contact": {
             "title": "Easy contact",
-            "description": "Multiple touchpoints — form, phone, and quick inquiry — without friction."
+            "description": "Multiple touchpoints – form, phone, and quick inquiry – without friction."
           }
         }
       },
@@ -1229,11 +1229,11 @@
     },
     "pachaca": {
       "meta": {
-        "title": "Pachaca — Platforma sprzątania on-demand | Ortvest",
+        "title": "Pachaca – Platforma sprzątania on-demand | Ortvest",
         "description": "Platforma full-stack dla serwisu sprzątania: aplikacje iOS i Android, serwis web do rezerwacji oraz wewnętrzny CMS operacyjny."
       },
       "hero": {
-        "subtitle": "Platforma full-stack dla serwisu sprzątania i pralni chemicznej — aplikacje mobilne, serwis web i wewnętrzny system zarządzania zbudowane od zera."
+        "subtitle": "Platforma full-stack dla serwisu sprzątania i pralni chemicznej – aplikacje mobilne, serwis web i wewnętrzny system zarządzania zbudowane od zera."
       },
       "stats": {
         "platforms": {
@@ -1249,37 +1249,37 @@
           "value": "Ukraina · 3 miasta"
         }
       },
-      "challenge": "Pachaca musiała zdigitalizować usługę sprzątania i pralni chemicznej on-demand w kilku miastach Ukrainy — szybka rezerwacja mobilna dla klientów i pełna kontrola nad zamówieniami, sprzątaczami i strefami obsługi dla zespołu operacyjnego.",
+      "challenge": "Pachaca musiała zdigitalizować usługę sprzątania i pralni chemicznej on-demand w kilku miastach Ukrainy – szybka rezerwacja mobilna dla klientów i pełna kontrola nad zamówieniami, sprzątaczami i strefami obsługi dla zespołu operacyjnego.",
       "solution": "Zbudowaliśmy cały stos cyfrowy od zera: natywne aplikacje iOS i Android dla klientów, pełny serwis web dla użytkowników desktopowych oraz customowy wewnętrzny CMS dopasowany do codziennej pracy zespołu Pachaca.",
       "cms": {
-        "internal": "Narzędzie wewnętrzne — zrzuty ekranu niedostępne."
+        "internal": "Narzędzie wewnętrzne – zrzuty ekranu niedostępne."
       },
       "sections": {
         "overview": {
           "title": "Przegląd",
-          "description": "Pachaca to usługa sprzątania i pralni chemicznej on-demand działająca w kilku miastach Ukrainy. Klienci rezerwują profesjonalne sprzątanie mieszkań, mebli i odzieży — szybko i w pełni online. Zbudowaliśmy całą infrastrukturę cyfrową: aplikacje mobilne, serwis web i wewnętrzny system operacyjny."
+          "description": "Pachaca to usługa sprzątania i pralni chemicznej on-demand działająca w kilku miastach Ukrainy. Klienci rezerwują profesjonalne sprzątanie mieszkań, mebli i odzieży – szybko i w pełni online. Zbudowaliśmy całą infrastrukturę cyfrową: aplikacje mobilne, serwis web i wewnętrzny system operacyjny."
         },
         "mobile": {
-          "title": "Aplikacje mobilne — iOS i Android",
-          "description": "Natywne aplikacje mobilne dla iOS i Android zbudowane wokół szybkości i prostoty — wybierz usługę, wybierz termin, potwierdź rezerwację w mniej niż minutę. Powiadomienia push informują klienta na każdym etapie — od potwierdzenia po przyjazd sprzątacza."
+          "title": "Aplikacje mobilne – iOS i Android",
+          "description": "Natywne aplikacje mobilne dla iOS i Android zbudowane wokół szybkości i prostoty – wybierz usługę, wybierz termin, potwierdź rezerwację w mniej niż minutę. Powiadomienia push informują klienta na każdym etapie – od potwierdzenia po przyjazd sprzątacza."
         },
         "web": {
           "title": "Serwis web",
-          "description": "Pełny serwis web dający użytkownikom desktopowym ten sam płynny proces rezerwacji — wybór usługi, planowanie, zarządzanie adresami, historia zamówień i płatności. Szybki, zoptymalizowany pod konwersję."
+          "description": "Pełny serwis web dający użytkownikom desktopowym ten sam płynny proces rezerwacji – wybór usługi, planowanie, zarządzanie adresami, historia zamówień i płatności. Szybki, zoptymalizowany pod konwersję."
         },
         "cms": {
           "title": "Wewnętrzny system zarządzania",
-          "description": "Customowy wewnętrzny CMS dający zespołowi operacyjnemu Pachaca pełną kontrolę — zarządzanie zamówieniami, przypisywanie sprzątaczy, śledzenie stref obsługi i monitorowanie statusów w czasie rzeczywistym we wszystkich miastach."
+          "description": "Customowy wewnętrzny CMS dający zespołowi operacyjnemu Pachaca pełną kontrolę – zarządzanie zamówieniami, przypisywanie sprzątaczy, śledzenie stref obsługi i monitorowanie statusów w czasie rzeczywistym we wszystkich miastach."
         }
       }
     },
     "mie": {
       "meta": {
-        "title": "Mie — Inteligentna lista zakupów AI | Ortvest",
+        "title": "Mie – Inteligentna lista zakupów AI | Ortvest",
         "description": "Aplikacja z AI, stanem spiżarni i przypomnieniami. NDA."
       },
       "hero": {
-        "subtitle": "Lista zakupów z AI — stan spiżarni, przepisy i przypomnienia."
+        "subtitle": "Lista zakupów z AI – stan spiżarni, przepisy i przypomnienia."
       },
       "stats": {
         "projectType": {
@@ -1336,11 +1336,11 @@
     },
     "reskin": {
       "meta": {
-        "title": "[Re.] skin&hair — Identyfikacja marki | Ortvest",
+        "title": "[Re.] skin&hair – Identyfikacja marki | Ortvest",
         "description": "Minimalistyczna identyfikacja linii beauty."
       },
       "hero": {
-        "subtitle": "Minimalistyczny system marki dla pielęgnacji skóry i włosów — premium i spójność."
+        "subtitle": "Minimalistyczny system marki dla pielęgnacji skóry i włosów – premium i spójność."
       },
       "stats": {
         "projectType": {
@@ -1356,8 +1356,8 @@
           "value": "Print + Digital"
         }
       },
-      "challenge": "Marka w tłumie kategorii beauty — premium bez chłodnego minimalizmu.",
-      "solution": "Logo, paleta, typografia, opakowania i wytyczne — organiczne kształty i ciepłe neutrale.",
+      "challenge": "Marka w tłumie kategorii beauty – premium bez chłodnego minimalizmu.",
+      "solution": "Logo, paleta, typografia, opakowania i wytyczne – organiczne kształty i ciepłe neutrale.",
       "features": {
         "subtitle": "Deliverables that form a cohesive, premium brand language.",
         "items": {
@@ -1398,17 +1398,17 @@
       "sections": {
         "brand": {
           "title": "Identyfikacja marki",
-          "description": "Stworzyliśmy kompletny system identyfikacji wizualnej — logo, system wizualny, kierunek opakowań i brand guidelines dla nowoczesnej marki beauty."
+          "description": "Stworzyliśmy kompletny system identyfikacji wizualnej – logo, system wizualny, kierunek opakowań i brand guidelines dla nowoczesnej marki beauty."
         }
       }
     },
     "gambit": {
       "meta": {
-        "title": "Gambit — UI strony www | Ortvest",
+        "title": "Gambit – UI strony www | Ortvest",
         "description": "Nowoczesny UI z hierarchią i typografią."
       },
       "hero": {
-        "subtitle": "Nowoczesny UI — typografia, hierarchia i whitespace pod konwersję."
+        "subtitle": "Nowoczesny UI – typografia, hierarchia i whitespace pod konwersję."
       },
       "stats": {
         "projectType": {
@@ -1425,7 +1425,7 @@
         }
       },
       "challenge": "Odświeżenie wizualne bez utraty rozpoznawalności marki.",
-      "solution": "Skala typograficzna, komponenty i whitespace — jasna hierarchia na każdej sekcji.",
+      "solution": "Skala typograficzna, komponenty i whitespace – jasna hierarchia na każdej sekcji.",
       "features": {
         "subtitle": "Design decisions that balance aesthetics with usability.",
         "items": {
@@ -1466,7 +1466,7 @@
       "sections": {
         "design": {
           "title": "Redesign UI",
-          "description": "Przeprojektowaliśmy język wizualny — typografię, odstępy, hierarchię i kolor — aby strona przyciągała uwagę i prowadziła użytkownika do działania."
+          "description": "Przeprojektowaliśmy język wizualny – typografię, odstępy, hierarchię i kolor – aby strona przyciągała uwagę i prowadziła użytkownika do działania."
         },
         "development": {
           "title": "Development",
@@ -1477,10 +1477,10 @@
     "navexa-logo": {
       "meta": {
         "title": "Logo Navexa | Ortvest",
-        "description": "Logo logistyczne — precyzja i warianty jasne/ciemne."
+        "description": "Logo logistyczne – precyzja i warianty jasne/ciemne."
       },
       "hero": {
-        "subtitle": "Logo dla firmy logistycznej — nawigacja, precyzja, warianty na każde medium."
+        "subtitle": "Logo dla firmy logistycznej – nawigacja, precyzja, warianty na każde medium."
       },
       "stats": {
         "projectType": {
@@ -1496,7 +1496,7 @@
           "value": "Print + Digital"
         }
       },
-      "challenge": "Logo na dashboardy, pojazdy i dokumenty — jasne i ciemne tło.",
+      "challenge": "Logo na dashboardy, pojazdy i dokumenty – jasne i ciemne tło.",
       "solution": "Minimalistyczny znak z geometrią i wariantami kolorystycznymi do skalowania.",
       "features": {
         "subtitle": "Logo system built for logistics and product environments.",
@@ -1538,10 +1538,10 @@
     "ortvest-logo": {
       "meta": {
         "title": "Logo Ortvest | Ortvest",
-        "description": "Znak studia IT — innowacja i skalowalność."
+        "description": "Znak studia IT – innowacja i skalowalność."
       },
       "hero": {
-        "subtitle": "Znak studia IT — geometria, innowacja, warianty pod produkt i korporację."
+        "subtitle": "Znak studia IT – geometria, innowacja, warianty pod produkt i korporację."
       },
       "stats": {
         "projectType": {
@@ -1645,16 +1645,16 @@
     "nav": "Nawigacja"
   },
   "metadata": {
-    "title": "Ortvest — Studio IT dla P2P, Społeczności, Logistyki i Agritech",
-    "description": "Ortvest buduje produkty cyfrowe dla platform P2P, sieci społecznościowych, logistyki i agritech — design, development i marketing z głęboką ekspertyzą branżową.",
-    "ogTitle": "Ortvest — P2P, Społeczności, Logistyka i Agritech",
-    "ogDescription": "Ortvest buduje produkty cyfrowe dla platform P2P, sieci społecznościowych, logistyki i agritech — design, development i marketing z głęboką ekspertyzą branżową."
+    "title": "Ortvest – Studio IT dla P2P, Społeczności, Logistyki i Agritech",
+    "description": "Ortvest buduje produkty cyfrowe dla platform P2P, sieci społecznościowych, logistyki i agritech – design, development i marketing z głęboką ekspertyzą branżową.",
+    "ogTitle": "Ortvest – P2P, Społeczności, Logistyka i Agritech",
+    "ogDescription": "Ortvest buduje produkty cyfrowe dla platform P2P, sieci społecznościowych, logistyki i agritech – design, development i marketing z głęboką ekspertyzą branżową."
   },
   "cmsPage": {
     "hero": {
       "eyebrow": "Ortvest CMS",
       "headline": "Stworzony dla agencji, studiów i zespołów IT",
-      "subheadline": "Jeden system do zarządzania zamówieniami, projektami, zadaniami, finansami i zespołem — z natywną integracją API do podłączenia formularzy Twojej strony bezpośrednio do CMS. Dołączony do każdej umowy partnerskiej.",
+      "subheadline": "Jeden system do zarządzania zamówieniami, projektami, zadaniami, finansami i zespołem – z natywną integracją API do podłączenia formularzy Twojej strony bezpośrednio do CMS. Dołączony do każdej umowy partnerskiej.",
       "ctaPrimary": "Uzyskaj dostęp",
       "ctaSecondary": "Zobacz cennik"
     },
@@ -1671,7 +1671,7 @@
       "addonBadgeShort": "Dod.",
       "apiBlock": {
         "title": "Integracja strony przez API",
-        "description": "Podłącz formularz kontaktowy swojej strony bezpośrednio do Ortvest CMS. Każde zgłoszenie trafia automatycznie do Zamówień — bez ręcznego wprowadzania danych.",
+        "description": "Podłącz formularz kontaktowy swojej strony bezpośrednio do Ortvest CMS. Każde zgłoszenie trafia automatycznie do Zamówień – bez ręcznego wprowadzania danych.",
         "badge": "Zawarte we wszystkich planach",
         "step1": "Formularz strony",
         "step2": "Ortvest API",
@@ -1703,14 +1703,14 @@
         },
         "transactions": {
           "name": "Transakcje",
-          "subtitle": "Ręczne śledzenie przepływów pieniężnych — pensje, subskrypcje, podatki",
+          "subtitle": "Ręczne śledzenie przepływów pieniężnych – pensje, subskrypcje, podatki",
           "feature1": "Rejestruj przychody i wydatki według kategorii",
           "feature2": "Wyświetlaj całkowite przychody, całkowite wydatki i wynik netto",
           "feature3": "Pełny ślad audytu z datą i autorem"
         },
         "analytics": {
           "name": "Analityka",
-          "subtitle": "Przegląd finansowy — P&L i przepływy pieniężne",
+          "subtitle": "Przegląd finansowy – P&L i przepływy pieniężne",
           "feature1": "Rachunek zysków i strat oraz przepływy pieniężne obok siebie",
           "feature2": "Wykresy: Revenue vs Cash, Net Profit Trend, Orders by Status and Service",
           "feature3": "Filtruj według okresu: 7d / 30d / miesiąc / kwartał / własny"
@@ -1766,21 +1766,21 @@
     },
     "cta": {
       "headline": "Gotowy zarządzać biznesem mądrzej?",
-      "subheadline": "Uzyskaj dostęp do Ortvest CMS jako część umowy — lub subskrybuj niezależnie.",
+      "subheadline": "Uzyskaj dostęp do Ortvest CMS jako część umowy – lub subskrybuj niezależnie.",
       "button": "Skontaktuj się"
     },
     "metadata": {
-      "title": "Ortvest CMS — System zarządzania biznesem",
+      "title": "Ortvest CMS – System zarządzania biznesem",
       "description": "Ortvest CMS to system zarządzania biznesem stworzony dla agencji, studiów i zespołów IT. Zarządzaj zamówieniami, projektami, zadaniami, finansami i zespołem w jednym miejscu."
     },
     "widget": {
       "eyebrow": "Zarządzanie biznesem",
       "title": "Ortvest CMS",
-      "description": "Własny system zarządzania biznesem — dostępny w ramach każdej umowy partnerskiej w specjalnej cenie.",
+      "description": "Własny system zarządzania biznesem – dostępny w ramach każdej umowy partnerskiej w specjalnej cenie.",
       "perMonth": "/mies.",
       "analyticsFinance": "Analityka i finanse",
       "exploreTitle": "Chcesz zobaczyć Ortvest CMS w akcji?",
-      "exploreDesc": "Sprawdź pełny przegląd — zrzuty ekranu, moduły i zasadę działania.",
+      "exploreDesc": "Sprawdź pełny przegląd – zrzuty ekranu, moduły i zasadę działania.",
       "exploreButton": "Sprawdź Ortvest CMS"
     }
   },

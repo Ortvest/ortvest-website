@@ -128,9 +128,9 @@ const portfolioCases: CaseItem[] = [
     title: 'ProfitCraft',
     industries: ['community'],
     challenge:
-      'ProfitCraft (credit-building) and ProfitCraft Auto (auto broker) are one US ecosystem — separate public sites, shared operations. The credit site had to build trust and explain paths simply while matching the Auto product family',
+      'ProfitCraft (credit-building) and ProfitCraft Auto (auto broker) are one US ecosystem – separate public sites, shared operations. The credit site had to build trust and explain paths simply while matching the Auto product family',
     solution:
-      'Designed the credit-building site as part of the unified ProfitCraft system alongside Auto — consistent trust patterns, service paths, and CTAs. We also built an internal CMS for the team; it cannot be shown publicly',
+      'Designed the credit-building site as part of the unified ProfitCraft system alongside Auto – consistent trust patterns, service paths, and CTAs. We also built an internal CMS for the team; it cannot be shown publicly',
     relatedCaseId: 'profitcraftauto',
     stack: ['Web Design', 'Frontend Development', 'Marketing Website'],
     isNDA: false,
@@ -175,7 +175,7 @@ const portfolioCases: CaseItem[] = [
     challenge:
       'ProfitCraft Auto is the auto-broker arm of the same ProfitCraft ecosystem as the credit-building site. Buyers with any credit history needed a marketing website that fits the family brand and drives applications',
     solution:
-      'Built the Auto landing as the second public surface of the unified ProfitCraft system — trust-first flows, applications, and mobile UI aligned with the credit site. Internal CMS was delivered for operations but cannot be published',
+      'Built the Auto landing as the second public surface of the unified ProfitCraft system – trust-first flows, applications, and mobile UI aligned with the credit site. Internal CMS was delivered for operations but cannot be published',
     relatedCaseId: 'profitcraft',
     stack: ['Web Design', 'Frontend Development', 'Marketing Website'],
     isNDA: false,
