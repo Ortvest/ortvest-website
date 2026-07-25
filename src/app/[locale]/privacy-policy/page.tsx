@@ -62,8 +62,8 @@ export default function PrivacyPolicyPage({ params: { locale } }: { params: { lo
               'Name – your first and/or last name',
               'Email address – used to reply to your inquiry',
               'Project type (optional) – one of the following categories you select: P2P, Community & clubs, Logistics, Other',
-              'Budget (optional) – selected budget range: Small task / consult, €1k–5k, €5k–15k, €15k+',
-              'Consultation type – type of session requested: Discovery Call (Free) or Strategy Session (€199)',
+              'Budget (optional) – selected budget range: €10–25k, €25–50k, €50–100k, €100k+, or Not sure yet',
+              'Consultation type – type of session requested: Discovery Call (Free) or Cold Start Audit (€199)',
               'Message (optional) – a free-text description of your project and timeline',
             ]}
           />
