@@ -16,7 +16,7 @@
   },
   "divider": {
     "platforms": "two-sided platforms shipped",
-    "funded": "product we fund ourselves — YachtMate",
+    "funded": "product we fund ourselves – YachtMate",
     "industries": "industries. No others claimed.",
     "industryList": "P2P · Community · Logistics"
   },
@@ -26,7 +26,7 @@
     "title2": "It's the empty platform.",
     "title3": "",
     "title3em": "",
-    "subtitle": "Marketplaces, P2P products and member networks only work when strangers start trusting each other. That's the problem we specialise in — and we've solved day one five times.",
+    "subtitle": "Marketplaces, P2P products and member networks only work when strangers start trusting each other. That's the problem we specialise in – and we've solved day one five times.",
     "cta": {
       "primary": "See how we handle the cold start",
       "secondary": "Look at the work"
@@ -142,7 +142,7 @@
     "industryNote": "Not on this list? Say so on the call. If it isn't ours, we'll say that too.",
     "design": {
       "title": "Design",
-      "desc": "UX for two-sided flows, verification and trust states, production-ready UI in Figma. We design the empty state first — it's what most of your early users will actually see.",
+      "desc": "UX for two-sided flows, verification and trust states, production-ready UI in Figma. We design the empty state first – it's what most of your early users will actually see.",
       "i1": "Two-sided user flows",
       "i2": "Verification and trust states",
       "i3": "Empty-state design",
@@ -160,7 +160,7 @@
     },
     "marketing": {
       "title": "Marketing",
-      "desc": "Cold-start acquisition, positioning, SEO, paid, CRM. Available as an add-on — and we'll tell you when your product isn't ready for traffic yet.",
+      "desc": "Cold-start acquisition, positioning, SEO, paid, CRM. Available as an add-on – and we'll tell you when your product isn't ready for traffic yet.",
       "basic": "Basic",
       "advanced": "Advanced",
       "premium": "Premium",
@@ -297,7 +297,7 @@
   "approach": {
     "label": "How we think",
     "title": "Most studios ask what you want built. We ask who shows up first.",
-    "subtitle": "A two-sided product is worthless on launch day and nobody warns you. Owners won't join without renters. Renters won't join without owners. Clubs won't pay for a network with three clubs in it. We start there, before a single screen exists — because that's the question that decides whether the thing lives.",
+    "subtitle": "A two-sided product is worthless on launch day and nobody warns you. Owners won't join without renters. Renters won't join without owners. Clubs won't pay for a network with three clubs in it. We start there, before a single screen exists – because that's the question that decides whether the thing lives.",
     "quote": {
       "text": "Design comes after the ",
       "em": "cold start.",
@@ -307,11 +307,11 @@
       "label": "How we work",
       "1": {
         "title": "We've been the client",
-        "desc": "We build and fund YachtMate ourselves — a platform for yacht clubs. We pay for our own mistakes, our own churn, our own empty first month. Very few studios can say that, and it changes how we argue with you."
+        "desc": "We build and fund YachtMate ourselves – a platform for yacht clubs. We pay for our own mistakes, our own churn, our own empty first month. Very few studios can say that, and it changes how we argue with you."
       },
       "2": {
         "title": "We'll tell you not to build it",
-        "desc": "Sometimes the answer is a spreadsheet, an existing tool, or nothing. We'd rather lose the project at the discovery call than six months in. Ask us for an example — we have them."
+        "desc": "Sometimes the answer is a spreadsheet, an existing tool, or nothing. We'd rather lose the project at the discovery call than six months in. Ask us for an example – we have them."
       },
       "3": {
         "title": "Same timezone, EU contracts",
@@ -326,7 +326,7 @@
       },
       "2": {
         "title": "Trust is a feature, not a policy page",
-        "desc": "Verification, reputation, disputes, moderation. In a P2P product this isn't compliance — it's the product."
+        "desc": "Verification, reputation, disputes, moderation. In a P2P product this isn't compliance – it's the product."
       },
       "3": {
         "title": "We ship the boring 20%",
@@ -390,7 +390,7 @@
     "q1": "Will you build my Uber for X?",
     "a1": "Maybe. But on the first call we'll ask which side you can get 100 of by hand, without ads. If there's no answer, the product isn't ready and we'll say so instead of taking the money.",
     "q2": "Why only three industries?",
-    "a2": "Because a fourth would be a claim we can't back with work. We build platforms where participants have to find and trust each other — that shape repeats across P2P, clubs and logistics. Outside it we'd be guessing on your budget.",
+    "a2": "Because a fourth would be a claim we can't back with work. We build platforms where participants have to find and trust each other – that shape repeats across P2P, clubs and logistics. Outside it we'd be guessing on your budget.",
     "q3": "How much does a platform cost?",
     "a3": "It depends on the trust model, number of participant roles and operational tooling. We'll give you a rough budget range on the first call and a fixed price after scope. If a prototype is the smarter first step, we'll say so.",
     "q4": "Can I hire you for just design, or just development?",
@@ -400,7 +400,7 @@
     "q6": "What does working together look like?",
     "a6": "Discovery → design → build → launch. One-week sprints, a demo every sprint. You always know what shipped and what's next.",
     "q7": "What happens after launch?",
-    "a7": "Retainers for ongoing development and iteration. Most clients stay — but the first version is the one that decides whether there's anything to iterate on.",
+    "a7": "Retainers for ongoing development and iteration. Most clients stay – but the first version is the one that decides whether there's anything to iterate on.",
     "q8": "How do we start?",
     "a8": "Book the free call or send the form. We reply within 24 hours with relevant cases and an honest read on fit."
   },
@@ -492,7 +492,7 @@
       "duration": "30 min",
       "items": {
         "projectOverview": "What you're building and for whom",
-        "feasibility": "Whether we're the right studio — often we're not",
+        "feasibility": "Whether we're the right studio – often we're not",
         "timelineBudget": "Rough scope, timeline and budget range",
         "qa": "Straight answers, no deck"
       }
@@ -516,8 +516,8 @@
   "cases": {
     "eyebrow": "Our work",
     "title": "Five platforms that had to start empty.",
-    "subtitle": "P2P, community and logistics. Some are under NDA — we'll walk you through those on a call.",
-    "ndaBanner": "Some projects are under NDA — we'll walk you through those on a call.",
+    "subtitle": "P2P, community and logistics. Some are under NDA – we'll walk you through those on a call.",
+    "ndaBanner": "Some projects are under NDA – we'll walk you through those on a call.",
     "filterIndustries": {
       "all": "All projects",
       "p2p": "P2P",
@@ -530,7 +530,7 @@
     "page": {
       "label": "OUR WORK",
       "title": "Selected projects",
-      "subtitle": "P2P, community and logistics. Some projects are under NDA — we'll walk you through those on a call.",
+      "subtitle": "P2P, community and logistics. Some projects are under NDA – we'll walk you through those on a call.",
       "filter": {
         "all": "All"
       },
@@ -559,7 +559,7 @@
     "designBy": "Design by",
     "ndaDetails": "Book a call to learn more",
     "ctaTitle": "Building something two-sided?",
-    "ctaText": "Marketplace, P2P product, member network, multi-party logistics — if your product needs strangers to trust each other, that's our whole job.",
+    "ctaText": "Marketplace, P2P product, member network, multi-party logistics – if your product needs strangers to trust each other, that's our whole job.",
     "ctaButton": "Book a call",
     "ctaSecondary": "Get a quote",
     "bottomCtaText": "See the same cold-start problem in your product?",
@@ -1632,10 +1632,10 @@
     "nav": "Navigation"
   },
   "metadata": {
-    "title": "Ortvest — platforms for P2P, communities and logistics",
-    "description": "We build marketplaces, P2P products and member networks — the kind that only work once strangers trust each other. Design, development and go-to-market from Poznań, Poland.",
-    "ogTitle": "Ortvest — the hard part was never the code",
-    "ogDescription": "We build marketplaces, P2P products and member networks — the kind that only work once strangers trust each other."
+    "title": "Ortvest – platforms for P2P, communities and logistics",
+    "description": "We build marketplaces, P2P products and member networks – the kind that only work once strangers trust each other. Design, development and go-to-market from Poznań, Poland.",
+    "ogTitle": "Ortvest – the hard part was never the code",
+    "ogDescription": "We build marketplaces, P2P products and member networks – the kind that only work once strangers trust each other."
   },
   "cmsPage": {
     "hero": {

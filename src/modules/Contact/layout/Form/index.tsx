@@ -60,7 +60,7 @@ export function ContactForm() {
       });
       setIsSuccess(true);
     } catch {
-      // Keep form visible on error — user can retry
+      // Keep form visible on error – user can retry
     } finally {
       setIsSubmitting(false);
     }

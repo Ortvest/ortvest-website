@@ -49,7 +49,7 @@ export function BackgroundEffects() {
         }}
       />
 
-      {/* Soft blobs — simplified on mobile for scroll performance */}
+      {/* Soft blobs – simplified on mobile for scroll performance */}
       <div className="absolute inset-0">
         {(isMobile ? MOBILE_BLOBS : SOFT_BLOBS).map((b, i) => (
           <div
@@ -71,7 +71,7 @@ export function BackgroundEffects() {
         ))}
       </div>
 
-      {/* Large oval, mid-right, lower left — desktop only for scroll perf on mobile */}
+      {/* Large oval, mid-right, lower left – desktop only for scroll perf on mobile */}
       {!isMobile && (
         <>
           <div

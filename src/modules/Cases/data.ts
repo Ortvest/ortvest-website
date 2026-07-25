@@ -486,7 +486,7 @@ export const brandCases: CaseItem[] = [
   },
 ];
 
-/** All cases — used by case detail pages and static generation */
+/** All cases – used by case detail pages and static generation */
 export const cases: CaseItem[] = [...portfolioCases, ...brandCases];
 
 /** Homepage portfolio grid */

@@ -173,7 +173,7 @@ export function CMSPage() {
 
             <div className="overflow-hidden rounded-2xl border border-black/[0.08] shadow-card">
               <div className="flex flex-col lg:flex-row">
-                {/* Sidebar — horizontal scroll on mobile, vertical on desktop */}
+                {/* Sidebar – horizontal scroll on mobile, vertical on desktop */}
                 <nav
                   className="flex shrink-0 overflow-x-auto p-3 lg:w-60 lg:flex-col"
                   style={{ backgroundColor: HERO_BG }}
@@ -271,7 +271,7 @@ export function CMSPage() {
                         </div>
                       )}
 
-                      {/* API integration block — Orders only */}
+                      {/* API integration block – Orders only */}
                       {activeModule === 'orders' && (
                         <div className="mt-5 rounded-xl border border-accent/25 bg-accent/[0.06] p-4">
                           <div className="flex items-start justify-between gap-3">

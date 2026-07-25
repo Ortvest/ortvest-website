@@ -82,7 +82,7 @@ export function Navigation() {
           </Link>
         </li>
 
-        {/* Services — dropdown trigger */}
+        {/* Services – dropdown trigger */}
         <li ref={containerRef} className="relative">
           <button
             type="button"

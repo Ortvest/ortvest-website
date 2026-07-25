@@ -16,7 +16,7 @@
   },
   "divider": {
     "platforms": "wdrożonych platform dwustronnych",
-    "funded": "własny finansowany produkt — YachtMate",
+    "funded": "własny finansowany produkt – YachtMate",
     "industries": "branże. Żadnych innych deklaracji.",
     "industryList": "P2P · Społeczności · Logistyka"
   },
@@ -26,7 +26,7 @@
     "title2": "Tylko pusta platforma.",
     "title3": "",
     "title3em": "",
-    "subtitle": "Marketplace'y, produkty P2P i sieci członkowskie działają dopiero wtedy, gdy obcy ludzie zaczynają sobie ufać. W tym się specjalizujemy — i pięć razy rozwiązaliśmy problem pierwszego dnia.",
+    "subtitle": "Marketplace'y, produkty P2P i sieci członkowskie działają dopiero wtedy, gdy obcy ludzie zaczynają sobie ufać. W tym się specjalizujemy – i pięć razy rozwiązaliśmy problem pierwszego dnia.",
     "cta": {
       "primary": "Zobacz, jak rozwiązujemy cold start",
       "secondary": "Zobacz realizacje"
@@ -142,7 +142,7 @@
     "industryNote": "Nie ma Cię na tej liście? Powiedz o tym podczas rozmowy. Jeśli to nie nasza branża, też powiemy wprost.",
     "design": {
       "title": "Design",
-      "desc": "UX dla dwustronnych procesów, weryfikacji i stanów zaufania oraz gotowe UI w Figmie. Najpierw projektujemy pusty stan — to właśnie zobaczy większość pierwszych użytkowników.",
+      "desc": "UX dla dwustronnych procesów, weryfikacji i stanów zaufania oraz gotowe UI w Figmie. Najpierw projektujemy pusty stan – to właśnie zobaczy większość pierwszych użytkowników.",
       "i1": "Dwustronne ścieżki użytkowników",
       "i2": "Weryfikacja i stany zaufania",
       "i3": "Projektowanie pustych stanów",
@@ -160,7 +160,7 @@
     },
     "marketing": {
       "title": "Marketing",
-      "desc": "Pozyskanie pierwszych użytkowników, pozycjonowanie, SEO, reklamy i CRM. Jako dodatek — i powiemy, jeśli produkt nie jest jeszcze gotowy na ruch.",
+      "desc": "Pozyskanie pierwszych użytkowników, pozycjonowanie, SEO, reklamy i CRM. Jako dodatek – i powiemy, jeśli produkt nie jest jeszcze gotowy na ruch.",
       "basic": "Podstawowy",
       "advanced": "Rozszerzony",
       "premium": "Premium",
@@ -297,7 +297,7 @@
   "approach": {
     "label": "Jak myślimy",
     "title": "Większość studiów pyta, co zbudować. My pytamy, kto pojawi się pierwszy.",
-    "subtitle": "Dwustronny produkt w dniu premiery jest bezwartościowy i nikt o tym nie ostrzega. Właściciele nie przyjdą bez najemców. Najemcy bez właścicieli. Kluby nie zapłacą za sieć z trzema klubami. Zaczynamy właśnie tutaj, zanim powstanie pierwszy ekran — bo ta odpowiedź decyduje, czy produkt przeżyje.",
+    "subtitle": "Dwustronny produkt w dniu premiery jest bezwartościowy i nikt o tym nie ostrzega. Właściciele nie przyjdą bez najemców. Najemcy bez właścicieli. Kluby nie zapłacą za sieć z trzema klubami. Zaczynamy właśnie tutaj, zanim powstanie pierwszy ekran – bo ta odpowiedź decyduje, czy produkt przeżyje.",
     "quote": {
       "text": "Design zaczyna się po rozwiązaniu ",
       "em": "cold startu.",
@@ -307,11 +307,11 @@
       "label": "Jak pracujemy",
       "1": {
         "title": "Sami byliśmy klientem",
-        "desc": "Sami budujemy i finansujemy YachtMate — platformę dla klubów jachtowych. Płacimy za własne błędy, własny churn i własny pusty pierwszy miesiąc. Niewiele studiów może to powiedzieć i zmienia to sposób, w jaki z Tobą dyskutujemy."
+        "desc": "Sami budujemy i finansujemy YachtMate – platformę dla klubów jachtowych. Płacimy za własne błędy, własny churn i własny pusty pierwszy miesiąc. Niewiele studiów może to powiedzieć i zmienia to sposób, w jaki z Tobą dyskutujemy."
       },
       "2": {
         "title": "Powiemy Ci, żeby tego nie budować",
-        "desc": "Czasem odpowiedzią jest arkusz, gotowe narzędzie albo nic. Wolimy stracić projekt na rozmowie niż po sześciu miesiącach. Zapytaj o przykład — mamy kilka."
+        "desc": "Czasem odpowiedzią jest arkusz, gotowe narzędzie albo nic. Wolimy stracić projekt na rozmowie niż po sześciu miesiącach. Zapytaj o przykład – mamy kilka."
       },
       "3": {
         "title": "Ta sama strefa czasowa, umowy w UE",
@@ -326,7 +326,7 @@
       },
       "2": {
         "title": "Zaufanie to funkcja, nie strona regulaminu",
-        "desc": "Weryfikacja, reputacja, spory, moderacja. W produkcie P2P to nie compliance — to produkt."
+        "desc": "Weryfikacja, reputacja, spory, moderacja. W produkcie P2P to nie compliance – to produkt."
       },
       "3": {
         "title": "Dostarczamy nudne 20%",
@@ -390,17 +390,17 @@
     "q1": "Czy zbudujecie mojego Ubera dla X?",
     "a1": "Może. Ale podczas pierwszej rozmowy zapytamy, po której stronie potrafisz zdobyć ręcznie 100 osób, bez reklam. Jeśli nie ma odpowiedzi, produkt nie jest gotowy i powiemy to zamiast brać pieniądze.",
     "q2": "Dlaczego tylko trzy branże?",
-    "a2": "Bo czwarta byłaby deklaracją bez pokrycia w realizacjach. Budujemy platformy, na których uczestnicy muszą się znaleźć i sobie zaufać — ten schemat powtarza się w P2P, klubach i logistyce. Poza nim zgadywalibyśmy za Twój budżet.",
+    "a2": "Bo czwarta byłaby deklaracją bez pokrycia w realizacjach. Budujemy platformy, na których uczestnicy muszą się znaleźć i sobie zaufać – ten schemat powtarza się w P2P, klubach i logistyce. Poza nim zgadywalibyśmy za Twój budżet.",
     "q3": "Ile kosztuje platforma?",
     "a3": "To zależy od modelu zaufania, liczby ról i narzędzi operacyjnych. Podczas pierwszej rozmowy podamy przedział, a po ustaleniu zakresu stałą cenę. Jeśli lepszym pierwszym krokiem jest prototyp, powiemy to.",
     "q4": "Czy mogę zatrudnić Was tylko do designu albo developmentu?",
-    "a4": "Tak. Sam design, sam development lub sam marketing — dopasujemy zakres.",
+    "a4": "Tak. Sam design, sam development lub sam marketing – dopasujemy zakres.",
     "q5": "Czy pracujecie z istniejącym kodem?",
     "a5": "Tak. Najpierw zrobimy audyt i wydamy uczciwy werdykt, również „przepisać” albo „zostać z obecnym zespołem”.",
     "q6": "Jak wygląda współpraca?",
     "a6": "Discovery → design → build → launch. Tygodniowe sprinty i demo po każdym z nich. Zawsze wiesz, co wdrożyliśmy i co dalej.",
     "q7": "Co dzieje się po wdrożeniu?",
-    "a7": "Retainery na dalszy rozwój i iteracje. Większość klientów zostaje — ale pierwsza wersja decyduje, czy będzie co rozwijać.",
+    "a7": "Retainery na dalszy rozwój i iteracje. Większość klientów zostaje – ale pierwsza wersja decyduje, czy będzie co rozwijać.",
     "q8": "Jak zaczynamy?",
     "a8": "Umów darmową rozmowę albo wyślij formularz. W ciągu 24 godzin odpowiemy z odpowiednimi realizacjami i uczciwą oceną dopasowania."
   },
@@ -492,7 +492,7 @@
       "duration": "30 min",
       "items": {
         "projectOverview": "Co budujesz i dla kogo",
-        "feasibility": "Czy jesteśmy właściwym studiem — często nie",
+        "feasibility": "Czy jesteśmy właściwym studiem – często nie",
         "timelineBudget": "Wstępny zakres, termin i przedział budżetu",
         "qa": "Konkretne odpowiedzi, bez prezentacji"
       }
@@ -516,8 +516,8 @@
   "cases": {
     "eyebrow": "Nasze projekty",
     "title": "Pięć platform, które musiały zacząć od pustki.",
-    "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA — omówimy je podczas rozmowy.",
-    "ndaBanner": "Część projektów jest objęta NDA — omówimy je podczas rozmowy.",
+    "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA – omówimy je podczas rozmowy.",
+    "ndaBanner": "Część projektów jest objęta NDA – omówimy je podczas rozmowy.",
     "filterIndustries": {
       "all": "Wszystkie projekty",
       "p2p": "P2P",
@@ -530,7 +530,7 @@
     "page": {
       "label": "NASZE PROJEKTY",
       "title": "Wybrane projekty",
-      "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA — omówimy je podczas rozmowy.",
+      "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA – omówimy je podczas rozmowy.",
       "filter": {
         "all": "Wszystkie"
       },
@@ -559,7 +559,7 @@
     "designBy": "Projekt",
     "ndaDetails": "Umów rozmowę, aby dowiedzieć się więcej",
     "ctaTitle": "Budujesz coś dwustronnego?",
-    "ctaText": "Marketplace, produkt P2P, sieć członkowska, logistyka wielostronna — jeśli produkt wymaga zaufania między obcymi osobami, to jest cała nasza praca.",
+    "ctaText": "Marketplace, produkt P2P, sieć członkowska, logistyka wielostronna – jeśli produkt wymaga zaufania między obcymi osobami, to jest cała nasza praca.",
     "ctaButton": "Umów rozmowę",
     "ctaSecondary": "Wyceń projekt",
     "bottomCtaText": "Widzisz ten sam problem cold start w swoim produkcie?",
@@ -1632,10 +1632,10 @@
     "nav": "Nawigacja"
   },
   "metadata": {
-    "title": "Ortvest — platformy dla P2P, społeczności i logistyki",
-    "description": "Budujemy marketplace'y, produkty P2P i sieci członkowskie — takie, które działają dopiero, gdy obcy ludzie sobie ufają. Design, development i go-to-market z Poznania.",
-    "ogTitle": "Ortvest — najtrudniejszy nigdy nie był kod",
-    "ogDescription": "Budujemy marketplace'y, produkty P2P i sieci członkowskie — takie, które działają dopiero, gdy obcy ludzie sobie ufają."
+    "title": "Ortvest – platformy dla P2P, społeczności i logistyki",
+    "description": "Budujemy marketplace'y, produkty P2P i sieci członkowskie – takie, które działają dopiero, gdy obcy ludzie sobie ufają. Design, development i go-to-market z Poznania.",
+    "ogTitle": "Ortvest – najtrudniejszy nigdy nie był kod",
+    "ogDescription": "Budujemy marketplace'y, produkty P2P i sieci członkowskie – takie, które działają dopiero, gdy obcy ludzie sobie ufają."
   },
   "cmsPage": {
     "hero": {

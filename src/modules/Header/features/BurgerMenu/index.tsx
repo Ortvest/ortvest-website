@@ -17,7 +17,7 @@ import AppIconHorizontal from '@public/icons/AppLogoHorizontal.svg';
 import { IconChevronDown, IconX } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-// Top-level nav items — contact removed (it's the CTA button), industries/process/technologies moved under Services
+// Top-level nav items – contact removed (it's the CTA button), industries/process/technologies moved under Services
 const navOrder = ['about', 'team', 'services', 'cases', 'blog', 'faq'] as const;
 type NavKey = (typeof navOrder)[number];
 

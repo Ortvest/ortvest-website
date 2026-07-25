@@ -42,7 +42,7 @@ export function Contact() {
 
         {/* Two-column layout */}
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
-          {/* Left — steps */}
+          {/* Left – steps */}
           <div>
             <p className="mb-5 text-[10px] uppercase tracking-widest text-zinc-500">{t('steps.label')}</p>
             <div>
@@ -62,7 +62,7 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Right — form */}
+          {/* Right – form */}
           <ContactForm />
         </div>
       </div>
