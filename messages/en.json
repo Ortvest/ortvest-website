@@ -1796,6 +1796,7 @@
     "emptyTitle": "No articles yet. Check back soon.",
     "minRead": "{n} min read",
     "filterAll": "All",
+    "tableOfContents": "Table of contents",
     "metadata": {
       "title": "Blog | Ortvest",
       "description": "Insights on design, development, and growth from the Ortvest team."

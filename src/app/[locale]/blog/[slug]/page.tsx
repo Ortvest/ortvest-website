@@ -5,10 +5,17 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { Container } from '@shared/components';
 
 import { ReduxProvider } from '@global/store/ReduxProvider';
-import { BlogArticleContent, metaDescriptionFromPost, readMinutesFromContent } from '@lib/blog-content';
+import {
+  articleHeadingsFromContent,
+  BlogArticleContent,
+  metaDescriptionFromPost,
+  readMinutesFromContent,
+} from '@lib/blog-content';
 import { formatBlogPostDate } from '@lib/blog-dates';
 import { pickRelatedCards, rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostBySlug, fetchCmsBlogPosts } from '@lib/cms-api';
+import { ArticleReadingProgress } from '@modules/Blog/ArticleReadingProgress';
+import { ArticleTableOfContents } from '@modules/Blog/ArticleTableOfContents';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 import { BlogPostCard } from '@modules/Blog/BlogPostCard';
@@ -72,12 +79,15 @@ export default async function BlogArticlePage({ params }: Props) {
   const readMin = readMinutesFromContent(post.content);
   const dateStr = post.published_at ? formatBlogPostDate(post.published_at, locale) : '';
   const authorName = post.author_name?.trim() || tBlog('authorFallback');
+  const headings = articleHeadingsFromContent(post.content);
+  const showTableOfContents = headings.length > 3;
 
   return (
     <ReduxProvider>
+      <ArticleReadingProgress articleId="blog-article" />
       <Header />
       <main>
-        <article className="section-padding bg-white">
+        <article id="blog-article" className="section-padding bg-white">
           <Container>
             <div className="mx-auto max-w-[720px]">
               <Link
@@ -96,7 +106,7 @@ export default async function BlogArticlePage({ params }: Props) {
                 </div>
               )}
 
-              <h1 className="mt-4 text-h1 text-black">{post.title}</h1>
+              <h1 className="mt-4 text-[2.25rem] font-bold leading-[1.12] text-black sm:text-h1">{post.title}</h1>
 
               <div className="mt-6 flex flex-wrap items-center gap-2 text-body-sm text-black/50">
                 <AuthorAvatar name={authorName} size={32} />
@@ -121,13 +131,26 @@ export default async function BlogArticlePage({ params }: Props) {
                   </div>
                 )}
               </div>
-
-              <div className="mt-10">
-                <BlogArticleContent content={post.content} />
-              </div>
-
-              <hr className="mt-14 border-0 border-t border-black/[0.08]" />
             </div>
+
+            {showTableOfContents ? (
+              <div
+                className={[
+                  'mx-auto mt-10 max-w-[980px]',
+                  'lg:grid lg:grid-cols-[220px_minmax(0,70ch)] lg:items-start lg:gap-12',
+                ].join(' ')}>
+                <ArticleTableOfContents headings={headings} title={t('tableOfContents')} />
+                <div className="min-w-0 max-w-[70ch]">
+                  <BlogArticleContent content={post.content} />
+                  <hr className="mt-14 border-0 border-t border-black/[0.08]" />
+                </div>
+              </div>
+            ) : (
+              <div className="mx-auto mt-10 max-w-[70ch]">
+                <BlogArticleContent content={post.content} />
+                <hr className="mt-14 border-0 border-t border-black/[0.08]" />
+              </div>
+            )}
           </Container>
         </article>
 

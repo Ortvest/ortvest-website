@@ -87,6 +87,79 @@ export function isHtmlString(content: unknown): content is string {
   return typeof content === 'string' && /<\s*[a-z][\s\S]*>/i.test(content.trim());
 }
 
+export type ArticleHeading = {
+  id: string;
+  text: string;
+};
+
+function headingSlug(text: string): string {
+  return (
+    text
+      .toLowerCase()
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\u0400-\u04ff]+/g, '-')
+      .replace(/^-+|-+$/g, '') || 'section'
+  );
+}
+
+function uniqueHeadingId(text: string, counts: Map<string, number>): string {
+  const slug = headingSlug(text);
+  const next = (counts.get(slug) ?? 0) + 1;
+  counts.set(slug, next);
+  return next === 1 ? slug : `${slug}-${next}`;
+}
+
+function stripHtml(value: string): string {
+  return value
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, String.fromCharCode(39))
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function htmlHeadings(content: string): ArticleHeading[] {
+  const counts = new Map<string, number>();
+  return Array.from(content.matchAll(/<h2\b([^>]*)>([\s\S]*?)<\/h2>/gi)).map((match) => {
+    const existingId = match[1]?.match(/\bid=(["'])(.*?)\1/i)?.[2];
+    const text = stripHtml(match[2] ?? '');
+    return { id: existingId || uniqueHeadingId(text, counts), text };
+  });
+}
+
+function htmlWithHeadingIds(content: string): string {
+  const counts = new Map<string, number>();
+  return content.replace(/<h2\b([^>]*)>([\s\S]*?)<\/h2>/gi, (full, attrs: string, inner: string) => {
+    if (/\bid=(["']).*?\1/i.test(attrs)) return full;
+    const id = uniqueHeadingId(stripHtml(inner), counts);
+    return `<h2${attrs} id="${id}">${inner}</h2>`;
+  });
+}
+
+export function articleHeadingsFromContent(content: unknown): ArticleHeading[] {
+  if (isHtmlString(content)) return htmlHeadings(content);
+  if (!isTiptapDoc(content)) return [];
+
+  const counts = new Map<string, number>();
+  const headings: ArticleHeading[] = [];
+  const walk = (node: unknown) => {
+    if (!isRecord(node)) return;
+    if (node.type === 'heading' && Number((node.attrs as any)?.level ?? 2) <= 2) {
+      const text = plainTextFromTiptap(node).replace(/\s+/g, ' ').trim();
+      if (text) headings.push({ id: uniqueHeadingId(text, counts), text });
+    }
+    const children = node.content;
+    if (Array.isArray(children)) children.forEach(walk);
+  };
+  walk(content);
+  return headings;
+}
+
 type TiptapMark = { type: string; attrs?: Record<string, unknown> };
 
 function renderMarks(text: string, marks: TiptapMark[] | undefined, keyPrefix: string): React.ReactNode {
@@ -140,9 +213,13 @@ function renderMarks(text: string, marks: TiptapMark[] | undefined, keyPrefix: s
   return node;
 }
 
-function renderDocContent(nodes: unknown[] | undefined, keyPrefix: string): React.ReactNode[] {
+type RenderContext = {
+  headingCounts: Map<string, number>;
+};
+
+function renderDocContent(nodes: unknown[] | undefined, keyPrefix: string, context: RenderContext): React.ReactNode[] {
   if (!nodes?.length) return [];
-  return nodes.map((n, i) => renderNode(n, `${keyPrefix}-${i}`));
+  return nodes.map((n, i) => renderNode(n, `${keyPrefix}-${i}`, context));
 }
 
 function renderTextChildren(nodes: unknown[] | undefined, keyPrefix: string): React.ReactNode[] {
@@ -159,7 +236,7 @@ function renderTextChildren(nodes: unknown[] | undefined, keyPrefix: string): Re
   return out;
 }
 
-function renderNode(node: unknown, key: string): React.ReactNode {
+function renderNode(node: unknown, key: string, context: RenderContext): React.ReactNode {
   if (!isRecord(node)) return null;
   const type = node.type as string;
   const content = node.content as unknown[] | undefined;
@@ -168,7 +245,7 @@ function renderNode(node: unknown, key: string): React.ReactNode {
     case 'doc':
       return (
         <div key={key} className="blog-article-body">
-          {renderDocContent(content, key)}
+          {renderDocContent(content, key, context)}
         </div>
       );
     case 'paragraph':
@@ -179,22 +256,25 @@ function renderNode(node: unknown, key: string): React.ReactNode {
       );
     case 'heading': {
       const level = Number((node.attrs as any)?.level ?? 2);
-      const className = 'mt-8 mb-2 font-bold text-black';
+      const className = 'scroll-mt-24 font-bold text-black';
       const kids = renderTextChildren(content, key);
-      if (level <= 1)
+      const text = plainTextFromTiptap(node).replace(/\s+/g, ' ').trim();
+      if (level <= 2) {
+        const id = uniqueHeadingId(text, context.headingCounts);
         return (
-          <h2 key={key} className={`${className} text-h3`}>
+          <h2 key={key} id={id} className={className}>
             {kids}
           </h2>
         );
-      if (level === 2)
+      }
+      if (level === 3)
         return (
-          <h3 key={key} className={`${className} text-h4`}>
+          <h3 key={key} className={className}>
             {kids}
           </h3>
         );
       return (
-        <h4 key={key} className={`${className} text-body-lg`}>
+        <h4 key={key} className={className}>
           {kids}
         </h4>
       );
@@ -202,25 +282,25 @@ function renderNode(node: unknown, key: string): React.ReactNode {
     case 'bulletList':
       return (
         <ul key={key} className="mb-4 list-disc space-y-1 pl-6 leading-[1.8]">
-          {renderDocContent(content, key)}
+          {renderDocContent(content, key, context)}
         </ul>
       );
     case 'orderedList':
       return (
         <ol key={key} className="mb-4 list-decimal space-y-1 pl-6 leading-[1.8]">
-          {renderDocContent(content, key)}
+          {renderDocContent(content, key, context)}
         </ol>
       );
     case 'listItem':
       return (
         <li key={key} className="leading-[1.8]">
-          {renderDocContent(content, key)}
+          {renderDocContent(content, key, context)}
         </li>
       );
     case 'blockquote':
       return (
         <blockquote key={key} className="my-4 border-l-[3px] border-accent py-1 pl-4 italic text-black/60">
-          {renderDocContent(content, key)}
+          {renderDocContent(content, key, context)}
         </blockquote>
       );
     case 'codeBlock': {
@@ -233,18 +313,28 @@ function renderNode(node: unknown, key: string): React.ReactNode {
     }
     case 'horizontalRule':
       return <hr key={key} className="my-8 border-black/10" />;
+    case 'table':
+      return (
+        <div key={key} className="blog-table-wrap">
+          <table>{renderDocContent(content, key, context)}</table>
+        </div>
+      );
+    case 'tableRow':
+      return <tr key={key}>{renderDocContent(content, key, context)}</tr>;
+    case 'tableHeader':
+      return <th key={key}>{renderDocContent(content, key, context)}</th>;
+    case 'tableCell':
+      return <td key={key}>{renderDocContent(content, key, context)}</td>;
     case 'image': {
       const src = String((node.attrs as any)?.src ?? '');
       const alt = String((node.attrs as any)?.alt ?? '');
+      const caption = String((node.attrs as any)?.caption ?? (node.attrs as any)?.title ?? '').trim();
       if (!src) return null;
       return (
-        <img
-          key={key}
-          src={src}
-          alt={alt}
-          loading="lazy"
-          className="mx-auto my-6 max-h-[560px] w-full rounded-lg object-contain"
-        />
+        <figure key={key}>
+          <img src={src} alt={alt} loading="lazy" className="mx-auto max-h-[560px] w-full rounded-lg object-contain" />
+          {caption && <figcaption>{caption}</figcaption>}
+        </figure>
       );
     }
     default:
@@ -256,13 +346,24 @@ function renderNode(node: unknown, key: string): React.ReactNode {
 export function BlogArticleContent({ content }: { content: unknown }) {
   if (content == null) return null;
   if (isHtmlString(content)) {
-    return <div className="blog-article-body" dangerouslySetInnerHTML={{ __html: content }} />;
+    return <div className="blog-article-body" dangerouslySetInnerHTML={{ __html: htmlWithHeadingIds(content) }} />;
   }
   if (isTiptapDoc(content)) {
-    return <>{renderNode(content, 'root')}</>;
+    return <>{renderNode(content, 'root', { headingCounts: new Map<string, number>() })}</>;
   }
   if (typeof content === 'string' && content.trim()) {
-    return <div className="blog-article-body whitespace-pre-wrap">{content}</div>;
+    return (
+      <div className="blog-article-body">
+        {content
+          .trim()
+          .split(/\n\s*\n/)
+          .map((paragraph, index) => (
+            <p key={index} className="whitespace-pre-wrap">
+              {paragraph}
+            </p>
+          ))}
+      </div>
+    );
   }
   return null;
 }
