@@ -6,17 +6,15 @@ import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
 import { contactApi } from '@global/api/contact.api';
+import {
+  CONTACT_BUDGET_OPTIONS,
+  CONTACT_CONSULTATION_OPTIONS,
+  CONTACT_PROJECT_TYPES,
+  type ContactBudgetOption,
+  type ContactConsultationOption,
+  type ContactProjectType,
+} from '@lib/contact-options';
 import { IconArrowRight, IconCircleCheck, IconLoader2 } from '@tabler/icons-react';
-
-type ProjectType = 'p2p' | 'community' | 'logistics' | 'other';
-
-type BudgetOption = '10k25k' | '25k50k' | '50k100k' | '100k' | 'unsure';
-type ConsultationOption = 'discovery' | 'strategy';
-
-const PROJECT_TYPES: ProjectType[] = ['p2p', 'community', 'logistics', 'other'];
-
-const BUDGET_OPTIONS: BudgetOption[] = ['10k25k', '25k50k', '50k100k', '100k', 'unsure'];
-const CONSULTATION_OPTIONS: ConsultationOption[] = ['discovery', 'strategy'];
 
 const inputClass =
   'w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm text-zinc-950 placeholder:text-zinc-300 transition focus:border-zinc-400 focus:outline-none';
@@ -32,15 +30,15 @@ export function ContactForm() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [selectedTypes, setSelectedTypes] = useState<ProjectType[]>([]);
-  const [selectedBudget, setSelectedBudget] = useState('');
-  const [selectedConsultation, setSelectedConsultation] = useState<ConsultationOption>('discovery');
+  const [selectedTypes, setSelectedTypes] = useState<ContactProjectType[]>([]);
+  const [selectedBudget, setSelectedBudget] = useState<ContactBudgetOption | ''>('');
+  const [selectedConsultation, setSelectedConsultation] = useState<ContactConsultationOption>('discovery');
   const [message, setMessage] = useState('');
   const [acceptedLegal, setAcceptedLegal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const toggleProjectType = (type: ProjectType) => {
+  const toggleProjectType = (type: ContactProjectType) => {
     setSelectedTypes((prev) => (prev.includes(type) ? prev.filter((item) => item !== type) : [...prev, type]));
   };
 
@@ -55,8 +53,8 @@ export function ContactForm() {
         clientEmail: email.trim(),
         productDescription: message.trim(),
         selectedServices: selectedTypes,
-        budget: selectedBudget ? t(`budget.${selectedBudget}` as `budget.${BudgetOption}`) : '',
-        consultationType: t(`consultation.${selectedConsultation}`),
+        budget: selectedBudget,
+        consultationType: selectedConsultation,
       });
       setIsSuccess(true);
     } catch {
@@ -119,7 +117,7 @@ export function ContactForm() {
           <span className="ml-1 text-xs text-zinc-400">{t('form.optional')}</span>
         </div>
         <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.projectType')}>
-          {PROJECT_TYPES.map((type) => {
+          {CONTACT_PROJECT_TYPES.map((type) => {
             const isSelected = selectedTypes.includes(type);
             return (
               <button
@@ -141,7 +139,7 @@ export function ContactForm() {
           <span className="ml-1 text-xs text-zinc-400">{t('form.optional')}</span>
         </div>
         <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.budget')}>
-          {BUDGET_OPTIONS.map((budget) => {
+          {CONTACT_BUDGET_OPTIONS.map((budget) => {
             const isSelected = selectedBudget === budget;
             return (
               <button
@@ -162,7 +160,7 @@ export function ContactForm() {
           <span className="text-sm font-medium text-zinc-500">{t('form.consultation')}</span>
         </div>
         <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.consultation')}>
-          {CONSULTATION_OPTIONS.map((option) => {
+          {CONTACT_CONSULTATION_OPTIONS.map((option) => {
             const isSelected = selectedConsultation === option;
             return (
               <button

@@ -1,5 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+import {
+  type ContactBudgetOption,
+  type ContactConsultationOption,
+  type ContactProjectType,
+  isContactBudgetOption,
+  isContactConsultationOption,
+  isContactProjectType,
+} from '@lib/contact-options';
 import { getCollection } from '@lib/mongodb';
 
 const COLLECTION = 'contact_submissions';
@@ -10,10 +18,16 @@ export interface ContactBody {
   clientName: string;
   clientEmail: string;
   productDescription?: string;
-  selectedServices: string[];
-  budget?: string;
-  consultationType?: string;
+  selectedServices: ContactProjectType[];
+  budget?: ContactBudgetOption | '';
+  consultationType?: ContactConsultationOption | '';
 }
+
+type NormalizedContactBody = Omit<ContactBody, 'productDescription' | 'budget' | 'consultationType'> & {
+  productDescription: string;
+  budget: ContactBudgetOption | '';
+  consultationType: ContactConsultationOption | '';
+};
 
 interface ContactDoc {
   clientName: string;
@@ -39,7 +53,10 @@ function validate(body: unknown): body is ContactBody {
     b.clientName.trim().length > 0 &&
     typeof b.clientEmail === 'string' &&
     b.clientEmail.trim().length > 0 &&
-    Array.isArray(b.selectedServices)
+    Array.isArray(b.selectedServices) &&
+    b.selectedServices.every(isContactProjectType) &&
+    (b.budget === undefined || b.budget === '' || isContactBudgetOption(b.budget)) &&
+    (b.consultationType === undefined || b.consultationType === '' || isContactConsultationOption(b.consultationType))
   );
 }
 
@@ -115,16 +132,19 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     if (!validate(body)) {
-      return NextResponse.json({ error: 'Invalid body: clientName and clientEmail are required' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'Invalid body: required fields or contact option keys are invalid' },
+        { status: 400 }
+      );
     }
 
-    const payload = {
+    const payload: NormalizedContactBody = {
       clientName: body.clientName.trim(),
       clientEmail: body.clientEmail.trim(),
       productDescription: typeof body.productDescription === 'string' ? body.productDescription.trim() : '',
-      selectedServices: Array.isArray(body.selectedServices) ? body.selectedServices : [],
-      budget: typeof body.budget === 'string' ? body.budget.trim() : '',
-      consultationType: typeof body.consultationType === 'string' ? body.consultationType.trim() : '',
+      selectedServices: body.selectedServices,
+      budget: body.budget || '',
+      consultationType: body.consultationType || '',
     };
     const createdAt = new Date().toISOString();
 
