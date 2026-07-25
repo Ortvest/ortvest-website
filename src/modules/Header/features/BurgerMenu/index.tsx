@@ -68,11 +68,11 @@ export function BurgerMenu() {
             type="button"
             onClick={closeMenu}
             className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-lg transition hover:bg-black/5"
-            aria-label="Close menu">
+            aria-label={t('closeMenu')}>
             <IconX className="h-5 w-5 text-black" />
           </button>
 
-          <nav className="container-main flex flex-1 flex-col gap-1 pb-6 pt-20" aria-label="Mobile navigation">
+          <nav className="container-main flex flex-1 flex-col gap-1 pb-6 pt-20" aria-label={t('mobileNavigation')}>
             {navOrder.map((key: NavKey, i) => (
               <motion.div
                 key={key}
@@ -101,7 +101,7 @@ export function BurgerMenu() {
                           exit={{ height: 0, opacity: 0, transition: { duration: 0.18, ease: EASE } }}
                           className="overflow-hidden">
                           <div className="pb-1 pl-2">
-                            {servicesDropdownItems.map(({ key: itemKey, Icon, sublabel, href }) => (
+                            {servicesDropdownItems.map(({ key: itemKey, Icon, sublabelKey, href }) => (
                               <Link
                                 key={itemKey}
                                 href={`/${locale}${href}`}
@@ -112,7 +112,7 @@ export function BurgerMenu() {
                                 </div>
                                 <div>
                                   <p className="text-sm font-medium text-black">{t(itemKey)}</p>
-                                  <p className="mt-0.5 text-xs text-black/50">{sublabel}</p>
+                                  <p className="mt-0.5 text-xs text-black/50">{t(`serviceSublabels.${sublabelKey}`)}</p>
                                 </div>
                               </Link>
                             ))}

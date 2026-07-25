@@ -85,7 +85,7 @@ export function SendFailedModal() {
               type="button"
               onClick={onClose}
               className="absolute right-4 top-4 rounded-lg p-1.5 transition hover:bg-black/5"
-              aria-label="Close"
+              aria-label={t('close')}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: DURATION.normal }}>

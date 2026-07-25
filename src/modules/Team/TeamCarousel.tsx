@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+import { useTranslations } from 'next-intl';
+
 import { EASE } from '@lib/motion';
 import { animate, motion, type PanInfo, useMotionValue } from 'framer-motion';
 
@@ -16,6 +18,7 @@ type TeamCarouselProps = {
 };
 
 export function TeamCarousel({ disciplines, getTitle, getDescription }: TeamCarouselProps) {
+  const t = useTranslations('team');
   const slideCount = disciplines.length;
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideWidth, setSlideWidth] = useState(0);
@@ -92,7 +95,7 @@ export function TeamCarousel({ disciplines, getTitle, getDescription }: TeamCaro
         </motion.div>
       </div>
 
-      <div className="mt-6 flex items-center justify-center gap-2" role="tablist" aria-label="Team pagination">
+      <div className="mt-6 flex items-center justify-center gap-2" role="tablist" aria-label={t('paginationLabel')}>
         {disciplines.map((discipline, index) => {
           const isActive = index === activeIndex;
           return (

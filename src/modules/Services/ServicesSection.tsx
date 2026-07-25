@@ -96,14 +96,24 @@ const industries: {
 const processSteps: {
   id: number;
   stepKey: '1' | '2' | '3' | '4' | '5';
-  tags: string[];
+  tagKeys: string[];
   optional: boolean;
 }[] = [
-  { id: 0, stepKey: '1', tags: ['Interviews', 'Competitor analysis', 'Tech audit'], optional: false },
-  { id: 1, stepKey: '2', tags: ['Figma', 'Prototyping', 'Design system'], optional: false },
-  { id: 2, stepKey: '3', tags: ['1-week sprints', 'Weekly demos', 'Code review'], optional: false },
-  { id: 3, stepKey: '4', tags: ['Landing page', 'SEO', 'Analytics', 'GTM strategy'], optional: true },
-  { id: 4, stepKey: '5', tags: ['CI/CD', 'Monitoring', 'Retainer'], optional: false },
+  {
+    id: 0,
+    stepKey: '1',
+    tagKeys: ['interviews', 'competitorAnalysis', 'techAudit'],
+    optional: false,
+  },
+  { id: 1, stepKey: '2', tagKeys: ['figma', 'prototyping', 'designSystem'], optional: false },
+  { id: 2, stepKey: '3', tagKeys: ['oneWeekSprints', 'weeklyDemos', 'codeReview'], optional: false },
+  {
+    id: 3,
+    stepKey: '4',
+    tagKeys: ['landingPage', 'seo', 'analytics', 'gtmStrategy'],
+    optional: true,
+  },
+  { id: 4, stepKey: '5', tagKeys: ['ciCd', 'monitoring', 'retainer'], optional: false },
 ];
 
 type TechItem = { name: string; Icon: AnyIcon; isTabler?: boolean };
@@ -501,11 +511,11 @@ function ProcessTab({
                         {t(`process.${step.stepKey}.desc`)}
                       </p>
                       <div className="mt-2 flex flex-wrap gap-1.5">
-                        {step.tags.map((tag) => (
+                        {step.tagKeys.map((tagKey) => (
                           <span
-                            key={tag}
+                            key={tagKey}
                             className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-400">
-                            {tag}
+                            {t(`processTags.${tagKey}`)}
                           </span>
                         ))}
                       </div>

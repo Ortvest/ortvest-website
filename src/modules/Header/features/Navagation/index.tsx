@@ -12,25 +12,25 @@ export const servicesDropdownItems = [
   {
     key: 'what' as const,
     Icon: IconStack2,
-    sublabel: 'Design, Dev & Marketing',
+    sublabelKey: 'what' as const,
     href: '?tab=what#services',
   },
   {
     key: 'industries' as const,
     Icon: IconBuildingSkyscraper,
-    sublabel: 'P2P, Community, Logistics…',
+    sublabelKey: 'industries' as const,
     href: '?tab=industries#services',
   },
   {
     key: 'process' as const,
     Icon: IconRoute,
-    sublabel: 'How we work, step by step',
+    sublabelKey: 'process' as const,
     href: '?tab=process#services',
   },
   {
     key: 'technologies' as const,
     Icon: IconCpu,
-    sublabel: 'Our tech stack',
+    sublabelKey: 'technologies' as const,
     href: '?tab=technologies#services',
   },
 ] as const;
@@ -64,7 +64,7 @@ export function Navigation() {
   }, [isServicesOpen]);
 
   return (
-    <nav className="flex items-center gap-5" aria-label="Main navigation">
+    <nav className="flex items-center gap-5" aria-label={t('mainNavigation')}>
       <ul className="flex items-center gap-5">
         {/* About */}
         <li>
@@ -101,7 +101,7 @@ export function Navigation() {
             <div
               role="menu"
               className="absolute left-0 top-full z-50 mt-2 min-w-[220px] rounded-2xl border border-zinc-800 bg-zinc-900 p-2 shadow-xl">
-              {servicesDropdownItems.map(({ key, Icon, sublabel, href }) => (
+              {servicesDropdownItems.map(({ key, Icon, sublabelKey, href }) => (
                 <Link
                   key={key}
                   href={`/${locale}${href}`}
@@ -113,7 +113,7 @@ export function Navigation() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-white">{t(key)}</p>
-                    <p className="mt-0.5 text-xs text-zinc-500">{sublabel}</p>
+                    <p className="mt-0.5 text-xs text-zinc-500">{t(`serviceSublabels.${sublabelKey}`)}</p>
                   </div>
                 </Link>
               ))}

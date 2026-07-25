@@ -38,7 +38,7 @@ export function Header() {
         <Link
           href={logoHref}
           className="relative z-50 flex shrink-0 transition-opacity hover:opacity-80"
-          aria-label="Home">
+          aria-label={t('home')}>
           <Image
             src={AppIcon}
             alt="Ortvest"

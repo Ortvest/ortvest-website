@@ -12,7 +12,18 @@
     "faq": "FAQ",
     "contact": "Контакт",
     "cta": "Отримати пропозицію",
-    "menuSlogan": "Від ідеї до запуску. Одна команда."
+    "menuSlogan": "Від ідеї до запуску. Одна команда.",
+    "home": "TODO: Home",
+    "openMenu": "TODO: Open menu",
+    "closeMenu": "TODO: Close menu",
+    "mainNavigation": "TODO: Main navigation",
+    "mobileNavigation": "TODO: Mobile navigation",
+    "serviceSublabels": {
+      "what": "TODO: Design, Dev & Marketing",
+      "industries": "TODO: P2P, Community, Logistics…",
+      "process": "TODO: How we work, step by step",
+      "technologies": "TODO: Our tech stack"
+    }
   },
   "divider": {
     "platforms": "двосторонніх платформ запущено",
@@ -228,6 +239,24 @@
         "dur": "Постійно"
       }
     },
+    "processTags": {
+      "interviews": "TODO: Interviews",
+      "competitorAnalysis": "TODO: Competitor analysis",
+      "techAudit": "TODO: Tech audit",
+      "figma": "TODO: Figma",
+      "prototyping": "TODO: Prototyping",
+      "designSystem": "TODO: Design system",
+      "oneWeekSprints": "TODO: 1-week sprints",
+      "weeklyDemos": "TODO: Weekly demos",
+      "codeReview": "TODO: Code review",
+      "landingPage": "TODO: Landing page",
+      "seo": "TODO: SEO",
+      "analytics": "TODO: Analytics",
+      "gtmStrategy": "TODO: GTM strategy",
+      "ciCd": "TODO: CI/CD",
+      "monitoring": "TODO: Monitoring",
+      "retainer": "TODO: Retainer"
+    },
     "tech": {
       "frontend": "Фронтенд",
       "backend": "Бекенд",
@@ -359,6 +388,7 @@
     "label": "З ким ви насправді працюватимете",
     "title": "15 людей. Ніхто у вашій команді не залучений лише на 20%.",
     "subtitle": "Більшість студій нашого розміру продають вам команду, а потім виділяють частину часу п'ятьох людей, розподілених між шістьма проєктами. Ми призначаємо вам команду, і вона залишається з вами до запуску – розробка, дизайн і вихід на ринок в одному просторі, а не три підрядники, яких вам доводиться синхронізувати. Це обмежує кількість проєктів, які ми ведемо одночасно, і ми свідомо обрали такий компроміс.",
+    "paginationLabel": "TODO: Team pagination",
     "developers": {
       "title": "Розробка · 9 людей",
       "description": "Серверна частина, яка витримує навантаження двосторонньої платформи: верифікація, підбір, платежі, ролі та дозволи. Наша команда достатньо велика, щоб вести паралельні напрями роботи – платформу й інструменти адміністрування створюємо одночасно, а не один за одним.",
@@ -1618,13 +1648,15 @@
     "language": "Мова",
     "follow": "Ми в соцмережах",
     "privacyPolicy": "Політика конфіденційності",
-    "termsOfUse": "Умови використання"
+    "termsOfUse": "Умови використання",
+    "siteLabel": "TODO: Site footer"
   },
   "modals": {
     "successTitle": "Повідомлення надіслано",
     "successText": "Ми зв'яжемося з вами протягом 24 годин.",
     "errorTitle": "Щось пішло не так",
-    "errorText": "Спробуйте пізніше або напишіть нам на пошту."
+    "errorText": "Спробуйте пізніше або напишіть нам на пошту.",
+    "close": "TODO: Close"
   },
   "notFound": {
     "title": "Сторінку не знайдено",

@@ -12,7 +12,18 @@
     "faq": "FAQ",
     "contact": "Contact",
     "cta": "Get a quote",
-    "menuSlogan": "From idea to launch. One team."
+    "menuSlogan": "From idea to launch. One team.",
+    "home": "Home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "serviceSublabels": {
+      "what": "Design, Dev & Marketing",
+      "industries": "P2P, Community, Logistics…",
+      "process": "How we work, step by step",
+      "technologies": "Our tech stack"
+    }
   },
   "divider": {
     "platforms": "two-sided platforms shipped",
@@ -228,6 +239,24 @@
         "dur": "Ongoing"
       }
     },
+    "processTags": {
+      "interviews": "Interviews",
+      "competitorAnalysis": "Competitor analysis",
+      "techAudit": "Tech audit",
+      "figma": "Figma",
+      "prototyping": "Prototyping",
+      "designSystem": "Design system",
+      "oneWeekSprints": "1-week sprints",
+      "weeklyDemos": "Weekly demos",
+      "codeReview": "Code review",
+      "landingPage": "Landing page",
+      "seo": "SEO",
+      "analytics": "Analytics",
+      "gtmStrategy": "GTM strategy",
+      "ciCd": "CI/CD",
+      "monitoring": "Monitoring",
+      "retainer": "Retainer"
+    },
     "tech": {
       "frontend": "Frontend",
       "backend": "Backend",
@@ -359,6 +388,7 @@
     "label": "Who you'll actually work with",
     "title": "15 people. Nobody on yours is at 20%.",
     "subtitle": "Most studios our size sell you a team and staff you a fraction of five people spread across six projects. We assign a squad and it stays yours until launch – engineering, design and go-to-market in one room, not three vendors you have to keep in sync. That caps how many projects we run at once, and it's the trade we chose.",
+    "paginationLabel": "Team pagination",
     "developers": {
       "title": "Engineering · 9 people",
       "description": "Backend that survives a marketplace: verification, matching, payments, roles, permissions. Deep enough to run parallel workstreams – the platform and the admin tooling get built at the same time, not one after the other.",
@@ -1618,13 +1648,15 @@
     "language": "Language",
     "follow": "Follow us",
     "privacyPolicy": "Privacy Policy",
-    "termsOfUse": "Terms of Use"
+    "termsOfUse": "Terms of Use",
+    "siteLabel": "Site footer"
   },
   "modals": {
     "successTitle": "Message sent",
     "successText": "We'll get back to you within 24 hours.",
     "errorTitle": "Something went wrong",
-    "errorText": "Please try again later or contact us by email."
+    "errorText": "Please try again later or contact us by email.",
+    "close": "Close"
   },
   "notFound": {
     "title": "Page not found",

@@ -60,7 +60,7 @@ export function Footer() {
   const locale = useLocale();
 
   return (
-    <footer className="w-full bg-white" role="contentinfo" aria-label="Site footer">
+    <footer className="w-full bg-white" role="contentinfo" aria-label={t('siteLabel')}>
       <Divider />
 
       <div className="w-full px-5 py-10 sm:px-6 sm:py-12 md:px-0">

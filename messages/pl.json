@@ -12,7 +12,18 @@
     "faq": "FAQ",
     "contact": "Kontakt",
     "cta": "Wyceń projekt",
-    "menuSlogan": "Od pomysłu do startu. Jeden zespół."
+    "menuSlogan": "Od pomysłu do startu. Jeden zespół.",
+    "home": "TODO: Home",
+    "openMenu": "TODO: Open menu",
+    "closeMenu": "TODO: Close menu",
+    "mainNavigation": "TODO: Main navigation",
+    "mobileNavigation": "TODO: Mobile navigation",
+    "serviceSublabels": {
+      "what": "TODO: Design, Dev & Marketing",
+      "industries": "TODO: P2P, Community, Logistics…",
+      "process": "TODO: How we work, step by step",
+      "technologies": "TODO: Our tech stack"
+    }
   },
   "divider": {
     "platforms": "wdrożonych platform dwustronnych",
@@ -228,6 +239,24 @@
         "dur": "Ciągłe"
       }
     },
+    "processTags": {
+      "interviews": "TODO: Interviews",
+      "competitorAnalysis": "TODO: Competitor analysis",
+      "techAudit": "TODO: Tech audit",
+      "figma": "TODO: Figma",
+      "prototyping": "TODO: Prototyping",
+      "designSystem": "TODO: Design system",
+      "oneWeekSprints": "TODO: 1-week sprints",
+      "weeklyDemos": "TODO: Weekly demos",
+      "codeReview": "TODO: Code review",
+      "landingPage": "TODO: Landing page",
+      "seo": "TODO: SEO",
+      "analytics": "TODO: Analytics",
+      "gtmStrategy": "TODO: GTM strategy",
+      "ciCd": "TODO: CI/CD",
+      "monitoring": "TODO: Monitoring",
+      "retainer": "TODO: Retainer"
+    },
     "tech": {
       "frontend": "Frontend",
       "backend": "Backend",
@@ -359,6 +388,7 @@
     "label": "Z kim naprawdę będziesz pracować",
     "title": "15 osób. Nikt w Twoim zespole nie pracuje na 20%.",
     "subtitle": "Większość studiów naszej wielkości sprzedaje Ci zespół, a potem przydziela ułamek czasu pięciu osób rozproszonych po sześciu projektach. My przydzielamy Ci zespół, który zostaje z Tobą aż do wdrożenia – inżynieria, projektowanie i wejście na rynek w jednym miejscu, a nie trzech dostawców, których musisz synchronizować. To ogranicza liczbę projektów, które prowadzimy jednocześnie, i świadomie wybraliśmy taki kompromis.",
+    "paginationLabel": "TODO: Team pagination",
     "developers": {
       "title": "Inżynieria · 9 osób",
       "description": "Zaplecze techniczne, które wytrzyma platformę dwustronną: weryfikacja, dopasowanie, płatności, role i uprawnienia. Mamy dość szeroki zespół, by prowadzić równoległe strumienie pracy – platforma i narzędzia administracyjne powstają jednocześnie, a nie jedno po drugim.",
@@ -1618,13 +1648,15 @@
     "language": "Język",
     "follow": "Obserwuj nas",
     "privacyPolicy": "Polityka prywatności",
-    "termsOfUse": "Regulamin"
+    "termsOfUse": "Regulamin",
+    "siteLabel": "TODO: Site footer"
   },
   "modals": {
     "successTitle": "Wiadomość wysłana",
     "successText": "Odezwiemy się w ciągu 24 godzin.",
     "errorTitle": "Coś poszło nie tak",
-    "errorText": "Spróbuj później lub napisz na email."
+    "errorText": "Spróbuj później lub napisz na email.",
+    "close": "TODO: Close"
   },
   "notFound": {
     "title": "Strona nie znaleziona",
