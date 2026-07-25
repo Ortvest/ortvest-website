@@ -65,12 +65,13 @@ export default async function BlogArticlePage({ params }: Props) {
   if (!post) notFound();
 
   const t = await getTranslations({ locale, namespace: 'blogPage' });
+  const tBlog = await getTranslations({ locale, namespace: 'blog' });
   const rows = await fetchCmsBlogPosts(locale);
   const allCards = rowsToCardModels(rows);
   const related = pickRelatedCards(allCards, post.slug, post.tags ?? [], 3);
   const readMin = readMinutesFromContent(post.content);
   const dateStr = post.published_at ? formatBlogPostDate(post.published_at, locale) : '';
-  const authorName = post.author_name?.trim() || 'Ortvest';
+  const authorName = post.author_name?.trim() || tBlog('authorFallback');
 
   return (
     <ReduxProvider>

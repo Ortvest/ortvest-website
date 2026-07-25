@@ -22,7 +22,7 @@ export function rowToCardModel(row: CmsBlogPostRow): BlogCardModel | null {
     cover_image: row.cover_image,
     tags: Array.isArray(row.tags) ? row.tags : [],
     published_at: row.published_at,
-    authorName: row.author_name?.trim() || 'Ortvest',
+    authorName: row.author_name?.trim() || '',
     excerpt: excerptFromContent(row.content, 200),
     readMinutes: readMinutesFromContent(row.content),
   };

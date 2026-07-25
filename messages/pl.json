@@ -1772,18 +1772,19 @@
     }
   },
   "blogSection": {
-    "title": "Insights i aktualności",
-    "subtitle": "O designie, programowaniu i budowaniu produktów cyfrowych.",
+    "title": "Czego nauczyliśmy się, budując platformy, które na początku są puste.",
+    "subtitle": "Cold starty, systemy zaufania i te części budowania marketplace'ów, których nikt nie pokazuje w case study.",
     "viewAll": "Wszystkie artykuły →"
   },
   "blog": {
-    "label": "Blog",
-    "title": "Insights i aktualności",
-    "subtitle": "O designie, programowaniu i budowaniu produktów cyfrowych.",
+    "label": "Notatki z praktyki",
+    "title": "Czego nauczyliśmy się, budując platformy, które na początku są puste.",
+    "subtitle": "Cold starty, systemy zaufania i te części budowania marketplace'ów, których nikt nie pokazuje w case study.",
     "viewAll": "Wszystkie artykuły",
     "readArticle": "Czytaj artykuł",
     "minRead": "{n} min czytania",
-    "filterAll": "Wszystkie"
+    "filterAll": "Wszystkie",
+    "authorFallback": "Ortvest"
   },
   "blogPage": {
     "title": "Blog",

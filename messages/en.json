@@ -1772,18 +1772,19 @@
     }
   },
   "blogSection": {
-    "title": "Insights & Updates",
-    "subtitle": "Thoughts on design, development, and building digital products.",
+    "title": "What we've learned building platforms that start empty.",
+    "subtitle": "Cold starts, trust systems and the parts of marketplace building nobody puts in a case study.",
     "viewAll": "View all articles →"
   },
   "blog": {
-    "label": "Blog",
-    "title": "Insights & Updates",
-    "subtitle": "Thoughts on design, development, and building digital products.",
+    "label": "Field notes",
+    "title": "What we've learned building platforms that start empty.",
+    "subtitle": "Cold starts, trust systems and the parts of marketplace building nobody puts in a case study.",
     "viewAll": "View all articles",
     "readArticle": "Read article",
     "minRead": "{n} min read",
-    "filterAll": "All"
+    "filterAll": "All",
+    "authorFallback": "Ortvest"
   },
   "blogPage": {
     "title": "Blog",

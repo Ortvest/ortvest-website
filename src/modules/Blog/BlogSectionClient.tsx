@@ -23,11 +23,6 @@ function authorInitials(name: string): string {
   return `${parts[0]![0] ?? ''}${parts[1]![0] ?? ''}`.toUpperCase();
 }
 
-function truncate(text: string, max: number): string {
-  if (text.length <= max) return text;
-  return `${text.slice(0, max).trimEnd()}...`;
-}
-
 function PostCover({
   post,
   aspectClass,
@@ -49,6 +44,12 @@ function PostCover({
         />
       ) : (
         <BlogCoverPlaceholder />
+      )}
+      {overlay && (
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"
+          aria-hidden="true"
+        />
       )}
       {overlay}
     </div>
@@ -76,6 +77,7 @@ export function BlogSectionClient({ posts, locale }: Props) {
   if (!featured) return null;
 
   const featuredUrl = `/${locale}/blog/${featured.slug}`;
+  const featuredAuthorName = featured.authorName || t('authorFallback');
 
   return (
     <section id="blog" className="bg-white px-6 py-20" aria-labelledby="blog-heading">
@@ -134,11 +136,15 @@ export function BlogSectionClient({ posts, locale }: Props) {
                   <span className="mb-3 inline-block rounded-full bg-accent px-2 py-0.5 text-[10px] font-semibold tracking-wide text-black">
                     {featured.tags[0]}
                   </span>
-                  <p className="max-w-[280px] text-[18px] font-bold leading-snug text-white">{featured.title}</p>
+                  <p className="line-clamp-3 max-w-[280px] text-[18px] font-bold leading-snug text-white">
+                    {featured.title}
+                  </p>
                 </div>
               ) : (
                 <div className="absolute bottom-0 left-0 p-5">
-                  <p className="max-w-[280px] text-[18px] font-bold leading-snug text-white">{featured.title}</p>
+                  <p className="line-clamp-3 max-w-[280px] text-[18px] font-bold leading-snug text-white">
+                    {featured.title}
+                  </p>
                 </div>
               )
             }
@@ -156,20 +162,20 @@ export function BlogSectionClient({ posts, locale }: Props) {
                 </div>
               )}
               <h3 className="mb-3 text-[20px] font-bold leading-snug text-zinc-950">{featured.title}</h3>
-              <p className="mb-5 flex-1 text-body-sm leading-relaxed text-zinc-400">
-                {truncate(featured.excerpt, 150)}
-              </p>
+              <p className="mb-5 line-clamp-4 flex-1 text-body-sm leading-relaxed text-zinc-400">{featured.excerpt}</p>
             </div>
 
             <div>
-              <div className="mb-4 flex items-center gap-2">
-                <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-zinc-950 text-[10px] font-bold text-accent">
-                  {authorInitials(featured.authorName)}
+              <div className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1">
+                <span className="hidden items-center gap-2 sm:flex">
+                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-zinc-950 text-[10px] font-bold text-accent">
+                    {authorInitials(featuredAuthorName)}
+                  </span>
+                  <span className="text-[12px] font-medium text-zinc-950">{featuredAuthorName}</span>
                 </span>
-                <span className="text-[12px] font-medium text-zinc-950">{featured.authorName}</span>
-                <span className="mx-1 text-zinc-300">·</span>
+                <span className="hidden text-zinc-300 sm:inline">·</span>
                 <span className="text-[12px] text-zinc-400">{formatBlogPostDate(featured.published_at, locale)}</span>
-                <span className="mx-1 text-zinc-300">·</span>
+                <span className="text-zinc-300">·</span>
                 <span className="text-[12px] text-zinc-400">{t('minRead', { n: featured.readMinutes })}</span>
               </div>
               <span className="inline-flex cursor-pointer items-center gap-2 rounded-full border-none bg-zinc-950 px-[18px] py-[9px] text-[13px] font-semibold text-white transition hover:opacity-85">
@@ -185,6 +191,7 @@ export function BlogSectionClient({ posts, locale }: Props) {
           <div className="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {gridPosts.map((post) => {
               const postUrl = `/${locale}/blog/${post.slug}`;
+              const authorName = post.authorName || t('authorFallback');
 
               return (
                 <Link
@@ -215,15 +222,19 @@ export function BlogSectionClient({ posts, locale }: Props) {
                         ))}
                       </div>
                     )}
-                    <h3 className="mb-2 text-[14px] font-semibold leading-snug text-zinc-950">{post.title}</h3>
-                    <p className="mb-3 text-[12px] leading-relaxed text-zinc-400">{truncate(post.excerpt, 100)}</p>
+                    <h3 className="mb-2 line-clamp-2 text-[14px] font-semibold leading-snug text-zinc-950">
+                      {post.title}
+                    </h3>
+                    <p className="mb-3 line-clamp-3 text-[12px] leading-relaxed text-zinc-400">{post.excerpt}</p>
 
-                    <div className="flex items-center gap-1.5 border-t border-zinc-100 pt-3">
-                      <span className="flex h-[22px] w-[22px] items-center justify-center rounded-full bg-zinc-950 text-[8px] font-bold text-accent">
-                        {authorInitials(post.authorName)}
+                    <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1 border-t border-zinc-100 pt-3">
+                      <span className="hidden items-center gap-1.5 sm:flex">
+                        <span className="flex h-[22px] w-[22px] items-center justify-center rounded-full bg-zinc-950 text-[8px] font-bold text-accent">
+                          {authorInitials(authorName)}
+                        </span>
+                        <span className="text-[11px] font-medium text-zinc-600">{authorName}</span>
                       </span>
-                      <span className="text-[11px] font-medium text-zinc-600">{post.authorName}</span>
-                      <span className="mx-0.5 h-1 w-1 rounded-full bg-zinc-200" />
+                      <span className="hidden h-1 w-1 rounded-full bg-zinc-200 sm:inline" />
                       <span className="text-[11px] text-zinc-400">{formatBlogPostDate(post.published_at, locale)}</span>
                       <span className="ml-auto text-[11px] text-zinc-400">{t('minRead', { n: post.readMinutes })}</span>
                     </div>

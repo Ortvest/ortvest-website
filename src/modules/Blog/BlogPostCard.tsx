@@ -15,7 +15,9 @@ type Props = {
 export function BlogPostCard({ post }: Props) {
   const locale = useLocale();
   const t = useTranslations('blogPage');
+  const tBlog = useTranslations('blog');
   const dateStr = formatBlogPostDate(post.published_at, locale);
+  const authorName = post.authorName || tBlog('authorFallback');
 
   return (
     <Link
@@ -53,9 +55,9 @@ export function BlogPostCard({ post }: Props) {
         <p className="mt-2 line-clamp-2 flex-1 text-body text-black/55">{post.excerpt}</p>
 
         <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-black/[0.06] pt-4 text-body-sm text-black/50">
-          <span className="flex min-w-0 items-center gap-2">
-            <AuthorAvatar name={post.authorName} size={32} />
-            <span className="truncate font-medium text-black/70">{post.authorName}</span>
+          <span className="hidden min-w-0 items-center gap-2 sm:flex">
+            <AuthorAvatar name={authorName} size={32} />
+            <span className="truncate font-medium text-black/70">{authorName}</span>
           </span>
           <span className="hidden sm:inline" aria-hidden="true">
             |

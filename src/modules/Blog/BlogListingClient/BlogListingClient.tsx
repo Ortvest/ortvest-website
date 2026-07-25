@@ -22,6 +22,7 @@ type Props = {
 
 export function BlogListingClient({ posts }: Props) {
   const t = useTranslations('blogPage');
+  const tBlog = useTranslations('blog');
   const locale = useLocale();
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [visibleExtra, setVisibleExtra] = useState(GRID_PAGE);
@@ -41,6 +42,7 @@ export function BlogListingClient({ posts }: Props) {
   const gridPosts = filtered.slice(1);
   const visibleGrid = gridPosts.slice(0, visibleExtra);
   const hasMore = gridPosts.length > visibleExtra;
+  const heroAuthorName = hero?.authorName || tBlog('authorFallback');
 
   function onTagClick(tagKey: string) {
     setActiveTag(tagKey === 'all' ? null : tagKey);
@@ -107,9 +109,13 @@ export function BlogListingClient({ posts }: Props) {
                 <h2 className="text-display-sm line-clamp-3 font-bold text-black sm:text-[2rem]">{hero.title}</h2>
                 <p className="mt-3 line-clamp-3 text-body-lg text-black/55">{hero.excerpt}</p>
                 <div className="mt-4 flex flex-wrap items-center gap-2 text-body-sm text-black/50">
-                  <AuthorAvatar name={hero.authorName} size={32} />
-                  <span className="font-medium text-black/70">{hero.authorName}</span>
-                  <span aria-hidden="true">|</span>
+                  <span className="hidden items-center gap-2 sm:flex">
+                    <AuthorAvatar name={heroAuthorName} size={32} />
+                    <span className="font-medium text-black/70">{heroAuthorName}</span>
+                  </span>
+                  <span className="hidden sm:inline" aria-hidden="true">
+                    |
+                  </span>
                   <span>{formatBlogPostDate(hero.published_at, locale)}</span>
                   <span aria-hidden="true">|</span>
                   <span>{t('minRead', { n: hero.readMinutes })}</span>
