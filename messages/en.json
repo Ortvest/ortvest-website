@@ -306,16 +306,16 @@
     "how": {
       "label": "How we work",
       "1": {
-        "title": "We're funding our own cold start",
-        "desc": "Yachtly is ours – a platform for yacht clubs, not launched yet. We're in the part nobody writes case studies about: deciding which side to seed first, paying for the empty first month, cutting features we were attached to. It's why we argue with your scope instead of just building it."
+        "title": "Every platform we built launched empty",
+        "desc": "No listings, no members, no other side. We know what breaks in month two and which features you'll wish you'd cut. That's what you're hiring – not a framework list."
       },
       "2": {
         "title": "We'll tell you not to build it",
-        "desc": "Sometimes the answer is a spreadsheet, an existing tool, or nothing. We'd rather lose the project at the discovery call than six months in. Ask us for an example – we have them."
+        "desc": "Sometimes the answer is a spreadsheet, an existing tool, or waiting. We'd rather lose the project on the first call than watch it die at month five. Ask for an example – we'll name one."
       },
       "3": {
         "title": "Same timezone, EU contracts",
-        "desc": "Poznań, Poland. Your legal team gets an EU entity, your PM gets a team that's awake when they are, and nobody schedules a 6am standup."
+        "desc": "Poznań, Poland. An EU entity your legal team can contract with, data and IP handled inside the EU, and a team working your hours. Nobody schedules a 6am standup."
       }
     },
     "values": {

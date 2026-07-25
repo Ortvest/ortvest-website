@@ -306,16 +306,16 @@
     "how": {
       "label": "Jak pracujemy",
       "1": {
-        "title": "Finansujemy własny cold start",
-        "desc": "Yachtly jest nasze – to platforma dla klubów jachtowych, która nie została jeszcze uruchomiona. Jesteśmy na etapie, o którym nikt nie pisze case studies: decydujemy, którą stronę pozyskać jako pierwszą, płacimy za pusty pierwszy miesiąc i usuwamy funkcje, do których byliśmy przywiązani. Dlatego dyskutujemy z Twoim zakresem, zamiast po prostu go realizować."
+        "title": "TODO: Every platform we built launched empty",
+        "desc": "TODO: No listings, no members, no other side. We know what breaks in month two and which features you'll wish you'd cut. That's what you're hiring – not a framework list."
       },
       "2": {
-        "title": "Powiemy Ci, żeby tego nie budować",
-        "desc": "Czasem odpowiedzią jest arkusz, gotowe narzędzie albo nic. Wolimy stracić projekt na rozmowie niż po sześciu miesiącach. Zapytaj o przykład – mamy kilka."
+        "title": "TODO: We'll tell you not to build it",
+        "desc": "TODO: Sometimes the answer is a spreadsheet, an existing tool, or waiting. We'd rather lose the project on the first call than watch it die at month five. Ask for an example – we'll name one."
       },
       "3": {
-        "title": "Ta sama strefa czasowa, umowy w UE",
-        "desc": "Poznań, Polska. Twój dział prawny dostaje podmiot z UE, PM zespół pracujący w tych samych godzinach, a nikt nie ustawia standupu na 6 rano."
+        "title": "TODO: Same timezone, EU contracts",
+        "desc": "TODO: Poznań, Poland. An EU entity your legal team can contract with, data and IP handled inside the EU, and a team working your hours. Nobody schedules a 6am standup."
       }
     },
     "values": {
