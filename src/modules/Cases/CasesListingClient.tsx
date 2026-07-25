@@ -10,9 +10,9 @@ import { IconArrowRight } from '@tabler/icons-react';
 import { CasesMasonryCard } from './CasesMasonryCard';
 import { type CaseIndustry, portfolioGridCases } from './data';
 
-type FilterKey = 'all' | CaseIndustry;
+type FilterKey = 'all' | CaseIndustry | 'brand';
 
-const FILTER_KEYS: FilterKey[] = ['all', 'p2p', 'community', 'logistics'];
+const FILTER_KEYS: FilterKey[] = ['all', 'p2p', 'community', 'logistics', 'brand'];
 
 export function CasesListingClient() {
   const t = useTranslations('cases');
@@ -21,6 +21,9 @@ export function CasesListingClient() {
 
   const filteredCases = useMemo(() => {
     if (activeFilter === 'all') return portfolioGridCases;
+    if (activeFilter === 'brand') {
+      return portfolioGridCases.filter((caseItem) => caseItem.serviceTags?.includes('brand'));
+    }
     return portfolioGridCases.filter((c) => c.industries?.includes(activeFilter));
   }, [activeFilter]);
 

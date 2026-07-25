@@ -29,7 +29,7 @@ const nicheIconSizes: Record<NicheKey, string> = {
 
 const nicheCaseLinks: Partial<Record<NicheKey, string>> = {
   community: '/cases/yachtmate',
-  logistics: '/cases/navexa',
+  logistics: '/cases',
 };
 
 type NicheCardProps = {

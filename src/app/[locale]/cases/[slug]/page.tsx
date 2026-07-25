@@ -12,18 +12,24 @@ interface CasePageProps {
 }
 
 export async function generateStaticParams() {
-  return cases.map((c) => ({
-    slug: c.id,
-  }));
+  return cases
+    .filter((caseItem) => !caseItem.isNDA)
+    .map((caseItem) => ({
+      slug: caseItem.id,
+    }));
 }
 
 export async function generateMetadata({ params }: CasePageProps) {
   const { slug, locale } = params;
   const caseItem = cases.find((c) => c.id === slug);
 
-  if (!caseItem) {
+  if (!caseItem || caseItem.isNDA) {
     return {
       title: 'Case not found',
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 
@@ -38,7 +44,7 @@ export default function CasePage({ params }: CasePageProps) {
   const { slug } = params;
   const caseItem = cases.find((c) => c.id === slug);
 
-  if (!caseItem) {
+  if (!caseItem || caseItem.isNDA) {
     notFound();
   }
 

@@ -279,7 +279,7 @@ const portfolioCases: CaseItem[] = [
     category: 'designAndDevelopment',
     developmentSubcategory: 'web',
     title: 'Teya Logistics',
-    industries: ['logistics'],
+    serviceTags: ['brand'],
     challenge:
       'Logistics company needed a modern landing page to clearly present their services and attract new clients',
     solution:

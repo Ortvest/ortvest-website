@@ -93,7 +93,6 @@ export const CASE_STUDY_ORDER = [
   'profitcraft',
   'profitcraftauto',
   'skisailclub',
-  'navexa',
   'teya',
   'pachaca',
   'gambit',
