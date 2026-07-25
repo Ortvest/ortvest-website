@@ -356,24 +356,24 @@
     "step4Desc": "Nie znikamy po starcie. Większość naszych klientów wraca po kolejny produkt."
   },
   "team": {
-    "label": "TODO: Who you'll actually work with",
-    "title": "TODO: 15 people. Nobody on yours is at 20%.",
-    "subtitle": "TODO: Most studios our size sell you a team and staff you a fraction of five people spread across six projects. We assign a squad and it stays yours until launch — engineering, design and go-to-market in one room, not three vendors you have to keep in sync. That caps how many projects we run at once, and it's the trade we chose.",
+    "label": "Z kim naprawdę będziesz pracować",
+    "title": "15 osób. Nikt w Twoim zespole nie pracuje na 20%.",
+    "subtitle": "Większość studiów naszej wielkości sprzedaje Ci zespół, a potem przydziela ułamek czasu pięciu osób rozproszonych po sześciu projektach. My przydzielamy Ci zespół, który zostaje z Tobą aż do wdrożenia – inżynieria, projektowanie i wejście na rynek w jednym miejscu, a nie trzech dostawców, których musisz synchronizować. To ogranicza liczbę projektów, które prowadzimy jednocześnie, i świadomie wybraliśmy taki kompromis.",
     "developers": {
-      "title": "TODO: Engineering · 9 people",
-      "description": "TODO: Backend that survives a marketplace: verification, matching, payments, roles, permissions. Deep enough to run parallel workstreams — the platform and the admin tooling get built at the same time, not one after the other.",
+      "title": "Inżynieria · 9 osób",
+      "description": "Zaplecze techniczne, które wytrzyma platformę dwustronną: weryfikacja, dopasowanie, płatności, role i uprawnienia. Mamy dość szeroki zespół, by prowadzić równoległe strumienie pracy – platforma i narzędzia administracyjne powstają jednocześnie, a nie jedno po drugim.",
       "years": "15+",
       "yearsLabel": "lat doświadczenia"
     },
     "designers": {
-      "title": "TODO: Product & Design · 4 people",
-      "description": "TODO: Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier.",
+      "title": "Produkt i projektowanie · 4 osoby",
+      "description": "Interfejsy dla produktów, w których dwie osoby chcą czegoś innego od tego samego ekranu. Właściciel i najemca. Klub i członek. Nadawca i przewoźnik.",
       "years": "10+",
       "yearsLabel": "lat doświadczenia"
     },
     "marketing": {
-      "title": "TODO: Go-to-market · 2 people (optional add-on)",
-      "description": "TODO: The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach — and we'll say so when paid acquisition is the wrong answer.",
+      "title": "Wejście na rynek · 2 osoby (opcjonalnie)",
+      "description": "Pierwszych stu użytkowników po każdej stronie nie przyjdzie z reklam. Wdrażaliśmy użytkowników ręcznie, budowaliśmy początkową podaż i prowadziliśmy bezpośrednie działania założycieli – i powiemy wprost, kiedy płatna akwizycja jest złą odpowiedzią.",
       "years": "10+",
       "yearsLabel": "lat doświadczenia"
     }

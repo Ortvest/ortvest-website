@@ -356,24 +356,24 @@
     "step4Desc": "Ми не зникаємо після запуску. Більшість наших клієнтів повертаються за наступним продуктом."
   },
   "team": {
-    "label": "TODO: Who you'll actually work with",
-    "title": "TODO: 15 people. Nobody on yours is at 20%.",
-    "subtitle": "TODO: Most studios our size sell you a team and staff you a fraction of five people spread across six projects. We assign a squad and it stays yours until launch — engineering, design and go-to-market in one room, not three vendors you have to keep in sync. That caps how many projects we run at once, and it's the trade we chose.",
+    "label": "З ким ви насправді працюватимете",
+    "title": "15 людей. Ніхто у вашій команді не залучений лише на 20%.",
+    "subtitle": "Більшість студій нашого розміру продають вам команду, а потім виділяють частину часу п'ятьох людей, розподілених між шістьма проєктами. Ми призначаємо вам команду, і вона залишається з вами до запуску – розробка, дизайн і вихід на ринок в одному просторі, а не три підрядники, яких вам доводиться синхронізувати. Це обмежує кількість проєктів, які ми ведемо одночасно, і ми свідомо обрали такий компроміс.",
     "developers": {
-      "title": "TODO: Engineering · 9 people",
-      "description": "TODO: Backend that survives a marketplace: verification, matching, payments, roles, permissions. Deep enough to run parallel workstreams — the platform and the admin tooling get built at the same time, not one after the other.",
+      "title": "Розробка · 9 людей",
+      "description": "Серверна частина, яка витримує навантаження двосторонньої платформи: верифікація, підбір, платежі, ролі та дозволи. Наша команда достатньо велика, щоб вести паралельні напрями роботи – платформу й інструменти адміністрування створюємо одночасно, а не один за одним.",
       "years": "15+",
       "yearsLabel": "років досвіду"
     },
     "designers": {
-      "title": "TODO: Product & Design · 4 people",
-      "description": "TODO: Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier.",
+      "title": "Продукт і дизайн · 4 людини",
+      "description": "Інтерфейси для продуктів, у яких двоє людей хочуть різного від одного й того самого екрана. Власник і орендар. Клуб і учасник. Відправник і перевізник.",
       "years": "10+",
       "yearsLabel": "років досвіду"
     },
     "marketing": {
-      "title": "TODO: Go-to-market · 2 people (optional add-on)",
-      "description": "TODO: The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach — and we'll say so when paid acquisition is the wrong answer.",
+      "title": "Вихід на ринок · 2 людини (опційно)",
+      "description": "Перші сто користувачів з кожного боку не прийдуть із реклами. Ми вручну залучали перших користувачів, формували початкову пропозицію та проводили прямі звернення від засновників – і прямо скажемо, коли платне залучення є хибним рішенням.",
       "years": "10+",
       "yearsLabel": "років досвіду"
     }
