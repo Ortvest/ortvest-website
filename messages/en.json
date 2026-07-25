@@ -1794,6 +1794,8 @@
     "back": "← Back to Blog",
     "moreArticles": "More articles",
     "emptyTitle": "No articles yet. Check back soon.",
+    "errorTitle": "We couldn't load the articles.",
+    "errorText": "The blog is temporarily unavailable. Please try again shortly.",
     "minRead": "{n} min read",
     "filterAll": "All",
     "tableOfContents": "Table of contents",

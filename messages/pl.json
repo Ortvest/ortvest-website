@@ -1794,6 +1794,8 @@
     "back": "← Wróć do blogu",
     "moreArticles": "Więcej artykułów",
     "emptyTitle": "Nie ma jeszcze artykułów. Zajrzyj wkrótce.",
+    "errorTitle": "Nie udało się załadować artykułów.",
+    "errorText": "Blog jest chwilowo niedostępny. Spróbuj ponownie za moment.",
     "minRead": "{n} min czytania",
     "filterAll": "Wszystkie",
     "tableOfContents": "Spis treści",

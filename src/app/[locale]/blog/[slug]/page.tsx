@@ -14,6 +14,7 @@ import {
 import { formatBlogPostDate } from '@lib/blog-dates';
 import { pickRelatedCards, rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostBySlug, fetchCmsBlogPosts } from '@lib/cms-api';
+import { serializeJsonLd } from '@lib/seo';
 import { ArticleConversionCta } from '@modules/Blog/ArticleConversionCta';
 import { ArticleReadingProgress } from '@modules/Blog/ArticleReadingProgress';
 import { ArticleTableOfContents } from '@modules/Blog/ArticleTableOfContents';
@@ -26,6 +27,7 @@ import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
 
 const baseUrl = 'https://www.ortvest.com';
+const locales = ['en', 'ua', 'pl'] as const;
 
 interface Props {
   params: { locale: string; slug: string };
@@ -33,12 +35,24 @@ interface Props {
 
 export async function generateMetadata({ params }: Props) {
   const { slug, locale } = params;
-  const post = await fetchCmsBlogPostBySlug(slug);
+  const [post, translatedRows] = await Promise.all([
+    fetchCmsBlogPostBySlug(slug, locale),
+    Promise.all(locales.map(async (candidate) => [candidate, await fetchCmsBlogPosts(candidate)] as const)),
+  ]);
   if (!post) {
     return { title: 'Blog | Ortvest' };
   }
   const description = metaDescriptionFromPost(post.content, post.title);
-  const ogImage = post.cover_image ? [{ url: post.cover_image, alt: post.title }] : undefined;
+  const generatedImage = `${baseUrl}/api/og/blog?title=${encodeURIComponent(post.title)}`;
+  const image = post.cover_image || generatedImage;
+  const languages = Object.fromEntries(
+    translatedRows
+      .filter(([, rows]) => rows.some((row) => row.slug === slug))
+      .map(([candidate]) => [candidate === 'ua' ? 'uk-UA' : candidate, `${baseUrl}/${candidate}/blog/${slug}`])
+  );
+  const currentLanguage = locale === 'ua' ? 'uk-UA' : locale;
+  languages[currentLanguage] = `${baseUrl}/${locale}/blog/${slug}`;
+  languages['x-default'] = languages.en || languages[currentLanguage];
 
   return {
     title: `${post.title} | Ortvest`,
@@ -50,17 +64,19 @@ export async function generateMetadata({ params }: Props) {
       url: `${baseUrl}/${locale}/blog/${slug}`,
       type: 'article',
       publishedTime: post.published_at ?? undefined,
-      images: ogImage,
+      modifiedTime: post.updated_at || post.published_at || post.created_at,
+      images: [{ url: image, alt: post.title }],
       locale: locale === 'ua' ? 'uk_UA' : locale === 'pl' ? 'pl_PL' : 'en_US',
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description,
-      images: post.cover_image ? [post.cover_image] : undefined,
+      images: [image],
     },
     alternates: {
       canonical: `${baseUrl}/${locale}/blog/${slug}`,
+      languages,
     },
   };
 }
@@ -69,7 +85,7 @@ export default async function BlogArticlePage({ params }: Props) {
   const { locale, slug } = params;
   unstable_setRequestLocale(locale);
 
-  const post = await fetchCmsBlogPostBySlug(slug);
+  const post = await fetchCmsBlogPostBySlug(slug, locale);
   if (!post) notFound();
 
   const t = await getTranslations({ locale, namespace: 'blogPage' });
@@ -82,10 +98,41 @@ export default async function BlogArticlePage({ params }: Props) {
   const authorName = post.author_name?.trim() || tBlog('authorFallback');
   const headings = articleHeadingsFromContent(post.content);
   const showTableOfContents = headings.length > 3;
+  const articleUrl = `${baseUrl}/${locale}/blog/${slug}`;
+  const description = metaDescriptionFromPost(post.content, post.title);
+  const image = post.cover_image || `${baseUrl}/api/og/blog?title=${encodeURIComponent(post.title)}`;
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description,
+    image,
+    datePublished: post.published_at ?? post.created_at,
+    dateModified: post.updated_at || post.published_at || post.created_at,
+    inLanguage: locale === 'ua' ? 'uk-UA' : locale === 'pl' ? 'pl-PL' : 'en-US',
+    author: {
+      '@type': 'Person',
+      name: authorName,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Ortvest',
+      url: baseUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/icons/AppLogo.svg`,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': articleUrl,
+    },
+  };
 
   return (
     <ReduxProvider>
       <ArticleReadingProgress articleId="blog-article" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleSchema) }} />
       <Header />
       <main>
         <article id="blog-article" className="section-padding bg-white">

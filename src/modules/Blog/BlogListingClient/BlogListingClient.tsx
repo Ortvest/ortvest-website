@@ -12,15 +12,16 @@ import type { BlogCardModel } from '@lib/blog-model';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 import { BlogPostCard } from '@modules/Blog/BlogPostCard';
-import { IconFileText } from '@tabler/icons-react';
+import { IconAlertTriangle, IconFileText } from '@tabler/icons-react';
 
 const GRID_PAGE = 9;
 
 type Props = {
   posts: BlogCardModel[];
+  hasError?: boolean;
 };
 
-export function BlogListingClient({ posts }: Props) {
+export function BlogListingClient({ posts, hasError = false }: Props) {
   const t = useTranslations('blogPage');
   const tBlog = useTranslations('blog');
   const locale = useLocale();
@@ -57,7 +58,13 @@ export function BlogListingClient({ posts }: Props) {
           <p className="mt-3 text-body-lg text-black/60">{t('subtitle')}</p>
         </header>
 
-        {!hero ? (
+        {hasError ? (
+          <div className="flex flex-col items-center justify-center py-20 text-center">
+            <IconAlertTriangle className="mb-4 h-14 w-14 text-black/25" />
+            <h2 className="text-h3 text-black">{t('errorTitle')}</h2>
+            <p className="mt-3 max-w-md text-body-lg text-black/50">{t('errorText')}</p>
+          </div>
+        ) : !hero ? (
           <div className="flex flex-col items-center justify-center py-20 text-center">
             <IconFileText className="mb-4 h-14 w-14 text-black/25" />
             <p className="max-w-md text-body-lg text-black/50">{t('emptyTitle')}</p>
