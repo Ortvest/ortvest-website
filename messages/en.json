@@ -357,22 +357,22 @@
   },
   "team": {
     "label": "Who you'll actually work with",
-    "title": "3 people. The ones who scope it write it.",
-    "subtitle": "No account managers, no handoff to a junior bench after you sign. You talk to the people building the thing, for the whole project. That caps how much we can take on, which is why we run few projects at a time.",
+    "title": "15 people. Nobody on yours is at 20%.",
+    "subtitle": "Most studios our size sell you a team and staff you a fraction of five people spread across six projects. We assign a squad and it stays yours until launch — engineering, design and go-to-market in one room, not three vendors you have to keep in sync. That caps how many projects we run at once, and it's the trade we chose.",
     "developers": {
-      "title": "Engineering",
-      "description": "Backend that survives a marketplace: verification, matching, payments, roles, permissions. We've built the parts that get ugly at scale, and the admin tooling nobody demos.",
+      "title": "Engineering · 9 people",
+      "description": "Backend that survives a marketplace: verification, matching, payments, roles, permissions. Deep enough to run parallel workstreams — the platform and the admin tooling get built at the same time, not one after the other.",
       "years": "15+",
       "yearsLabel": "years of experience"
     },
     "designers": {
-      "title": "Product & Design",
+      "title": "Product & Design · 4 people",
       "description": "Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier.",
       "years": "10+",
       "yearsLabel": "years of experience"
     },
     "marketing": {
-      "title": "Go-to-market (optional add-on)",
+      "title": "Go-to-market · 2 people (optional add-on)",
       "description": "The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach — and we'll say so when paid acquisition is the wrong answer.",
       "years": "10+",
       "yearsLabel": "years of experience"

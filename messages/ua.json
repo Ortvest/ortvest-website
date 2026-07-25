@@ -356,24 +356,24 @@
     "step4Desc": "Ми не зникаємо після запуску. Більшість наших клієнтів повертаються за наступним продуктом."
   },
   "team": {
-    "label": "Команда",
-    "title": "Експертиза за вашим продуктом.",
-    "subtitle": "Розробники, дизайнери та маркетологи – кожен з глибоким досвідом у кожному проєкті, який ми беремо.",
+    "label": "TODO: Who you'll actually work with",
+    "title": "TODO: 15 people. Nobody on yours is at 20%.",
+    "subtitle": "TODO: Most studios our size sell you a team and staff you a fraction of five people spread across six projects. We assign a squad and it stays yours until launch — engineering, design and go-to-market in one room, not three vendors you have to keep in sync. That caps how many projects we run at once, and it's the trade we chose.",
     "developers": {
-      "title": "Розробники",
-      "description": "Будуємо швидко, чисто і без компромісів. Від складної backend-архітектури до pixel-perfect frontend – наші інженери запускали продукти у fintech, e-commerce та SaaS, якими користувачі справді люблять користуватися.",
+      "title": "TODO: Engineering · 9 people",
+      "description": "TODO: Backend that survives a marketplace: verification, matching, payments, roles, permissions. Deep enough to run parallel workstreams — the platform and the admin tooling get built at the same time, not one after the other.",
       "years": "15+",
       "yearsLabel": "років досвіду"
     },
     "designers": {
-      "title": "Дизайнери",
-      "description": "Інтерфейси, через які зупиняють скрол. Наші дизайнери працюють на перетині естетики та зручності – створюють бренди, UI-системи та інтерактивні досвіди, які виглядають преміально і конвертують.",
+      "title": "TODO: Product & Design · 4 people",
+      "description": "TODO: Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier.",
       "years": "10+",
       "yearsLabel": "років досвіду"
     },
     "marketing": {
-      "title": "Маркетинг",
-      "description": "Запуски, які помічають. Поєднуємо чітке позиціонування з data-driven виконанням – SEO, платну рекламу та контент-стратегію, що будує реальну тягу, а не vanity metrics. Ваш продукт заслуговує на аудиторію, яка справді конвертує.",
+      "title": "TODO: Go-to-market · 2 people (optional add-on)",
+      "description": "TODO: The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach — and we'll say so when paid acquisition is the wrong answer.",
       "years": "10+",
       "yearsLabel": "років досвіду"
     }
