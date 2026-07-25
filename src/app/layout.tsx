@@ -4,7 +4,9 @@ import Script from 'next/script';
 
 import '@shared/styles/global.css';
 
-const GA_MEASUREMENT_ID = 'G-T62XD7Y6CM';
+const GA_MEASUREMENT_ID = process.env.GOOGLE_ANALYTICS_ID?.trim();
+const LINKEDIN_PARTNER_ID = process.env.LINKEDIN_PARTNER_ID?.trim();
+const COOKIEYES_SITE_ID = process.env.COOKIEYES_SITE_ID?.trim();
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -19,25 +21,36 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang={language} className={inter.variable} suppressHydrationWarning>
       <head>
-        <Script
-          id="cookieyes"
-          src="https://cdn-cookieyes.com/client_data/63c5de22f23862b55ca6ffe2/script.js"
-          strategy="beforeInteractive"
-        />
+        {COOKIEYES_SITE_ID && (
+          <Script
+            id="cookieyes"
+            src={`https://cdn-cookieyes.com/client_data/${encodeURIComponent(COOKIEYES_SITE_ID)}/script.js`}
+            strategy="beforeInteractive"
+          />
+        )}
       </head>
       <body suppressHydrationWarning>
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+        {GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
+            gtag('config', ${JSON.stringify(GA_MEASUREMENT_ID)});
           `}
-        </Script>
-        <Script id="linkedin-insight-init" strategy="afterInteractive">
-          {`
-            _linkedin_partner_id = "9341226";
+            </Script>
+          </>
+        )}
+        {LINKEDIN_PARTNER_ID && (
+          <>
+            <Script id="linkedin-insight-init" strategy="afterInteractive">
+              {`
+            _linkedin_partner_id = ${JSON.stringify(LINKEDIN_PARTNER_ID)};
             window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
             window._linkedin_data_partner_ids.push(_linkedin_partner_id);
             (function(l) {
@@ -49,17 +62,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
               s.parentNode.insertBefore(b, s);})(window.lintrk);
           `}
-        </Script>
-        <noscript>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            alt=""
-            src="https://px.ads.linkedin.com/collect/?pid=9341226&fmt=gif"
-          />
-        </noscript>
+            </Script>
+            <noscript>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                height="1"
+                width="1"
+                style={{ display: 'none' }}
+                alt=""
+                src={`https://px.ads.linkedin.com/collect/?pid=${encodeURIComponent(LINKEDIN_PARTNER_ID)}&fmt=gif`}
+              />
+            </noscript>
+          </>
+        )}
         {children}
       </body>
     </html>

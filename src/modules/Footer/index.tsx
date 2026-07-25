@@ -147,7 +147,7 @@ export function Footer() {
           <p className="text-center text-body-sm text-black/50">
             Ortvest sp. z o.o. &nbsp;|&nbsp; NIP: 7812111756 &nbsp;|&nbsp; KRS: 0001244461
           </p>
-          <p className="mt-1 text-center text-body-sm text-black/50">ul. Szamarzewskiego 21/2, Poznan, Poland</p>
+          <p className="mt-1 text-center text-body-sm text-black/50">ul. Szamarzewskiego 21/2, Poznań, Poland</p>
         </div>
       </div>
     </footer>

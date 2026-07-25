@@ -147,9 +147,6 @@
     "tapToLearn": "Tap to learn more",
     "getQuote": "Get a quote",
     "optional": "Optional",
-    "expanding": "Expanding into",
-    "comingSoon": "Coming soon",
-    "letsTalk": "Let's talk early",
     "industryNote": "Not on this list? Say so on the call. If it isn't ours, we'll say that too.",
     "design": {
       "title": "Design",
@@ -391,21 +388,15 @@
     "paginationLabel": "Team pagination",
     "developers": {
       "title": "Engineering · 9 people",
-      "description": "Backend that survives a marketplace: verification, matching, payments, roles, permissions. Deep enough to run parallel workstreams – the platform and the admin tooling get built at the same time, not one after the other.",
-      "years": "15+",
-      "yearsLabel": "years of experience"
+      "description": "Backend that survives a marketplace: verification, matching, payments, roles, permissions. Deep enough to run parallel workstreams – the platform and the admin tooling get built at the same time, not one after the other."
     },
     "designers": {
       "title": "Product & Design · 4 people",
-      "description": "Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier.",
-      "years": "10+",
-      "yearsLabel": "years of experience"
+      "description": "Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier."
     },
     "marketing": {
       "title": "Go-to-market · 2 people (optional add-on)",
-      "description": "The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach – and we'll say so when paid acquisition is the wrong answer.",
-      "years": "10+",
-      "yearsLabel": "years of experience"
+      "description": "The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach – and we'll say so when paid acquisition is the wrong answer."
     }
   },
   "faq": {
@@ -549,7 +540,6 @@
     "subtitle": "P2P, community and logistics. Some are under NDA – we'll walk you through those on a call.",
     "ndaBanner": "Some projects are under NDA – we'll walk you through those on a call.",
     "filterIndustries": {
-      "all": "All projects",
       "p2p": "P2P",
       "community": "Community",
       "logistics": "Logistics",
@@ -581,9 +571,6 @@
     "ndaProtected": "NDA protected",
     "viewCaseStudy": "View case study →",
     "ndaNote": "Details available on a call",
-    "brandSectionTitle": "Brand & identity work",
-    "emptyState": "No projects in this industry yet – be the first and we'll turn it into a case study.",
-    "beFirstButton": "Discuss your project",
     "challenge": "Challenge",
     "solution": "Solution",
     "inProgress": "In progress",

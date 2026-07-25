@@ -3,9 +3,14 @@
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
-import { sectionIds } from '@shared/enums/SectionID.enums';
-
-const navKeys = ['about', 'services', 'process', 'technologies', 'faq', 'contact'] as const;
+const navItems = [
+  { key: 'about', href: '#about' },
+  { key: 'services', href: '#services' },
+  { key: 'process', href: '?tab=process#services' },
+  { key: 'technologies', href: '?tab=technologies#services' },
+  { key: 'faq', href: '#faq' },
+  { key: 'contact', href: '#contact' },
+] as const;
 
 export default function NotFound() {
   const locale = useLocale();
@@ -30,10 +35,10 @@ export default function NotFound() {
         <nav aria-label={t('nav')} className="border-t border-black/10 pt-10">
           <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-black/40">{t('nav')}</p>
           <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-            {navKeys.map((key) => (
+            {navItems.map(({ key, href }) => (
               <li key={key}>
                 <Link
-                  href={`${base}${sectionIds[key as keyof typeof sectionIds]}`}
+                  href={`${base}${href}`}
                   className="text-body-sm font-medium text-black/70 transition hover:text-black">
                   {tNav(key)}
                 </Link>

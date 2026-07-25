@@ -147,9 +147,6 @@
     "tapToLearn": "Kliknij, aby dowiedzieć się więcej",
     "getQuote": "Zapytaj o wycenę",
     "optional": "Opcjonalnie",
-    "expanding": "Rozwijamy kierunek",
-    "comingSoon": "Wkrótce",
-    "letsTalk": "Porozmawiajmy wcześniej",
     "industryNote": "Nie ma Cię na tej liście? Powiedz o tym podczas rozmowy. Jeśli to nie nasza branża, też powiemy wprost.",
     "design": {
       "title": "Design",
@@ -391,21 +388,15 @@
     "paginationLabel": "TODO: Team pagination",
     "developers": {
       "title": "Inżynieria · 9 osób",
-      "description": "Zaplecze techniczne, które wytrzyma platformę dwustronną: weryfikacja, dopasowanie, płatności, role i uprawnienia. Mamy dość szeroki zespół, by prowadzić równoległe strumienie pracy – platforma i narzędzia administracyjne powstają jednocześnie, a nie jedno po drugim.",
-      "years": "15+",
-      "yearsLabel": "lat doświadczenia"
+      "description": "Zaplecze techniczne, które wytrzyma platformę dwustronną: weryfikacja, dopasowanie, płatności, role i uprawnienia. Mamy dość szeroki zespół, by prowadzić równoległe strumienie pracy – platforma i narzędzia administracyjne powstają jednocześnie, a nie jedno po drugim."
     },
     "designers": {
       "title": "Produkt i projektowanie · 4 osoby",
-      "description": "Interfejsy dla produktów, w których dwie osoby chcą czegoś innego od tego samego ekranu. Właściciel i najemca. Klub i członek. Nadawca i przewoźnik.",
-      "years": "10+",
-      "yearsLabel": "lat doświadczenia"
+      "description": "Interfejsy dla produktów, w których dwie osoby chcą czegoś innego od tego samego ekranu. Właściciel i najemca. Klub i członek. Nadawca i przewoźnik."
     },
     "marketing": {
       "title": "Wejście na rynek · 2 osoby (opcjonalnie)",
-      "description": "Pierwszych stu użytkowników po każdej stronie nie przyjdzie z reklam. Wdrażaliśmy użytkowników ręcznie, budowaliśmy początkową podaż i prowadziliśmy bezpośrednie działania założycieli – i powiemy wprost, kiedy płatna akwizycja jest złą odpowiedzią.",
-      "years": "10+",
-      "yearsLabel": "lat doświadczenia"
+      "description": "Pierwszych stu użytkowników po każdej stronie nie przyjdzie z reklam. Wdrażaliśmy użytkowników ręcznie, budowaliśmy początkową podaż i prowadziliśmy bezpośrednie działania założycieli – i powiemy wprost, kiedy płatna akwizycja jest złą odpowiedzią."
     }
   },
   "faq": {
@@ -549,7 +540,6 @@
     "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA – omówimy je podczas rozmowy.",
     "ndaBanner": "Część projektów jest objęta NDA – omówimy je podczas rozmowy.",
     "filterIndustries": {
-      "all": "Wszystkie projekty",
       "p2p": "P2P",
       "community": "Społeczności",
       "logistics": "Logistyka",
@@ -581,9 +571,6 @@
     "ndaProtected": "Chronione NDA",
     "viewCaseStudy": "Zobacz case study →",
     "ndaNote": "Szczegóły dostępne podczas rozmowy",
-    "brandSectionTitle": "Branding i identyfikacja wizualna",
-    "emptyState": "Brak projektów w tej branży – bądź pierwszy, a stworzymy z tego case study.",
-    "beFirstButton": "Omów projekt",
     "challenge": "Wyzwanie",
     "solution": "Rozwiązanie",
     "inProgress": "W trakcie",

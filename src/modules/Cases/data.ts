@@ -179,14 +179,14 @@ const portfolioCases: CaseItem[] = [
     relatedCaseId: 'profitcraft',
     stack: ['Web Design', 'Frontend Development', 'Marketing Website'],
     isNDA: false,
-    coverImage: 'https://ucarecdn.com/b2afe98c-95ab-44af-be27-584e9dd5a79a/pachcaca07.png',
-    preview: 'https://ucarecdn.com/b2afe98c-95ab-44af-be27-584e9dd5a79a/pachcaca07.png',
+    coverImage: 'https://ucarecdn.com/b2afe98c-95ab-44af-be27-584e9dd5a79a/profitcraft-auto-07.png',
+    preview: 'https://ucarecdn.com/b2afe98c-95ab-44af-be27-584e9dd5a79a/profitcraft-auto-07.png',
     accentColor: '#1a4d3e',
     portfolio: true,
     images: [
-      'https://ucarecdn.com/4c111d5d-0e42-4cd4-a311-726f341a65ed/pachcaca.png',
-      'https://ucarecdn.com/1af223b4-68c9-4a51-b2cc-61cf52d5d6a7/pachcaca10.png',
-      'https://ucarecdn.com/b57afd5f-c6ac-4f47-bb8f-8d66712b8e7a/pachcaca12.png',
+      'https://ucarecdn.com/4c111d5d-0e42-4cd4-a311-726f341a65ed/profitcraft-auto.png',
+      'https://ucarecdn.com/1af223b4-68c9-4a51-b2cc-61cf52d5d6a7/profitcraft-auto-10.png',
+      'https://ucarecdn.com/b57afd5f-c6ac-4f47-bb8f-8d66712b8e7a/profitcraft-auto-12.png',
       'https://ucarecdn.com/e7b8636f-6fe0-4f01-afda-945972c6ba93/1mplll.png',
     ],
     fullDescription:
@@ -195,14 +195,14 @@ const portfolioCases: CaseItem[] = [
       {
         id: 'design',
         images: [
-          'https://ucarecdn.com/4c111d5d-0e42-4cd4-a311-726f341a65ed/pachcaca.png',
-          'https://ucarecdn.com/1af223b4-68c9-4a51-b2cc-61cf52d5d6a7/pachcaca10.png',
+          'https://ucarecdn.com/4c111d5d-0e42-4cd4-a311-726f341a65ed/profitcraft-auto.png',
+          'https://ucarecdn.com/1af223b4-68c9-4a51-b2cc-61cf52d5d6a7/profitcraft-auto-10.png',
         ],
       },
       {
         id: 'development',
         images: [
-          'https://ucarecdn.com/b57afd5f-c6ac-4f47-bb8f-8d66712b8e7a/pachcaca12.png',
+          'https://ucarecdn.com/b57afd5f-c6ac-4f47-bb8f-8d66712b8e7a/profitcraft-auto-12.png',
           'https://ucarecdn.com/e7b8636f-6fe0-4f01-afda-945972c6ba93/1mplll.png',
         ],
       },

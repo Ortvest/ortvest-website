@@ -70,7 +70,7 @@ function SchemaOrgScript({ faq }: { faq?: FaqItem[] }) {
     url: baseUrl,
     description:
       'Ortvest builds marketplaces, P2P products and member networks where participants need to find and trust each other.',
-    sameAs: [],
+    sameAs: ['https://www.linkedin.com/company/ortvest/', 'https://www.instagram.com/ortvest'],
   };
 
   const website = {
@@ -78,11 +78,6 @@ function SchemaOrgScript({ faq }: { faq?: FaqItem[] }) {
     '@type': 'WebSite',
     name: 'Ortvest',
     url: baseUrl,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: { '@type': 'EntryPoint', urlTemplate: `${baseUrl}/?q={search_term_string}` },
-      'query-input': 'required name=search_term_string',
-    },
   };
 
   const services = {
