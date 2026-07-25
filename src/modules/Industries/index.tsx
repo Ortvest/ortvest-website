@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Container, SectionHeader, SectionReveal } from '@shared/components';
 import type { TablerIcon } from '@shared/types/icon.types';
@@ -131,6 +131,7 @@ function NicheCard({ nicheKey, icon: Icon, iconClassName, tags, index, caseLink,
 
 export function Industries() {
   const t = useTranslations('industries');
+  const locale = useLocale();
   const [openKey, setOpenKey] = useState<NicheKey | null>(null);
 
   const toggle = (key: NicheKey) => setOpenKey((prev) => (prev === key ? null : key));
@@ -156,7 +157,7 @@ export function Industries() {
                 iconClassName={nicheIconSizes[key]}
                 tags={t.raw(`niches.${key}.tags`) as string[]}
                 index={i}
-                caseLink={nicheCaseLinks[key]}
+                caseLink={nicheCaseLinks[key] ? `/${locale}${nicheCaseLinks[key]}` : undefined}
                 isOpen={openKey === key}
                 onToggle={() => toggle(key)}
               />

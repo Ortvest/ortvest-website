@@ -53,7 +53,7 @@ export function Header() {
         <div className="hidden items-center gap-6 md:flex">
           <Navigation />
           <Link
-            href="#contact"
+            href={`/${locale}#contact`}
             className="rounded-full bg-accent px-4 py-2 text-sm font-semibold text-black transition hover:bg-accent-dark">
             {t('cta')}
           </Link>
@@ -62,7 +62,7 @@ export function Header() {
         {/* Mobile */}
         <div className="flex items-center gap-2 md:hidden">
           <Link
-            href="#contact"
+            href={`/${locale}#contact`}
             className="inline-flex items-center gap-1 rounded-full bg-black px-3 py-1.5 text-sm font-semibold text-white">
             {t('cta')}
           </Link>

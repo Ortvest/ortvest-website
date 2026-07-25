@@ -147,7 +147,7 @@ export function OrtvestCMS() {
                   </p>
                 )}
                 <Link
-                  href="#contact"
+                  href={`/${locale}#contact`}
                   className="text-center text-xs font-medium text-black/50 underline-offset-2 hover:text-black/75 hover:underline">
                   {t('pricing.contactInstead')}
                 </Link>
@@ -171,9 +171,7 @@ export function OrtvestCMS() {
                 <span className="text-[2rem] font-bold leading-none text-accent">{pricing.partner[billing]}</span>
                 <span className="text-body-sm text-white/45">{t('widget.perMonth')}</span>
               </div>
-              {billing === 'annually' && (
-                <p className="mt-1 text-xs text-white/35">{t('pricing.billedAnnually')}</p>
-              )}
+              {billing === 'annually' && <p className="mt-1 text-xs text-white/35">{t('pricing.billedAnnually')}</p>}
               <p className="mt-4 text-xs font-medium uppercase tracking-wider text-white/45">
                 {t('pricing.whatsIncluded')}
               </p>
@@ -188,7 +186,7 @@ export function OrtvestCMS() {
 
               <div className="mt-5">
                 <Link
-                  href="#contact"
+                  href={`/${locale}#contact`}
                   className="group inline-flex items-center gap-1.5 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-black shadow-sm transition-colors hover:bg-accent-dark">
                   {t('pricing.partner.cta')}
                   <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
@@ -224,7 +222,7 @@ export function OrtvestCMS() {
               <p className="mt-1 text-body-sm text-black/55">{t('widget.exploreDesc')}</p>
             </div>
             <Link
-              href="/cms"
+              href={`/${locale}/cms`}
               className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-black/85">
               {t('widget.exploreButton')}
               <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

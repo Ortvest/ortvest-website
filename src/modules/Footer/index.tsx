@@ -98,7 +98,7 @@ export function Footer() {
               {footerNavItems.map(({ key, href }) => (
                 <li key={key} className={`${mobileNavOrder[key]} sm:order-none`}>
                   <Link
-                    href={href === 'blog' ? `/${locale}/blog` : href}
+                    href={href === 'blog' ? `/${locale}/blog` : `/${locale}${href}`}
                     className="block py-1.5 text-[14px] text-zinc-950 sm:py-0 sm:text-body-sm sm:text-black/70 sm:transition sm:hover:text-black">
                     {tNav(key)}
                   </Link>

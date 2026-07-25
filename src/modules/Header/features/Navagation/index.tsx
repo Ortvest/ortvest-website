@@ -68,14 +68,16 @@ export function Navigation() {
       <ul className="flex items-center gap-5">
         {/* About */}
         <li>
-          <Link href="#about" className="text-body-sm font-medium text-black/70 transition hover:text-black">
+          <Link
+            href={`/${locale}#about`}
+            className="text-body-sm font-medium text-black/70 transition hover:text-black">
             {t('about')}
           </Link>
         </li>
 
         {/* Team */}
         <li>
-          <Link href="#team" className="text-body-sm font-medium text-black/70 transition hover:text-black">
+          <Link href={`/${locale}#team`} className="text-body-sm font-medium text-black/70 transition hover:text-black">
             {t('team')}
           </Link>
         </li>
@@ -102,7 +104,7 @@ export function Navigation() {
               {servicesDropdownItems.map(({ key, Icon, sublabel, href }) => (
                 <Link
                   key={key}
-                  href={href}
+                  href={`/${locale}${href}`}
                   role="menuitem"
                   onClick={() => setIsServicesOpen(false)}
                   className="flex items-center gap-3 rounded-xl px-3 py-2.5 transition hover:bg-zinc-800">
@@ -121,7 +123,9 @@ export function Navigation() {
 
         {/* Cases */}
         <li>
-          <Link href="#cases" className="text-body-sm font-medium text-black/70 transition hover:text-black">
+          <Link
+            href={`/${locale}#cases`}
+            className="text-body-sm font-medium text-black/70 transition hover:text-black">
             {t('cases')}
           </Link>
         </li>
@@ -135,7 +139,7 @@ export function Navigation() {
 
         {/* FAQ */}
         <li>
-          <Link href="#faq" className="text-body-sm font-medium text-black/70 transition hover:text-black">
+          <Link href={`/${locale}#faq`} className="text-body-sm font-medium text-black/70 transition hover:text-black">
             {t('faq')}
           </Link>
         </li>

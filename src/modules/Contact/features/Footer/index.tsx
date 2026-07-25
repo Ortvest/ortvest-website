@@ -4,7 +4,7 @@ import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { ModalTypes } from '@shared/enums/ModalTypes.enums';
 import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
@@ -18,6 +18,7 @@ import styles from './style.module.css';
 
 export const Footer = () => {
   const t = useTranslations();
+  const locale = useLocale();
   const { orderData } = useAppSelector((state) => state.ContactReducer);
   const { setOrderData } = ContactSlice.actions;
   const { setIsModalOpened, setModalType } = ModalSlice.actions;
@@ -47,7 +48,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <p className={styles.privacy}>
         {t('policy-text')}
-        <Link href="/#">{t('policy-link')}</Link>
+        <Link href={`/${locale}/privacy-policy`}>{t('policy-link')}</Link>
       </p>
       <button className={styles.send} onClick={(e) => onSendOrderDataHandler(e)}>
         <Image src={SendIcon} alt="send icon" />

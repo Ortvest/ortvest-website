@@ -104,7 +104,7 @@ export function BurgerMenu() {
                             {servicesDropdownItems.map(({ key: itemKey, Icon, sublabel, href }) => (
                               <Link
                                 key={itemKey}
-                                href={href}
+                                href={`/${locale}${href}`}
                                 onClick={closeMenu}
                                 className="flex items-center gap-3 rounded-xl px-3 py-2.5 transition hover:bg-black/[0.04]">
                                 <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-black/[0.06]">
@@ -130,7 +130,7 @@ export function BurgerMenu() {
                   </Link>
                 ) : (
                   <Link
-                    href={`#${key}`}
+                    href={`/${locale}#${key}`}
                     className="block rounded-lg px-3 py-3 text-lg font-medium text-black transition hover:bg-black/[0.04]"
                     onClick={closeMenu}>
                     {t(key)}
@@ -146,7 +146,7 @@ export function BurgerMenu() {
 
             {/* Logo + slogan at bottom */}
             <div className="mt-auto border-t border-black/[0.06] pt-6">
-              <Link href="#hero" onClick={closeMenu} className="block">
+              <Link href={`/${locale}#hero`} onClick={closeMenu} className="block">
                 <Image
                   src={AppIconHorizontal}
                   alt="Ortvest"

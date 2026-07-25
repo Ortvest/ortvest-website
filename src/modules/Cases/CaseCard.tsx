@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { IconLock } from '@tabler/icons-react';
 
@@ -22,6 +22,7 @@ const NICHE_CTA_KEYS: Partial<Record<string, string>> = {
 export function CaseCard({ caseItem, compact = false }: CaseCardProps) {
   const t = useTranslations('cases');
   const tHero = useTranslations('hero');
+  const locale = useLocale();
 
   const cover = caseItem.coverImage ?? caseItem.preview;
   const accent = caseItem.accentColor ?? '#1a1a1a';
@@ -124,7 +125,7 @@ export function CaseCard({ caseItem, compact = false }: CaseCardProps) {
 
   return (
     <Link
-      href={`/cases/${caseItem.id}`}
+      href={`/${locale}/cases/${caseItem.id}`}
       className="group block overflow-hidden rounded-2xl border border-black/[0.08] bg-white transition hover:border-black/15 hover:shadow-card">
       {inner}
     </Link>

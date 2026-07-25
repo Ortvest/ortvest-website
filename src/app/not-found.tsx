@@ -10,7 +10,7 @@ export default function RootNotFound() {
           The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <Link
-          href="/"
+          href="/en"
           className="inline-flex rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-black/90">
           Back to home
         </Link>

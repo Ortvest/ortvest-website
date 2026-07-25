@@ -143,7 +143,7 @@ export function CMSPage() {
 
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <Link
-                  href="#contact"
+                  href={`/${locale}#contact`}
                   className="inline-flex h-12 items-center gap-2 rounded-full bg-accent px-6 text-sm font-semibold text-black shadow-sm transition-colors hover:bg-accent-dark">
                   {t('hero.ctaPrimary')}
                   <IconArrowRight className="h-4 w-4" />
@@ -417,7 +417,7 @@ export function CMSPage() {
                     </p>
                   )}
                   <Link
-                    href="#contact"
+                    href={`/${locale}#contact`}
                     className="text-center text-xs font-medium text-white/50 underline-offset-2 hover:text-white/70 hover:underline">
                     {t('pricing.contactInstead')}
                   </Link>
@@ -460,7 +460,7 @@ export function CMSPage() {
 
                 <div className="mt-5">
                   <Link
-                    href="#contact"
+                    href={`/${locale}#contact`}
                     className="group inline-flex items-center gap-1.5 rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-black/85">
                     {t('pricing.partner.cta')}
                     <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
@@ -503,7 +503,7 @@ export function CMSPage() {
               <p className="mt-4 text-body-lg text-white/60">{t('cta.subheadline')}</p>
               <div className="mt-8">
                 <Link
-                  href="#contact"
+                  href={`/${locale}#contact`}
                   className="group inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-black shadow-sm transition-colors hover:bg-accent-dark">
                   {t('cta.button')}
                   <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
