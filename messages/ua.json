@@ -16,7 +16,7 @@
   },
   "divider": {
     "platforms": "двосторонніх платформ запущено",
-    "funded": "власний продукт, який ми фінансуємо – YachtMate",
+    "people": "TODO: people. One squad per project.",
     "industries": "галузі. Інших не заявляємо.",
     "industryList": "P2P · Спільноти · Логістика"
   },
@@ -306,8 +306,8 @@
     "how": {
       "label": "Як ми працюємо",
       "1": {
-        "title": "Ми самі були клієнтом",
-        "desc": "Ми самі будуємо й фінансуємо YachtMate – платформу для яхт-клубів. Платимо за власні помилки, churn і порожній перший місяць."
+        "title": "TODO: We're funding our own cold start",
+        "desc": "TODO: Yachtly is ours – a platform for yacht clubs, not launched yet. We're in the part nobody writes case studies about: deciding which side to seed first, paying for the empty first month, cutting features we were attached to. It's why we argue with your scope instead of just building it."
       },
       "2": {
         "title": "Ми скажемо не будувати",

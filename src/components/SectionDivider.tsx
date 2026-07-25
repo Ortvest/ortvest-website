@@ -10,12 +10,12 @@ export async function SectionDivider() {
           <div className="hidden h-px w-full flex-1 bg-zinc-900 sm:block" />
 
           <div className="flex flex-col items-center gap-4">
-            <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-nowrap sm:items-center sm:justify-center sm:gap-8">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-nowrap sm:items-center sm:justify-center sm:gap-4 md:gap-8">
               <div className="flex flex-col items-center sm:min-w-0">
                 <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
                   5
                 </p>
-                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
+                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:whitespace-nowrap sm:text-[11px]">
                   {t('platforms')}
                 </p>
               </div>
@@ -24,10 +24,10 @@ export async function SectionDivider() {
 
               <div className="flex flex-col items-center sm:min-w-0">
                 <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
-                  1
+                  15
                 </p>
-                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
-                  {t('funded')}
+                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:whitespace-nowrap sm:text-[11px]">
+                  {t('people')}
                 </p>
               </div>
 
@@ -37,7 +37,7 @@ export async function SectionDivider() {
                 <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
                   3
                 </p>
-                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
+                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:whitespace-nowrap sm:text-[11px]">
                   {t('industries')}
                 </p>
               </div>

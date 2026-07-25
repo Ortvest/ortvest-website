@@ -16,7 +16,7 @@
   },
   "divider": {
     "platforms": "wdrożonych platform dwustronnych",
-    "funded": "własny finansowany produkt – YachtMate",
+    "people": "TODO: people. One squad per project.",
     "industries": "branże. Żadnych innych deklaracji.",
     "industryList": "P2P · Społeczności · Logistyka"
   },
@@ -306,8 +306,8 @@
     "how": {
       "label": "Jak pracujemy",
       "1": {
-        "title": "Sami byliśmy klientem",
-        "desc": "Sami budujemy i finansujemy YachtMate – platformę dla klubów jachtowych. Płacimy za własne błędy, własny churn i własny pusty pierwszy miesiąc. Niewiele studiów może to powiedzieć i zmienia to sposób, w jaki z Tobą dyskutujemy."
+        "title": "TODO: We're funding our own cold start",
+        "desc": "TODO: Yachtly is ours – a platform for yacht clubs, not launched yet. We're in the part nobody writes case studies about: deciding which side to seed first, paying for the empty first month, cutting features we were attached to. It's why we argue with your scope instead of just building it."
       },
       "2": {
         "title": "Powiemy Ci, żeby tego nie budować",

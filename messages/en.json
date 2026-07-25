@@ -16,7 +16,7 @@
   },
   "divider": {
     "platforms": "two-sided platforms shipped",
-    "funded": "product we fund ourselves – YachtMate",
+    "people": "people. One squad per project.",
     "industries": "industries. No others claimed.",
     "industryList": "P2P · Community · Logistics"
   },
@@ -306,8 +306,8 @@
     "how": {
       "label": "How we work",
       "1": {
-        "title": "We've been the client",
-        "desc": "We build and fund YachtMate ourselves – a platform for yacht clubs. We pay for our own mistakes, our own churn, our own empty first month. Very few studios can say that, and it changes how we argue with you."
+        "title": "We're funding our own cold start",
+        "desc": "Yachtly is ours – a platform for yacht clubs, not launched yet. We're in the part nobody writes case studies about: deciding which side to seed first, paying for the empty first month, cutting features we were attached to. It's why we argue with your scope instead of just building it."
       },
       "2": {
         "title": "We'll tell you not to build it",
