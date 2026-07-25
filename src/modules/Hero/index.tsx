@@ -64,9 +64,7 @@ export function Hero() {
           <div>
             <p className="mb-4 text-xs uppercase tracking-widest text-accent">{t('badge')}</p>
             <h1 id="hero-heading" className="mb-5 text-[38px] font-extrabold leading-[1.1] tracking-tight text-white">
-              {t('title1')}
-              <br />
-              {t('title2')}
+              {t('title1')} {t('title2')}
             </h1>
 
             <p className="mb-7 max-w-[400px] text-[15px] leading-[1.75] text-zinc-400">{t('subtitle')}</p>
