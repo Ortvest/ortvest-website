@@ -16,7 +16,7 @@
   },
   "divider": {
     "platforms": "двосторонніх платформ запущено",
-    "people": "TODO: people. One squad per project.",
+    "people": "людей. Одна команда на проєкт.",
     "industries": "галузі. Інших не заявляємо.",
     "industryList": "P2P · Спільноти · Логістика"
   },
@@ -306,8 +306,8 @@
     "how": {
       "label": "Як ми працюємо",
       "1": {
-        "title": "TODO: We're funding our own cold start",
-        "desc": "TODO: Yachtly is ours – a platform for yacht clubs, not launched yet. We're in the part nobody writes case studies about: deciding which side to seed first, paying for the empty first month, cutting features we were attached to. It's why we argue with your scope instead of just building it."
+        "title": "Ми фінансуємо власний cold start",
+        "desc": "Yachtly – наша платформа для яхт-клубів, яку ще не запущено. Ми на етапі, про який ніхто не пише кейсів: вирішуємо, яку сторону залучити першою, оплачуємо порожній перший місяць і відмовляємося від функцій, до яких встигли прив'язатися. Саме тому ми сперечаємося з вашим обсягом робіт, а не просто беремося його реалізовувати."
       },
       "2": {
         "title": "Ми скажемо не будувати",
