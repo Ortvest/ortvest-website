@@ -227,6 +227,22 @@
     text-decoration-color: theme('colors.accent');
   }
 
+  .blog-article-body a[href*='/cases/'],
+  .blog-article-body a[href$='#services'],
+  .blog-article-body a[href*='/services'] {
+    padding: 0 0.125rem;
+    border-bottom: 2px solid theme('colors.accent');
+    color: rgb(0 0 0 / 0.95);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .blog-article-body a[href*='/cases/']:hover,
+  .blog-article-body a[href$='#services']:hover,
+  .blog-article-body a[href*='/services']:hover {
+    background: rgb(205 255 78 / 0.2);
+  }
+
   @media (max-width: 639px) {
     .blog-article-body {
       font-size: 17px;

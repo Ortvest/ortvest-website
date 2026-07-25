@@ -1797,6 +1797,11 @@
     "minRead": "{n} min read",
     "filterAll": "All",
     "tableOfContents": "Table of contents",
+    "articleCta": {
+      "title": "Building a platform that starts empty?",
+      "body": "We help marketplaces, member networks and logistics platforms solve the cold start before they spend on the wrong build.",
+      "button": "Discuss your platform"
+    },
     "metadata": {
       "title": "Blog | Ortvest",
       "description": "Insights on design, development, and growth from the Ortvest team."

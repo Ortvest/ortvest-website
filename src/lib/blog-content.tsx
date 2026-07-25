@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 
+import { ArticleInlineLink } from '@modules/Blog/ArticleInlineLink';
+
 function isRecord(v: unknown): v is Record<string, unknown> {
   return Boolean(v && typeof v === 'object' && !Array.isArray(v));
 }
@@ -162,7 +164,27 @@ export function articleHeadingsFromContent(content: unknown): ArticleHeading[] {
 
 type TiptapMark = { type: string; attrs?: Record<string, unknown> };
 
-function renderMarks(text: string, marks: TiptapMark[] | undefined, keyPrefix: string): React.ReactNode {
+type RenderContext = {
+  headingCounts: Map<string, number>;
+  locale: string;
+};
+
+function isArticleReference(href: string): boolean {
+  return (href.startsWith('/') || href.startsWith('#')) && /(^|[#/])(cases|services)([/#]|$)/.test(href);
+}
+
+function localizeArticleReference(href: string, locale: string): string {
+  if (href.startsWith('#')) return `/${locale}${href}`;
+  if (href.startsWith('/') && !/^\/(en|pl|ua)(\/|#|$)/.test(href)) return `/${locale}${href}`;
+  return href;
+}
+
+function renderMarks(
+  text: string,
+  marks: TiptapMark[] | undefined,
+  keyPrefix: string,
+  context: RenderContext
+): React.ReactNode {
   if (!marks?.length) return text;
   let node: React.ReactNode = text;
   let i = 0;
@@ -194,7 +216,11 @@ function renderMarks(text: string, marks: TiptapMark[] | undefined, keyPrefix: s
         break;
       case 'link': {
         const href = String(mark.attrs?.href ?? '#');
-        node = (
+        node = isArticleReference(href) ? (
+          <ArticleInlineLink key={k} href={localizeArticleReference(href, context.locale)}>
+            {node}
+          </ArticleInlineLink>
+        ) : (
           <a
             key={k}
             href={href}
@@ -213,22 +239,22 @@ function renderMarks(text: string, marks: TiptapMark[] | undefined, keyPrefix: s
   return node;
 }
 
-type RenderContext = {
-  headingCounts: Map<string, number>;
-};
-
 function renderDocContent(nodes: unknown[] | undefined, keyPrefix: string, context: RenderContext): React.ReactNode[] {
   if (!nodes?.length) return [];
   return nodes.map((n, i) => renderNode(n, `${keyPrefix}-${i}`, context));
 }
 
-function renderTextChildren(nodes: unknown[] | undefined, keyPrefix: string): React.ReactNode[] {
+function renderTextChildren(
+  nodes: unknown[] | undefined,
+  keyPrefix: string,
+  context: RenderContext
+): React.ReactNode[] {
   if (!nodes?.length) return [];
   const out: React.ReactNode[] = [];
   nodes.forEach((n, i) => {
     if (!isRecord(n)) return;
     if (n.type === 'text' && typeof n.text === 'string') {
-      out.push(renderMarks(n.text, n.marks as TiptapMark[] | undefined, `${keyPrefix}-t${i}`));
+      out.push(renderMarks(n.text, n.marks as TiptapMark[] | undefined, `${keyPrefix}-t${i}`, context));
     } else if (n.type === 'hardBreak') {
       out.push(<br key={`${keyPrefix}-br${i}`} />);
     }
@@ -251,13 +277,13 @@ function renderNode(node: unknown, key: string, context: RenderContext): React.R
     case 'paragraph':
       return (
         <p key={key} className="mb-4">
-          {renderTextChildren(content, key)}
+          {renderTextChildren(content, key, context)}
         </p>
       );
     case 'heading': {
       const level = Number((node.attrs as any)?.level ?? 2);
       const className = 'scroll-mt-24 font-bold text-black';
-      const kids = renderTextChildren(content, key);
+      const kids = renderTextChildren(content, key, context);
       const text = plainTextFromTiptap(node).replace(/\s+/g, ' ').trim();
       if (level <= 2) {
         const id = uniqueHeadingId(text, context.headingCounts);
@@ -343,13 +369,13 @@ function renderNode(node: unknown, key: string, context: RenderContext): React.R
 }
 
 /** Render CMS `content` (TipTap JSON or HTML string) for article body. */
-export function BlogArticleContent({ content }: { content: unknown }) {
+export function BlogArticleContent({ content, locale }: { content: unknown; locale: string }) {
   if (content == null) return null;
   if (isHtmlString(content)) {
     return <div className="blog-article-body" dangerouslySetInnerHTML={{ __html: htmlWithHeadingIds(content) }} />;
   }
   if (isTiptapDoc(content)) {
-    return <>{renderNode(content, 'root', { headingCounts: new Map<string, number>() })}</>;
+    return <>{renderNode(content, 'root', { headingCounts: new Map<string, number>(), locale })}</>;
   }
   if (typeof content === 'string' && content.trim()) {
     return (

@@ -14,6 +14,7 @@ import {
 import { formatBlogPostDate } from '@lib/blog-dates';
 import { pickRelatedCards, rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostBySlug, fetchCmsBlogPosts } from '@lib/cms-api';
+import { ArticleConversionCta } from '@modules/Blog/ArticleConversionCta';
 import { ArticleReadingProgress } from '@modules/Blog/ArticleReadingProgress';
 import { ArticleTableOfContents } from '@modules/Blog/ArticleTableOfContents';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
@@ -141,13 +142,15 @@ export default async function BlogArticlePage({ params }: Props) {
                 ].join(' ')}>
                 <ArticleTableOfContents headings={headings} title={t('tableOfContents')} />
                 <div className="min-w-0 max-w-[70ch]">
-                  <BlogArticleContent content={post.content} />
+                  <BlogArticleContent content={post.content} locale={locale} />
+                  <ArticleConversionCta locale={locale} />
                   <hr className="mt-14 border-0 border-t border-black/[0.08]" />
                 </div>
               </div>
             ) : (
               <div className="mx-auto mt-10 max-w-[70ch]">
-                <BlogArticleContent content={post.content} />
+                <BlogArticleContent content={post.content} locale={locale} />
+                <ArticleConversionCta locale={locale} />
                 <hr className="mt-14 border-0 border-t border-black/[0.08]" />
               </div>
             )}

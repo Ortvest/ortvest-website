@@ -1797,6 +1797,11 @@
     "minRead": "{n} min czytania",
     "filterAll": "Wszystkie",
     "tableOfContents": "Spis treści",
+    "articleCta": {
+      "title": "Budujesz platformę, która na początku będzie pusta?",
+      "body": "Pomagamy marketplace'om, sieciom członkowskim i platformom logistycznym rozwiązać cold start, zanim wydadzą budżet na niewłaściwy produkt.",
+      "button": "Porozmawiajmy o platformie"
+    },
     "metadata": {
       "title": "Blog | Ortvest",
       "description": "Artykuły o designie, rozwoju i wzroście od zespołu Ortvest."
