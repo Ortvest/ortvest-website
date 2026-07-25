@@ -45,9 +45,15 @@ export function CasesMasonryCard({ caseItem, imageTall }: CasesMasonryCardProps)
 
   const body = (
     <div className="p-4">
-      {caseItem.industries && caseItem.industries.length > 0 && (
+      {((caseItem.serviceTags && caseItem.serviceTags.length > 0) ||
+        (caseItem.industries && caseItem.industries.length > 0)) && (
         <div className="mb-2 flex flex-wrap gap-1">
-          {caseItem.industries.map((industry) => (
+          {caseItem.serviceTags?.map((tag) => (
+            <span key={tag} className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-400">
+              {t(`categoryBadge.${tag}`)}
+            </span>
+          ))}
+          {caseItem.industries?.map((industry) => (
             <span key={industry} className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-400">
               {tHero(`nicheTags.${industry}`)}
             </span>

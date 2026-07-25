@@ -68,7 +68,8 @@ function SchemaOrgScript({ faq }: { faq?: FaqItem[] }) {
     '@type': 'Organization',
     name: 'Ortvest',
     url: baseUrl,
-    description: 'IT studio. Web and mobile development, UI/UX design, and marketing that converts.',
+    description:
+      'Ortvest builds marketplaces, P2P products and member networks where participants need to find and trust each other.',
     sameAs: [],
   };
 

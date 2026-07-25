@@ -13,11 +13,9 @@ type TeamCarouselProps = {
   disciplines: readonly DisciplineItem[];
   getTitle: (id: DisciplineItem['id']) => string;
   getDescription: (id: DisciplineItem['id']) => string;
-  getYears: (id: DisciplineItem['id']) => string;
-  getYearsLabel: (id: DisciplineItem['id']) => string;
 };
 
-export function TeamCarousel({ disciplines, getTitle, getDescription, getYears, getYearsLabel }: TeamCarouselProps) {
+export function TeamCarousel({ disciplines, getTitle, getDescription }: TeamCarouselProps) {
   const slideCount = disciplines.length;
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideWidth, setSlideWidth] = useState(0);
@@ -88,8 +86,6 @@ export function TeamCarousel({ disciplines, getTitle, getDescription, getYears, 
                 discipline={discipline}
                 title={getTitle(discipline.id)}
                 description={getDescription(discipline.id)}
-                years={getYears(discipline.id)}
-                yearsLabel={getYearsLabel(discipline.id)}
               />
             </div>
           ))}

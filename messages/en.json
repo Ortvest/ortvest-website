@@ -15,30 +15,30 @@
     "menuSlogan": "From idea to launch. One team."
   },
   "divider": {
-    "years": "years combined experience",
-    "products": "products shipped",
-    "niches": "industry niches"
+    "platforms": "two-sided platforms shipped",
+    "funded": "product we fund ourselves — YachtMate",
+    "industries": "industries. No others claimed.",
+    "industryList": "P2P · Community · Logistics"
   },
   "hero": {
-    "badge": "Available for new projects",
-    "title1": "We build digital",
-    "title2": "products that",
-    "title3": "people ",
-    "title3em": "love.",
-    "subtitle": "Not a generic studio. We work in specific industries – P2P, community, logistics, and agritech – and we know the problems your users actually face.",
+    "badge": "For marketplaces, P2P products and member networks",
+    "title1": "The hard part was never the code.",
+    "title2": "It's the empty platform.",
+    "title3": "",
+    "title3em": "",
+    "subtitle": "Marketplaces, P2P products and member networks only work when strangers start trusting each other. That's the problem we specialise in — and we've solved day one five times.",
     "cta": {
-      "primary": "Discuss your project",
-      "secondary": "See what we do"
+      "primary": "See how we handle the cold start",
+      "secondary": "Look at the work"
     },
     "freecall": {
-      "text": "Not sure?",
-      "link": "Book a free 30-min call →"
+      "text": "Not sure it's us? 30 minutes, no pitch →",
+      "link": "Book a call"
     },
     "nodes": {
       "p2p": "P2P",
       "community": "Community",
-      "logistics": "Logistics",
-      "agritech": "Agritech"
+      "logistics": "Logistics"
     },
     "stats": {
       "products": "products shipped",
@@ -54,8 +54,7 @@
     "nicheTags": {
       "p2p": "P2P",
       "community": "Community",
-      "logistics": "Logistics",
-      "agritech": "Agritech"
+      "logistics": "Logistics"
     },
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "See what we do",
@@ -63,7 +62,7 @@
     "trustCtaLink": "Book a free 30-min call",
     "trust1": "Strategy-first approach",
     "trust2": "Full-cycle ownership",
-    "trust3": "Europe, USA & Ukraine"
+    "trust3": "Clients across the EU, UK and US"
   },
   "services": {
     "eyebrow": "What we do",
@@ -123,9 +122,9 @@
     }
   },
   "servicesSection": {
-    "label": "Services",
-    "title": "Everything to launch and grow.",
-    "subtitle": "From strategy to code to go-to-market – we build, ship, and scale digital products end to end.",
+    "label": "What we do",
+    "title": "Built for products where nobody knows each other yet.",
+    "subtitle": "Design, development and optional go-to-market for two-sided products.",
     "tabs": {
       "what": "What we do",
       "industries": "Industries",
@@ -140,27 +139,28 @@
     "expanding": "Expanding into",
     "comingSoon": "Coming soon",
     "letsTalk": "Let's talk early",
+    "industryNote": "Not on this list? Say so on the call. If it isn't ours, we'll say that too.",
     "design": {
       "title": "Design",
-      "desc": "UX research, wireframes, and production-ready UI systems built in Figma.",
-      "i1": "UI/UX for web & mobile",
-      "i2": "Landing pages & corporate sites",
-      "i3": "SaaS & app interfaces",
-      "i4": "Brand identity & visual systems",
-      "i5": "Product presentation & marketing assets"
+      "desc": "UX for two-sided flows, verification and trust states, production-ready UI in Figma. We design the empty state first — it's what most of your early users will actually see.",
+      "i1": "Two-sided user flows",
+      "i2": "Verification and trust states",
+      "i3": "Empty-state design",
+      "i4": "Design systems",
+      "i5": "Production-ready Figma"
     },
     "dev": {
       "title": "Development",
-      "desc": "Custom web and mobile applications built for performance and scale.",
-      "i1": "Web apps, e-commerce & MVPs",
-      "i2": "iOS & Android applications",
-      "i3": "API development & integrations",
-      "i4": "SaaS platforms & real-time systems",
-      "i5": "Performance optimization & support"
+      "desc": "Web and mobile. Multi-tenant architecture, role and permission models, verification and payment rails, moderation and admin tooling.",
+      "i1": "Multi-tenant web and mobile",
+      "i2": "Roles and permissions",
+      "i3": "Verification and payments",
+      "i4": "Moderation and disputes",
+      "i5": "Admin tooling"
     },
     "marketing": {
       "title": "Marketing",
-      "desc": "Full go-to-market support – from SEO and ads to content strategy and CRM. Available as an add-on.",
+      "desc": "Cold-start acquisition, positioning, SEO, paid, CRM. Available as an add-on — and we'll tell you when your product isn't ready for traffic yet.",
       "basic": "Basic",
       "advanced": "Advanced",
       "premium": "Premium",
@@ -179,34 +179,26 @@
     },
     "ind": {
       "p2p": {
-        "title": "P2P Platforms",
-        "desc": "We build peer-to-peer platforms where trust is the product – with verification, escrow payments, and dispute resolution.",
-        "t1": "Sharing economy",
-        "t2": "Peer rental",
-        "t3": "Escrow"
+        "title": "P2P",
+        "desc": "Verification, trust, matching, disputes and payouts.",
+        "t1": "Verification",
+        "t2": "Matching",
+        "t3": "Payouts"
       },
       "community": {
-        "title": "Community",
-        "desc": "Community platforms connecting people around shared interests – with roles, permissions, real-time chat and events.",
-        "t1": "Private networks",
-        "t2": "Member portals",
+        "title": "Community & clubs",
+        "desc": "Membership, roles, events, dues and member directories.",
+        "t1": "Membership",
+        "t2": "Roles",
         "t3": "Events"
       },
       "logistics": {
         "title": "Logistics",
-        "desc": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization.",
-        "t1": "Fleet management",
-        "t2": "Shipment tracking",
-        "t3": "Route optimization",
-        "t4": "Logistics SaaS"
-      },
-      "agritech": {
-        "title": "Agritech",
-        "desc": "Building platforms for farm management, crop analytics, and supply chain visibility.",
-        "t1": "Farm management",
-        "t2": "Crop analytics",
-        "t3": "Supply chain",
-        "t4": "IoT platforms"
+        "desc": "Fleet, shipments, multi-party workflows and integrations.",
+        "t1": "Fleet",
+        "t2": "Shipments",
+        "t3": "Multi-party workflows",
+        "t4": "Integrations"
       }
     },
     "process": {
@@ -264,11 +256,6 @@
         "title": "Logistics",
         "description": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization. Two cases live – more in progress.",
         "tags": ["Fleet management", "Shipment tracking", "Route optimization", "Logistics SaaS"]
-      },
-      "agritech": {
-        "title": "Agritech",
-        "description": "Building platforms for farm management, crop analytics, and supply chain visibility. If you're working in this space – let's talk before we publish the cases.",
-        "tags": ["Farm management", "Crop analytics", "Supply chain", "IoT platforms"]
       }
     },
     "comingSoon": {
@@ -308,42 +295,42 @@
     "stepOptional": "optional"
   },
   "approach": {
-    "label": "Our approach",
-    "title": "We ask hard questions before we open Figma.",
-    "subtitle": "Most studios start with design. We start with understanding – who are the users, where do similar products fail, what does success look like in 6 months.",
+    "label": "How we think",
+    "title": "Most studios ask what you want built. We ask who shows up first.",
+    "subtitle": "A two-sided product is worthless on launch day and nobody warns you. Owners won't join without renters. Renters won't join without owners. Clubs won't pay for a network with three clubs in it. We start there, before a single screen exists — because that's the question that decides whether the thing lives.",
     "quote": {
-      "text": "Design comes after ",
-      "em": "clarity.",
-      "body": "We understand the business before we design or build. We take a limited number of projects to maintain quality and focus. We work with clients in Europe, USA, and Ukraine."
+      "text": "Design comes after the ",
+      "em": "cold start.",
+      "body": "The empty platform is the first product state we design for."
     },
     "how": {
       "label": "How we work",
       "1": {
-        "title": "Business first",
-        "desc": "We understand the business before we design or build anything."
+        "title": "We've been the client",
+        "desc": "We build and fund YachtMate ourselves — a platform for yacht clubs. We pay for our own mistakes, our own churn, our own empty first month. Very few studios can say that, and it changes how we argue with you."
       },
       "2": {
-        "title": "Limited projects",
-        "desc": "We take a limited number of projects to maintain quality and focus."
+        "title": "We'll tell you not to build it",
+        "desc": "Sometimes the answer is a spreadsheet, an existing tool, or nothing. We'd rather lose the project at the discovery call than six months in. Ask us for an example — we have them."
       },
       "3": {
-        "title": "Global clients",
-        "desc": "We work with clients in Europe, USA, and Ukraine."
+        "title": "Same timezone, EU contracts",
+        "desc": "Poznań, Poland. Your legal team gets an EU entity, your PM gets a team that's awake when they are, and nobody schedules a 6am standup."
       }
     },
     "values": {
-      "label": "What drives us",
+      "label": "What the product needs",
       "1": {
-        "title": "Quality over quantity",
-        "desc": "We'd rather do fewer projects exceptionally well than spread thin across many."
+        "title": "Cold start before pixels",
+        "desc": "The first question in every project: who joins on day one, and why do they stay while the other side is still empty?"
       },
       "2": {
-        "title": "Full transparency",
-        "desc": "You always know what's being built, why, and what's coming next. No surprises."
+        "title": "Trust is a feature, not a policy page",
+        "desc": "Verification, reputation, disputes, moderation. In a P2P product this isn't compliance — it's the product."
       },
       "3": {
-        "title": "True partnership",
-        "desc": "We treat your product like it's ours. Your success is the only metric that matters."
+        "title": "We ship the boring 20%",
+        "desc": "Admin panels, moderation queues, refund flows, dispute handling. Unglamorous, never in the portfolio, and the reason platforms survive their first year."
       }
     }
   },
@@ -354,11 +341,11 @@
     "whyTitle": "Our approach",
     "why1": "We understand the business before we design or build.",
     "why2": "We take a limited number of projects to maintain quality and focus.",
-    "why3": "We work with clients in Europe, USA, and Ukraine.",
-    "valuesTitle": "What drives us",
-    "value1": "Quality over quantity",
-    "value2": "Full transparency",
-    "value3": "True partnership",
+    "why3": "We work with clients across the EU, UK and US.",
+    "valuesTitle": "What the product needs",
+    "value1": "Cold start before pixels",
+    "value2": "Trust is a feature",
+    "value3": "We ship the boring 20%",
     "step1Title": "Discovery first",
     "step1Desc": "We map user flows, edge cases, and business logic before touching a single pixel. This is where most projects are won or lost.",
     "step2Title": "Design with intent",
@@ -369,58 +356,58 @@
     "step4Desc": "We don't disappear after launch. Most of our clients come back for the next product."
   },
   "team": {
-    "label": "The team",
-    "title": "The expertise behind your product.",
-    "subtitle": "Developers, designers, and marketers – each bringing deep experience to every project we take on.",
+    "label": "Who you'll actually work with",
+    "title": "3 people. The ones who scope it write it.",
+    "subtitle": "No account managers, no handoff to a junior bench after you sign. You talk to the people building the thing, for the whole project. That caps how much we can take on, which is why we run few projects at a time.",
     "developers": {
-      "title": "Developers",
-      "description": "We build fast, clean, and without shortcuts. From complex backend architecture to pixel-perfect frontend – our engineers have shipped products across fintech, e-commerce, and SaaS that users actually love to use.",
+      "title": "Engineering",
+      "description": "Backend that survives a marketplace: verification, matching, payments, roles, permissions. We've built the parts that get ugly at scale, and the admin tooling nobody demos.",
       "years": "15+",
       "yearsLabel": "years of experience"
     },
     "designers": {
-      "title": "Designers",
-      "description": "Interfaces that make people stop scrolling. Our designers work at the intersection of aesthetics and usability – crafting brand identities, UI systems, and interactive experiences that look premium and convert.",
+      "title": "Product & Design",
+      "description": "Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier.",
       "years": "10+",
       "yearsLabel": "years of experience"
     },
     "marketing": {
-      "title": "Marketing",
-      "description": "Launches that get noticed. We pair sharp positioning with data-driven execution – SEO, paid ads, and content strategy that builds real traction, not vanity metrics. Your product deserves an audience that actually converts.",
+      "title": "Go-to-market (optional add-on)",
+      "description": "The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach — and we'll say so when paid acquisition is the wrong answer.",
       "years": "10+",
       "yearsLabel": "years of experience"
     }
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Common questions",
-    "subtitle": "Clear answers to help you decide.",
+    "title": "Questions that decide whether we should work together",
+    "subtitle": "Straight answers before either side spends time on a proposal.",
     "cta": {
       "text": "Still have questions?",
       "sub": "We're happy to answer them directly.",
       "btn": "Book a free call"
     },
-    "q1": "What services do you offer?",
-    "a1": "We offer end-to-end product development: UX/UI design, web and mobile development, and marketing. You can order all three or just what you need.",
-    "q2": "What types of companies do you work with?",
-    "a2": "Startups and scale-ups in specific industries – P2P, community, logistics, and agritech. We prefer clients who know what they want to build.",
-    "q3": "Can I order only one service?",
-    "a3": "Yes. Design-only, development-only, or marketing-only engagements are all possible. We'll scope the project accordingly.",
-    "q4": "How does project pricing work?",
-    "a4": "We work with fixed-scope projects and retainer agreements. After a discovery call we send a detailed proposal with a clear price and timeline – no surprises.",
-    "q5": "What does the collaboration process look like?",
-    "a5": "Discovery → Design → Development → Launch. 1-week sprints with demos every cycle. You always know what's being built and what's next.",
-    "q6": "Do you offer support after launch?",
-    "a6": "Yes. We offer retainer plans for ongoing development, bug fixes, and feature iterations. Most clients stay with us after launch.",
-    "q7": "How do I start working with you?",
-    "a7": "Fill out the contact form or book a free 30-min discovery call. We'll review your project and get back to you within 24 hours.",
-    "q8": "How do I start working with you?",
-    "a8": "Simply contact us through the form and we will get back to you shortly."
+    "q1": "Will you build my Uber for X?",
+    "a1": "Maybe. But on the first call we'll ask which side you can get 100 of by hand, without ads. If there's no answer, the product isn't ready and we'll say so instead of taking the money.",
+    "q2": "Why only three industries?",
+    "a2": "Because a fourth would be a claim we can't back with work. We build platforms where participants have to find and trust each other — that shape repeats across P2P, clubs and logistics. Outside it we'd be guessing on your budget.",
+    "q3": "How much does a platform cost?",
+    "a3": "It depends on the trust model, number of participant roles and operational tooling. We'll give you a rough budget range on the first call and a fixed price after scope. If a prototype is the smarter first step, we'll say so.",
+    "q4": "Can I hire you for just design, or just development?",
+    "a4": "Yes. Design-only, build-only, or marketing-only all work. We'll scope it accordingly.",
+    "q5": "Do you work with existing codebases?",
+    "a5": "Yes. We'll audit first and give you an honest verdict, including \"rewrite\" or \"keep your current team.\"",
+    "q6": "What does working together look like?",
+    "a6": "Discovery → design → build → launch. One-week sprints, a demo every sprint. You always know what shipped and what's next.",
+    "q7": "What happens after launch?",
+    "a7": "Retainers for ongoing development and iteration. Most clients stay — but the first version is the one that decides whether there's anything to iterate on.",
+    "q8": "How do we start?",
+    "a8": "Book the free call or send the form. We reply within 24 hours with relevant cases and an honest read on fit."
   },
   "contact": {
-    "label": "Let's talk",
-    "title": "Tell us about your project",
-    "subtitle": "Share your goals and challenges. We'll show relevant cases and discuss the best approach for launch and growth.",
+    "label": "Contact",
+    "title": "Tell us what you're building.",
+    "subtitle": "Include who's on each side of your product and which one you can reach today. That single detail tells us more than a full spec.",
     "trust": {
       "reply": "Reply within 24h",
       "nospam": "No spam, ever",
@@ -429,20 +416,20 @@
     "steps": {
       "label": "What happens next",
       "1": {
-        "title": "You fill the form",
-        "desc": "Tell us what you're building, your budget, and when you want to launch."
+        "title": "You send the details",
+        "desc": "What you're building, who it's for, rough budget and timing."
       },
       "2": {
-        "title": "We review & respond",
-        "desc": "Within 24h we'll send you relevant cases and a proposed approach."
+        "title": "We reply in 24h",
+        "desc": "Relevant cases and an honest read on whether we're the right studio."
       },
       "3": {
-        "title": "Discovery call",
-        "desc": "Free 30-min call to align on scope, timeline, and next steps."
+        "title": "Free 30-min call",
+        "desc": "Scope, cold start and next steps."
       },
       "4": {
-        "title": "Proposal & kickoff",
-        "desc": "We send a detailed proposal. If it fits – we start."
+        "title": "Proposal",
+        "desc": "Fixed scope, fixed price, clear timeline. If it fits, we start."
       }
     },
     "form": {
@@ -473,70 +460,69 @@
     },
     "projectTypes": {
       "p2p": "P2P",
-      "community": "Community",
+      "community": "Community & clubs",
       "logistics": "Logistics",
-      "agritech": "Agritech",
       "other": "Other"
     },
     "budget": {
-      "small": "Small task / consult",
-      "1k5k": "€1k–5k",
-      "5k15k": "€5k–15k",
-      "15k": "€15k+"
+      "10k25k": "€10–25k",
+      "25k50k": "€25–50k",
+      "50k100k": "€50–100k",
+      "100k": "€100k+",
+      "unsure": "Not sure yet"
     },
     "consultation": {
       "discovery": "Discovery Call (Free)",
-      "strategy": "Strategy Session (€199)"
+      "strategy": "Cold Start Audit (€199)"
     }
   },
   "consultation": {
     "eyebrow": "Consultation",
-    "title": "Choose the right consultation format",
-    "subtitle": "Start with a free discovery call or book a detailed strategy session for complex products.",
+    "title": "Start with the question that kills most platforms.",
+    "subtitle": "Choose a free fit check or a focused audit of your cold-start problem.",
     "whatsIncluded": "What's included",
     "bookCall": "Book a call",
-    "bookSession": "Book a session",
+    "bookSession": "Book the audit",
     "discoveryBadge": "YOUR FIRST STEP",
     "strategyBadge": "Most popular before large projects",
     "discovery": {
       "title": "Discovery Call",
-      "subtitle": "Not sure where to start? Let's figure it out - no pitch, no pressure.",
+      "subtitle": "Tell us what you're building. We'll tell you whether it's ours, and whether it should exist.",
       "price": "Free",
       "duration": "30 min",
       "items": {
-        "projectOverview": "Project overview & goals",
-        "feasibility": "Quick feasibility check",
-        "timelineBudget": "Rough timeline & budget estimate",
-        "qa": "Q&A"
+        "projectOverview": "What you're building and for whom",
+        "feasibility": "Whether we're the right studio — often we're not",
+        "timelineBudget": "Rough scope, timeline and budget range",
+        "qa": "Straight answers, no deck"
       }
     },
     "strategy": {
-      "title": "Strategy Session",
-      "subtitle": "Most projects fail before a single line of code is written. This session prevents that.",
+      "title": "Cold Start Audit",
+      "subtitle": "Ninety minutes on the one question most teams skip: who shows up on day one, and why do they stay while the other side is still empty?",
       "price": "€199",
       "duration": "90 min",
       "items": {
-        "goalsAudience": "Deep-dive into business goals & audience",
-        "competitiveAnalysis": "Competitive analysis",
-        "techStack": "Tech stack recommendation",
-        "roadmap": "Full project roadmap with milestones",
-        "risk": "Risk assessment",
-        "recording": "Recorded session + written summary (PDF)",
-        "credit": "Amount is credited toward the project if you proceed"
+        "goalsAudience": "Which side you seed first, and how",
+        "competitiveAnalysis": "Where similar platforms died, specifically",
+        "techStack": "Trust, verification, tech stack and architecture",
+        "roadmap": "Full roadmap with milestones and risks",
+        "risk": "Cold-start risk assessment",
+        "recording": "Recorded, plus a written PDF summary",
+        "credit": "Credited in full toward the project"
       }
     }
   },
   "cases": {
     "eyebrow": "Our work",
-    "title": "Selected projects",
-    "subtitle": "Work across P2P, community, logistics, and agritech.",
-    "ndaBanner": "Most NDA projects can be discussed on a call.",
+    "title": "Five platforms that had to start empty.",
+    "subtitle": "P2P, community and logistics. Some are under NDA — we'll walk you through those on a call.",
+    "ndaBanner": "Some projects are under NDA — we'll walk you through those on a call.",
     "filterIndustries": {
       "all": "All projects",
       "p2p": "P2P",
       "community": "Community",
-      "logistics": "Logistics",
-      "agritech": "Agritech"
+      "logistics": "Logistics"
     },
     "section": {
       "viewAll": "View all cases"
@@ -544,7 +530,7 @@
     "page": {
       "label": "OUR WORK",
       "title": "Selected projects",
-      "subtitle": "Work across P2P, community, logistics, and agritech. Most NDA projects can be discussed on a call.",
+      "subtitle": "P2P, community and logistics. Some projects are under NDA — we'll walk you through those on a call.",
       "filter": {
         "all": "All"
       },
@@ -552,13 +538,13 @@
       "nda": "NDA · details on call",
       "cta": {
         "title": "Working on something in one of these spaces?",
-        "sub": "Have a project in P2P, community, logistics, or agritech? Let's discuss it.",
+        "sub": "If your product needs strangers to trust each other, that's our whole job.",
         "primary": "Discuss your project",
         "secondary": "Book a free call"
       },
       "metadata": {
         "title": "Selected projects | Ortvest",
-        "description": "Work across P2P, community, logistics, and agritech. Most NDA projects can be discussed on a call."
+        "description": "Platforms for P2P, community and logistics products where participants need to find and trust each other."
       }
     },
     "ndaProtected": "NDA protected",
@@ -572,23 +558,24 @@
     "inProgress": "In progress",
     "designBy": "Design by",
     "ndaDetails": "Book a call to learn more",
-    "ctaText": "Have a project in P2P, community, logistics, or agritech? Let's discuss it.",
+    "ctaTitle": "Building something two-sided?",
+    "ctaText": "Marketplace, P2P product, member network, multi-party logistics — if your product needs strangers to trust each other, that's our whole job.",
     "ctaButton": "Book a call",
     "ctaSecondary": "Get a quote",
-    "bottomCtaText": "Working on something in one of these spaces?",
-    "bottomCtaLink": "Let's talk about it →",
+    "bottomCtaText": "See the same cold-start problem in your product?",
+    "bottomCtaLink": "Let's talk about your day one →",
     "nicheCta": {
-      "p2p": "Building a P2P product?",
-      "community": "Building a community platform?",
-      "logistics": "Building a logistics platform?",
-      "agritech": "Building an agritech platform?",
-      "letsTalk": "Let's talk →"
+      "p2p": "Same problem?",
+      "community": "Same problem?",
+      "logistics": "Same problem?",
+      "letsTalk": "Let's talk about your day one →"
     },
     "categoryBadge": {
       "design": "Design",
       "development": "Development",
       "designAndDevelopment": "Design + Dev",
-      "marketing": "Marketing"
+      "marketing": "Marketing",
+      "brand": "Brand & Web"
     },
     "items": {
       "yachtmate": {
@@ -1645,10 +1632,10 @@
     "nav": "Navigation"
   },
   "metadata": {
-    "title": "Ortvest – IT Studio for P2P, Community, Logistics & Agritech",
-    "description": "Ortvest builds digital products for P2P platforms, community networks, logistics, and agritech – design, development, and marketing with deep industry expertise.",
-    "ogTitle": "Ortvest – P2P, Community, Logistics & Agritech",
-    "ogDescription": "Ortvest builds digital products for P2P platforms, community networks, logistics, and agritech – design, development, and marketing with deep industry expertise."
+    "title": "Ortvest — platforms for P2P, communities and logistics",
+    "description": "We build marketplaces, P2P products and member networks — the kind that only work once strangers trust each other. Design, development and go-to-market from Poznań, Poland.",
+    "ogTitle": "Ortvest — the hard part was never the code",
+    "ogDescription": "We build marketplaces, P2P products and member networks — the kind that only work once strangers trust each other."
   },
   "cmsPage": {
     "hero": {

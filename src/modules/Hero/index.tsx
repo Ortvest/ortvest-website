@@ -8,7 +8,6 @@ import {
   IconArrowsExchange,
   IconCode,
   IconPhone,
-  IconPlant,
   type IconProps,
   IconTruck,
   IconUsers,
@@ -42,7 +41,6 @@ const ORBIT_LINES = [
   { x2: 220, y2: 50, opacity: 0.22, dash: '4 5', strokeWidth: 0.9, dur: '2s' },
   { x2: 386, y2: 220, opacity: 0.22, dash: '4 5', strokeWidth: 0.9, dur: '2.4s' },
   { x2: 220, y2: 386, opacity: 0.22, dash: '4 5', strokeWidth: 0.9, dur: '1.9s' },
-  { x2: 54, y2: 220, opacity: 0.2, dash: '4 5', strokeWidth: 0.85, dur: '2.1s' },
 ] as const;
 
 export function Hero() {
@@ -64,13 +62,11 @@ export function Hero() {
       <div className="mx-auto max-w-[1160px]">
         <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12">
           <div>
+            <p className="mb-4 text-xs uppercase tracking-widest text-accent">{t('badge')}</p>
             <h1 id="hero-heading" className="mb-5 text-[38px] font-extrabold leading-[1.1] tracking-tight text-white">
               {t('title1')}
               <br />
               {t('title2')}
-              <br />
-              {t('title3')}
-              <em className="text-accent not-italic">{t('title3em')}</em>
             </h1>
 
             <p className="mb-7 max-w-[400px] text-[15px] leading-[1.75] text-zinc-400">{t('subtitle')}</p>
@@ -83,7 +79,7 @@ export function Hero() {
                 <IconArrowRight size={13} />
               </Link>
               <Link
-                href="#services"
+                href="#cases"
                 className="cursor-pointer rounded-full border border-zinc-800 bg-transparent px-[22px] py-[11px] text-[13px] text-white transition hover:border-zinc-600">
                 {t('cta.secondary')}
               </Link>
@@ -156,28 +152,20 @@ export function Hero() {
               label={t('nodes.p2p')}
             />
             <SatelliteNode
-              left="left-[87.7%]"
-              top="top-[50%]"
+              left="left-[83.5%]"
+              top="top-[69.3%]"
               circleClass="h-12 w-12"
               icon={IconUsers}
               iconSize={20}
               label={t('nodes.community')}
             />
             <SatelliteNode
-              left="left-[50%]"
-              top="top-[88.6%]"
+              left="left-[16.5%]"
+              top="top-[69.3%]"
               circleClass="h-12 w-12"
               icon={IconTruck}
               iconSize={20}
               label={t('nodes.logistics')}
-            />
-            <SatelliteNode
-              left="left-[12.3%]"
-              top="top-[50%]"
-              circleClass="h-12 w-12"
-              icon={IconPlant}
-              iconSize={20}
-              label={t('nodes.agritech')}
             />
           </div>
         </div>

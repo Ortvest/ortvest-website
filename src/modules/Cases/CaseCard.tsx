@@ -17,7 +17,6 @@ const NICHE_CTA_KEYS: Partial<Record<string, string>> = {
   p2p: 'p2p',
   community: 'community',
   logistics: 'logistics',
-  agritech: 'agritech',
 };
 
 export function CaseCard({ caseItem, compact = false }: CaseCardProps) {

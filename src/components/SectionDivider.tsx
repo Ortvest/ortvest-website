@@ -9,37 +9,40 @@ export async function SectionDivider() {
         <div className="flex flex-col items-center gap-4 py-6 sm:flex-row sm:items-center sm:gap-6">
           <div className="hidden h-px w-full flex-1 bg-zinc-900 sm:block" />
 
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-nowrap sm:items-center sm:justify-center sm:gap-8">
-            <div className="flex flex-col items-center sm:min-w-0">
-              <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
-                15<span className="sm:text-accent">+</span>
-              </p>
-              <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
-                {t('years')}
-              </p>
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-nowrap sm:items-center sm:justify-center sm:gap-8">
+              <div className="flex flex-col items-center sm:min-w-0">
+                <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
+                  5
+                </p>
+                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
+                  {t('platforms')}
+                </p>
+              </div>
+
+              <span className="hidden flex-shrink-0 text-zinc-500 sm:inline">·</span>
+
+              <div className="flex flex-col items-center sm:min-w-0">
+                <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
+                  1
+                </p>
+                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
+                  {t('funded')}
+                </p>
+              </div>
+
+              <span className="hidden flex-shrink-0 text-zinc-500 sm:inline">·</span>
+
+              <div className="flex flex-col items-center sm:min-w-0">
+                <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
+                  3
+                </p>
+                <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
+                  {t('industries')}
+                </p>
+              </div>
             </div>
-
-            <span className="hidden flex-shrink-0 text-zinc-500 sm:inline">·</span>
-
-            <div className="flex flex-col items-center sm:min-w-0">
-              <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
-                10<span className="sm:text-accent">+</span>
-              </p>
-              <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
-                {t('products')}
-              </p>
-            </div>
-
-            <span className="hidden flex-shrink-0 text-zinc-500 sm:inline">·</span>
-
-            <div className="flex flex-col items-center sm:min-w-0">
-              <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
-                4
-              </p>
-              <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:text-[11px]">
-                {t('niches')}
-              </p>
-            </div>
+            <p className="text-center text-[10px] uppercase tracking-[0.2em] text-zinc-500">{t('industryList')}</p>
           </div>
 
           <div className="hidden h-px w-full flex-1 bg-zinc-900 sm:block" />

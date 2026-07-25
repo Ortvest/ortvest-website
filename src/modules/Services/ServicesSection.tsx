@@ -29,7 +29,6 @@ import {
   IconClock,
   IconCode,
   IconPalette,
-  IconPlant,
   IconPlugConnected,
   type IconProps,
   IconRefresh,
@@ -66,7 +65,7 @@ const industries: {
   id: number;
   Icon: AnyIcon;
   number: string;
-  key: 'p2p' | 'community' | 'logistics' | 'agritech';
+  key: 'p2p' | 'community' | 'logistics';
   tagKeys: string[];
   colSpan2?: boolean;
 }[] = [
@@ -90,13 +89,7 @@ const industries: {
     number: '03',
     key: 'logistics',
     tagKeys: ['t1', 't2', 't3', 't4'],
-  },
-  {
-    id: 3,
-    Icon: IconPlant as AnyIcon,
-    number: '04',
-    key: 'agritech',
-    tagKeys: ['t1', 't2', 't3', 't4'],
+    colSpan2: true,
   },
 ];
 
@@ -184,7 +177,7 @@ const whatCards: WhatCard[] = [
     Icon: IconPalette,
     titleKey: 'design.title',
     descKey: 'design.desc',
-    tags: ['Figma', 'Prototyping', 'Design system'],
+    tags: ['Figma', 'Design systems', 'Prototyping'],
     itemKeys: ['design.i1', 'design.i2', 'design.i3', 'design.i4', 'design.i5'],
   },
   {
@@ -201,7 +194,7 @@ const whatCards: WhatCard[] = [
     titleKey: 'marketing.title',
     descKey: 'marketing.desc',
     optionalBadge: true,
-    tags: ['SEO', 'Ads', 'Content', 'CRM', 'Analytics'],
+    tags: ['Positioning', 'SEO', 'Ads', 'Content', 'CRM'],
     colSpan2: true,
     tiers: [
       {
@@ -430,6 +423,7 @@ function IndustriesTab({
           );
         })}
       </div>
+      <p className="text-center text-body-sm leading-relaxed text-zinc-400">{t('industryNote')}</p>
     </div>
   );
 }

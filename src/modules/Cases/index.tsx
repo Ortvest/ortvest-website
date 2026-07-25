@@ -53,6 +53,7 @@ export function Cases() {
           </div>
 
           <div className="mt-12 text-center">
+            <h2 className="mb-3 text-h2 font-bold text-black">{t('ctaTitle')}</h2>
             <p className="mx-auto mb-6 max-w-xl text-body-sm text-black/60">{t('ctaText')}</p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link

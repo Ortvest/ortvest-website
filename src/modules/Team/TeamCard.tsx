@@ -13,11 +13,9 @@ type TeamCardProps = {
   discipline: DisciplineItem;
   title: string;
   description: string;
-  years: string;
-  yearsLabel: string;
 };
 
-export function TeamCard({ discipline, title, description, years, yearsLabel }: TeamCardProps) {
+export function TeamCard({ discipline, title, description }: TeamCardProps) {
   const { Icon, iconBg, iconColor } = discipline;
 
   return (
@@ -27,10 +25,6 @@ export function TeamCard({ discipline, title, description, years, yearsLabel }: 
       </div>
       <h3 className="mb-3 text-h3 font-semibold text-zinc-950">{title}</h3>
       <p className="flex-1 text-body-sm leading-relaxed text-zinc-500">{description}</p>
-      <div className="mt-6 border-t border-zinc-100 pt-5">
-        <p className="text-[32px] font-bold leading-none tracking-tight text-zinc-950">{years}</p>
-        <p className="mt-1 text-xs uppercase tracking-widest text-zinc-400">{yearsLabel}</p>
-      </div>
     </article>
   );
 }

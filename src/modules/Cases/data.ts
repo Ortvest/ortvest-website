@@ -1,8 +1,8 @@
 export type CaseCategory = 'design' | 'development' | 'designAndDevelopment';
 export type DesignSubcategory = 'logo' | 'web' | 'brand';
 export type DevelopmentSubcategory = 'web' | 'mobile';
-export type CaseIndustry = 'logistics' | 'community' | 'p2p' | 'agritech';
-export type CaseServiceTag = 'marketing';
+export type CaseIndustry = 'logistics' | 'community' | 'p2p';
+export type CaseServiceTag = 'marketing' | 'brand';
 
 export interface CaseSection {
   id: string;
@@ -363,7 +363,7 @@ const portfolioCases: CaseItem[] = [
     category: 'design',
     designSubcategory: 'web',
     title: 'Gambit',
-    industries: ['community'],
+    serviceTags: ['brand'],
     challenge: 'Website UI needed modern design with strong visual hierarchy',
     solution: 'Clean interface with bold typography and strategic use of whitespace',
     stack: ['UI Design', 'Web Design', 'Figma'],
@@ -405,7 +405,7 @@ const portfolioCases: CaseItem[] = [
     category: 'design',
     designSubcategory: 'brand',
     title: '[Re.] skin&hair',
-    industries: ['community'],
+    serviceTags: ['brand'],
     challenge: 'Beauty brand needed modern, clean identity for skin and hair care line',
     solution: 'Minimalist brand system with organic shapes and premium feel',
     stack: ['Brand Identity', 'Visual Design', 'Adobe Illustrator'],

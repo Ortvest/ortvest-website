@@ -64,8 +64,6 @@ export function Team() {
               disciplines={disciplines}
               getTitle={(id) => t(`${id}.title`)}
               getDescription={(id) => t(`${id}.description`)}
-              getYears={(id) => t(`${id}.years`)}
-              getYearsLabel={(id) => t(`${id}.yearsLabel`)}
             />
           </div>
 
@@ -76,8 +74,6 @@ export function Team() {
                 discipline={discipline}
                 title={t(`${discipline.id}.title`)}
                 description={t(`${discipline.id}.description`)}
-                years={t(`${discipline.id}.years`)}
-                yearsLabel={t(`${discipline.id}.yearsLabel`)}
               />
             ))}
           </div>

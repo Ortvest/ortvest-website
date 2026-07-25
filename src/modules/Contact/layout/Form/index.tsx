@@ -8,14 +8,14 @@ import { useLocale, useTranslations } from 'next-intl';
 import { contactApi } from '@global/api/contact.api';
 import { IconArrowRight, IconCircleCheck, IconLoader2 } from '@tabler/icons-react';
 
-type ProjectType = 'p2p' | 'community' | 'logistics' | 'agritech' | 'other';
+type ProjectType = 'p2p' | 'community' | 'logistics' | 'other';
 
-type BudgetOption = 'small' | '1k5k' | '5k15k' | '15k';
+type BudgetOption = '10k25k' | '25k50k' | '50k100k' | '100k' | 'unsure';
 type ConsultationOption = 'discovery' | 'strategy';
 
-const PROJECT_TYPES: ProjectType[] = ['p2p', 'community', 'logistics', 'agritech', 'other'];
+const PROJECT_TYPES: ProjectType[] = ['p2p', 'community', 'logistics', 'other'];
 
-const BUDGET_OPTIONS: BudgetOption[] = ['small', '1k5k', '5k15k', '15k'];
+const BUDGET_OPTIONS: BudgetOption[] = ['10k25k', '25k50k', '50k100k', '100k', 'unsure'];
 const CONSULTATION_OPTIONS: ConsultationOption[] = ['discovery', 'strategy'];
 
 const inputClass =

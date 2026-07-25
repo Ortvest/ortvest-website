@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 
 import { IconArrowRight, IconChevronDown, IconHelpCircle } from '@tabler/icons-react';
 
-const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7'] as const;
+const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'] as const;
 
 export function FAQ() {
   const t = useTranslations('faq');

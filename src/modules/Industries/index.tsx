@@ -8,18 +8,10 @@ import { Container, SectionHeader, SectionReveal } from '@shared/components';
 import type { TablerIcon } from '@shared/types/icon.types';
 
 import { accordionContent } from '@lib/motion';
-import {
-  IconArrowsExchange,
-  IconArrowRight,
-  IconChevronDown,
-  IconLayoutDashboard,
-  IconPlant,
-  IconTruck,
-  IconUsers,
-} from '@tabler/icons-react';
+import { IconArrowsExchange, IconChevronDown, IconLayoutDashboard, IconTruck, IconUsers } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-const nicheKeys = ['p2p', 'community', 'logistics', 'agritech'] as const;
+const nicheKeys = ['p2p', 'community', 'logistics'] as const;
 
 type NicheKey = (typeof nicheKeys)[number];
 
@@ -27,14 +19,12 @@ const nicheIcons: Record<NicheKey, TablerIcon> = {
   p2p: IconArrowsExchange,
   community: IconUsers,
   logistics: IconTruck,
-  agritech: IconPlant,
 };
 
 const nicheIconSizes: Record<NicheKey, string> = {
   p2p: 'h-[22px] w-[22px]',
   community: 'h-6 w-6',
   logistics: 'h-5 w-5',
-  agritech: 'h-5 w-5',
 };
 
 const nicheCaseLinks: Partial<Record<NicheKey, string>> = {
@@ -53,16 +43,7 @@ type NicheCardProps = {
   onToggle: () => void;
 };
 
-function NicheCard({
-  nicheKey,
-  icon: Icon,
-  iconClassName,
-  tags,
-  index,
-  caseLink,
-  isOpen,
-  onToggle,
-}: NicheCardProps) {
+function NicheCard({ nicheKey, icon: Icon, iconClassName, tags, index, caseLink, isOpen, onToggle }: NicheCardProps) {
   const t = useTranslations('industries');
 
   return (

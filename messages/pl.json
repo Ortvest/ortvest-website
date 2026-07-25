@@ -15,30 +15,30 @@
     "menuSlogan": "Od pomysłu do startu. Jeden zespół."
   },
   "divider": {
-    "years": "lat łącznego doświadczenia",
-    "products": "produktów wdrożonych",
-    "niches": "niszy branżowych"
+    "platforms": "wdrożonych platform dwustronnych",
+    "funded": "własny finansowany produkt — YachtMate",
+    "industries": "branże. Żadnych innych deklaracji.",
+    "industryList": "P2P · Społeczności · Logistyka"
   },
   "hero": {
-    "badge": "Dostępni dla nowych projektów",
-    "title1": "Budujemy cyfrowe",
-    "title2": "produkty, które",
-    "title3": "ludzie ",
-    "title3em": "kochają.",
-    "subtitle": "Nie generyczne studio. Pracujemy w konkretnych branżach – P2P, społeczności, logistyka i agritech – i znamy problemy Twoich użytkowników od środka.",
+    "badge": "Dla marketplace'ów, produktów P2P i sieci członkowskich",
+    "title1": "Najtrudniejszy nigdy nie był kod.",
+    "title2": "Tylko pusta platforma.",
+    "title3": "",
+    "title3em": "",
+    "subtitle": "Marketplace'y, produkty P2P i sieci członkowskie działają dopiero wtedy, gdy obcy ludzie zaczynają sobie ufać. W tym się specjalizujemy — i pięć razy rozwiązaliśmy problem pierwszego dnia.",
     "cta": {
-      "primary": "Omów projekt",
-      "secondary": "Zobacz co robimy"
+      "primary": "Zobacz, jak rozwiązujemy cold start",
+      "secondary": "Zobacz realizacje"
     },
     "freecall": {
-      "text": "Nie wiesz?",
-      "link": "Umów darmową 30-min rozmowę →"
+      "text": "Nie wiesz, czy pasujemy? 30 minut, bez pitchu →",
+      "link": "Umów rozmowę"
     },
     "nodes": {
       "p2p": "P2P",
       "community": "Społeczności",
-      "logistics": "Logistyka",
-      "agritech": "Agrotech"
+      "logistics": "Logistyka"
     },
     "stats": {
       "products": "produktów wdrożonych",
@@ -54,8 +54,7 @@
     "nicheTags": {
       "p2p": "P2P",
       "community": "Społeczności",
-      "logistics": "Logistyka",
-      "agritech": "Agritech"
+      "logistics": "Logistyka"
     },
     "ctaPrimary": "Omów projekt",
     "ctaSecondary": "Zobacz co robimy",
@@ -63,7 +62,7 @@
     "trustCtaLink": "Umów darmową 30-min rozmowę",
     "trust1": "Podejście od strategii",
     "trust2": "Pełny cykl realizacji",
-    "trust3": "Europa, USA i Ukraina"
+    "trust3": "Klienci z UE, Wielkiej Brytanii i USA"
   },
   "services": {
     "eyebrow": "Co robimy",
@@ -123,9 +122,9 @@
     }
   },
   "servicesSection": {
-    "label": "Usługi",
-    "title": "Wszystko do startu i wzrostu.",
-    "subtitle": "Od strategii przez kod do wejścia na rynek – budujemy, wdrażamy i skalujemy produkty cyfrowe.",
+    "label": "Co robimy",
+    "title": "Dla produktów, w których nikt jeszcze się nie zna.",
+    "subtitle": "Design, development i opcjonalne wejście na rynek dla produktów dwustronnych.",
     "tabs": {
       "what": "Co robimy",
       "industries": "Branże",
@@ -140,27 +139,28 @@
     "expanding": "Rozwijamy kierunek",
     "comingSoon": "Wkrótce",
     "letsTalk": "Porozmawiajmy wcześniej",
+    "industryNote": "Nie ma Cię na tej liście? Powiedz o tym podczas rozmowy. Jeśli to nie nasza branża, też powiemy wprost.",
     "design": {
       "title": "Design",
-      "desc": "Badania UX, wireframe'y i gotowe systemy UI w Figmie.",
-      "i1": "UI/UX dla web i mobile",
-      "i2": "Landing pages i strony korporacyjne",
-      "i3": "Interfejsy SaaS i aplikacji",
-      "i4": "Tożsamość marki i systemy wizualne",
-      "i5": "Prezentacje produktów i materiały marketingowe"
+      "desc": "UX dla dwustronnych procesów, weryfikacji i stanów zaufania oraz gotowe UI w Figmie. Najpierw projektujemy pusty stan — to właśnie zobaczy większość pierwszych użytkowników.",
+      "i1": "Dwustronne ścieżki użytkowników",
+      "i2": "Weryfikacja i stany zaufania",
+      "i3": "Projektowanie pustych stanów",
+      "i4": "Systemy designu",
+      "i5": "Gotowe pliki Figma"
     },
     "dev": {
       "title": "Development",
-      "desc": "Dedykowane aplikacje webowe i mobilne na wydajność i skalę.",
-      "i1": "Aplikacje webowe, e-commerce i MVP",
-      "i2": "Aplikacje iOS i Android",
-      "i3": "Rozwój API i integracje",
-      "i4": "Platformy SaaS i systemy real-time",
-      "i5": "Optymalizacja wydajności i wsparcie"
+      "desc": "Web i mobile. Architektura multi-tenant, role i uprawnienia, weryfikacja, płatności, moderacja i narzędzia administracyjne.",
+      "i1": "Web i mobile multi-tenant",
+      "i2": "Role i uprawnienia",
+      "i3": "Weryfikacja i płatności",
+      "i4": "Moderacja i spory",
+      "i5": "Narzędzia administracyjne"
     },
     "marketing": {
       "title": "Marketing",
-      "desc": "Pełne wsparcie wejścia na rynek – od SEO i reklam po strategię contentową i CRM.",
+      "desc": "Pozyskanie pierwszych użytkowników, pozycjonowanie, SEO, reklamy i CRM. Jako dodatek — i powiemy, jeśli produkt nie jest jeszcze gotowy na ruch.",
       "basic": "Podstawowy",
       "advanced": "Rozszerzony",
       "premium": "Premium",
@@ -179,34 +179,26 @@
     },
     "ind": {
       "p2p": {
-        "title": "Platformy P2P",
-        "desc": "Budujemy platformy P2P, gdzie zaufanie jest produktem – z weryfikacją, płatnościami escrow i rozwiązywaniem sporów.",
-        "t1": "Ekonomia współdzielenia",
-        "t2": "Wynajem P2P",
-        "t3": "Escrow"
+        "title": "P2P",
+        "desc": "Weryfikacja, zaufanie, dopasowanie, spory i wypłaty.",
+        "t1": "Weryfikacja",
+        "t2": "Dopasowanie",
+        "t3": "Wypłaty"
       },
       "community": {
-        "title": "Społeczności",
-        "desc": "Platformy dla społeczności – z rolami, uprawnieniami, czatem w czasie rzeczywistym i wydarzeniami.",
-        "t1": "Sieci prywatne",
-        "t2": "Portale członkowskie",
+        "title": "Społeczności i kluby",
+        "desc": "Członkostwo, role, wydarzenia, składki i katalogi członków.",
+        "t1": "Członkostwo",
+        "t2": "Role",
         "t3": "Wydarzenia"
       },
       "logistics": {
         "title": "Logistyka",
-        "desc": "Pracujemy ze startupami i SME nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras.",
-        "t1": "Zarządzanie flotą",
-        "t2": "Śledzenie przesyłek",
-        "t3": "Optymalizacja tras",
-        "t4": "Logistyczny SaaS"
-      },
-      "agritech": {
-        "title": "Agritech",
-        "desc": "Budujemy platformy do zarządzania gospodarstwami, analizy plonów i widoczności łańcucha dostaw.",
-        "t1": "Zarządzanie gospodarstwem",
-        "t2": "Analityka plonów",
-        "t3": "Łańcuch dostaw",
-        "t4": "Platformy IoT"
+        "desc": "Flota, przesyłki, procesy wielostronne i integracje.",
+        "t1": "Flota",
+        "t2": "Przesyłki",
+        "t3": "Procesy wielostronne",
+        "t4": "Integracje"
       }
     },
     "process": {
@@ -264,11 +256,6 @@
         "title": "Logistyka",
         "description": "Pracujemy ze startupami i MŚP logistycznymi nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras. Dwa case studies opublikowane – więcej w toku.",
         "tags": ["Zarządzanie flotą", "Śledzenie przesyłek", "Optymalizacja tras", "Logistics SaaS"]
-      },
-      "agritech": {
-        "title": "Agritech",
-        "description": "Budujemy platformy do zarządzania farmą, analityki plonów i widoczności łańcucha dostaw. Jeśli działasz w tej przestrzeni – porozmawiajmy zanim opublikujemy case studies.",
-        "tags": ["Zarządzanie farmą", "Analityka plonów", "Łańcuch dostaw", "Platformy IoT"]
       }
     },
     "comingSoon": {
@@ -308,42 +295,42 @@
     "stepOptional": "opcjonalnie"
   },
   "approach": {
-    "label": "Nasze podejście",
-    "title": "Zadajemy trudne pytania zanim otworzymy Figmę.",
-    "subtitle": "Większość studiów zaczyna od designu. My zaczynamy od zrozumienia – kim są użytkownicy, gdzie podobne produkty zawodzą, jak wygląda sukces za 6 miesięcy.",
+    "label": "Jak myślimy",
+    "title": "Większość studiów pyta, co zbudować. My pytamy, kto pojawi się pierwszy.",
+    "subtitle": "Dwustronny produkt w dniu premiery jest bezwartościowy i nikt o tym nie ostrzega. Właściciele nie przyjdą bez najemców. Najemcy bez właścicieli. Kluby nie zapłacą za sieć z trzema klubami. Zaczynamy właśnie tutaj, zanim powstanie pierwszy ekran — bo ta odpowiedź decyduje, czy produkt przeżyje.",
     "quote": {
-      "text": "Design przychodzi po ",
-      "em": "jasności.",
-      "body": "Rozumiemy biznes zanim zaczniemy projektować lub budować. Przyjmujemy ograniczoną liczbę projektów, aby zachować jakość i skupienie. Pracujemy z klientami z Europy, USA i Ukrainy."
+      "text": "Design zaczyna się po rozwiązaniu ",
+      "em": "cold startu.",
+      "body": "Pusta platforma to pierwszy stan produktu, który projektujemy."
     },
     "how": {
       "label": "Jak pracujemy",
       "1": {
-        "title": "Biznes na pierwszym miejscu",
-        "desc": "Rozumiemy biznes zanim zaczniemy projektować lub budować cokolwiek."
+        "title": "Sami byliśmy klientem",
+        "desc": "Sami budujemy i finansujemy YachtMate — platformę dla klubów jachtowych. Płacimy za własne błędy, własny churn i własny pusty pierwszy miesiąc. Niewiele studiów może to powiedzieć i zmienia to sposób, w jaki z Tobą dyskutujemy."
       },
       "2": {
-        "title": "Ograniczona liczba projektów",
-        "desc": "Przyjmujemy ograniczoną liczbę projektów, aby zachować jakość i skupienie."
+        "title": "Powiemy Ci, żeby tego nie budować",
+        "desc": "Czasem odpowiedzią jest arkusz, gotowe narzędzie albo nic. Wolimy stracić projekt na rozmowie niż po sześciu miesiącach. Zapytaj o przykład — mamy kilka."
       },
       "3": {
-        "title": "Globalni klienci",
-        "desc": "Pracujemy z klientami z Europy, USA i Ukrainy."
+        "title": "Ta sama strefa czasowa, umowy w UE",
+        "desc": "Poznań, Polska. Twój dział prawny dostaje podmiot z UE, PM zespół pracujący w tych samych godzinach, a nikt nie ustawia standupu na 6 rano."
       }
     },
     "values": {
-      "label": "Co nami kieruje",
+      "label": "Czego potrzebuje produkt",
       "1": {
-        "title": "Jakość ponad ilość",
-        "desc": "Wolimy zrobić mniej projektów wyjątkowo dobrze niż rozpraszać się na wiele."
+        "title": "Cold start przed pikselami",
+        "desc": "Pierwsze pytanie w każdym projekcie: kto dołącza pierwszego dnia i dlaczego zostaje, gdy druga strona wciąż jest pusta?"
       },
       "2": {
-        "title": "Pełna przejrzystość",
-        "desc": "Zawsze wiesz, co jest budowane, dlaczego i co będzie dalej. Żadnych niespodzianek."
+        "title": "Zaufanie to funkcja, nie strona regulaminu",
+        "desc": "Weryfikacja, reputacja, spory, moderacja. W produkcie P2P to nie compliance — to produkt."
       },
       "3": {
-        "title": "Prawdziwe partnerstwo",
-        "desc": "Traktujemy Twój produkt jak własny. Twój sukces to jedyna miara, która się liczy."
+        "title": "Dostarczamy nudne 20%",
+        "desc": "Panele administracyjne, kolejki moderacji, zwroty i obsługa sporów. Nie wyglądają dobrze w portfolio, ale dzięki nim platformy przeżywają pierwszy rok."
       }
     }
   },
@@ -354,11 +341,11 @@
     "whyTitle": "Nasze podejście",
     "why1": "Rozumiemy biznes zanim zaprojektujemy lub zbudujemy.",
     "why2": "Przyjmujemy ograniczoną liczbę projektów, by zachować jakość i skupienie.",
-    "why3": "Pracujemy z klientami w Europie, USA i Ukrainie.",
-    "valuesTitle": "Co nami kieruje",
-    "value1": "Jakość ponad ilość",
-    "value2": "Pełna transparentność",
-    "value3": "Prawdziwe partnerstwo",
+    "why3": "Pracujemy z klientami z UE, Wielkiej Brytanii i USA.",
+    "valuesTitle": "Czego potrzebuje produkt",
+    "value1": "Cold start przed pikselami",
+    "value2": "Zaufanie to funkcja",
+    "value3": "Dostarczamy nudne 20%",
     "step1Title": "Najpierw discovery",
     "step1Desc": "Mapujemy przepływy użytkowników, edge case'y i logikę biznesową zanim dotkniemy pojedynczego piksela. Tu wygrywa lub przegrywa większość projektów.",
     "step2Title": "Design z intencją",
@@ -369,58 +356,58 @@
     "step4Desc": "Nie znikamy po starcie. Większość naszych klientów wraca po kolejny produkt."
   },
   "team": {
-    "label": "Zespół",
-    "title": "Ekspertyza za Twoim produktem.",
-    "subtitle": "Deweloperzy, designerzy i marketerzy – każdy z głębokim doświadczeniem w każdym projekcie, który podejmujemy.",
+    "label": "Z kim naprawdę będziesz pracować",
+    "title": "3 osoby. Ci, którzy wyceniają, także piszą kod.",
+    "subtitle": "Bez account managerów i bez przekazania projektu juniorom po podpisaniu umowy. Przez cały projekt rozmawiasz z ludźmi, którzy go budują. To ogranicza liczbę zleceń, dlatego prowadzimy tylko kilka naraz.",
     "developers": {
-      "title": "Deweloperzy",
-      "description": "Budujemy szybko, czysto i bez skrótów. Od złożonej architektury backendu po pixel-perfect frontend – nasi inżynierowie wdrażali produkty w fintech, e-commerce i SaaS, z których użytkownicy naprawdę lubią korzystać.",
+      "title": "Engineering",
+      "description": "Backend, który wytrzyma marketplace: weryfikacja, dopasowanie, płatności, role i uprawnienia. Budowaliśmy elementy, które robią się trudne przy skali, oraz narzędzia administracyjne, których nikt nie pokazuje na demo.",
       "years": "15+",
       "yearsLabel": "lat doświadczenia"
     },
     "designers": {
-      "title": "Designerzy",
-      "description": "Interfejsy, przy których ludzie przestają scrollować. Nasi designerzy pracują na styku estetyki i użyteczności – tworzą tożsamości marek, systemy UI i interaktywne doświadczenia, które wyglądają premium i konwertują.",
+      "title": "Produkt i design",
+      "description": "Interfejsy dla produktów, w których dwie osoby chcą czegoś innego z tego samego ekranu. Właściciel i najemca. Klub i członek. Nadawca i przewoźnik.",
       "years": "10+",
       "yearsLabel": "lat doświadczenia"
     },
     "marketing": {
-      "title": "Marketing",
-      "description": "Launche, które są zauważane. Łączymy ostre pozycjonowanie z data-driven execution – SEO, płatne reklamy i strategię contentową, która buduje realny traction, a nie vanity metrics. Twój produkt zasługuje na publiczność, która naprawdę konwertuje.",
+      "title": "Go-to-market (opcjonalnie)",
+      "description": "Pierwszych stu użytkowników po każdej stronie nie przyjdzie z reklam. Robiliśmy ręczny onboarding, seedowanie podaży i founder-led outreach — i powiemy, kiedy płatna akwizycja jest złą odpowiedzią.",
       "years": "10+",
       "yearsLabel": "lat doświadczenia"
     }
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Częste pytania",
-    "subtitle": "Jasne odpowiedzi, które pomogą Ci podjąć decyzję.",
+    "title": "Pytania, które decydują, czy powinniśmy pracować razem",
+    "subtitle": "Konkretne odpowiedzi, zanim którakolwiek strona poświęci czas na ofertę.",
     "cta": {
       "text": "Masz jeszcze pytania?",
       "sub": "Chętnie odpowiemy bezpośrednio.",
       "btn": "Umów darmową rozmowę"
     },
-    "q1": "Jakie usługi oferujecie?",
-    "a1": "Oferujemy pełny cykl rozwoju produktu: design UX/UI, development web i mobile oraz marketing. Możesz zamówić wszystko lub tylko to, czego potrzebujesz.",
-    "q2": "Dla jakich firm pracujecie?",
-    "a2": "Startupy i scale-upy w konkretnych branżach – P2P, społeczności, logistyka i agritech. Preferujemy klientów, którzy wiedzą, co chcą budować.",
-    "q3": "Czy mogę zamówić tylko jedną usługę?",
-    "a3": "Tak. Możliwe są osobne projekty tylko design, development lub marketing. Dopasujemy zakres do Twoich potrzeb.",
-    "q4": "Jak wygląda wycena projektu?",
-    "a4": "Pracujemy w modelu fixed-scope i retainer. Po rozmowie discovery wysyłamy szczegółową propozycję z jasną ceną i harmonogramem – bez niespodzianek.",
-    "q5": "Jak wygląda proces współpracy?",
-    "a5": "Discovery → Design → Development → Launch. 1-tygodniowe sprinty z demo w każdym cyklu. Zawsze wiesz, co jest budowane i co dalej.",
-    "q6": "Czy oferujecie wsparcie po wdrożeniu?",
-    "a6": "Tak. Oferujemy plany retainer na bieżący development, poprawki błędów i nowe funkcje. Większość klientów zostaje z nami po launchu.",
-    "q7": "Jak zacząć współpracę?",
-    "a7": "Wypełnij formularz kontaktowy lub umów darmową 30-min rozmowę discovery. Przeanalizujemy projekt i odpowiemy w ciągu 24 godzin.",
-    "q8": "Jak zacząć współpracę?",
-    "a8": "Wystarczy skontaktować się przez formularz. Odpowiemy wkrótce."
+    "q1": "Czy zbudujecie mojego Ubera dla X?",
+    "a1": "Może. Ale podczas pierwszej rozmowy zapytamy, po której stronie potrafisz zdobyć ręcznie 100 osób, bez reklam. Jeśli nie ma odpowiedzi, produkt nie jest gotowy i powiemy to zamiast brać pieniądze.",
+    "q2": "Dlaczego tylko trzy branże?",
+    "a2": "Bo czwarta byłaby deklaracją bez pokrycia w realizacjach. Budujemy platformy, na których uczestnicy muszą się znaleźć i sobie zaufać — ten schemat powtarza się w P2P, klubach i logistyce. Poza nim zgadywalibyśmy za Twój budżet.",
+    "q3": "Ile kosztuje platforma?",
+    "a3": "To zależy od modelu zaufania, liczby ról i narzędzi operacyjnych. Podczas pierwszej rozmowy podamy przedział, a po ustaleniu zakresu stałą cenę. Jeśli lepszym pierwszym krokiem jest prototyp, powiemy to.",
+    "q4": "Czy mogę zatrudnić Was tylko do designu albo developmentu?",
+    "a4": "Tak. Sam design, sam development lub sam marketing — dopasujemy zakres.",
+    "q5": "Czy pracujecie z istniejącym kodem?",
+    "a5": "Tak. Najpierw zrobimy audyt i wydamy uczciwy werdykt, również „przepisać” albo „zostać z obecnym zespołem”.",
+    "q6": "Jak wygląda współpraca?",
+    "a6": "Discovery → design → build → launch. Tygodniowe sprinty i demo po każdym z nich. Zawsze wiesz, co wdrożyliśmy i co dalej.",
+    "q7": "Co dzieje się po wdrożeniu?",
+    "a7": "Retainery na dalszy rozwój i iteracje. Większość klientów zostaje — ale pierwsza wersja decyduje, czy będzie co rozwijać.",
+    "q8": "Jak zaczynamy?",
+    "a8": "Umów darmową rozmowę albo wyślij formularz. W ciągu 24 godzin odpowiemy z odpowiednimi realizacjami i uczciwą oceną dopasowania."
   },
   "contact": {
-    "label": "Porozmawiajmy",
-    "title": "Opowiedz o swoim projekcie",
-    "subtitle": "Podziel się celami i wyzwaniami. Pokażemy odpowiednie realizacje i omówimy najlepsze podejście do startu i wzrostu.",
+    "label": "Kontakt",
+    "title": "Powiedz nam, co budujesz.",
+    "subtitle": "Napisz, kto jest po obu stronach produktu i do której z nich masz dziś dostęp. Ten szczegół mówi nam więcej niż pełna specyfikacja.",
     "trust": {
       "reply": "Odpowiedź w 24h",
       "nospam": "Zero spamu",
@@ -429,20 +416,20 @@
     "steps": {
       "label": "Co dalej",
       "1": {
-        "title": "Wypełniasz formularz",
-        "desc": "Opowiedz, co budujesz, jaki masz budżet i kiedy chcesz uruchomić."
+        "title": "Wysyłasz szczegóły",
+        "desc": "Co budujesz, dla kogo, orientacyjny budżet i termin."
       },
       "2": {
-        "title": "Przeglądamy i odpowiadamy",
-        "desc": "W ciągu 24h wyślemy odpowiednie case studies i proponowane podejście."
+        "title": "Odpowiadamy w 24h",
+        "desc": "Odpowiednie realizacje i uczciwa ocena, czy jesteśmy właściwym studiem."
       },
       "3": {
-        "title": "Rozmowa discovery",
-        "desc": "Darmowa 30-min rozmowa, aby uzgodnić zakres, harmonogram i kolejne kroki."
+        "title": "Darmowa rozmowa 30 min",
+        "desc": "Zakres, cold start i kolejne kroki."
       },
       "4": {
-        "title": "Propozycja i start",
-        "desc": "Wysyłamy szczegółową propozycję. Jeśli pasuje – zaczynamy."
+        "title": "Oferta",
+        "desc": "Stały zakres, stała cena i jasny termin. Jeśli pasuje, zaczynamy."
       }
     },
     "form": {
@@ -473,70 +460,69 @@
     },
     "projectTypes": {
       "p2p": "P2P",
-      "community": "Społeczności",
+      "community": "Społeczności i kluby",
       "logistics": "Logistyka",
-      "agritech": "Agritech",
       "other": "Inne"
     },
     "budget": {
-      "small": "Małe zadanie / konsultacja",
-      "1k5k": "€1k–5k",
-      "5k15k": "€5k–15k",
-      "15k": "€15k+"
+      "10k25k": "€10–25k",
+      "25k50k": "€25–50k",
+      "50k100k": "€50–100k",
+      "100k": "€100k+",
+      "unsure": "Jeszcze nie wiem"
     },
     "consultation": {
       "discovery": "Discovery Call (Darmowe)",
-      "strategy": "Strategy Session (€199)"
+      "strategy": "Audyt Cold Start (€199)"
     }
   },
   "consultation": {
     "eyebrow": "Konsultacja",
-    "title": "Wybierz format konsultacji",
-    "subtitle": "Zacznij od darmowej rozmowy discovery albo umów szczegółową sesję strategiczną dla większych produktów.",
+    "title": "Zacznij od pytania, które zabija większość platform.",
+    "subtitle": "Wybierz darmową ocenę dopasowania albo skupiony audyt problemu cold start.",
     "whatsIncluded": "Co zawiera",
     "bookCall": "Umów rozmowę",
-    "bookSession": "Umów sesję",
+    "bookSession": "Umów audyt",
     "discoveryBadge": "TWÓJ PIERWSZY KROK",
     "strategyBadge": "Najpopularniejsze przed dużymi projektami",
     "discovery": {
       "title": "Discovery Call",
-      "subtitle": "Nie wiesz, od czego zacząć? Ustalimy to razem - bez sprzedażowej presji.",
+      "subtitle": "Powiedz, co budujesz. Powiemy, czy to nasza działka i czy ten produkt powinien powstać.",
       "price": "Darmowe",
       "duration": "30 min",
       "items": {
-        "projectOverview": "Przegląd projektu i celów",
-        "feasibility": "Szybka ocena wykonalności",
-        "timelineBudget": "Wstępny harmonogram i estymacja budżetu",
-        "qa": "Q&A"
+        "projectOverview": "Co budujesz i dla kogo",
+        "feasibility": "Czy jesteśmy właściwym studiem — często nie",
+        "timelineBudget": "Wstępny zakres, termin i przedział budżetu",
+        "qa": "Konkretne odpowiedzi, bez prezentacji"
       }
     },
     "strategy": {
-      "title": "Strategy Session",
-      "subtitle": "Większość projektów upada, zanim powstanie pierwsza linia kodu. Ta sesja temu zapobiega.",
+      "title": "Audyt Cold Start",
+      "subtitle": "Dziewięćdziesiąt minut nad pytaniem, które większość zespołów pomija: kto pojawi się pierwszego dnia i dlaczego zostanie, gdy druga strona wciąż jest pusta?",
       "price": "€199",
       "duration": "90 min",
       "items": {
-        "goalsAudience": "Dogłębna analiza celów biznesowych i odbiorców",
-        "competitiveAnalysis": "Analiza konkurencji",
-        "techStack": "Rekomendacja stacku technologicznego",
-        "roadmap": "Pełna roadmapa projektu z kamieniami milowymi",
-        "risk": "Ocena ryzyk",
-        "recording": "Nagranie sesji + podsumowanie pisemne (PDF)",
-        "credit": "Kwota jest zaliczana na poczet projektu, jeśli podejmiesz współpracę"
+        "goalsAudience": "Którą stronę zasilasz pierwszą i jak",
+        "competitiveAnalysis": "Gdzie dokładnie umarły podobne platformy",
+        "techStack": "Model zaufania, weryfikacja, stack i architektura",
+        "roadmap": "Pełna roadmapa z etapami i ryzykami",
+        "risk": "Ocena ryzyka cold start",
+        "recording": "Nagranie i pisemne podsumowanie PDF",
+        "credit": "Pełna kwota odliczana od projektu"
       }
     }
   },
   "cases": {
     "eyebrow": "Nasze projekty",
-    "title": "Wybrane realizacje",
-    "subtitle": "Projekty w P2P, społecznościach, logistyce i agritech.",
-    "ndaBanner": "Większość projektów NDA można omówić podczas rozmowy.",
+    "title": "Pięć platform, które musiały zacząć od pustki.",
+    "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA — omówimy je podczas rozmowy.",
+    "ndaBanner": "Część projektów jest objęta NDA — omówimy je podczas rozmowy.",
     "filterIndustries": {
       "all": "Wszystkie projekty",
       "p2p": "P2P",
       "community": "Społeczności",
-      "logistics": "Logistyka",
-      "agritech": "Agritech"
+      "logistics": "Logistyka"
     },
     "section": {
       "viewAll": "Zobacz wszystkie projekty"
@@ -544,7 +530,7 @@
     "page": {
       "label": "NASZE PROJEKTY",
       "title": "Wybrane projekty",
-      "subtitle": "Prace w obszarach P2P, społeczności, logistyki i agritech. Większość projektów NDA można omówić na rozmowie.",
+      "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA — omówimy je podczas rozmowy.",
       "filter": {
         "all": "Wszystkie"
       },
@@ -552,13 +538,13 @@
       "nda": "NDA · szczegóły na rozmowie",
       "cta": {
         "title": "Pracujesz nad czymś w tych obszarach?",
-        "sub": "Masz projekt w P2P, społeczności, logistyce lub agritech? Porozmawiajmy.",
+        "sub": "Jeśli Twój produkt wymaga zaufania między obcymi osobami, to jest cała nasza praca.",
         "primary": "Omów projekt",
         "secondary": "Zarezerwuj rozmowę"
       },
       "metadata": {
         "title": "Wybrane projekty | Ortvest",
-        "description": "Prace w obszarach P2P, społeczności, logistyki i agritech. Większość projektów NDA można omówić na rozmowie."
+        "description": "Platformy P2P, społecznościowe i logistyczne, na których uczestnicy muszą się znaleźć i sobie zaufać."
       }
     },
     "ndaProtected": "Chronione NDA",
@@ -572,23 +558,24 @@
     "inProgress": "W trakcie",
     "designBy": "Projekt",
     "ndaDetails": "Umów rozmowę, aby dowiedzieć się więcej",
-    "ctaText": "Masz projekt w P2P, społeczności, logistyce lub agritech? Porozmawiajmy.",
+    "ctaTitle": "Budujesz coś dwustronnego?",
+    "ctaText": "Marketplace, produkt P2P, sieć członkowska, logistyka wielostronna — jeśli produkt wymaga zaufania między obcymi osobami, to jest cała nasza praca.",
     "ctaButton": "Umów rozmowę",
     "ctaSecondary": "Wyceń projekt",
-    "bottomCtaText": "Pracujesz nad czymś w jednej z tych nisz?",
-    "bottomCtaLink": "Porozmawiajmy o tym →",
+    "bottomCtaText": "Widzisz ten sam problem cold start w swoim produkcie?",
+    "bottomCtaLink": "Porozmawiajmy o Twoim pierwszym dniu →",
     "nicheCta": {
-      "p2p": "Budujesz produkt P2P?",
-      "community": "Budujesz platformę społecznościową?",
-      "logistics": "Budujesz platformę logistyczną?",
-      "agritech": "Budujesz platformę agritech?",
-      "letsTalk": "Porozmawiajmy →"
+      "p2p": "Ten sam problem?",
+      "community": "Ten sam problem?",
+      "logistics": "Ten sam problem?",
+      "letsTalk": "Porozmawiajmy o Twoim pierwszym dniu →"
     },
     "categoryBadge": {
       "design": "Design",
       "development": "Development",
       "designAndDevelopment": "Design + Dev",
-      "marketing": "Marketing"
+      "marketing": "Marketing",
+      "brand": "Brand & Web"
     },
     "items": {
       "yachtmate": {
@@ -1645,10 +1632,10 @@
     "nav": "Nawigacja"
   },
   "metadata": {
-    "title": "Ortvest – Studio IT dla P2P, Społeczności, Logistyki i Agritech",
-    "description": "Ortvest buduje produkty cyfrowe dla platform P2P, sieci społecznościowych, logistyki i agritech – design, development i marketing z głęboką ekspertyzą branżową.",
-    "ogTitle": "Ortvest – P2P, Społeczności, Logistyka i Agritech",
-    "ogDescription": "Ortvest buduje produkty cyfrowe dla platform P2P, sieci społecznościowych, logistyki i agritech – design, development i marketing z głęboką ekspertyzą branżową."
+    "title": "Ortvest — platformy dla P2P, społeczności i logistyki",
+    "description": "Budujemy marketplace'y, produkty P2P i sieci członkowskie — takie, które działają dopiero, gdy obcy ludzie sobie ufają. Design, development i go-to-market z Poznania.",
+    "ogTitle": "Ortvest — najtrudniejszy nigdy nie był kod",
+    "ogDescription": "Budujemy marketplace'y, produkty P2P i sieci członkowskie — takie, które działają dopiero, gdy obcy ludzie sobie ufają."
   },
   "cmsPage": {
     "hero": {
