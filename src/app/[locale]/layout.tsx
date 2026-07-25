@@ -163,7 +163,7 @@ export default async function RootLayout({
   });
 
   return (
-    <div className="relative min-h-screen bg-white font-sans antialiased text-black" lang={locale}>
+    <div className="relative min-h-screen bg-white font-sans antialiased text-black">
       <SchemaOrgScript faq={faqItems} />
       <BackgroundEffects />
       <div className="relative z-10 min-h-screen w-full">

@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import { headers } from 'next/headers';
 import Script from 'next/script';
 
 import '@shared/styles/global.css';
@@ -12,8 +13,11 @@ const inter = Inter({
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = headers().get('X-NEXT-INTL-LOCALE');
+  const language = locale === 'ua' ? 'uk' : locale === 'pl' ? 'pl' : 'en';
+
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
+    <html lang={language} className={inter.variable} suppressHydrationWarning>
       <head>
         <Script
           id="cookieyes"
@@ -22,10 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body suppressHydrationWarning>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
