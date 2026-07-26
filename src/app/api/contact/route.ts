@@ -21,6 +21,10 @@ export interface ContactBody {
   selectedServices: ContactProjectType[];
   budget?: ContactBudgetOption | '';
   consultationType?: ContactConsultationOption | '';
+  source?: string;
+  partnerStage?: string;
+  partnerFunding?: string;
+  partnerModel?: string;
 }
 
 type NormalizedContactBody = Omit<ContactBody, 'productDescription' | 'budget' | 'consultationType'> & {
@@ -36,6 +40,10 @@ interface ContactDoc {
   selectedServices: string[];
   budget: string;
   consultationType: string;
+  source?: string;
+  partnerStage?: string;
+  partnerFunding?: string;
+  partnerModel?: string;
   createdAt: string;
 }
 
@@ -145,6 +153,10 @@ export async function POST(request: NextRequest) {
       selectedServices: body.selectedServices,
       budget: body.budget || '',
       consultationType: body.consultationType || '',
+      source: typeof body.source === 'string' ? body.source : undefined,
+      partnerStage: typeof body.partnerStage === 'string' ? body.partnerStage : undefined,
+      partnerFunding: typeof body.partnerFunding === 'string' ? body.partnerFunding : undefined,
+      partnerModel: typeof body.partnerModel === 'string' ? body.partnerModel : undefined,
     };
     const createdAt = new Date().toISOString();
 
@@ -160,10 +172,13 @@ export async function POST(request: NextRequest) {
       if (!res.ok) throw new Error('External backend error');
       const data = await res.json();
 
+      const wsSource = payload.source
+        ? `ortvest-website/${payload.source}`
+        : 'ortvest-website/api/contact';
       await publishOrderToWebSocket({
         ...payload,
         createdAt,
-        source: 'ortvest-website/api/contact',
+        source: wsSource,
         orderId: typeof data?.id === 'string' ? data.id : undefined,
       }).catch((error) => {
         console.error('Failed to publish order to websocket:', error);
@@ -180,10 +195,11 @@ export async function POST(request: NextRequest) {
 
     const result = await collection.insertOne(doc as unknown as import('mongodb').Document);
 
+    const wsSource = payload.source ? `ortvest-website/${payload.source}` : 'ortvest-website/api/contact';
     await publishOrderToWebSocket({
       ...payload,
       createdAt,
-      source: 'ortvest-website/api/contact',
+      source: wsSource,
       orderId: result.insertedId.toString(),
     }).catch((error) => {
       console.error('Failed to publish order to websocket:', error);

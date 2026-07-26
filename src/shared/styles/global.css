@@ -4,7 +4,8 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    /* Account for sticky header (h-14 = 56px, sm:h-16 = 64px) */
+    @apply scroll-smooth scroll-pt-14 sm:scroll-pt-16;
   }
 
   body {

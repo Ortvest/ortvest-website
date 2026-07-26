@@ -15,6 +15,7 @@ const footerNavItems = [
   { key: 'services', href: '#services' },
   { key: 'cases', href: '#cases' },
   { key: 'blog', href: 'blog' as const },
+  { key: 'partnership', href: 'partnership' as const },
   { key: 'faq', href: '#faq' },
 ] as const;
 
@@ -23,8 +24,9 @@ const mobileNavOrder: Record<(typeof footerNavItems)[number]['key'], string> = {
   cases: 'order-2',
   team: 'order-3',
   blog: 'order-4',
-  services: 'order-5',
-  faq: 'order-6',
+  partnership: 'order-5',
+  services: 'order-6',
+  faq: 'order-7',
 };
 
 function FooterSocialLinks() {
@@ -98,7 +100,11 @@ export function Footer() {
               {footerNavItems.map(({ key, href }) => (
                 <li key={key} className={`${mobileNavOrder[key]} sm:order-none`}>
                   <Link
-                    href={href === 'blog' ? `/${locale}/blog` : `/${locale}${href}`}
+                    href={
+                      href === 'blog' || href === 'partnership'
+                        ? `/${locale}/${href}`
+                        : `/${locale}${href}`
+                    }
                     className="block py-1.5 text-[14px] text-zinc-950 sm:py-0 sm:text-body-sm sm:text-black/70 sm:transition sm:hover:text-black">
                     {tNav(key)}
                   </Link>

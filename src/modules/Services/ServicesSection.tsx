@@ -29,6 +29,7 @@ import {
   IconClock,
   IconCode,
   IconPalette,
+  IconPlant2,
   IconPlugConnected,
   type IconProps,
   IconRefresh,
@@ -52,6 +53,13 @@ type AnyIcon = React.ComponentType<{
 
 type TFn = ReturnType<typeof useTranslations<'servicesSection'>>;
 
+function CardBadge({ children, variant = 'optional' }: { children: React.ReactNode; variant?: 'optional' | 'status' }) {
+  const variantClass =
+    variant === 'status' ? 'border-sky-400/30 bg-sky-400/10 text-sky-300' : 'border-accent/30 bg-accent/10 text-accent';
+
+  return <span className={`rounded-full border px-2 py-0.5 text-xs ${variantClass}`}>{children}</span>;
+}
+
 // ─── Static data ──────────────────────────────────────────────────────────────
 
 const TABS: { id: Tab; labelKey: `tabs.${Tab}` }[] = [
@@ -65,9 +73,9 @@ const industries: {
   id: number;
   Icon: AnyIcon;
   number: string;
-  key: 'p2p' | 'community' | 'logistics';
+  key: 'p2p' | 'community' | 'logistics' | 'agritech';
   tagKeys: string[];
-  colSpan2?: boolean;
+  statusBadge?: boolean;
 }[] = [
   {
     id: 0,
@@ -89,7 +97,14 @@ const industries: {
     number: '03',
     key: 'logistics',
     tagKeys: ['t1', 't2', 't3', 't4'],
-    colSpan2: true,
+  },
+  {
+    id: 3,
+    Icon: IconPlant2 as AnyIcon,
+    number: '04',
+    key: 'agritech',
+    tagKeys: ['t1', 't2', 't3'],
+    statusBadge: true,
   },
 ];
 
@@ -280,8 +295,8 @@ function WhatWeDoTab({
             <div className="mt-3 mb-2 flex items-center">
               <h3 className="text-h4 font-semibold text-white">{t(titleKey)}</h3>
               {optionalBadge && (
-                <span className="ml-2 rounded-full border border-accent/30 bg-accent/10 px-2 py-0.5 align-middle text-xs text-accent">
-                  {t('optional')}
+                <span className="ml-2">
+                  <CardBadge>{t('optional')}</CardBadge>
                 </span>
               )}
             </div>
@@ -376,7 +391,7 @@ function IndustriesTab({
   return (
     <div className="space-y-8">
       <div className="grid gap-4 sm:grid-cols-2">
-        {industries.map(({ id, Icon, number, key, tagKeys, colSpan2 }) => {
+        {industries.map(({ id, Icon, number, key, tagKeys, statusBadge }) => {
           const isOpen = openCard === id;
           return (
             <div
@@ -389,7 +404,6 @@ function IndustriesTab({
               className={[
                 'group relative flex flex-col rounded-2xl border bg-zinc-900 p-5 cursor-pointer',
                 'transition-colors duration-200',
-                colSpan2 ? 'sm:col-span-2' : '',
                 isOpen ? 'border-accent/40' : 'border-zinc-800 hover:border-zinc-700',
               ].join(' ')}>
               <div className="flex items-start justify-between">
@@ -403,7 +417,10 @@ function IndustriesTab({
               </div>
 
               <p className="mt-3 mb-0.5 text-xs font-medium text-accent">{number}</p>
-              <h3 className="text-h4 text-white">{t(`ind.${key}.title`)}</h3>
+              <div className="flex flex-wrap items-center gap-2">
+                <h3 className="text-h4 text-white">{t(`ind.${key}.title`)}</h3>
+                {statusBadge && <CardBadge variant="status">{t(`ind.${key}.badge`)}</CardBadge>}
+              </div>
 
               <div className="mt-2 flex flex-wrap gap-1">
                 {tagKeys.map((tagKey) => (

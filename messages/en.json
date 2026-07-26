@@ -10,6 +10,7 @@
     "blog": "Blog",
     "cases": "Cases",
     "faq": "FAQ",
+    "partnership": "Partnership",
     "contact": "Contact",
     "cta": "Get a quote",
     "menuSlogan": "From idea to launch. One team.",
@@ -28,8 +29,8 @@
   "divider": {
     "platforms": "two-sided platforms shipped",
     "people": "people. One squad per project.",
-    "industries": "industries. No others claimed.",
-    "industryList": "P2P · Community · Logistics"
+    "industries": "industries. A fourth in build.",
+    "industryList": "P2P · Community · Logistics · Agritech (in build)"
   },
   "hero": {
     "badge": "For marketplaces, P2P products and member networks",
@@ -47,9 +48,18 @@
       "link": "Book a call"
     },
     "nodes": {
-      "p2p": "P2P",
-      "community": "Community",
-      "logistics": "Logistics"
+      "shippers": {
+        "title": "Logistics"
+      },
+      "clubs": {
+        "title": "Community & clubs"
+      },
+      "owners": {
+        "title": "P2P"
+      },
+      "agritech": {
+        "title": "Agritech"
+      }
     },
     "stats": {
       "products": "products shipped",
@@ -207,6 +217,14 @@
         "t2": "Shipments",
         "t3": "Multi-party workflows",
         "t4": "Integrations"
+      },
+      "agritech": {
+        "title": "Agritech",
+        "badge": "In build · 2026",
+        "desc": "We're building our first agritech platform now. Same shape as the rest: multiple parties, verified identities, transactions that have to be trusted. We'll show it when it ships – until then we're not claiming the industry.",
+        "t1": "Traceability",
+        "t2": "Supply chain",
+        "t3": "Producers ⇄ buyers"
       }
     },
     "process": {
@@ -271,17 +289,32 @@
       "p2p": {
         "title": "P2P Platforms",
         "description": "We build peer-to-peer platforms where trust is the product. Sharing, rental, and exchange platforms with verification, escrow payments, item tracking, and dispute resolution – built so strangers can transact with confidence.",
-        "tags": ["Sharing economy", "Peer rental", "Trust & safety", "Escrow payments"]
+        "tags": [
+          "Sharing economy",
+          "Peer rental",
+          "Trust & safety",
+          "Escrow payments"
+        ]
       },
       "community": {
         "title": "Community",
         "description": "We design and build private networks, club platforms, and professional communities where engagement feels natural – not forced. Real-time messaging, member roles, events, and content in one place. We know the difference between a \"website\" and a \"platform where people actually return.\"",
-        "tags": ["Private networks", "Member portals", "Real-time chat", "Events"]
+        "tags": [
+          "Private networks",
+          "Member portals",
+          "Real-time chat",
+          "Events"
+        ]
       },
       "logistics": {
         "title": "Logistics",
         "description": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization. Two cases live – more in progress.",
-        "tags": ["Fleet management", "Shipment tracking", "Route optimization", "Logistics SaaS"]
+        "tags": [
+          "Fleet management",
+          "Shipment tracking",
+          "Route optimization",
+          "Logistics SaaS"
+        ]
       }
     },
     "comingSoon": {
@@ -410,8 +443,8 @@
     },
     "q1": "Will you build my Uber for X?",
     "a1": "Maybe. But on the first call we'll ask which side you can get 100 of by hand, without ads. If there's no answer, the product isn't ready and we'll say so instead of taking the money.",
-    "q2": "Why only three industries?",
-    "a2": "Because a fourth would be a claim we can't back with work. We build platforms where participants have to find and trust each other – that shape repeats across P2P, clubs and logistics. Outside it we'd be guessing on your budget.",
+    "q2": "Why so few industries?",
+    "a2": "Because a fourth would be a claim we can't back with work yet – we're building our first agritech platform now and we'll say so plainly until it ships. We build platforms where participants have to find and trust each other. That shape repeats across marketplaces, clubs and logistics. Outside it we'd be guessing on your budget.",
     "q3": "How much does a platform cost?",
     "a3": "It depends on the trust model, number of participant roles and operational tooling. We'll give you a rough budget range on the first call and a fixed price after scope. If a prototype is the smarter first step, we'll say so.",
     "q4": "Can I hire you for just design, or just development?",
@@ -536,7 +569,7 @@
   },
   "cases": {
     "eyebrow": "Our work",
-    "title": "Three platforms that had to start empty.",
+    "title": "Five platforms that had to start empty.",
     "subtitle": "P2P, community and logistics. Some are under NDA – we'll walk you through those on a call.",
     "ndaBanner": "Some projects are under NDA – we'll walk you through those on a call.",
     "filterIndustries": {
@@ -940,7 +973,7 @@
         },
         "cms": {
           "title": "Internal CMS",
-          "description": "A custom CMS for ProfitCraft operations – content, leads, and workflows across the credit and auto products. Built for the team’s daily work; not available for public screenshots."
+          "description": "A custom CMS for ProfitCraft operations – content, leads, and workflows across the credit and auto products. Built for the team's daily work; not available for public screenshots."
         }
       }
     },
@@ -976,7 +1009,7 @@
         "items": {
           "hero": {
             "title": "Hero & positioning",
-            "description": "Clear “personal auto broker” promise with proof points and dual CTAs – apply now or learn more."
+            "description": "Clear \"personal auto broker\" promise with proof points and dual CTAs – apply now or learn more."
           },
           "application": {
             "title": "Application flows",
@@ -1756,7 +1789,7 @@
       "apiFeature": "Website form API integration",
       "subscribe": "Subscribe online",
       "subscribeLoading": "Redirecting…",
-      "subscribeNote": "Secure payment via Stripe (test mode in development). You'll create your CMS account after checkout.",
+      "subscribeNote": "Secure payment via Stripe. You'll create your CMS account after checkout.",
       "contactInstead": "Prefer to talk?",
       "checkoutFailed": "Could not open the payment page.",
       "checkoutNetwork": "Network error. Try again.",
@@ -1874,7 +1907,7 @@
         "description": "How Ortvest collects, uses and protects your personal data."
       },
       "title": "PRIVACY POLICY",
-      "meta": "ortvest.com | Last updated: May 2026",
+      "meta": "ortvest.com | Last updated: July 2026",
       "sections": [
         {
           "number": "1",
@@ -1908,7 +1941,7 @@
             },
             {
               "type": "paragraph",
-              "text": "Ortvest\nWebsite: ortvest.com\nContact email: contact@ortvest.com"
+              "text": "Ortvest sp. z o.o.\nul. Szamarzewskiego 21/2, Poznań, Poland\nNIP: 7812111756 | KRS: 0001244461\nWebsite: ortvest.com\nContact email: contact@ortvest.com"
             },
             {
               "type": "paragraph",
@@ -1922,11 +1955,11 @@
           "blocks": [
             {
               "type": "paragraph",
-              "text": "When you submit the contact form or review form on our Website, we collect the following data:"
+              "text": "When you submit a form on our Website, we collect the following data:"
             },
             {
               "type": "subheading",
-              "text": "3.1 Data you provide directly (contact form & review form)"
+              "text": "3.1 Contact form"
             },
             {
               "type": "paragraph",
@@ -1937,7 +1970,7 @@
               "items": [
                 "Name – your first and/or last name",
                 "Email address – used to reply to your inquiry",
-                "Project type (optional) – one of the following categories you select: P2P, Community & clubs, Logistics, Other",
+                "Project type (optional) – one or more of the following categories you select: P2P, Community & clubs, Logistics, Other",
                 "Budget (optional) – selected budget range: €10–25k, €25–50k, €50–100k, €100k+, or Not sure yet",
                 "Consultation type – type of session requested: Discovery Call (Free) or Cold Start Audit (€199)",
                 "Message (optional) – a free-text description of your project and timeline"
@@ -1945,7 +1978,7 @@
             },
             {
               "type": "subheading",
-              "text": "3.2 Data you provide via the Review Form"
+              "text": "3.2 Review form"
             },
             {
               "type": "list",
@@ -1959,7 +1992,28 @@
             },
             {
               "type": "subheading",
-              "text": "3.3 Data collected automatically"
+              "text": "3.3 Partnership application form"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Name – your first and/or last name",
+                "Email address – used to respond to your application",
+                "Product description – a free-text description of what you are building, including the participants on each side of your platform",
+                "Market access – a free-text description of which side of your platform you can currently reach and approximately how many participants",
+                "Development stage – idea, prototype, live with users, or generating revenue",
+                "Funding status – bootstrapped, pre-seed raised, seed raised, or Series A or beyond",
+                "Preferred engagement model – embedded team, build plus equity, technical co-founder function, or not sure",
+                "Previous attempts – a free-text description of what you have already tried and why it did not work"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Free-text fields in this form may contain information about your business, your team, or third parties. Please do not include personal data of other individuals unless you have a lawful basis to share it with us, and do not include commercially sensitive information unless a non-disclosure agreement is in place (see our Terms of Use)."
+            },
+            {
+              "type": "subheading",
+              "text": "3.4 Data collected automatically"
             },
             {
               "type": "list",
@@ -2031,6 +2085,22 @@
             {
               "type": "paragraph",
               "text": "Legal basis: Art. 6(1)(a) GDPR – consent. By submitting the review form, you voluntarily provide data intended for public display. You may withdraw consent at any time by contacting contact@ortvest.com, and we will remove your review."
+            },
+            {
+              "type": "subheading",
+              "text": "4.6 Evaluating partnership applications"
+            },
+            {
+              "type": "paragraph",
+              "text": "We process partnership application data to assess whether a proposed engagement is a suitable fit, to respond to your application, and to prepare for potential contractual negotiations."
+            },
+            {
+              "type": "paragraph",
+              "text": "Legal basis: Art. 6(1)(b) GDPR – processing is necessary for taking steps at your request prior to entering into a contract."
+            },
+            {
+              "type": "paragraph",
+              "text": "Partnership application data is reviewed internally and is not published, shared with other applicants, or used for any purpose other than evaluating and responding to your application."
             }
           ]
         },
@@ -2125,6 +2195,7 @@
               "type": "list",
               "items": [
                 "Inquiry data: up to 3 years from the last contact, or until you request deletion",
+                "Partnership application data: up to 12 months from submission where no engagement follows, or until you request deletion. Where an engagement begins, the data is retained under the client data period below.",
                 "Client data (if a contract is concluded): 5 years from the end of the business relationship (tax and accounting requirements)",
                 "Analytics data: as per the settings of the analytics provider (typically up to 26 months)",
                 "Review data: retained for as long as the review is published on the Website, or until you request deletion by contacting contact@ortvest.com"
@@ -2168,7 +2239,7 @@
             },
             {
               "type": "paragraph",
-              "text": "Urzad Ochrony Danych Osobowych (UODO)\nul. Stawki 2, 00-193 Warsaw, Poland\nWebsite: uodo.gov.pl\nPhone: +48 22 531 03 00"
+              "text": "Urząd Ochrony Danych Osobowych (UODO)\nul. Stawki 2, 00-193 Warsaw, Poland\nWebsite: uodo.gov.pl\nPhone: +48 22 531 03 00"
             }
           ]
         },
@@ -2228,7 +2299,7 @@
         "description": "Terms and conditions for using the ortvest.com website."
       },
       "title": "TERMS OF USE",
-      "meta": "ortvest.com | Last updated: May 2026",
+      "meta": "ortvest.com | Last updated: July 2026",
       "sections": [
         {
           "number": "1",
@@ -2236,7 +2307,7 @@
           "blocks": [
             {
               "type": "paragraph",
-              "text": "These Terms of Use (\"Terms\") govern the conditions of use of the website ortvest.com (\"Website\") operated by Ortvest (\"Company\", \"we\", \"us\")."
+              "text": "These Terms of Use (\"Terms\") govern the conditions of use of the website ortvest.com (\"Website\") operated by Ortvest sp. z o.o. (\"Company\", \"we\", \"us\")."
             },
             {
               "type": "paragraph",
@@ -2258,7 +2329,12 @@
             },
             {
               "type": "list",
-              "items": ["Web and mobile application development", "UI/UX design", "Digital marketing services"]
+              "items": [
+                "Design and development of web and mobile platforms, including marketplaces, peer-to-peer products, membership networks, and logistics systems",
+                "UI/UX design and brand identity",
+                "Digital marketing and go-to-market services",
+                "Partnership engagements, including embedded teams, build-plus-equity arrangements, and technical co-founder functions"
+              ]
             },
             {
               "type": "paragraph",
@@ -2344,6 +2420,95 @@
             {
               "type": "paragraph",
               "text": "Submission of a review is voluntary and does not entitle you to any compensation, discount, or benefit unless explicitly agreed in writing."
+            }
+          ]
+        },
+        {
+          "number": "3B",
+          "title": "Partnership Applications",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The Website includes a partnership application form through which you may express interest in an engagement beyond a standard service contract, including an embedded team, a build-plus-equity arrangement, or a technical co-founder function."
+            },
+            {
+              "type": "subheading",
+              "text": "3B.1 No offer and no commitment"
+            },
+            {
+              "type": "paragraph",
+              "text": "Submission of the partnership application form does not create any offer, commitment, contract, or binding relationship of any kind between you and the Company. This applies in particular, and without limitation, to any terms concerning equity, shareholding, investment, revenue sharing, or other financial arrangements."
+            },
+            {
+              "type": "paragraph",
+              "text": "The Company is under no obligation to respond to, evaluate, accept, or pursue any application, and may decline any application at its sole discretion without providing reasons."
+            },
+            {
+              "type": "subheading",
+              "text": "3B.2 Terms agreed separately"
+            },
+            {
+              "type": "paragraph",
+              "text": "Any partnership engagement, including any arrangement involving equity or a shareholding in your company, is subject to a separate written agreement negotiated and signed by both parties. Engagement models, commercial terms, equity ranges, and minimum durations described on the Website are indicative only and do not constitute an offer or a commitment to specific terms."
+            },
+            {
+              "type": "subheading",
+              "text": "3B.3 No advice"
+            },
+            {
+              "type": "paragraph",
+              "text": "The Company does not provide investment, financial, tax, accounting, or legal advice through the partnership application form or in the course of any partnership discussion. You are solely responsible for obtaining independent professional advice before entering into any equity-based or other financial arrangement, and for ensuring that any such arrangement complies with the laws applicable to you and your company."
+            },
+            {
+              "type": "subheading",
+              "text": "3B.4 Your representations"
+            },
+            {
+              "type": "paragraph",
+              "text": "By submitting a partnership application, you represent and warrant that:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "You are acting on behalf of a business entity, or intend to establish one, and are duly authorised to submit the application",
+                "All information provided is accurate, complete, and not misleading",
+                "You have the right to share the information you submit, and doing so does not breach any obligation owed to a third party",
+                "You are not subject to any restriction that would prevent you from entering into the engagement you are proposing"
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3C",
+          "title": "Confidentiality of Submitted Information",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "3C.1 Information is not automatically confidential"
+            },
+            {
+              "type": "paragraph",
+              "text": "Information you submit through any form on the Website, including the partnership application form, is not automatically treated as confidential and does not create a confidential relationship between you and the Company."
+            },
+            {
+              "type": "paragraph",
+              "text": "If you wish to share commercially sensitive information, you should request a mutual non-disclosure agreement before submitting it. The Company will consider such requests in good faith."
+            },
+            {
+              "type": "subheading",
+              "text": "3C.2 Independent development"
+            },
+            {
+              "type": "paragraph",
+              "text": "The Company works with multiple clients and develops its own products across the same and adjacent markets. Nothing in these Terms restricts the Company from independently developing, acquiring, or working on products, features, or concepts that are similar to those described in any application or inquiry, provided the Company does not use information subject to a signed non-disclosure agreement in doing so."
+            },
+            {
+              "type": "subheading",
+              "text": "3C.3 Internal handling"
+            },
+            {
+              "type": "paragraph",
+              "text": "Notwithstanding the above, the Company will handle partnership applications with reasonable care, will review them internally only, and will not publish them or share them with other applicants."
             }
           ]
         },
@@ -2442,12 +2607,13 @@
                 "Any indirect, incidental, special, or consequential damages arising from your use of the Website",
                 "Loss of data, profits, business, or reputation",
                 "Damages resulting from reliance on information presented on the Website",
-                "Temporary unavailability of the Website due to maintenance, technical failures, or force majeure"
+                "Temporary unavailability of the Website due to maintenance, technical failures, or force majeure",
+                "Any decision taken by you on the basis of a partnership discussion that did not result in a signed agreement"
               ]
             },
             {
               "type": "paragraph",
-              "text": "The Company's total liability for any claim arising from these Terms or use of the Website shall not exceed EUR 500, to the extent permitted by law."
+              "text": "The Company's total liability for any claim arising from these Terms or use of the Website shall not exceed EUR 500, to the extent permitted by law. This limitation does not apply to liability arising under a separately signed service or partnership agreement, which shall be governed by the terms of that agreement."
             }
           ]
         },
@@ -2517,7 +2683,7 @@
               "type": "list",
               "items": [
                 "The Polish Civil Code (Kodeks cywilny) of 23 April 1964",
-                "The Polish Act on the Provision of Electronic Services (Ustawa o swiadczeniu uslug droga elektroniczna) of 18 July 2002",
+                "The Polish Act on the Provision of Electronic Services (Ustawa o świadczeniu usług drogą elektroniczną) of 18 July 2002",
                 "Applicable EU regulations, including GDPR"
               ]
             },
@@ -2532,6 +2698,10 @@
             {
               "type": "paragraph",
               "text": "If you are accessing the Website from the United States, you acknowledge that the Website is operated from Poland and governed by Polish and EU law. No representations are made that the content of the Website complies with US federal or state laws. Use of the Website from the US is at your own discretion and risk. The Company does not target US consumers; these Terms apply exclusively in a B2B context."
+            },
+            {
+              "type": "paragraph",
+              "text": "Nothing on the Website, including the partnership application form, constitutes an offer or solicitation of securities in the United States or in any other jurisdiction where such an offer or solicitation would be unlawful."
             },
             {
               "type": "subheading",
@@ -2564,6 +2734,161 @@
           ]
         }
       ]
+    }
+  },
+  "partnership": {
+    "bar": {
+      "text": "Most founders don't need an agency. They need a technical partner.",
+      "textMobile": "Looking for a technical partner?",
+      "link": "See how that works →"
+    },
+    "meta": {
+      "title": "Technical Partnership | Ortvest",
+      "description": "Not just a build contract. An engagement where we share accountability for outcomes – embedded team, build-plus-equity, or technical co-founder function.",
+      "ogTitle": "Technical Partnership | Ortvest",
+      "ogDescription": "Three ways to work with Ortvest beyond a standard contract – embedded team, build + equity, and technical co-founder function."
+    },
+    "hero": {
+      "eyebrow": "Partnership",
+      "title": "Most vendors disappear after demo day.",
+      "subtitle": "We've done enough cold starts to know what actually gets a two-sided platform past zero. A vendor delivers a product. A partner is accountable for whether it works.",
+      "cta": "See the engagement models"
+    },
+    "contrast": {
+      "label": "Vendor vs partner",
+      "title": "What changes when it's a partnership",
+      "vendorHeading": "A vendor",
+      "partnerHeading": "A partner",
+      "items": [
+        {
+          "vendor": "Scoped to delivery",
+          "partner": "Accountable for outcomes"
+        },
+        {
+          "vendor": "Off the clock after launch",
+          "partner": "Aligned past launch"
+        },
+        {
+          "vendor": "Builds what you specify",
+          "partner": "Pushes back when the spec is wrong"
+        },
+        {
+          "vendor": "One contract, one invoice",
+          "partner": "Shared skin in the game"
+        }
+      ]
+    },
+    "models": {
+      "label": "Engagement models",
+      "title": "Three ways to work together beyond a standard contract",
+      "embedded": {
+        "number": "01",
+        "title": "Embedded team",
+        "who": "You have a product vision and need a full-stack squad without managing five separate vendors.",
+        "what": "Engineering, design and go-to-market embedded into your team for the duration. One point of contact, one squad, weekly demos.",
+        "terms": "Fixed-scope or rolling monthly. Rates on request."
+      },
+      "equity": {
+        "number": "02",
+        "title": "Build + equity",
+        "who": "You have validated demand but limited runway. You're willing to exchange equity for a lower burn rate.",
+        "what": "We build the platform at a reduced rate in exchange for a small equity stake. The split depends on scope and stage.",
+        "terms": "Equity 2–8% depending on scope. Minimum engagement 4 months."
+      },
+      "cto": {
+        "number": "03",
+        "title": "Technical co-founder function",
+        "who": "You're a non-technical founder who needs someone to own the tech – not just execute it.",
+        "what": "We act as your technical co-founder: architecture, vendor selection, team hiring, code review and build.",
+        "terms": "Retainer + equity. Structure defined per engagement."
+      },
+      "whoLabel": "Who it suits",
+      "whatLabel": "What we do",
+      "termsLabel": "Commercial terms"
+    },
+    "notFor": {
+      "label": "Not for everyone",
+      "title": "Who this isn't for",
+      "items": [
+        "Founders who already have a team and need extra capacity",
+        "Projects that aren't two-sided – single-player apps, internal tools, pure SaaS",
+        "Founders who need a yes-man rather than someone who will push back on the spec",
+        "Timelines under 6 weeks – not enough time to do this properly"
+      ]
+    },
+    "proof": {
+      "label": "Why us",
+      "title": "The part you shouldn't have to manage",
+      "subtitle": "You own the market, the customers and the calls only you can make. Everything between an idea and a running platform is ours.",
+      "cards": {
+        "1": {
+          "title": "A team deep enough not to be your bottleneck",
+          "body": "Fifteen people, and the ones on your project aren't split across six others. Backend, product and go-to-market sit in one room – so the platform and the admin tooling get built in parallel, not one after the other while you wait."
+        },
+        "2": {
+          "title": "We've made these calls with our own money",
+          "body": "We fund Yachtly ourselves: pricing model, which side to seed first, which features to cut. That's why we argue about your business model instead of just implementing it. A studio that has never owned the downside will build whatever you ask for."
+        },
+        "3": {
+          "title": "You don't need to know what to ask for",
+          "body": "Architecture, stack, trade-offs, what breaks at scale, when to hire in-house – ours to get right. You bring the market and the decisions only you can make. Nobody hands you a repo and a good-luck email."
+        }
+      }
+    },
+    "form": {
+      "eyebrow": "Application",
+      "title": "Apply to work with us",
+      "subtitle": "We review every application. If there's a fit we'll reach out within 48 hours.",
+      "name": {
+        "label": "Your name",
+        "placeholder": "Jane Smith"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "jane@startup.com"
+      },
+      "building": {
+        "label": "What are you building?",
+        "placeholder": "Describe the product – who's on each side and what they exchange."
+      },
+      "sideCount": {
+        "label": "Which side of your platform can you reach today, and roughly how many?",
+        "placeholder": "e.g. We have 40 independent cleaning pros already using our WhatsApp group."
+      },
+      "stage": "Stage",
+      "stages": {
+        "idea": "Idea – no product yet",
+        "prototype": "Prototype – not live",
+        "live": "Live with users",
+        "revenue": "Generating revenue"
+      },
+      "funding": "Funding situation",
+      "fundings": {
+        "bootstrapped": "Bootstrapped",
+        "preseed": "Pre-seed raised",
+        "seed": "Seed raised",
+        "raised": "Series A or beyond"
+      },
+      "model": "Which model interests you?",
+      "models": {
+        "embedded": "Embedded team",
+        "equity": "Build + equity",
+        "cto": "Technical co-founder function",
+        "unsure": "Not sure yet"
+      },
+      "tried": {
+        "label": "What have you already tried that didn't work?",
+        "placeholder": "Freelancers, other agencies, internal hires – what happened?"
+      },
+      "submit": "Send application",
+      "submitting": "Sending…",
+      "success": {
+        "title": "Application received.",
+        "text": "We review every one. If there's a fit you'll hear from us within 48 hours."
+      },
+      "legal": "By submitting you agree to our",
+      "legalLink": "Privacy Policy",
+      "selectPlaceholder": "Select…"
     }
   }
 }

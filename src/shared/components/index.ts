@@ -1,3 +1,4 @@
+export { AnnouncementBar } from './AnnouncementBar';
 export { BackgroundEffects } from './BackgroundEffects';
 export { Button } from './Button';
 export { MotionConfigProvider } from './MotionConfigProvider';

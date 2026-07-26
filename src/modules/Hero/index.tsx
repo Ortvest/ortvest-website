@@ -8,6 +8,7 @@ import {
   IconArrowsExchange,
   IconCode,
   IconPhone,
+  IconPlant2,
   type IconProps,
   IconTruck,
   IconUsers,
@@ -20,27 +21,45 @@ type SatelliteNodeProps = {
   icon: React.ComponentType<IconProps>;
   iconSize: number;
   label: string;
+  labelPosition?: 'top' | 'bottom';
 };
 
-function SatelliteNode({ left, top, circleClass, icon: Icon, iconSize, label }: SatelliteNodeProps) {
+function SatelliteNode({
+  left,
+  top,
+  circleClass,
+  icon: Icon,
+  iconSize,
+  label,
+  labelPosition = 'bottom',
+}: SatelliteNodeProps) {
   return (
     <div
-      className={`group absolute flex -translate-x-1/2 -translate-y-1/2 cursor-pointer flex-col items-center gap-1 ${left} ${top}`}>
-      <div className="rounded-full border border-[#cdff4e20] p-1 transition-colors group-hover:border-[#cdff4e40]">
+      className={['group absolute h-[58px] w-[58px] -translate-x-1/2 -translate-y-1/2 cursor-pointer', left, top].join(
+        ' '
+      )}>
+      <div className="absolute inset-0 rounded-full border border-[#cdff4e20] p-1 transition-colors group-hover:border-[#cdff4e40]">
         <div
           className={`flex items-center justify-center rounded-full border border-zinc-800 bg-zinc-900 ${circleClass}`}>
           <Icon size={iconSize} className="text-accent" />
         </div>
       </div>
-      <span className="text-[10px] text-zinc-400">{label}</span>
+      <div
+        className={[
+          'absolute left-1/2 flex -translate-x-1/2 flex-col items-center whitespace-nowrap text-center leading-tight',
+          labelPosition === 'top' ? 'bottom-full mb-1' : 'top-full mt-1',
+        ].join(' ')}>
+        <span className="text-[11px] font-medium text-zinc-300">{label}</span>
+      </div>
     </div>
   );
 }
 
 const ORBIT_LINES = [
-  { x2: 220, y2: 50, opacity: 0.22, dash: '4 5', strokeWidth: 0.9, dur: '2s' },
-  { x2: 386, y2: 220, opacity: 0.22, dash: '4 5', strokeWidth: 0.9, dur: '2.4s' },
-  { x2: 220, y2: 386, opacity: 0.22, dash: '4 5', strokeWidth: 0.9, dur: '1.9s' },
+  { x2: 110, y2: 88, opacity: 0.18, dash: undefined, strokeWidth: 0.9, dur: '2s' },
+  { x2: 330, y2: 88, opacity: 0.18, dash: undefined, strokeWidth: 0.9, dur: '2.4s' },
+  { x2: 330, y2: 352, opacity: 0.22, dash: '4 5', strokeWidth: 0.9, dur: '1.9s' },
+  { x2: 110, y2: 352, opacity: 0.18, dash: undefined, strokeWidth: 0.9, dur: '2.2s' },
 ] as const;
 
 export function Hero() {
@@ -119,13 +138,15 @@ export function Hero() {
                   strokeWidth={line.strokeWidth}
                   strokeOpacity={line.opacity}
                   strokeDasharray={line.dash}>
-                  <animate
-                    attributeName="stroke-dashoffset"
-                    from="0"
-                    to="-18"
-                    dur={line.dur}
-                    repeatCount="indefinite"
-                  />
+                  {line.dash && (
+                    <animate
+                      attributeName="stroke-dashoffset"
+                      from="0"
+                      to="-18"
+                      dur={line.dur}
+                      repeatCount="indefinite"
+                    />
+                  )}
                 </line>
               ))}
             </svg>
@@ -142,28 +163,38 @@ export function Hero() {
             </div>
 
             <SatelliteNode
-              left="left-[50%]"
-              top="top-[11.4%]"
+              left="left-[25%]"
+              top="top-[20%]"
               circleClass="h-12 w-12"
               icon={IconArrowsExchange}
               iconSize={20}
-              label={t('nodes.p2p')}
+              label={t('nodes.owners.title')}
+              labelPosition="top"
             />
             <SatelliteNode
-              left="left-[83.5%]"
-              top="top-[69.3%]"
+              left="left-[75%]"
+              top="top-[20%]"
               circleClass="h-12 w-12"
               icon={IconUsers}
               iconSize={20}
-              label={t('nodes.community')}
+              label={t('nodes.clubs.title')}
+              labelPosition="top"
             />
             <SatelliteNode
-              left="left-[16.5%]"
-              top="top-[69.3%]"
+              left="left-[75%]"
+              top="top-[80%]"
+              circleClass="h-12 w-12"
+              icon={IconPlant2}
+              iconSize={20}
+              label={t('nodes.agritech.title')}
+            />
+            <SatelliteNode
+              left="left-[25%]"
+              top="top-[80%]"
               circleClass="h-12 w-12"
               icon={IconTruck}
               iconSize={20}
-              label={t('nodes.logistics')}
+              label={t('nodes.shippers.title')}
             />
           </div>
         </div>

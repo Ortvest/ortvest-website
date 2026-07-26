@@ -10,26 +10,27 @@
     "blog": "Blog",
     "cases": "Projekty",
     "faq": "FAQ",
+    "partnership": "Partnerstwo",
     "contact": "Kontakt",
     "cta": "Wyceń projekt",
     "menuSlogan": "Od pomysłu do startu. Jeden zespół.",
-    "home": "TODO: Home",
-    "openMenu": "TODO: Open menu",
-    "closeMenu": "TODO: Close menu",
-    "mainNavigation": "TODO: Main navigation",
-    "mobileNavigation": "TODO: Mobile navigation",
+    "home": "Strona główna",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
+    "mainNavigation": "Nawigacja główna",
+    "mobileNavigation": "Nawigacja mobilna",
     "serviceSublabels": {
-      "what": "TODO: Design, Dev & Marketing",
-      "industries": "TODO: P2P, Community, Logistics…",
-      "process": "TODO: How we work, step by step",
-      "technologies": "TODO: Our tech stack"
+      "what": "Design, dev i marketing",
+      "industries": "P2P, społeczności, logistyka…",
+      "process": "Jak pracujemy, krok po kroku",
+      "technologies": "Nasz stack technologiczny"
     }
   },
   "divider": {
     "platforms": "wdrożonych platform dwustronnych",
     "people": "osób. Jeden zespół na projekt.",
-    "industries": "branże. Żadnych innych deklaracji.",
-    "industryList": "P2P · Społeczności · Logistyka"
+    "industries": "branże. Czwarta w budowie.",
+    "industryList": "P2P · Społeczności · Logistyka · Agritech (w budowie)"
   },
   "hero": {
     "badge": "Dla marketplace'ów, produktów P2P i sieci członkowskich",
@@ -47,9 +48,18 @@
       "link": "Umów rozmowę"
     },
     "nodes": {
-      "p2p": "P2P",
-      "community": "Społeczności",
-      "logistics": "Logistyka"
+      "shippers": {
+        "title": "Logistyka"
+      },
+      "clubs": {
+        "title": "Społeczności i kluby"
+      },
+      "owners": {
+        "title": "P2P"
+      },
+      "agritech": {
+        "title": "Agritech"
+      }
     },
     "stats": {
       "products": "produktów wdrożonych",
@@ -207,6 +217,14 @@
         "t2": "Przesyłki",
         "t3": "Procesy wielostronne",
         "t4": "Integracje"
+      },
+      "agritech": {
+        "title": "Agritech",
+        "badge": "W budowie · 2026",
+        "desc": "Budujemy teraz naszą pierwszą platformę agritech. Ten sam schemat co reszta: wiele stron, zweryfikowane tożsamości, transakcje, którym trzeba zaufać. Pokażemy ją, gdy zostanie wdrożona – do tego czasu nie zaliczamy tej branży do naszych.",
+        "t1": "Identyfikowalność",
+        "t2": "Łańcuch dostaw",
+        "t3": "Producenci ⇄ kupujący"
       }
     },
     "process": {
@@ -237,22 +255,22 @@
       }
     },
     "processTags": {
-      "interviews": "TODO: Interviews",
-      "competitorAnalysis": "TODO: Competitor analysis",
-      "techAudit": "TODO: Tech audit",
-      "figma": "TODO: Figma",
-      "prototyping": "TODO: Prototyping",
-      "designSystem": "TODO: Design system",
-      "oneWeekSprints": "TODO: 1-week sprints",
-      "weeklyDemos": "TODO: Weekly demos",
-      "codeReview": "TODO: Code review",
-      "landingPage": "TODO: Landing page",
-      "seo": "TODO: SEO",
-      "analytics": "TODO: Analytics",
-      "gtmStrategy": "TODO: GTM strategy",
-      "ciCd": "TODO: CI/CD",
-      "monitoring": "TODO: Monitoring",
-      "retainer": "TODO: Retainer"
+      "interviews": "Wywiady",
+      "competitorAnalysis": "Analiza konkurencji",
+      "techAudit": "Audyt techniczny",
+      "figma": "Figma",
+      "prototyping": "Prototypowanie",
+      "designSystem": "System designu",
+      "oneWeekSprints": "Tygodniowe sprinty",
+      "weeklyDemos": "Cotygodniowe demo",
+      "codeReview": "Code review",
+      "landingPage": "Landing page",
+      "seo": "SEO",
+      "analytics": "Analityka",
+      "gtmStrategy": "Strategia GTM",
+      "ciCd": "CI/CD",
+      "monitoring": "Monitoring",
+      "retainer": "Retainer"
     },
     "tech": {
       "frontend": "Frontend",
@@ -271,17 +289,32 @@
       "p2p": {
         "title": "Platformy P2P",
         "description": "Budujemy platformy peer-to-peer, gdzie zaufanie jest produktem. Sharing, wynajem i wymiana z weryfikacją, płatnościami escrow, śledzeniem przedmiotów i rozwiązywaniem sporów – aby nieznajomi mogli bezpiecznie współpracować.",
-        "tags": ["Sharing economy", "Wynajem peer-to-peer", "Trust & safety", "Płatności escrow"]
+        "tags": [
+          "Sharing economy",
+          "Wynajem peer-to-peer",
+          "Trust & safety",
+          "Płatności escrow"
+        ]
       },
       "community": {
         "title": "Społeczności",
         "description": "Projektujemy i budujemy zamknięte sieci, platformy klubowe i społeczności zawodowe, gdzie interakcja jest naturalna – nie wymuszona. Czaty, role, wydarzenia i treści w jednym miejscu. Znamy różnicę między „stroną” a „platformą, do której ludzie wracają”.",
-        "tags": ["Sieci prywatne", "Portale członkowskie", "Czat na żywo", "Wydarzenia"]
+        "tags": [
+          "Sieci prywatne",
+          "Portale członkowskie",
+          "Czat na żywo",
+          "Wydarzenia"
+        ]
       },
       "logistics": {
         "title": "Logistyka",
         "description": "Pracujemy ze startupami i MŚP logistycznymi nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras. Dwa case studies opublikowane – więcej w toku.",
-        "tags": ["Zarządzanie flotą", "Śledzenie przesyłek", "Optymalizacja tras", "Logistics SaaS"]
+        "tags": [
+          "Zarządzanie flotą",
+          "Śledzenie przesyłek",
+          "Optymalizacja tras",
+          "Logistics SaaS"
+        ]
       }
     },
     "comingSoon": {
@@ -331,16 +364,16 @@
     },
     "how": {
       "1": {
-        "title": "TODO: Every platform we built launched empty",
-        "desc": "TODO: No listings, no members, no other side. We know what breaks in month two and which features you'll wish you'd cut. That's what you're hiring – not a framework list."
+        "title": "Każda platforma, którą zbudowaliśmy, startowała pusta",
+        "desc": "Brak ogłoszeń, brak członków, brak drugiej strony. Wiemy, co psuje się w drugim miesiącu i które funkcje warto wyciąć. Właśnie to kupujesz – nie listę frameworków."
       },
       "2": {
-        "title": "TODO: We'll tell you not to build it",
-        "desc": "TODO: Sometimes the answer is a spreadsheet, an existing tool, or waiting. We'd rather lose the project on the first call than watch it die at month five. Ask for an example – we'll name one."
+        "title": "Powiemy Ci, żeby tego nie budować",
+        "desc": "Czasem odpowiedzią jest arkusz kalkulacyjny, istniejące narzędzie albo czekanie. Wolimy stracić projekt na pierwszej rozmowie niż patrzeć, jak umiera w piątym miesiącu. Poproś o przykład – wskażemy konkretny."
       },
       "3": {
-        "title": "TODO: Same timezone, EU contracts",
-        "desc": "TODO: Poznań, Poland. An EU entity your legal team can contract with, data and IP handled inside the EU, and a team working your hours. Nobody schedules a 6am standup."
+        "title": "Ta sama strefa czasowa, umowy unijne",
+        "desc": "Poznań, Polska. Podmiot unijny, z którym Twój dział prawny może podpisać umowę, dane i IP obsługiwane w UE oraz zespół pracujący w Twoich godzinach. Nikt nie umawia standupu o 6 rano."
       },
       "label": "Jak pracujemy"
     },
@@ -385,7 +418,7 @@
     "label": "Z kim naprawdę będziesz pracować",
     "title": "15 osób. Nikt w Twoim zespole nie pracuje na 20%.",
     "subtitle": "Większość studiów naszej wielkości sprzedaje Ci zespół, a potem przydziela ułamek czasu pięciu osób rozproszonych po sześciu projektach. My przydzielamy Ci zespół, który zostaje z Tobą aż do wdrożenia – inżynieria, projektowanie i wejście na rynek w jednym miejscu, a nie trzech dostawców, których musisz synchronizować. To ogranicza liczbę projektów, które prowadzimy jednocześnie, i świadomie wybraliśmy taki kompromis.",
-    "paginationLabel": "TODO: Team pagination",
+    "paginationLabel": "Paginacja zespołu",
     "developers": {
       "title": "Inżynieria · 9 osób",
       "description": "Zaplecze techniczne, które wytrzyma platformę dwustronną: weryfikacja, dopasowanie, płatności, role i uprawnienia. Mamy dość szeroki zespół, by prowadzić równoległe strumienie pracy – platforma i narzędzia administracyjne powstają jednocześnie, a nie jedno po drugim."
@@ -410,8 +443,8 @@
     },
     "q1": "Czy zbudujecie mojego Ubera dla X?",
     "a1": "Może. Ale podczas pierwszej rozmowy zapytamy, po której stronie potrafisz zdobyć ręcznie 100 osób, bez reklam. Jeśli nie ma odpowiedzi, produkt nie jest gotowy i powiemy to zamiast brać pieniądze.",
-    "q2": "Dlaczego tylko trzy branże?",
-    "a2": "Bo czwarta byłaby deklaracją bez pokrycia w realizacjach. Budujemy platformy, na których uczestnicy muszą się znaleźć i sobie zaufać – ten schemat powtarza się w P2P, klubach i logistyce. Poza nim zgadywalibyśmy za Twój budżet.",
+    "q2": "Dlaczego tak mało branż?",
+    "a2": "Bo czwarta byłaby obietnicą, której jeszcze nie potwierdziliśmy pracą – właśnie budujemy naszą pierwszą platformę agritech i mówimy o tym wprost, dopóki nie zostanie wdrożona. Budujemy platformy, na których uczestnicy muszą się znaleźć i zaufać sobie nawzajem. Ten wzorzec powtarza się w marketplace'ach, klubach i logistyce. Poza nim zgadywalibyśmy Twój budżet.",
     "q3": "Ile kosztuje platforma?",
     "a3": "To zależy od modelu zaufania, liczby ról i narzędzi operacyjnych. Podczas pierwszej rozmowy podamy przedział, a po ustaleniu zakresu stałą cenę. Jeśli lepszym pierwszym krokiem jest prototyp, powiemy to.",
     "q4": "Czy mogę zatrudnić Was tylko do designu albo developmentu?",
@@ -1636,14 +1669,14 @@
     "follow": "Obserwuj nas",
     "privacyPolicy": "Polityka prywatności",
     "termsOfUse": "Regulamin",
-    "siteLabel": "TODO: Site footer"
+    "siteLabel": "Stopka strony"
   },
   "modals": {
     "successTitle": "Wiadomość wysłana",
     "successText": "Odezwiemy się w ciągu 24 godzin.",
     "errorTitle": "Coś poszło nie tak",
     "errorText": "Spróbuj później lub napisz na email.",
-    "close": "TODO: Close"
+    "close": "Zamknij"
   },
   "notFound": {
     "title": "Strona nie znaleziona",
@@ -1870,353 +1903,391 @@
   "legalPages": {
     "privacy": {
       "metadata": {
-        "title": "TODO: Privacy Policy | Ortvest",
-        "description": "TODO: How Ortvest collects, uses and protects your personal data."
+        "title": "Privacy Policy | Ortvest",
+        "description": "How Ortvest collects, uses and protects your personal data."
       },
-      "title": "TODO: PRIVACY POLICY",
-      "meta": "TODO: ortvest.com | Last updated: May 2026",
+      "title": "PRIVACY POLICY",
+      "meta": "ortvest.com | Last updated: July 2026",
       "sections": [
         {
           "number": "1",
-          "title": "TODO: General Information",
+          "title": "General Information",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: This Privacy Policy describes how Ortvest (\"Company\", \"we\", \"us\") collects, uses, stores, and protects personal data of users (\"you\") who visit or interact with ortvest.com (\"Website\")."
+              "text": "This Privacy Policy describes how Ortvest (\"Company\", \"we\", \"us\") collects, uses, stores, and protects personal data of users (\"you\") who visit or interact with ortvest.com (\"Website\")."
             },
             {
               "type": "paragraph",
-              "text": "TODO: We process personal data in accordance with:"
+              "text": "We process personal data in accordance with:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Regulation (EU) 2016/679 (General Data Protection Regulation – GDPR)",
-                "TODO: Polish Act of 10 May 2018 on the Protection of Personal Data",
-                "TODO: Polish Telecommunications Law"
+                "Regulation (EU) 2016/679 (General Data Protection Regulation – GDPR)",
+                "Polish Act of 10 May 2018 on the Protection of Personal Data",
+                "Polish Telecommunications Law"
               ]
             }
           ]
         },
         {
           "number": "2",
-          "title": "TODO: Data Controller",
+          "title": "Data Controller",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: The controller of your personal data is:"
+              "text": "The controller of your personal data is:"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Ortvest\nWebsite: ortvest.com\nContact email: contact@ortvest.com"
+              "text": "Ortvest sp. z o.o.\nul. Szamarzewskiego 21/2, Poznań, Poland\nNIP: 7812111756 | KRS: 0001244461\nWebsite: ortvest.com\nContact email: contact@ortvest.com"
             },
             {
               "type": "paragraph",
-              "text": "TODO: For all matters related to personal data protection, you may contact us at the email address above."
+              "text": "For all matters related to personal data protection, you may contact us at the email address above."
             }
           ]
         },
         {
           "number": "3",
-          "title": "TODO: What Data We Collect",
+          "title": "What Data We Collect",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: When you submit the contact form or review form on our Website, we collect the following data:"
+              "text": "When you submit a form on our Website, we collect the following data:"
             },
             {
               "type": "subheading",
-              "text": "TODO: 3.1 Data you provide directly (contact form & review form)"
+              "text": "3.1 Contact form"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Contact form:"
+              "text": "Contact form:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Name – your first and/or last name",
-                "TODO: Email address – used to reply to your inquiry",
-                "TODO: Project type (optional) – one of the following categories you select: P2P, Community & clubs, Logistics, Other",
-                "TODO: Budget (optional) – selected budget range: €10–25k, €25–50k, €50–100k, €100k+, or Not sure yet",
-                "TODO: Consultation type – type of session requested: Discovery Call (Free) or Cold Start Audit (€199)",
-                "TODO: Message (optional) – a free-text description of your project and timeline"
+                "Name – your first and/or last name",
+                "Email address – used to reply to your inquiry",
+                "Project type (optional) – one or more of the following categories you select: P2P, Community & clubs, Logistics, Other",
+                "Budget (optional) – selected budget range: €10–25k, €25–50k, €50–100k, €100k+, or Not sure yet",
+                "Consultation type – type of session requested: Discovery Call (Free) or Cold Start Audit (€199)",
+                "Message (optional) – a free-text description of your project and timeline"
               ]
             },
             {
               "type": "subheading",
-              "text": "TODO: 3.2 Data you provide via the Review Form"
+              "text": "3.2 Review form"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Name – your first and/or last name",
-                "TODO: Role – your job title or position",
-                "TODO: Company – the name of your organisation",
-                "TODO: Rating – a numeric or star rating of your experience",
-                "TODO: Review text – a free-text description of your experience working with us"
+                "Name – your first and/or last name",
+                "Role – your job title or position",
+                "Company – the name of your organisation",
+                "Rating – a numeric or star rating of your experience",
+                "Review text – a free-text description of your experience working with us"
               ]
             },
             {
               "type": "subheading",
-              "text": "TODO: 3.3 Data collected automatically"
+              "text": "3.3 Partnership application form"
             },
             {
               "type": "list",
               "items": [
-                "TODO: IP address",
-                "TODO: Browser type and version",
-                "TODO: Pages visited and time of visit",
-                "TODO: Referral source (how you found the Website)"
+                "Name – your first and/or last name",
+                "Email address – used to respond to your application",
+                "Product description – a free-text description of what you are building, including the participants on each side of your platform",
+                "Market access – a free-text description of which side of your platform you can currently reach and approximately how many participants",
+                "Development stage – idea, prototype, live with users, or generating revenue",
+                "Funding status – bootstrapped, pre-seed raised, seed raised, or Series A or beyond",
+                "Preferred engagement model – embedded team, build plus equity, technical co-founder function, or not sure",
+                "Previous attempts – a free-text description of what you have already tried and why it did not work"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: This data is collected via analytics tools (e.g., Google Analytics) to improve Website performance and user experience."
+              "text": "Free-text fields in this form may contain information about your business, your team, or third parties. Please do not include personal data of other individuals unless you have a lawful basis to share it with us, and do not include commercially sensitive information unless a non-disclosure agreement is in place (see our Terms of Use)."
+            },
+            {
+              "type": "subheading",
+              "text": "3.4 Data collected automatically"
+            },
+            {
+              "type": "list",
+              "items": [
+                "IP address",
+                "Browser type and version",
+                "Pages visited and time of visit",
+                "Referral source (how you found the Website)"
+              ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: We do NOT collect sensitive personal data (health, political views, religious beliefs, financial details, etc.)."
+              "text": "This data is collected via analytics tools (e.g., Google Analytics) to improve Website performance and user experience."
+            },
+            {
+              "type": "paragraph",
+              "text": "We do NOT collect sensitive personal data (health, political views, religious beliefs, financial details, etc.)."
             }
           ]
         },
         {
           "number": "4",
-          "title": "TODO: Purposes and Legal Bases for Processing",
+          "title": "Purposes and Legal Bases for Processing",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: We process your data for the following purposes:"
+              "text": "We process your data for the following purposes:"
             },
             {
               "type": "subheading",
-              "text": "TODO: 4.1 Responding to inquiries (contact form)"
+              "text": "4.1 Responding to inquiries (contact form)"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Legal basis: Art. 6(1)(b) GDPR – processing is necessary for taking steps at the request of the data subject prior to entering into a contract."
+              "text": "Legal basis: Art. 6(1)(b) GDPR – processing is necessary for taking steps at the request of the data subject prior to entering into a contract."
             },
             {
               "type": "subheading",
-              "text": "TODO: 4.2 Direct marketing of our services (B2B)"
+              "text": "4.2 Direct marketing of our services (B2B)"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Legal basis: Art. 6(1)(f) GDPR – legitimate interest of the Company (marketing own services to business clients)."
+              "text": "Legal basis: Art. 6(1)(f) GDPR – legitimate interest of the Company (marketing own services to business clients)."
             },
             {
               "type": "subheading",
-              "text": "TODO: 4.3 Analytics and Website improvement"
+              "text": "4.3 Analytics and Website improvement"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Legal basis: Art. 6(1)(f) GDPR – legitimate interest in understanding how the Website is used and improving user experience."
+              "text": "Legal basis: Art. 6(1)(f) GDPR – legitimate interest in understanding how the Website is used and improving user experience."
             },
             {
               "type": "subheading",
-              "text": "TODO: 4.4 Legal obligations"
+              "text": "4.4 Legal obligations"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Legal basis: Art. 6(1)(c) GDPR – compliance with applicable legal obligations (e.g., accounting, tax records)."
+              "text": "Legal basis: Art. 6(1)(c) GDPR – compliance with applicable legal obligations (e.g., accounting, tax records)."
             },
             {
               "type": "subheading",
-              "text": "TODO: 4.5 Publishing and displaying client reviews"
+              "text": "4.5 Publishing and displaying client reviews"
             },
             {
               "type": "paragraph",
-              "text": "TODO: We process review form data to publish client testimonials on our Website, subject to moderation."
+              "text": "We process review form data to publish client testimonials on our Website, subject to moderation."
             },
             {
               "type": "paragraph",
-              "text": "TODO: Legal basis: Art. 6(1)(a) GDPR – consent. By submitting the review form, you voluntarily provide data intended for public display. You may withdraw consent at any time by contacting contact@ortvest.com, and we will remove your review."
+              "text": "Legal basis: Art. 6(1)(a) GDPR – consent. By submitting the review form, you voluntarily provide data intended for public display. You may withdraw consent at any time by contacting contact@ortvest.com, and we will remove your review."
+            },
+            {
+              "type": "subheading",
+              "text": "4.6 Evaluating partnership applications"
+            },
+            {
+              "type": "paragraph",
+              "text": "We process partnership application data to assess whether a proposed engagement is a suitable fit, to respond to your application, and to prepare for potential contractual negotiations."
+            },
+            {
+              "type": "paragraph",
+              "text": "Legal basis: Art. 6(1)(b) GDPR – processing is necessary for taking steps at your request prior to entering into a contract."
+            },
+            {
+              "type": "paragraph",
+              "text": "Partnership application data is reviewed internally and is not published, shared with other applicants, or used for any purpose other than evaluating and responding to your application."
             }
           ]
         },
         {
           "number": "5",
-          "title": "TODO: Cookies and Tracking Technologies",
+          "title": "Cookies and Tracking Technologies",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: Our Website uses cookies and similar technologies. Cookies are small text files stored on your device."
+              "text": "Our Website uses cookies and similar technologies. Cookies are small text files stored on your device."
             },
             {
               "type": "paragraph",
-              "text": "TODO: We use:"
+              "text": "We use:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Necessary cookies – required for the proper functioning of the Website",
-                "TODO: Analytics cookies – e.g., Google Analytics (to analyse traffic and usage patterns)",
-                "TODO: Marketing cookies – only if you have given explicit consent"
+                "Necessary cookies – required for the proper functioning of the Website",
+                "Analytics cookies – e.g., Google Analytics (to analyse traffic and usage patterns)",
+                "Marketing cookies – only if you have given explicit consent"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: You can manage cookie preferences through your browser settings or via our cookie consent banner. Refusing analytics or marketing cookies will not affect access to the Website."
+              "text": "You can manage cookie preferences through your browser settings or via our cookie consent banner. Refusing analytics or marketing cookies will not affect access to the Website."
             }
           ]
         },
         {
           "number": "6",
-          "title": "TODO: Data Sharing",
+          "title": "Data Sharing",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: We do not sell your personal data. We may share data with trusted third parties only to the extent necessary:"
+              "text": "We do not sell your personal data. We may share data with trusted third parties only to the extent necessary:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: IT service providers and hosting companies (data processors under GDPR)",
-                "TODO: Email and CRM platforms (e.g., for managing inquiries)",
-                "TODO: Analytics providers (e.g., Google Analytics)",
-                "TODO: Legal, tax, or financial advisors, where required"
+                "IT service providers and hosting companies (data processors under GDPR)",
+                "Email and CRM platforms (e.g., for managing inquiries)",
+                "Analytics providers (e.g., Google Analytics)",
+                "Legal, tax, or financial advisors, where required"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: All third-party processors are bound by data processing agreements in compliance with GDPR Art. 28."
+              "text": "All third-party processors are bound by data processing agreements in compliance with GDPR Art. 28."
             }
           ]
         },
         {
           "number": "7",
-          "title": "TODO: International Data Transfers",
+          "title": "International Data Transfers",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: Due to the international nature of our business, personal data may be transferred to and processed in countries outside the European Economic Area (EEA), including the United States and Ukraine. We ensure that all such transfers are carried out with appropriate safeguards as required by Chapter V of GDPR:"
+              "text": "Due to the international nature of our business, personal data may be transferred to and processed in countries outside the European Economic Area (EEA), including the United States and Ukraine. We ensure that all such transfers are carried out with appropriate safeguards as required by Chapter V of GDPR:"
             },
             {
               "type": "subheading",
-              "text": "TODO: 7.1 Transfers to the United States"
+              "text": "7.1 Transfers to the United States"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Transfers to the US may occur via service providers (e.g., Google, cloud platforms). These transfers are carried out under Standard Contractual Clauses (SCCs) approved by the European Commission (Commission Decision 2021/914), and where applicable, supplementary technical and organisational measures to ensure an equivalent level of data protection."
+              "text": "Transfers to the US may occur via service providers (e.g., Google, cloud platforms). These transfers are carried out under Standard Contractual Clauses (SCCs) approved by the European Commission (Commission Decision 2021/914), and where applicable, supplementary technical and organisational measures to ensure an equivalent level of data protection."
             },
             {
               "type": "subheading",
-              "text": "TODO: 7.2 Transfers to Ukraine"
+              "text": "7.2 Transfers to Ukraine"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Ukraine is not listed among countries recognised by the European Commission as providing an adequate level of data protection. Where personal data is transferred to Ukraine (e.g., for development or operational purposes), we rely on Standard Contractual Clauses (Art. 46(2)(c) GDPR) and implement additional safeguards including data minimisation, encryption in transit and at rest, and access controls. Where required, we will seek your explicit consent for such transfers (Art. 49(1)(a) GDPR)."
+              "text": "Ukraine is not listed among countries recognised by the European Commission as providing an adequate level of data protection. Where personal data is transferred to Ukraine (e.g., for development or operational purposes), we rely on Standard Contractual Clauses (Art. 46(2)(c) GDPR) and implement additional safeguards including data minimisation, encryption in transit and at rest, and access controls. Where required, we will seek your explicit consent for such transfers (Art. 49(1)(a) GDPR)."
             },
             {
               "type": "paragraph",
-              "text": "TODO: You may request a copy of the safeguards applied to international transfers by contacting us at contact@ortvest.com."
+              "text": "You may request a copy of the safeguards applied to international transfers by contacting us at contact@ortvest.com."
             }
           ]
         },
         {
           "number": "8",
-          "title": "TODO: Data Retention",
+          "title": "Data Retention",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: We retain your personal data for as long as necessary:"
+              "text": "We retain your personal data for as long as necessary:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Inquiry data: up to 3 years from the last contact, or until you request deletion",
-                "TODO: Client data (if a contract is concluded): 5 years from the end of the business relationship (tax and accounting requirements)",
-                "TODO: Analytics data: as per the settings of the analytics provider (typically up to 26 months)",
-                "TODO: Review data: retained for as long as the review is published on the Website, or until you request deletion by contacting contact@ortvest.com"
+                "Inquiry data: up to 3 years from the last contact, or until you request deletion",
+                "Partnership application data: up to 12 months from submission where no engagement follows, or until you request deletion. Where an engagement begins, the data is retained under the client data period below.",
+                "Client data (if a contract is concluded): 5 years from the end of the business relationship (tax and accounting requirements)",
+                "Analytics data: as per the settings of the analytics provider (typically up to 26 months)",
+                "Review data: retained for as long as the review is published on the Website, or until you request deletion by contacting contact@ortvest.com"
               ]
             }
           ]
         },
         {
           "number": "9",
-          "title": "TODO: Your Rights",
+          "title": "Your Rights",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: Under GDPR, you have the following rights regarding your personal data:"
+              "text": "Under GDPR, you have the following rights regarding your personal data:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Right of access (Art. 15 GDPR) – obtain a copy of your data",
-                "TODO: Right to rectification (Art. 16 GDPR) – correct inaccurate data",
-                "TODO: Right to erasure / \"right to be forgotten\" (Art. 17 GDPR)",
-                "TODO: Right to restriction of processing (Art. 18 GDPR)",
-                "TODO: Right to data portability (Art. 20 GDPR)",
-                "TODO: Right to object to processing (Art. 21 GDPR) – including direct marketing",
-                "TODO: Right to withdraw consent at any time (where processing is based on consent)"
+                "Right of access (Art. 15 GDPR) – obtain a copy of your data",
+                "Right to rectification (Art. 16 GDPR) – correct inaccurate data",
+                "Right to erasure / \"right to be forgotten\" (Art. 17 GDPR)",
+                "Right to restriction of processing (Art. 18 GDPR)",
+                "Right to data portability (Art. 20 GDPR)",
+                "Right to object to processing (Art. 21 GDPR) – including direct marketing",
+                "Right to withdraw consent at any time (where processing is based on consent)"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: To exercise any of these rights, contact us at: contact@ortvest.com\nWe will respond within 30 days as required by GDPR Art. 12."
+              "text": "To exercise any of these rights, contact us at: contact@ortvest.com\nWe will respond within 30 days as required by GDPR Art. 12."
             }
           ]
         },
         {
           "number": "10",
-          "title": "TODO: Right to Lodge a Complaint",
+          "title": "Right to Lodge a Complaint",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: If you believe we are processing your data unlawfully, you have the right to lodge a complaint with the Polish supervisory authority:"
+              "text": "If you believe we are processing your data unlawfully, you have the right to lodge a complaint with the Polish supervisory authority:"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Urzad Ochrony Danych Osobowych (UODO)\nul. Stawki 2, 00-193 Warsaw, Poland\nWebsite: uodo.gov.pl\nPhone: +48 22 531 03 00"
+              "text": "Urząd Ochrony Danych Osobowych (UODO)\nul. Stawki 2, 00-193 Warsaw, Poland\nWebsite: uodo.gov.pl\nPhone: +48 22 531 03 00"
             }
           ]
         },
         {
           "number": "11",
-          "title": "TODO: Data Security",
+          "title": "Data Security",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, disclosure, or destruction. These include:"
+              "text": "We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, disclosure, or destruction. These include:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Encrypted data transmission (SSL/TLS)",
-                "TODO: Access controls and authentication",
-                "TODO: Regular security reviews"
+                "Encrypted data transmission (SSL/TLS)",
+                "Access controls and authentication",
+                "Regular security reviews"
               ]
             }
           ]
         },
         {
           "number": "12",
-          "title": "TODO: Links to Third-Party Websites",
+          "title": "Links to Third-Party Websites",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: Our Website may contain links to external websites. We are not responsible for the privacy practices of third-party websites and encourage you to review their privacy policies separately."
+              "text": "Our Website may contain links to external websites. We are not responsible for the privacy practices of third-party websites and encourage you to review their privacy policies separately."
             }
           ]
         },
         {
           "number": "13",
-          "title": "TODO: Changes to This Privacy Policy",
+          "title": "Changes to This Privacy Policy",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: We reserve the right to update this Privacy Policy at any time. The current version will always be available on this page with the \"Last updated\" date. Continued use of the Website after changes constitutes acceptance of the updated Policy."
+              "text": "We reserve the right to update this Privacy Policy at any time. The current version will always be available on this page with the \"Last updated\" date. Continued use of the Website after changes constitutes acceptance of the updated Policy."
             }
           ]
         },
         {
           "number": "14",
-          "title": "TODO: Contact",
+          "title": "Contact",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: For any questions about this Privacy Policy or personal data processing, please contact us:\nEmail: contact@ortvest.com\nWebsite: ortvest.com"
+              "text": "For any questions about this Privacy Policy or personal data processing, please contact us:\nEmail: contact@ortvest.com\nWebsite: ortvest.com"
             }
           ]
         }
@@ -2224,350 +2295,600 @@
     },
     "terms": {
       "metadata": {
-        "title": "TODO: Terms of Use | Ortvest",
-        "description": "TODO: Terms and conditions for using the ortvest.com website."
+        "title": "Terms of Use | Ortvest",
+        "description": "Terms and conditions for using the ortvest.com website."
       },
-      "title": "TODO: TERMS OF USE",
-      "meta": "TODO: ortvest.com | Last updated: May 2026",
+      "title": "TERMS OF USE",
+      "meta": "ortvest.com | Last updated: July 2026",
       "sections": [
         {
           "number": "1",
-          "title": "TODO: General Provisions",
+          "title": "General Provisions",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: These Terms of Use (\"Terms\") govern the conditions of use of the website ortvest.com (\"Website\") operated by Ortvest (\"Company\", \"we\", \"us\")."
+              "text": "These Terms of Use (\"Terms\") govern the conditions of use of the website ortvest.com (\"Website\") operated by Ortvest sp. z o.o. (\"Company\", \"we\", \"us\")."
             },
             {
               "type": "paragraph",
-              "text": "TODO: By accessing or using the Website, you confirm that you have read, understood, and agreed to be bound by these Terms. If you do not agree, please discontinue use of the Website immediately."
+              "text": "By accessing or using the Website, you confirm that you have read, understood, and agreed to be bound by these Terms. If you do not agree, please discontinue use of the Website immediately."
             },
             {
               "type": "paragraph",
-              "text": "TODO: These Terms are addressed to business entities (B2B). The Website is not intended for consumers (natural persons acting outside the scope of business or professional activity)."
+              "text": "These Terms are addressed to business entities (B2B). The Website is not intended for consumers (natural persons acting outside the scope of business or professional activity)."
             }
           ]
         },
         {
           "number": "2",
-          "title": "TODO: Services Described on the Website",
+          "title": "Services Described on the Website",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: The Website presents information about services provided by Ortvest, including:"
+              "text": "The Website presents information about services provided by Ortvest, including:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Web and mobile application development",
-                "TODO: UI/UX design",
-                "TODO: Digital marketing services"
+                "Design and development of web and mobile platforms, including marketplaces, peer-to-peer products, membership networks, and logistics systems",
+                "UI/UX design and brand identity",
+                "Digital marketing and go-to-market services",
+                "Partnership engagements, including embedded teams, build-plus-equity arrangements, and technical co-founder functions"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: The content of the Website is for informational purposes only and does not constitute a binding offer within the meaning of the Polish Civil Code, unless explicitly stated otherwise in a separate written agreement."
+              "text": "The content of the Website is for informational purposes only and does not constitute a binding offer within the meaning of the Polish Civil Code, unless explicitly stated otherwise in a separate written agreement."
             }
           ]
         },
         {
           "number": "3",
-          "title": "TODO: Inquiry and Contact Forms",
+          "title": "Inquiry and Contact Forms",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: The Website may include contact or inquiry forms allowing users to submit business inquiries to the Company."
+              "text": "The Website may include contact or inquiry forms allowing users to submit business inquiries to the Company."
             },
             {
               "type": "subheading",
-              "text": "TODO: 3.1 User obligations when submitting inquiries"
+              "text": "3.1 User obligations when submitting inquiries"
             },
             {
               "type": "paragraph",
-              "text": "TODO: By submitting a form, you represent and warrant that:"
+              "text": "By submitting a form, you represent and warrant that:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: You are acting on behalf of a business entity and are duly authorised to do so",
-                "TODO: All information provided is accurate, complete, and not misleading",
-                "TODO: You are not submitting spam, automated requests, or content violating applicable law"
+                "You are acting on behalf of a business entity and are duly authorised to do so",
+                "All information provided is accurate, complete, and not misleading",
+                "You are not submitting spam, automated requests, or content violating applicable law"
               ]
             },
             {
               "type": "subheading",
-              "text": "TODO: 3.2 No contractual obligation"
+              "text": "3.2 No contractual obligation"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Submission of an inquiry form does not create any contractual relationship between you and the Company. A contract is formed only upon execution of a separate written agreement signed by both parties."
+              "text": "Submission of an inquiry form does not create any contractual relationship between you and the Company. A contract is formed only upon execution of a separate written agreement signed by both parties."
             }
           ]
         },
         {
           "number": "3A",
-          "title": "TODO: Review Form",
+          "title": "Review Form",
           "blocks": [
             {
               "type": "subheading",
-              "text": "TODO: 3A.1 User obligations when submitting a review"
+              "text": "3A.1 User obligations when submitting a review"
             },
             {
               "type": "paragraph",
-              "text": "TODO: By submitting a review, you represent and warrant that:"
+              "text": "By submitting a review, you represent and warrant that:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: You are a current or former client of Ortvest and have personally experienced the services you describe",
-                "TODO: All information provided is truthful, accurate, and based on genuine experience",
-                "TODO: Your review does not contain false, misleading, defamatory, offensive, or unlawful content",
-                "TODO: You are acting on behalf of a business entity and are authorised to do so"
+                "You are a current or former client of Ortvest and have personally experienced the services you describe",
+                "All information provided is truthful, accurate, and based on genuine experience",
+                "Your review does not contain false, misleading, defamatory, offensive, or unlawful content",
+                "You are acting on behalf of a business entity and are authorised to do so"
               ]
             },
             {
               "type": "subheading",
-              "text": "TODO: 3A.2 Licence to publish"
+              "text": "3A.2 Licence to publish"
             },
             {
               "type": "paragraph",
-              "text": "TODO: By submitting a review, you grant Ortvest a non-exclusive, royalty-free, worldwide, perpetual licence to publish, display, reproduce, and promote your review (including your name, role, and company) on the Website and in marketing materials. You may request removal of your review at any time by contacting contact@ortvest.com."
+              "text": "By submitting a review, you grant Ortvest a non-exclusive, royalty-free, worldwide, perpetual licence to publish, display, reproduce, and promote your review (including your name, role, and company) on the Website and in marketing materials. You may request removal of your review at any time by contacting contact@ortvest.com."
             },
             {
               "type": "subheading",
-              "text": "TODO: 3A.3 Moderation"
+              "text": "3A.3 Moderation"
             },
             {
               "type": "paragraph",
-              "text": "TODO: The Company reserves the right to moderate, edit for formatting, decline to publish, or remove any submitted review at its sole discretion, including reviews that violate these Terms or applicable law."
+              "text": "The Company reserves the right to moderate, edit for formatting, decline to publish, or remove any submitted review at its sole discretion, including reviews that violate these Terms or applicable law."
             },
             {
               "type": "subheading",
-              "text": "TODO: 3A.4 No compensation"
+              "text": "3A.4 No compensation"
             },
             {
               "type": "paragraph",
-              "text": "TODO: Submission of a review is voluntary and does not entitle you to any compensation, discount, or benefit unless explicitly agreed in writing."
+              "text": "Submission of a review is voluntary and does not entitle you to any compensation, discount, or benefit unless explicitly agreed in writing."
+            }
+          ]
+        },
+        {
+          "number": "3B",
+          "title": "Partnership Applications",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The Website includes a partnership application form through which you may express interest in an engagement beyond a standard service contract, including an embedded team, a build-plus-equity arrangement, or a technical co-founder function."
+            },
+            {
+              "type": "subheading",
+              "text": "3B.1 No offer and no commitment"
+            },
+            {
+              "type": "paragraph",
+              "text": "Submission of the partnership application form does not create any offer, commitment, contract, or binding relationship of any kind between you and the Company. This applies in particular, and without limitation, to any terms concerning equity, shareholding, investment, revenue sharing, or other financial arrangements."
+            },
+            {
+              "type": "paragraph",
+              "text": "The Company is under no obligation to respond to, evaluate, accept, or pursue any application, and may decline any application at its sole discretion without providing reasons."
+            },
+            {
+              "type": "subheading",
+              "text": "3B.2 Terms agreed separately"
+            },
+            {
+              "type": "paragraph",
+              "text": "Any partnership engagement, including any arrangement involving equity or a shareholding in your company, is subject to a separate written agreement negotiated and signed by both parties. Engagement models, commercial terms, equity ranges, and minimum durations described on the Website are indicative only and do not constitute an offer or a commitment to specific terms."
+            },
+            {
+              "type": "subheading",
+              "text": "3B.3 No advice"
+            },
+            {
+              "type": "paragraph",
+              "text": "The Company does not provide investment, financial, tax, accounting, or legal advice through the partnership application form or in the course of any partnership discussion. You are solely responsible for obtaining independent professional advice before entering into any equity-based or other financial arrangement, and for ensuring that any such arrangement complies with the laws applicable to you and your company."
+            },
+            {
+              "type": "subheading",
+              "text": "3B.4 Your representations"
+            },
+            {
+              "type": "paragraph",
+              "text": "By submitting a partnership application, you represent and warrant that:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "You are acting on behalf of a business entity, or intend to establish one, and are duly authorised to submit the application",
+                "All information provided is accurate, complete, and not misleading",
+                "You have the right to share the information you submit, and doing so does not breach any obligation owed to a third party",
+                "You are not subject to any restriction that would prevent you from entering into the engagement you are proposing"
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3C",
+          "title": "Confidentiality of Submitted Information",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "3C.1 Information is not automatically confidential"
+            },
+            {
+              "type": "paragraph",
+              "text": "Information you submit through any form on the Website, including the partnership application form, is not automatically treated as confidential and does not create a confidential relationship between you and the Company."
+            },
+            {
+              "type": "paragraph",
+              "text": "If you wish to share commercially sensitive information, you should request a mutual non-disclosure agreement before submitting it. The Company will consider such requests in good faith."
+            },
+            {
+              "type": "subheading",
+              "text": "3C.2 Independent development"
+            },
+            {
+              "type": "paragraph",
+              "text": "The Company works with multiple clients and develops its own products across the same and adjacent markets. Nothing in these Terms restricts the Company from independently developing, acquiring, or working on products, features, or concepts that are similar to those described in any application or inquiry, provided the Company does not use information subject to a signed non-disclosure agreement in doing so."
+            },
+            {
+              "type": "subheading",
+              "text": "3C.3 Internal handling"
+            },
+            {
+              "type": "paragraph",
+              "text": "Notwithstanding the above, the Company will handle partnership applications with reasonable care, will review them internally only, and will not publish them or share them with other applicants."
             }
           ]
         },
         {
           "number": "4",
-          "title": "TODO: Intellectual Property",
+          "title": "Intellectual Property",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: All content published on the Website – including but not limited to texts, graphics, logos, icons, images, videos, code, and design – is the exclusive property of Ortvest or its licensors and is protected by:"
+              "text": "All content published on the Website – including but not limited to texts, graphics, logos, icons, images, videos, code, and design – is the exclusive property of Ortvest or its licensors and is protected by:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Polish Act of 4 February 1994 on Copyright and Related Rights",
-                "TODO: Regulation (EU) 2017/1001 on the European Union trade mark",
-                "TODO: Other applicable intellectual property laws"
+                "Polish Act of 4 February 1994 on Copyright and Related Rights",
+                "Regulation (EU) 2017/1001 on the European Union trade mark",
+                "Other applicable intellectual property laws"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: You may NOT, without the prior written consent of the Company:"
+              "text": "You may NOT, without the prior written consent of the Company:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Copy, reproduce, distribute, or publish any content from the Website",
-                "TODO: Modify, translate, or create derivative works based on Website content",
-                "TODO: Use the Company's name, logo, or trademarks in any commercial context"
+                "Copy, reproduce, distribute, or publish any content from the Website",
+                "Modify, translate, or create derivative works based on Website content",
+                "Use the Company's name, logo, or trademarks in any commercial context"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: You may view and print Website content solely for your own non-commercial, internal business evaluation purposes."
+              "text": "You may view and print Website content solely for your own non-commercial, internal business evaluation purposes."
             }
           ]
         },
         {
           "number": "5",
-          "title": "TODO: Prohibited Uses",
+          "title": "Prohibited Uses",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: When using the Website, you agree NOT to:"
+              "text": "When using the Website, you agree NOT to:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Attempt to gain unauthorised access to any part of the Website or its servers",
-                "TODO: Introduce viruses, malware, or any other harmful code",
-                "TODO: Use automated tools (bots, crawlers, scrapers) to extract data from the Website without prior written consent",
-                "TODO: Engage in any activity that disrupts or interferes with the proper functioning of the Website",
-                "TODO: Use the Website for any unlawful purpose or in violation of applicable regulations",
-                "TODO: Impersonate the Company or any other person or entity"
+                "Attempt to gain unauthorised access to any part of the Website or its servers",
+                "Introduce viruses, malware, or any other harmful code",
+                "Use automated tools (bots, crawlers, scrapers) to extract data from the Website without prior written consent",
+                "Engage in any activity that disrupts or interferes with the proper functioning of the Website",
+                "Use the Website for any unlawful purpose or in violation of applicable regulations",
+                "Impersonate the Company or any other person or entity"
               ]
             }
           ]
         },
         {
           "number": "6",
-          "title": "TODO: Disclaimer of Warranties",
+          "title": "Disclaimer of Warranties",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: The Website and its content are provided on an \"as is\" and \"as available\" basis, without warranties of any kind, express or implied."
+              "text": "The Website and its content are provided on an \"as is\" and \"as available\" basis, without warranties of any kind, express or implied."
             },
             {
               "type": "paragraph",
-              "text": "TODO: The Company does not warrant that:"
+              "text": "The Company does not warrant that:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: The Website will be available without interruption or error",
-                "TODO: The content is complete, accurate, or up to date",
-                "TODO: The Website is free from viruses or other harmful components"
+                "The Website will be available without interruption or error",
+                "The content is complete, accurate, or up to date",
+                "The Website is free from viruses or other harmful components"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: To the fullest extent permitted by applicable law, the Company disclaims all warranties, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement."
+              "text": "To the fullest extent permitted by applicable law, the Company disclaims all warranties, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement."
             }
           ]
         },
         {
           "number": "7",
-          "title": "TODO: Limitation of Liability",
+          "title": "Limitation of Liability",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: To the maximum extent permitted by Polish and EU law, the Company shall not be liable for:"
+              "text": "To the maximum extent permitted by Polish and EU law, the Company shall not be liable for:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Any indirect, incidental, special, or consequential damages arising from your use of the Website",
-                "TODO: Loss of data, profits, business, or reputation",
-                "TODO: Damages resulting from reliance on information presented on the Website",
-                "TODO: Temporary unavailability of the Website due to maintenance, technical failures, or force majeure"
+                "Any indirect, incidental, special, or consequential damages arising from your use of the Website",
+                "Loss of data, profits, business, or reputation",
+                "Damages resulting from reliance on information presented on the Website",
+                "Temporary unavailability of the Website due to maintenance, technical failures, or force majeure",
+                "Any decision taken by you on the basis of a partnership discussion that did not result in a signed agreement"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: The Company's total liability for any claim arising from these Terms or use of the Website shall not exceed EUR 500, to the extent permitted by law."
+              "text": "The Company's total liability for any claim arising from these Terms or use of the Website shall not exceed EUR 500, to the extent permitted by law. This limitation does not apply to liability arising under a separately signed service or partnership agreement, which shall be governed by the terms of that agreement."
             }
           ]
         },
         {
           "number": "8",
-          "title": "TODO: Third-Party Links",
+          "title": "Third-Party Links",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: The Website may contain links to external websites operated by third parties. These links are provided for informational convenience only. The Company:"
+              "text": "The Website may contain links to external websites operated by third parties. These links are provided for informational convenience only. The Company:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Does not control or endorse the content of linked websites",
-                "TODO: Is not responsible for their privacy practices, content, or availability",
-                "TODO: Recommends reviewing the terms and policies of any third-party websites you visit"
+                "Does not control or endorse the content of linked websites",
+                "Is not responsible for their privacy practices, content, or availability",
+                "Recommends reviewing the terms and policies of any third-party websites you visit"
               ]
             }
           ]
         },
         {
           "number": "9",
-          "title": "TODO: Availability and Modifications",
+          "title": "Availability and Modifications",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: The Company reserves the right, at its sole discretion and without prior notice, to:"
+              "text": "The Company reserves the right, at its sole discretion and without prior notice, to:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: Modify, suspend, or discontinue the Website (or any part thereof) at any time",
-                "TODO: Update, amend, or remove content from the Website",
-                "TODO: Restrict access to all or part of the Website"
+                "Modify, suspend, or discontinue the Website (or any part thereof) at any time",
+                "Update, amend, or remove content from the Website",
+                "Restrict access to all or part of the Website"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: The Company shall not be liable for any consequences resulting from such modifications or unavailability."
+              "text": "The Company shall not be liable for any consequences resulting from such modifications or unavailability."
             }
           ]
         },
         {
           "number": "10",
-          "title": "TODO: Amendments to These Terms",
+          "title": "Amendments to These Terms",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: The Company reserves the right to update these Terms at any time. The updated version will be published on this page with a revised \"Last updated\" date."
+              "text": "The Company reserves the right to update these Terms at any time. The updated version will be published on this page with a revised \"Last updated\" date."
             },
             {
               "type": "paragraph",
-              "text": "TODO: Continued use of the Website after publication of the updated Terms constitutes acceptance of the changes. If you do not agree with the updated Terms, you must discontinue use of the Website."
+              "text": "Continued use of the Website after publication of the updated Terms constitutes acceptance of the changes. If you do not agree with the updated Terms, you must discontinue use of the Website."
             }
           ]
         },
         {
           "number": "11",
-          "title": "TODO: Governing Law and Jurisdiction",
+          "title": "Governing Law and Jurisdiction",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: These Terms are governed by and construed in accordance with the law of the Republic of Poland, in particular:"
+              "text": "These Terms are governed by and construed in accordance with the law of the Republic of Poland, in particular:"
             },
             {
               "type": "list",
               "items": [
-                "TODO: The Polish Civil Code (Kodeks cywilny) of 23 April 1964",
-                "TODO: The Polish Act on the Provision of Electronic Services (Ustawa o swiadczeniu uslug droga elektroniczna) of 18 July 2002",
-                "TODO: Applicable EU regulations, including GDPR"
+                "The Polish Civil Code (Kodeks cywilny) of 23 April 1964",
+                "The Polish Act on the Provision of Electronic Services (Ustawa o świadczeniu usług drogą elektroniczną) of 18 July 2002",
+                "Applicable EU regulations, including GDPR"
               ]
             },
             {
               "type": "paragraph",
-              "text": "TODO: Any disputes arising from or related to these Terms shall be subject to the exclusive jurisdiction of the competent courts in Poland."
+              "text": "Any disputes arising from or related to these Terms shall be subject to the exclusive jurisdiction of the competent courts in Poland."
             },
             {
               "type": "subheading",
-              "text": "TODO: 11.1 Clients in the United States"
+              "text": "11.1 Clients in the United States"
             },
             {
               "type": "paragraph",
-              "text": "TODO: If you are accessing the Website from the United States, you acknowledge that the Website is operated from Poland and governed by Polish and EU law. No representations are made that the content of the Website complies with US federal or state laws. Use of the Website from the US is at your own discretion and risk. The Company does not target US consumers; these Terms apply exclusively in a B2B context."
+              "text": "If you are accessing the Website from the United States, you acknowledge that the Website is operated from Poland and governed by Polish and EU law. No representations are made that the content of the Website complies with US federal or state laws. Use of the Website from the US is at your own discretion and risk. The Company does not target US consumers; these Terms apply exclusively in a B2B context."
+            },
+            {
+              "type": "paragraph",
+              "text": "Nothing on the Website, including the partnership application form, constitutes an offer or solicitation of securities in the United States or in any other jurisdiction where such an offer or solicitation would be unlawful."
             },
             {
               "type": "subheading",
-              "text": "TODO: 11.2 Clients in Ukraine"
+              "text": "11.2 Clients in Ukraine"
             },
             {
               "type": "paragraph",
-              "text": "TODO: If you are accessing the Website from Ukraine, you acknowledge that the governing law of these Terms is Polish law and that any contractual relationship between you and the Company shall be subject to Polish jurisdiction. The parties may agree in a separate written contract to alternative dispute resolution mechanisms (e.g., ICC arbitration) if needed for a specific engagement."
+              "text": "If you are accessing the Website from Ukraine, you acknowledge that the governing law of these Terms is Polish law and that any contractual relationship between you and the Company shall be subject to Polish jurisdiction. The parties may agree in a separate written contract to alternative dispute resolution mechanisms (e.g., ICC arbitration) if needed for a specific engagement."
             }
           ]
         },
         {
           "number": "12",
-          "title": "TODO: Severability",
+          "title": "Severability",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: If any provision of these Terms is found to be invalid, illegal, or unenforceable by a competent court, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced by a valid provision that most closely reflects the original intent."
+              "text": "If any provision of these Terms is found to be invalid, illegal, or unenforceable by a competent court, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced by a valid provision that most closely reflects the original intent."
             }
           ]
         },
         {
           "number": "13",
-          "title": "TODO: Contact",
+          "title": "Contact",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "TODO: For any questions regarding these Terms of Use, please contact us:\nEmail: contact@ortvest.com\nWebsite: ortvest.com"
+              "text": "For any questions regarding these Terms of Use, please contact us:\nEmail: contact@ortvest.com\nWebsite: ortvest.com"
             }
           ]
         }
       ]
+    }
+  },
+  "partnership": {
+    "bar": {
+      "text": "Większość founderów nie potrzebuje agencji. Potrzebuje partnera technologicznego.",
+      "textMobile": "Szukasz partnera technologicznego?",
+      "link": "Zobacz, jak to działa →"
+    },
+    "meta": {
+      "title": "Partnerstwo technologiczne | Ortvest",
+      "description": "Nie tylko umowa na build. Współpraca, w której dzielimy odpowiedzialność za wynik – zespół embedded, build + equity lub rola technicznego co-foundera.",
+      "ogTitle": "Partnerstwo technologiczne | Ortvest",
+      "ogDescription": "Trzy sposoby współpracy z Ortvest poza standardową umową – zespół embedded, build + equity i rola technicznego co-foundera."
+    },
+    "hero": {
+      "eyebrow": "Partnerstwo",
+      "title": "Większość vendorów znika po demo day.",
+      "subtitle": "Mieliśmy dość cold startów, żeby wiedzieć, co naprawdę wprowadza platformę dwustronną ponad zero. Vendor dostarcza produkt. Partner odpowiada za to, czy to działa.",
+      "cta": "Zobacz modele współpracy"
+    },
+    "contrast": {
+      "label": "Vendor vs partner",
+      "title": "Co się zmienia, gdy to partnerstwo",
+      "vendorHeading": "Vendor",
+      "partnerHeading": "Partner",
+      "items": [
+        {
+          "vendor": "Zakres ograniczony do delivery",
+          "partner": "Odpowiedzialność za wynik"
+        },
+        {
+          "vendor": "Po launchu koniec pracy",
+          "partner": "Zaangażowanie po launchu"
+        },
+        {
+          "vendor": "Buduje to, co specyfikujesz",
+          "partner": "Kwestionuje spec, gdy jest błędny"
+        },
+        {
+          "vendor": "Jedna umowa, jedna faktura",
+          "partner": "Wspólna skóra w grze"
+        }
+      ]
+    },
+    "models": {
+      "label": "Modele współpracy",
+      "title": "Trzy sposoby współpracy poza standardową umową",
+      "embedded": {
+        "number": "01",
+        "title": "Zespół embedded",
+        "who": "Masz wizję produktu i potrzebujesz full-stack squadu bez zarządzania pięcioma osobnymi vendorami.",
+        "what": "Engineering, design i go-to-market osadzone w twoim zespole na czas projektu. Jeden punkt kontaktu, jeden squad, cotygodniowe demo.",
+        "terms": "Fixed scope lub rolling monthly. Stawki na zapytanie."
+      },
+      "equity": {
+        "number": "02",
+        "title": "Build + equity",
+        "who": "Masz potwierdzony popyt, ale ograniczony runway. Jesteś gotów wymienić equity na niższy burn rate.",
+        "what": "Budujemy platformę po obniżonej stawce w zamian za niewielki udział w equity. Podział zależy od scope i etapu.",
+        "terms": "Equity 2–8% w zależności od scope. Minimum 4 miesiące współpracy."
+      },
+      "cto": {
+        "number": "03",
+        "title": "Rola technicznego co-foundera",
+        "who": "Jesteś non-tech founderem i potrzebujesz kogoś, kto przejmie tech – nie tylko wykona zadania.",
+        "what": "Pełnimy rolę twojego technicznego co-foundera: architektura, wybór vendorów, rekrutacja, code review i build.",
+        "terms": "Retainer + equity. Struktura ustalana indywidualnie."
+      },
+      "whoLabel": "Dla kogo",
+      "whatLabel": "Co robimy",
+      "termsLabel": "Warunki komercyjne"
+    },
+    "notFor": {
+      "label": "Nie dla wszystkich",
+      "title": "Dla kogo to nie jest",
+      "items": [
+        "Founderzy, którzy mają już zespół i potrzebują tylko dodatkowej capacity",
+        "Projekty, które nie są dwustronne – single-player apps, narzędzia wewnętrzne, czyste SaaS",
+        "Founderzy, którzy potrzebują yes-mana, a nie kogoś, kto zakwestionuje spec",
+        "Timeline poniżej 6 tygodni – za mało czasu, żeby zrobić to porządnie"
+      ]
+    },
+    "proof": {
+      "label": "Dlaczego my",
+      "title": "Część, którą nie powinieneś musieć ogarniać",
+      "subtitle": "Rynek, klienci i rozmowy, które możesz prowadzić tylko ty – to twoje. Wszystko między pomysłem a działającą platformą – nasze.",
+      "cards": {
+        "1": {
+          "title": "Zespół wystarczająco duży, żeby nie być twoim bottleneckiem",
+          "body": "Piętnaście osób, a ci na twoim projekcie nie są rozdzieleni między sześć innych. Backend, product i go-to-market siedzą w jednym pokoju – więc platforma i narzędzia administracyjne powstają równolegle, a nie jedno po drugim, podczas gdy czekasz."
+        },
+        "2": {
+          "title": "Te decyzje podejmowaliśmy za własne pieniądze",
+          "body": "Yachtly finansujemy sami: model cenowy, którą stronę seedować pierwszą, które funkcje wycinać. Dlatego dyskutujemy o twoim modelu biznesowym, zamiast go tylko implementować. Studio, które nigdy nie poniosło downside'u, zbuduje cokolwiek poprosisz."
+        },
+        "3": {
+          "title": "Nie musisz wiedzieć, o co pytać",
+          "body": "Architektura, stack, trade-offy, co się psuje w skali, kiedy zatrudnić in-house – to nasza odpowiedzialność. Ty wnosisz rynek i decyzje, które możesz podjąć tylko ty. Nikt nie wrzuca ci repo i maila z „powodzenia\"."
+        }
+      }
+    },
+    "form": {
+      "eyebrow": "Aplikacja",
+      "title": "Aplikuj, żeby z nami pracować",
+      "subtitle": "Przeglądamy każdą aplikację. Jeśli jest fit – odezwiemy się w ciągu 48 godzin.",
+      "name": {
+        "label": "Twoje imię",
+        "placeholder": "Jan Kowalski"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "jan@startup.com"
+      },
+      "building": {
+        "label": "Co budujesz?",
+        "placeholder": "Opisz produkt – kto jest po każdej stronie i co wymieniają."
+      },
+      "sideCount": {
+        "label": "Którą stronę platformy możesz dziś dotrzeć i mniej więcej ilu?",
+        "placeholder": "np. Mamy 40 niezależnych sprzątaczy, którzy już korzystają z naszej grupy na WhatsAppie."
+      },
+      "stage": "Etap",
+      "stages": {
+        "idea": "Pomysł – jeszcze bez produktu",
+        "prototype": "Prototyp – nie na produkcji",
+        "live": "Live z użytkownikami",
+        "revenue": "Generuje przychód"
+      },
+      "funding": "Sytuacja finansowa",
+      "fundings": {
+        "bootstrapped": "Bootstrapped",
+        "preseed": "Pre-seed zebrane",
+        "seed": "Seed zebrane",
+        "raised": "Series A lub więcej"
+      },
+      "model": "Który model cię interesuje?",
+      "models": {
+        "embedded": "Zespół embedded",
+        "equity": "Build + equity",
+        "cto": "Rola technicznego co-foundera",
+        "unsure": "Jeszcze nie wiem"
+      },
+      "tried": {
+        "label": "Co już próbowałeś i nie zadziałało?",
+        "placeholder": "Freelancerzy, inne agencje, rekrutacja in-house – co poszło nie tak?"
+      },
+      "submit": "Wyślij aplikację",
+      "submitting": "Wysyłanie…",
+      "success": {
+        "title": "Aplikacja otrzymana.",
+        "text": "Przeglądamy każdą. Jeśli jest fit – odezwiemy się w ciągu 48 godzin."
+      },
+      "legal": "Wysyłając formularz, akceptujesz naszą",
+      "legalLink": "Politykę prywatności",
+      "selectPlaceholder": "Wybierz…"
     }
   }
 }

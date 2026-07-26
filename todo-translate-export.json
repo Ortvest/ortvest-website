@@ -1,0 +1,1227 @@
+[
+  {
+    "key": "nav.home",
+    "en": "Home",
+    "pl_todo": "TODO: Home"
+  },
+  {
+    "key": "nav.openMenu",
+    "en": "Open menu",
+    "pl_todo": "TODO: Open menu"
+  },
+  {
+    "key": "nav.closeMenu",
+    "en": "Close menu",
+    "pl_todo": "TODO: Close menu"
+  },
+  {
+    "key": "nav.mainNavigation",
+    "en": "Main navigation",
+    "pl_todo": "TODO: Main navigation"
+  },
+  {
+    "key": "nav.mobileNavigation",
+    "en": "Mobile navigation",
+    "pl_todo": "TODO: Mobile navigation"
+  },
+  {
+    "key": "nav.serviceSublabels.what",
+    "en": "Design, Dev & Marketing",
+    "pl_todo": "TODO: Design, Dev & Marketing"
+  },
+  {
+    "key": "nav.serviceSublabels.industries",
+    "en": "P2P, Community, Logistics…",
+    "pl_todo": "TODO: P2P, Community, Logistics…"
+  },
+  {
+    "key": "nav.serviceSublabels.process",
+    "en": "How we work, step by step",
+    "pl_todo": "TODO: How we work, step by step"
+  },
+  {
+    "key": "nav.serviceSublabels.technologies",
+    "en": "Our tech stack",
+    "pl_todo": "TODO: Our tech stack"
+  },
+  {
+    "key": "divider.industries",
+    "en": "industries. A fourth in build.",
+    "pl_todo": "TODO: industries. A fourth in build."
+  },
+  {
+    "key": "divider.industryList",
+    "en": "P2P · Community · Logistics · Agritech (in build)",
+    "pl_todo": "TODO: P2P · Community · Logistics · Agritech (in build)"
+  },
+  {
+    "key": "hero.nodes.shippers.title",
+    "en": "Logistics",
+    "pl_todo": "TODO: Logistics"
+  },
+  {
+    "key": "hero.nodes.clubs.title",
+    "en": "Community & clubs",
+    "pl_todo": "TODO: Community & clubs"
+  },
+  {
+    "key": "hero.nodes.owners.title",
+    "en": "P2P",
+    "pl_todo": "TODO: P2P"
+  },
+  {
+    "key": "hero.nodes.agritech.title",
+    "en": "Agritech",
+    "pl_todo": "TODO: Agritech"
+  },
+  {
+    "key": "servicesSection.ind.agritech.title",
+    "en": "Agritech",
+    "pl_todo": "TODO: Agritech"
+  },
+  {
+    "key": "servicesSection.ind.agritech.badge",
+    "en": "In build · 2026",
+    "pl_todo": "TODO: In build · 2026"
+  },
+  {
+    "key": "servicesSection.ind.agritech.desc",
+    "en": "We're building our first agritech platform now. Same shape as the rest: multiple parties, verified identities, transactions that have to be trusted. We'll show it when it ships – until then we're not claiming the industry.",
+    "pl_todo": "TODO: We're building our first agritech platform now. Same shape as the rest: multiple parties, verified identities, transactions that have to be trusted. We'll show it when it ships – until then we're not claiming the industry."
+  },
+  {
+    "key": "servicesSection.ind.agritech.t1",
+    "en": "Traceability",
+    "pl_todo": "TODO: Traceability"
+  },
+  {
+    "key": "servicesSection.ind.agritech.t2",
+    "en": "Supply chain",
+    "pl_todo": "TODO: Supply chain"
+  },
+  {
+    "key": "servicesSection.ind.agritech.t3",
+    "en": "Producers ⇄ buyers",
+    "pl_todo": "TODO: Producers ⇄ buyers"
+  },
+  {
+    "key": "servicesSection.processTags.interviews",
+    "en": "Interviews",
+    "pl_todo": "TODO: Interviews"
+  },
+  {
+    "key": "servicesSection.processTags.competitorAnalysis",
+    "en": "Competitor analysis",
+    "pl_todo": "TODO: Competitor analysis"
+  },
+  {
+    "key": "servicesSection.processTags.techAudit",
+    "en": "Tech audit",
+    "pl_todo": "TODO: Tech audit"
+  },
+  {
+    "key": "servicesSection.processTags.figma",
+    "en": "Figma",
+    "pl_todo": "TODO: Figma"
+  },
+  {
+    "key": "servicesSection.processTags.prototyping",
+    "en": "Prototyping",
+    "pl_todo": "TODO: Prototyping"
+  },
+  {
+    "key": "servicesSection.processTags.designSystem",
+    "en": "Design system",
+    "pl_todo": "TODO: Design system"
+  },
+  {
+    "key": "servicesSection.processTags.oneWeekSprints",
+    "en": "1-week sprints",
+    "pl_todo": "TODO: 1-week sprints"
+  },
+  {
+    "key": "servicesSection.processTags.weeklyDemos",
+    "en": "Weekly demos",
+    "pl_todo": "TODO: Weekly demos"
+  },
+  {
+    "key": "servicesSection.processTags.codeReview",
+    "en": "Code review",
+    "pl_todo": "TODO: Code review"
+  },
+  {
+    "key": "servicesSection.processTags.landingPage",
+    "en": "Landing page",
+    "pl_todo": "TODO: Landing page"
+  },
+  {
+    "key": "servicesSection.processTags.seo",
+    "en": "SEO",
+    "pl_todo": "TODO: SEO"
+  },
+  {
+    "key": "servicesSection.processTags.analytics",
+    "en": "Analytics",
+    "pl_todo": "TODO: Analytics"
+  },
+  {
+    "key": "servicesSection.processTags.gtmStrategy",
+    "en": "GTM strategy",
+    "pl_todo": "TODO: GTM strategy"
+  },
+  {
+    "key": "servicesSection.processTags.ciCd",
+    "en": "CI/CD",
+    "pl_todo": "TODO: CI/CD"
+  },
+  {
+    "key": "servicesSection.processTags.monitoring",
+    "en": "Monitoring",
+    "pl_todo": "TODO: Monitoring"
+  },
+  {
+    "key": "servicesSection.processTags.retainer",
+    "en": "Retainer",
+    "pl_todo": "TODO: Retainer"
+  },
+  {
+    "key": "approach.how.1.title",
+    "en": "Every platform we built launched empty",
+    "pl_todo": "TODO: Every platform we built launched empty"
+  },
+  {
+    "key": "approach.how.1.desc",
+    "en": "No listings, no members, no other side. We know what breaks in month two and which features you'll wish you'd cut. That's what you're hiring – not a framework list.",
+    "pl_todo": "TODO: No listings, no members, no other side. We know what breaks in month two and which features you'll wish you'd cut. That's what you're hiring – not a framework list."
+  },
+  {
+    "key": "approach.how.2.title",
+    "en": "We'll tell you not to build it",
+    "pl_todo": "TODO: We'll tell you not to build it"
+  },
+  {
+    "key": "approach.how.2.desc",
+    "en": "Sometimes the answer is a spreadsheet, an existing tool, or waiting. We'd rather lose the project on the first call than watch it die at month five. Ask for an example – we'll name one.",
+    "pl_todo": "TODO: Sometimes the answer is a spreadsheet, an existing tool, or waiting. We'd rather lose the project on the first call than watch it die at month five. Ask for an example – we'll name one."
+  },
+  {
+    "key": "approach.how.3.title",
+    "en": "Same timezone, EU contracts",
+    "pl_todo": "TODO: Same timezone, EU contracts"
+  },
+  {
+    "key": "approach.how.3.desc",
+    "en": "Poznań, Poland. An EU entity your legal team can contract with, data and IP handled inside the EU, and a team working your hours. Nobody schedules a 6am standup.",
+    "pl_todo": "TODO: Poznań, Poland. An EU entity your legal team can contract with, data and IP handled inside the EU, and a team working your hours. Nobody schedules a 6am standup."
+  },
+  {
+    "key": "team.paginationLabel",
+    "en": "Team pagination",
+    "pl_todo": "TODO: Team pagination"
+  },
+  {
+    "key": "faq.q2",
+    "en": "Why so few industries?",
+    "pl_todo": "TODO: Why so few industries?"
+  },
+  {
+    "key": "faq.a2",
+    "en": "Because a fourth would be a claim we can't back with work yet – we're building our first agritech platform now and we'll say so plainly until it ships. We build platforms where participants have to find and trust each other. That shape repeats across marketplaces, clubs and logistics. Outside it we'd be guessing on your budget.",
+    "pl_todo": "TODO: Because a fourth would be a claim we can't back with work yet – we're building our first agritech platform now and we'll say so plainly until it ships. We build platforms where participants have to find and trust each other. That shape repeats across marketplaces, clubs and logistics. Outside it we'd be guessing on your budget."
+  },
+  {
+    "key": "footer.siteLabel",
+    "en": "Site footer",
+    "pl_todo": "TODO: Site footer"
+  },
+  {
+    "key": "modals.close",
+    "en": "Close",
+    "pl_todo": "TODO: Close"
+  },
+  {
+    "key": "legalPages.privacy.metadata.title",
+    "en": "Privacy Policy | Ortvest",
+    "pl_todo": "TODO: Privacy Policy | Ortvest"
+  },
+  {
+    "key": "legalPages.privacy.metadata.description",
+    "en": "How Ortvest collects, uses and protects your personal data.",
+    "pl_todo": "TODO: How Ortvest collects, uses and protects your personal data."
+  },
+  {
+    "key": "legalPages.privacy.title",
+    "en": "PRIVACY POLICY",
+    "pl_todo": "TODO: PRIVACY POLICY"
+  },
+  {
+    "key": "legalPages.privacy.meta",
+    "en": "ortvest.com | Last updated: May 2026",
+    "pl_todo": "TODO: ortvest.com | Last updated: May 2026"
+  },
+  {
+    "key": "legalPages.privacy.sections[0].title",
+    "en": "General Information",
+    "pl_todo": "TODO: General Information"
+  },
+  {
+    "key": "legalPages.privacy.sections[0].blocks[0].text",
+    "en": "This Privacy Policy describes how Ortvest (\"Company\", \"we\", \"us\") collects, uses, stores, and protects personal data of users (\"you\") who visit or interact with ortvest.com (\"Website\").",
+    "pl_todo": "TODO: This Privacy Policy describes how Ortvest (\"Company\", \"we\", \"us\") collects, uses, stores, and protects personal data of users (\"you\") who visit or interact with ortvest.com (\"Website\")."
+  },
+  {
+    "key": "legalPages.privacy.sections[0].blocks[1].text",
+    "en": "We process personal data in accordance with:",
+    "pl_todo": "TODO: We process personal data in accordance with:"
+  },
+  {
+    "key": "legalPages.privacy.sections[0].blocks[2].items[0]",
+    "en": "Regulation (EU) 2016/679 (General Data Protection Regulation – GDPR)",
+    "pl_todo": "TODO: Regulation (EU) 2016/679 (General Data Protection Regulation – GDPR)"
+  },
+  {
+    "key": "legalPages.privacy.sections[0].blocks[2].items[1]",
+    "en": "Polish Act of 10 May 2018 on the Protection of Personal Data",
+    "pl_todo": "TODO: Polish Act of 10 May 2018 on the Protection of Personal Data"
+  },
+  {
+    "key": "legalPages.privacy.sections[0].blocks[2].items[2]",
+    "en": "Polish Telecommunications Law",
+    "pl_todo": "TODO: Polish Telecommunications Law"
+  },
+  {
+    "key": "legalPages.privacy.sections[1].title",
+    "en": "Data Controller",
+    "pl_todo": "TODO: Data Controller"
+  },
+  {
+    "key": "legalPages.privacy.sections[1].blocks[0].text",
+    "en": "The controller of your personal data is:",
+    "pl_todo": "TODO: The controller of your personal data is:"
+  },
+  {
+    "key": "legalPages.privacy.sections[1].blocks[1].text",
+    "en": "Ortvest\nWebsite: ortvest.com\nContact email: contact@ortvest.com",
+    "pl_todo": "TODO: Ortvest\nWebsite: ortvest.com\nContact email: contact@ortvest.com"
+  },
+  {
+    "key": "legalPages.privacy.sections[1].blocks[2].text",
+    "en": "For all matters related to personal data protection, you may contact us at the email address above.",
+    "pl_todo": "TODO: For all matters related to personal data protection, you may contact us at the email address above."
+  },
+  {
+    "key": "legalPages.privacy.sections[2].title",
+    "en": "What Data We Collect",
+    "pl_todo": "TODO: What Data We Collect"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[0].text",
+    "en": "When you submit the contact form or review form on our Website, we collect the following data:",
+    "pl_todo": "TODO: When you submit the contact form or review form on our Website, we collect the following data:"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[1].text",
+    "en": "3.1 Data you provide directly (contact form & review form)",
+    "pl_todo": "TODO: 3.1 Data you provide directly (contact form & review form)"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[2].text",
+    "en": "Contact form:",
+    "pl_todo": "TODO: Contact form:"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[3].items[0]",
+    "en": "Name – your first and/or last name",
+    "pl_todo": "TODO: Name – your first and/or last name"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[3].items[1]",
+    "en": "Email address – used to reply to your inquiry",
+    "pl_todo": "TODO: Email address – used to reply to your inquiry"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[3].items[2]",
+    "en": "Project type (optional) – one of the following categories you select: P2P, Community & clubs, Logistics, Other",
+    "pl_todo": "TODO: Project type (optional) – one of the following categories you select: P2P, Community & clubs, Logistics, Other"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[3].items[3]",
+    "en": "Budget (optional) – selected budget range: €10–25k, €25–50k, €50–100k, €100k+, or Not sure yet",
+    "pl_todo": "TODO: Budget (optional) – selected budget range: €10–25k, €25–50k, €50–100k, €100k+, or Not sure yet"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[3].items[4]",
+    "en": "Consultation type – type of session requested: Discovery Call (Free) or Cold Start Audit (€199)",
+    "pl_todo": "TODO: Consultation type – type of session requested: Discovery Call (Free) or Cold Start Audit (€199)"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[3].items[5]",
+    "en": "Message (optional) – a free-text description of your project and timeline",
+    "pl_todo": "TODO: Message (optional) – a free-text description of your project and timeline"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[4].text",
+    "en": "3.2 Data you provide via the Review Form",
+    "pl_todo": "TODO: 3.2 Data you provide via the Review Form"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[5].items[0]",
+    "en": "Name – your first and/or last name",
+    "pl_todo": "TODO: Name – your first and/or last name"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[5].items[1]",
+    "en": "Role – your job title or position",
+    "pl_todo": "TODO: Role – your job title or position"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[5].items[2]",
+    "en": "Company – the name of your organisation",
+    "pl_todo": "TODO: Company – the name of your organisation"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[5].items[3]",
+    "en": "Rating – a numeric or star rating of your experience",
+    "pl_todo": "TODO: Rating – a numeric or star rating of your experience"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[5].items[4]",
+    "en": "Review text – a free-text description of your experience working with us",
+    "pl_todo": "TODO: Review text – a free-text description of your experience working with us"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[6].text",
+    "en": "3.3 Data collected automatically",
+    "pl_todo": "TODO: 3.3 Data collected automatically"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[7].items[0]",
+    "en": "IP address",
+    "pl_todo": "TODO: IP address"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[7].items[1]",
+    "en": "Browser type and version",
+    "pl_todo": "TODO: Browser type and version"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[7].items[2]",
+    "en": "Pages visited and time of visit",
+    "pl_todo": "TODO: Pages visited and time of visit"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[7].items[3]",
+    "en": "Referral source (how you found the Website)",
+    "pl_todo": "TODO: Referral source (how you found the Website)"
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[8].text",
+    "en": "This data is collected via analytics tools (e.g., Google Analytics) to improve Website performance and user experience.",
+    "pl_todo": "TODO: This data is collected via analytics tools (e.g., Google Analytics) to improve Website performance and user experience."
+  },
+  {
+    "key": "legalPages.privacy.sections[2].blocks[9].text",
+    "en": "We do NOT collect sensitive personal data (health, political views, religious beliefs, financial details, etc.).",
+    "pl_todo": "TODO: We do NOT collect sensitive personal data (health, political views, religious beliefs, financial details, etc.)."
+  },
+  {
+    "key": "legalPages.privacy.sections[3].title",
+    "en": "Purposes and Legal Bases for Processing",
+    "pl_todo": "TODO: Purposes and Legal Bases for Processing"
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[0].text",
+    "en": "We process your data for the following purposes:",
+    "pl_todo": "TODO: We process your data for the following purposes:"
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[1].text",
+    "en": "4.1 Responding to inquiries (contact form)",
+    "pl_todo": "TODO: 4.1 Responding to inquiries (contact form)"
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[2].text",
+    "en": "Legal basis: Art. 6(1)(b) GDPR – processing is necessary for taking steps at the request of the data subject prior to entering into a contract.",
+    "pl_todo": "TODO: Legal basis: Art. 6(1)(b) GDPR – processing is necessary for taking steps at the request of the data subject prior to entering into a contract."
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[3].text",
+    "en": "4.2 Direct marketing of our services (B2B)",
+    "pl_todo": "TODO: 4.2 Direct marketing of our services (B2B)"
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[4].text",
+    "en": "Legal basis: Art. 6(1)(f) GDPR – legitimate interest of the Company (marketing own services to business clients).",
+    "pl_todo": "TODO: Legal basis: Art. 6(1)(f) GDPR – legitimate interest of the Company (marketing own services to business clients)."
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[5].text",
+    "en": "4.3 Analytics and Website improvement",
+    "pl_todo": "TODO: 4.3 Analytics and Website improvement"
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[6].text",
+    "en": "Legal basis: Art. 6(1)(f) GDPR – legitimate interest in understanding how the Website is used and improving user experience.",
+    "pl_todo": "TODO: Legal basis: Art. 6(1)(f) GDPR – legitimate interest in understanding how the Website is used and improving user experience."
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[7].text",
+    "en": "4.4 Legal obligations",
+    "pl_todo": "TODO: 4.4 Legal obligations"
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[8].text",
+    "en": "Legal basis: Art. 6(1)(c) GDPR – compliance with applicable legal obligations (e.g., accounting, tax records).",
+    "pl_todo": "TODO: Legal basis: Art. 6(1)(c) GDPR – compliance with applicable legal obligations (e.g., accounting, tax records)."
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[9].text",
+    "en": "4.5 Publishing and displaying client reviews",
+    "pl_todo": "TODO: 4.5 Publishing and displaying client reviews"
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[10].text",
+    "en": "We process review form data to publish client testimonials on our Website, subject to moderation.",
+    "pl_todo": "TODO: We process review form data to publish client testimonials on our Website, subject to moderation."
+  },
+  {
+    "key": "legalPages.privacy.sections[3].blocks[11].text",
+    "en": "Legal basis: Art. 6(1)(a) GDPR – consent. By submitting the review form, you voluntarily provide data intended for public display. You may withdraw consent at any time by contacting contact@ortvest.com, and we will remove your review.",
+    "pl_todo": "TODO: Legal basis: Art. 6(1)(a) GDPR – consent. By submitting the review form, you voluntarily provide data intended for public display. You may withdraw consent at any time by contacting contact@ortvest.com, and we will remove your review."
+  },
+  {
+    "key": "legalPages.privacy.sections[4].title",
+    "en": "Cookies and Tracking Technologies",
+    "pl_todo": "TODO: Cookies and Tracking Technologies"
+  },
+  {
+    "key": "legalPages.privacy.sections[4].blocks[0].text",
+    "en": "Our Website uses cookies and similar technologies. Cookies are small text files stored on your device.",
+    "pl_todo": "TODO: Our Website uses cookies and similar technologies. Cookies are small text files stored on your device."
+  },
+  {
+    "key": "legalPages.privacy.sections[4].blocks[1].text",
+    "en": "We use:",
+    "pl_todo": "TODO: We use:"
+  },
+  {
+    "key": "legalPages.privacy.sections[4].blocks[2].items[0]",
+    "en": "Necessary cookies – required for the proper functioning of the Website",
+    "pl_todo": "TODO: Necessary cookies – required for the proper functioning of the Website"
+  },
+  {
+    "key": "legalPages.privacy.sections[4].blocks[2].items[1]",
+    "en": "Analytics cookies – e.g., Google Analytics (to analyse traffic and usage patterns)",
+    "pl_todo": "TODO: Analytics cookies – e.g., Google Analytics (to analyse traffic and usage patterns)"
+  },
+  {
+    "key": "legalPages.privacy.sections[4].blocks[2].items[2]",
+    "en": "Marketing cookies – only if you have given explicit consent",
+    "pl_todo": "TODO: Marketing cookies – only if you have given explicit consent"
+  },
+  {
+    "key": "legalPages.privacy.sections[4].blocks[3].text",
+    "en": "You can manage cookie preferences through your browser settings or via our cookie consent banner. Refusing analytics or marketing cookies will not affect access to the Website.",
+    "pl_todo": "TODO: You can manage cookie preferences through your browser settings or via our cookie consent banner. Refusing analytics or marketing cookies will not affect access to the Website."
+  },
+  {
+    "key": "legalPages.privacy.sections[5].title",
+    "en": "Data Sharing",
+    "pl_todo": "TODO: Data Sharing"
+  },
+  {
+    "key": "legalPages.privacy.sections[5].blocks[0].text",
+    "en": "We do not sell your personal data. We may share data with trusted third parties only to the extent necessary:",
+    "pl_todo": "TODO: We do not sell your personal data. We may share data with trusted third parties only to the extent necessary:"
+  },
+  {
+    "key": "legalPages.privacy.sections[5].blocks[1].items[0]",
+    "en": "IT service providers and hosting companies (data processors under GDPR)",
+    "pl_todo": "TODO: IT service providers and hosting companies (data processors under GDPR)"
+  },
+  {
+    "key": "legalPages.privacy.sections[5].blocks[1].items[1]",
+    "en": "Email and CRM platforms (e.g., for managing inquiries)",
+    "pl_todo": "TODO: Email and CRM platforms (e.g., for managing inquiries)"
+  },
+  {
+    "key": "legalPages.privacy.sections[5].blocks[1].items[2]",
+    "en": "Analytics providers (e.g., Google Analytics)",
+    "pl_todo": "TODO: Analytics providers (e.g., Google Analytics)"
+  },
+  {
+    "key": "legalPages.privacy.sections[5].blocks[1].items[3]",
+    "en": "Legal, tax, or financial advisors, where required",
+    "pl_todo": "TODO: Legal, tax, or financial advisors, where required"
+  },
+  {
+    "key": "legalPages.privacy.sections[5].blocks[2].text",
+    "en": "All third-party processors are bound by data processing agreements in compliance with GDPR Art. 28.",
+    "pl_todo": "TODO: All third-party processors are bound by data processing agreements in compliance with GDPR Art. 28."
+  },
+  {
+    "key": "legalPages.privacy.sections[6].title",
+    "en": "International Data Transfers",
+    "pl_todo": "TODO: International Data Transfers"
+  },
+  {
+    "key": "legalPages.privacy.sections[6].blocks[0].text",
+    "en": "Due to the international nature of our business, personal data may be transferred to and processed in countries outside the European Economic Area (EEA), including the United States and Ukraine. We ensure that all such transfers are carried out with appropriate safeguards as required by Chapter V of GDPR:",
+    "pl_todo": "TODO: Due to the international nature of our business, personal data may be transferred to and processed in countries outside the European Economic Area (EEA), including the United States and Ukraine. We ensure that all such transfers are carried out with appropriate safeguards as required by Chapter V of GDPR:"
+  },
+  {
+    "key": "legalPages.privacy.sections[6].blocks[1].text",
+    "en": "7.1 Transfers to the United States",
+    "pl_todo": "TODO: 7.1 Transfers to the United States"
+  },
+  {
+    "key": "legalPages.privacy.sections[6].blocks[2].text",
+    "en": "Transfers to the US may occur via service providers (e.g., Google, cloud platforms). These transfers are carried out under Standard Contractual Clauses (SCCs) approved by the European Commission (Commission Decision 2021/914), and where applicable, supplementary technical and organisational measures to ensure an equivalent level of data protection.",
+    "pl_todo": "TODO: Transfers to the US may occur via service providers (e.g., Google, cloud platforms). These transfers are carried out under Standard Contractual Clauses (SCCs) approved by the European Commission (Commission Decision 2021/914), and where applicable, supplementary technical and organisational measures to ensure an equivalent level of data protection."
+  },
+  {
+    "key": "legalPages.privacy.sections[6].blocks[3].text",
+    "en": "7.2 Transfers to Ukraine",
+    "pl_todo": "TODO: 7.2 Transfers to Ukraine"
+  },
+  {
+    "key": "legalPages.privacy.sections[6].blocks[4].text",
+    "en": "Ukraine is not listed among countries recognised by the European Commission as providing an adequate level of data protection. Where personal data is transferred to Ukraine (e.g., for development or operational purposes), we rely on Standard Contractual Clauses (Art. 46(2)(c) GDPR) and implement additional safeguards including data minimisation, encryption in transit and at rest, and access controls. Where required, we will seek your explicit consent for such transfers (Art. 49(1)(a) GDPR).",
+    "pl_todo": "TODO: Ukraine is not listed among countries recognised by the European Commission as providing an adequate level of data protection. Where personal data is transferred to Ukraine (e.g., for development or operational purposes), we rely on Standard Contractual Clauses (Art. 46(2)(c) GDPR) and implement additional safeguards including data minimisation, encryption in transit and at rest, and access controls. Where required, we will seek your explicit consent for such transfers (Art. 49(1)(a) GDPR)."
+  },
+  {
+    "key": "legalPages.privacy.sections[6].blocks[5].text",
+    "en": "You may request a copy of the safeguards applied to international transfers by contacting us at contact@ortvest.com.",
+    "pl_todo": "TODO: You may request a copy of the safeguards applied to international transfers by contacting us at contact@ortvest.com."
+  },
+  {
+    "key": "legalPages.privacy.sections[7].title",
+    "en": "Data Retention",
+    "pl_todo": "TODO: Data Retention"
+  },
+  {
+    "key": "legalPages.privacy.sections[7].blocks[0].text",
+    "en": "We retain your personal data for as long as necessary:",
+    "pl_todo": "TODO: We retain your personal data for as long as necessary:"
+  },
+  {
+    "key": "legalPages.privacy.sections[7].blocks[1].items[0]",
+    "en": "Inquiry data: up to 3 years from the last contact, or until you request deletion",
+    "pl_todo": "TODO: Inquiry data: up to 3 years from the last contact, or until you request deletion"
+  },
+  {
+    "key": "legalPages.privacy.sections[7].blocks[1].items[1]",
+    "en": "Client data (if a contract is concluded): 5 years from the end of the business relationship (tax and accounting requirements)",
+    "pl_todo": "TODO: Client data (if a contract is concluded): 5 years from the end of the business relationship (tax and accounting requirements)"
+  },
+  {
+    "key": "legalPages.privacy.sections[7].blocks[1].items[2]",
+    "en": "Analytics data: as per the settings of the analytics provider (typically up to 26 months)",
+    "pl_todo": "TODO: Analytics data: as per the settings of the analytics provider (typically up to 26 months)"
+  },
+  {
+    "key": "legalPages.privacy.sections[7].blocks[1].items[3]",
+    "en": "Review data: retained for as long as the review is published on the Website, or until you request deletion by contacting contact@ortvest.com",
+    "pl_todo": "TODO: Review data: retained for as long as the review is published on the Website, or until you request deletion by contacting contact@ortvest.com"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].title",
+    "en": "Your Rights",
+    "pl_todo": "TODO: Your Rights"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[0].text",
+    "en": "Under GDPR, you have the following rights regarding your personal data:",
+    "pl_todo": "TODO: Under GDPR, you have the following rights regarding your personal data:"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[1].items[0]",
+    "en": "Right of access (Art. 15 GDPR) – obtain a copy of your data",
+    "pl_todo": "TODO: Right of access (Art. 15 GDPR) – obtain a copy of your data"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[1].items[1]",
+    "en": "Right to rectification (Art. 16 GDPR) – correct inaccurate data",
+    "pl_todo": "TODO: Right to rectification (Art. 16 GDPR) – correct inaccurate data"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[1].items[2]",
+    "en": "Right to erasure / \"right to be forgotten\" (Art. 17 GDPR)",
+    "pl_todo": "TODO: Right to erasure / \"right to be forgotten\" (Art. 17 GDPR)"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[1].items[3]",
+    "en": "Right to restriction of processing (Art. 18 GDPR)",
+    "pl_todo": "TODO: Right to restriction of processing (Art. 18 GDPR)"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[1].items[4]",
+    "en": "Right to data portability (Art. 20 GDPR)",
+    "pl_todo": "TODO: Right to data portability (Art. 20 GDPR)"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[1].items[5]",
+    "en": "Right to object to processing (Art. 21 GDPR) – including direct marketing",
+    "pl_todo": "TODO: Right to object to processing (Art. 21 GDPR) – including direct marketing"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[1].items[6]",
+    "en": "Right to withdraw consent at any time (where processing is based on consent)",
+    "pl_todo": "TODO: Right to withdraw consent at any time (where processing is based on consent)"
+  },
+  {
+    "key": "legalPages.privacy.sections[8].blocks[2].text",
+    "en": "To exercise any of these rights, contact us at: contact@ortvest.com\nWe will respond within 30 days as required by GDPR Art. 12.",
+    "pl_todo": "TODO: To exercise any of these rights, contact us at: contact@ortvest.com\nWe will respond within 30 days as required by GDPR Art. 12."
+  },
+  {
+    "key": "legalPages.privacy.sections[9].title",
+    "en": "Right to Lodge a Complaint",
+    "pl_todo": "TODO: Right to Lodge a Complaint"
+  },
+  {
+    "key": "legalPages.privacy.sections[9].blocks[0].text",
+    "en": "If you believe we are processing your data unlawfully, you have the right to lodge a complaint with the Polish supervisory authority:",
+    "pl_todo": "TODO: If you believe we are processing your data unlawfully, you have the right to lodge a complaint with the Polish supervisory authority:"
+  },
+  {
+    "key": "legalPages.privacy.sections[9].blocks[1].text",
+    "en": "Urzad Ochrony Danych Osobowych (UODO)\nul. Stawki 2, 00-193 Warsaw, Poland\nWebsite: uodo.gov.pl\nPhone: +48 22 531 03 00",
+    "pl_todo": "TODO: Urzad Ochrony Danych Osobowych (UODO)\nul. Stawki 2, 00-193 Warsaw, Poland\nWebsite: uodo.gov.pl\nPhone: +48 22 531 03 00"
+  },
+  {
+    "key": "legalPages.privacy.sections[10].title",
+    "en": "Data Security",
+    "pl_todo": "TODO: Data Security"
+  },
+  {
+    "key": "legalPages.privacy.sections[10].blocks[0].text",
+    "en": "We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, disclosure, or destruction. These include:",
+    "pl_todo": "TODO: We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, disclosure, or destruction. These include:"
+  },
+  {
+    "key": "legalPages.privacy.sections[10].blocks[1].items[0]",
+    "en": "Encrypted data transmission (SSL/TLS)",
+    "pl_todo": "TODO: Encrypted data transmission (SSL/TLS)"
+  },
+  {
+    "key": "legalPages.privacy.sections[10].blocks[1].items[1]",
+    "en": "Access controls and authentication",
+    "pl_todo": "TODO: Access controls and authentication"
+  },
+  {
+    "key": "legalPages.privacy.sections[10].blocks[1].items[2]",
+    "en": "Regular security reviews",
+    "pl_todo": "TODO: Regular security reviews"
+  },
+  {
+    "key": "legalPages.privacy.sections[11].title",
+    "en": "Links to Third-Party Websites",
+    "pl_todo": "TODO: Links to Third-Party Websites"
+  },
+  {
+    "key": "legalPages.privacy.sections[11].blocks[0].text",
+    "en": "Our Website may contain links to external websites. We are not responsible for the privacy practices of third-party websites and encourage you to review their privacy policies separately.",
+    "pl_todo": "TODO: Our Website may contain links to external websites. We are not responsible for the privacy practices of third-party websites and encourage you to review their privacy policies separately."
+  },
+  {
+    "key": "legalPages.privacy.sections[12].title",
+    "en": "Changes to This Privacy Policy",
+    "pl_todo": "TODO: Changes to This Privacy Policy"
+  },
+  {
+    "key": "legalPages.privacy.sections[12].blocks[0].text",
+    "en": "We reserve the right to update this Privacy Policy at any time. The current version will always be available on this page with the \"Last updated\" date. Continued use of the Website after changes constitutes acceptance of the updated Policy.",
+    "pl_todo": "TODO: We reserve the right to update this Privacy Policy at any time. The current version will always be available on this page with the \"Last updated\" date. Continued use of the Website after changes constitutes acceptance of the updated Policy."
+  },
+  {
+    "key": "legalPages.privacy.sections[13].title",
+    "en": "Contact",
+    "pl_todo": "TODO: Contact"
+  },
+  {
+    "key": "legalPages.privacy.sections[13].blocks[0].text",
+    "en": "For any questions about this Privacy Policy or personal data processing, please contact us:\nEmail: contact@ortvest.com\nWebsite: ortvest.com",
+    "pl_todo": "TODO: For any questions about this Privacy Policy or personal data processing, please contact us:\nEmail: contact@ortvest.com\nWebsite: ortvest.com"
+  },
+  {
+    "key": "legalPages.terms.metadata.title",
+    "en": "Terms of Use | Ortvest",
+    "pl_todo": "TODO: Terms of Use | Ortvest"
+  },
+  {
+    "key": "legalPages.terms.metadata.description",
+    "en": "Terms and conditions for using the ortvest.com website.",
+    "pl_todo": "TODO: Terms and conditions for using the ortvest.com website."
+  },
+  {
+    "key": "legalPages.terms.title",
+    "en": "TERMS OF USE",
+    "pl_todo": "TODO: TERMS OF USE"
+  },
+  {
+    "key": "legalPages.terms.meta",
+    "en": "ortvest.com | Last updated: May 2026",
+    "pl_todo": "TODO: ortvest.com | Last updated: May 2026"
+  },
+  {
+    "key": "legalPages.terms.sections[0].title",
+    "en": "General Provisions",
+    "pl_todo": "TODO: General Provisions"
+  },
+  {
+    "key": "legalPages.terms.sections[0].blocks[0].text",
+    "en": "These Terms of Use (\"Terms\") govern the conditions of use of the website ortvest.com (\"Website\") operated by Ortvest (\"Company\", \"we\", \"us\").",
+    "pl_todo": "TODO: These Terms of Use (\"Terms\") govern the conditions of use of the website ortvest.com (\"Website\") operated by Ortvest (\"Company\", \"we\", \"us\")."
+  },
+  {
+    "key": "legalPages.terms.sections[0].blocks[1].text",
+    "en": "By accessing or using the Website, you confirm that you have read, understood, and agreed to be bound by these Terms. If you do not agree, please discontinue use of the Website immediately.",
+    "pl_todo": "TODO: By accessing or using the Website, you confirm that you have read, understood, and agreed to be bound by these Terms. If you do not agree, please discontinue use of the Website immediately."
+  },
+  {
+    "key": "legalPages.terms.sections[0].blocks[2].text",
+    "en": "These Terms are addressed to business entities (B2B). The Website is not intended for consumers (natural persons acting outside the scope of business or professional activity).",
+    "pl_todo": "TODO: These Terms are addressed to business entities (B2B). The Website is not intended for consumers (natural persons acting outside the scope of business or professional activity)."
+  },
+  {
+    "key": "legalPages.terms.sections[1].title",
+    "en": "Services Described on the Website",
+    "pl_todo": "TODO: Services Described on the Website"
+  },
+  {
+    "key": "legalPages.terms.sections[1].blocks[0].text",
+    "en": "The Website presents information about services provided by Ortvest, including:",
+    "pl_todo": "TODO: The Website presents information about services provided by Ortvest, including:"
+  },
+  {
+    "key": "legalPages.terms.sections[1].blocks[1].items[0]",
+    "en": "Web and mobile application development",
+    "pl_todo": "TODO: Web and mobile application development"
+  },
+  {
+    "key": "legalPages.terms.sections[1].blocks[1].items[1]",
+    "en": "UI/UX design",
+    "pl_todo": "TODO: UI/UX design"
+  },
+  {
+    "key": "legalPages.terms.sections[1].blocks[1].items[2]",
+    "en": "Digital marketing services",
+    "pl_todo": "TODO: Digital marketing services"
+  },
+  {
+    "key": "legalPages.terms.sections[1].blocks[2].text",
+    "en": "The content of the Website is for informational purposes only and does not constitute a binding offer within the meaning of the Polish Civil Code, unless explicitly stated otherwise in a separate written agreement.",
+    "pl_todo": "TODO: The content of the Website is for informational purposes only and does not constitute a binding offer within the meaning of the Polish Civil Code, unless explicitly stated otherwise in a separate written agreement."
+  },
+  {
+    "key": "legalPages.terms.sections[2].title",
+    "en": "Inquiry and Contact Forms",
+    "pl_todo": "TODO: Inquiry and Contact Forms"
+  },
+  {
+    "key": "legalPages.terms.sections[2].blocks[0].text",
+    "en": "The Website may include contact or inquiry forms allowing users to submit business inquiries to the Company.",
+    "pl_todo": "TODO: The Website may include contact or inquiry forms allowing users to submit business inquiries to the Company."
+  },
+  {
+    "key": "legalPages.terms.sections[2].blocks[1].text",
+    "en": "3.1 User obligations when submitting inquiries",
+    "pl_todo": "TODO: 3.1 User obligations when submitting inquiries"
+  },
+  {
+    "key": "legalPages.terms.sections[2].blocks[2].text",
+    "en": "By submitting a form, you represent and warrant that:",
+    "pl_todo": "TODO: By submitting a form, you represent and warrant that:"
+  },
+  {
+    "key": "legalPages.terms.sections[2].blocks[3].items[0]",
+    "en": "You are acting on behalf of a business entity and are duly authorised to do so",
+    "pl_todo": "TODO: You are acting on behalf of a business entity and are duly authorised to do so"
+  },
+  {
+    "key": "legalPages.terms.sections[2].blocks[3].items[1]",
+    "en": "All information provided is accurate, complete, and not misleading",
+    "pl_todo": "TODO: All information provided is accurate, complete, and not misleading"
+  },
+  {
+    "key": "legalPages.terms.sections[2].blocks[3].items[2]",
+    "en": "You are not submitting spam, automated requests, or content violating applicable law",
+    "pl_todo": "TODO: You are not submitting spam, automated requests, or content violating applicable law"
+  },
+  {
+    "key": "legalPages.terms.sections[2].blocks[4].text",
+    "en": "3.2 No contractual obligation",
+    "pl_todo": "TODO: 3.2 No contractual obligation"
+  },
+  {
+    "key": "legalPages.terms.sections[2].blocks[5].text",
+    "en": "Submission of an inquiry form does not create any contractual relationship between you and the Company. A contract is formed only upon execution of a separate written agreement signed by both parties.",
+    "pl_todo": "TODO: Submission of an inquiry form does not create any contractual relationship between you and the Company. A contract is formed only upon execution of a separate written agreement signed by both parties."
+  },
+  {
+    "key": "legalPages.terms.sections[3].title",
+    "en": "Review Form",
+    "pl_todo": "TODO: Review Form"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[0].text",
+    "en": "3A.1 User obligations when submitting a review",
+    "pl_todo": "TODO: 3A.1 User obligations when submitting a review"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[1].text",
+    "en": "By submitting a review, you represent and warrant that:",
+    "pl_todo": "TODO: By submitting a review, you represent and warrant that:"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[2].items[0]",
+    "en": "You are a current or former client of Ortvest and have personally experienced the services you describe",
+    "pl_todo": "TODO: You are a current or former client of Ortvest and have personally experienced the services you describe"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[2].items[1]",
+    "en": "All information provided is truthful, accurate, and based on genuine experience",
+    "pl_todo": "TODO: All information provided is truthful, accurate, and based on genuine experience"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[2].items[2]",
+    "en": "Your review does not contain false, misleading, defamatory, offensive, or unlawful content",
+    "pl_todo": "TODO: Your review does not contain false, misleading, defamatory, offensive, or unlawful content"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[2].items[3]",
+    "en": "You are acting on behalf of a business entity and are authorised to do so",
+    "pl_todo": "TODO: You are acting on behalf of a business entity and are authorised to do so"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[3].text",
+    "en": "3A.2 Licence to publish",
+    "pl_todo": "TODO: 3A.2 Licence to publish"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[4].text",
+    "en": "By submitting a review, you grant Ortvest a non-exclusive, royalty-free, worldwide, perpetual licence to publish, display, reproduce, and promote your review (including your name, role, and company) on the Website and in marketing materials. You may request removal of your review at any time by contacting contact@ortvest.com.",
+    "pl_todo": "TODO: By submitting a review, you grant Ortvest a non-exclusive, royalty-free, worldwide, perpetual licence to publish, display, reproduce, and promote your review (including your name, role, and company) on the Website and in marketing materials. You may request removal of your review at any time by contacting contact@ortvest.com."
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[5].text",
+    "en": "3A.3 Moderation",
+    "pl_todo": "TODO: 3A.3 Moderation"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[6].text",
+    "en": "The Company reserves the right to moderate, edit for formatting, decline to publish, or remove any submitted review at its sole discretion, including reviews that violate these Terms or applicable law.",
+    "pl_todo": "TODO: The Company reserves the right to moderate, edit for formatting, decline to publish, or remove any submitted review at its sole discretion, including reviews that violate these Terms or applicable law."
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[7].text",
+    "en": "3A.4 No compensation",
+    "pl_todo": "TODO: 3A.4 No compensation"
+  },
+  {
+    "key": "legalPages.terms.sections[3].blocks[8].text",
+    "en": "Submission of a review is voluntary and does not entitle you to any compensation, discount, or benefit unless explicitly agreed in writing.",
+    "pl_todo": "TODO: Submission of a review is voluntary and does not entitle you to any compensation, discount, or benefit unless explicitly agreed in writing."
+  },
+  {
+    "key": "legalPages.terms.sections[4].title",
+    "en": "Intellectual Property",
+    "pl_todo": "TODO: Intellectual Property"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[0].text",
+    "en": "All content published on the Website – including but not limited to texts, graphics, logos, icons, images, videos, code, and design – is the exclusive property of Ortvest or its licensors and is protected by:",
+    "pl_todo": "TODO: All content published on the Website – including but not limited to texts, graphics, logos, icons, images, videos, code, and design – is the exclusive property of Ortvest or its licensors and is protected by:"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[1].items[0]",
+    "en": "Polish Act of 4 February 1994 on Copyright and Related Rights",
+    "pl_todo": "TODO: Polish Act of 4 February 1994 on Copyright and Related Rights"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[1].items[1]",
+    "en": "Regulation (EU) 2017/1001 on the European Union trade mark",
+    "pl_todo": "TODO: Regulation (EU) 2017/1001 on the European Union trade mark"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[1].items[2]",
+    "en": "Other applicable intellectual property laws",
+    "pl_todo": "TODO: Other applicable intellectual property laws"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[2].text",
+    "en": "You may NOT, without the prior written consent of the Company:",
+    "pl_todo": "TODO: You may NOT, without the prior written consent of the Company:"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[3].items[0]",
+    "en": "Copy, reproduce, distribute, or publish any content from the Website",
+    "pl_todo": "TODO: Copy, reproduce, distribute, or publish any content from the Website"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[3].items[1]",
+    "en": "Modify, translate, or create derivative works based on Website content",
+    "pl_todo": "TODO: Modify, translate, or create derivative works based on Website content"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[3].items[2]",
+    "en": "Use the Company's name, logo, or trademarks in any commercial context",
+    "pl_todo": "TODO: Use the Company's name, logo, or trademarks in any commercial context"
+  },
+  {
+    "key": "legalPages.terms.sections[4].blocks[4].text",
+    "en": "You may view and print Website content solely for your own non-commercial, internal business evaluation purposes.",
+    "pl_todo": "TODO: You may view and print Website content solely for your own non-commercial, internal business evaluation purposes."
+  },
+  {
+    "key": "legalPages.terms.sections[5].title",
+    "en": "Prohibited Uses",
+    "pl_todo": "TODO: Prohibited Uses"
+  },
+  {
+    "key": "legalPages.terms.sections[5].blocks[0].text",
+    "en": "When using the Website, you agree NOT to:",
+    "pl_todo": "TODO: When using the Website, you agree NOT to:"
+  },
+  {
+    "key": "legalPages.terms.sections[5].blocks[1].items[0]",
+    "en": "Attempt to gain unauthorised access to any part of the Website or its servers",
+    "pl_todo": "TODO: Attempt to gain unauthorised access to any part of the Website or its servers"
+  },
+  {
+    "key": "legalPages.terms.sections[5].blocks[1].items[1]",
+    "en": "Introduce viruses, malware, or any other harmful code",
+    "pl_todo": "TODO: Introduce viruses, malware, or any other harmful code"
+  },
+  {
+    "key": "legalPages.terms.sections[5].blocks[1].items[2]",
+    "en": "Use automated tools (bots, crawlers, scrapers) to extract data from the Website without prior written consent",
+    "pl_todo": "TODO: Use automated tools (bots, crawlers, scrapers) to extract data from the Website without prior written consent"
+  },
+  {
+    "key": "legalPages.terms.sections[5].blocks[1].items[3]",
+    "en": "Engage in any activity that disrupts or interferes with the proper functioning of the Website",
+    "pl_todo": "TODO: Engage in any activity that disrupts or interferes with the proper functioning of the Website"
+  },
+  {
+    "key": "legalPages.terms.sections[5].blocks[1].items[4]",
+    "en": "Use the Website for any unlawful purpose or in violation of applicable regulations",
+    "pl_todo": "TODO: Use the Website for any unlawful purpose or in violation of applicable regulations"
+  },
+  {
+    "key": "legalPages.terms.sections[5].blocks[1].items[5]",
+    "en": "Impersonate the Company or any other person or entity",
+    "pl_todo": "TODO: Impersonate the Company or any other person or entity"
+  },
+  {
+    "key": "legalPages.terms.sections[6].title",
+    "en": "Disclaimer of Warranties",
+    "pl_todo": "TODO: Disclaimer of Warranties"
+  },
+  {
+    "key": "legalPages.terms.sections[6].blocks[0].text",
+    "en": "The Website and its content are provided on an \"as is\" and \"as available\" basis, without warranties of any kind, express or implied.",
+    "pl_todo": "TODO: The Website and its content are provided on an \"as is\" and \"as available\" basis, without warranties of any kind, express or implied."
+  },
+  {
+    "key": "legalPages.terms.sections[6].blocks[1].text",
+    "en": "The Company does not warrant that:",
+    "pl_todo": "TODO: The Company does not warrant that:"
+  },
+  {
+    "key": "legalPages.terms.sections[6].blocks[2].items[0]",
+    "en": "The Website will be available without interruption or error",
+    "pl_todo": "TODO: The Website will be available without interruption or error"
+  },
+  {
+    "key": "legalPages.terms.sections[6].blocks[2].items[1]",
+    "en": "The content is complete, accurate, or up to date",
+    "pl_todo": "TODO: The content is complete, accurate, or up to date"
+  },
+  {
+    "key": "legalPages.terms.sections[6].blocks[2].items[2]",
+    "en": "The Website is free from viruses or other harmful components",
+    "pl_todo": "TODO: The Website is free from viruses or other harmful components"
+  },
+  {
+    "key": "legalPages.terms.sections[6].blocks[3].text",
+    "en": "To the fullest extent permitted by applicable law, the Company disclaims all warranties, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.",
+    "pl_todo": "TODO: To the fullest extent permitted by applicable law, the Company disclaims all warranties, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement."
+  },
+  {
+    "key": "legalPages.terms.sections[7].title",
+    "en": "Limitation of Liability",
+    "pl_todo": "TODO: Limitation of Liability"
+  },
+  {
+    "key": "legalPages.terms.sections[7].blocks[0].text",
+    "en": "To the maximum extent permitted by Polish and EU law, the Company shall not be liable for:",
+    "pl_todo": "TODO: To the maximum extent permitted by Polish and EU law, the Company shall not be liable for:"
+  },
+  {
+    "key": "legalPages.terms.sections[7].blocks[1].items[0]",
+    "en": "Any indirect, incidental, special, or consequential damages arising from your use of the Website",
+    "pl_todo": "TODO: Any indirect, incidental, special, or consequential damages arising from your use of the Website"
+  },
+  {
+    "key": "legalPages.terms.sections[7].blocks[1].items[1]",
+    "en": "Loss of data, profits, business, or reputation",
+    "pl_todo": "TODO: Loss of data, profits, business, or reputation"
+  },
+  {
+    "key": "legalPages.terms.sections[7].blocks[1].items[2]",
+    "en": "Damages resulting from reliance on information presented on the Website",
+    "pl_todo": "TODO: Damages resulting from reliance on information presented on the Website"
+  },
+  {
+    "key": "legalPages.terms.sections[7].blocks[1].items[3]",
+    "en": "Temporary unavailability of the Website due to maintenance, technical failures, or force majeure",
+    "pl_todo": "TODO: Temporary unavailability of the Website due to maintenance, technical failures, or force majeure"
+  },
+  {
+    "key": "legalPages.terms.sections[7].blocks[2].text",
+    "en": "The Company's total liability for any claim arising from these Terms or use of the Website shall not exceed EUR 500, to the extent permitted by law.",
+    "pl_todo": "TODO: The Company's total liability for any claim arising from these Terms or use of the Website shall not exceed EUR 500, to the extent permitted by law."
+  },
+  {
+    "key": "legalPages.terms.sections[8].title",
+    "en": "Third-Party Links",
+    "pl_todo": "TODO: Third-Party Links"
+  },
+  {
+    "key": "legalPages.terms.sections[8].blocks[0].text",
+    "en": "The Website may contain links to external websites operated by third parties. These links are provided for informational convenience only. The Company:",
+    "pl_todo": "TODO: The Website may contain links to external websites operated by third parties. These links are provided for informational convenience only. The Company:"
+  },
+  {
+    "key": "legalPages.terms.sections[8].blocks[1].items[0]",
+    "en": "Does not control or endorse the content of linked websites",
+    "pl_todo": "TODO: Does not control or endorse the content of linked websites"
+  },
+  {
+    "key": "legalPages.terms.sections[8].blocks[1].items[1]",
+    "en": "Is not responsible for their privacy practices, content, or availability",
+    "pl_todo": "TODO: Is not responsible for their privacy practices, content, or availability"
+  },
+  {
+    "key": "legalPages.terms.sections[8].blocks[1].items[2]",
+    "en": "Recommends reviewing the terms and policies of any third-party websites you visit",
+    "pl_todo": "TODO: Recommends reviewing the terms and policies of any third-party websites you visit"
+  },
+  {
+    "key": "legalPages.terms.sections[9].title",
+    "en": "Availability and Modifications",
+    "pl_todo": "TODO: Availability and Modifications"
+  },
+  {
+    "key": "legalPages.terms.sections[9].blocks[0].text",
+    "en": "The Company reserves the right, at its sole discretion and without prior notice, to:",
+    "pl_todo": "TODO: The Company reserves the right, at its sole discretion and without prior notice, to:"
+  },
+  {
+    "key": "legalPages.terms.sections[9].blocks[1].items[0]",
+    "en": "Modify, suspend, or discontinue the Website (or any part thereof) at any time",
+    "pl_todo": "TODO: Modify, suspend, or discontinue the Website (or any part thereof) at any time"
+  },
+  {
+    "key": "legalPages.terms.sections[9].blocks[1].items[1]",
+    "en": "Update, amend, or remove content from the Website",
+    "pl_todo": "TODO: Update, amend, or remove content from the Website"
+  },
+  {
+    "key": "legalPages.terms.sections[9].blocks[1].items[2]",
+    "en": "Restrict access to all or part of the Website",
+    "pl_todo": "TODO: Restrict access to all or part of the Website"
+  },
+  {
+    "key": "legalPages.terms.sections[9].blocks[2].text",
+    "en": "The Company shall not be liable for any consequences resulting from such modifications or unavailability.",
+    "pl_todo": "TODO: The Company shall not be liable for any consequences resulting from such modifications or unavailability."
+  },
+  {
+    "key": "legalPages.terms.sections[10].title",
+    "en": "Amendments to These Terms",
+    "pl_todo": "TODO: Amendments to These Terms"
+  },
+  {
+    "key": "legalPages.terms.sections[10].blocks[0].text",
+    "en": "The Company reserves the right to update these Terms at any time. The updated version will be published on this page with a revised \"Last updated\" date.",
+    "pl_todo": "TODO: The Company reserves the right to update these Terms at any time. The updated version will be published on this page with a revised \"Last updated\" date."
+  },
+  {
+    "key": "legalPages.terms.sections[10].blocks[1].text",
+    "en": "Continued use of the Website after publication of the updated Terms constitutes acceptance of the changes. If you do not agree with the updated Terms, you must discontinue use of the Website.",
+    "pl_todo": "TODO: Continued use of the Website after publication of the updated Terms constitutes acceptance of the changes. If you do not agree with the updated Terms, you must discontinue use of the Website."
+  },
+  {
+    "key": "legalPages.terms.sections[11].title",
+    "en": "Governing Law and Jurisdiction",
+    "pl_todo": "TODO: Governing Law and Jurisdiction"
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[0].text",
+    "en": "These Terms are governed by and construed in accordance with the law of the Republic of Poland, in particular:",
+    "pl_todo": "TODO: These Terms are governed by and construed in accordance with the law of the Republic of Poland, in particular:"
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[1].items[0]",
+    "en": "The Polish Civil Code (Kodeks cywilny) of 23 April 1964",
+    "pl_todo": "TODO: The Polish Civil Code (Kodeks cywilny) of 23 April 1964"
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[1].items[1]",
+    "en": "The Polish Act on the Provision of Electronic Services (Ustawa o swiadczeniu uslug droga elektroniczna) of 18 July 2002",
+    "pl_todo": "TODO: The Polish Act on the Provision of Electronic Services (Ustawa o swiadczeniu uslug droga elektroniczna) of 18 July 2002"
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[1].items[2]",
+    "en": "Applicable EU regulations, including GDPR",
+    "pl_todo": "TODO: Applicable EU regulations, including GDPR"
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[2].text",
+    "en": "Any disputes arising from or related to these Terms shall be subject to the exclusive jurisdiction of the competent courts in Poland.",
+    "pl_todo": "TODO: Any disputes arising from or related to these Terms shall be subject to the exclusive jurisdiction of the competent courts in Poland."
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[3].text",
+    "en": "11.1 Clients in the United States",
+    "pl_todo": "TODO: 11.1 Clients in the United States"
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[4].text",
+    "en": "If you are accessing the Website from the United States, you acknowledge that the Website is operated from Poland and governed by Polish and EU law. No representations are made that the content of the Website complies with US federal or state laws. Use of the Website from the US is at your own discretion and risk. The Company does not target US consumers; these Terms apply exclusively in a B2B context.",
+    "pl_todo": "TODO: If you are accessing the Website from the United States, you acknowledge that the Website is operated from Poland and governed by Polish and EU law. No representations are made that the content of the Website complies with US federal or state laws. Use of the Website from the US is at your own discretion and risk. The Company does not target US consumers; these Terms apply exclusively in a B2B context."
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[5].text",
+    "en": "11.2 Clients in Ukraine",
+    "pl_todo": "TODO: 11.2 Clients in Ukraine"
+  },
+  {
+    "key": "legalPages.terms.sections[11].blocks[6].text",
+    "en": "If you are accessing the Website from Ukraine, you acknowledge that the governing law of these Terms is Polish law and that any contractual relationship between you and the Company shall be subject to Polish jurisdiction. The parties may agree in a separate written contract to alternative dispute resolution mechanisms (e.g., ICC arbitration) if needed for a specific engagement.",
+    "pl_todo": "TODO: If you are accessing the Website from Ukraine, you acknowledge that the governing law of these Terms is Polish law and that any contractual relationship between you and the Company shall be subject to Polish jurisdiction. The parties may agree in a separate written contract to alternative dispute resolution mechanisms (e.g., ICC arbitration) if needed for a specific engagement."
+  },
+  {
+    "key": "legalPages.terms.sections[12].title",
+    "en": "Severability",
+    "pl_todo": "TODO: Severability"
+  },
+  {
+    "key": "legalPages.terms.sections[12].blocks[0].text",
+    "en": "If any provision of these Terms is found to be invalid, illegal, or unenforceable by a competent court, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced by a valid provision that most closely reflects the original intent.",
+    "pl_todo": "TODO: If any provision of these Terms is found to be invalid, illegal, or unenforceable by a competent court, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced by a valid provision that most closely reflects the original intent."
+  },
+  {
+    "key": "legalPages.terms.sections[13].title",
+    "en": "Contact",
+    "pl_todo": "TODO: Contact"
+  },
+  {
+    "key": "legalPages.terms.sections[13].blocks[0].text",
+    "en": "For any questions regarding these Terms of Use, please contact us:\nEmail: contact@ortvest.com\nWebsite: ortvest.com",
+    "pl_todo": "TODO: For any questions regarding these Terms of Use, please contact us:\nEmail: contact@ortvest.com\nWebsite: ortvest.com"
+  }
+]
