@@ -62,11 +62,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       siteName: 'Ortvest',
       locale: locale === 'ua' ? 'uk_UA' : locale === 'pl' ? 'pl_PL' : 'en_US',
       type: 'website',
+      images: [{ url: `${baseUrl}/api/og/site`, width: 1200, height: 630, alt: 'Ortvest' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: ogTitle,
       description: ogDescription,
+      images: [`${baseUrl}/api/og/site`],
     },
     robots: {
       index: true,
