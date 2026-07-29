@@ -43,8 +43,6 @@ export async function generateMetadata({ params }: Props) {
     return { title: 'Blog | Ortvest' };
   }
   const description = metaDescriptionFromPost(post.content, post.title);
-  const generatedImage = `${baseUrl}/api/og/blog?title=${encodeURIComponent(post.title)}`;
-  const image = post.cover_image || generatedImage;
   const languages = Object.fromEntries(
     translatedRows
       .filter(([, rows]) => rows.some((row) => row.slug === slug))
@@ -65,14 +63,14 @@ export async function generateMetadata({ params }: Props) {
       type: 'article',
       publishedTime: post.published_at ?? undefined,
       modifiedTime: post.updated_at || post.published_at || post.created_at,
-      images: [{ url: image, alt: post.title }],
+      ...(post.cover_image ? { images: [{ url: post.cover_image, alt: post.title }] } : {}),
       locale: locale === 'ua' ? 'uk_UA' : locale === 'pl' ? 'pl_PL' : 'en_US',
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description,
-      images: [image],
+      ...(post.cover_image ? { images: [post.cover_image] } : {}),
     },
     alternates: {
       canonical: `${baseUrl}/${locale}/blog/${slug}`,
@@ -100,13 +98,12 @@ export default async function BlogArticlePage({ params }: Props) {
   const showTableOfContents = headings.length > 3;
   const articleUrl = `${baseUrl}/${locale}/blog/${slug}`;
   const description = metaDescriptionFromPost(post.content, post.title);
-  const image = post.cover_image || `${baseUrl}/api/og/blog?title=${encodeURIComponent(post.title)}`;
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description,
-    image,
+    ...(post.cover_image ? { image: post.cover_image } : {}),
     datePublished: post.published_at ?? post.created_at,
     dateModified: post.updated_at || post.published_at || post.created_at,
     inLanguage: locale === 'ua' ? 'uk-UA' : locale === 'pl' ? 'pl-PL' : 'en-US',

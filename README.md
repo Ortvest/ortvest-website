@@ -1,5 +1,30 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Environment Variables
+
+Copy `.env.local.example` to `.env.local` and fill in the values.
+
+| Variable | Required | Description |
+|---|---|---|
+| `ORTVEST_CMS_API_URL` | **Build + Runtime** | Base URL of Ortvest CMS (e.g. `https://cms.ortvest.com`). Server-only. The build **fails** if this is absent in production. In development, defaults to `http://localhost:3200`. |
+| `REVALIDATE_SECRET` | Runtime | Shared secret for the `POST /api/revalidate` ISR webhook. The CMS sends this in the `x-revalidate-secret` header after publishing a post. Generate with `openssl rand -hex 32`. |
+| `NEXT_PUBLIC_SITE_URL` | Runtime | Public URL of this site, used for Stripe cancel URLs. |
+| `GOOGLE_ANALYTICS_ID` | Optional | GA4 measurement ID. |
+| `LINKEDIN_PARTNER_ID` | Optional | LinkedIn Insight Tag partner ID. |
+| `COOKIEYES_SITE_ID` | Optional | CookieYes site ID. |
+| `MONGODB_URI` | Runtime | MongoDB connection string for the contact form. |
+
+### Blog ISR revalidation webhook
+
+After publishing or updating a post, Ortvest CMS should call:
+
+```
+POST https://www.ortvest.com/api/revalidate
+x-revalidate-secret: <REVALIDATE_SECRET>
+```
+
+This purges the `blog` cache tag so visitors see fresh content within seconds, without a redeploy. Without the webhook, content updates are reflected automatically within 5 minutes (`revalidate: 300`).
+
 ## Getting Started
 
 First, run the development server:
