@@ -1,11 +1,30 @@
+import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import Script from 'next/script';
 
 import { AnnouncementBar, BackgroundEffects, MotionConfigProvider } from '@shared/components';
+import { locales } from '../../i18n/routing';
 
 const baseUrl = 'https://www.ortvest.com';
 
+const GA_MEASUREMENT_ID = process.env.GOOGLE_ANALYTICS_ID?.trim();
+const LINKEDIN_PARTNER_ID = process.env.LINKEDIN_PARTNER_ID?.trim();
+const COOKIEYES_SITE_ID = process.env.COOKIEYES_SITE_ID?.trim();
+
+const inter = Inter({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+// Pre-generate all locale segments statically — no headers() needed.
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale);
   const t = await getTranslations({ locale });
   const title = t('metadata.title');
   const description = t('metadata.description');
@@ -139,7 +158,7 @@ function SchemaOrgScript({ faq }: { faq?: FaqItem[] }) {
   );
 }
 
-export default async function RootLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: {
@@ -150,6 +169,8 @@ export default async function RootLayout({
   unstable_setRequestLocale(locale);
   const messages = await getMessages({ locale });
 
+  const language = locale === 'ua' ? 'uk' : locale === 'pl' ? 'pl' : 'en';
+
   const faqMessages = (messages?.faq ?? {}) as Record<string, string>;
   const faqItems: FaqItem[] = [1, 2, 3, 4, 5, 6, 7, 8].flatMap((i) => {
     const q = faqMessages[`q${i}`];
@@ -158,15 +179,73 @@ export default async function RootLayout({
   });
 
   return (
-    <div className="relative min-h-screen bg-white font-sans antialiased text-black">
-      <SchemaOrgScript faq={faqItems} />
-      <BackgroundEffects />
-      <div className="relative z-10 min-h-screen w-full">
-        <AnnouncementBar locale={locale} />
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <MotionConfigProvider>{children}</MotionConfigProvider>
-        </NextIntlClientProvider>
-      </div>
-    </div>
+    <html lang={language} className={inter.variable} suppressHydrationWarning>
+      <head>
+        {COOKIEYES_SITE_ID && (
+          <Script
+            id="cookieyes"
+            src={`https://cdn-cookieyes.com/client_data/${encodeURIComponent(COOKIEYES_SITE_ID)}/script.js`}
+            strategy="beforeInteractive"
+          />
+        )}
+      </head>
+      <body suppressHydrationWarning>
+        {GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', ${JSON.stringify(GA_MEASUREMENT_ID)});
+          `}
+            </Script>
+          </>
+        )}
+        {LINKEDIN_PARTNER_ID && (
+          <>
+            <Script id="linkedin-insight-init" strategy="afterInteractive">
+              {`
+            _linkedin_partner_id = ${JSON.stringify(LINKEDIN_PARTNER_ID)};
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+            (function(l) {
+              if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+              window.lintrk.q=[]}
+              var s = document.getElementsByTagName("script")[0];
+              var b = document.createElement("script");
+              b.type = "text/javascript";b.async = true;
+              b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+              s.parentNode.insertBefore(b, s);})(window.lintrk);
+          `}
+            </Script>
+            <noscript>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                height="1"
+                width="1"
+                style={{ display: 'none' }}
+                alt=""
+                src={`https://px.ads.linkedin.com/collect/?pid=${encodeURIComponent(LINKEDIN_PARTNER_ID)}&fmt=gif`}
+              />
+            </noscript>
+          </>
+        )}
+        <div className="relative min-h-screen bg-white font-sans antialiased text-black">
+          <SchemaOrgScript faq={faqItems} />
+          <BackgroundEffects />
+          <div className="relative z-10 min-h-screen w-full">
+            <AnnouncementBar locale={locale} />
+            <NextIntlClientProvider locale={locale} messages={messages}>
+              <MotionConfigProvider>{children}</MotionConfigProvider>
+            </NextIntlClientProvider>
+          </div>
+        </div>
+      </body>
+    </html>
   );
 }
