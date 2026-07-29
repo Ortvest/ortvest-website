@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { cases } from '@modules/Cases/data';
 import { CaseDetail } from '@modules/Cases/features/CaseDetail';
@@ -41,7 +41,8 @@ export async function generateMetadata({ params }: CasePageProps) {
 }
 
 export default function CasePage({ params }: CasePageProps) {
-  const { slug } = params;
+  const { slug, locale } = params;
+  unstable_setRequestLocale(locale);
   const caseItem = cases.find((c) => c.id === slug);
 
   if (!caseItem || caseItem.isNDA) {
