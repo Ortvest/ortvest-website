@@ -7,10 +7,8 @@ import { useLocale, useTranslations } from 'next-intl';
 
 import { contactApi } from '@global/api/contact.api';
 import {
-  CONTACT_BUDGET_OPTIONS,
   CONTACT_CONSULTATION_OPTIONS,
   CONTACT_PROJECT_TYPES,
-  type ContactBudgetOption,
   type ContactConsultationOption,
   type ContactProjectType,
 } from '@lib/contact-options';
@@ -31,7 +29,6 @@ export function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [selectedTypes, setSelectedTypes] = useState<ContactProjectType[]>([]);
-  const [selectedBudget, setSelectedBudget] = useState<ContactBudgetOption | ''>('');
   const [selectedConsultation, setSelectedConsultation] = useState<ContactConsultationOption>('discovery');
   const [message, setMessage] = useState('');
   const [acceptedLegal, setAcceptedLegal] = useState(false);
@@ -53,7 +50,6 @@ export function ContactForm() {
         clientEmail: email.trim(),
         productDescription: message.trim(),
         selectedServices: selectedTypes,
-        budget: selectedBudget,
         consultationType: selectedConsultation,
       });
       setIsSuccess(true);
@@ -126,28 +122,6 @@ export function ContactForm() {
                 onClick={() => toggleProjectType(type)}
                 className={`${pillBase} ${isSelected ? pillSelected : ''}`}>
                 {t(`projectTypes.${type}`)}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Budget */}
-      <div className="mb-4">
-        <div className="mb-2 flex items-center gap-1">
-          <span className="text-sm font-medium text-zinc-500">{t('form.budget')}</span>
-          <span className="ml-1 text-xs text-zinc-400">{t('form.optional')}</span>
-        </div>
-        <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.budget')}>
-          {CONTACT_BUDGET_OPTIONS.map((budget) => {
-            const isSelected = selectedBudget === budget;
-            return (
-              <button
-                key={budget}
-                type="button"
-                onClick={() => setSelectedBudget(isSelected ? '' : budget)}
-                className={`${pillBase} ${isSelected ? pillSelected : ''}`}>
-                {t(`budget.${budget}`)}
               </button>
             );
           })}
