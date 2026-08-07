@@ -13,15 +13,21 @@ export type BlogCardModel = {
   readMinutes: number;
 };
 
+export function resolvePublishedAt(row: CmsBlogPostRow): string | null {
+  return row.published_at ?? row.created_at ?? null;
+}
+
 export function rowToCardModel(row: CmsBlogPostRow): BlogCardModel | null {
-  if (row.status !== 'published' || !row.published_at) return null;
+  if (row.status !== 'published') return null;
+  const publishedAt = resolvePublishedAt(row);
+  if (!publishedAt) return null;
   return {
     id: row.id,
     title: row.title,
     slug: row.slug,
     cover_image: row.cover_image,
     tags: Array.isArray(row.tags) ? row.tags : [],
-    published_at: row.published_at,
+    published_at: publishedAt,
     authorName: row.author_name?.trim() || '',
     excerpt: excerptFromContent(row.content, 200),
     readMinutes: readMinutesFromContent(row.content),
