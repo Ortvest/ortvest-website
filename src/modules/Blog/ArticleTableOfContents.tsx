@@ -32,8 +32,8 @@ export function ArticleTableOfContents({ headings, title }: Props) {
         </nav>
       </details>
 
-      <aside className="hidden lg:sticky lg:top-24 lg:block">
-        <nav className="border-l border-black/10 pl-5" aria-label={title}>
+      <aside className="absolute right-full top-0 hidden w-[220px] pr-12 lg:block">
+        <nav className="sticky top-24 border-l border-black/10 pl-5" aria-label={title}>
           <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-black/40">{title}</p>
           <HeadingLinks headings={headings} />
         </nav>

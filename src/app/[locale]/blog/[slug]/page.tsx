@@ -178,26 +178,14 @@ export default async function BlogArticlePage({ params }: Props) {
               </div>
             </div>
 
-            {showTableOfContents ? (
-              <div
-                className={[
-                  'mx-auto mt-10 max-w-[980px]',
-                  'lg:grid lg:grid-cols-[220px_minmax(0,70ch)] lg:items-start lg:gap-12',
-                ].join(' ')}>
+            <div className="relative mx-auto mt-10 max-w-[70ch]">
+              {showTableOfContents && (
                 <ArticleTableOfContents headings={headings} title={t('tableOfContents')} />
-                <div className="min-w-0 max-w-[70ch]">
-                  <BlogArticleContent content={post.content} locale={locale} />
-                  <ArticleConversionCta locale={locale} />
-                  <hr className="mt-14 border-0 border-t border-black/[0.08]" />
-                </div>
-              </div>
-            ) : (
-              <div className="mx-auto mt-10 max-w-[70ch]">
-                <BlogArticleContent content={post.content} locale={locale} />
-                <ArticleConversionCta locale={locale} />
-                <hr className="mt-14 border-0 border-t border-black/[0.08]" />
-              </div>
-            )}
+              )}
+              <BlogArticleContent content={post.content} locale={locale} />
+              <ArticleConversionCta locale={locale} />
+              <hr className="mt-14 border-0 border-t border-black/[0.08]" />
+            </div>
           </Container>
         </article>
 
