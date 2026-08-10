@@ -1,4 +1,7 @@
-import type { AbstractIntlMessages } from 'use-intl';
+/** Matches next-intl / use-intl message trees without importing the transitive package. */
+type IntlMessages = {
+  [key: string]: string | IntlMessages;
+};
 
 /** Shared across all routes — Header, Footer, Modals, not-found. */
 export const LAYOUT_CLIENT_NAMESPACES = ['nav', 'footer', 'modals', 'notFound'] as const;
@@ -32,16 +35,16 @@ type PickClientMessagesOptions = {
 };
 
 export function pickClientMessages(
-  messages: AbstractIntlMessages,
+  messages: IntlMessages,
   namespaces: readonly string[],
   options?: PickClientMessagesOptions
-): AbstractIntlMessages {
-  const picked: AbstractIntlMessages = {};
+): IntlMessages {
+  const picked: IntlMessages = {};
 
   for (const ns of namespaces) {
     if (ns === 'caseStudies') {
-      const caseStudies = messages.caseStudies as AbstractIntlMessages | undefined;
-      if (!caseStudies) continue;
+      const caseStudies = messages.caseStudies;
+      if (!caseStudies || typeof caseStudies === 'string') continue;
 
       if (options?.caseStudyId) {
         picked.caseStudies = {
