@@ -1,8 +1,8 @@
 'use client';
 
-import { useIsMobile } from '@shared/hooks/useIsMobile';
+import { useEffect, useRef, useState } from 'react';
 
-import { motion } from 'framer-motion';
+import { useIsMobile } from '@shared/hooks/useIsMobile';
 
 type Direction = 'left' | 'right';
 
@@ -12,22 +12,57 @@ interface SectionRevealProps {
   className?: string;
 }
 
+type RevealState = 'idle' | 'pending' | 'visible';
+
 export function SectionReveal({ direction, children, className = '' }: SectionRevealProps) {
   const isMobile = useIsMobile();
+  const ref = useRef<HTMLDivElement>(null);
+  const [state, setState] = useState<RevealState>('idle');
+
+  useEffect(() => {
+    if (isMobile) return;
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reducedMotion) return;
+
+    const el = ref.current;
+    if (!el) return;
+
+    setState('pending');
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setState('visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.05, rootMargin: '-60px 0px -60px 0px' }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [isMobile]);
 
   if (isMobile) {
     return <div className={className}>{children}</div>;
   }
 
-  const x = direction === 'left' ? -20 : 20;
+  const directionClass = direction === 'left' ? 'section-reveal--from-left' : 'section-reveal--from-right';
+
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, x }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.05, margin: '-60px' }}
-      transition={{ duration: 0.55, ease: [0.4, 0, 0.2, 1] }}>
+    <div
+      ref={ref}
+      className={[
+        'section-reveal',
+        directionClass,
+        state === 'pending' ? 'section-reveal--pending' : '',
+        state === 'visible' ? 'section-reveal--visible' : '',
+        className,
+      ]
+        .filter(Boolean)
+        .join(' ')}>
       {children}
-    </motion.div>
+    </div>
   );
 }

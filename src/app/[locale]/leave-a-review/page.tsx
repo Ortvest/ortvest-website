@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
+import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
+import { REVIEWS_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
@@ -18,9 +20,11 @@ export default function LeaveReviewPage({ params: { locale } }: { params: { loca
   return (
     <ReduxProvider>
       <Header />
-      <main>
-        <LeaveReviewForm />
-      </main>
+      <RouteIntlProvider locale={locale} namespaces={REVIEWS_CLIENT_NAMESPACES}>
+        <main>
+          <LeaveReviewForm />
+        </main>
+      </RouteIntlProvider>
       <Footer />
     </ReduxProvider>
   );

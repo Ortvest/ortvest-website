@@ -1,6 +1,4 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 import { ContactForm } from '@modules/Contact/layout/Form';
 import { IconClock, IconMail, IconPhone, IconShieldCheck } from '@tabler/icons-react';
@@ -13,13 +11,12 @@ const TRUST_BADGES = [
   { key: 'call', Icon: IconPhone },
 ] as const;
 
-export function Contact() {
-  const t = useTranslations('contact');
+export async function Contact() {
+  const t = await getTranslations('contact');
 
   return (
     <section id="contact" className="bg-white py-20" aria-labelledby="contact-heading">
       <div className="container-main">
-        {/* Header */}
         <div className="mb-12 text-center">
           <div className="mb-3 flex items-center justify-center gap-2">
             <IconMail size={13} className="text-accent" />
@@ -40,9 +37,7 @@ export function Contact() {
           </div>
         </div>
 
-        {/* Two-column layout */}
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
-          {/* Left – steps */}
           <div>
             <p className="mb-5 text-[10px] uppercase tracking-widest text-zinc-500">{t('steps.label')}</p>
             <div>
@@ -62,7 +57,6 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Right – form */}
           <ContactForm />
         </div>
       </div>

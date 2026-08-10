@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { RouteIntlProvider } from '../../../../components/RouteIntlProvider';
+import { CASE_DETAIL_CLIENT_NAMESPACES } from '../../../../i18n/client-messages';
 import { cases } from '@modules/Cases/data';
 import { CaseDetail } from '@modules/Cases/features/CaseDetail';
 import { locales } from '../../../../i18n/routing';
@@ -62,5 +64,9 @@ export default function CasePage({ params }: CasePageProps) {
     notFound();
   }
 
-  return <CaseDetail caseItem={caseItem} />;
+  return (
+    <RouteIntlProvider locale={locale} namespaces={CASE_DETAIL_CLIENT_NAMESPACES} caseStudyId={slug}>
+      <CaseDetail caseItem={caseItem} />
+    </RouteIntlProvider>
+  );
 }

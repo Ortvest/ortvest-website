@@ -4,6 +4,8 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { Container } from '@shared/components';
 
+import { RouteIntlProvider } from '../../../../components/RouteIntlProvider';
+import { BLOG_CLIENT_NAMESPACES } from '../../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import {
   articleHeadingsFromContent,
@@ -131,7 +133,8 @@ export default async function BlogArticlePage({ params }: Props) {
       <ArticleReadingProgress articleId="blog-article" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleSchema) }} />
       <Header />
-      <main>
+      <RouteIntlProvider locale={locale} namespaces={BLOG_CLIENT_NAMESPACES}>
+        <main>
         <article id="blog-article" className="section-padding bg-white">
           <Container>
             <div className="mx-auto max-w-[720px]">
@@ -205,7 +208,8 @@ export default async function BlogArticlePage({ params }: Props) {
         )}
 
         <Contact />
-      </main>
+        </main>
+      </RouteIntlProvider>
       <Footer />
       <Modal />
     </ReduxProvider>

@@ -1,5 +1,7 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
+import { BLOG_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostsResult } from '@lib/cms-api';
@@ -9,6 +11,10 @@ import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
+
+// Revalidate every 5 minutes in addition to on-demand webhook revalidation.
+// This prevents the Full Route Cache from becoming stale indefinitely.
+export const revalidate = 300;
 
 const baseUrl = 'https://www.ortvest.com';
 
@@ -84,10 +90,12 @@ export default async function BlogPage({ params: { locale } }: { params: { local
     <ReduxProvider>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(blogSchema) }} />
       <Header />
-      <main>
-        <BlogListingClient posts={posts} hasError={result.status === 'error'} />
-        <Contact />
-      </main>
+      <RouteIntlProvider locale={locale} namespaces={BLOG_CLIENT_NAMESPACES}>
+        <main>
+          <BlogListingClient posts={posts} hasError={result.status === 'error'} />
+          <Contact />
+        </main>
+      </RouteIntlProvider>
       <Footer />
       <Modal />
     </ReduxProvider>

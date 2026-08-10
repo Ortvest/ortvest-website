@@ -1,5 +1,7 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
+import { CASES_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { CasesListingClient } from '@modules/Cases/CasesListingClient';
 import { Contact } from '@modules/Contact';
@@ -40,10 +42,12 @@ export default function CasesPage({ params: { locale } }: { params: { locale: st
   return (
     <ReduxProvider>
       <Header />
-      <main>
-        <CasesListingClient />
-        <Contact />
-      </main>
+      <RouteIntlProvider locale={locale} namespaces={CASES_CLIENT_NAMESPACES}>
+        <main>
+          <CasesListingClient />
+          <Contact />
+        </main>
+      </RouteIntlProvider>
       <Footer />
       <Modal />
     </ReduxProvider>

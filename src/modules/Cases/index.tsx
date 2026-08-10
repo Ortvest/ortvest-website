@@ -1,7 +1,5 @@
-'use client';
-
 import Link from 'next/link';
-import { useLocale, useTranslations } from 'next-intl';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { Container, SectionHeader, SectionReveal } from '@shared/components';
 
@@ -10,9 +8,9 @@ import { IconArrowRight, IconBriefcase } from '@tabler/icons-react';
 import { CaseCard } from './CaseCard';
 import { featuredHomeCases } from './data';
 
-export function Cases() {
-  const t = useTranslations('cases');
-  const locale = useLocale();
+export async function Cases() {
+  const t = await getTranslations('cases');
+  const locale = await getLocale();
 
   return (
     <section id="cases" className="section-padding bg-white" aria-labelledby="cases-heading">

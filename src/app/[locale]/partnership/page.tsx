@@ -1,5 +1,7 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
+import { PARTNERSHIP_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
@@ -77,7 +79,8 @@ export default async function PartnershipPage({ params: { locale } }: { params: 
     <ReduxProvider>
       <Header />
 
-      <main>
+      <RouteIntlProvider locale={locale} namespaces={PARTNERSHIP_CLIENT_NAMESPACES}>
+        <main>
         {/* ── 1. HERO ──────────────────────────────────────────── */}
         <section className="bg-black py-24 sm:py-32">
           <div className="container-main">
@@ -246,7 +249,8 @@ export default async function PartnershipPage({ params: { locale } }: { params: 
             </div>
           </div>
         </section>
-      </main>
+        </main>
+      </RouteIntlProvider>
 
       <Footer />
       <Modal />

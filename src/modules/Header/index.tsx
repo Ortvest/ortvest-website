@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 
 import { Burger } from '@modules/Header/features/Burger';
-import { BurgerMenu } from '@modules/Header/features/BurgerMenu';
+import { BurgerMenuLazy } from '@modules/Header/features/BurgerMenu/BurgerMenuLazy';
 import { Navigation } from '@modules/Header/features/Navagation';
 import AppIcon from '@public/icons/AppLogoHorizontal.svg';
 
@@ -45,7 +45,6 @@ export function Header() {
             width={150}
             height={40}
             className="h-9 w-auto max-w-[160px] object-contain object-left sm:max-w-none sm:h-10"
-            priority
           />
         </Link>
 
@@ -69,7 +68,7 @@ export function Header() {
           <Burger />
         </div>
       </div>
-      <BurgerMenu />
+      <BurgerMenuLazy />
     </header>
   );
 }

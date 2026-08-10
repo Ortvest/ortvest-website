@@ -49,6 +49,88 @@
     @apply py-20 sm:py-section lg:py-section-lg;
   }
 
+  .btn-interactive {
+    transform-origin: center;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .btn-interactive:active {
+    transform: scale(0.98);
+  }
+
+  @media (hover: hover) {
+    .btn-interactive:hover {
+      transform: scale(1.02);
+    }
+
+    .btn-interactive:active {
+      transform: scale(0.98);
+    }
+  }
+
+  .section-reveal--pending.section-reveal--from-left {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  .section-reveal--pending.section-reveal--from-right {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  .section-reveal--visible.section-reveal--from-left,
+  .section-reveal--visible.section-reveal--from-right {
+    animation: sectionRevealIn 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes sectionRevealIn {
+    from {
+      opacity: 0;
+      transform: translateX(var(--section-reveal-x, 0));
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .section-reveal--visible.section-reveal--from-left {
+    --section-reveal-x: -20px;
+  }
+
+  .section-reveal--visible.section-reveal--from-right {
+    --section-reveal-x: 20px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .section-reveal--pending,
+    .section-reveal--visible {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .hero-center-pulse {
+      animation: none !important;
+    }
+  }
+
+  @keyframes hero-center-pulse {
+    0%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.04);
+    }
+  }
+
+  .hero-center-pulse {
+    animation: hero-center-pulse 3s ease-in-out infinite;
+  }
+
   /* Blog article body (TipTap + legacy HTML) */
   .blog-article-body {
     color: rgb(0 0 0 / 0.78);

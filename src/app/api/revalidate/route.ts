@@ -1,4 +1,4 @@
-import { revalidateTag } from 'next/cache';
+import { revalidatePath, revalidateTag } from 'next/cache';
 import { NextRequest, NextResponse } from 'next/server';
 
 /**
@@ -24,7 +24,16 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 });
   }
 
+  // Purge fetch data cache entries tagged 'blog'
   revalidateTag('blog');
+
+  // Explicitly purge the Full Route Cache for all blog listing and home pages
+  // (covers cases where the page is fully static from generateStaticParams)
+  for (const locale of ['en', 'ua', 'pl']) {
+    revalidatePath(`/${locale}/blog`, 'page');
+    revalidatePath(`/${locale}`, 'page');
+  }
+  revalidatePath('/', 'page');
 
   return NextResponse.json({ revalidated: true, tag: 'blog', ts: Date.now() });
 }

@@ -1,5 +1,3 @@
-'use client';
-
 import type { TablerIcon } from '@shared/types/icon.types';
 
 interface SectionHeaderProps {

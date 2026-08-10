@@ -1,7 +1,5 @@
-'use client';
-
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 import { Container, SectionReveal } from '@shared/components';
 
@@ -22,8 +20,8 @@ const consultationCards = [
   },
 ] as const;
 
-export function Consultation() {
-  const t = useTranslations('consultation');
+export async function Consultation() {
+  const t = await getTranslations('consultation');
 
   return (
     <section id="consultation" className="section-padding bg-black" aria-labelledby="consultation-heading">

@@ -1,7 +1,5 @@
-'use client';
-
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 import {
   IconArrowRight,
@@ -62,22 +60,14 @@ const ORBIT_LINES = [
   { x2: 110, y2: 352, opacity: 0.18, dash: undefined, strokeWidth: 0.9, dur: '2.2s' },
 ] as const;
 
-export function Hero() {
-  const t = useTranslations('hero');
+export async function Hero() {
+  const t = await getTranslations('hero');
 
   return (
     <section
       id="hero"
       className="bg-black px-6 pb-10 pt-24 sm:px-6 sm:pt-10 sm:pb-10 md:px-12 md:py-14"
       aria-labelledby="hero-heading">
-      <style>{`
-        @keyframes hero-center-pulse {
-          0%, 100% { transform: translate(-50%, -50%) scale(1); }
-          50% { transform: translate(-50%, -50%) scale(1.04); }
-        }
-        .hero-center-pulse { animation: hero-center-pulse 3s ease-in-out infinite; }
-      `}</style>
-
       <div className="mx-auto max-w-[1160px]">
         <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12">
           <div>

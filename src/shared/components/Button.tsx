@@ -4,9 +4,6 @@ import { ReactNode } from 'react';
 
 import Link from 'next/link';
 
-import { buttonHover } from '@lib/motion';
-import { motion } from 'framer-motion';
-
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'accent';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
@@ -47,7 +44,7 @@ export function Button({
   iconRight = false,
 }: ButtonProps) {
   const baseClass =
-    `inline-flex items-center justify-center font-semibold rounded-full transition-colors ${variants[variant]} ${sizes[size]} ${className}`.trim();
+    `btn-interactive inline-flex items-center justify-center font-semibold rounded-full transition-colors ${variants[variant]} ${sizes[size]} ${className}`.trim();
 
   const content = (
     <>
@@ -59,17 +56,15 @@ export function Button({
 
   if (href) {
     return (
-      <motion.span {...buttonHover}>
-        <Link href={href} className={baseClass}>
-          {content}
-        </Link>
-      </motion.span>
+      <Link href={href} className={baseClass}>
+        {content}
+      </Link>
     );
   }
 
   return (
-    <motion.button type={type} onClick={onClick} className={baseClass} {...buttonHover}>
+    <button type={type} onClick={onClick} className={baseClass}>
       {content}
-    </motion.button>
+    </button>
   );
 }
