@@ -8,9 +8,8 @@ import { IconStar } from '@tabler/icons-react';
 
 import styles from './ReviewCard.module.css';
 
+/** Client-safe review DTO — only fields rendered by ReviewCard / carousel. */
 export interface ReviewItem {
-  id?: string;
-  _id?: string;
   name: string;
   role: string;
   company: string;

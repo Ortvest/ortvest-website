@@ -20,7 +20,7 @@ function chunkReviews(reviews: ReviewItem[], size: number) {
 }
 
 function reviewKey(review: ReviewItem) {
-  return review._id ?? review.id ?? review.name;
+  return `${review.name}|${review.company}|${review.rating}`;
 }
 
 type ReviewsSliderProps = {

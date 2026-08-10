@@ -1,26 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-import { getReviewsCollection, type ReviewDoc, toPublicReview } from '@lib/models/review';
+import { fetchPublishedReviews } from '@lib/fetch-reviews';
+import { getReviewsCollection, type ReviewDoc } from '@lib/models/review';
 import { parseCreateReviewInput } from '@lib/review-validation';
 
 export async function GET() {
   try {
-    const collection = await getReviewsCollection();
-    const docs = await collection
-      .find({ isPublished: true })
-      .sort({ createdAt: -1 })
-      .project({
-        name: 1,
-        role: 1,
-        company: 1,
-        text: 1,
-        rating: 1,
-        createdAt: 1,
-      })
-      .toArray();
-
-    const reviews = docs.map((doc) => toPublicReview(doc as ReviewDoc & { _id: import('mongodb').ObjectId }));
-
+    const reviews = await fetchPublishedReviews();
     return NextResponse.json({ reviews });
   } catch (error) {
     console.error('GET /api/reviews error:', error);
