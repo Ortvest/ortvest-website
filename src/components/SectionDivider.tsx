@@ -20,7 +20,7 @@ export async function SectionDivider() {
                 </p>
               </div>
 
-              <span className="hidden flex-shrink-0 text-zinc-500 sm:inline">·</span>
+              <span className="hidden flex-shrink-0 text-zinc-400 sm:inline">·</span>
 
               <div className="flex flex-col items-center sm:min-w-0">
                 <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
@@ -31,7 +31,7 @@ export async function SectionDivider() {
                 </p>
               </div>
 
-              <span className="hidden flex-shrink-0 text-zinc-500 sm:inline">·</span>
+              <span className="hidden flex-shrink-0 text-zinc-400 sm:inline">·</span>
 
               <div className="flex flex-col items-center sm:min-w-0">
                 <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
@@ -42,7 +42,7 @@ export async function SectionDivider() {
                 </p>
               </div>
             </div>
-            <p className="text-center text-[10px] uppercase tracking-[0.2em] text-zinc-500">{t('industryList')}</p>
+            <p className="text-center text-[10px] uppercase tracking-[0.2em] text-zinc-400">{t('industryList')}</p>
           </div>
 
           <div className="hidden h-px w-full flex-1 bg-zinc-900 sm:block" />

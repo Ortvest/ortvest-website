@@ -109,11 +109,11 @@ export function Navigation() {
                   onClick={() => setIsServicesOpen(false)}
                   className="flex items-center gap-3 rounded-xl px-3 py-2.5 transition hover:bg-zinc-800">
                   <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-zinc-800">
-                    <Icon size={18} className="text-zinc-500" />
+                    <Icon size={18} className="text-zinc-400" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-white">{t(key)}</p>
-                    <p className="mt-0.5 text-xs text-zinc-500">{t(`serviceSublabels.${sublabelKey}`)}</p>
+                    <p className="mt-0.5 text-xs text-zinc-400">{t(`serviceSublabels.${sublabelKey}`)}</p>
                   </div>
                 </Link>
               ))}

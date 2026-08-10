@@ -318,7 +318,7 @@ function WhatWeDoTab({
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { delay: 0.12, duration: 0.18 } }}
                   exit={{ opacity: 0, transition: { duration: 0.08 } }}
-                  className="mt-2 select-none text-xs text-zinc-500">
+                  className="mt-2 select-none text-xs text-zinc-400">
                   {t('tapToSee')}
                 </motion.p>
               )}
@@ -328,13 +328,13 @@ function WhatWeDoTab({
               {isOpen && (
                 <motion.div key="body" {...expandBody} className="overflow-hidden">
                   <div className="mt-4 border-t border-zinc-800 pt-3">
-                    <p className="mb-2 text-[10px] uppercase tracking-widest text-zinc-500">{t('included')}</p>
+                    <p className="mb-2 text-[10px] uppercase tracking-widest text-zinc-400">{t('included')}</p>
 
                     {tiers ? (
                       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                         {tiers.map(({ labelKey, itemKeys: keys }) => (
                           <div key={labelKey}>
-                            <p className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-zinc-500">
+                            <p className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-zinc-400">
                               {t(labelKey)}
                             </p>
                             <ul className="space-y-1.5">
@@ -437,7 +437,7 @@ function IndustriesTab({
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { delay: 0.12, duration: 0.18 } }}
                     exit={{ opacity: 0, transition: { duration: 0.08 } }}
-                    className="mt-2 select-none text-xs text-zinc-500">
+                    className="mt-2 select-none text-xs text-zinc-400">
                     {t('tapToLearn')}
                   </motion.p>
                 ) : (
@@ -559,7 +559,7 @@ function TechnologiesTab({ t }: { t: TFn }) {
     <div className="grid gap-8 sm:grid-cols-2">
       {techGroups.map(({ labelKey, items }) => (
         <div key={labelKey}>
-          <p className="mb-3 text-[10px] font-semibold uppercase tracking-widest text-zinc-500">{t(labelKey)}</p>
+          <p className="mb-3 text-[10px] font-semibold uppercase tracking-widest text-zinc-400">{t(labelKey)}</p>
           <div className="flex flex-wrap gap-2">
             {items.map(({ name, Icon, isTabler }) => (
               <div

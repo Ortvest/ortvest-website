@@ -1,11 +1,12 @@
 import '@shared/styles/global.css';
 
-import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import Script from 'next/script';
 
 import { AnnouncementBar, BackgroundEffects, MotionConfigProvider } from '@shared/components';
+import { LocaleFontFaces } from '../../components/LocaleFontFaces';
+import { interLatin } from '../../fonts/inter-latin';
 import { LAYOUT_CLIENT_NAMESPACES, pickClientMessages } from '../../i18n/client-messages';
 import { locales } from '../../i18n/routing';
 import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
@@ -15,12 +16,6 @@ const baseUrl = SITE_URL;
 const GA_MEASUREMENT_ID = process.env.GOOGLE_ANALYTICS_ID?.trim();
 const LINKEDIN_PARTNER_ID = process.env.LINKEDIN_PARTNER_ID?.trim();
 const COOKIEYES_SITE_ID = process.env.COOKIEYES_SITE_ID?.trim();
-
-const inter = Inter({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-inter',
-  display: 'swap',
-});
 
 // Pre-generate all locale segments statically — no headers() needed.
 export function generateStaticParams() {
@@ -177,8 +172,9 @@ export default async function LocaleLayout({
   });
 
   return (
-    <html lang={language} className={inter.variable} suppressHydrationWarning>
+    <html lang={language} className={interLatin.variable} suppressHydrationWarning>
       <head>
+        <LocaleFontFaces fontFamily={interLatin.style.fontFamily} locale={locale} />
         {(GA_MEASUREMENT_ID || COOKIEYES_SITE_ID) && (
           <Script id="consent-default" strategy="beforeInteractive">
             {`

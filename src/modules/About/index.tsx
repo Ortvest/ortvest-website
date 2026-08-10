@@ -53,7 +53,7 @@ export async function About() {
         </div>
 
         {/* Block 2 – How we work */}
-        <p className="mb-4 text-[10px] uppercase tracking-widest text-zinc-500">{t('how.label')}</p>
+        <p className="mb-4 text-[10px] uppercase tracking-widest text-zinc-400">{t('how.label')}</p>
         <div className="mb-10 grid grid-cols-1 gap-3 sm:grid-cols-3">
           {howWeWork.map(({ id, Icon, index }) => (
             <div
@@ -67,7 +67,7 @@ export async function About() {
         </div>
 
         {/* Block 3 – What drives us */}
-        <p className="mb-4 text-[10px] uppercase tracking-widest text-zinc-500">{t('values.label')}</p>
+        <p className="mb-4 text-[10px] uppercase tracking-widest text-zinc-400">{t('values.label')}</p>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           {whatDrivesUs.map(({ id, Icon, index }) => (
             <div

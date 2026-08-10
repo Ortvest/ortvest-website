@@ -95,24 +95,23 @@ export function TeamCarousel({ disciplines, getTitle, getDescription }: TeamCaro
         </motion.div>
       </div>
 
-      <div className="mt-6 flex items-center justify-center gap-2" role="tablist" aria-label={t('paginationLabel')}>
+      <nav className="mt-6 flex items-center justify-center gap-8" aria-label={t('paginationLabel')}>
         {disciplines.map((discipline, index) => {
           const isActive = index === activeIndex;
           return (
             <button
               key={discipline.id}
               type="button"
-              role="tab"
-              aria-selected={isActive}
               aria-label={getTitle(discipline.id)}
+              aria-current={isActive ? 'true' : undefined}
               onClick={() => goTo(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className={`relative h-2 rounded-full transition-all duration-300 before:absolute before:inset-[-12px] before:content-[''] ${
                 isActive ? 'w-7 bg-zinc-950' : 'w-2 bg-zinc-300 hover:bg-zinc-400'
               }`}
             />
           );
         })}
-      </div>
+      </nav>
     </div>
   );
 }

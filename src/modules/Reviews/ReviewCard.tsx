@@ -6,8 +6,6 @@ import { useTranslations } from 'next-intl';
 
 import { IconStar } from '@tabler/icons-react';
 
-import styles from './ReviewCard.module.css';
-
 /** Client-safe review DTO — only fields rendered by ReviewCard / carousel. */
 export interface ReviewItem {
   name: string;
@@ -90,7 +88,7 @@ export function ReviewCard({ review }: { review: ReviewItem }) {
       <blockquote
         ref={textRef}
         className={`mt-4 text-[15px] font-normal not-italic leading-[1.6] text-black/85 ${
-          !expanded ? styles['review-card__text--clamped'] : ''
+          !expanded ? 'line-clamp-4' : ''
         }`}>
         {review.text}
       </blockquote>

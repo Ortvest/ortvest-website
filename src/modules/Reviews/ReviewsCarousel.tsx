@@ -112,24 +112,23 @@ function ReviewsSlider({ reviews, perPage, gridClassName }: ReviewsSliderProps) 
         </motion.div>
       </div>
 
-      <div className="mt-8 flex items-center justify-center gap-2" role="tablist" aria-label={t('paginationLabel')}>
+      <nav className="mt-8 flex items-center justify-center gap-8" aria-label={t('paginationLabel')}>
         {pages.map((_, index) => {
           const isActive = index === activePage;
           return (
             <button
               key={index}
               type="button"
-              role="tab"
-              aria-selected={isActive}
               aria-label={t('pageLabel', { n: index + 1 })}
+              aria-current={isActive ? 'true' : undefined}
               onClick={() => goTo(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className={`relative h-2 rounded-full transition-all duration-300 before:absolute before:inset-[-12px] before:content-[''] ${
                 isActive ? 'w-7 bg-black' : 'w-2 bg-black/20 hover:bg-black/35'
               }`}
             />
           );
         })}
-      </div>
+      </nav>
     </div>
   );
 }

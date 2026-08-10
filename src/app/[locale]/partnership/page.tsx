@@ -99,14 +99,14 @@ export default async function PartnershipPage({ params: { locale } }: { params: 
         <section className="bg-zinc-950 py-20">
           <div className="container-main">
             <div className="mb-3 flex items-center justify-center gap-2">
-              <span className="text-xs uppercase tracking-widest text-zinc-500">{t('contrast.label')}</span>
+              <span className="text-xs uppercase tracking-widest text-zinc-400">{t('contrast.label')}</span>
             </div>
             <h2 className="mb-12 text-center text-h2 font-bold text-white">{t('contrast.title')}</h2>
 
             <div className="mx-auto max-w-2xl overflow-hidden rounded-2xl border border-zinc-800">
               {/* Header row */}
               <div className="grid grid-cols-2 border-b border-zinc-800 bg-zinc-900">
-                <div className="px-6 py-3 text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                <div className="px-6 py-3 text-xs font-semibold uppercase tracking-widest text-zinc-400">
                   {t('contrast.vendorHeading')}
                 </div>
                 <div className="border-l border-zinc-800 px-6 py-3 text-xs font-semibold uppercase tracking-widest text-accent">
@@ -116,7 +116,7 @@ export default async function PartnershipPage({ params: { locale } }: { params: 
               {/* Rows */}
               {contrastItems.map((item, i) => (
                 <div key={i} className="grid grid-cols-2 border-b border-zinc-800 last:border-0">
-                  <div className="px-6 py-4 text-sm text-zinc-500">{item.vendor}</div>
+                  <div className="px-6 py-4 text-sm text-zinc-400">{item.vendor}</div>
                   <div className="border-l border-zinc-800 px-6 py-4 text-sm font-medium text-white">
                     {item.partner}
                   </div>
@@ -130,7 +130,7 @@ export default async function PartnershipPage({ params: { locale } }: { params: 
         <section id="models" className="bg-black py-20">
           <div className="container-main">
             <div className="mb-3 flex items-center justify-center gap-2">
-              <span className="text-xs uppercase tracking-widest text-zinc-500">{t('models.label')}</span>
+              <span className="text-xs uppercase tracking-widest text-zinc-400">{t('models.label')}</span>
             </div>
             <h2 className="mb-12 text-center text-h2 font-bold text-white">{t('models.title')}</h2>
 
@@ -183,7 +183,7 @@ export default async function PartnershipPage({ params: { locale } }: { params: 
           <div className="container-main">
             <div className="mx-auto max-w-2xl">
               <div className="mb-3 flex items-center gap-2">
-                <span className="text-xs uppercase tracking-widest text-zinc-500">{t('notFor.label')}</span>
+                <span className="text-xs uppercase tracking-widest text-zinc-400">{t('notFor.label')}</span>
               </div>
               <h2 className="mb-8 text-h2 font-bold text-white">{t('notFor.title')}</h2>
               <ul className="space-y-3">
@@ -231,7 +231,7 @@ export default async function PartnershipPage({ params: { locale } }: { params: 
           <div className="container-main">
             <div className="mx-auto max-w-xl">
               <div className="mb-3 flex items-center gap-2">
-                <span className="text-xs uppercase tracking-widest text-zinc-500">{t('form.eyebrow')}</span>
+                <span className="text-xs uppercase tracking-widest text-zinc-400">{t('form.eyebrow')}</span>
               </div>
               <h2 className="mb-2 text-h2 font-bold text-white">{t('form.title')}</h2>
               <p className="mb-8 text-sm leading-relaxed text-zinc-300">{t('form.subtitle')}</p>
