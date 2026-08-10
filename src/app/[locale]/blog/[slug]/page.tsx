@@ -16,7 +16,7 @@ import {
 import { formatBlogPostDate } from '@lib/blog-dates';
 import { pickRelatedCards, rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostBySlug, fetchCmsBlogPosts } from '@lib/cms-api';
-import { serializeJsonLd } from '@lib/seo';
+import { buildHreflangLanguages, serializeJsonLd, SITE_URL } from '@lib/seo';
 import { ArticleConversionCta } from '@modules/Blog/ArticleConversionCta';
 import { ArticleReadingProgress } from '@modules/Blog/ArticleReadingProgress';
 import { ArticleTableOfContents } from '@modules/Blog/ArticleTableOfContents';
@@ -27,9 +27,9 @@ import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
+import { locales } from '../../../../i18n/routing';
 
-const baseUrl = 'https://www.ortvest.com';
-const locales = ['en', 'ua', 'pl'] as const;
+const baseUrl = SITE_URL;
 
 interface Props {
   params: { locale: string; slug: string };
@@ -45,14 +45,13 @@ export async function generateMetadata({ params }: Props) {
     return { title: 'Blog | Ortvest' };
   }
   const description = metaDescriptionFromPost(post.content, post.title);
-  const languages = Object.fromEntries(
-    translatedRows
-      .filter(([, rows]) => rows.some((row) => row.slug === slug))
-      .map(([candidate]) => [candidate === 'ua' ? 'uk-UA' : candidate, `${baseUrl}/${candidate}/blog/${slug}`])
-  );
-  const currentLanguage = locale === 'ua' ? 'uk-UA' : locale;
-  languages[currentLanguage] = `${baseUrl}/${locale}/blog/${slug}`;
-  languages['x-default'] = languages.en || languages[currentLanguage];
+  const availableLocales: string[] = translatedRows
+    .filter(([, rows]) => rows.some((row) => row.slug === slug))
+    .map(([candidate]) => candidate);
+  if (!availableLocales.includes(locale)) {
+    availableLocales.push(locale);
+  }
+  const languages = buildHreflangLanguages(availableLocales, (loc) => `${baseUrl}/${loc}/blog/${slug}`);
 
   return {
     title: `${post.title} | Ortvest`,

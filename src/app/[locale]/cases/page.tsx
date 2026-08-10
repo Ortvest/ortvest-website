@@ -3,13 +3,14 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
 import { CASES_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
+import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
 import { CasesListingClient } from '@modules/Cases/CasesListingClient';
 import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
 
-const baseUrl = 'https://www.ortvest.com';
+const baseUrl = SITE_URL;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'cases.page' });
@@ -17,14 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     title: t('metadata.title'),
     description: t('metadata.description'),
     metadataBase: new URL(baseUrl),
-    alternates: {
-      canonical: `${baseUrl}/${locale}/cases`,
-      languages: {
-        en: `${baseUrl}/en/cases`,
-        ua: `${baseUrl}/ua/cases`,
-        pl: `${baseUrl}/pl/cases`,
-      },
-    },
+    alternates: buildLocaleAlternates(locale, '/cases'),
     openGraph: {
       title: t('metadata.title'),
       description: t('metadata.description'),

@@ -8,8 +8,9 @@ import Script from 'next/script';
 import { AnnouncementBar, BackgroundEffects, MotionConfigProvider } from '@shared/components';
 import { LAYOUT_CLIENT_NAMESPACES, pickClientMessages } from '../../i18n/client-messages';
 import { locales } from '../../i18n/routing';
+import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
 
-const baseUrl = 'https://www.ortvest.com';
+const baseUrl = SITE_URL;
 
 const GA_MEASUREMENT_ID = process.env.GOOGLE_ANALYTICS_ID?.trim();
 const LINKEDIN_PARTNER_ID = process.env.LINKEDIN_PARTNER_ID?.trim();
@@ -50,14 +51,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       apple: [{ url: '/apple-icon', type: 'image/png', sizes: '180x180' }],
     },
     metadataBase: new URL(baseUrl),
-    alternates: {
-      canonical: `${baseUrl}/${locale}`,
-      languages: {
-        en: `${baseUrl}/en`,
-        ua: `${baseUrl}/ua`,
-        pl: `${baseUrl}/pl`,
-      },
-    },
+    alternates: buildLocaleAlternates(locale),
     openGraph: {
       title: ogTitle,
       description: ogDescription,

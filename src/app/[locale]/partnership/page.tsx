@@ -3,6 +3,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
 import { PARTNERSHIP_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
+import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
@@ -24,7 +25,7 @@ const PROOF_CARDS = [
   { key: '3' as const, Icon: IconMessageQuestion },
 ];
 
-const baseUrl = 'https://www.ortvest.com';
+const baseUrl = SITE_URL;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'partnership.meta' });
@@ -33,15 +34,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     title: t('title'),
     description: t('description'),
     metadataBase: new URL(baseUrl),
-    alternates: {
-      canonical: `${baseUrl}/${locale}/partnership`,
-      languages: {
-        en: `${baseUrl}/en/partnership`,
-        'uk-UA': `${baseUrl}/ua/partnership`,
-        pl: `${baseUrl}/pl/partnership`,
-        'x-default': `${baseUrl}/en/partnership`,
-      },
-    },
+    alternates: buildLocaleAlternates(locale, '/partnership'),
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),

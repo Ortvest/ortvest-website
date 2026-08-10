@@ -3,6 +3,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { RouteIntlProvider } from '../../../../components/RouteIntlProvider';
 import { CASE_DETAIL_CLIENT_NAMESPACES } from '../../../../i18n/client-messages';
+import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
 import { cases } from '@modules/Cases/data';
 import { CaseDetail } from '@modules/Cases/features/CaseDetail';
 import { locales } from '../../../../i18n/routing';
@@ -52,6 +53,8 @@ export async function generateMetadata({ params }: CasePageProps) {
   return {
     title: t('title'),
     description: t('description'),
+    metadataBase: new URL(SITE_URL),
+    alternates: buildLocaleAlternates(locale, `/cases/${slug}`),
   };
 }
 

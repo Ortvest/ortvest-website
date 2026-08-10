@@ -5,7 +5,7 @@ import { BLOG_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostsResult } from '@lib/cms-api';
-import { serializeJsonLd } from '@lib/seo';
+import { buildLocaleAlternates, serializeJsonLd, SITE_URL } from '@lib/seo';
 import { BlogListingClient } from '@modules/Blog/BlogListingClient/BlogListingClient';
 import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
@@ -16,7 +16,7 @@ import { Modal } from '@modules/Modals';
 // This prevents the Full Route Cache from becoming stale indefinitely.
 export const revalidate = 300;
 
-const baseUrl = 'https://www.ortvest.com';
+const baseUrl = SITE_URL;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'blogPage.metadata' });
@@ -25,13 +25,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     description: t('description'),
     metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: `${baseUrl}/${locale}/blog`,
-      languages: {
-        en: `${baseUrl}/en/blog`,
-        'uk-UA': `${baseUrl}/ua/blog`,
-        pl: `${baseUrl}/pl/blog`,
-        'x-default': `${baseUrl}/en/blog`,
-      },
+      ...buildLocaleAlternates(locale, '/blog'),
       types: {
         'application/rss+xml': `${baseUrl}/blog/rss.xml`,
       },

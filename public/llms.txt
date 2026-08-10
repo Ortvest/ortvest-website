@@ -1,0 +1,50 @@
+# Ortvest
+
+> Product studio in Poznań, Poland, building marketplaces, P2P products and member networks — platforms that only work once strangers start trusting each other. We specialise in the cold-start problem: who joins on day one, and why they stay while the other side is still empty.
+
+A 15-person team covering engineering, product design and go-to-market. One squad per project, assigned until launch. EU entity, EU-based data and IP handling, European working hours.
+
+Three industries shipped — P2P, community and clubs, logistics — with a fourth (agritech) in build. Some client work is under NDA and not published.
+
+Available in English (/en), Polish (/pl) and Ukrainian (/ua). Links below point to the English version.
+
+## Core pages
+
+- [Home](https://www.ortvest.com/en): What we build, how we approach two-sided products, team, cases and FAQ.
+- [About](https://www.ortvest.com/en#about): Why we start with the cold-start question before design.
+- [Team](https://www.ortvest.com/en#team): 15 people — 9 engineering, 4 product and design, 2 go-to-market.
+- [Services](https://www.ortvest.com/en#services): Design, development and go-to-market, available separately or combined.
+- [FAQ](https://www.ortvest.com/en#faq): Cost drivers, scope options, working with existing codebases, what happens after launch.
+- [Partnership](https://www.ortvest.com/en/partnership): Working with us as a long-term technical partner rather than an agency.
+
+## Case studies
+
+- [All cases](https://www.ortvest.com/en/cases): Platforms we've built, across P2P, community and logistics.
+- [YachtMate](https://www.ortvest.com/en/cases/yachtmate): Private network for yacht club members with real-time communication.
+- [SharingGround](https://www.ortvest.com/en/cases/sharingground): Peer-to-peer item sharing platform with trust and logistics systems.
+- [Pachaca](https://www.ortvest.com/en/cases/pachaca): Full-stack cleaning and dry-cleaning service platform — mobile apps, web service and internal management system.
+
+## Writing
+
+- [Blog](https://www.ortvest.com/en/blog): Field notes on cold starts, trust systems and marketplace building.
+- [The Unglamorous 20%](https://www.ortvest.com/en/blog/marketplace-admin-tooling-operational-features): Why operational tooling — admin panels, moderation queues, dispute handling — decides whether a marketplace survives year one.
+- [P2P Platform vs Marketplace](https://www.ortvest.com/en/blog/p2p-platform-vs-marketplace): Why the two aren't the same thing, and how building one like the other kills products.
+
+## Working with us
+
+- [Contact](https://www.ortvest.com/en#contact): Project enquiries. Reply within 24 hours.
+- [Discovery Call](https://www.ortvest.com/en#consultation): Free 30-minute fit check. We'll say if the project isn't ours.
+- [Cold Start Audit](https://www.ortvest.com/en#consultation): 90-minute paid audit (EUR 199) covering seeding strategy, trust model, architecture and roadmap. Credited in full toward the project.
+
+## Optional
+
+- [Leave a review](https://www.ortvest.com/en/leave-a-review): For past clients.
+- [Privacy Policy](https://www.ortvest.com/en/privacy-policy)
+- [Terms of Use](https://www.ortvest.com/en/terms-of-use)
+
+## Company
+
+Ortvest sp. z o.o.
+ul. Szamarzewskiego 21/2, Poznań, Poland
+NIP: 7812111756 | KRS: 0001244461
+contact@ortvest.com
