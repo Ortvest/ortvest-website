@@ -12,7 +12,7 @@ import type { BlogCardModel } from '@lib/blog-model';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 import { BlogPostCard } from '@modules/Blog/BlogPostCard';
-import { IconAlertTriangle, IconFileText } from '@tabler/icons-react';
+import { IconAlertTriangle, IconArrowRight, IconFileText } from '@tabler/icons-react';
 
 const GRID_PAGE = 9;
 
@@ -130,8 +130,9 @@ export function BlogListingClient({ posts, hasError = false }: Props) {
                 <div className="mt-6">
                   <Link
                     href={`/${locale}/blog/${hero.slug}`}
-                    className="inline-flex h-11 items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-black shadow-sm transition duration-200 hover:bg-accent-dark">
+                    className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-accent px-5 text-sm font-semibold text-black shadow-sm transition duration-200 hover:bg-accent-dark">
                     {t('readArticle')}
+                    <IconArrowRight size={16} aria-hidden />
                   </Link>
                 </div>
               </div>

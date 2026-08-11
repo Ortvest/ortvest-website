@@ -1842,7 +1842,7 @@
   "blogPage": {
     "title": "Blog",
     "subtitle": "Insights on design, development & growth.",
-    "readArticle": "Read article →",
+    "readArticle": "Read article",
     "loadMore": "Load more",
     "back": "← Back to Blog",
     "moreArticles": "More articles",
