@@ -39,12 +39,13 @@ export async function CaseCard({ caseItem, compact = false }: CaseCardProps) {
       {!caseItem.isNDA && (
         <Link
           href={`/${locale}/cases/${caseItem.id}`}
-          className="absolute inset-0 z-0 rounded-2xl"
+          className="absolute inset-0 z-[1] rounded-2xl"
           aria-label={`${t('viewCaseStudy')}: ${caseItem.title}`}
         />
       )}
 
-      <div className="relative">
+      {/* pointer-events-none so the stretched link receives clicks; re-enable on niche CTA */}
+      <div className="relative z-0 pointer-events-none">
         <div className="relative aspect-video w-full overflow-hidden" style={{ backgroundColor: accent }}>
           {showImage ? (
             <Image
@@ -106,11 +107,11 @@ export async function CaseCard({ caseItem, compact = false }: CaseCardProps) {
           )}
 
           {showNicheCta && (
-            <p className="relative z-10 mt-3 border-t border-black/[0.06] pt-3 text-xs text-black/40">
+            <p className="relative z-[2] mt-3 border-t border-black/[0.06] pt-3 text-xs text-black/40">
               {t(`nicheCta.${nicheKey}`)}{' '}
               <Link
                 href="#contact"
-                className="relative font-medium text-black/60 underline-offset-2 transition hover:text-black hover:underline">
+                className="pointer-events-auto relative font-medium text-black/60 underline-offset-2 transition hover:text-black hover:underline">
                 {t('nicheCta.letsTalk')}
               </Link>
             </p>

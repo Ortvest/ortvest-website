@@ -21,7 +21,7 @@ export const HOME_CLIENT_NAMESPACES = [
 
 export const BLOG_CLIENT_NAMESPACES = ['blogPage', 'blog', 'contact'] as const;
 
-export const CASES_CLIENT_NAMESPACES = ['cases', 'contact'] as const;
+export const CASES_CLIENT_NAMESPACES = ['cases', 'contact', 'hero'] as const;
 
 export const CASE_DETAIL_CLIENT_NAMESPACES = ['caseStudies', 'caseDetail', 'hero', 'cases'] as const;
 
