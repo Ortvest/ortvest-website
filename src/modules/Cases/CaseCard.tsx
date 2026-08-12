@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getLocale, getTranslations } from 'next-intl/server';
 
-import { IconLock } from '@tabler/icons-react';
+import { IconArrowRight, IconLock } from '@tabler/icons-react';
 
 import type { CaseItem } from './data';
 
@@ -99,8 +99,9 @@ export async function CaseCard({ caseItem, compact = false }: CaseCardProps) {
           <p className="line-clamp-2 text-sm leading-relaxed text-black/55">{summary}</p>
 
           {!caseItem.isNDA ? (
-            <span className="mt-1 text-[13px] font-medium text-black opacity-0 transition-opacity group-hover:opacity-100">
+            <span className="mt-1 inline-flex items-center gap-1 text-[13px] font-medium text-black opacity-0 transition-opacity group-hover:opacity-100">
               {t('viewCaseStudy')}
+              <IconArrowRight size={14} aria-hidden />
             </span>
           ) : (
             <span className="mt-1 text-xs italic text-black/40">{t('ndaNote')}</span>
@@ -111,8 +112,9 @@ export async function CaseCard({ caseItem, compact = false }: CaseCardProps) {
               {t(`nicheCta.${nicheKey}`)}{' '}
               <Link
                 href="#contact"
-                className="pointer-events-auto relative font-medium text-black/60 underline-offset-2 transition hover:text-black hover:underline">
+                className="pointer-events-auto relative inline-flex items-center gap-1 font-medium text-black/60 underline-offset-2 transition hover:text-black hover:underline">
                 {t('nicheCta.letsTalk')}
+                <IconArrowRight size={12} aria-hidden />
               </Link>
             </p>
           )}

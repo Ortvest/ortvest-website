@@ -44,7 +44,7 @@
       "secondary": "Zobacz realizacje"
     },
     "freecall": {
-      "text": "Nie wiesz, czy pasujemy? 30 minut, bez pitchu →",
+      "text": "Nie wiesz, czy pasujemy? 30 minut, bez pitchu",
       "link": "Umów rozmowę"
     },
     "nodes": {
@@ -602,7 +602,7 @@
       }
     },
     "ndaProtected": "Chronione NDA",
-    "viewCaseStudy": "Zobacz case study →",
+    "viewCaseStudy": "Zobacz case study",
     "ndaNote": "Szczegóły dostępne podczas rozmowy",
     "challenge": "Wyzwanie",
     "solution": "Rozwiązanie",
@@ -614,12 +614,12 @@
     "ctaButton": "Umów rozmowę",
     "ctaSecondary": "Wyceń projekt",
     "bottomCtaText": "Widzisz ten sam problem cold start w swoim produkcie?",
-    "bottomCtaLink": "Porozmawiajmy o Twoim pierwszym dniu →",
+    "bottomCtaLink": "Porozmawiajmy o Twoim pierwszym dniu",
     "nicheCta": {
       "p2p": "Ten sam problem?",
       "community": "Ten sam problem?",
       "logistics": "Ten sam problem?",
-      "letsTalk": "Porozmawiajmy o Twoim pierwszym dniu →"
+      "letsTalk": "Porozmawiajmy o Twoim pierwszym dniu"
     },
     "categoryBadge": {
       "design": "Design",
@@ -1827,7 +1827,7 @@
   "blogSection": {
     "title": "Czego nauczyliśmy się, budując platformy, które na początku są puste.",
     "subtitle": "Cold starty, systemy zaufania i te części budowania marketplace'ów, których nikt nie pokazuje w case study.",
-    "viewAll": "Wszystkie artykuły →"
+    "viewAll": "Wszystkie artykuły"
   },
   "blog": {
     "label": "Notatki z praktyki",
@@ -1844,7 +1844,7 @@
     "subtitle": "Materiały o designie, rozwoju i wzroście.",
     "readArticle": "Czytaj artykuł",
     "loadMore": "Załaduj więcej",
-    "back": "← Wróć do blogu",
+    "back": "Wróć do blogu",
     "moreArticles": "Więcej artykułów",
     "emptyTitle": "Nie ma jeszcze artykułów. Zajrzyj wkrótce.",
     "errorTitle": "Nie udało się załadować artykułów.",
@@ -2740,7 +2740,7 @@
     "bar": {
       "text": "Większość founderów nie potrzebuje agencji. Potrzebuje partnera technologicznego.",
       "textMobile": "Szukasz partnera technologicznego?",
-      "link": "Zobacz, jak to działa →"
+      "link": "Zobacz, jak to działa"
     },
     "meta": {
       "title": "Partnerstwo technologiczne | Ortvest",

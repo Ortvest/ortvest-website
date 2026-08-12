@@ -27,6 +27,7 @@ import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
+import { IconArrowLeft } from '@tabler/icons-react';
 import { locales } from '../../../../i18n/routing';
 
 const baseUrl = SITE_URL;
@@ -139,7 +140,8 @@ export default async function BlogArticlePage({ params }: Props) {
             <div className="mx-auto max-w-[720px]">
               <Link
                 href={`/${locale}/blog`}
-                className="text-body-sm font-medium text-black/60 transition duration-200 hover:text-accent">
+                className="inline-flex items-center gap-1.5 text-body-sm font-medium text-black/60 transition duration-200 hover:text-accent">
+                <IconArrowLeft size={16} aria-hidden />
                 {t('back')}
               </Link>
 

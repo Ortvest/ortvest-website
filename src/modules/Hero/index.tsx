@@ -92,11 +92,12 @@ export async function Hero() {
               </Link>
             </div>
 
-            <div className="flex items-center gap-1.5 text-[12px] text-zinc-400">
+            <div className="flex flex-wrap items-center gap-1.5 text-[12px] text-zinc-400">
               <IconPhone size={13} className="text-zinc-400" />
               <span>{t('freecall.text')}</span>
-              <Link href="#contact" className="text-zinc-400 underline">
+              <Link href="#contact" className="inline-flex items-center gap-1 text-zinc-400 underline">
                 {t('freecall.link')}
+                <IconArrowRight size={12} aria-hidden />
               </Link>
             </div>
           </div>

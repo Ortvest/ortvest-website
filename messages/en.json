@@ -44,7 +44,7 @@
       "secondary": "Look at the work"
     },
     "freecall": {
-      "text": "Not sure it's us? 30 minutes, no pitch →",
+      "text": "Not sure it's us? 30 minutes, no pitch",
       "link": "Book a call"
     },
     "nodes": {
@@ -602,7 +602,7 @@
       }
     },
     "ndaProtected": "NDA protected",
-    "viewCaseStudy": "View case study →",
+    "viewCaseStudy": "View case study",
     "ndaNote": "Details available on a call",
     "challenge": "Challenge",
     "solution": "Solution",
@@ -614,12 +614,12 @@
     "ctaButton": "Book a call",
     "ctaSecondary": "Get a quote",
     "bottomCtaText": "See the same cold-start problem in your product?",
-    "bottomCtaLink": "Let's talk about your day one →",
+    "bottomCtaLink": "Let's talk about your day one",
     "nicheCta": {
       "p2p": "Same problem?",
       "community": "Same problem?",
       "logistics": "Same problem?",
-      "letsTalk": "Let's talk about your day one →"
+      "letsTalk": "Let's talk about your day one"
     },
     "categoryBadge": {
       "design": "Design",
@@ -1827,7 +1827,7 @@
   "blogSection": {
     "title": "What we've learned building platforms that start empty.",
     "subtitle": "Cold starts, trust systems and the parts of marketplace building nobody puts in a case study.",
-    "viewAll": "View all articles →"
+    "viewAll": "View all articles"
   },
   "blog": {
     "label": "Field notes",
@@ -1844,7 +1844,7 @@
     "subtitle": "Insights on design, development & growth.",
     "readArticle": "Read article",
     "loadMore": "Load more",
-    "back": "← Back to Blog",
+    "back": "Back to Blog",
     "moreArticles": "More articles",
     "emptyTitle": "No articles yet. Check back soon.",
     "errorTitle": "We couldn't load the articles.",
@@ -2740,7 +2740,7 @@
     "bar": {
       "text": "Most founders don't need an agency. They need a technical partner.",
       "textMobile": "Looking for a technical partner?",
-      "link": "See how that works →"
+      "link": "See how that works"
     },
     "meta": {
       "title": "Technical Partnership | Ortvest",

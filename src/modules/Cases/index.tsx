@@ -45,8 +45,11 @@ export async function Cases() {
 
           <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.06] pt-8">
             <p className="text-[15px] text-black/70">{t('bottomCtaText')}</p>
-            <a href="#contact" className="text-sm font-medium text-black transition hover:underline">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-1 text-sm font-medium text-black transition hover:underline">
               {t('bottomCtaLink')}
+              <IconArrowRight size={14} aria-hidden />
             </a>
           </div>
 

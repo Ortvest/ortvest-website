@@ -8,7 +8,14 @@ import { Container, SectionHeader, SectionReveal } from '@shared/components';
 import type { TablerIcon } from '@shared/types/icon.types';
 
 import { accordionContent } from '@lib/motion';
-import { IconArrowsExchange, IconChevronDown, IconLayoutDashboard, IconTruck, IconUsers } from '@tabler/icons-react';
+import {
+  IconArrowRight,
+  IconArrowsExchange,
+  IconChevronDown,
+  IconLayoutDashboard,
+  IconTruck,
+  IconUsers,
+} from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const nicheKeys = ['p2p', 'community', 'logistics'] as const;
@@ -116,8 +123,9 @@ function NicheCard({ nicheKey, icon: Icon, iconClassName, tags, index, caseLink,
                   <a
                     href={caseLink}
                     onClick={(e) => e.stopPropagation()}
-                    className="mt-3 inline-block text-xs text-black/35 transition duration-150 hover:text-black/70">
-                    {t('seeCase')} →
+                    className="mt-3 inline-flex items-center gap-1 text-xs text-black/35 transition duration-150 hover:text-black/70">
+                    {t('seeCase')}
+                    <IconArrowRight size={12} aria-hidden />
                   </a>
                 )}
               </div>
