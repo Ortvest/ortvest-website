@@ -1,7 +1,5 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
-import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
-import { CASES_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
 import { CasesListingClient } from '@modules/Cases/CasesListingClient';
@@ -9,6 +7,9 @@ import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
+
+import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
+import { CASES_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 
 const baseUrl = SITE_URL;
 

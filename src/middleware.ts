@@ -10,7 +10,5 @@ export default createMiddleware({
 export const config = {
   // Skip API, Next/Vercel internals, static assets, and SEO/root text files.
   // Without this, paths like /llms.txt can be treated as [locale] and return HTML.
-  matcher: [
-    '/((?!api|_next|_vercel|favicon\\.ico|robots\\.txt|sitemap\\.xml|llms\\.txt|.*\\..*).*)',
-  ],
+  matcher: ['/((?!api|_next|_vercel|favicon\\.ico|robots\\.txt|sitemap\\.xml|llms\\.txt|.*\\..*).*)'],
 };

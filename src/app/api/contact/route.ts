@@ -172,9 +172,7 @@ export async function POST(request: NextRequest) {
       if (!res.ok) throw new Error('External backend error');
       const data = await res.json();
 
-      const wsSource = payload.source
-        ? `ortvest-website/${payload.source}`
-        : 'ortvest-website/api/contact';
+      const wsSource = payload.source ? `ortvest-website/${payload.source}` : 'ortvest-website/api/contact';
       await publishOrderToWebSocket({
         ...payload,
         createdAt,

@@ -6,8 +6,11 @@ import { useLocale, useTranslations } from 'next-intl';
 
 import { Divider } from '@shared/components';
 
+import { CLUTCH_COMPANY_ID, CLUTCH_SOCIAL_ICON_WIDGET_HEIGHT, CLUTCH_SOCIAL_ICON_WIDGET_TYPE } from '@lib/clutch';
 import { LangSwitch } from '@modules/Header/features/LangSwitch';
 import AppLogo from '@public/icons/AppLogoHorizontal.svg';
+
+import { ClutchWidget } from '../../components/ClutchWidget';
 
 const footerNavItems = [
   { key: 'about', href: '#about' },
@@ -87,6 +90,16 @@ export function Footer() {
                 {t('termsOfUse')}
               </Link>
             </div>
+            <div className="mt-4">
+              <ClutchWidget
+                widgetType={CLUTCH_SOCIAL_ICON_WIDGET_TYPE}
+                height={CLUTCH_SOCIAL_ICON_WIDGET_HEIGHT}
+                companyId={CLUTCH_COMPANY_ID}
+                nofollow
+                shape="round"
+                className="max-w-full"
+              />
+            </div>
           </div>
 
           {/* Navigation */}
@@ -100,11 +113,7 @@ export function Footer() {
               {footerNavItems.map(({ key, href }) => (
                 <li key={key} className={`${mobileNavOrder[key]} sm:order-none`}>
                   <Link
-                    href={
-                      href === 'blog' || href === 'partnership'
-                        ? `/${locale}/${href}`
-                        : `/${locale}${href}`
-                    }
+                    href={href === 'blog' || href === 'partnership' ? `/${locale}/${href}` : `/${locale}${href}`}
                     className="block py-1.5 text-[14px] text-zinc-950 sm:py-0 sm:text-body-sm sm:text-black/70 sm:transition sm:hover:text-black">
                     {tNav(key)}
                   </Link>

@@ -5,8 +5,6 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 // Revalidate every 5 minutes so blog posts appear without a redeploy.
 export const revalidate = 300;
 
-import { RouteIntlProvider } from '../../components/RouteIntlProvider';
-import { HOME_CLIENT_NAMESPACES } from '../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { About } from '@modules/About';
 import { BlogSection } from '@modules/Blog/BlogSection';
@@ -26,7 +24,9 @@ import { ServicesSection } from '@modules/Services/ServicesSection';
 import { Team } from '@modules/Team';
 import { Technologies } from '@modules/Technologies';
 
+import { RouteIntlProvider } from '../../components/RouteIntlProvider';
 import { SectionDivider } from '../../components/SectionDivider';
+import { HOME_CLIENT_NAMESPACES } from '../../i18n/client-messages';
 
 export default async function Home({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);

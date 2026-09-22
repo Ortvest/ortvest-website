@@ -20,9 +20,7 @@ export function resolveCmsApiUrl(): string {
 
   if (process.env.NODE_ENV !== 'production') {
     if (!missingCmsUrlLogged) {
-      console.warn(
-        '[Ortvest CMS] ORTVEST_CMS_API_URL is not set. Falling back to http://localhost:3200.'
-      );
+      console.warn('[Ortvest CMS] ORTVEST_CMS_API_URL is not set. Falling back to http://localhost:3200.');
       missingCmsUrlLogged = true;
     }
     return 'http://localhost:3200';
@@ -93,10 +91,7 @@ export async function fetchCmsBlogPostsResult(locale: string): Promise<CmsBlogPo
     return { rows, status: 'success' };
   } catch (error) {
     if (IS_BUILD) throw error;
-    console.error(
-      `[Ortvest CMS] Failed to fetch published blog posts for locale "${locale}".`,
-      error
-    );
+    console.error(`[Ortvest CMS] Failed to fetch published blog posts for locale "${locale}".`, error);
     return { rows: [], status: 'error' };
   }
 }
@@ -106,10 +101,7 @@ export async function fetchCmsBlogPosts(locale: string): Promise<CmsBlogPostRow[
   return result.rows;
 }
 
-export async function fetchCmsBlogPostBySlug(
-  slug: string,
-  locale?: string
-): Promise<CmsBlogPostRow | null> {
+export async function fetchCmsBlogPostBySlug(slug: string, locale?: string): Promise<CmsBlogPostRow | null> {
   const base = resolveCmsApiUrl();
   if (!base || !slug) return null;
   const url = `${base}/api/blog/${encodeURIComponent(slug)}`;
@@ -123,9 +115,7 @@ export async function fetchCmsBlogPostBySlug(
     }
     const row = (await res.json()) as CmsBlogPostRow;
     if (!row || row.status !== 'published') {
-      console.error(
-        `[Ortvest CMS] Blog post "${slug}" returned an invalid or unpublished payload.`
-      );
+      console.error(`[Ortvest CMS] Blog post "${slug}" returned an invalid or unpublished payload.`);
       return null;
     }
     if (locale && row.language !== (locale === 'ua' ? 'uk' : locale)) return null;

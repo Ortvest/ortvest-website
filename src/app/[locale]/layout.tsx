@@ -1,15 +1,17 @@
-import '@shared/styles/global.css';
-
+import Script from 'next/script';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import Script from 'next/script';
 
 import { AnnouncementBar, BackgroundEffects, MotionConfigProvider } from '@shared/components';
+
+import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
+
 import { LocaleFontFaces } from '../../components/LocaleFontFaces';
 import { interLatin } from '../../fonts/inter-latin';
 import { LAYOUT_CLIENT_NAMESPACES, pickClientMessages } from '../../i18n/client-messages';
 import { locales } from '../../i18n/routing';
-import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
+
+import '@shared/styles/global.css';
 
 const baseUrl = SITE_URL;
 
@@ -197,6 +199,7 @@ export default async function LocaleLayout({
             strategy="lazyOnload"
           />
         )}
+        <Script src="https://widget.clutch.co/static/js/widget.js" strategy="afterInteractive" />
       </head>
       <body suppressHydrationWarning>
         {GA_MEASUREMENT_ID && COOKIEYES_SITE_ID && (

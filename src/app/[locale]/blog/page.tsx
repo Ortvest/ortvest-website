@@ -1,7 +1,5 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
-import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
-import { BLOG_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 import { ReduxProvider } from '@global/store/ReduxProvider';
 import { rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostsResult } from '@lib/cms-api';
@@ -11,6 +9,9 @@ import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
+
+import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
+import { BLOG_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 
 // Revalidate every 5 minutes in addition to on-demand webhook revalidation.
 // This prevents the Full Route Cache from becoming stale indefinitely.

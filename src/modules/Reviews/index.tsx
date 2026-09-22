@@ -3,8 +3,11 @@ import { getLocale, getTranslations } from 'next-intl/server';
 
 import { Container, SectionHeader, SectionReveal } from '@shared/components';
 
+import { CLUTCH_BLURB_WIDGET_HEIGHT, CLUTCH_BLURB_WIDGET_TYPE, CLUTCH_COMPANY_ID } from '@lib/clutch';
 import { fetchPublishedReviews } from '@lib/fetch-reviews';
 import { IconArrowRight, IconStar } from '@tabler/icons-react';
+
+import { ClutchWidget } from '../../components/ClutchWidget';
 
 import { ReviewsCarousel } from './ReviewsCarousel';
 
@@ -33,6 +36,16 @@ export async function Reviews() {
             className="mb-10"
             headingId="reviews-heading"
           />
+
+          <div
+            className="mb-10 inline-flex w-fit"
+            style={{ minHeight: CLUTCH_BLURB_WIDGET_HEIGHT === 'auto' ? '120px' : `${CLUTCH_BLURB_WIDGET_HEIGHT}px` }}>
+            <ClutchWidget
+              widgetType={CLUTCH_BLURB_WIDGET_TYPE}
+              height={CLUTCH_BLURB_WIDGET_HEIGHT}
+              companyId={CLUTCH_COMPANY_ID}
+            />
+          </div>
 
           <ReviewsCarousel reviews={reviews} />
 

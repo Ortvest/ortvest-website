@@ -40,14 +40,7 @@ export function PartnershipForm() {
   const [error, setError] = useState('');
 
   const isValid =
-    name.trim() &&
-    email.trim() &&
-    building.trim() &&
-    sideCount.trim() &&
-    stage &&
-    funding &&
-    model &&
-    tried.trim();
+    name.trim() && email.trim() && building.trim() && sideCount.trim() && stage && funding && model && tried.trim();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

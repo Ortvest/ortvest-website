@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 import { Provider } from 'react-redux';
 
-import { setupStore, type AppStore } from '.';
+import { type AppStore, setupStore } from '.';
 
 interface ReduxProviderProps {
   children: React.ReactNode;

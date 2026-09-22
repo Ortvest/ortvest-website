@@ -5,13 +5,7 @@
  *
  * Must use the same font-family name as next/font's hashed Inter instance.
  */
-export function LocaleFontFaces({
-  fontFamily,
-  locale,
-}: {
-  fontFamily: string;
-  locale: string;
-}) {
+export function LocaleFontFaces({ fontFamily, locale }: { fontFamily: string; locale: string }) {
   if (locale === 'en') return null;
 
   const family = fontFamily.split(',')[0]?.trim().replace(/['"]/g, '') ?? '';

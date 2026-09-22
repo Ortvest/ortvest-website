@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
+import { CLUTCH_COMPACT_WIDGET_HEIGHT, CLUTCH_COMPACT_WIDGET_TYPE, CLUTCH_COMPANY_ID } from '@lib/clutch';
 import {
   IconArrowRight,
   IconArrowsExchange,
@@ -11,6 +12,8 @@ import {
   IconTruck,
   IconUsers,
 } from '@tabler/icons-react';
+
+import { ClutchWidget } from '../../components/ClutchWidget';
 
 type SatelliteNodeProps = {
   left: string;
@@ -78,7 +81,7 @@ export async function Hero() {
 
             <p className="mb-7 max-w-[400px] text-[15px] leading-[1.75] text-zinc-400">{t('subtitle')}</p>
 
-            <div className="mb-5 flex flex-wrap items-center gap-2.5">
+            <div className="mb-4 flex flex-wrap items-center gap-2.5">
               <Link
                 href="#contact"
                 className="flex cursor-pointer items-center gap-2 rounded-full border-none bg-accent px-[22px] py-[11px] text-[13px] font-bold text-black transition hover:opacity-85">
@@ -90,6 +93,15 @@ export async function Hero() {
                 className="cursor-pointer rounded-full border border-zinc-800 bg-transparent px-[22px] py-[11px] text-[13px] text-white transition hover:border-zinc-600">
                 {t('cta.secondary')}
               </Link>
+            </div>
+
+            <div className="mb-4 inline-flex w-fit min-h-[53px] items-center rounded-[10px] bg-[#f4f4f0] px-3 py-1">
+              <ClutchWidget
+                widgetType={CLUTCH_COMPACT_WIDGET_TYPE}
+                height={CLUTCH_COMPACT_WIDGET_HEIGHT}
+                companyId={CLUTCH_COMPANY_ID}
+                className="w-[200px] max-w-full"
+              />
             </div>
 
             <div className="flex flex-wrap items-center gap-1.5 text-[12px] text-zinc-400">
