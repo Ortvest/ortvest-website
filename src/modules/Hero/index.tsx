@@ -56,6 +56,14 @@ function SatelliteNode({
   );
 }
 
+/** Pulls the closing words off the headline so they can sit in the highlight marker. */
+function splitHighlight(text: string, wordCount = 2) {
+  const words = text.trim().split(' ');
+  const highlighted = words.slice(-wordCount).join(' ');
+  const rest = words.slice(0, -wordCount).join(' ');
+  return { rest, highlighted };
+}
+
 const ORBIT_LINES = [
   { x2: 110, y2: 88, opacity: 0.18, dash: undefined, strokeWidth: 0.9, dur: '2s' },
   { x2: 330, y2: 88, opacity: 0.18, dash: undefined, strokeWidth: 0.9, dur: '2.4s' },
@@ -65,6 +73,7 @@ const ORBIT_LINES = [
 
 export async function Hero() {
   const t = await getTranslations('hero');
+  const { rest: title2Rest, highlighted } = splitHighlight(t('title2'), 2);
 
   return (
     <section
@@ -74,9 +83,9 @@ export async function Hero() {
       <div className="mx-auto max-w-[1160px]">
         <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12">
           <div>
-            <p className="mb-4 text-xs uppercase tracking-widest text-accent">{t('badge')}</p>
             <h1 id="hero-heading" className="mb-5 text-[38px] font-extrabold leading-[1.1] tracking-tight text-white">
-              {t('title1')} {t('title2')}
+              {t('title1')} {title2Rest}{' '}
+              <span className="box-decoration-clone rounded-lg bg-accent px-2 text-black">{highlighted}</span>
             </h1>
 
             <p className="mb-7 max-w-[400px] text-[15px] leading-[1.75] text-zinc-400">{t('subtitle')}</p>

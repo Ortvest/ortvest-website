@@ -1,10 +1,12 @@
 import { notFound } from 'next/navigation';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { buildBreadcrumbSchema, buildCaseStudySchema } from '@lib/schema';
 import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
 import { cases } from '@modules/Cases/data';
 import { CaseDetail } from '@modules/Cases/features/CaseDetail';
 
+import { JsonLd } from '../../../../components/JsonLd';
 import { RouteIntlProvider } from '../../../../components/RouteIntlProvider';
 import { CASE_DETAIL_CLIENT_NAMESPACES } from '../../../../i18n/client-messages';
 import { locales } from '../../../../i18n/routing';
@@ -51,15 +53,30 @@ export async function generateMetadata({ params }: CasePageProps) {
   }
 
   const t = await getTranslations({ locale, namespace: `caseStudies.${slug}.meta` });
+
   return {
     title: t('title'),
     description: t('description'),
     metadataBase: new URL(SITE_URL),
     alternates: buildLocaleAlternates(locale, `/cases/${slug}`),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      url: `${SITE_URL}/${locale}/cases/${slug}`,
+      siteName: 'Ortvest',
+      locale: locale === 'ua' ? 'uk_UA' : locale === 'pl' ? 'pl_PL' : 'en_US',
+      type: 'article',
+      // Social image comes from opengraph-image.tsx in this segment.
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+    },
   };
 }
 
-export default function CasePage({ params }: CasePageProps) {
+export default async function CasePage({ params }: CasePageProps) {
   const { slug, locale } = params;
   unstable_setRequestLocale(locale);
   const caseItem = cases.find((c) => c.id === slug);
@@ -68,9 +85,31 @@ export default function CasePage({ params }: CasePageProps) {
     notFound();
   }
 
+  const [tMeta, tNav] = await Promise.all([
+    getTranslations({ locale, namespace: `caseStudies.${slug}.meta` }),
+    getTranslations({ locale, namespace: 'nav' }),
+  ]);
+
   return (
-    <RouteIntlProvider locale={locale} namespaces={CASE_DETAIL_CLIENT_NAMESPACES} caseStudyId={slug}>
-      <CaseDetail caseItem={caseItem} />
-    </RouteIntlProvider>
+    <>
+      <JsonLd
+        schema={[
+          buildBreadcrumbSchema(locale, tNav('home'), [
+            { name: tNav('cases'), path: '/cases' },
+            { name: caseItem.title },
+          ]),
+          buildCaseStudySchema({
+            locale,
+            slug,
+            title: caseItem.title,
+            description: tMeta('description'),
+            image: caseItem.coverImage ?? caseItem.preview ?? caseItem.images?.[0],
+          }),
+        ]}
+      />
+      <RouteIntlProvider locale={locale} namespaces={CASE_DETAIL_CLIENT_NAMESPACES} caseStudyId={slug}>
+        <CaseDetail caseItem={caseItem} />
+      </RouteIntlProvider>
+    </>
   );
 }

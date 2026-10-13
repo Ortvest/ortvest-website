@@ -1,6 +1,6 @@
 # Ortvest
 
-> Product studio in Poznań, Poland, building marketplaces, P2P products and member networks — platforms that only work once strangers start trusting each other. We specialise in the cold-start problem: who joins on day one, and why they stay while the other side is still empty.
+> Product studio in Poznań, Poland. We design and build websites, web services and mobile apps — marketing sites, booking flows, client portals, iOS and Android apps — and the platforms behind them. Our depth is in two-sided products: marketplaces, P2P and member networks, where the hard part is the cold start — who joins on day one, and why they stay while the other side is still empty.
 
 A 15-person team covering engineering, product design and go-to-market. One squad per project, assigned until launch. EU entity, EU-based data and IP handling, European working hours.
 

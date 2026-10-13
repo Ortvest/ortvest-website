@@ -1,76 +1,85 @@
 import Link from 'next/link';
 import { getLocale, getTranslations } from 'next-intl/server';
 
-import { Container, SectionHeader, SectionReveal } from '@shared/components';
+import { Container } from '@shared/components';
 
-import { IconArrowRight, IconBriefcase } from '@tabler/icons-react';
+import { IconArrowRight } from '@tabler/icons-react';
 
-import { CaseCard } from './CaseCard';
-import { featuredHomeCases } from './data';
+import { type CaseExplorerItem, CasesExplorer } from './CasesExplorer';
+import { portfolioGridCases } from './data';
+import { CASE_NICHE_KEYS, deriveCaseTabKeys, EXPLORER_CASE_ORDER } from './explorer';
 
 export async function Cases() {
   const t = await getTranslations('cases');
   const locale = await getLocale();
 
+  const items = EXPLORER_CASE_ORDER.flatMap((id): CaseExplorerItem[] => {
+    const caseItem = portfolioGridCases.find((c) => c.id === id);
+    if (!caseItem) return [];
+
+    const nicheKey = CASE_NICHE_KEYS[id] ?? 'p2p';
+
+    return [
+      {
+        id: caseItem.id,
+        title: caseItem.title,
+        tags: t(`items.${id}.tags`),
+        industryLabel: t(`items.${id}.industryLabel`),
+        summary: t(`items.${id}.summary`),
+        coverImage: caseItem.coverImage ?? caseItem.preview,
+        accentColor: caseItem.accentColor ?? '#1a1a1a',
+        isNDA: caseItem.isNDA,
+        tabKeys: deriveCaseTabKeys(caseItem),
+        nicheLabel: t(`nicheCta.${nicheKey}`),
+      },
+    ];
+  });
+
+  const tabLabels = {
+    all: t('tabs.all'),
+    websites: t('tabs.websites'),
+    webServices: t('tabs.webServices'),
+    mobileApps: t('tabs.mobileApps'),
+    design: t('tabs.design'),
+  };
+
   return (
     <section id="cases" className="section-padding bg-white" aria-labelledby="cases-heading">
       <Container>
-        <SectionReveal direction="left">
-          <SectionHeader
-            eyebrow={t('eyebrow')}
-            title={t('title')}
-            description={t('subtitle')}
-            icon={IconBriefcase}
-            className="mb-8"
-          />
-
-          <div className="mb-8 rounded-2xl border border-accent/20 bg-accent/5 p-5 sm:p-6">
-            <p className="text-body-sm text-black/70">{t('ndaBanner')}</p>
+        <div className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between lg:gap-10">
+          <div className="max-w-xl">
+            <p className="mb-3 text-xs uppercase tracking-widest text-black/40">{t('eyebrow')}</p>
+            <h2 id="cases-heading" className="text-h1 font-extrabold leading-tight text-black">
+              {t('title')}
+            </h2>
           </div>
+          <p className="max-w-sm text-body-sm leading-relaxed text-black/50 lg:pt-10">{t('subtitle')}</p>
+        </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredHomeCases.map((caseItem) => (
-              <CaseCard key={caseItem.id} caseItem={caseItem} />
-            ))}
-          </div>
+        <CasesExplorer
+          items={items}
+          tabLabels={tabLabels}
+          locale={locale}
+          ndaProtectedLabel={t('ndaProtected')}
+          ctaLabel={t('nicheCta.letsTalk')}
+        />
 
-          <div className="mt-10 text-center">
-            <Link
-              href={`/${locale}/cases`}
-              className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-6 py-3 text-sm font-medium text-zinc-950 transition hover:border-zinc-400">
-              {t('section.viewAll')}
-              <IconArrowRight size={14} />
-            </Link>
-          </div>
-
-          <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.06] pt-8">
-            <p className="text-[15px] text-black/70">{t('bottomCtaText')}</p>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-1 text-sm font-medium text-black transition hover:underline">
-              {t('bottomCtaLink')}
-              <IconArrowRight size={14} aria-hidden />
-            </a>
-          </div>
-
-          <div className="mt-12 text-center">
-            <h2 className="mb-3 text-h2 font-bold text-black">{t('ctaTitle')}</h2>
-            <p className="mx-auto mb-6 max-w-xl text-body-sm text-black/60">{t('ctaText')}</p>
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <Link
-                href="#consultation"
-                className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-black/90">
-                {t('ctaButton')}
-                <IconArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href="#contact"
-                className="inline-flex items-center gap-2 rounded-full border border-black/15 bg-white px-6 py-3 text-sm font-semibold text-black/80 transition hover:border-black/30 hover:text-black">
-                {t('ctaSecondary')}
-              </Link>
-            </div>
-          </div>
-        </SectionReveal>
+        <Link
+          href={`/${locale}/cases`}
+          className="group mt-10 flex items-center justify-between gap-6 rounded-2xl bg-black px-6 py-6
+            text-white transition hover:bg-zinc-900 sm:px-8">
+          <span>
+            <span className="block text-xl font-extrabold sm:text-2xl">{t('section.viewAll')}</span>
+            <span className="mt-1 block font-mono text-xs text-white/50">
+              {portfolioGridCases.length} {t('viewAllSuffix')}
+            </span>
+          </span>
+          <span
+            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent text-black
+              transition group-hover:scale-105">
+            <IconArrowRight size={20} />
+          </span>
+        </Link>
       </Container>
     </section>
   );

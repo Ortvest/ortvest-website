@@ -10,7 +10,7 @@ import { ModalSlice } from '@global/store/slices/ModalSlice';
 import { DURATION, EASE } from '@lib/motion';
 import CloseIcon from '@public/icons/CloseIcon.svg';
 import ErrorIcon from '@public/icons/ErrorIcon.svg';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 
 const backdrop = {
   initial: { opacity: 0 },
@@ -64,7 +64,7 @@ export function SendFailedModal() {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <m.div
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           role="dialog"
           aria-modal="true"
@@ -75,13 +75,13 @@ export function SendFailedModal() {
           transition={backdrop.transition}
           style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}
           onClick={onClose}>
-          <motion.div
+          <m.div
             className="relative w-full max-w-md rounded-2xl bg-white p-8 shadow-xl sm:p-10"
             initial={panel.initial}
             animate={panel.animate}
             exit={panel.exit}
             onClick={(e) => e.stopPropagation()}>
-            <motion.button
+            <m.button
               type="button"
               onClick={onClose}
               className="absolute right-4 top-4 rounded-lg p-1.5 transition hover:bg-black/5"
@@ -90,17 +90,17 @@ export function SendFailedModal() {
               animate={{ opacity: 1 }}
               transition={{ delay: DURATION.normal }}>
               <Image src={CloseIcon} alt="" width={24} height={24} />
-            </motion.button>
+            </m.button>
 
-            <motion.div
+            <m.div
               className="flex justify-center"
               variants={contentVariants}
               initial="initial"
               animate="animate"
               custom={0}>
               <Image src={ErrorIcon} alt="" width={56} height={56} aria-hidden />
-            </motion.div>
-            <motion.h2
+            </m.div>
+            <m.h2
               id="error-modal-title"
               className="mt-6 text-center text-xl font-semibold text-black"
               variants={contentVariants}
@@ -108,17 +108,17 @@ export function SendFailedModal() {
               animate="animate"
               custom={1}>
               {t('errorTitle')}
-            </motion.h2>
-            <motion.p
+            </m.h2>
+            <m.p
               className="mt-2 text-center text-black/70"
               variants={contentVariants}
               initial="initial"
               animate="animate"
               custom={2}>
               {t('errorText')}
-            </motion.p>
-          </motion.div>
-        </motion.div>
+            </m.p>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

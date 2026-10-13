@@ -25,6 +25,8 @@ export interface ContactBody {
   partnerStage?: string;
   partnerFunding?: string;
   partnerModel?: string;
+  businessIndustry?: string;
+  businessNeed?: string;
 }
 
 type NormalizedContactBody = Omit<ContactBody, 'productDescription' | 'budget' | 'consultationType'> & {
@@ -44,6 +46,8 @@ interface ContactDoc {
   partnerStage?: string;
   partnerFunding?: string;
   partnerModel?: string;
+  businessIndustry?: string;
+  businessNeed?: string;
   createdAt: string;
 }
 
@@ -157,6 +161,8 @@ export async function POST(request: NextRequest) {
       partnerStage: typeof body.partnerStage === 'string' ? body.partnerStage : undefined,
       partnerFunding: typeof body.partnerFunding === 'string' ? body.partnerFunding : undefined,
       partnerModel: typeof body.partnerModel === 'string' ? body.partnerModel : undefined,
+      businessIndustry: typeof body.businessIndustry === 'string' ? body.businessIndustry : undefined,
+      businessNeed: typeof body.businessNeed === 'string' ? body.businessNeed : undefined,
     };
     const createdAt = new Date().toISOString();
 

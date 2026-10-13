@@ -491,10 +491,3 @@ export const cases: CaseItem[] = [...portfolioCases, ...brandCases];
 
 /** Homepage portfolio grid */
 export const portfolioGridCases = portfolioCases;
-
-/** Featured on homepage Cases section (order preserved) */
-export const featuredHomeCaseIds = ['yachtmate', 'sharingground', 'pachaca'] as const;
-
-export const featuredHomeCases = featuredHomeCaseIds
-  .map((id) => portfolioCases.find((c) => c.id === id))
-  .filter((c): c is CaseItem => c != null);

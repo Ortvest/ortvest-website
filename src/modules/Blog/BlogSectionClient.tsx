@@ -2,14 +2,14 @@
 
 import { useMemo, useState } from 'react';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { formatBlogPostDate } from '@lib/blog-dates';
+import { Container, SectionReveal } from '@shared/components';
+
+import { formatBlogPostDateShort } from '@lib/blog-dates';
 import type { BlogCardModel } from '@lib/blog-model';
-import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
-import { IconArrowRight, IconLayoutColumns } from '@tabler/icons-react';
+import { IconArrowRight } from '@tabler/icons-react';
 
 type Props = {
   posts: BlogCardModel[];
@@ -21,39 +21,6 @@ function authorInitials(name: string): string {
   if (parts.length === 0) return '?';
   if (parts.length === 1) return parts[0]!.slice(0, 2).toUpperCase();
   return `${parts[0]![0] ?? ''}${parts[1]![0] ?? ''}`.toUpperCase();
-}
-
-function PostCover({
-  post,
-  aspectClass,
-  overlay,
-}: {
-  post: BlogCardModel;
-  aspectClass: string;
-  overlay?: React.ReactNode;
-}) {
-  return (
-    <div className={`relative overflow-hidden bg-zinc-950 ${aspectClass}`}>
-      {post.cover_image ? (
-        <Image
-          src={post.cover_image}
-          alt=""
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1160px) 50vw, 580px"
-        />
-      ) : (
-        <BlogCoverPlaceholder />
-      )}
-      {overlay && (
-        <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"
-          aria-hidden="true"
-        />
-      )}
-      {overlay}
-    </div>
-  );
 }
 
 export function BlogSectionClient({ posts, locale }: Props) {
@@ -72,7 +39,7 @@ export function BlogSectionClient({ posts, locale }: Props) {
   }, [posts, activeTag]);
 
   const featured = filtered[0];
-  const gridPosts = filtered.slice(1, 4);
+  const listPosts = filtered.slice(1, 6);
 
   if (!featured) return null;
 
@@ -80,181 +47,121 @@ export function BlogSectionClient({ posts, locale }: Props) {
   const featuredAuthorName = featured.authorName || t('authorFallback');
 
   return (
-    <section id="blog" className="bg-white px-6 py-20" aria-labelledby="blog-heading">
-      <div className="mx-auto max-w-[1160px]">
-        {/* Header */}
-        <div className="mb-7 text-center">
-          <div className="mb-3 flex items-center justify-center gap-2">
-            <IconLayoutColumns size={13} className="text-zinc-400" />
-            <span className="text-xs uppercase tracking-widest text-zinc-400">{t('label')}</span>
-          </div>
-          <h2 id="blog-heading" className="mb-2 text-h1 font-bold text-zinc-950">
-            {t('title')}
-          </h2>
-          <p className="text-body text-zinc-400">{t('subtitle')}</p>
-        </div>
-
-        {/* Tag filters */}
-        {tags.length > 0 && (
-          <div className="mb-10 flex flex-wrap justify-center gap-2">
-            <button
-              type="button"
-              onClick={() => setActiveTag('all')}
-              className={`cursor-pointer select-none rounded-full border px-3.5 py-1.5 text-xs transition ${
-                activeTag === 'all'
-                  ? 'border-zinc-950 bg-zinc-950 text-white'
-                  : 'border-zinc-200 text-zinc-500 hover:border-zinc-400 hover:text-zinc-950'
-              }`}>
-              {t('filterAll')}
-            </button>
-            {tags.map((tag) => (
-              <button
-                key={tag}
-                type="button"
-                onClick={() => setActiveTag(tag)}
-                className={`cursor-pointer select-none rounded-full border px-3.5 py-1.5 text-xs transition ${
-                  activeTag === tag
-                    ? 'border-zinc-950 bg-zinc-950 text-white'
-                    : 'border-zinc-200 text-zinc-500 hover:border-zinc-400 hover:text-zinc-950'
-                }`}>
-                {tag}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {/* Featured card */}
-        <Link
-          href={featuredUrl}
-          className="mb-6 grid cursor-pointer grid-cols-1 gap-0 overflow-hidden rounded-2xl border border-zinc-200 transition-colors duration-200 hover:border-zinc-400 md:grid-cols-2">
-          <PostCover
-            post={featured}
-            aspectClass="aspect-[16/10]"
-            overlay={
-              featured.tags[0] ? (
-                <div className="absolute bottom-0 left-0 p-5">
-                  <span className="mb-3 inline-block rounded-full bg-accent px-2 py-0.5 text-[10px] font-semibold tracking-wide text-black">
-                    {featured.tags[0]}
-                  </span>
-                  <p className="line-clamp-3 max-w-[280px] text-[18px] font-bold leading-snug text-white">
-                    {featured.title}
-                  </p>
-                </div>
-              ) : (
-                <div className="absolute bottom-0 left-0 p-5">
-                  <p className="line-clamp-3 max-w-[280px] text-[18px] font-bold leading-snug text-white">
-                    {featured.title}
-                  </p>
-                </div>
-              )
-            }
-          />
-
-          <div className="flex flex-col justify-between p-7">
+    <section id="blog" className="section-padding bg-white" aria-labelledby="blog-heading">
+      <Container>
+        <SectionReveal direction="left">
+          <div className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div>
-              {featured.tags.length > 0 && (
-                <div className="mb-4 flex flex-wrap gap-1.5">
-                  {featured.tags.map((tag) => (
-                    <span key={tag} className="rounded-full bg-zinc-100 px-2.5 py-1 text-xs text-zinc-500">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-              <h3 className="mb-3 text-[20px] font-bold leading-snug text-zinc-950">{featured.title}</h3>
-              <p className="mb-5 line-clamp-4 flex-1 text-body-sm leading-relaxed text-zinc-400">{featured.excerpt}</p>
+              <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-black/40">{t('label')}</p>
+              <h2 id="blog-heading" className="text-h1 font-extrabold leading-tight text-black">
+                {t('title')}
+              </h2>
             </div>
+            <p className="max-w-sm text-body-sm leading-relaxed text-black/55 lg:pt-2">{t('subtitle')}</p>
+          </div>
 
-            <div>
-              <div className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1">
-                <span className="hidden items-center gap-2 sm:flex">
-                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-zinc-950 text-[10px] font-bold text-accent">
-                    {authorInitials(featuredAuthorName)}
-                  </span>
-                  <span className="text-[12px] font-medium text-zinc-950">{featuredAuthorName}</span>
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-stretch">
+            {/* Featured post */}
+            <Link href={featuredUrl} className="group flex flex-col rounded-2xl bg-black p-7 sm:p-8">
+              <div className="flex items-center justify-between gap-3">
+                <span className="inline-flex rounded-full bg-accent px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-black">
+                  {t('latest')}
                 </span>
-                <span className="hidden text-zinc-300 sm:inline">·</span>
-                <span className="text-[12px] text-zinc-400">{formatBlogPostDate(featured.published_at, locale)}</span>
-                <span className="text-zinc-300">·</span>
-                <span className="text-[12px] text-zinc-400">{t('minRead', { n: featured.readMinutes })}</span>
+                {featured.tags[0] && <span className="font-mono text-xs text-white/40">{featured.tags[0]}</span>}
               </div>
-              <span className="inline-flex cursor-pointer items-center gap-2 rounded-full border-none bg-zinc-950 px-[18px] py-[9px] text-[13px] font-semibold text-white transition hover:opacity-85">
-                {t('readArticle')}
-                <IconArrowRight size={13} />
-              </span>
+
+              <h3 className="mt-6 text-[26px] font-extrabold leading-snug text-white sm:text-[28px]">
+                {featured.title}
+              </h3>
+              <p className="mt-4 line-clamp-4 text-body-sm leading-relaxed text-white/60">{featured.excerpt}</p>
+
+              <div className="mt-auto pt-8">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-5">
+                  <div className="flex items-center gap-2.5">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-xs font-bold text-black">
+                      {authorInitials(featuredAuthorName)}
+                    </span>
+                    <span className="text-sm font-medium text-white">{featuredAuthorName}</span>
+                  </div>
+                  <span className="font-mono text-xs text-white/40">
+                    {formatBlogPostDateShort(featured.published_at, locale, { withYear: true })}
+                    {' · '}
+                    {t('minutes', { n: featured.readMinutes })}
+                  </span>
+                </div>
+
+                <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black transition group-hover:bg-white/90">
+                  {t('readArticle')}
+                  <IconArrowRight size={14} />
+                </span>
+              </div>
+            </Link>
+
+            {/* Filters + list */}
+            <div className="flex flex-col">
+              <div className="flex flex-wrap gap-2" role="group" aria-label={t('filterAll')}>
+                <button
+                  type="button"
+                  onClick={() => setActiveTag('all')}
+                  className={`cursor-pointer select-none rounded-full border px-4 py-2 text-sm font-medium transition ${
+                    activeTag === 'all'
+                      ? 'border-black bg-black text-white'
+                      : 'border-black/15 text-black/70 hover:border-black/40 hover:text-black'
+                  }`}>
+                  {t('filterAll')}
+                </button>
+                {tags.map((tag) => (
+                  <button
+                    key={tag}
+                    type="button"
+                    onClick={() => setActiveTag(tag)}
+                    className={`cursor-pointer select-none rounded-full border px-4 py-2 text-sm font-medium transition ${
+                      activeTag === tag
+                        ? 'border-black bg-black text-white'
+                        : 'border-black/15 text-black/70 hover:border-black/40 hover:text-black'
+                    }`}>
+                    {tag}
+                  </button>
+                ))}
+              </div>
+
+              <div className="mt-5 divide-y divide-black/10 border-t border-black/10">
+                {listPosts.map((post) => {
+                  const postUrl = `/${locale}/blog/${post.slug}`;
+                  return (
+                    <Link key={post.id} href={postUrl} className="group block py-5">
+                      <h3 className="text-[17px] font-bold leading-snug text-black transition group-hover:underline">
+                        {post.title}
+                      </h3>
+                      <div className="mt-2.5 flex flex-wrap items-center gap-2.5 font-mono text-xs text-black/40">
+                        <span>{formatBlogPostDateShort(post.published_at, locale)}</span>
+                        <span className="h-1 w-7 rounded-full bg-black/15" aria-hidden />
+                        <span>{t('minutes', { n: post.readMinutes })}</span>
+                        {post.tags[0] && <span>{post.tags[0]}</span>}
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
-        </Link>
 
-        {/* Grid */}
-        {gridPosts.length > 0 && (
-          <div className="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {gridPosts.map((post) => {
-              const postUrl = `/${locale}/blog/${post.slug}`;
-              const authorName = post.authorName || t('authorFallback');
-
-              return (
-                <Link
-                  key={post.id}
-                  href={postUrl}
-                  className="cursor-pointer overflow-hidden rounded-2xl border border-zinc-200 transition-all duration-200 hover:-translate-y-0.5 hover:border-zinc-400">
-                  <PostCover
-                    post={post}
-                    aspectClass="aspect-[16/9]"
-                    overlay={
-                      post.tags[0] ? (
-                        <div className="absolute bottom-0 left-0 p-4">
-                          <span className="inline-block rounded-full bg-accent px-2 py-0.5 text-[10px] font-semibold text-black">
-                            {post.tags[0]}
-                          </span>
-                        </div>
-                      ) : null
-                    }
-                  />
-
-                  <div className="p-4">
-                    {post.tags.length > 0 && (
-                      <div className="mb-2.5 flex flex-wrap gap-1">
-                        {post.tags.map((tag) => (
-                          <span key={tag} className="rounded-full bg-zinc-100 px-2.5 py-1 text-xs text-zinc-500">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    <h3 className="mb-2 line-clamp-2 text-[14px] font-semibold leading-snug text-zinc-950">
-                      {post.title}
-                    </h3>
-                    <p className="mb-3 line-clamp-3 text-[12px] leading-relaxed text-zinc-400">{post.excerpt}</p>
-
-                    <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1 border-t border-zinc-100 pt-3">
-                      <span className="hidden items-center gap-1.5 sm:flex">
-                        <span className="flex h-[22px] w-[22px] items-center justify-center rounded-full bg-zinc-950 text-[8px] font-bold text-accent">
-                          {authorInitials(authorName)}
-                        </span>
-                        <span className="text-[11px] font-medium text-zinc-600">{authorName}</span>
-                      </span>
-                      <span className="hidden h-1 w-1 rounded-full bg-zinc-200 sm:inline" />
-                      <span className="text-[11px] text-zinc-400">{formatBlogPostDate(post.published_at, locale)}</span>
-                      <span className="ml-auto text-[11px] text-zinc-400">{t('minRead', { n: post.readMinutes })}</span>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        )}
-
-        {/* View all */}
-        <div className="mt-2 text-center">
+          {/* View all banner */}
           <Link
             href={`/${locale}/blog`}
-            className="inline-flex cursor-pointer items-center gap-2 border-b border-zinc-950 pb-px text-[14px] font-medium text-zinc-950 transition hover:opacity-60">
-            {t('viewAll')}
-            <IconArrowRight size={13} />
+            className="group mt-8 flex flex-wrap items-center justify-between gap-5 rounded-2xl bg-black px-6 py-6 sm:px-8">
+            <div>
+              <p className="text-lg font-bold text-white sm:text-xl">{t('viewAll')}</p>
+              <p className="mt-1 text-sm text-white/50">
+                {t('bannerCount', { n: posts.length })} · {t('bannerCadence')}
+              </p>
+            </div>
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-accent text-black transition group-hover:bg-accent-dark">
+              <IconArrowRight size={20} className="transition-transform group-hover:translate-x-0.5" />
+            </span>
           </Link>
-        </div>
-      </div>
+        </SectionReveal>
+      </Container>
     </section>
   );
 }

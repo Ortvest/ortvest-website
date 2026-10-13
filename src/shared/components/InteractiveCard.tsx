@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 import { useIsMobile } from '@shared/hooks/useIsMobile';
 
 import { hoverLift } from '@lib/motion';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 interface InteractiveCardProps {
   children: ReactNode;
@@ -19,7 +19,7 @@ export function InteractiveCard({ children, icon, className = '' }: InteractiveC
   const isMobile = useIsMobile();
 
   return (
-    <motion.div
+    <m.div
       className={`
         group relative flex flex-col overflow-hidden rounded-2xl
         border border-black/[0.08] bg-white p-5
@@ -49,6 +49,6 @@ export function InteractiveCard({ children, icon, className = '' }: InteractiveC
         </div>
       )}
       <div className="relative z-10 flex flex-1 flex-col">{children}</div>
-    </motion.div>
+    </m.div>
   );
 }

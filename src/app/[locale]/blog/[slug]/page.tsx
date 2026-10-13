@@ -9,16 +9,20 @@ import {
   articleHeadingsFromContent,
   BlogArticleContent,
   metaDescriptionFromPost,
+  normalizeArticleContent,
   readMinutesFromContent,
 } from '@lib/blog-content';
 import { formatBlogPostDate } from '@lib/blog-dates';
 import { pickRelatedCards, rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostBySlug, fetchCmsBlogPosts } from '@lib/cms-api';
-import { buildHreflangLanguages, serializeJsonLd, SITE_URL } from '@lib/seo';
+import { buildBreadcrumbSchema } from '@lib/schema';
+import { buildHreflangLanguages, SITE_URL } from '@lib/seo';
 import { ArticleConversionCta } from '@modules/Blog/ArticleConversionCta';
 import { ArticleReadingProgress } from '@modules/Blog/ArticleReadingProgress';
+import { ArticleRelatedServices } from '@modules/Blog/ArticleRelatedServices';
 import { ArticleTableOfContents } from '@modules/Blog/ArticleTableOfContents';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
+import { BlogCoverImage } from '@modules/Blog/BlogCoverImage';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 import { BlogPostCard } from '@modules/Blog/BlogPostCard';
 import { Contact } from '@modules/Contact';
@@ -27,6 +31,7 @@ import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
 import { IconArrowLeft } from '@tabler/icons-react';
 
+import { JsonLd } from '../../../../components/JsonLd';
 import { RouteIntlProvider } from '../../../../components/RouteIntlProvider';
 import { BLOG_CLIENT_NAMESPACES } from '../../../../i18n/client-messages';
 import { locales } from '../../../../i18n/routing';
@@ -46,7 +51,11 @@ export async function generateMetadata({ params }: Props) {
   if (!post) {
     return { title: 'Blog | Ortvest' };
   }
-  const description = metaDescriptionFromPost(post.content, post.title);
+  // Authored SEO fields win; the derived excerpt is only a fallback for posts
+  // written before the CMS had these fields.
+  const articleContent = normalizeArticleContent(post.content, post.title);
+  const description = post.seo_description?.trim() || metaDescriptionFromPost(articleContent, post.title);
+  const metaTitle = post.seo_title?.trim() || `${post.title} | Ortvest`;
   const availableLocales: string[] = translatedRows
     .filter(([, rows]) => rows.some((row) => row.slug === slug))
     .map(([candidate]) => candidate);
@@ -56,7 +65,7 @@ export async function generateMetadata({ params }: Props) {
   const languages = buildHreflangLanguages(availableLocales, (loc) => `${baseUrl}/${loc}/blog/${slug}`);
 
   return {
-    title: `${post.title} | Ortvest`,
+    title: metaTitle,
     description,
     metadataBase: new URL(baseUrl),
     openGraph: {
@@ -66,14 +75,15 @@ export async function generateMetadata({ params }: Props) {
       type: 'article',
       publishedTime: post.published_at ?? undefined,
       modifiedTime: post.updated_at || post.published_at || post.created_at,
-      ...(post.cover_image ? { images: [{ url: post.cover_image, alt: post.title }] } : {}),
+      // No `images` here on purpose: opengraph-image.tsx in this segment
+      // generates a 1200x630 card from the cover + title. Config-based images
+      // would override it.
       locale: locale === 'ua' ? 'uk_UA' : locale === 'pl' ? 'pl_PL' : 'en_US',
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description,
-      ...(post.cover_image ? { images: [post.cover_image] } : {}),
     },
     alternates: {
       canonical: `${baseUrl}/${locale}/blog/${slug}`,
@@ -91,16 +101,18 @@ export default async function BlogArticlePage({ params }: Props) {
 
   const t = await getTranslations({ locale, namespace: 'blogPage' });
   const tBlog = await getTranslations({ locale, namespace: 'blog' });
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
   const rows = await fetchCmsBlogPosts(locale);
   const allCards = rowsToCardModels(rows);
   const related = pickRelatedCards(allCards, post.slug, post.tags ?? [], 3);
-  const readMin = readMinutesFromContent(post.content);
+  const articleContent = normalizeArticleContent(post.content, post.title);
+  const readMin = readMinutesFromContent(articleContent);
   const dateStr = post.published_at ? formatBlogPostDate(post.published_at, locale) : '';
   const authorName = post.author_name?.trim() || tBlog('authorFallback');
-  const headings = articleHeadingsFromContent(post.content);
+  const headings = articleHeadingsFromContent(articleContent);
   const showTableOfContents = headings.length > 3;
   const articleUrl = `${baseUrl}/${locale}/blog/${slug}`;
-  const description = metaDescriptionFromPost(post.content, post.title);
+  const description = post.seo_description?.trim() || metaDescriptionFromPost(articleContent, post.title);
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -129,10 +141,15 @@ export default async function BlogArticlePage({ params }: Props) {
     },
   };
 
+  const breadcrumbSchema = buildBreadcrumbSchema(locale, tNav('home'), [
+    { name: tNav('blog'), path: '/blog' },
+    { name: post.title },
+  ]);
+
   return (
     <ReduxProvider>
       <ArticleReadingProgress articleId="blog-article" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleSchema) }} />
+      <JsonLd schema={[breadcrumbSchema, articleSchema]} />
       <Header />
       <RouteIntlProvider locale={locale} namespaces={BLOG_CLIENT_NAMESPACES}>
         <main>
@@ -173,8 +190,12 @@ export default async function BlogArticlePage({ params }: Props) {
 
                 <div className="relative mt-8 w-full overflow-hidden rounded-2xl">
                   {post.cover_image ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={post.cover_image} alt="" loading="lazy" className="block h-auto w-full" />
+                    <BlogCoverImage
+                      src={post.cover_image}
+                      alt={post.title}
+                      priority
+                      sizes="(max-width: 768px) 100vw, 720px"
+                    />
                   ) : (
                     <div className="aspect-video">
                       <BlogCoverPlaceholder />
@@ -185,7 +206,8 @@ export default async function BlogArticlePage({ params }: Props) {
 
               <div className="relative mx-auto mt-10 max-w-[70ch]">
                 {showTableOfContents && <ArticleTableOfContents headings={headings} title={t('tableOfContents')} />}
-                <BlogArticleContent content={post.content} locale={locale} />
+                <BlogArticleContent content={articleContent} locale={locale} />
+                <ArticleRelatedServices slug={slug} locale={locale} />
                 <ArticleConversionCta locale={locale} />
                 <hr className="mt-14 border-0 border-t border-black/[0.08]" />
               </div>

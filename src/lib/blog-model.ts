@@ -1,5 +1,7 @@
 import { excerptFromContent, readMinutesFromContent } from '@lib/blog-content';
-import type { CmsBlogPostRow } from '@lib/cms-api';
+import { type CmsBlogPostRow, fetchCmsBlogPostsResult } from '@lib/cms-api';
+
+import { locales } from '../i18n/routing';
 
 export type BlogCardModel = {
   id: string;
@@ -29,7 +31,7 @@ export function rowToCardModel(row: CmsBlogPostRow): BlogCardModel | null {
     tags: Array.isArray(row.tags) ? row.tags : [],
     published_at: publishedAt,
     authorName: row.author_name?.trim() || '',
-    excerpt: excerptFromContent(row.content, 200),
+    excerpt: row.excerpt?.trim() || excerptFromContent(row.content, 200),
     readMinutes: readMinutesFromContent(row.content),
   };
 }
@@ -55,4 +57,22 @@ export function pickRelatedCards(
     return new Date(b.p.published_at).getTime() - new Date(a.p.published_at).getTime();
   });
   return scored.slice(0, limit).map((s) => s.p);
+}
+
+/**
+ * Locales that currently have at least one published post. A locale with an
+ * empty blog must not be advertised through hreflang, linked from the sitemap
+ * or indexed — an empty listing is a low-quality page for Google.
+ *
+ * A failed CMS request counts as "has posts" on purpose. The caller uses this
+ * to decide `noindex`, and a transient outage during an ISR revalidation must
+ * never be able to deindex a page that is actually fine.
+ */
+export async function localesWithPublishedPosts(): Promise<string[]> {
+  const resultsByLocale = await Promise.all(
+    locales.map(async (candidate) => [candidate, await fetchCmsBlogPostsResult(candidate)] as const)
+  );
+  return resultsByLocale
+    .filter(([, result]) => result.status === 'error' || rowsToCardModels(result.rows).length > 0)
+    .map(([candidate]) => candidate);
 }

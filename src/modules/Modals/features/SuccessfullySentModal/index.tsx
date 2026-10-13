@@ -9,7 +9,7 @@ import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
 import { ModalSlice } from '@global/store/slices/ModalSlice';
 import { DURATION, EASE } from '@lib/motion';
 import CloseIcon from '@public/icons/CloseIcon.svg';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 
 const SALAD = '#cdff4e';
 
@@ -62,7 +62,7 @@ function ConfettiBurst() {
       className="pointer-events-none absolute left-1/2 top-1/2 h-0 w-0 -translate-x-1/2 -translate-y-1/2"
       aria-hidden>
       {particles.map((p, i) => (
-        <motion.div
+        <m.div
           key={i}
           className="absolute left-0 top-0 rounded-full"
           style={{
@@ -140,7 +140,7 @@ export function SuccessfullySentModal() {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <m.div
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           role="dialog"
           aria-modal="true"
@@ -151,13 +151,13 @@ export function SuccessfullySentModal() {
           transition={backdrop.transition}
           style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}
           onClick={onClose}>
-          <motion.div
+          <m.div
             className="relative w-full max-w-md rounded-2xl bg-white p-8 shadow-xl sm:p-10"
             initial={panel.initial}
             animate={panel.animate}
             exit={panel.exit}
             onClick={(e) => e.stopPropagation()}>
-            <motion.button
+            <m.button
               type="button"
               onClick={onClose}
               className="absolute right-4 top-4 rounded-lg p-1.5 transition hover:bg-black/5"
@@ -166,15 +166,15 @@ export function SuccessfullySentModal() {
               animate={{ opacity: 1 }}
               transition={{ delay: DURATION.normal }}>
               <Image src={CloseIcon} alt="" width={24} height={24} />
-            </motion.button>
+            </m.button>
 
-            <motion.div
+            <m.div
               className="relative flex justify-center"
               variants={contentVariants}
               initial="initial"
               animate="animate"
               custom={0}>
-              <motion.div
+              <m.div
                 className="relative"
                 initial={{ scale: 1 }}
                 animate={{
@@ -186,10 +186,10 @@ export function SuccessfullySentModal() {
                   ease: [0.22, 1, 0.36, 1],
                 }}>
                 <SuccessIllustration />
-              </motion.div>
+              </m.div>
               <ConfettiBurst />
-            </motion.div>
-            <motion.h2
+            </m.div>
+            <m.h2
               id="success-modal-title"
               className="mt-6 text-center text-xl font-semibold text-black"
               variants={contentVariants}
@@ -197,17 +197,17 @@ export function SuccessfullySentModal() {
               animate="animate"
               custom={1}>
               {t('successTitle')}
-            </motion.h2>
-            <motion.p
+            </m.h2>
+            <m.p
               className="mt-2 text-center text-black/70"
               variants={contentVariants}
               initial="initial"
               animate="animate"
               custom={2}>
               {t('successText')}
-            </motion.p>
-          </motion.div>
-        </motion.div>
+            </m.p>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

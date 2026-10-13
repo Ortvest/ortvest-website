@@ -16,7 +16,7 @@ import {
   IconTruck,
   IconUsers,
 } from '@tabler/icons-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 
 const nicheKeys = ['p2p', 'community', 'logistics'] as const;
 
@@ -54,7 +54,7 @@ function NicheCard({ nicheKey, icon: Icon, iconClassName, tags, index, caseLink,
   const t = useTranslations('industries');
 
   return (
-    <motion.div
+    <m.div
       role="button"
       tabIndex={0}
       onClick={onToggle}
@@ -103,20 +103,20 @@ function NicheCard({ nicheKey, icon: Icon, iconClassName, tags, index, caseLink,
 
         <AnimatePresence>
           {!isOpen && (
-            <motion.p
+            <m.p
               key="hint"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.15, duration: 0.2 } }}
               exit={{ opacity: 0, transition: { duration: 0.1 } }}
               className="mt-3 text-[11px] text-black/30 select-none">
               {t('clickToLearn')}
-            </motion.p>
+            </m.p>
           )}
         </AnimatePresence>
 
         <AnimatePresence>
           {isOpen && (
-            <motion.div key="desc" {...accordionContent} className="overflow-hidden">
+            <m.div key="desc" {...accordionContent} className="overflow-hidden">
               <div className="pt-3">
                 <p className="text-body-sm text-black/60">{t(`niches.${nicheKey}.description`)}</p>
                 {caseLink && (
@@ -129,11 +129,11 @@ function NicheCard({ nicheKey, icon: Icon, iconClassName, tags, index, caseLink,
                   </a>
                 )}
               </div>
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
       </div>
-    </motion.div>
+    </m.div>
   );
 }
 

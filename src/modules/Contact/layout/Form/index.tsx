@@ -15,12 +15,22 @@ import {
 import { IconArrowRight, IconCircleCheck, IconLoader2 } from '@tabler/icons-react';
 
 const inputClass =
-  'w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm text-zinc-950 placeholder:text-zinc-300 transition focus:border-zinc-400 focus:outline-none';
+  'w-full rounded-xl border border-white/15 bg-white/[0.02] px-4 py-2.5 text-sm text-white placeholder:text-white/30 transition focus:border-white/40 focus:outline-none';
 
-const pillBase =
-  'cursor-pointer select-none rounded-full border border-zinc-200 px-3 py-1.5 text-xs text-zinc-500 transition hover:border-zinc-400 hover:text-zinc-950';
+const pillBase = 'cursor-pointer select-none rounded-full border px-4 py-2 text-sm font-medium transition';
 
-const pillSelected = 'border-accent bg-accent font-medium text-black hover:border-accent hover:text-black';
+/**
+ * Selected/unselected text colors are mutually exclusive — never combine them
+ * via string concatenation. Tailwind's generated stylesheet order (not the
+ * order classes appear in the className string) decides which `text-*`
+ * utility wins when both are present, so returning one exclusive string per
+ * state is the only reliable way to avoid white-on-accent text.
+ */
+function pillClassName(isSelected: boolean) {
+  return isSelected
+    ? `${pillBase} border-accent bg-accent text-black`
+    : `${pillBase} border-white/15 text-white/70 hover:border-white/40 hover:text-white`;
+}
 
 export function ContactForm() {
   const t = useTranslations('contact');
@@ -62,20 +72,20 @@ export function ContactForm() {
 
   if (isSuccess) {
     return (
-      <div className="flex flex-col items-center py-12 text-center">
-        <IconCircleCheck size={32} className="text-green-500" />
-        <h3 className="mt-3 text-h3 font-semibold text-zinc-950">{t('form.successTitle')}</h3>
-        <p className="mt-1 text-sm text-zinc-400">{t('form.successDesc')}</p>
+      <div className="flex flex-col items-center justify-center rounded-3xl border border-white/10 px-6 py-16 text-center">
+        <IconCircleCheck size={32} className="text-accent" />
+        <h3 className="mt-3 text-h3 font-semibold text-white">{t('form.successTitle')}</h3>
+        <p className="mt-1 text-sm text-white/50">{t('form.successDesc')}</p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full">
+    <form onSubmit={handleSubmit} className="w-full rounded-3xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
       {/* Name + Email */}
-      <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+      <div className="mb-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
-          <label htmlFor="contact-name" className="mb-1.5 block text-sm font-medium text-zinc-500">
+          <label htmlFor="contact-name" className="mb-2 block text-sm font-medium text-white">
             {t('form.name.label')}
           </label>
           <input
@@ -90,7 +100,7 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="contact-email" className="mb-1.5 block text-sm font-medium text-zinc-500">
+          <label htmlFor="contact-email" className="mb-2 block text-sm font-medium text-white">
             {t('form.email.label')}
           </label>
           <input
@@ -107,10 +117,10 @@ export function ContactForm() {
       </div>
 
       {/* Project type */}
-      <div className="mb-4">
-        <div className="mb-2 flex items-center gap-1">
-          <span className="text-sm font-medium text-zinc-500">{t('form.projectType')}</span>
-          <span className="ml-1 text-xs text-zinc-400">{t('form.optional')}</span>
+      <div className="mb-5">
+        <div className="mb-2.5 flex items-center gap-1.5">
+          <span className="text-sm font-medium text-white">{t('form.projectType')}</span>
+          <span className="text-xs text-white/40">{t('form.optional')}</span>
         </div>
         <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.projectType')}>
           {CONTACT_PROJECT_TYPES.map((type) => {
@@ -120,7 +130,7 @@ export function ContactForm() {
                 key={type}
                 type="button"
                 onClick={() => toggleProjectType(type)}
-                className={`${pillBase} ${isSelected ? pillSelected : ''}`}>
+                className={pillClassName(isSelected)}>
                 {t(`projectTypes.${type}`)}
               </button>
             );
@@ -129,9 +139,9 @@ export function ContactForm() {
       </div>
 
       {/* Consultation type */}
-      <div className="mb-4">
-        <div className="mb-2">
-          <span className="text-sm font-medium text-zinc-500">{t('form.consultation')}</span>
+      <div className="mb-5">
+        <div className="mb-2.5">
+          <span className="text-sm font-medium text-white">{t('form.consultation')}</span>
         </div>
         <div className="flex flex-wrap gap-2" role="group" aria-label={t('form.consultation')}>
           {CONTACT_CONSULTATION_OPTIONS.map((option) => {
@@ -141,8 +151,11 @@ export function ContactForm() {
                 key={option}
                 type="button"
                 onClick={() => setSelectedConsultation(option)}
-                className={`${pillBase} ${isSelected ? pillSelected : ''}`}>
-                {t(`consultation.${option}`)}
+                className={`${pillClassName(isSelected)} flex items-center gap-1.5`}>
+                {t(`consultation.${option}.title`)}
+                <span className={isSelected ? 'text-black/60' : 'text-white/40'}>
+                  {t(`consultation.${option}.price`)}
+                </span>
               </button>
             );
           })}
@@ -150,12 +163,12 @@ export function ContactForm() {
       </div>
 
       {/* Message */}
-      <div className="mb-4">
-        <div className="mb-1.5 flex items-center gap-1">
-          <label htmlFor="contact-message" className="text-sm font-medium text-zinc-500">
+      <div className="mb-5">
+        <div className="mb-2 flex items-center gap-1.5">
+          <label htmlFor="contact-message" className="text-sm font-medium text-white">
             {t('form.message.label')}
           </label>
-          <span className="ml-1 text-xs text-zinc-400">{t('form.optional')}</span>
+          <span className="text-xs text-white/40">{t('form.optional')}</span>
         </div>
         <textarea
           id="contact-message"
@@ -163,48 +176,54 @@ export function ContactForm() {
           onChange={(e) => setMessage(e.target.value)}
           placeholder={t('form.message.placeholder')}
           rows={4}
-          className={`${inputClass} h-24 resize-none`}
+          className={`${inputClass} h-28 resize-none`}
         />
       </div>
 
       {/* Legal consent */}
-      <div className="mt-4 flex items-start gap-2.5">
+      <div className="flex items-start gap-2.5">
         <input
           id="contact-legal"
           type="checkbox"
           checked={acceptedLegal}
           onChange={(e) => setAcceptedLegal(e.target.checked)}
           required
-          className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer rounded border-zinc-300 accent-accent text-black focus:ring-2 focus:ring-accent focus:ring-offset-1"
+          className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer rounded border-white/25 bg-transparent accent-accent focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-black"
         />
-        <label htmlFor="contact-legal" className="cursor-pointer text-xs leading-relaxed text-zinc-400">
+        <label htmlFor="contact-legal" className="cursor-pointer text-xs leading-relaxed text-white/50">
           {t('form.legalConsent')}{' '}
           <Link
             href={`/${locale}/privacy-policy`}
             onClick={(e) => e.stopPropagation()}
-            className="text-zinc-600 underline underline-offset-2 transition hover:text-black">
+            className="font-medium text-white underline underline-offset-2 transition hover:text-accent">
             {t('form.privacyLink')}
           </Link>{' '}
           {t('form.legalConsentAnd')}{' '}
           <Link
             href={`/${locale}/terms-of-use`}
             onClick={(e) => e.stopPropagation()}
-            className="text-zinc-600 underline underline-offset-2 transition hover:text-black">
+            className="font-medium text-white underline underline-offset-2 transition hover:text-accent">
             {t('form.termsLink')}
           </Link>
         </label>
       </div>
 
       {/* Submit row */}
-      <div className="mt-4 flex items-center justify-between">
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
         <button
           type="submit"
           disabled={isSubmitting || !acceptedLegal}
-          className="flex items-center gap-2 rounded-full bg-zinc-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent hover:text-black active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60">
+          className="group inline-flex items-center justify-between gap-6 rounded-full bg-accent py-1.5 pl-6 pr-1.5 text-sm font-semibold text-black transition hover:bg-accent-dark disabled:cursor-not-allowed disabled:opacity-60">
           {t('form.submit')}
-          {isSubmitting ? <IconLoader2 size={14} className="animate-spin" /> : <IconArrowRight size={14} />}
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-black text-accent">
+            {isSubmitting ? (
+              <IconLoader2 size={16} className="animate-spin" />
+            ) : (
+              <IconArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+            )}
+          </span>
         </button>
-        <span className="text-xs text-zinc-300">{t('form.reply')}</span>
+        <span className="font-mono text-xs text-white/35">{t('form.reply')}</span>
       </div>
     </form>
   );

@@ -38,6 +38,10 @@ export type CmsBlogPostRow = {
   id: string;
   title: string;
   slug: string;
+  /** Optional SEO overrides set in the CMS (absent on posts created before they existed). */
+  seo_title?: string | null;
+  seo_description?: string | null;
+  excerpt?: string | null;
   content: unknown;
   cover_image: string | null;
   status: string;

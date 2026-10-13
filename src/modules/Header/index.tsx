@@ -44,6 +44,7 @@ export function Header() {
             alt="Ortvest"
             width={150}
             height={40}
+            priority
             className="h-9 w-auto max-w-[160px] object-contain object-left sm:max-w-none sm:h-10"
           />
         </Link>

@@ -22,7 +22,7 @@ import {
   IconPlus,
   IconUsers,
 } from '@tabler/icons-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 
 type BillingPeriod = 'monthly' | 'annually';
 type ModuleKey = 'orders' | 'projects' | 'board' | 'transactions' | 'analytics' | 'blog' | 'team';
@@ -126,7 +126,7 @@ export function CMSPage() {
 
         <Container>
           <div className="relative z-10 mx-auto max-w-3xl text-center">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, ease: EASE }}>
@@ -154,7 +154,7 @@ export function CMSPage() {
                   {t('hero.ctaSecondary')}
                 </Link>
               </div>
-            </motion.div>
+            </m.div>
           </div>
         </Container>
       </section>
@@ -222,7 +222,7 @@ export function CMSPage() {
                 {/* Content area */}
                 <div className="flex-1 overflow-hidden bg-white p-5 sm:p-8">
                   <AnimatePresence mode="wait">
-                    <motion.div
+                    <m.div
                       key={activeModule}
                       initial={{ opacity: 0, x: 10 }}
                       animate={{ opacity: 1, x: 0 }}
@@ -318,7 +318,7 @@ export function CMSPage() {
                           {t(`showcase.modules.${activeModule}.name`)} {t('showcase.placeholderAlt')}
                         </p>
                       </div>
-                    </motion.div>
+                    </m.div>
                   </AnimatePresence>
                 </div>
               </div>

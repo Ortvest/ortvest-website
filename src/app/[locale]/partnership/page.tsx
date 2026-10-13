@@ -1,6 +1,7 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { ReduxProvider } from '@global/store/ReduxProvider';
+import { buildBreadcrumbSchema } from '@lib/schema';
 import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
@@ -17,6 +18,7 @@ import {
   IconUsersGroup,
 } from '@tabler/icons-react';
 
+import { JsonLd } from '../../../components/JsonLd';
 import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
 import { PARTNERSHIP_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 
@@ -63,7 +65,10 @@ type ModelKey = keyof typeof MODEL_ICONS;
 export default async function PartnershipPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: 'partnership' });
+  const [t, tNav] = await Promise.all([
+    getTranslations({ locale, namespace: 'partnership' }),
+    getTranslations({ locale, namespace: 'nav' }),
+  ]);
 
   const contrastItems = t.raw('contrast.items') as Array<{ vendor: string; partner: string }>;
   const notForItems = t.raw('notFor.items') as string[];
@@ -71,6 +76,7 @@ export default async function PartnershipPage({ params: { locale } }: { params: 
 
   return (
     <ReduxProvider>
+      <JsonLd schema={buildBreadcrumbSchema(locale, tNav('home'), [{ name: tNav('partnership') }])} />
       <Header />
 
       <RouteIntlProvider locale={locale} namespaces={PARTNERSHIP_CLIENT_NAMESPACES}>

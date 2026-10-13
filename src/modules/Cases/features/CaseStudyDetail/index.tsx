@@ -1,24 +1,47 @@
 'use client';
 
-import { useState } from 'react';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
 import { Container, SectionReveal } from '@shared/components';
 
-import { getCaseStudyConfig, getNextCaseSlug } from '@modules/Cases/caseStudyConfig';
+import {
+  CASE_SERVICE_TAGS,
+  type CaseServiceTagKey,
+  SECTION_SHORT_LABEL,
+  getCaseStudyConfig,
+  getNextCaseSlug,
+} from '@modules/Cases/caseStudyConfig';
 import type { CaseItem } from '@modules/Cases/data';
 import { cases } from '@modules/Cases/data';
-import { IconArrowLeft, IconArrowRight, IconLock } from '@tabler/icons-react';
+import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 
-const STAT_KEYS = ['projectType', 'deliverables', 'platform'] as const;
-const MAX_THUMBS = 3;
+const PROCESS_GRID_COLS: Record<number, string> = {
+  1: 'lg:grid-cols-1',
+  2: 'lg:grid-cols-2',
+  3: 'lg:grid-cols-3',
+  4: 'lg:grid-cols-4',
+};
+
+const SERVICE_TAG_LABEL_KEY: Record<CaseServiceTagKey, string> = {
+  website: 'tabs.websites',
+  webService: 'tabs.webServices',
+  mobileApp: 'tabs.mobileApps',
+  design: 'tabs.design',
+};
 
 type CaseStudyDetailProps = {
   caseItem: CaseItem;
 };
+
+function buildFallbackStackLine(caseItem: CaseItem): string {
+  const sectionWords = (caseItem.sections ?? [])
+    .map((s) => SECTION_SHORT_LABEL[s.id])
+    .filter((label): label is string => Boolean(label));
+  const techWords = caseItem.stack.slice(0, 2).join(' + ');
+  return [...sectionWords, techWords].filter(Boolean).join(' · ');
+}
 
 export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
   const locale = useLocale();
@@ -31,27 +54,36 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
   const tHero = useTranslations('hero');
   const tCases = useTranslations('cases');
 
-  const [activeThumb, setActiveThumb] = useState<number | null>(null);
+  const serviceTags = CASE_SERVICE_TAGS[studyId] ?? [];
+  const images = caseItem.images ?? [];
+  const mainImage = caseItem.coverImage ?? caseItem.preview ?? images[0] ?? '';
+  const secondaryImage = images.find((img) => img !== mainImage);
+  const featuresImage =
+    images.find((img) => img !== mainImage && img !== secondaryImage) ?? secondaryImage ?? mainImage;
 
-  const statKeys = caseItem.statKeys ?? STAT_KEYS;
+  const stackLine = t.has('stackLine') ? t('stackLine') : buildFallbackStackLine(caseItem);
+  const problemStatement = t.has('problemStatement') ? t('problemStatement') : t('challenge');
+  const approachStatement = t.has('approachStatement') ? t('approachStatement') : t('solution');
+  const featuresEyebrow = t.has('features.eyebrow') ? t('features.eyebrow') : tShared('features.eyebrow');
+  const featuresTitle = t.has('features.title') ? t('features.title') : tShared('features.title');
+  const processTitle = t.has('processTitle') ? t('processTitle') : tShared('process.title');
 
-  const mainImage = caseItem.coverImage ?? caseItem.preview ?? '';
-  const thumbImages = caseItem.images ?? [];
-  const heroImage = activeThumb !== null ? (thumbImages[activeThumb] ?? mainImage) : mainImage;
+  const availableFeatureKeys = config.featureKeys.filter((f) => t.has(`features.items.${f.key}.title`));
 
   const nextSlug = getNextCaseSlug(studyId);
   const nextCaseItem = cases.find((c) => c.id === nextSlug);
   const relatedCaseItem = caseItem.relatedCaseId ? cases.find((c) => c.id === caseItem.relatedCaseId) : undefined;
 
-  const hasSections = (caseItem.sections?.length ?? 0) > 0;
+  const sections = caseItem.sections ?? [];
+  const processGridClass = PROCESS_GRID_COLS[Math.min(sections.length, 4)] ?? 'lg:grid-cols-3';
 
   return (
     <div className="min-h-screen bg-white">
-      <header className="border-b border-black/[0.08] py-6">
+      <header className="py-6">
         <Container>
           <Link
-            href={`/${locale}/#cases`}
-            className="inline-flex items-center gap-2 text-sm font-medium text-black/60 transition hover:text-black">
+            href={`/${locale}/cases`}
+            className="inline-flex items-center gap-2 text-sm font-medium text-black/50 transition hover:text-black">
             <IconArrowLeft className="h-4 w-4" />
             {tDetail('backToCases')}
           </Link>
@@ -59,278 +91,211 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
       </header>
 
       {/* Hero */}
-      <section className="section-padding pb-8">
+      <section className="pb-16 pt-4 sm:pt-6">
         <Container>
           <SectionReveal direction="right">
-            <div className="mb-6 flex flex-wrap items-center gap-2">
-              {caseItem.serviceTags?.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-black/10 px-3 py-1 text-xs font-medium text-black/55">
-                  {tCases(`categoryBadge.${tag}`)}
-                </span>
-              ))}
-              {caseItem.industries?.map((industry) => (
-                <span
-                  key={industry}
-                  className="rounded-full border border-black/10 px-3 py-1 text-xs font-medium text-black/55">
-                  {tHero(`nicheTags.${industry}`)}
-                </span>
-              ))}
-              {caseItem.isNDA && (
-                <span className="rounded-full border border-black/10 bg-black/[0.04] px-3 py-1 text-xs font-medium text-black/55">
-                  {tCases('ndaProtected')}
-                </span>
-              )}
-            </div>
-
-            <h1 className="text-display-sm font-bold text-black sm:text-display">{caseItem.title}</h1>
-
-            {caseItem.platforms && caseItem.platforms.length > 0 && (
-              <div className="mt-4 flex flex-wrap gap-1.5">
-                {caseItem.platforms.map((platform) => (
-                  <span
-                    key={platform}
-                    className="rounded-md border border-black/[0.12] bg-black/[0.02] px-2.5 py-1 text-[11px] font-medium tracking-wide text-black/45">
-                    {platform}
-                  </span>
-                ))}
-              </div>
-            )}
-
-            <p className="mt-4 max-w-3xl text-body-lg text-black/60">{t('hero.subtitle')}</p>
-
-            {relatedCaseItem && !relatedCaseItem.isNDA && (
-              <p className="mt-4 text-sm text-black/55">
-                {tShared('relatedProduct.label')}{' '}
-                <Link
-                  href={`/${locale}/cases/${relatedCaseItem.id}`}
-                  className="font-medium text-black underline-offset-2 hover:text-accent-dark hover:underline">
-                  {relatedCaseItem.title}
-                </Link>
-              </p>
-            )}
-
-            {mainImage && (
-              <div className="mt-8 overflow-hidden rounded-2xl border border-black/[0.08] shadow-card">
-                <div className="relative aspect-video w-full bg-black/[0.04]">
-                  <Image
-                    src={heroImage}
-                    alt={caseItem.title}
-                    fill
-                    className="object-cover"
-                    priority
-                    sizes="(max-width: 1280px) 100vw, 1200px"
-                  />
-                </div>
-              </div>
-            )}
-
-            {thumbImages.length > 0 && (
-              <div className="mt-3 grid grid-cols-3 gap-3">
-                {thumbImages.slice(0, MAX_THUMBS).map((img, index) => (
-                  <button
-                    key={`${img}-${index}`}
-                    type="button"
-                    onClick={() => setActiveThumb(index)}
-                    className={`relative aspect-video overflow-hidden rounded-xl border transition ${
-                      activeThumb === index
-                        ? 'border-accent ring-2 ring-accent/30'
-                        : 'border-black/10 opacity-80 hover:opacity-100'
-                    }`}>
-                    <Image src={img} alt="" fill className="object-cover" sizes="33vw" />
-                  </button>
-                ))}
-              </div>
-            )}
-          </SectionReveal>
-        </Container>
-      </section>
-
-      {/* Stats bar */}
-      <section className="border-y border-black/[0.06] bg-black/[0.02] py-10">
-        <Container>
-          <SectionReveal direction="left">
-            <div className="grid gap-4 sm:grid-cols-3">
-              {statKeys.map((key) => (
-                <div key={key} className="rounded-2xl border border-black/[0.08] bg-white p-5 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-black/45">
-                    {t(`stats.${key}.label`)}
-                  </p>
-                  <p className="mt-2 text-lg font-semibold text-black">{t(`stats.${key}.value`)}</p>
-                </div>
-              ))}
-            </div>
-          </SectionReveal>
-        </Container>
-      </section>
-
-      {/* Challenge + Solution */}
-      <section className="section-padding">
-        <Container>
-          <SectionReveal direction="right">
-            <div className="grid gap-10 lg:grid-cols-2">
+            <div className="grid gap-10 lg:grid-cols-[1fr_440px] lg:items-start lg:gap-16">
               <div>
-                <h2 className="text-h3 text-black">{tDetail('challenge')}</h2>
-                <p className="mt-4 text-body leading-relaxed text-black/70">{t('challenge')}</p>
-              </div>
-              <div>
-                <h2 className="text-h3 text-black">{tDetail('solution')}</h2>
-                <p className="mt-4 text-body leading-relaxed text-black/70">{t('solution')}</p>
-              </div>
-            </div>
-          </SectionReveal>
-        </Container>
-      </section>
-
-      {/* Project sections */}
-      {hasSections && !caseItem.isNDA && (
-        <section className="section-padding border-t border-black/[0.06]">
-          <Container>
-            {caseItem.sections!.map((section, index) => (
-              <SectionReveal key={section.id} direction={index % 2 === 0 ? 'left' : 'right'}>
-                <div>
-                  <div className="flex items-baseline gap-4 pt-16">
-                    <span className="text-xs font-bold tracking-widest text-accent">
-                      {String(index + 1).padStart(2, '0')}
-                    </span>
-                    <h2 className="text-h2 text-black">{t(`sections.${section.id}.title`)}</h2>
-                  </div>
-                  <p className="mt-6 max-w-3xl text-body leading-relaxed text-black/70">
-                    {t(`sections.${section.id}.description`)}
-                  </p>
-                  {section.isInternal ? (
-                    <div className="mt-8 rounded-2xl border border-black/[0.08] bg-black/[0.02] px-6 py-10 text-center">
-                      <IconLock className="mx-auto h-5 w-5 text-black/35" />
-                      <p className="mt-3 text-sm text-black/50">{t('cms.internal')}</p>
-                    </div>
-                  ) : (
-                    section.images &&
-                    section.images.length > 0 && (
-                      <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                        {section.images.map((img, i) => (
-                          <div
-                            key={`${img}-${i}`}
-                            className="relative aspect-video overflow-hidden rounded-2xl border border-black/[0.08]">
-                            <Image
-                              src={img}
-                              alt=""
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 768px) 100vw, 50vw"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    )
-                  )}
-                </div>
-                {index < caseItem.sections!.length - 1 && (
-                  <div style={{ position: 'relative', textAlign: 'center', margin: '48px 0' }}>
-                    <hr style={{ border: 'none', borderTop: '0.5px solid var(--color-border-tertiary)' }} />
-                    <span
-                      style={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        background: 'var(--color-background-primary)',
-                        padding: '0 12px',
-                        fontSize: '11px',
-                        fontWeight: 500,
-                        letterSpacing: '0.08em',
-                        color: 'var(--color-text-tertiary)',
-                      }}>
-                      {String(index + 2).padStart(2, '0')}
-                    </span>
-                  </div>
-                )}
-              </SectionReveal>
-            ))}
-          </Container>
-        </section>
-      )}
-
-      {/* Result */}
-      {!caseItem.isNDA && (
-        <section className="border-t border-black/[0.06] py-12">
-          <Container>
-            <SectionReveal direction="left">
-              <blockquote className="border-l-2 border-accent pl-6">
-                <p className="text-body-lg font-medium leading-relaxed text-black/80">
-                  {tCases(`items.${studyId}.result`)}
-                </p>
-              </blockquote>
-            </SectionReveal>
-          </Container>
-        </section>
-      )}
-
-      {/* NDA block */}
-      {caseItem.isNDA && (
-        <section className="section-padding border-t border-black/[0.06]">
-          <Container>
-            <SectionReveal direction="left">
-              <div className="rounded-2xl border border-black/10 bg-black/[0.02] px-6 py-8 text-center">
-                <p className="text-body text-black/65">{tDetail('ndaText')}</p>
-                <Link
-                  href={`/${locale}/#contact`}
-                  className="mt-5 inline-flex rounded-full bg-black px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-black/85">
-                  {tDetail('bookCall')}
-                </Link>
-              </div>
-            </SectionReveal>
-          </Container>
-        </section>
-      )}
-
-      {/* CTA */}
-      <section className="section-padding border-t border-black/[0.06]">
-        <Container>
-          <SectionReveal direction="left">
-            <div className="rounded-2xl bg-black px-8 py-12 text-center sm:px-12 sm:py-14">
-              <h2 className="text-h2 text-white">{tShared(`cta.${config.ctaTemplate}.title`)}</h2>
-              <p className="mx-auto mt-3 max-w-lg text-body text-white/65">
-                {tShared(`cta.${config.ctaTemplate}.subtitle`)}
-              </p>
-              <Link
-                href={`/${locale}/#contact`}
-                className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-black transition hover:bg-accent-dark">
-                {tShared(`cta.${config.ctaTemplate}.button`)}
-                <IconArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-          </SectionReveal>
-        </Container>
-      </section>
-
-      {/* Next case */}
-      {nextCaseItem && !nextCaseItem.isNDA && (
-        <section className="border-t border-black/[0.08] py-12">
-          <Container>
-            <Link
-              href={`/${locale}/cases/${nextSlug}`}
-              className="group flex flex-col gap-2 rounded-2xl border border-black/[0.08] p-6 transition hover:border-black/20 hover:shadow-card sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-black/45">
-                  {tShared('nextCase.label')}
-                </p>
-                <p className="mt-2 text-h3 text-black group-hover:text-black/80">{nextCaseItem.title}</p>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {nextCaseItem.industries?.map((industry) => (
+                <div className="mb-6 flex flex-wrap items-center gap-2">
+                  {caseItem.industries?.map((industry, i) => (
                     <span
                       key={industry}
-                      className="rounded-full border border-black/10 px-2.5 py-0.5 text-xs text-black/55">
+                      className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                        i === 0 ? 'bg-black text-white' : 'border border-black/15 text-black/70'
+                      }`}>
                       {tHero(`nicheTags.${industry}`)}
                     </span>
                   ))}
+                  {serviceTags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-black/15 px-3 py-1 text-xs font-semibold text-black/70">
+                      {tCases(SERVICE_TAG_LABEL_KEY[tag])}
+                    </span>
+                  ))}
                 </div>
+
+                <h1 className="text-display-sm font-extrabold leading-[1.05] text-black sm:text-display">
+                  {caseItem.title}
+                </h1>
+
+                <p className="mt-5 max-w-xl text-body-lg leading-relaxed text-black/60">{t('hero.subtitle')}</p>
+
+                <p className="mt-5 font-mono text-xs text-black/40">{stackLine}</p>
+
+                {relatedCaseItem && (
+                  <p className="mt-5 text-sm text-black/55">
+                    {tShared('relatedProduct.label')}{' '}
+                    <Link
+                      href={`/${locale}/cases/${relatedCaseItem.id}`}
+                      className="font-medium text-black underline-offset-2 hover:text-accent-dark hover:underline">
+                      {relatedCaseItem.title}
+                    </Link>
+                  </p>
+                )}
               </div>
-              <IconArrowRight className="h-5 w-5 shrink-0 text-black/40 transition group-hover:translate-x-1 group-hover:text-black" />
-            </Link>
+
+              {mainImage && (
+                <div className="relative mt-4 lg:mt-2">
+                  <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-accent sm:-inset-6" aria-hidden />
+                  <div className="overflow-hidden rounded-2xl border border-black/10 bg-white shadow-xl">
+                    <div className="relative aspect-[4/3]">
+                      <Image
+                        src={mainImage}
+                        alt={caseItem.title}
+                        fill
+                        className="object-cover"
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 440px"
+                      />
+                    </div>
+                  </div>
+
+                  {secondaryImage && (
+                    <div className="absolute -bottom-6 -left-5 w-[42%] overflow-hidden rounded-xl border border-black/10 bg-white shadow-xl sm:-bottom-8 sm:-left-7">
+                      <div className="relative aspect-[3/4]">
+                        <Image
+                          src={secondaryImage}
+                          alt=""
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 40vw, 180px"
+                        />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </SectionReveal>
+        </Container>
+      </section>
+
+      {/* Problem / approach */}
+      <section className="border-t border-black/10">
+        <Container>
+          <SectionReveal direction="left">
+            <div className="grid gap-10 py-10 sm:grid-cols-2 sm:gap-16">
+              <div>
+                <p className="mb-3 font-mono text-xs uppercase tracking-widest text-black/40">
+                  {tDetail('theProblem')}
+                </p>
+                <p className="text-xl font-bold leading-snug text-black sm:text-2xl">{problemStatement}</p>
+              </div>
+              <div className="sm:border-l sm:border-black/10 sm:pl-16">
+                <p className="mb-3 font-mono text-xs uppercase tracking-widest text-black/40">
+                  {tDetail('whatItHadToDo')}
+                </p>
+                <p className="text-xl font-bold leading-snug text-black sm:text-2xl">{approachStatement}</p>
+              </div>
+            </div>
+          </SectionReveal>
+        </Container>
+      </section>
+
+      {/* Features */}
+      {availableFeatureKeys.length > 0 && (
+        <section className="bg-[#eef1ea] py-16 sm:py-20">
+          <Container>
+            <SectionReveal direction="left">
+              <p className="mb-3 font-mono text-xs uppercase tracking-widest text-black/40">{featuresEyebrow}</p>
+              <h2 className="text-h1 font-extrabold leading-tight text-black">{featuresTitle}</h2>
+
+              <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
+                <div className="divide-y divide-black/10 border-t border-black/10">
+                  {availableFeatureKeys.map((feature, index) => (
+                    <div key={feature.key} className="flex items-start gap-4 py-5">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black font-mono text-xs font-bold text-accent">
+                        {String(index + 1).padStart(2, '0')}
+                      </span>
+                      <div>
+                        <p className="font-bold text-black">{t(`features.items.${feature.key}.title`)}</p>
+                        <p className="mt-1 text-body-sm leading-relaxed text-black/55">
+                          {t(`features.items.${feature.key}.description`)}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {featuresImage && (
+                  <div className="overflow-hidden rounded-2xl border border-black/10 bg-white shadow-sm">
+                    <div className="relative aspect-[4/3]">
+                      <Image
+                        src={featuresImage}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 480px"
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+            </SectionReveal>
           </Container>
         </section>
       )}
+
+      {/* Process */}
+      {sections.length > 0 && (
+        <section className="py-16 sm:py-20">
+          <Container>
+            <SectionReveal direction="right">
+              <p className="mb-3 font-mono text-xs uppercase tracking-widest text-black/40">
+                {tDetail('howWeGotThere')}
+              </p>
+              <h2 className="text-h1 font-extrabold leading-tight text-black">{processTitle}</h2>
+
+              <div className={`mt-10 grid gap-10 border-t border-black/10 pt-10 sm:grid-cols-2 ${processGridClass}`}>
+                {sections.map((section, index) => (
+                  <div key={section.id}>
+                    <p className="font-mono text-xs text-black/40">{String(index + 1).padStart(2, '0')}</p>
+                    <h3 className="mt-2 text-h4 font-bold text-black">{t(`sections.${section.id}.title`)}</h3>
+                    <p className="mt-2 text-body-sm leading-relaxed text-black/55">
+                      {t(`sections.${section.id}.description`)}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </SectionReveal>
+          </Container>
+        </section>
+      )}
+
+      {/* CTA + next case */}
+      <section className="pb-20">
+        <Container>
+          <SectionReveal direction="left">
+            <div className="grid gap-5 lg:grid-cols-[1fr_320px]">
+              <div className="flex flex-col justify-center rounded-2xl bg-black px-8 py-10 sm:px-10">
+                <h2 className="text-h3 font-bold text-white">{tShared(`cta.${config.ctaTemplate}.title`)}</h2>
+                <Link
+                  href={`/${locale}/#contact`}
+                  className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-black transition hover:bg-accent-dark">
+                  {tDetail('ctaButton')}
+                  <IconArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+
+              {nextCaseItem && (
+                <Link
+                  href={`/${locale}/cases/${nextSlug}`}
+                  className="group flex flex-col justify-center rounded-2xl bg-[#eef1ea] px-8 py-10 transition hover:bg-[#e7ebe0]">
+                  <p className="font-mono text-xs uppercase tracking-widest text-black/40">
+                    {tShared('nextCase.label')}
+                    {nextCaseItem.industries?.[0] && ` · ${tHero(`nicheTags.${nextCaseItem.industries[0]}`)}`}
+                  </p>
+                  <p className="mt-3 flex items-center gap-2 text-h3 font-bold text-black">
+                    {nextCaseItem.title}
+                    <IconArrowRight className="h-5 w-5 shrink-0 transition group-hover:translate-x-1" />
+                  </p>
+                </Link>
+              )}
+            </div>
+          </SectionReveal>
+        </Container>
+      </section>
     </div>
   );
 }

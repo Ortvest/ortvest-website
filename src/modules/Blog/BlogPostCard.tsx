@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { formatBlogPostDate } from '@lib/blog-dates';
 import type { BlogCardModel } from '@lib/blog-model';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
+import { BlogCoverImage } from '@modules/Blog/BlogCoverImage';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 
 type Props = {
@@ -25,12 +26,11 @@ export function BlogPostCard({ post }: Props) {
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/[0.08] bg-white shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover">
       <div className="relative w-full shrink-0 overflow-hidden rounded-t-2xl">
         {post.cover_image ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <BlogCoverImage
             src={post.cover_image}
-            alt=""
-            loading="lazy"
-            className="block h-auto w-full transition duration-200 group-hover:scale-[1.02]"
+            alt={post.title}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+            className="transition duration-200 group-hover:scale-[1.02]"
           />
         ) : (
           <div className="aspect-video">

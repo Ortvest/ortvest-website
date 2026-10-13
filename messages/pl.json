@@ -24,41 +24,68 @@
       "industries": "P2P, społeczności, logistyka…",
       "process": "Jak pracujemy, krok po kroku",
       "technologies": "Nasz stack technologiczny"
+    },
+    "servicesAll": "Wszystkie usługi",
+    "servicePages": {
+      "marketplace-development": {
+        "label": "Tworzenie marketplace'u",
+        "sublabel": "Platformy dwustronne od początku do końca"
+      },
+      "p2p-platform-development": {
+        "label": "Platformy P2P",
+        "sublabel": "Zaufanie między obcymi osobami"
+      },
+      "community-platform-development": {
+        "label": "Platformy społecznościowe",
+        "sublabel": "Sieci członkowskie i kluby"
+      },
+      "mvp-development": {
+        "label": "Tworzenie MVP",
+        "sublabel": "Pierwsza wersja, która odpowiada na pytanie"
+      },
+      "mobile-app-development": {
+        "label": "Aplikacje mobilne",
+        "sublabel": "iOS i Android, klient i wykonawca"
+      },
+      "booking-website-development": {
+        "label": "Strony z rezerwacją",
+        "sublabel": "Strona, panel klienta i dyspozytornia"
+      }
     }
   },
   "divider": {
     "platforms": "wdrożonych platform dwustronnych",
     "people": "osób. Jeden zespół na projekt.",
     "industries": "branże. Czwarta w budowie.",
-    "industryList": "P2P · Społeczności · Logistyka · Agritech (w budowie)"
+    "industryList": "Strony · Aplikacje mobilne · Serwisy webowe · Platformy"
   },
   "hero": {
-    "badge": "Dla marketplace'ów, produktów P2P i sieci członkowskich",
-    "title1": "Najtrudniejszy nigdy nie był kod.",
-    "title2": "Tylko pusta platforma.",
+    "badge": "Strony · Serwisy webowe · Aplikacje mobilne",
+    "title1": "Strony, serwisy webowe i aplikacje mobilne.",
+    "title2": "Takie, które działają w poniedziałek rano.",
     "title3": "",
     "title3em": "",
-    "subtitle": "Marketplace'y, produkty P2P i sieci członkowskie działają dopiero wtedy, gdy obcy ludzie zaczynają sobie ufać. W tym się specjalizujemy – i pięć razy rozwiązaliśmy problem pierwszego dnia.",
+    "subtitle": "Projekt, wdrożenie i start z jednym zespołem w Poznaniu. Strony firmowe, ścieżki rezerwacji, portale klienckie, aplikacje na iOS i Androida – a pod spodem platforma, jeśli produkt jej wymaga.",
     "cta": {
-      "primary": "Zobacz, jak rozwiązujemy cold start",
+      "primary": "Powiedz, co trzeba zbudować",
       "secondary": "Zobacz realizacje"
     },
     "freecall": {
-      "text": "Nie wiesz, czy pasujemy? 30 minut, bez pitchu",
+      "text": "Nie wiesz, czego potrzebujesz? 30 minut, bez sprzedaży",
       "link": "Umów rozmowę"
     },
     "nodes": {
       "shippers": {
-        "title": "Logistyka"
+        "title": "Strony"
       },
       "clubs": {
-        "title": "Społeczności i kluby"
+        "title": "Aplikacje mobilne"
       },
       "owners": {
-        "title": "P2P"
+        "title": "Serwisy webowe"
       },
       "agritech": {
-        "title": "Agritech"
+        "title": "Platformy"
       }
     },
     "stats": {
@@ -83,7 +110,11 @@
     "trustCtaLink": "Umów darmową 30-min rozmowę",
     "trust1": "Podejście od strategii",
     "trust2": "Pełny cykl realizacji",
-    "trust3": "Klienci z UE, Wielkiej Brytanii i USA"
+    "trust3": "Klienci z UE, Wielkiej Brytanii i USA",
+    "showcase": {
+      "site": "Strona + rezerwacje",
+      "app": "Aplikacja iOS i Android"
+    }
   },
   "services": {
     "eyebrow": "Co robimy",
@@ -144,20 +175,10 @@
   },
   "servicesSection": {
     "label": "Co robimy",
-    "title": "Dla produktów, w których nikt jeszcze się nie zna.",
-    "subtitle": "Design, development i opcjonalne wejście na rynek dla produktów dwustronnych.",
-    "tabs": {
-      "what": "Co robimy",
-      "industries": "Branże",
-      "process": "Proces",
-      "technologies": "Technologie"
-    },
-    "included": "Co zawiera",
-    "tapToSee": "Kliknij, aby zobaczyć",
-    "tapToLearn": "Kliknij, aby dowiedzieć się więcej",
+    "title": "Od landing page’a po platformę, która za nim stoi.",
+    "subtitle": "Projekt i wdrożenie. Jeden zespół, od pierwszej rozmowy do startu.",
     "getQuote": "Zapytaj o wycenę",
     "optional": "Opcjonalnie",
-    "industryNote": "Nie ma Cię na tej liście? Powiedz o tym podczas rozmowy. Jeśli to nie nasza branża, też powiemy wprost.",
     "design": {
       "title": "Design",
       "desc": "UX dla dwustronnych procesów, weryfikacji i stanów zaufania oraz gotowe UI w Figmie. Najpierw projektujemy pusty stan – to właśnie zobaczy większość pierwszych użytkowników.",
@@ -195,89 +216,109 @@
       "p3": "Analiza konkurencji",
       "p4": "Pozycjonowanie marki"
     },
-    "ind": {
-      "p2p": {
-        "title": "P2P",
-        "desc": "Weryfikacja, zaufanie, dopasowanie, spory i wypłaty.",
-        "t1": "Weryfikacja",
-        "t2": "Dopasowanie",
-        "t3": "Wypłaty"
+    "build": {
+      "websites": {
+        "title": "Strony",
+        "desc": "Strony firmowe, landing page’e i serwisy treściowe, które mają realnie przynosić zapytania, a nie tylko dobrze wyglądać.",
+        "items": ["Strony marketingowe", "Landing page’e", "Serwisy treściowe", "Redesign istniejącej strony"]
       },
-      "community": {
-        "title": "Społeczności i kluby",
-        "desc": "Członkostwo, role, wydarzenia, składki i katalogi członków.",
-        "t1": "Członkostwo",
-        "t2": "Role",
-        "t3": "Wydarzenia"
+      "webServices": {
+        "title": "Serwisy webowe",
+        "desc": "Ścieżki rezerwacji, portale klienckie, dashboardy i zaplecze administracyjne, na którym twój zespół faktycznie prowadzi firmę.",
+        "items": ["Ścieżki rezerwacji", "Portale klienckie", "Dashboardy", "Narzędzia administracyjne"]
       },
-      "logistics": {
-        "title": "Logistyka",
-        "desc": "Flota, przesyłki, procesy wielostronne i integracje.",
-        "t1": "Flota",
-        "t2": "Przesyłki",
-        "t3": "Procesy wielostronne",
-        "t4": "Integracje"
+      "mobileApps": {
+        "title": "Aplikacje mobilne",
+        "desc": "iOS i Android – jedna aplikacja dla klientów, druga dla osób wykonujących pracę, na tym samym backendzie.",
+        "items": [
+          "Aplikacja iOS",
+          "Aplikacja Android",
+          "Aplikacja dla klientów",
+          "Aplikacja dla zespołu na tym samym backendzie"
+        ]
       },
-      "agritech": {
-        "title": "Agritech",
-        "badge": "W budowie · 2026",
-        "desc": "Budujemy teraz naszą pierwszą platformę agritech. Ten sam schemat co reszta: wiele stron, zweryfikowane tożsamości, transakcje, którym trzeba zaufać. Pokażemy ją, gdy zostanie wdrożona – do tego czasu nie zaliczamy tej branży do naszych.",
-        "t1": "Identyfikowalność",
-        "t2": "Łańcuch dostaw",
-        "t3": "Producenci ⇄ kupujący"
+      "platforms": {
+        "title": "Platformy",
+        "desc": "Marketplace’y, produkty P2P i sieci członkowskie, gdzie najtrudniejsze jest sprawić, by obcy ludzie sobie zaufali.",
+        "items": ["Marketplace’y", "Produkty P2P", "Sieci członkowskie", "Zaufanie i weryfikacja"]
       }
     },
-    "process": {
-      "1": {
-        "title": "Discovery",
-        "desc": "Zagłębiamy się w Twój biznes, użytkowników i konkurencję. Definiujemy problem przed pierwszym pikselem.",
-        "dur": "1–2 tygodnie"
+    "proof": "Na przykład",
+    "disciplinesLabel": "W każdym wdrożeniu",
+    "startAs": {
+      "label": "Każde z tego może zacząć się jako —",
+      "mvp": {
+        "title": "MVP",
+        "desc": "Pierwsza wersja, która odpowiada na jedno pytanie przed pełną budową."
       },
-      "2": {
+      "upgrade": {
+        "title": "Upgrade",
+        "desc": "Już działa? Audyt, redesign i nowe funkcje – bez zaczynania od zera."
+      },
+      "designOnly": {
+        "title": "Tylko design",
+        "desc": "UI/UX, strony internetowe, redesign, identyfikacja marki i logo."
+      }
+    }
+  },
+  "servicesStrip": {
+    "eyebrow": "Usługi",
+    "hint": "Dotknij podświetlone słowo",
+    "headline": "<design>Projektujemy</design> produkty, budujemy je na <web>web</web> i <mobile>mobile</mobile>, dostarczamy <mvp>MVP</mvp> i <fix>naprawiamy te</fix>, które już istnieją.",
+    "seenInLabel": "Zobacz w",
+    "ctaSuffix": "też działa samodzielnie",
+    "mostlyFor": "Głównie dla marketplace'ów, produktów P2P, sieci członkowskich i biznesów rezerwacyjnych.",
+    "tabs": {
+      "design": {
         "title": "Design",
-        "desc": "Wireframe'y, przepływy i gotowe UI. Zatwierdzasz każdy ekran przed startem developmentu.",
-        "dur": "2–4 tygodnie"
+        "desc": "Interfejsy dla produktów, w których dwie różne strony chcą dwóch różnych rzeczy na tym samym ekranie.",
+        "items": [
+          "UI/UX dla web i mobile",
+          "Strony i landing page’e",
+          "Redesign istniejącego interfejsu",
+          "Identyfikacja marki i logo"
+        ],
+        "seenIn": ["Gambit", "[Re.] skin&hair", "Teya Logistics"]
       },
-      "3": {
-        "title": "Development",
-        "desc": "Jednotygodniowe sprinty z demo każdego cyklu. Zawsze działający produkt, żadnych czarnych skrzynek.",
-        "dur": "6–16 tygodni"
+      "web": {
+        "title": "Web",
+        "desc": "Ścieżki rezerwacji, portale klienckie, dashboardy i zaplecze administracyjne, na którym twój zespół faktycznie prowadzi firmę.",
+        "items": ["Ścieżki rezerwacji", "Portale klienckie", "Dashboardy", "Narzędzia administracyjne"],
+        "seenIn": ["YachtMate", "SharingGround", "Ski&Sail Club"]
       },
-      "4": {
-        "title": "Marketing",
-        "desc": "Landing pages, SEO, analityka i strategia wejścia na rynek. Dostępne jako dodatek.",
-        "dur": "2–4 tygodnie"
+      "mobile": {
+        "title": "Mobile",
+        "desc": "iOS i Android – jedna aplikacja dla klientów, druga dla osób wykonujących pracę, na tym samym backendzie.",
+        "items": [
+          "Aplikacja iOS",
+          "Aplikacja Android",
+          "Aplikacja dla klientów",
+          "Aplikacja dla zespołu na tym samym backendzie"
+        ],
+        "seenIn": ["Pachaca", "YachtMate", "Teya Logistics"]
       },
-      "5": {
-        "title": "Launch i wsparcie",
-        "desc": "Wdrożenie, monitoring i iteracje po launchu. Pozostajemy z Tobą.",
-        "dur": "Ciągłe"
+      "mvp": {
+        "title": "MVP",
+        "desc": "Pierwsza wersja, która odpowiada na jedno pytanie przed pełną budową.",
+        "items": [
+          "Jeden kluczowy flow, w kilka tygodni",
+          "Walidacja przed skalowaniem",
+          "Jasny podział na to, co wchodzi i co nie",
+          "Fundament, który rozwijasz, a nie wyrzucasz"
+        ],
+        "seenIn": ["SharingGround", "Pachaca", "YachtMate"]
+      },
+      "fix": {
+        "title": "Redesign",
+        "desc": "Już działa? Audyt, redesign i nowe funkcje – bez zaczynania od zera.",
+        "items": [
+          "Audyt tego, co już jest",
+          "Redesign bez pełnej przebudowy",
+          "Nowe funkcje na istniejącym stacku",
+          "Migracja, jeśli stack musi się zmienić"
+        ],
+        "seenIn": ["Gambit"]
       }
-    },
-    "processTags": {
-      "interviews": "Wywiady",
-      "competitorAnalysis": "Analiza konkurencji",
-      "techAudit": "Audyt techniczny",
-      "figma": "Figma",
-      "prototyping": "Prototypowanie",
-      "designSystem": "System designu",
-      "oneWeekSprints": "Tygodniowe sprinty",
-      "weeklyDemos": "Cotygodniowe demo",
-      "codeReview": "Code review",
-      "landingPage": "Landing page",
-      "seo": "SEO",
-      "analytics": "Analityka",
-      "gtmStrategy": "Strategia GTM",
-      "ciCd": "CI/CD",
-      "monitoring": "Monitoring",
-      "retainer": "Retainer"
-    },
-    "tech": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "databases": "Bazy danych",
-      "realtime": "Real-time",
-      "infra": "Infrastruktura"
     }
   },
   "industries": {
@@ -289,32 +330,17 @@
       "p2p": {
         "title": "Platformy P2P",
         "description": "Budujemy platformy peer-to-peer, gdzie zaufanie jest produktem. Sharing, wynajem i wymiana z weryfikacją, płatnościami escrow, śledzeniem przedmiotów i rozwiązywaniem sporów – aby nieznajomi mogli bezpiecznie współpracować.",
-        "tags": [
-          "Sharing economy",
-          "Wynajem peer-to-peer",
-          "Trust & safety",
-          "Płatności escrow"
-        ]
+        "tags": ["Sharing economy", "Wynajem peer-to-peer", "Trust & safety", "Płatności escrow"]
       },
       "community": {
         "title": "Społeczności",
         "description": "Projektujemy i budujemy zamknięte sieci, platformy klubowe i społeczności zawodowe, gdzie interakcja jest naturalna – nie wymuszona. Czaty, role, wydarzenia i treści w jednym miejscu. Znamy różnicę między „stroną” a „platformą, do której ludzie wracają”.",
-        "tags": [
-          "Sieci prywatne",
-          "Portale członkowskie",
-          "Czat na żywo",
-          "Wydarzenia"
-        ]
+        "tags": ["Sieci prywatne", "Portale członkowskie", "Czat na żywo", "Wydarzenia"]
       },
       "logistics": {
         "title": "Logistyka",
         "description": "Pracujemy ze startupami i MŚP logistycznymi nad zarządzaniem flotą, śledzeniem przesyłek i optymalizacją tras. Dwa case studies opublikowane – więcej w toku.",
-        "tags": [
-          "Zarządzanie flotą",
-          "Śledzenie przesyłek",
-          "Optymalizacja tras",
-          "Logistics SaaS"
-        ]
+        "tags": ["Zarządzanie flotą", "Śledzenie przesyłek", "Optymalizacja tras", "Logistics SaaS"]
       }
     },
     "comingSoon": {
@@ -355,12 +381,36 @@
   },
   "approach": {
     "label": "Jak myślimy",
-    "title": "Większość studiów pyta, co zbudować. My pytamy, kto pojawi się pierwszy.",
-    "subtitle": "Dwustronny produkt w dniu premiery jest bezwartościowy i nikt o tym nie ostrzega. Właściciele nie przyjdą bez najemców. Najemcy bez właścicieli. Kluby nie zapłacą za sieć z trzema klubami. Zaczynamy właśnie tutaj, zanim powstanie pierwszy ekran – bo ta odpowiedź decyduje, czy produkt przeżyje.",
+    "title": "Większość studiów pyta, co chcesz zbudować. My pytamy, co to ma wytrzymać.",
+    "subtitle": "Każdy produkt zawodzi inaczej. Ustalamy, która awaria naprawdę by cię kosztowała, i projektujemy pod nią.",
     "quote": {
       "text": "Design zaczyna się po rozwiązaniu ",
       "em": "cold startu.",
       "body": "Pusta platforma to pierwszy stan produktu, który projektujemy."
+    },
+    "failureModes": {
+      "label": "Ten sam brief, trzy sposoby na porażkę",
+      "cta": "co to musi przetrwać",
+      "items": {
+        "marketingSite": {
+          "label": "Strona marketingowa",
+          "textBefore": "Ma zbierać ",
+          "highlight": "realne leady.",
+          "fails": "Zawodzi, gdy tylko dobrze wygląda."
+        },
+        "fieldApp": {
+          "label": "Aplikacja terenowa",
+          "textBefore": "Ma działać dla ekipy ",
+          "highlight": "jedną ręką.",
+          "fails": "Zawodzi, gdy projektowano ją przy biurku."
+        },
+        "bookingFlow": {
+          "label": "Ścieżka rezerwacji",
+          "textBefore": "Ma wytrzymać ",
+          "highlight": "sobotni wieczór.",
+          "fails": "Zawodzi, gdy nikt nie jest na dyżurze."
+        }
+      }
     },
     "how": {
       "1": {
@@ -391,6 +441,11 @@
         "desc": "Panele administracyjne, kolejki moderacji, zwroty i obsługa sporów. Nie wyglądają dobrze w portfolio, ale dzięki nim platformy przeżywają pierwszy rok."
       },
       "label": "Czego potrzebuje produkt"
+    },
+    "slider": {
+      "next": "Dalej",
+      "previous": "Wstecz",
+      "pagination": "Nawigacja slajdów"
     }
   },
   "about": {
@@ -416,30 +471,27 @@
   },
   "team": {
     "label": "Z kim naprawdę będziesz pracować",
-    "title": "15 osób. Nikt w Twoim zespole nie pracuje na 20%.",
-    "subtitle": "Większość studiów naszej wielkości sprzedaje Ci zespół, a potem przydziela ułamek czasu pięciu osób rozproszonych po sześciu projektach. My przydzielamy Ci zespół, który zostaje z Tobą aż do wdrożenia – inżynieria, projektowanie i wejście na rynek w jednym miejscu, a nie trzech dostawców, których musisz synchronizować. To ogranicza liczbę projektów, które prowadzimy jednocześnie, i świadomie wybraliśmy taki kompromis.",
-    "paginationLabel": "Paginacja zespołu",
+    "title": "13 osób. Nikt w Twoim zespole nie pracuje na 20%.",
+    "subtitle": "Większość studiów naszej wielkości sprzedaje Ci zespół, a potem przydziela ułamek czasu pięciu osób rozproszonych po sześciu projektach. My przydzielamy Ci zespół, który zostaje z Tobą aż do wdrożenia. To ogranicza liczbę projektów, które prowadzimy jednocześnie. Świadomie wybraliśmy taki kompromis.",
+    "wholeStudioLabel": "Całe studio, jedna kropka na osobę",
+    "location": "Poznań, Polska",
     "developers": {
-      "title": "Inżynieria · 9 osób",
+      "name": "Inżynieria",
       "description": "Zaplecze techniczne, które wytrzyma platformę dwustronną: weryfikacja, dopasowanie, płatności, role i uprawnienia. Mamy dość szeroki zespół, by prowadzić równoległe strumienie pracy – platforma i narzędzia administracyjne powstają jednocześnie, a nie jedno po drugim."
     },
     "designers": {
-      "title": "Produkt i projektowanie · 4 osoby",
+      "name": "Produkt i design",
       "description": "Interfejsy dla produktów, w których dwie osoby chcą czegoś innego od tego samego ekranu. Właściciel i najemca. Klub i członek. Nadawca i przewoźnik."
-    },
-    "marketing": {
-      "title": "Wejście na rynek · 2 osoby (opcjonalnie)",
-      "description": "Pierwszych stu użytkowników po każdej stronie nie przyjdzie z reklam. Wdrażaliśmy użytkowników ręcznie, budowaliśmy początkową podaż i prowadziliśmy bezpośrednie działania założycieli – i powiemy wprost, kiedy płatna akwizycja jest złą odpowiedzią."
     }
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Pytania, które decydują, czy powinniśmy pracować razem",
+    "title": "Pytania, które decydują, czy powinniśmy pracować razem.",
     "subtitle": "Konkretne odpowiedzi, zanim którakolwiek strona poświęci czas na ofertę.",
     "cta": {
-      "text": "Masz jeszcze pytania?",
-      "sub": "Chętnie odpowiemy bezpośrednio.",
-      "btn": "Umów darmową rozmowę"
+      "text": "Nie znalazłeś swojego pytania?",
+      "btn": "Zadaj je na darmowej rozmowie",
+      "trust": "30 min · bez sprzedaży · odpowiedź w 24h"
     },
     "q1": "Czy zbudujecie mojego Ubera dla X?",
     "a1": "Może. Ale podczas pierwszej rozmowy zapytamy, po której stronie potrafisz zdobyć ręcznie 100 osób, bez reklam. Jeśli nie ma odpowiedzi, produkt nie jest gotowy i powiemy to zamiast brać pieniądze.",
@@ -465,8 +517,9 @@
     "trust": {
       "reply": "Odpowiedź w 24h",
       "nospam": "Zero spamu",
-      "call": "Darmowa 30-min rozmowa discovery"
+      "call": "Darmowa rozmowa 30 min"
     },
+    "preferEmail": "Wolisz email?",
     "steps": {
       "1": {
         "title": "Wysyłasz szczegóły",
@@ -497,7 +550,7 @@
       },
       "projectType": "Typ projektu",
       "budget": "Budżet",
-      "consultation": "Typ konsultacji",
+      "consultation": "Zacznij od",
       "message": {
         "label": "Wiadomość",
         "placeholder": "Co budujesz i kiedy chcesz uruchomić?"
@@ -513,10 +566,12 @@
       "successDesc": "Odezwiemy się w ciągu 24h."
     },
     "projectTypes": {
-      "p2p": "P2P",
-      "community": "Społeczności i kluby",
-      "logistics": "Logistyka",
-      "other": "Inne"
+      "website": "Strona www",
+      "webService": "Serwis webowy",
+      "mobileApp": "Aplikacja mobilna",
+      "mvp": "MVP",
+      "improveExisting": "Rozwój istniejącego produktu",
+      "designOnly": "Tylko design"
     },
     "budget": {
       "10k25k": "€10–25k",
@@ -526,19 +581,28 @@
       "unsure": "Jeszcze nie wiem"
     },
     "consultation": {
-      "discovery": "Discovery Call (Darmowe)",
-      "strategy": "Audyt Cold Start (€199)"
+      "discovery": {
+        "title": "Discovery Call",
+        "price": "darmowe"
+      },
+      "strategy": {
+        "title": "Audyt Cold Start",
+        "price": "€199"
+      }
     }
   },
   "consultation": {
     "eyebrow": "Konsultacja",
-    "title": "Zacznij od pytania, które zabija większość platform.",
-    "subtitle": "Wybierz darmową ocenę dopasowania albo skupiony audyt problemu cold start.",
+    "titleMain": "Zacznij od rozmowy,",
+    "titleStrike": "nie od wyceny.",
+    "subtitle": "Bezpłatna rozmowa wstępna albo skupiony audyt tego, co już masz uruchomione.",
+    "priceTimeLabel": "Cena · czas",
+    "inShortLabel": "W skrócie",
     "whatsIncluded": "Co zawiera",
     "bookCall": "Umów rozmowę",
     "bookSession": "Umów audyt",
-    "discoveryBadge": "TWÓJ PIERWSZY KROK",
-    "strategyBadge": "Najpopularniejsze przed dużymi projektami",
+    "discoveryBadge": "01 — Twój pierwszy krok",
+    "strategyBadge": "02 — Najpopularniejsze przed dużymi projektami",
     "discovery": {
       "title": "Discovery Call",
       "subtitle": "Powiedz, co budujesz. Powiemy, czy to nasza działka i czy ten produkt powinien powstać.",
@@ -555,22 +619,21 @@
       "title": "Audyt Cold Start",
       "subtitle": "Dziewięćdziesiąt minut nad pytaniem, które większość zespołów pomija: kto pojawi się pierwszego dnia i dlaczego zostanie, gdy druga strona wciąż jest pusta?",
       "price": "€199",
-      "duration": "90 min",
+      "duration": "90 min · w pełni wliczone",
       "items": {
         "goalsAudience": "Którą stronę zasilasz pierwszą i jak",
         "competitiveAnalysis": "Gdzie dokładnie umarły podobne platformy",
         "techStack": "Model zaufania, weryfikacja, stack i architektura",
         "roadmap": "Pełna roadmapa z etapami i ryzykami",
         "risk": "Ocena ryzyka cold start",
-        "recording": "Nagranie i pisemne podsumowanie PDF",
-        "credit": "Pełna kwota odliczana od projektu"
+        "recording": "Nagranie i pisemne podsumowanie PDF"
       }
     }
   },
   "cases": {
     "eyebrow": "Nasze projekty",
-    "title": "Trzy platformy, które musiały zacząć od pustki.",
-    "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA – omówimy je podczas rozmowy.",
+    "title": "Strony, aplikacje i platformy, które wypuściliśmy.",
+    "subtitle": "Strony firmowe, ścieżki rezerwacji, portale klienckie i aplikacje mobilne – w P2P, społecznościach i logistyce.",
     "ndaBanner": "Część projektów jest objęta NDA – omówimy je podczas rozmowy.",
     "filterIndustries": {
       "p2p": "P2P",
@@ -578,22 +641,35 @@
       "logistics": "Logistyka",
       "brand": "Brand & Web"
     },
+    "tabs": {
+      "all": "Wszystkie",
+      "websites": "Strony internetowe",
+      "webServices": "Usługi webowe",
+      "mobileApps": "Aplikacje mobilne",
+      "design": "Design"
+    },
+    "viewAllSuffix": "projektów · w tym NDA",
     "section": {
       "viewAll": "Zobacz wszystkie projekty"
     },
     "page": {
       "label": "NASZE PROJEKTY",
-      "title": "Wybrane projekty",
-      "subtitle": "P2P, społeczności i logistyka. Część projektów jest objęta NDA – omówimy je podczas rozmowy.",
+      "title": "Wybrane projekty.",
+      "subtitle": "Strony, usługi webowe, aplikacje mobilne i branding — w P2P, społecznościach i logistyce.",
       "filter": {
         "all": "Wszystkie"
       },
       "viewCase": "Zobacz case study",
       "nda": "NDA · szczegóły na rozmowie",
+      "sameProblem": "Ten sam problem?",
+      "yourProject": "Twój projekt",
+      "coverPlaceholder": "[zdjęcie projektu]",
+      "ndaProtected": "Chronione NDA",
+      "ndaLabel": "NDA",
+      "showing": "Pokazano {shown} z {total}",
       "cta": {
-        "title": "Pracujesz nad czymś w tych obszarach?",
-        "sub": "Jeśli Twój produkt wymaga zaufania między obcymi osobami, to jest cała nasza praca.",
-        "primary": "Omów projekt",
+        "title": "Twojego projektu tu jeszcze nie ma.",
+        "sub": "30 minut, bez sprzedaży. Powiemy, który z nich jest najbliższy.",
         "secondary": "Zarezerwuj rozmowę"
       },
       "metadata": {
@@ -609,16 +685,17 @@
     "inProgress": "W trakcie",
     "designBy": "Projekt",
     "ndaDetails": "Umów rozmowę, aby dowiedzieć się więcej",
-    "ctaTitle": "Budujesz coś dwustronnego?",
-    "ctaText": "Marketplace, produkt P2P, sieć członkowska, logistyka wielostronna – jeśli produkt wymaga zaufania między obcymi osobami, to jest cała nasza praca.",
+    "ctaTitle": "Masz w głowie coś podobnego?",
+    "ctaText": "Strona, która ma przynosić realne zapytania, aplikacja dla ekipy w terenie albo platforma pod jednym i drugim – powiedz, co to ma robić, a my powiemy, czego to wymaga.",
     "ctaButton": "Umów rozmowę",
     "ctaSecondary": "Wyceń projekt",
-    "bottomCtaText": "Widzisz ten sam problem cold start w swoim produkcie?",
-    "bottomCtaLink": "Porozmawiajmy o Twoim pierwszym dniu",
+    "bottomCtaText": "Chcesz coś takiego u siebie?",
+    "bottomCtaLink": "Powiedz, czego potrzebujesz",
     "nicheCta": {
       "p2p": "Ten sam problem?",
       "community": "Ten sam problem?",
       "logistics": "Ten sam problem?",
+      "brand": "Pracujesz nad czymś podobnym?",
       "letsTalk": "Porozmawiajmy o Twoim pierwszym dniu"
     },
     "categoryBadge": {
@@ -631,35 +708,49 @@
     "items": {
       "yachtmate": {
         "summary": "Prywatna sieć dla członków klubu jachtowego z komunikacją w czasie rzeczywistym.",
-        "result": "Bezpieczna platforma klubowa z czatem, rolami członków i zarządzaniem wydarzeniami."
+        "result": "Bezpieczna platforma klubowa z czatem, rolami członków i zarządzaniem wydarzeniami.",
+        "tags": "Platforma · Komunikacja w czasie rzeczywistym",
+        "industryLabel": "Społeczności"
       },
       "sharingground": {
         "summary": "Platforma wymiany rzeczy peer-to-peer z systemem zaufania i logistyki.",
-        "result": "Pełny marketplace P2P z weryfikacją, opiniami i śledzeniem przedmiotów."
+        "result": "Pełny marketplace P2P z weryfikacją, opiniami i śledzeniem przedmiotów.",
+        "tags": "Platforma · Zaufanie · Logistyka",
+        "industryLabel": "P2P"
       },
       "profitcraft": {
         "summary": "Strona credit-building – jeden produkt w ekosystemie ProfitCraft razem z ProfitCraft Auto.",
-        "result": "Strona marketingowa oparta na zaufaniu; zbudowaliśmy też wewnętrzny CMS, którego nie możemy pokazać publicznie."
+        "result": "Strona marketingowa oparta na zaufaniu; zbudowaliśmy też wewnętrzny CMS, którego nie możemy pokazać publicznie.",
+        "industryLabel": "Społeczności"
       },
       "profitcraftauto": {
         "summary": "Strona personal auto broker – auto-odnoga zunifikowanego systemu ProfitCraft z ProfitCraft (kredyt).",
-        "result": "Strona marketingowa z wnioskami i UI mobilnym; wewnętrzny CMS dostarczony, ale niepubliczny."
+        "result": "Strona marketingowa z wnioskami i UI mobilnym; wewnętrzny CMS dostarczony, ale niepubliczny.",
+        "industryLabel": "Społeczności"
       },
       "skisailclub": {
         "summary": "Platforma cyfrowa dla klubu jachtowego – rezerwacje i społeczność.",
-        "result": "Platforma rezerwacji i społeczności dla początkujących i doświadczonych żeglarzy."
+        "result": "Platforma rezerwacji i społeczności dla początkujących i doświadczonych żeglarzy.",
+        "tags": "Rezerwacje · Zarządzanie społecznością",
+        "industryLabel": "Społeczności"
       },
       "navexa": {
         "summary": "Platforma logistyczna – flota i przesyłki oraz marketing produktu.",
-        "result": "Panel operacyjny i marketing pozycjonujący produkt i pozyskujący klientów B2B."
+        "result": "Panel operacyjny i marketing pozycjonujący produkt i pozyskujący klientów B2B.",
+        "tags": "Platforma flot i przesyłek · NDA",
+        "industryLabel": "Logistyka"
       },
       "teya": {
         "summary": "Nowoczesny landing page firmy logistycznej pozyskujący klientów.",
-        "result": "Strona marketingowa jasno prezentująca usługi i generująca leady."
+        "result": "Strona marketingowa jasno prezentująca usługi i generująca leady.",
+        "tags": "Strona internetowa · Landing page",
+        "industryLabel": "Logistyka"
       },
       "pachaca": {
         "summary": "Platforma full-stack dla serwisu sprzątania i pralni chemicznej – aplikacje mobilne, serwis web i wewnętrzny system zarządzania zbudowane od zera.",
-        "result": "Kompletny ekosystem cyfrowy dla biznesu on-demand – od pierwszego dotknięcia klienta po ostatnią aktualizację statusu przez zespół operacyjny."
+        "result": "Kompletny ekosystem cyfrowy dla biznesu on-demand – od pierwszego dotknięcia klienta po ostatnią aktualizację statusu przez zespół operacyjny.",
+        "tags": "Aplikacje mobilne · Usługa webowa · System wewnętrzny",
+        "industryLabel": "P2P"
       },
       "mie": {
         "summary": "Inteligentna lista zakupów z AI śledzącą zapasy i sugerującą zakupy.",
@@ -667,11 +758,15 @@
       },
       "reskin": {
         "summary": "Nowoczesna identyfikacja wizualna linii produktów do pielęgnacji skóry i włosów.",
-        "result": "Minimalistyczny system marki z organicznymi formami i premium charakterem."
+        "result": "Minimalistyczny system marki z organicznymi formami i premium charakterem.",
+        "tags": "Identyfikacja marki",
+        "industryLabel": "Brand & Web"
       },
       "gambit": {
         "summary": "Redesign UI strony z silną hierarchią wizualną.",
-        "result": "Czysty interfejs z wyrazistą typografią i przemyślaną przestrzenią."
+        "result": "Czysty interfejs z wyrazistą typografią i przemyślaną przestrzenią.",
+        "tags": "Redesign strony · UI",
+        "industryLabel": "Brand & Web"
       },
       "navexa-logo": {
         "summary": "Profesjonalne logo dla firmy logistycznej i zarządzania flotą.",
@@ -686,7 +781,7 @@
   "caseStudies": {
     "shared": {
       "process": {
-        "title": "Jak to zbudowaliśmy",
+        "title": "Jak to zbudowaliśmy.",
         "steps": {
           "discovery": {
             "title": "Discovery",
@@ -707,7 +802,8 @@
         }
       },
       "features": {
-        "title": "Kluczowe funkcje",
+        "eyebrow": "Co dostajesz",
+        "title": "Kluczowe funkcje.",
         "subtitle": "Co zaprojektowaliśmy i zbudowaliśmy w tym projekcie."
       },
       "gallery": {
@@ -773,7 +869,13 @@
       },
       "challenge": "Kluby jachtowe potrzebowały zamkniętej sieci, w której członkowie komunikują się bez publicznych kanałów. Wyzwanie: czat na żywo, weryfikacja i koordynacja wydarzeń za ścisłą kontrolą prywatności.",
       "solution": "Zbudowaliśmy YachtMate z weryfikacją członków, rolami, czatem w czasie rzeczywistym i narzędziami eventowymi. React i Node.js zapewniają niskie opóźnienia przy zachowaniu prywatności danych.",
+      "stackLine": "Marka · Design · Development · React + Node.js",
+      "problemStatement": "Znani członkowie nie mogli rozmawiać na publicznych kanałach bez ujawniania danych osobowych.",
+      "approachStatement": "Czat w czasie rzeczywistym, weryfikacja członków i koordynacja wydarzeń — przy ścisłej kontroli prywatności.",
+      "processTitle": "Najpierw marka, potem design, potem development.",
       "features": {
+        "eyebrow": "Dwie strony, jedna platforma",
+        "title": "Kto co dostał.",
         "subtitle": "Core mechanics that keep a private club network secure and useful day to day.",
         "items": {
           "verification": {
@@ -1289,8 +1391,38 @@
       },
       "challenge": "Pachaca musiała zdigitalizować usługę sprzątania i pralni chemicznej on-demand w kilku miastach Ukrainy – szybka rezerwacja mobilna dla klientów i pełna kontrola nad zamówieniami, sprzątaczami i strefami obsługi dla zespołu operacyjnego.",
       "solution": "Zbudowaliśmy cały stos cyfrowy od zera: natywne aplikacje iOS i Android dla klientów, pełny serwis web dla użytkowników desktopowych oraz customowy wewnętrzny CMS dopasowany do codziennej pracy zespołu Pachaca.",
+      "stackLine": "Mobile · Web · Narzędzia wewnętrzne · React Native + Node.js",
       "cms": {
         "internal": "Narzędzie wewnętrzne – zrzuty ekranu niedostępne."
+      },
+      "features": {
+        "subtitle": "Elementy, które prowadzą od rezerwacji w aplikacji do sprzątaczki pod drzwiami.",
+        "items": {
+          "booking": {
+            "title": "Szybka rezerwacja",
+            "description": "Wybierz usługę, termin i potwierdź w mniej niż minutę."
+          },
+          "mobile": {
+            "title": "Natywne aplikacje iOS i Android",
+            "description": "Zbudowane wokół szybkości i prostoty, z powiadomieniami push na każdym etapie."
+          },
+          "web": {
+            "title": "Serwis web do rezerwacji",
+            "description": "Ten sam płynny proces rezerwacji dla użytkowników desktopowych."
+          },
+          "cms": {
+            "title": "Wewnętrzny CMS operacyjny",
+            "description": "Pełna kontrola nad zamówieniami, przypisywaniem sprzątaczy i strefami obsługi."
+          },
+          "notifications": {
+            "title": "Powiadomienia push",
+            "description": "Informują klienta od potwierdzenia aż po przyjazd sprzątaczki."
+          },
+          "payments": {
+            "title": "Zintegrowane płatności",
+            "description": "Bezpieczne płatności wbudowane bezpośrednio w proces rezerwacji."
+          }
+        }
       },
       "sections": {
         "overview": {
@@ -1641,6 +1773,9 @@
     "overview": "Przegląd",
     "challenge": "Wyzwanie",
     "solution": "Rozwiązanie",
+    "theProblem": "Problem",
+    "whatItHadToDo": "Co musiało zrobić",
+    "howWeGotThere": "Jak do tego doszliśmy",
     "techStack": "Technologie",
     "category": {
       "design": "Design",
@@ -1656,9 +1791,20 @@
     "ctaButton": "Skontaktuj się"
   },
   "footer": {
+    "hook": "Masz coś, co musi działać w poniedziałek rano?",
+    "description": "Strony internetowe, serwisy webowe i aplikacje mobilne. Projekt i development z Poznania.",
+    "clutchReviews": "2 opinie",
     "nav": "Nawigacja",
     "getInTouch": "Skontaktuj się",
     "services": "Usługi",
+    "serviceLinks": {
+      "website": "Strony internetowe",
+      "webService": "Serwisy webowe",
+      "mobileApp": "Aplikacje mobilne",
+      "mvpDevelopment": "Tworzenie MVP",
+      "improvingExisting": "Rozwój istniejących produktów",
+      "design": "Design"
+    },
     "technologies": "Technologie",
     "process": "Proces",
     "about": "O nas",
@@ -1685,10 +1831,10 @@
     "nav": "Nawigacja"
   },
   "metadata": {
-    "title": "Ortvest – platformy dla P2P, społeczności i logistyki",
-    "description": "Budujemy marketplace'y, produkty P2P i sieci członkowskie – takie, które działają dopiero, gdy obcy ludzie sobie ufają. Design, development i go-to-market z Poznania.",
-    "ogTitle": "Ortvest – najtrudniejszy nigdy nie był kod",
-    "ogDescription": "Budujemy marketplace'y, produkty P2P i sieci członkowskie – takie, które działają dopiero, gdy obcy ludzie sobie ufają."
+    "title": "Ortvest – strony, serwisy webowe i aplikacje mobilne",
+    "description": "Projektujemy i budujemy strony, serwisy webowe i aplikacje mobilne – rezerwacje, portale klienckie, iOS i Android. Jeden zespół w Poznaniu, umowy unijne.",
+    "ogTitle": "Ortvest – strony, serwisy webowe i aplikacje mobilne",
+    "ogDescription": "Projekt, wdrożenie i start z jednym zespołem w Poznaniu. Strony firmowe, rezerwacje, portale klienckie i aplikacje mobilne."
   },
   "cmsPage": {
     "hero": {
@@ -1832,10 +1978,14 @@
   "blog": {
     "label": "Notatki z praktyki",
     "title": "Czego nauczyliśmy się, budując platformy, które na początku są puste.",
-    "subtitle": "Cold starty, systemy zaufania i te części budowania marketplace'ów, których nikt nie pokazuje w case study.",
+    "subtitle": "Cold starty, systemy zaufania i te części budowania platform, których nikt nie pokazuje w case study.",
+    "latest": "Najnowszy",
     "viewAll": "Wszystkie artykuły",
     "readArticle": "Czytaj artykuł",
     "minRead": "{n} min czytania",
+    "minutes": "{n} min",
+    "bannerCount": "{n} notatek z praktyki",
+    "bannerCadence": "nowe co kilka tygodni",
     "filterAll": "Wszystkie",
     "authorFallback": "Ortvest"
   },
@@ -1860,17 +2010,24 @@
     "metadata": {
       "title": "Blog | Ortvest",
       "description": "Artykuły o designie, rozwoju i wzroście od zespołu Ortvest."
+    },
+    "relatedServices": {
+      "title": "Co budujemy wokół tego tematu",
+      "subtitle": "Jeśli to jest problem, który rozwiązujesz, warto przeczytać dalej te strony."
     }
   },
   "reviews": {
     "label": "Opinie",
     "title": "Co mówią klienci.",
-    "readMore": "Czytaj więcej",
+    "readMore": "Przeczytaj całą opinię",
     "readLess": "Zwiń",
     "ratingAriaLabel": "{n} na 5 gwiazdek",
     "avatarAlt": "Awatar {name}",
     "paginationLabel": "Paginacja opinii",
     "pageLabel": "Strona {n}",
+    "prev": "Poprzednia opinia",
+    "next": "Następna opinia",
+    "viewReview": "Zobacz opinię: {name}",
     "cta": {
       "text": "Pracowaliście z nami? Chętnie poznamy Waszą opinię.",
       "link": "Zostaw opinię"
@@ -2889,6 +3046,872 @@
       "legal": "Wysyłając formularz, akceptujesz naszą",
       "legalLink": "Politykę prywatności",
       "selectPlaceholder": "Wybierz…"
+    }
+  },
+  "servicePages": {
+    "marketplace-development": {
+      "cardSummary": "Platformy dwustronne z weryfikacją, płatnościami, sporami i narzędziami administracyjnymi, które pozwalają nimi zarządzać.",
+      "meta": {
+        "title": "Tworzenie marketplace'u | Ortvest",
+        "description": "Budujemy dwustronne marketplace'y, które przetrwają pierwszy pusty miesiąc – weryfikacja, płatności, spory i zaplecze administracyjne. Zespół w Poznaniu.",
+        "ogTitle": "Tworzenie marketplace'u dla platform, które startują puste",
+        "ogDescription": "Pięć platform uruchomionych w dniu, w którym nie było jeszcze żadnej ze stron. Zaufanie, płatności, spory i panel administracyjny od początku."
+      },
+      "hero": {
+        "eyebrow": "Tworzenie marketplace'u",
+        "title": "Tworzenie marketplace'u dla platform, które startują puste",
+        "subtitle": "Dopasowanie, płatności i spory łatwo opisać w specyfikacji, a trudno zrobić dobrze. Przeprowadziliśmy pięć platform przez dzień startu, w którym żadna ze stron jeszcze nie istniała.",
+        "ctaPrimary": "Umów audyt zimnego startu",
+        "ctaSecondary": "Zobacz platformy"
+      },
+      "problem": {
+        "title": "Marketplace to nie katalog z koszykiem.",
+        "paragraphs": [
+          "Wyceniana jest zwykle ta część, którą wszyscy znają: ogłoszenia, wyszukiwarka, płatność. To dobrze opisany problem i nie tam umierają marketplace'y. Umierają w drugim miesiącu, kiedy jedna strona się zarejestrowała, druga nie, a produkt nie daje żadnej z nich powodu, żeby wrócić.",
+          "Mechanizmy, które to naprawiają – kto przechodzi weryfikację, co profil musi udowodnić, zanim obca osoba zawrze z nim transakcję, co się dzieje, gdy rezerwacja sypie się w sobotę o 21:00 – trafiają do drugiego etapu. Zanim drugi etap nadejdzie, platforma jest już pusta, a zespół kłóci się o reklamy.",
+          "Projektujemy najpierw stan pusty. Pierwsze pytanie nie brzmi, co chcesz zbudować, tylko kto pojawia się pierwszego dnia i dlaczego zostaje, kiedy druga strona jest jeszcze szczątkowa."
+        ]
+      },
+      "included": {
+        "title": "Co naprawdę zawiera budowa marketplace'u",
+        "subtitle": "Nie lista funkcji. Elementy, które decydują, czy platforma przetrwa pierwszy rok.",
+        "items": [
+          {
+            "title": "Onboarding dwóch stron",
+            "body": "Osobne ścieżki dla podaży i popytu, przy czym każda musi być użyteczna, kiedy druga strona jest jeszcze pusta. Ta część projektowana jest zwykle na końcu i waży najwięcej."
+          },
+          {
+            "title": "Weryfikacja i stany zaufania",
+            "body": "Potwierdzanie tożsamości, reputacja, opinie i stany pośrednie – oczekujący, ograniczony, zaufany, zawieszony. W marketplace to nie jest praca zgodnościowa, to jest produkt."
+          },
+          {
+            "title": "Płatności, wypłaty i zwroty",
+            "body": "Escrow albo płatność bezpośrednia, podział środków, zwroty częściowe, harmonogramy wypłat i rozliczanie VAT dla sprzedających z różnych krajów UE. Zwroty są miejscem, w którym większość integracji okazuje się niedokończona."
+          },
+          {
+            "title": "Dopasowanie i wyszukiwanie",
+            "body": "Ranking, który działa przy pięćdziesięciu ogłoszeniach, a nie dopiero przy pięćdziesięciu tysiącach. Geografia, dostępność i trafność dostrojone do ubogiego katalogu."
+          },
+          {
+            "title": "Spory i moderacja",
+            "body": "Kolejki moderacyjne, ścieżki sporów, obsługa dowodów i ręczne nadpisanie każdej automatycznej decyzji. Twój zespół operacyjny potrzebuje wszystkich czterech rzeczy w pierwszym miesiącu."
+          },
+          {
+            "title": "Narzędzia administracyjne",
+            "body": "Wcielanie się w konto użytkownika, zwroty, role i uprawnienia, dziennik zdarzeń. Nigdy nie trafia do portfolio i decyduje o tym, czy platformą da się operować, czy tylko ją pokazywać."
+          }
+        ]
+      },
+      "process": {
+        "title": "Jak przebiega budowa",
+        "subtitle": "Cotygodniowe demo na działającym oprogramowaniu. Bez prezentacji statusowych.",
+        "steps": [
+          {
+            "title": "Audyt zimnego startu",
+            "body": "Dziewięćdziesiąt minut o tym, kto dołącza pierwszy i dlaczego zostaje. Czasem uczciwą odpowiedzią jest to, że platforma nie jest ci jeszcze potrzebna – i to powiemy.",
+            "duration": "Tydzień 0"
+          },
+          {
+            "title": "Najpierw przepływy, potem piksele",
+            "body": "Ścieżki użytkownika, przypadki brzegowe i stany zaufania rozrysowane od początku do końca, razem z tym, jak wygląda każdy ekran bez danych. Tutaj projekty są wygrywane albo przegrywane.",
+            "duration": "2-3 tygodnie"
+          },
+          {
+            "title": "Budowa w tygodniowych sprintach",
+            "body": "Działające środowisko staging od pierwszego sprintu, demo co tydzień. Narzędzia administracyjne powstają razem z funkcją, a nie są obiecywane na później.",
+            "duration": "8-16 tygodni"
+          },
+          {
+            "title": "Start i pierwsze dziewięćdziesiąt dni",
+            "body": "Instrumentacja, procedura moderacji, z której twój zespół faktycznie skorzysta, i zmiany wymuszone przez pierwszych realnych użytkowników. Zostajemy na ten etap.",
+            "duration": "Na bieżąco"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Platformy, które przeprowadziliśmy przez dzień pierwszy",
+        "subtitle": "Każda z nich wystartowała bez niczego po obu stronach.",
+        "cta": "Wszystkie case studies"
+      },
+      "stack": {
+        "title": "Na czym to budujemy",
+        "subtitle": "Nudne, dobrze udokumentowane technologie, które rozpozna twój następny programista.",
+        "groups": [
+          {
+            "title": "Produkt",
+            "items": ["Next.js", "React", "TypeScript", "React Native"]
+          },
+          {
+            "title": "Backend",
+            "items": ["Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis"]
+          },
+          {
+            "title": "Operacje",
+            "items": ["AWS", "Docker", "CI/CD", "Monitoring", "Operatorzy płatności"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Pytania, które dostajemy przed budową marketplace'u",
+        "items": [
+          {
+            "q": "Ile trwa zbudowanie marketplace'u?",
+            "a": "Dwustronne MVP z weryfikacją, płatnościami i działającym panelem administracyjnym to trzy do czterech miesięcy z naszym zespołem. Wycena na sześć tygodni oznacza albo katalog z doklejoną płatnością, albo brak warstwy zaufania – za którą zapłacisz w drugim miesiącu."
+          },
+          {
+            "q": "Co wpływa na koszt budowy marketplace'u?",
+            "a": "Cztery rzeczy, w tej kolejności: ile stanów weryfikacji i zaufania potrzebuje produkt, jak złożony jest przepływ pieniędzy (escrow, podziały, VAT transgraniczny), ile moderacji i obsługi sporów wymaga twoja kategoria oraz ile narzędzi administracyjnych zespół operacyjny potrzebuje na starcie. Zakres i wyłączenia spisujemy przed podpisaniem umowy – zwykle to właśnie tam rozjeżdżają się wyceny."
+          },
+          {
+            "q": "Czy możecie pracować na istniejącej platformie zamiast pisać ją od nowa?",
+            "a": "Często tak. Audytujemy to, co jest, mówimy wprost, które części są w porządku strukturalnie, a które trzeba wymienić, i kiedy łatanie wychodzi taniej niż przepisanie. Robiliśmy jedno i drugie, odradzaliśmy też przepisywanie."
+          },
+          {
+            "q": "Jak rozwiązujecie problem zimnego startu?",
+            "a": "Nie funkcjami. Ustalamy, którą stronę trudniej pozyskać, projektujemy produkt tak, żeby ta strona miała wartość przy pustej drugiej, i dopasowujemy do tego plan startu. Jeśli właściwą odpowiedzią jest etap obsługiwany ręcznie z arkuszem zamiast platformy, powiemy to na pierwszej rozmowie."
+          },
+          {
+            "q": "Czy budujecie też aplikacje mobilne?",
+            "a": "Tak. Większość marketplace'ów prędzej czy później potrzebuje przynajmniej jednej aplikacji natywnej, zwykle po stronie podaży. Powiemy też, kiedy responsywna aplikacja webowa kupuje ci kolejne pół roku i aplikacja może poczekać."
+          },
+          {
+            "q": "Do kogo należy kod?",
+            "a": "Do ciebie, od pierwszego commita. Czysta architektura, testowany kod, udokumentowane systemy, w twoich repozytoriach. Pracujemy na umowach unijnych ze spółki w Poznaniu, więc dane i prawa własności intelektualnej zostają w UE."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Warto przeczytać, zanim wyślesz brief",
+        "subtitle": "Czego nauczyliśmy się, budując platformy, które startują puste."
+      },
+      "cta": {
+        "title": "Powiedz nam, kto pojawia się pierwszego dnia.",
+        "body": "Trzydzieści minut, bez sprzedaży. Jeśli marketplace to zły kształt dla tego, co robisz, to też jest użyteczna odpowiedź.",
+        "button": "Umów rozmowę"
+      }
+    },
+    "p2p-platform-development": {
+      "cardSummary": "Produkty peer-to-peer, w których transakcję zawierają obcy ludzie: tożsamość, kaucje, przekazanie, szkody i spory.",
+      "meta": {
+        "title": "Tworzenie platform P2P | Ortvest",
+        "description": "Budowa platform peer-to-peer: tożsamość i weryfikacja, kaucje, przekazanie, zgłoszenia szkód i rozstrzyganie sporów między obcymi osobami. Zespół w Poznaniu.",
+        "ogTitle": "Tworzenie platform P2P – zaufanie jest produktem",
+        "ogDescription": "W produkcie peer-to-peer weryfikacja, kaucje i obsługa sporów to nie zaplecze. To jest to, za co użytkownicy płacą."
+      },
+      "hero": {
+        "eyebrow": "Tworzenie platform P2P",
+        "title": "Tworzenie platform P2P, w których zaufanie jest produktem",
+        "subtitle": "Dwie obce osoby, jedna rzecz i realne pieniądze, które przechodzą z rąk do rąk. Trudna część to nie karta ogłoszenia – to wszystko, co dzieje się, kiedy przekazanie idzie źle.",
+        "ctaPrimary": "Umów audyt zimnego startu",
+        "ctaSecondary": "Zobacz platformy"
+      },
+      "problem": {
+        "title": "Produkt P2P to marketplace bez siatki zabezpieczającej.",
+        "paragraphs": [
+          "W zarządzanym marketplace to operator stoi za transakcją. W produkcie peer-to-peer ryzyko biorą na siebie dwaj użytkownicy, więc każdy mechanizm dający im poczucie bezpieczeństwa jest nośny. Wyjmij go, a ogłoszenia przestaną się konwertować.",
+          "To zmienia zakres pierwszego dnia. Tożsamość na tyle mocna, żeby obca osoba oddała wiertarkę, samochód albo klucze do mieszkania. Kaucje, które da się zablokować i zwolnić bez zgłoszenia do supportu. Rejestrowanie dowodów przy przekazaniu, bo roszczenia o szkody to nie przypadek brzegowy, tylko cotygodniowa rzeczywistość.",
+          "Zbudowaliśmy to dwa razy na serio – platformę wypożyczania rzeczy z prawdziwą logistyką i produkt usługowy na żądanie, w którym osoba pod twoimi drzwiami nie jest pracownikiem. Większość pracy siedzi w stanach, których nikt nie pokazuje na demie."
+        ]
+      },
+      "included": {
+        "title": "Co musi obejmować budowa P2P",
+        "subtitle": "Mechanizmy, dzięki którym dwie obce osoby zawierają transakcję bez ciebie w środku każdej wymiany.",
+        "items": [
+          {
+            "title": "Tożsamość i weryfikacja",
+            "body": "Sprawdzanie dokumentów, weryfikacja telefonu i adresu e-mail, porównanie ze zdjęciem tam, gdzie kategoria tego wymaga, i stopniowany model zaufania zamiast jednej odznaki."
+          },
+          {
+            "title": "Kaucje i zablokowane środki",
+            "body": "Preautoryzacje, kaucje, zasady zwalniania i częściowe pobrania przy szkodzie. Przepływ musi działać bez człowieka zatwierdzającego każde zwolnienie i nadal dać się odkręcić, gdy coś pójdzie źle."
+          },
+          {
+            "title": "Przekazanie i dowody",
+            "body": "Zdjęcia przy odbiorze i zwrocie, datowany opis stanu i wspólna historia widoczna dla obu stron. To zamienia spór z kłótni w decyzję."
+          },
+          {
+            "title": "Reputacja, która coś znaczy",
+            "body": "Dwustronne opinie, których nie da się ustawić jednej stronie, historia anulowań i reputacja przeżywająca założenie nowego konta."
+          },
+          {
+            "title": "Spory i rozstrzyganie",
+            "body": "Ustrukturyzowane zgłoszenia, przegląd dowodów, rozstrzygnięcia częściowe i ścieżka eskalacji. Plus strona administracyjna, bo ktoś z twojego zespołu rozstrzyga to co tydzień."
+          },
+          {
+            "title": "Logistyka tam, gdzie występuje",
+            "body": "Okna odbioru, przekazanie kurierowi, obsługa nieodebrania i ten niewygodny stan pośredni, w którym rzecz jest w drodze i nikt za nią nie odpowiada."
+          }
+        ]
+      },
+      "process": {
+        "title": "Jak przebiega budowa",
+        "subtitle": "Najpierw mechanizmy zaufania, bo wszystko inne od nich zależy.",
+        "steps": [
+          {
+            "title": "Mapa ryzyka i zaufania",
+            "body": "Co może pójść źle między dwoma użytkownikami w twojej kategorii, jak często i co produkt robi w każdym z tych przypadków. To napędza całą budowę.",
+            "duration": "Tydzień 0-1"
+          },
+          {
+            "title": "Najpierw przepływy, potem piksele",
+            "body": "Każdy stan zaufania rozrysowany od początku do końca: niezweryfikowany, oczekujący, ograniczony, zaufany, zawieszony, w sporze. Razem z tym, co pokazuje każdy ekran przy niemal pustym katalogu.",
+            "duration": "2-3 tygodnie"
+          },
+          {
+            "title": "Budowa w tygodniowych sprintach",
+            "body": "Weryfikacja, przepływ pieniędzy i obsługa sporów powstają wcześnie, a nie na końcu, bo zmieniają model danych i nie chcesz ich doklejać później.",
+            "duration": "10-18 tygodni"
+          },
+          {
+            "title": "Start i pierwsze spory",
+            "body": "Pierwsze realne zgłoszenia uczą więcej niż badania. Zostajemy na ten etap i dostrajamy reguły razem z twoim zespołem operacyjnym.",
+            "duration": "Na bieżąco"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Produkty peer-to-peer, które wypuściliśmy",
+        "subtitle": "W każdym z nich są obcy ludzie, pieniądze i fizyczne przekazanie.",
+        "cta": "Wszystkie case studies"
+      },
+      "stack": {
+        "title": "Na czym to budujemy",
+        "subtitle": "Nudne, dobrze udokumentowane technologie, które rozpozna twój następny programista.",
+        "groups": [
+          {
+            "title": "Produkt",
+            "items": ["Next.js", "React", "TypeScript", "React Native"]
+          },
+          {
+            "title": "Backend",
+            "items": ["Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis"]
+          },
+          {
+            "title": "Warstwa zaufania",
+            "items": ["Dostawcy tożsamości", "Blokady płatności", "Dowody w postaci zdjęć", "Dziennik zdarzeń"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Pytania, które dostajemy przed budową P2P",
+        "items": [
+          {
+            "q": "Czym platforma P2P różni się od marketplace'u?",
+            "a": "Marketplace może działać z zarządzaną stroną podaży, gdzie ryzyko bierze na siebie operator. Produkt peer-to-peer stawia po obu stronach osoby prywatne, więc tożsamość, kaucje i rozstrzyganie sporów przestają być zapleczem, a stają się rdzeniem produktu. Opisaliśmy to szczegółowo na blogu."
+          },
+          {
+            "q": "Ile trwa budowa platformy P2P?",
+            "a": "Cztery do pięciu miesięcy na pierwszą wersję, która porządnie obsługuje weryfikację, zablokowane środki i spory. To dłużej niż zarządzany marketplace, bo warstwy zaufania nie da się odłożyć – kształtuje model danych."
+          },
+          {
+            "q": "Czy weryfikacja tożsamości jest potrzebna od pierwszego dnia?",
+            "a": "Prawie zawsze, w jakiejś formie. Siła weryfikacji powinna odpowiadać temu, co jest wymieniane: numer telefonu wystarczy przy wymianie drobiazgów, sprawdzenie dokumentu nie jest opcjonalne, kiedy ktoś oddaje kluczyki do auta. Pomożemy dobrać najsłabszą weryfikację, jaką twoja kategoria toleruje, bo każdy dodatkowy krok kosztuje cię podaż."
+          },
+          {
+            "q": "Jak obsługujecie szkody i spory?",
+            "a": "Najpierw dowody: datowany opis stanu przy przekazaniu z obu stron. Potem ustrukturyzowane zgłoszenie z rozstrzygnięciami częściowymi zamiast zero-jedynkowego zwrotu i kolejka, którą twój zespół jest w stanie przerobić. Produkt powinien sprawiać, że większość sporów da się rozstrzygnąć bez telefonu."
+          },
+          {
+            "q": "Czy da się zintegrować kaucje z naszym operatorem płatności?",
+            "a": "Zwykle tak. Kaucje, preautoryzacje i częściowe pobrania obsługują wszyscy więksi operatorzy, przy realnych różnicach w tym, jak długo trzyma się autoryzacja i jak zachowuje się częściowe pobranie. Sprawdzamy to pod twoją kategorię, zanim zwiążemy się z jednym dostawcą."
+          },
+          {
+            "q": "A jeśli nie jesteśmy pewni, czy model P2P jest właściwy?",
+            "a": "To jest pierwsza rzecz do rozstrzygnięcia. Niektóre produkty działają lepiej jako usługa zarządzana z dostawcami, których kontrolujesz, przynajmniej przez pierwszy rok. Wolimy stracić projekt na tej rozmowie niż patrzeć, jak staje w piątym miesiącu."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Warto przeczytać, zanim wyślesz brief",
+        "subtitle": "Czego nauczyliśmy się, budując produkty, w których transakcje zawierają obcy ludzie."
+      },
+      "cta": {
+        "title": "Powiedz nam, co wymieniają między sobą dwie obce osoby.",
+        "body": "Trzydzieści minut, bez sprzedaży. Powiemy, które mechanizmy zaufania są w twojej kategorii nośne, a które są teatrem.",
+        "button": "Umów rozmowę"
+      }
+    },
+    "community-platform-development": {
+      "cardSummary": "Prywatne sieci członkowskie i platformy klubowe: role, katalogi, wydarzenia, komunikacja i płatne członkostwo.",
+      "meta": {
+        "title": "Platformy dla społeczności i klubów | Ortvest",
+        "description": "Budujemy prywatne sieci członkowskie i platformy klubowe – zweryfikowane katalogi, role, wydarzenia, komunikacja w czasie rzeczywistym i składki. Zespół w Poznaniu.",
+        "ogTitle": "Tworzenie platform dla społeczności i sieci członkowskich",
+        "ogDescription": "Prywatne sieci, w których członkowie muszą się nawzajem znaleźć i sobie zaufać: katalogi, role, wydarzenia, komunikacja i płatne członkostwo."
+      },
+      "hero": {
+        "eyebrow": "Platformy dla społeczności",
+        "title": "Tworzenie platform dla społeczności i sieci członkowskich",
+        "subtitle": "Prywatna sieć jest nic niewarta, dopóki nie ma w niej właściwych osób i nie ma niewłaściwych. Członkostwo, role, katalogi i wydarzenia zbudowane tak, żeby mała społeczność sprawiała wrażenie pełnej, a nie pustej.",
+        "ctaPrimary": "Umów rozmowę wstępną",
+        "ctaSecondary": "Zobacz platformy"
+      },
+      "problem": {
+        "title": "Zaangażowania nie da się dodać później jako funkcji.",
+        "paragraphs": [
+          "Większość platform społecznościowych jest opisywana jako forum plus lista członków i startuje w ciszę. Dwustu członków i zero wpisów to normalny wynik, a nie pech. Ludzie nie piszą do pustego pokoju i nie wracają, żeby sprawdzić, czy się zapełnił.",
+          "Zmienia to struktura: powód, żeby otworzyć produkt w tym tygodniu, katalog, który warto przeszukać, i role, które czynią część członków widocznie odpowiedzialnymi za utrzymanie ruchu. Wydarzenia i cykliczne momenty robią dla retencji więcej niż jakiekolwiek ustawienie powiadomień.",
+          "Budowaliśmy prywatne sieci klubowe, w których członkowie są weryfikowani względem realnej listy członkowskiej, i platformy, w których sam katalog jest produktem. Cicha praca siedzi w uprawnieniach, prywatności i moderacji, z której twój zarząd faktycznie skorzysta."
+        ]
+      },
+      "included": {
+        "title": "Czego potrzebuje działająca platforma społecznościowa",
+        "subtitle": "Czegoś więcej niż lista członków i tablica, na której nikt nie pisze.",
+        "items": [
+          {
+            "title": "Członkostwo i dostęp",
+            "body": "Zaproszenie, wniosek albo weryfikacja względem istniejącej listy członków, z kolejkami zatwierdzeń i stanami wokół nich – oczekujący, aktywny, wygasły, zawieszony."
+          },
+          {
+            "title": "Role i uprawnienia",
+            "body": "Zarząd, moderator, członek, gość. Inna widoczność dla każdej roli, aż do poziomu pojedynczego pola w profilu, bo prywatność jest powodem, dla którego ludzie dołączyli do zamkniętej sieci."
+          },
+          {
+            "title": "Katalog, który warto przeszukać",
+            "body": "Ustrukturyzowane profile, filtry odpowiadające temu, jak członkowie naprawdę siebie szukają, i ustawienia pozwalające decydować, co jest dla kogo widoczne."
+          },
+          {
+            "title": "Wydarzenia i cykliczne momenty",
+            "body": "Terminarz, zapisy, limity miejsc, listy rezerwowe i przypomnienia. Kalendarz jest zwykle powodem, dla którego członkowie otwierają produkt częściej niż raz w miesiącu."
+          },
+          {
+            "title": "Komunikacja w czasie rzeczywistym",
+            "body": "Kanały, wiadomości prywatne i ogłoszenia z niskim opóźnieniem, plus narzędzia moderacji potrzebne, kiedy rozmowa schodzi na manowce."
+          },
+          {
+            "title": "Rozliczanie składek",
+            "body": "Cykliczne składki, poziomy członkostwa, odnowienia, okresy karencji i faktury, których potrzebuje skarbnik. Razem z tym, co dzieje się z dostępem, gdy płatność nie przechodzi."
+          }
+        ]
+      },
+      "process": {
+        "title": "Jak przebiega budowa",
+        "subtitle": "Zaczynamy od tego, kto może wejść i co może zobaczyć.",
+        "steps": [
+          {
+            "title": "Model członkostwa i prywatności",
+            "body": "Kto dołącza, kto zatwierdza, kto co widzi. Pomyłka tutaj przenosi się na każdą późniejszą funkcję.",
+            "duration": "Tydzień 0-1"
+          },
+          {
+            "title": "Najpierw przepływy, potem piksele",
+            "body": "Dołączanie, katalog, wydarzenia i komunikacja rozrysowane od początku do końca, razem z tym, jak produkt wygląda przy trzydziestu członkach, a nie trzech tysiącach.",
+            "duration": "2-3 tygodnie"
+          },
+          {
+            "title": "Budowa w tygodniowych sprintach",
+            "body": "Cotygodniowe demo na działającym środowisku, przy czym narzędzia dla zarządu powstają równolegle z funkcjami dla członków.",
+            "duration": "8-14 tygodni"
+          },
+          {
+            "title": "Start z pierwszą grupą",
+            "body": "Zasilamy katalog, prowadzimy pierwsze wydarzenia wewnątrz produktu i dostrajamy go na podstawie tego, co robi pierwsza setka członków.",
+            "duration": "Na bieżąco"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Sieci członkowskie, które zbudowaliśmy",
+        "subtitle": "Zamknięte społeczności, w których dostęp i zaufanie są produktem.",
+        "cta": "Wszystkie case studies"
+      },
+      "stack": {
+        "title": "Na czym to budujemy",
+        "subtitle": "Nudne, dobrze udokumentowane technologie, które rozpozna twój następny programista.",
+        "groups": [
+          {
+            "title": "Produkt",
+            "items": ["Next.js", "React", "TypeScript", "React Native"]
+          },
+          {
+            "title": "Backend",
+            "items": ["Node.js", "NestJS", "MongoDB", "PostgreSQL", "Redis"]
+          },
+          {
+            "title": "Czas rzeczywisty",
+            "items": ["WebSockets", "Powiadomienia push", "Obsługa mediów", "Wyszukiwanie"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Pytania, które dostajemy przed budową platformy społecznościowej",
+        "items": [
+          {
+            "q": "Dlaczego nie użyć gotowego narzędzia dla społeczności?",
+            "a": "Jeśli gotowe narzędzie pasuje, użyj go – powiemy to na pierwszej rozmowie. Własne rozwiązanie staje się właściwą odpowiedzią, kiedy zasady członkostwa, prywatność albo rozliczenia są specyficzne dla twojej organizacji, kiedy produktem jest sam katalog albo kiedy społeczność ma żyć wewnątrz czegoś, co już prowadzisz."
+          },
+          {
+            "q": "Ile trwa budowa platformy dla społeczności?",
+            "a": "Dwa i pół do czterech miesięcy na pierwszą wersję z członkostwem, katalogiem, wydarzeniami i komunikacją. Rozliczenia i aplikacje mobilne zwykle przychodzą po tym, jak pierwsza grupa jest już w środku i aktywna."
+          },
+          {
+            "q": "Jak uniknąć startu w ciszę?",
+            "a": "Projektując pod trzydziestu członków, a nie trzy tysiące, dając zarządowi narzędzia do zasilania i prowadzenia aktywności oraz zakotwiczając produkt w cyklicznych wydarzeniach. Planujemy z tobą też pierwsze dziewięćdziesiąt dni, bo samo oprogramowanie nie tworzy zaangażowania."
+          },
+          {
+            "q": "Czy członkowie mogą mieć różne poziomy widoczności?",
+            "a": "Tak i powinni. Modelujemy uprawnienia aż do pojedynczych pól profilu, więc członek może być widoczny dla zarządu, a niewidoczny dla każdego gościa. Ustawienia prywatności są zwykle pierwszą rzeczą, którą członkowie sprawdzają."
+          },
+          {
+            "q": "Czy obsługujecie płatne członkostwo?",
+            "a": "Tak – cykliczne składki, poziomy, odnowienia i nieudane płatności, razem z tym, co dzieje się z dostępem w okresie karencji. Budujemy też stronę dla skarbnika, bo tam najczęściej kończą się możliwości gotowych narzędzi."
+          },
+          {
+            "q": "Czy możecie pracować na naszej istniejącej bazie członków?",
+            "a": "Zwykle tak. Importujemy i uzgadniamy istniejące listy, utrzymujemy źródło nadrzędne tam, gdzie takie jest, i weryfikujemy nowych członków względem niego, zamiast prosić zarząd o ręczne zatwierdzanie wszystkich."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Warto przeczytać, zanim wyślesz brief",
+        "subtitle": "Czego nauczyliśmy się, budując produkty startujące z pustym pokojem."
+      },
+      "cta": {
+        "title": "Powiedz nam, kto jest w tym pokoju.",
+        "body": "Trzydzieści minut, bez sprzedaży. Powiemy, czy to wymaga własnego oprogramowania, czy narzędzia, które kupisz w poniedziałek.",
+        "button": "Umów rozmowę"
+      }
+    },
+    "mvp-development": {
+      "cardSummary": "Pierwsza wersja na tyle wąska, żeby wypuścić ją w tygodnie, i na tyle uczciwa, żeby pokazać, czy pomysł działa.",
+      "meta": {
+        "title": "Tworzenie MVP dla produktów dwustronnych | Ortvest",
+        "description": "Tworzenie MVP dla marketplace'ów, produktów P2P i sieci członkowskich: wąska pierwsza wersja, która odpowiada na realne pytanie, na architekturze, którą da się zostawić.",
+        "ogTitle": "Tworzenie MVP dla produktów dwustronnych",
+        "ogDescription": "Pierwsza wersja na tyle wąska, żeby wypuścić ją w tygodnie, na tyle uczciwa, żeby odpowiedzieć na pytanie, i na kodzie, którego nie trzeba wyrzucić."
+      },
+      "hero": {
+        "eyebrow": "Tworzenie MVP",
+        "title": "Tworzenie MVP dla produktów dwustronnych",
+        "subtitle": "MVP to nie tańsza wersja docelowego produktu. To najmniejsza rzecz, która odpowiada na pytanie, co do którego naprawdę nie masz pewności – a w produktach dwustronnych tym pytaniem prawie nigdy nie jest lista funkcji.",
+        "ctaPrimary": "Umów rozmowę wstępną",
+        "ctaSecondary": "Zobacz platformy"
+      },
+      "problem": {
+        "title": "Większość MVP sprawdza niewłaściwą rzecz.",
+        "paragraphs": [
+          "Zespoły budują cienką wersję każdej funkcji i to wypuszczają. Wraca mglisty sygnał: trochę rejestracji, mało użycia, zero jasności dlaczego. Zakres powstał z tego, co łatwo było wyciąć, a nie z tego, co było naprawdę niepewne.",
+          "W produkcie dwustronnym niepewność prawie zawsze siedzi po jednej stronie. Czy zdobędziemy podaż bez popytu. Czy ktokolwiek przejdzie weryfikację, zanim będzie co kupić. Czy druga strona wróci po tygodniu. Dobre MVP jest ukształtowane wokół tego pytania i bezwzględne wobec całej reszty.",
+          "Dość często zajmujemy też przeciwne stanowisko: czasem pierwsza wersja nie powinna być oprogramowaniem. Arkusz, grupa na czacie i człowiek dopasowujący ręcznie odpowiedzą szybciej i taniej – i powiemy, kiedy tak właśnie jest."
+        ]
+      },
+      "included": {
+        "title": "Co rozumiemy przez MVP",
+        "subtitle": "Wąskie w zakresie, nie niechlujne w wykonaniu.",
+        "items": [
+          {
+            "title": "Jedno pytanie, ustalone na starcie",
+            "body": "Spisujemy, co ta wersja ma udowodnić i jaki wynik oznacza „nie”. Późniejsze spory o zakres rozstrzygamy względem tego jednego zdania."
+          },
+          {
+            "title": "Jedna strona zrobiona porządnie",
+            "body": "Zwykle trudniejsza strona dostaje pełne doświadczenie, a druga minimum pozwalające na transakcję. Równy podział wysiłku kończy się tym, że żadna strona nie jest używalna."
+          },
+          {
+            "title": "Realne mechanizmy zaufania, w wersji minimalnej",
+            "body": "Najsłabsza weryfikacja, jaką twoja kategoria toleruje, z ręcznym procesem za nią tam, gdzie automatyzacja nie jest jeszcze warta budowania."
+          },
+          {
+            "title": "Ręcznie tam, gdzie ręcznie jest taniej",
+            "body": "Dopasowywanie, zatwierdzenia i wypłaty mogą przez pierwsze miesiące iść przez panel i człowieka. Budujemy panel, nie automatyzację."
+          },
+          {
+            "title": "Instrumentacja od pierwszego dnia",
+            "body": "Zdarzenia, które odpowiadają na pytanie, a nie dashboard metryk próżności. Jeśli MVP nie potrafi powiedzieć, dlaczego się nie udało, nie udało się podwójnie."
+          },
+          {
+            "title": "Architektura, którą da się zostawić",
+            "body": "Czysty, testowany, udokumentowany kod w twoich repozytoriach. Wąski zakres to decyzja produktowa, a nie wymówka dla kodu, który następny programista będzie chciał skasować."
+          }
+        ]
+      },
+      "process": {
+        "title": "Jak przebiega budowa",
+        "subtitle": "Osiem do dwunastu tygodni od pierwszej rozmowy do realnych użytkowników, jeśli zakres się trzyma.",
+        "steps": [
+          {
+            "title": "Zdefiniowanie pytania",
+            "body": "Dziewięćdziesiąt minut na ustalenie, co ta wersja ma udowodnić i która strona niesie ryzyko. Zwykle połowa briefu odpada na tym etapie.",
+            "duration": "Tydzień 0"
+          },
+          {
+            "title": "Najpierw przepływy, potem piksele",
+            "body": "Tylko ścieżki służące temu pytaniu, rozrysowane od początku do końca, razem ze stanami pustymi, które dominują w pierwszych tygodniach.",
+            "duration": "1-2 tygodnie"
+          },
+          {
+            "title": "Budowa w tygodniowych sprintach",
+            "body": "Działające oprogramowanie od pierwszego sprintu, demo co tydzień i zakres wymieniany na termin jawnie, a nie po cichu kosztem jakości.",
+            "duration": "6-10 tygodni"
+          },
+          {
+            "title": "Start i odczytanie odpowiedzi",
+            "body": "Oprzyrządowany start, a potem sesja o tym, co mówią dane: kontynuujemy, zmieniamy kształt albo kończymy. Zakończenie jest pełnoprawnym wynikiem i powiemy to wprost.",
+            "duration": "Na bieżąco"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Pierwsze wersje, które stały się produktami",
+        "subtitle": "Każda zaczynała wąsko i zachowała swój kod.",
+        "cta": "Wszystkie case studies"
+      },
+      "stack": {
+        "title": "Na czym to budujemy",
+        "subtitle": "Ten sam stack co w pełnych wdrożeniach – MVP nie jest powodem, żeby sięgać po narzędzia na wyrzucenie.",
+        "groups": [
+          {
+            "title": "Produkt",
+            "items": ["Next.js", "React", "TypeScript", "React Native"]
+          },
+          {
+            "title": "Backend",
+            "items": ["Node.js", "NestJS", "PostgreSQL", "MongoDB"]
+          },
+          {
+            "title": "Operacje",
+            "items": ["AWS", "CI/CD", "Analityka", "Monitoring błędów"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Pytania, które dostajemy przed budową MVP",
+        "items": [
+          {
+            "q": "Ile trwa zbudowanie MVP?",
+            "a": "Osiem do dwunastu tygodni dla produktu dwustronnego, jeśli zakres się trzyma. Zmienną nie jest nasze tempo, tylko to, jak szybko zostanie zdefiniowane pytanie i jak twardo zakres pozostanie zamknięty."
+          },
+          {
+            "q": "Co wpływa na koszt MVP?",
+            "a": "Przede wszystkim dyscyplina zakresu. Dalej: ile weryfikacji i przepływu pieniędzy pierwsza wersja naprawdę potrzebuje, czy pełnego doświadczenia wymaga jedna strona czy obie i czy aplikacja natywna jest konieczna na starcie. Zakres i wyłączenia spisujemy przed podpisaniem umowy."
+          },
+          {
+            "q": "Czy da się zbudować to szybciej i taniej narzędziami AI?",
+            "a": "Przy prototypach i narzędziach wewnętrznych często tak. Przy produkcie, który obraca cudzymi pieniędzmi i tożsamością, audyty budów wspieranych przez AI pokazują u nas zwykle te same luki: brak modelu uprawnień, brak narzędzi administracyjnych i model danych, który nie uniesie drugiej funkcji. Opisaliśmy, ile naprawdę kosztuje taka przebudowa."
+          },
+          {
+            "q": "Czy po MVP trzeba będzie pisać wszystko od nowa?",
+            "a": "Nie, jeśli jest zbudowane porządnie. Wąski zakres to decyzja produktowa, a nie przyzwolenie na kod, którego nikt nie rozwinie. Kilka naszych MVP po dwóch latach działa na tym samym kodzie."
+          },
+          {
+            "q": "A jeśli MVP pokaże, że pomysł nie działa?",
+            "a": "To znaczy, że zrobiło swoje za ułamek kosztu dowiedzenia się tego później. Wolimy być studiem, które powiedziało to w dziesiątym tygodniu, niż takim, które fakturowało do dwudziestego miesiąca."
+          },
+          {
+            "q": "Czy bierzecie udziały zamiast wynagrodzenia?",
+            "a": "Czasem, w ramach partnerstwa, a nie standardowej umowy. Jest o tym osobna strona."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Warto przeczytać, zanim wyślesz brief",
+        "subtitle": "O zakresie, wycenach i tym, ile naprawdę powinna kosztować pierwsza wersja."
+      },
+      "cta": {
+        "title": "Powiedz nam, czego nie jesteś pewien.",
+        "body": "Trzydzieści minut, bez sprzedaży. Jeśli najszybszą drogą do odpowiedzi nie jest oprogramowanie, powiemy to w pierwszej kolejności.",
+        "button": "Umów rozmowę"
+      }
+    },
+    "mobile-app-development": {
+      "cardSummary": "Aplikacje iOS i Android dla marketplace'ów, produktów na żądanie i zespołów pracujących w terenie.",
+      "meta": {
+        "title": "Tworzenie aplikacji mobilnych dla marketplace'ów | Ortvest",
+        "description": "Tworzenie aplikacji iOS i Android dla marketplace'ów, produktów na żądanie i zespołów terenowych – rezerwacje, śledzenie, płatności i praca offline. Zespół w Poznaniu.",
+        "ogTitle": "Tworzenie aplikacji mobilnych dla marketplace'ów i produktów na żądanie",
+        "ogDescription": "Aplikacje natywne i cross-platform dla produktów, w których praca dzieje się z dala od biurka: rezerwacje, śledzenie, płatności i odporność na brak zasięgu."
+      },
+      "hero": {
+        "eyebrow": "Aplikacje mobilne",
+        "title": "Tworzenie aplikacji mobilnych dla marketplace'ów i produktów na żądanie",
+        "subtitle": "Klient rezerwuje z telefonu. Osoba wykonująca pracę też ma telefon, często przy słabym zasięgu i z jedną wolną ręką. To są dwie różne aplikacje, a większość briefów przewiduje budżet tylko na pierwszą.",
+        "ctaPrimary": "Umów rozmowę wstępną",
+        "ctaSecondary": "Zobacz platformy"
+      },
+      "problem": {
+        "title": "Pytanie rzadko brzmi: natywnie czy cross-platform.",
+        "paragraphs": [
+          "Zespoły przychodzą z decyzją technologiczną już postawioną jako ta trudna. W praktyce jest najłatwiejsza i wynika z kilku faktów: jak często aplikacja musi działać bez połączenia, czy potrzebuje sprzętu, do którego web nie sięga, i jak szybko produkt wciąż musi się zmieniać.",
+          "Realny koszt leży gdzie indziej. Powiadomienia push, które przychodzą wtedy, kiedy mają znaczenie, a nie o drugiej w nocy. Stan, który przeżyje martwą strefę i ubity proces aplikacji. Weryfikacja w App Store, kiedy wydanie jest spięte z datą kampanii. Aplikacja dla wykonawcy, używalna w rękawicach i przy dwudziestu procentach baterii.",
+          "Budujemy stronę klienta i stronę operacyjną jako jeden system, bo dzielą backend, model uprawnień i tę samą kolejkę wsparcia. Wypuszczanie ich jako osobnych projektów to sposób na to, żeby się rozjechały."
+        ]
+      },
+      "included": {
+        "title": "Co budujemy w warstwie mobilnej",
+        "subtitle": "Oba końce produktu na żądanie, nie tylko ten ładny.",
+        "items": [
+          {
+            "title": "Aplikacje dla klientów",
+            "body": "Rezerwacja, terminarz, zarządzanie adresami i płatnościami, historia zamówień i status na żywo. Projektowane tak, żeby domknąć rezerwację w mniej niż minutę, bo to ta liczba decyduje o konwersji."
+          },
+          {
+            "title": "Aplikacje dla wykonawców i operatorów",
+            "body": "Kolejka zleceń, przyjęcie i odrzucenie, przekazanie do nawigacji, potwierdzenie wykonania zdjęciem i ewidencja czasu. Zbudowane pod obsługę jedną ręką i słaby zasięg."
+          },
+          {
+            "title": "Odporność na brak sieci",
+            "body": "Stan lokalny, kolejkowanie akcji i rozwiązywanie konfliktów po powrocie połączenia. Aplikacja terenowa, która wymaga pełnego zasięgu, nie jest aplikacją terenową."
+          },
+          {
+            "title": "Powiadomienia, które mają sens",
+            "body": "Push, godziny ciszy, grupowanie i linki prowadzące do właściwego ekranu. Plus zapasowe ścieżki na wypadek wyłączonych powiadomień, a wyłącza je sporo osób."
+          },
+          {
+            "title": "Płatności na urządzeniu",
+            "body": "Zapisane metody, preautoryzacje, napiwki, zwroty i potwierdzenia, z regułami płatności obu platform obsłużonymi z góry, a nie odkrywanymi w trakcie weryfikacji."
+          },
+          {
+            "title": "Wydania i obsługa sklepów",
+            "body": "Konta w sklepach, cykle weryfikacji, stopniowe wdrożenia, raportowanie awarii i możliwość wypuszczenia poprawki w tym samym tygodniu, bez czekania w kolejce."
+          }
+        ]
+      },
+      "process": {
+        "title": "Jak przebiega budowa",
+        "subtitle": "Najpierw decyzja o platformie, potem jeden system z dwoma frontami.",
+        "steps": [
+          {
+            "title": "Decyzja o platformie",
+            "body": "Web, cross-platform czy natywnie – wybór z wymagań co do zasięgu, sprzętu i tempa wydań. To rozmowa, nie warsztat.",
+            "duration": "Tydzień 0"
+          },
+          {
+            "title": "Najpierw przepływy, potem piksele",
+            "body": "Obie aplikacje rozrysowane na tym samym backendzie, razem ze stanami, które istnieją tylko na telefonie: przerwany, w tle, offline, rozładowany.",
+            "duration": "2-3 tygodnie"
+          },
+          {
+            "title": "Budowa w tygodniowych sprintach",
+            "body": "Wersje testowe w twoich rękach od pierwszego sprintu przez TestFlight i kanały wewnętrzne, żeby informacja zwrotna przychodziła z urządzenia, a nie z dokumentu.",
+            "duration": "8-16 tygodni"
+          },
+          {
+            "title": "Publikacja i to, co po niej",
+            "body": "Zgłoszenie do sklepów, stopniowe wdrożenie, monitoring awarii i pierwsza runda zmian, które wymusza realne użycie w drugim tygodniu.",
+            "duration": "Na bieżąco"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Aplikacje, które wypuściliśmy",
+        "subtitle": "Produkty, w których praca dzieje się z dala od biurka.",
+        "cta": "Wszystkie case studies"
+      },
+      "stack": {
+        "title": "Na czym to budujemy",
+        "subtitle": "Jeden backend, dwa fronty, nudna infrastruktura.",
+        "groups": [
+          {
+            "title": "Aplikacje",
+            "items": ["React Native", "TypeScript", "Moduły natywne tam, gdzie trzeba"]
+          },
+          {
+            "title": "Backend",
+            "items": ["Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis"]
+          },
+          {
+            "title": "Operacje",
+            "items": ["App Store", "Google Play", "Infrastruktura push", "Raportowanie awarii"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Pytania, które dostajemy przed budową aplikacji",
+        "items": [
+          {
+            "q": "Natywnie, cross-platform czy aplikacja webowa?",
+            "a": "Cross-platform pokrywa większość marketplace'ów i produktów na żądanie, w tym nasze. Natywnie idziemy, gdy potrzebna jest ciągła lokalizacja w tle, głęboki dostęp do sprzętu albo wydajność specyficzna dla platformy. Przy webie zostajemy, gdy produkt jest używany okazjonalnie, a ty chcesz wypuszczać zmiany codziennie. Dłuższe porównanie opisaliśmy na blogu."
+          },
+          {
+            "q": "Ile trwa zbudowanie aplikacji mobilnej?",
+            "a": "Dwa do czterech miesięcy na pierwszą wersję spiętą z istniejącym backendem, dłużej, gdy platforma pod spodem powstaje równolegle. Weryfikacja w sklepach dokłada dni, nie tygodnie, o ile konta zostaną założone odpowiednio wcześnie."
+          },
+          {
+            "q": "Czy potrzebujemy dwóch aplikacji – dla klientów i dla wykonawców?",
+            "a": "Jeśli osoby wykonujące pracę nie są twoimi pracownikami, zwykle tak: ich potrzeby różnią się na tyle, że jedna aplikacja nie obsłuży dobrze żadnej z grup. Czasem właściwą odpowiedzią jest aplikacja dla klientów plus mobilne narzędzie webowe dla wykonawców, co jest tańsze – powiemy, kiedy to pasuje."
+          },
+          {
+            "q": "Co wpływa na koszt budowy aplikacji?",
+            "a": "Wymagania offline, płatności, śledzenie w czasie rzeczywistym i liczba odrębnych ról. Sama obecność w sklepach to niewielki stały koszt; zmienną jest to, jak duża część produktu musi działać, kiedy sieć nie działa."
+          },
+          {
+            "q": "Czy możecie przejąć istniejącą aplikację?",
+            "a": "Tak, po audycie. Powiemy uczciwie, czy warto kontynuować na tym kodzie, czy pozostała praca wyjdzie taniej na nowym fundamencie. Rekomendowaliśmy jedno i drugie."
+          },
+          {
+            "q": "Do kogo należą konta w sklepach?",
+            "a": "Do ciebie. Aplikacje publikujemy z twoich kont deweloperskich i twoich certyfikatów, więc przy wydaniu nigdy nie jesteś od nas zależny."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Warto przeczytać, zanim wyślesz brief",
+        "subtitle": "O wyborze platformy, ścieżkach rezerwacji i realnym koszcie budowy."
+      },
+      "cta": {
+        "title": "Powiedz nam, gdzie dzieje się praca.",
+        "body": "Trzydzieści minut, bez sprzedaży. Powiemy, które części naprawdę potrzebują aplikacji, a które spokojnie zostaną w webie.",
+        "button": "Umów rozmowę"
+      }
+    },
+    "booking-website-development": {
+      "cardSummary": "Strona, która sama przyjmuje rezerwacje, panel klienta, do którego się wraca, i pulpit, na którym zespół prowadzi dzień.",
+      "meta": {
+        "title": "Strony z rezerwacją online | Ortvest",
+        "description": "Strony, które przyjmują rezerwacje bez telefonu – rezerwacja online, panel klienta i pulpit dyspozytorski dla zespołu. Zespół w Poznaniu.",
+        "ogTitle": "Strony z rezerwacją online i panelem klienta",
+        "ogDescription": "Dla firm usługowych, które wciąż przyjmują zamówienia przez telefon: strona, która rezerwuje sama, panel klienta i pulpit dla zespołu."
+      },
+      "hero": {
+        "eyebrow": "Strony z rezerwacją",
+        "title": "Strony, które przyjmują rezerwację bez telefonu",
+        "subtitle": "Jeśli zamówienia wciąż przychodzą telefonem, WhatsAppem i trafiają do arkusza, problemem nie jest strona – ona po prostu kończy się na formularzu kontaktowym. Budujemy to, co dzieje się dalej.",
+        "ctaPrimary": "Powiedz, co was spowalnia",
+        "ctaSecondary": "Zobacz realizacje"
+      },
+      "problem": {
+        "title": "Strona kończy się tam, gdzie zaczyna się praca.",
+        "paragraphs": [
+          "Większość firm usługowych ma już stronę. Opisuje usługę, pokazuje numer telefonu i formularz – i na tym się kończy. Wszystko, co naprawdę napędza firmę, dzieje się potem: ktoś odbiera telefon, przepisuje zamówienie na czat i przydziela je komuś, kto akurat jest wolny.",
+          "Ta luka kosztuje na trzy sposoby naraz. Klienci, którzy dzwonią poza godzinami pracy, idą gdzie indziej. Zamówienia żyją w WhatsAppie i arkuszu, więc nikt nie powie wam, jak wyglądał zeszły miesiąc. A agregatory biorą prowizję od każdej rezerwacji właśnie dlatego, że mają u siebie tę część, której wasza strona nie robi.",
+          "Więc brief tak naprawdę nie dotyczy strony. Dotyczy strony, która domyka rezerwację sama, miejsca, do którego klient wraca, i pulpitu, na którym zespół prowadzi dzień. To jeden system – budowanie tych trzech rzeczy osobno kończy się tym, że się rozjeżdżają."
+        ]
+      },
+      "included": {
+        "title": "Co obejmuje takie wdrożenie",
+        "subtitle": "Strona to front. Poniżej części, dzięki którym to działa bez was w środku każdego zamówienia.",
+        "items": [
+          {
+            "title": "Strona z rezerwacją online",
+            "body": "Wybór usługi, adres, data i godzina – w ścieżce, którą da się domknąć w mniej niż minutę. To ta liczba decyduje, czy odwiedzający stanie się zamówieniem."
+          },
+          {
+            "title": "Panel klienta",
+            "body": "Historia zamówień, powtórzenie poprzedniej rezerwacji w dwóch kliknięciach, zapisane adresy i metody płatności. Powód, dla którego klient jednorazowy staje się stałym."
+          },
+          {
+            "title": "Aplikacja lub narzędzie webowe dla zespołu",
+            "body": "Kolejka zleceń, przyjęcie i odrzucenie, przekazanie do nawigacji, potwierdzenie wykonania zdjęciem. Zbudowane pod jedną rękę i słaby zasięg, nie pod biurko."
+          },
+          {
+            "title": "Pulpit dyspozytorski i administracyjny",
+            "body": "Kto pracuje, co nieprzydzielone, co poszło nie tak. Ręczne nadpisanie każdej automatycznej decyzji, bo pierwsze miesiące jadą na nadpisaniach."
+          },
+          {
+            "title": "Płatności i dokumenty",
+            "body": "Płatność online, przedpłata albo po wykonaniu, zwroty i zwroty częściowe, faktury i paragony, które przyjmie wasza księgowość."
+          },
+          {
+            "title": "Integracje",
+            "body": "Kalendarz, księgowość, SMS i komunikatory, analityka. Łącznie z tym niewygodnym systemem, na którym już prowadzicie firmę i którego w tym roku nie wymienicie."
+          }
+        ]
+      },
+      "process": {
+        "title": "Jak przebiega wdrożenie",
+        "subtitle": "Zaczynamy od najmniejszego elementu, który sam się spina.",
+        "steps": [
+          {
+            "title": "Dzień z waszą operacyjną",
+            "body": "Patrzymy, jak dziś naprawdę wędruje zamówienie – telefony, czat, arkusz. Zwykle na tym etapie znika połowa planowanych funkcji.",
+            "duration": "Tydzień 0"
+          },
+          {
+            "title": "Najpierw ścieżka rezerwacji",
+            "body": "Strona i rezerwacja ruszają przed aplikacjami. Zaczyna się zwracać, kiedy reszta jest jeszcze w budowie.",
+            "duration": "3-5 tygodni"
+          },
+          {
+            "title": "Strona zespołu i pulpit",
+            "body": "Dyspozytornia, narzędzie dla ekipy i panel administracyjny, wdrażane na realnych zamówieniach z nowej ścieżki.",
+            "duration": "4-8 tygodni"
+          },
+          {
+            "title": "Przekazanie i obecność",
+            "body": "Zespół prowadzi to sam, a my zostajemy na pierwszy miesiąc realnego obciążenia i poprawiamy to, co psuje prawdziwy grafik.",
+            "duration": "Na bieżąco"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Firmy, które już na tym działają",
+        "subtitle": "Rezerwacje, dyspozytornia i zespół w terenie.",
+        "cta": "Wszystkie case studies"
+      },
+      "stack": {
+        "title": "Na czym to budujemy",
+        "subtitle": "Nudne, dobrze udokumentowane technologie, które rozpozna wasz następny programista.",
+        "groups": [
+          {
+            "title": "Strona i panel",
+            "items": ["Next.js", "React", "TypeScript"]
+          },
+          {
+            "title": "Aplikacje i backend",
+            "items": ["React Native", "Node.js", "NestJS", "PostgreSQL"]
+          },
+          {
+            "title": "Operacje",
+            "items": ["Płatności", "SMS i komunikatory", "Kalendarze", "Analityka"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Pytania, które dostajemy przed takim wdrożeniem",
+        "items": [
+          {
+            "q": "Mamy już stronę. Zaczynamy od zera?",
+            "a": "Zwykle nie. Jeśli obecna strona przyciąga ruch i treści są w porządku, dokładamy do niej ścieżkę rezerwacji i panel, a strony marketingowe zostawiamy. Przebudowa ma sens, gdy strony nie da się rozbudować albo gdy gubi ludzi, zanim dojdą do formularza."
+          },
+          {
+            "q": "Kiedy pierwsze rezerwacje przyjdą ze strony?",
+            "a": "Trzy do pięciu tygodni dla ścieżki rezerwacji na istniejącej stronie, dłużej, gdy strona powstaje równolegle. Tę część wdrażamy pierwszą celowo, żeby projekt zaczął się zwracać, zanim skończymy aplikacje."
+          },
+          {
+            "q": "Czy potrzebujemy aplikacji mobilnej?",
+            "a": "Klienci zwykle nie – szybka strona mobilna wygrywa z aplikacją, którą trzeba najpierw zainstalować. Osoby wykonujące pracę często tak, bo są na zewnątrz z jedną wolną ręką. Powiemy, kiedy mobilne narzędzie webowe wystarczy ekipie i oszczędzi wam aplikacji."
+          },
+          {
+            "q": "Ile to kosztuje?",
+            "a": "Zależy od tego, ile usług i reguł musi wyrazić rezerwacja, czy płatności są online i czy strona zespołu to narzędzie webowe czy aplikacja natywna. Zakres i wyłączenia spisujemy przed podpisaniem umowy – zwykle to właśnie tam rozjeżdżają się wyceny."
+          },
+          {
+            "q": "Czy zadziała z systemem, którego już używamy?",
+            "a": "Zwykle tak. Kalendarze, księgowość i komunikatory mają API, z którymi da się pracować. Jeśli coś krytycznego go nie ma, powiemy to na pierwszej rozmowie, a nie odkryjemy w trzecim miesiącu."
+          },
+          {
+            "q": "Do kogo to należy?",
+            "a": "Do was, od pierwszego commita, w waszych repozytoriach i na waszych kontach. Pracujemy ze spółki w Poznaniu na umowach unijnych, więc dane i prawa zostają w UE."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Warto przeczytać, zanim wyślecie brief",
+        "subtitle": "O dwustronnych produktach usługowych, ścieżkach rezerwacji i realnym koszcie wdrożenia."
+      },
+      "cta": {
+        "title": "Powiedzcie, jak dziś trafia do was zamówienie.",
+        "body": "Trzydzieści minut, bez sprzedaży. Jeśli rozwiązaniem jest lepszy skrypt rozmowy, a nie oprogramowanie, powiemy to w pierwszej kolejności.",
+        "button": "Umów rozmowę"
+      }
+    }
+  },
+  "servicesIndex": {
+    "meta": {
+      "title": "Usługi | Ortvest",
+      "description": "Marketplace, P2P, platformy społecznościowe, MVP i aplikacje mobilne dla produktów, w których uczestnicy muszą się nawzajem znaleźć i sobie zaufać.",
+      "ogTitle": "Co buduje Ortvest",
+      "ogDescription": "Marketplace'y, produkty P2P, sieci członkowskie, pierwsze wersje i aplikacje mobilne, które do nich należą."
+    },
+    "hero": {
+      "eyebrow": "Usługi",
+      "title": "Budujemy produkty, które w dniu startu są nic niewarte.",
+      "subtitle": "Marketplace'y, produkty peer-to-peer i sieci członkowskie zaczynają działać dopiero wtedy, gdy obcy ludzie zaczynają sobie ufać. Wybierz kształt najbliższy temu, co budujesz."
+    },
+    "cta": {
+      "title": "Nie wiesz, który z nich to twój przypadek?",
+      "body": "To normalny punkt wyjścia. Trzydzieści minut rozmowy i powiemy, który kształt pasuje – albo że żaden.",
+      "button": "Umów rozmowę"
     }
   }
 }

@@ -4,8 +4,10 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-in
 
 import { AnnouncementBar, BackgroundEffects, MotionConfigProvider } from '@shared/components';
 
+import { buildOrganizationSchema, buildWebSiteSchema } from '@lib/schema';
 import { buildLocaleAlternates, SITE_URL } from '@lib/seo';
 
+import { JsonLd } from '../../components/JsonLd';
 import { LocaleFontFaces } from '../../components/LocaleFontFaces';
 import { interLatin } from '../../fonts/inter-latin';
 import { LAYOUT_CLIENT_NAMESPACES, pickClientMessages } from '../../i18n/client-messages';
@@ -73,85 +75,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-type FaqItem = { q: string; a: string };
-
-function SchemaOrgScript({ faq }: { faq?: FaqItem[] }) {
-  const organization = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Ortvest',
-    url: baseUrl,
-    description:
-      'Ortvest builds marketplaces, P2P products and member networks where participants need to find and trust each other.',
-    sameAs: ['https://www.linkedin.com/company/ortvest/', 'https://www.instagram.com/ortvest'],
-  };
-
-  const website = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'Ortvest',
-    url: baseUrl,
-  };
-
-  const services = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Ortvest Services',
-    itemListElement: [
-      { '@type': 'Service', name: 'UI/UX Design' },
-      { '@type': 'Service', name: 'Web Design' },
-      { '@type': 'Service', name: 'App Design' },
-      { '@type': 'Service', name: 'Web Development' },
-      { '@type': 'Service', name: 'Mobile Development' },
-      { '@type': 'Service', name: 'SEO & Marketing' },
-    ],
-  };
-
-  const faqSchema =
-    faq && faq.length > 0
-      ? {
-          '@context': 'https://schema.org',
-          '@type': 'FAQPage',
-          mainEntity: faq.map(({ q, a }) => ({
-            '@type': 'Question',
-            name: q,
-            acceptedAnswer: { '@type': 'Answer', text: a },
-          })),
-        }
-      : null;
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organization),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(website),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(services),
-        }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      )}
-    </>
-  );
-}
-
 export default async function LocaleLayout({
   children,
   params,
@@ -165,13 +88,6 @@ export default async function LocaleLayout({
   const layoutMessages = pickClientMessages(allMessages, LAYOUT_CLIENT_NAMESPACES);
 
   const language = locale === 'ua' ? 'uk' : locale === 'pl' ? 'pl' : 'en';
-
-  const faqMessages = (allMessages?.faq ?? {}) as Record<string, string>;
-  const faqItems: FaqItem[] = [1, 2, 3, 4, 5, 6, 7, 8].flatMap((i) => {
-    const q = faqMessages[`q${i}`];
-    const a = faqMessages[`a${i}`];
-    return q && a ? [{ q, a }] : [];
-  });
 
   return (
     <html lang={language} className={interLatin.variable} suppressHydrationWarning>
@@ -199,7 +115,6 @@ export default async function LocaleLayout({
             strategy="lazyOnload"
           />
         )}
-        <Script src="https://widget.clutch.co/static/js/widget.js" strategy="afterInteractive" />
       </head>
       <body suppressHydrationWarning>
         {GA_MEASUREMENT_ID && COOKIEYES_SITE_ID && (
@@ -386,7 +301,7 @@ export default async function LocaleLayout({
           </Script>
         )}
         <div className="relative min-h-screen bg-white font-sans antialiased text-black">
-          <SchemaOrgScript faq={faqItems} />
+          <JsonLd schema={[buildOrganizationSchema(), buildWebSiteSchema(locale)]} />
           <BackgroundEffects />
           <div className="relative z-10 min-h-screen w-full">
             <AnnouncementBar locale={locale} />

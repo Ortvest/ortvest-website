@@ -1,15 +1,17 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { ReduxProvider } from '@global/store/ReduxProvider';
-import { rowsToCardModels } from '@lib/blog-model';
+import { localesWithPublishedPosts, rowsToCardModels } from '@lib/blog-model';
 import { fetchCmsBlogPostsResult } from '@lib/cms-api';
-import { buildLocaleAlternates, serializeJsonLd, SITE_URL } from '@lib/seo';
+import { buildBreadcrumbSchema } from '@lib/schema';
+import { buildHreflangLanguages, SITE_URL } from '@lib/seo';
 import { BlogListingClient } from '@modules/Blog/BlogListingClient/BlogListingClient';
 import { Contact } from '@modules/Contact';
 import { Footer } from '@modules/Footer';
 import { Header } from '@modules/Header';
 import { Modal } from '@modules/Modals';
 
+import { JsonLd } from '../../../components/JsonLd';
 import { RouteIntlProvider } from '../../../components/RouteIntlProvider';
 import { BLOG_CLIENT_NAMESPACES } from '../../../i18n/client-messages';
 
@@ -19,17 +21,27 @@ export const revalidate = 300;
 
 const baseUrl = SITE_URL;
 
+/** Locale served by /blog/rss.xml. */
+const FEED_LOCALE = 'en';
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: 'blogPage.metadata' });
+  const [t, availableLocales] = await Promise.all([
+    getTranslations({ locale, namespace: 'blogPage.metadata' }),
+    localesWithPublishedPosts(),
+  ]);
+  const hasPosts = availableLocales.includes(locale);
+  const hreflangLocales = availableLocales.length > 0 ? availableLocales : [locale];
+
   return {
     title: t('title'),
     description: t('description'),
     metadataBase: new URL(baseUrl),
+    ...(hasPosts ? {} : { robots: { index: false, follow: true } }),
     alternates: {
-      ...buildLocaleAlternates(locale, '/blog'),
-      types: {
-        'application/rss+xml': `${baseUrl}/blog/rss.xml`,
-      },
+      canonical: `${baseUrl}/${locale}/blog`,
+      languages: buildHreflangLanguages(hreflangLocales, (loc) => `${baseUrl}/${loc}/blog`),
+      // The feed is English-only, so only the English listing advertises it.
+      ...(locale === FEED_LOCALE ? { types: { 'application/rss+xml': `${baseUrl}/blog/rss.xml` } } : {}),
     },
     openGraph: {
       title: t('title'),
@@ -55,35 +67,40 @@ export default async function BlogPage({ params: { locale } }: { params: { local
     getTranslations({ locale, namespace: 'blog' }),
   ]);
   const posts = rowsToCardModels(result.rows);
-  const blogSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Blog',
-    name: tMetadata('title'),
-    description: tMetadata('description'),
-    url: `${baseUrl}/${locale}/blog`,
-    inLanguage: locale === 'ua' ? 'uk-UA' : locale === 'pl' ? 'pl-PL' : 'en-US',
-    publisher: {
-      '@type': 'Organization',
-      name: 'Ortvest',
-      url: baseUrl,
-    },
-    blogPost: posts.slice(0, 20).map((post) => ({
-      '@type': 'BlogPosting',
-      headline: post.title,
-      description: post.excerpt,
-      url: `${baseUrl}/${locale}/blog/${post.slug}`,
-      datePublished: post.published_at,
-      ...(post.cover_image ? { image: post.cover_image } : {}),
-      author: {
-        '@type': 'Person',
-        name: post.authorName || tBlog('authorFallback'),
-      },
-    })),
-  };
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
+  const breadcrumbSchema = buildBreadcrumbSchema(locale, tNav('home'), [{ name: tNav('blog') }]);
+  const blogSchema =
+    posts.length === 0
+      ? null
+      : {
+          '@context': 'https://schema.org',
+          '@type': 'Blog',
+          name: tMetadata('title'),
+          description: tMetadata('description'),
+          url: `${baseUrl}/${locale}/blog`,
+          inLanguage: locale === 'ua' ? 'uk-UA' : locale === 'pl' ? 'pl-PL' : 'en-US',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Ortvest',
+            url: baseUrl,
+          },
+          blogPost: posts.slice(0, 20).map((post) => ({
+            '@type': 'BlogPosting',
+            headline: post.title,
+            description: post.excerpt,
+            url: `${baseUrl}/${locale}/blog/${post.slug}`,
+            datePublished: post.published_at,
+            ...(post.cover_image ? { image: post.cover_image } : {}),
+            author: {
+              '@type': 'Person',
+              name: post.authorName || tBlog('authorFallback'),
+            },
+          })),
+        };
 
   return (
     <ReduxProvider>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(blogSchema) }} />
+      <JsonLd schema={[breadcrumbSchema, blogSchema]} />
       <Header />
       <RouteIntlProvider locale={locale} namespaces={BLOG_CLIENT_NAMESPACES}>
         <main>

@@ -8,8 +8,6 @@ export const LAYOUT_CLIENT_NAMESPACES = ['nav', 'footer', 'modals', 'notFound'] 
 
 export const HOME_CLIENT_NAMESPACES = [
   'hero',
-  'team',
-  'servicesSection',
   'reviews',
   'blog',
   'blogSection',
@@ -17,6 +15,7 @@ export const HOME_CLIENT_NAMESPACES = [
   'faq',
   'cases',
   'consultation',
+  'servicesStrip',
 ] as const;
 
 export const BLOG_CLIENT_NAMESPACES = ['blogPage', 'blog', 'contact'] as const;

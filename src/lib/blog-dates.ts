@@ -13,3 +13,14 @@ export function formatBlogPostDate(iso: string, siteLocale: string): string {
     year: 'numeric',
   }).format(d);
 }
+
+/** Compact `Oct 4` / `Oct 4, 2026` form used by the homepage field-notes teaser. */
+export function formatBlogPostDateShort(iso: string, siteLocale: string, options?: { withYear?: boolean }): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  return new Intl.DateTimeFormat(blogLocaleTag(siteLocale), {
+    month: 'short',
+    day: 'numeric',
+    ...(options?.withYear ? { year: 'numeric' } : {}),
+  }).format(d);
+}

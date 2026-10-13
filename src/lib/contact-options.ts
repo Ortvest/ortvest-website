@@ -1,4 +1,11 @@
-export const CONTACT_PROJECT_TYPES = ['p2p', 'community', 'logistics', 'other'] as const;
+export const CONTACT_PROJECT_TYPES = [
+  'website',
+  'webService',
+  'mobileApp',
+  'mvp',
+  'improveExisting',
+  'designOnly',
+] as const;
 export const CONTACT_BUDGET_OPTIONS = ['10k25k', '25k50k', '50k100k', '100k', 'unsure'] as const;
 export const CONTACT_CONSULTATION_OPTIONS = ['discovery', 'strategy'] as const;
 

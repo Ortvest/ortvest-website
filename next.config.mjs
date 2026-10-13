@@ -16,7 +16,7 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ['@tabler/icons-react', '@icons-pack/react-simple-icons'],
-  }
+  },
 };
 
 export default withNextIntl(nextConfig);

@@ -143,6 +143,89 @@ function htmlWithHeadingIds(content: string): string {
   });
 }
 
+function headingLevel(node: Record<string, unknown>): number {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return Number((node.attrs as any)?.level ?? 2);
+}
+
+/** Lowercased, punctuation-free form for comparing a heading against the title. */
+function comparableText(value: string): string {
+  return value
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[^a-z0-9\u00c0-\u024f\u0400-\u04ff]+/g, ' ')
+    .trim();
+}
+
+/**
+ * True when a body heading just restates the post title. Exports rarely repeat
+ * it verbatim — "Under a minute to book. Three minutes to a cleaner." against a
+ * title that continues ": What We Built for Pachaca" — so a long shared prefix
+ * counts as an echo too.
+ */
+function isTitleEcho(heading: string, title: string): boolean {
+  const a = comparableText(heading);
+  const b = comparableText(title);
+  if (!a || !b) return false;
+  if (a === b) return true;
+
+  const [shorter, longer] = a.length <= b.length ? [a, b] : [b, a];
+  return longer.startsWith(shorter) && shorter.length >= longer.length * 0.5;
+}
+
+/**
+ * Make an article body's headings valid under the page <h1>.
+ *
+ * Posts come from several sources (AI agent, markdown import, hand-written in
+ * the CMS) and historically carried two defects: a first heading restating the
+ * post title — which renders as a second heading saying the same thing — and
+ * section headings starting at h3 with no h2 above them. Both are fixed at
+ * render time so already-published posts are corrected too, not just new ones.
+ */
+export function normalizeArticleContent(content: unknown, title: string): unknown {
+  if (isHtmlString(content)) {
+    let html = content;
+    const leading = html.match(/^\s*<h([1-3])\b[^>]*>([\s\S]*?)<\/h\1>/i);
+    if (leading && isTitleEcho(stripHtml(leading[2]), title)) {
+      html = html.slice(leading[0].length);
+    }
+    // Demote stray h1s; the page already has one.
+    return html.replace(/<(\/?)h1\b/gi, '<$1h2');
+  }
+
+  if (!isTiptapDoc(content)) return content;
+
+  const doc = content as { type: string; content: Array<Record<string, unknown>> };
+  let nodes = [...doc.content];
+
+  const firstMeaningful = nodes.findIndex((node) => node.type === 'heading' || node.type === 'paragraph');
+  if (
+    firstMeaningful >= 0 &&
+    nodes[firstMeaningful].type === 'heading' &&
+    isTitleEcho(plainTextFromTiptap(nodes[firstMeaningful]), title)
+  ) {
+    nodes = [...nodes.slice(0, firstMeaningful), ...nodes.slice(firstMeaningful + 1)];
+  }
+
+  const levels = nodes.filter((node) => node.type === 'heading').map(headingLevel);
+  if (levels.length === 0) return { ...doc, content: nodes };
+
+  // Promote only when the body has no h2 at all (sections written as h3+);
+  // otherwise leave the hierarchy alone and just clamp stray h1s down to h2.
+  const shallowest = Math.min(...levels);
+  const shift = shallowest >= 3 ? 2 - shallowest : 0;
+
+  return {
+    ...doc,
+    content: nodes.map((node) => {
+      if (node.type !== 'heading') return node;
+      const attrs = (node.attrs as Record<string, unknown> | undefined) ?? {};
+      const level = Math.min(6, Math.max(2, headingLevel(node) + shift));
+      return { ...node, attrs: { ...attrs, level } };
+    }),
+  };
+}
+
 export function articleHeadingsFromContent(content: unknown): ArticleHeading[] {
   if (isHtmlString(content)) return htmlHeadings(content);
   if (!isTiptapDoc(content)) return [];

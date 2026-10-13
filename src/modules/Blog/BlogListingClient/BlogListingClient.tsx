@@ -10,6 +10,7 @@ import { Container } from '@shared/components';
 import { formatBlogPostDate } from '@lib/blog-dates';
 import type { BlogCardModel } from '@lib/blog-model';
 import { AuthorAvatar } from '@modules/Blog/AuthorAvatar';
+import { BlogCoverImage } from '@modules/Blog/BlogCoverImage';
 import { BlogCoverPlaceholder } from '@modules/Blog/BlogCoverPlaceholder';
 import { BlogPostCard } from '@modules/Blog/BlogPostCard';
 import { IconAlertTriangle, IconArrowRight, IconFileText } from '@tabler/icons-react';
@@ -95,8 +96,12 @@ export function BlogListingClient({ posts, hasError = false }: Props) {
             <article className="mb-10 overflow-hidden rounded-2xl border border-black/[0.08] bg-white shadow-card lg:flex">
               <div className="relative w-full shrink-0 overflow-hidden lg:w-[60%]">
                 {hero.cover_image ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={hero.cover_image} alt="" loading="lazy" className="block h-auto w-full" />
+                  <BlogCoverImage
+                    src={hero.cover_image}
+                    alt={hero.title}
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 700px"
+                  />
                 ) : (
                   <div className="aspect-video">
                     <BlogCoverPlaceholder />

@@ -12,10 +12,10 @@ import { useAppDispatch, useAppSelector } from '@shared/hooks/redux.hooks';
 import { UISlice } from '@global/store/slices/UISlice';
 import { EASE } from '@lib/motion';
 import { LangSwitch } from '@modules/Header/features/LangSwitch';
-import { servicesDropdownItems } from '@modules/Header/features/Navagation';
+import { getServicesDropdownItems } from '@modules/Header/features/Navagation';
 import AppIconHorizontal from '@public/icons/AppLogoHorizontal.svg';
 import { IconChevronDown, IconX } from '@tabler/icons-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 
 // Top-level nav items – contact removed (it's the CTA button), industries/process/technologies moved under Services
 const navOrder = ['about', 'team', 'services', 'cases', 'blog', 'faq'] as const;
@@ -56,7 +56,7 @@ export function BurgerMenu() {
   const menu = (
     <AnimatePresence>
       {isBurgerOpened && (
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -74,7 +74,7 @@ export function BurgerMenu() {
 
           <nav className="container-main flex flex-1 flex-col gap-1 pb-6 pt-20" aria-label={t('mobileNavigation')}>
             {navOrder.map((key: NavKey, i) => (
-              <motion.div
+              <m.div
                 key={key}
                 initial={{ opacity: 0, x: -8 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -95,29 +95,31 @@ export function BurgerMenu() {
 
                     <AnimatePresence>
                       {isServicesOpen && (
-                        <motion.div
+                        <m.div
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: 'auto', opacity: 1, transition: { duration: 0.25, ease: EASE } }}
                           exit={{ height: 0, opacity: 0, transition: { duration: 0.18, ease: EASE } }}
                           className="overflow-hidden">
                           <div className="pb-1 pl-2">
-                            {servicesDropdownItems.map(({ key: itemKey, Icon, sublabelKey, href }) => (
-                              <Link
-                                key={itemKey}
-                                href={`/${locale}${href}`}
-                                onClick={closeMenu}
-                                className="flex items-center gap-3 rounded-xl px-3 py-2.5 transition hover:bg-black/[0.04]">
-                                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-black/[0.06]">
-                                  <Icon size={18} className="text-black/50" />
-                                </div>
-                                <div>
-                                  <p className="text-sm font-medium text-black">{t(itemKey)}</p>
-                                  <p className="mt-0.5 text-xs text-black/50">{t(`serviceSublabels.${sublabelKey}`)}</p>
-                                </div>
-                              </Link>
-                            ))}
+                            {getServicesDropdownItems(locale).map(
+                              ({ key: itemKey, Icon, labelKey, sublabelKey, href }) => (
+                                <Link
+                                  key={itemKey}
+                                  href={`/${locale}${href}`}
+                                  onClick={closeMenu}
+                                  className="flex items-center gap-3 rounded-xl px-3 py-2.5 transition hover:bg-black/[0.04]">
+                                  <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-black/[0.06]">
+                                    <Icon size={18} className="text-black/50" />
+                                  </div>
+                                  <div>
+                                    <p className="text-sm font-medium text-black">{t(labelKey)}</p>
+                                    <p className="mt-0.5 text-xs text-black/50">{t(sublabelKey)}</p>
+                                  </div>
+                                </Link>
+                              )
+                            )}
                           </div>
-                        </motion.div>
+                        </m.div>
                       )}
                     </AnimatePresence>
                   </div>
@@ -136,7 +138,7 @@ export function BurgerMenu() {
                     {t(key)}
                   </Link>
                 )}
-              </motion.div>
+              </m.div>
             ))}
 
             {/* Language switcher */}
@@ -158,7 +160,7 @@ export function BurgerMenu() {
               <p className="mt-2 text-sm font-medium tracking-wide text-black/50">{t('menuSlogan')}</p>
             </div>
           </nav>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

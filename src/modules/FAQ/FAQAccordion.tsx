@@ -16,9 +16,10 @@ type FAQAccordionProps = {
   ctaText: string;
   ctaSub: string;
   ctaBtn: string;
+  ctaHref?: string;
 };
 
-export function FAQAccordion({ items, ctaText, ctaSub, ctaBtn }: FAQAccordionProps) {
+export function FAQAccordion({ items, ctaText, ctaSub, ctaBtn, ctaHref = '#contact' }: FAQAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -68,7 +69,7 @@ export function FAQAccordion({ items, ctaText, ctaSub, ctaBtn }: FAQAccordionPro
           {ctaText} {ctaSub}
         </p>
         <Link
-          href="#contact"
+          href={ctaHref}
           className="inline-flex cursor-pointer items-center gap-2 rounded-full border-none bg-accent px-[22px] py-[11px] text-sm font-bold text-black transition hover:opacity-85">
           {ctaBtn}
           <IconArrowRight size={13} />

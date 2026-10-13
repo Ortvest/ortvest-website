@@ -1,37 +1,23 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 import { Container, SectionReveal } from '@shared/components';
 
-import { IconCode, IconPalette, IconTrendingUp, IconUsers } from '@tabler/icons-react';
-
-import { TeamCard } from './TeamCard';
-import { TeamCarousel } from './TeamCarousel';
-
-const disciplines = [
-  {
-    id: 'developers',
-    Icon: IconCode,
-    iconBg: 'bg-blue-50',
-    iconColor: 'text-blue-600',
-  },
-  {
-    id: 'designers',
-    Icon: IconPalette,
-    iconBg: 'bg-violet-50',
-    iconColor: 'text-violet-600',
-  },
-  {
-    id: 'marketing',
-    Icon: IconTrendingUp,
-    iconBg: 'bg-emerald-50',
-    iconColor: 'text-emerald-600',
-  },
+const GROUPS = [
+  { id: 'developers', count: 9, dotClass: 'bg-zinc-950' },
+  { id: 'designers', count: 4, dotClass: 'bg-accent' },
 ] as const;
 
-export function Team() {
-  const t = useTranslations('team');
+/** Splits off the final word so the headline can strike through the reference's "20%." close. */
+function splitLastWord(text: string) {
+  const words = text.trim().split(' ');
+  const last = words.pop() ?? '';
+  return { rest: words.join(' '), last };
+}
+
+export async function Team() {
+  const t = await getTranslations('team');
+
+  const { rest: titleRest, last: titleLast } = splitLastWord(t('title'));
 
   return (
     <section id="team" className="relative overflow-hidden section-padding bg-white" aria-labelledby="team-heading">
@@ -46,36 +32,52 @@ export function Team() {
         </defs>
         <rect width="100%" height="100%" fill="url(#teamDotGrid)" />
       </svg>
+
       <Container className="relative z-10">
         <SectionReveal direction="left">
-          <header className="mb-10">
-            <div className="mb-3 flex items-center gap-2">
-              <IconUsers size={14} className="text-zinc-400" />
-              <span className="text-xs uppercase tracking-widest text-zinc-400">{t('label')}</span>
+          <div className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between lg:gap-10">
+            <div className="max-w-2xl">
+              <p className="mb-3 text-xs uppercase tracking-widest text-zinc-400">{t('label')}</p>
+              <h2 id="team-heading" className="text-h1 font-bold leading-tight text-zinc-950">
+                {titleRest} <span className="bg-accent px-1 text-black line-through">{titleLast}</span>
+              </h2>
             </div>
-            <h2 id="team-heading" className="text-h1 font-bold text-zinc-950">
-              {t('title')}
-            </h2>
-            <p className="mt-3 max-w-xl text-body text-zinc-400">{t('subtitle')}</p>
-          </header>
-
-          <div className="md:hidden">
-            <TeamCarousel
-              disciplines={disciplines}
-              getTitle={(id) => t(`${id}.title`)}
-              getDescription={(id) => t(`${id}.description`)}
-            />
+            <p className="max-w-sm text-body-sm leading-relaxed text-zinc-400 lg:pt-10">{t('subtitle')}</p>
           </div>
 
-          <div className="hidden gap-4 md:grid md:grid-cols-3">
-            {disciplines.map((discipline) => (
-              <TeamCard
-                key={discipline.id}
-                discipline={discipline}
-                title={t(`${discipline.id}.title`)}
-                description={t(`${discipline.id}.description`)}
-              />
-            ))}
+          <div className="rounded-3xl border border-zinc-200 bg-white p-8 sm:p-10">
+            <div className="mb-8 flex flex-wrap items-center justify-between gap-2">
+              <p className="text-[11px] uppercase tracking-widest text-zinc-400">{t('wholeStudioLabel')}</p>
+              <p className="font-mono text-[11px] text-zinc-400">{t('location')}</p>
+            </div>
+
+            <div className="grid gap-8 sm:grid-cols-[2fr_1fr] sm:gap-16">
+              {GROUPS.map(({ id, count, dotClass }) => (
+                <div key={id} className="flex flex-wrap content-start gap-3">
+                  {Array.from({ length: count }).map((_, dotIndex) => (
+                    <span key={dotIndex} className={`h-10 w-10 shrink-0 rounded-full ${dotClass}`} aria-hidden />
+                  ))}
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 grid gap-8 border-t border-zinc-200 pt-5 sm:grid-cols-[2fr_1fr] sm:gap-16">
+              {GROUPS.map(({ id, count }) => (
+                <div key={id} className="flex items-baseline justify-between">
+                  <h3 className="text-h3 font-bold text-zinc-950">{t(`${id}.name`)}</h3>
+                  <span className="text-body-sm text-zinc-400">{count}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 grid gap-8 border-t border-zinc-200 pt-6 sm:grid-cols-[2fr_1fr] sm:gap-16">
+              {GROUPS.map(({ id }, index) => (
+                <div key={id} className={index === 1 ? 'sm:border-l sm:border-zinc-200 sm:pl-16' : undefined}>
+                  <p className="mb-2 text-[11px] uppercase tracking-widest text-zinc-400">{t(`${id}.name`)}</p>
+                  <p className="text-body-sm leading-relaxed text-zinc-500">{t(`${id}.description`)}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </SectionReveal>
       </Container>

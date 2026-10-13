@@ -551,20 +551,20 @@ Structural constraints:
 
 Cases are defined in `src/modules/Cases/data.ts`. Localized case-detail narratives live under `caseStudies.*` in each locale JSON. Per-case feature/gallery configuration is in `src/modules/Cases/caseStudyConfig.ts`.
 
-| Name | Industry | Service tags | Appears in listing/filter | Homepage featured | NDA |
-|---|---|---|---|---|---|
-| YachtMate | `community` | — | Yes: All, Community | Yes | No |
-| SharingGround | `p2p` | — | Yes: All, P2P | Yes | No |
-| ProfitCraft | `community` | — | Yes: All, Community | No | No |
-| ProfitCraft Auto | `community` | — | Yes: All, Community | No | No |
-| Ski&Sail Club | `community` | — | Yes: All, Community | No | No |
-| Navexa | `logistics` | `marketing` | Yes: All, Logistics | No | Yes |
-| Teya Logistics | `logistics` | — | Yes: All, Logistics | No | No |
-| Pachaca | `p2p` | — | Yes: All, P2P | Yes | No |
-| Gambit | — | `brand` | Yes: All only | No | No |
-| [Re.] skin&hair | — | `brand` | Yes: All only | No | No |
-| Navexa - Logo | — | — | No; excluded from `portfolioGridCases` | No | Yes |
-| Ortvest | — | — | No; excluded from `portfolioGridCases` | No | No |
+| Name             | Industry    | Service tags | Appears in listing/filter              | Homepage featured | NDA |
+| ---------------- | ----------- | ------------ | -------------------------------------- | ----------------- | --- |
+| YachtMate        | `community` | —            | Yes: All, Community                    | Yes               | No  |
+| SharingGround    | `p2p`       | —            | Yes: All, P2P                          | Yes               | No  |
+| ProfitCraft      | `community` | —            | Yes: All, Community                    | No                | No  |
+| ProfitCraft Auto | `community` | —            | Yes: All, Community                    | No                | No  |
+| Ski&Sail Club    | `community` | —            | Yes: All, Community                    | No                | No  |
+| Navexa           | `logistics` | `marketing`  | Yes: All, Logistics                    | No                | Yes |
+| Teya Logistics   | `logistics` | —            | Yes: All, Logistics                    | No                | No  |
+| Pachaca          | `p2p`       | —            | Yes: All, P2P                          | Yes               | No  |
+| Gambit           | —           | `brand`      | Yes: All only                          | No                | No  |
+| [Re.] skin&hair  | —           | `brand`      | Yes: All only                          | No                | No  |
+| Navexa - Logo    | —           | —            | No; excluded from `portfolioGridCases` | No                | Yes |
+| Ortvest          | —           | —            | No; excluded from `portfolioGridCases` | No                | No  |
 
 Exact `CasesListingClient.tsx` filter keys:
 
@@ -583,33 +583,33 @@ Active form: `src/modules/Contact/layout/Form/index.tsx`.
 
 ### Project types
 
-| Union value | English label |
-|---|---|
-| `p2p` | `P2P` |
+| Union value | English label       |
+| ----------- | ------------------- |
+| `p2p`       | `P2P`               |
 | `community` | `Community & clubs` |
-| `logistics` | `Logistics` |
-| `other` | `Other` |
+| `logistics` | `Logistics`         |
+| `other`     | `Other`             |
 
 The form permits multiple project types.
 
 ### Budgets
 
-| Union value | English label |
-|---|---|
-| `10k25k` | `€10–25k` |
-| `25k50k` | `€25–50k` |
-| `50k100k` | `€50–100k` |
-| `100k` | `€100k+` |
-| `unsure` | `Not sure yet` |
+| Union value | English label  |
+| ----------- | -------------- |
+| `10k25k`    | `€10–25k`      |
+| `25k50k`    | `€25–50k`      |
+| `50k100k`   | `€50–100k`     |
+| `100k`      | `€100k+`       |
+| `unsure`    | `Not sure yet` |
 
 The form permits one budget selection.
 
 ### Consultation options
 
-| Union value | English label |
-|---|---|
-| `discovery` | `Discovery Call (Free)` |
-| `strategy` | `Cold Start Audit (€199)` |
+| Union value | English label             |
+| ----------- | ------------------------- |
+| `discovery` | `Discovery Call (Free)`   |
+| `strategy`  | `Cold Start Audit (€199)` |
 
 `discovery` is the default.
 
@@ -728,11 +728,11 @@ The JSON-LD contains no platform count, project count, team count, or explicit P
 
 Count method: recursive leaf key paths; arrays count as the value of their containing JSON key rather than creating numeric key paths.
 
-| Locale file | Leaf keys |
-|---|---:|
-| `messages/en.json` | 1047 |
-| `messages/pl.json` | 1047 |
-| `messages/ua.json` | 1047 |
+| Locale file        | Leaf keys |
+| ------------------ | --------: |
+| `messages/en.json` |      1047 |
+| `messages/pl.json` |      1047 |
+| `messages/ua.json` |      1047 |
 
 - Keys present in English but missing from Polish: none.
 - Keys present in English but missing from Ukrainian: none.
@@ -741,16 +741,16 @@ This is structural parity only. It does not assert that values are translated, c
 
 ## 9. Client-side data
 
-| Homepage content | Source/timing | Present in initial server HTML? |
-|---|---|---|
-| Reviews | `Reviews` calls `fetch('/api/reviews')` in `useEffect` after hydration. | No review records. Initial output is three skeleton cards; the whole section disappears if the response is empty. |
-| Blog posts | `BlogSection` calls the CMS from an async server component with 60-second revalidation. | Yes, when the CMS returns posts: the server response contains the blog markup/data passed to the client component. If the CMS returns no posts or production lacks `ORTVEST_CMS_API_URL`, the section is absent. |
-| Cases | Imported synchronously from `src/modules/Cases/data.ts`. | Yes. They are not fetched at runtime. |
-| Services tab selection | Reads `?tab=` using `useSearchParams`; all copy is bundled/i18n data. | The `Suspense` fallback is an empty dark section while the client boundary resolves; no network content fetch occurs. |
-| Header scroll state | Browser scroll listener. | Header content is present; only styling changes after scrolling. |
-| Contact | No content fetch. Submission posts to `/api/contact`. | Yes. |
-| FAQ, Team, Consultation, Footer, Hero | No runtime data fetch. | Their client components are SSR-rendered with locale messages before hydration. |
-| Modal text | Redux-controlled local UI state. | Modal host is present, but neither overlay is visible initially. |
+| Homepage content                      | Source/timing                                                                           | Present in initial server HTML?                                                                                                                                                                                  |
+| ------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Reviews                               | `Reviews` calls `fetch('/api/reviews')` in `useEffect` after hydration.                 | No review records. Initial output is three skeleton cards; the whole section disappears if the response is empty.                                                                                                |
+| Blog posts                            | `BlogSection` calls the CMS from an async server component with 60-second revalidation. | Yes, when the CMS returns posts: the server response contains the blog markup/data passed to the client component. If the CMS returns no posts or production lacks `ORTVEST_CMS_API_URL`, the section is absent. |
+| Cases                                 | Imported synchronously from `src/modules/Cases/data.ts`.                                | Yes. They are not fetched at runtime.                                                                                                                                                                            |
+| Services tab selection                | Reads `?tab=` using `useSearchParams`; all copy is bundled/i18n data.                   | The `Suspense` fallback is an empty dark section while the client boundary resolves; no network content fetch occurs.                                                                                            |
+| Header scroll state                   | Browser scroll listener.                                                                | Header content is present; only styling changes after scrolling.                                                                                                                                                 |
+| Contact                               | No content fetch. Submission posts to `/api/contact`.                                   | Yes.                                                                                                                                                                                                             |
+| FAQ, Team, Consultation, Footer, Hero | No runtime data fetch.                                                                  | Their client components are SSR-rendered with locale messages before hydration.                                                                                                                                  |
+| Modal text                            | Redux-controlled local UI state.                                                        | Modal host is present, but neither overlay is visible initially.                                                                                                                                                 |
 
 No homepage case, FAQ, team, service, consultation, contact, header, or footer copy comes from the CMS.
 

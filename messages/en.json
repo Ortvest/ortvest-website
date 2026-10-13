@@ -24,41 +24,68 @@
       "industries": "P2P, Community, Logistics…",
       "process": "How we work, step by step",
       "technologies": "Our tech stack"
+    },
+    "servicesAll": "All services",
+    "servicePages": {
+      "marketplace-development": {
+        "label": "Marketplace development",
+        "sublabel": "Two-sided platforms, end to end"
+      },
+      "p2p-platform-development": {
+        "label": "P2P platform development",
+        "sublabel": "Trust between strangers"
+      },
+      "community-platform-development": {
+        "label": "Community platforms",
+        "sublabel": "Member networks and clubs"
+      },
+      "mvp-development": {
+        "label": "MVP development",
+        "sublabel": "A first version that answers the question"
+      },
+      "mobile-app-development": {
+        "label": "Mobile app development",
+        "sublabel": "iOS and Android, customer and crew"
+      },
+      "booking-website-development": {
+        "label": "Booking websites",
+        "sublabel": "Site, client portal and dispatch"
+      }
     }
   },
   "divider": {
     "platforms": "two-sided platforms shipped",
     "people": "people. One squad per project.",
     "industries": "industries. A fourth in build.",
-    "industryList": "P2P · Community · Logistics · Agritech (in build)"
+    "industryList": "Websites · Mobile apps · Web services · Platforms"
   },
   "hero": {
-    "badge": "For marketplaces, P2P products and member networks",
-    "title1": "The hard part was never the code.",
-    "title2": "It's the empty platform.",
+    "badge": "Websites · Web services · Mobile apps",
+    "title1": "Websites, web services and mobile apps.",
+    "title2": "Built to work on Monday morning.",
     "title3": "",
     "title3em": "",
-    "subtitle": "Marketplaces, P2P products and member networks only work when strangers start trusting each other. That's the problem we specialise in – and we've solved day one five times.",
+    "subtitle": "Design, development and launch from one team in Poznań. Marketing sites, booking flows, client portals, iOS and Android apps – and the platform underneath when the product needs one.",
     "cta": {
-      "primary": "See how we handle the cold start",
-      "secondary": "Look at the work"
+      "primary": "Tell us what you need built",
+      "secondary": "See the work"
     },
     "freecall": {
-      "text": "Not sure it's us? 30 minutes, no pitch",
+      "text": "Not sure what you need? 30 minutes, no pitch",
       "link": "Book a call"
     },
     "nodes": {
       "shippers": {
-        "title": "Logistics"
+        "title": "Websites"
       },
       "clubs": {
-        "title": "Community & clubs"
+        "title": "Mobile apps"
       },
       "owners": {
-        "title": "P2P"
+        "title": "Web services"
       },
       "agritech": {
-        "title": "Agritech"
+        "title": "Platforms"
       }
     },
     "stats": {
@@ -83,7 +110,11 @@
     "trustCtaLink": "Book a free 30-min call",
     "trust1": "Strategy-first approach",
     "trust2": "Full-cycle ownership",
-    "trust3": "Clients across the EU, UK and US"
+    "trust3": "Clients across the EU, UK and US",
+    "showcase": {
+      "site": "Website + booking",
+      "app": "iOS & Android app"
+    }
   },
   "services": {
     "eyebrow": "What we do",
@@ -144,20 +175,10 @@
   },
   "servicesSection": {
     "label": "What we do",
-    "title": "Built for products where nobody knows each other yet.",
-    "subtitle": "Design, development and optional go-to-market for two-sided products.",
-    "tabs": {
-      "what": "What we do",
-      "industries": "Industries",
-      "process": "Process",
-      "technologies": "Technologies"
-    },
-    "included": "What's included",
-    "tapToSee": "Tap to see what's included",
-    "tapToLearn": "Tap to learn more",
+    "title": "From a landing page to the platform behind it.",
+    "subtitle": "Design and development. One squad, from the first call to launch.",
     "getQuote": "Get a quote",
     "optional": "Optional",
-    "industryNote": "Not on this list? Say so on the call. If it isn't ours, we'll say that too.",
     "design": {
       "title": "Design",
       "desc": "UX for two-sided flows, verification and trust states, production-ready UI in Figma. We design the empty state first – it's what most of your early users will actually see.",
@@ -195,89 +216,99 @@
       "p3": "Competitive analysis",
       "p4": "Brand positioning"
     },
-    "ind": {
-      "p2p": {
-        "title": "P2P",
-        "desc": "Verification, trust, matching, disputes and payouts.",
-        "t1": "Verification",
-        "t2": "Matching",
-        "t3": "Payouts"
+    "build": {
+      "websites": {
+        "title": "Websites",
+        "desc": "Marketing sites, landing pages and content sites that have to bring in real enquiries, not just look good.",
+        "items": ["Marketing sites", "Landing pages", "Content sites", "Redesign of an existing site"]
       },
-      "community": {
-        "title": "Community & clubs",
-        "desc": "Membership, roles, events, dues and member directories.",
-        "t1": "Membership",
-        "t2": "Roles",
-        "t3": "Events"
+      "webServices": {
+        "title": "Web services",
+        "desc": "Booking flows, client portals, dashboards and the admin tooling your team actually runs the business on.",
+        "items": ["Booking flows", "Client portals", "Dashboards", "Admin tooling"]
       },
-      "logistics": {
-        "title": "Logistics",
-        "desc": "Fleet, shipments, multi-party workflows and integrations.",
-        "t1": "Fleet",
-        "t2": "Shipments",
-        "t3": "Multi-party workflows",
-        "t4": "Integrations"
+      "mobileApps": {
+        "title": "Mobile apps",
+        "desc": "iOS and Android – one app for customers, another for the people doing the work, on the same backend.",
+        "items": ["iOS app", "Android app", "Customer-facing app", "Crew app on the same backend"]
       },
-      "agritech": {
-        "title": "Agritech",
-        "badge": "In build · 2026",
-        "desc": "We're building our first agritech platform now. Same shape as the rest: multiple parties, verified identities, transactions that have to be trusted. We'll show it when it ships – until then we're not claiming the industry.",
-        "t1": "Traceability",
-        "t2": "Supply chain",
-        "t3": "Producers ⇄ buyers"
+      "platforms": {
+        "title": "Platforms",
+        "desc": "Marketplaces, P2P products and member networks, where the hard part is getting strangers to trust each other.",
+        "items": ["Marketplaces", "P2P products", "Member networks", "Trust & verification"]
       }
     },
-    "process": {
-      "1": {
-        "title": "Discovery",
-        "desc": "We dig into your business, users, and competitors. Define the problem before touching a pixel or line of code.",
-        "dur": "1–2 weeks"
+    "proof": "For example",
+    "disciplinesLabel": "Every build includes",
+    "startAs": {
+      "label": "Any of these can start as —",
+      "mvp": {
+        "title": "An MVP",
+        "desc": "A first version that answers one question before the full build."
       },
-      "2": {
+      "upgrade": {
+        "title": "An upgrade",
+        "desc": "Already live? Audit, redesign and new features — without starting over."
+      },
+      "designOnly": {
+        "title": "Design only",
+        "desc": "UI/UX, websites, redesign, brand identity and logo."
+      }
+    }
+  },
+  "servicesStrip": {
+    "eyebrow": "Services",
+    "hint": "Tap a highlighted word",
+    "headline": "We <design>design</design> products, build them for the <web>web</web> and <mobile>mobile</mobile>, ship <mvp>MVPs</mvp>, and <fix>fix the ones</fix> that already exist.",
+    "seenInLabel": "Seen in",
+    "ctaSuffix": "only works too",
+    "mostlyFor": "Mostly for marketplaces, P2P products, member networks and booking businesses.",
+    "tabs": {
+      "design": {
         "title": "Design",
-        "desc": "Wireframes, user flows, and high-fidelity UI. You approve every screen before development starts.",
-        "dur": "2–4 weeks"
+        "desc": "Interfaces for products where two different people want two different things from the same screen.",
+        "items": [
+          "UI/UX for web and mobile products",
+          "Websites and landing pages",
+          "Redesign of an existing interface",
+          "Brand identity and logo"
+        ],
+        "seenIn": ["Gambit", "[Re.] skin&hair", "Teya Logistics"]
       },
-      "3": {
-        "title": "Development",
-        "desc": "1-week sprints with demos every cycle. Working software, never a black box.",
-        "dur": "6–16 weeks"
+      "web": {
+        "title": "Web",
+        "desc": "Booking flows, client portals, dashboards and the admin tooling your team actually runs the business on.",
+        "items": ["Booking flows", "Client portals", "Dashboards", "Admin tooling"],
+        "seenIn": ["YachtMate", "SharingGround", "Ski&Sail Club"]
       },
-      "4": {
-        "title": "Marketing",
-        "desc": "Landing pages, SEO setup, analytics, and go-to-market strategy. Available as an add-on.",
-        "dur": "2–4 weeks"
+      "mobile": {
+        "title": "Mobile",
+        "desc": "iOS and Android – one app for customers, another for the people doing the work, on the same backend.",
+        "items": ["iOS app", "Android app", "Customer-facing app", "Crew app on the same backend"],
+        "seenIn": ["Pachaca", "YachtMate", "Teya Logistics"]
       },
-      "5": {
-        "title": "Launch & Support",
-        "desc": "Deployment, monitoring, and post-launch iterations. We stay after go-live.",
-        "dur": "Ongoing"
+      "mvp": {
+        "title": "MVP",
+        "desc": "A first version that answers one question before the full build.",
+        "items": [
+          "One core flow, shipped in weeks",
+          "Validated before scaling",
+          "A clear cut of what's in and out",
+          "A foundation you extend, not throw away"
+        ],
+        "seenIn": ["SharingGround", "Pachaca", "YachtMate"]
+      },
+      "fix": {
+        "title": "Redesign",
+        "desc": "Already live? Audit, redesign and new features, without starting over.",
+        "items": [
+          "Audit of what's already there",
+          "Redesign without a full rebuild",
+          "New features on the existing stack",
+          "Migration, if the stack needs to change"
+        ],
+        "seenIn": ["Gambit"]
       }
-    },
-    "processTags": {
-      "interviews": "Interviews",
-      "competitorAnalysis": "Competitor analysis",
-      "techAudit": "Tech audit",
-      "figma": "Figma",
-      "prototyping": "Prototyping",
-      "designSystem": "Design system",
-      "oneWeekSprints": "1-week sprints",
-      "weeklyDemos": "Weekly demos",
-      "codeReview": "Code review",
-      "landingPage": "Landing page",
-      "seo": "SEO",
-      "analytics": "Analytics",
-      "gtmStrategy": "GTM strategy",
-      "ciCd": "CI/CD",
-      "monitoring": "Monitoring",
-      "retainer": "Retainer"
-    },
-    "tech": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "databases": "Databases",
-      "realtime": "Real-time",
-      "infra": "Infrastructure"
     }
   },
   "industries": {
@@ -289,32 +320,17 @@
       "p2p": {
         "title": "P2P Platforms",
         "description": "We build peer-to-peer platforms where trust is the product. Sharing, rental, and exchange platforms with verification, escrow payments, item tracking, and dispute resolution – built so strangers can transact with confidence.",
-        "tags": [
-          "Sharing economy",
-          "Peer rental",
-          "Trust & safety",
-          "Escrow payments"
-        ]
+        "tags": ["Sharing economy", "Peer rental", "Trust & safety", "Escrow payments"]
       },
       "community": {
         "title": "Community",
         "description": "We design and build private networks, club platforms, and professional communities where engagement feels natural – not forced. Real-time messaging, member roles, events, and content in one place. We know the difference between a \"website\" and a \"platform where people actually return.\"",
-        "tags": [
-          "Private networks",
-          "Member portals",
-          "Real-time chat",
-          "Events"
-        ]
+        "tags": ["Private networks", "Member portals", "Real-time chat", "Events"]
       },
       "logistics": {
         "title": "Logistics",
         "description": "Working with logistics startups and SMEs on fleet management, shipment tracking, and route optimization. Two cases live – more in progress.",
-        "tags": [
-          "Fleet management",
-          "Shipment tracking",
-          "Route optimization",
-          "Logistics SaaS"
-        ]
+        "tags": ["Fleet management", "Shipment tracking", "Route optimization", "Logistics SaaS"]
       }
     },
     "comingSoon": {
@@ -355,12 +371,36 @@
   },
   "approach": {
     "label": "How we think",
-    "title": "Most studios ask what you want built. We ask who shows up first.",
-    "subtitle": "A two-sided product is worthless on launch day and nobody warns you. Owners won't join without renters. Renters won't join without owners. Clubs won't pay for a network with three clubs in it. We start there, before a single screen exists – because that's the question that decides whether the thing lives.",
+    "title": "Most studios ask what you want built. We ask what it has to survive.",
+    "subtitle": "Each product fails differently. We work out which failure would actually cost you, then design for that one.",
     "quote": {
       "text": "Design comes after the ",
       "em": "cold start.",
       "body": "The empty platform is the first product state we design for."
+    },
+    "failureModes": {
+      "label": "Same brief, three ways to fail",
+      "cta": "what it has to survive",
+      "items": {
+        "marketingSite": {
+          "label": "Marketing site",
+          "textBefore": "Has to collect ",
+          "highlight": "real leads.",
+          "fails": "Fails when it only looks good."
+        },
+        "fieldApp": {
+          "label": "Field app",
+          "textBefore": "Has to work for your crew ",
+          "highlight": "with one hand.",
+          "fails": "Fails when it was designed at a desk."
+        },
+        "bookingFlow": {
+          "label": "Booking flow",
+          "textBefore": "Has to hold up ",
+          "highlight": "on a Saturday night.",
+          "fails": "Fails when nobody is on call."
+        }
+      }
     },
     "how": {
       "1": {
@@ -391,6 +431,11 @@
         "desc": "Admin panels, moderation queues, refund flows, dispute handling. Unglamorous, never in the portfolio, and the reason platforms survive their first year."
       },
       "label": "What the product needs"
+    },
+    "slider": {
+      "next": "Next",
+      "previous": "Previous",
+      "pagination": "Slide navigation"
     }
   },
   "about": {
@@ -416,30 +461,27 @@
   },
   "team": {
     "label": "Who you'll actually work with",
-    "title": "15 people. Nobody on yours is at 20%.",
-    "subtitle": "Most studios our size sell you a team and staff you a fraction of five people spread across six projects. We assign a squad and it stays yours until launch – engineering, design and go-to-market in one room, not three vendors you have to keep in sync. That caps how many projects we run at once, and it's the trade we chose.",
-    "paginationLabel": "Team pagination",
+    "title": "13 people. Nobody on yours is at 20%.",
+    "subtitle": "Most studios our size sell you a team and staff you a fraction of five people spread across six projects. We assign a squad and it stays yours until launch. That caps how many projects we run at once. It's the trade we chose.",
+    "wholeStudioLabel": "The whole studio, one dot per person",
+    "location": "Poznań, Poland",
     "developers": {
-      "title": "Engineering · 9 people",
+      "name": "Engineering",
       "description": "Backend that survives a marketplace: verification, matching, payments, roles, permissions. Deep enough to run parallel workstreams – the platform and the admin tooling get built at the same time, not one after the other."
     },
     "designers": {
-      "title": "Product & Design · 4 people",
+      "name": "Product & Design",
       "description": "Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier."
-    },
-    "marketing": {
-      "title": "Go-to-market · 2 people (optional add-on)",
-      "description": "The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach – and we'll say so when paid acquisition is the wrong answer."
     }
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Questions that decide whether we should work together",
+    "title": "Questions that decide whether we should work together.",
     "subtitle": "Straight answers before either side spends time on a proposal.",
     "cta": {
-      "text": "Still have questions?",
-      "sub": "We're happy to answer them directly.",
-      "btn": "Book a free call"
+      "text": "Your question isn't here?",
+      "btn": "Ask it on a free call",
+      "trust": "30 min · no pitch · reply within 24h"
     },
     "q1": "Will you build my Uber for X?",
     "a1": "Maybe. But on the first call we'll ask which side you can get 100 of by hand, without ads. If there's no answer, the product isn't ready and we'll say so instead of taking the money.",
@@ -465,8 +507,9 @@
     "trust": {
       "reply": "Reply within 24h",
       "nospam": "No spam, ever",
-      "call": "Free 30-min discovery call"
+      "call": "Free 30-min call"
     },
+    "preferEmail": "Prefer email?",
     "steps": {
       "1": {
         "title": "You send the details",
@@ -497,7 +540,7 @@
       },
       "projectType": "Project type",
       "budget": "Budget",
-      "consultation": "Consultation type",
+      "consultation": "Start with",
       "message": {
         "label": "Message",
         "placeholder": "What are you building and when do you want to launch?"
@@ -513,10 +556,12 @@
       "successDesc": "We'll get back to you within 24h."
     },
     "projectTypes": {
-      "p2p": "P2P",
-      "community": "Community & clubs",
-      "logistics": "Logistics",
-      "other": "Other"
+      "website": "Website",
+      "webService": "Web service",
+      "mobileApp": "Mobile app",
+      "mvp": "MVP",
+      "improveExisting": "Improve existing product",
+      "designOnly": "Design only"
     },
     "budget": {
       "10k25k": "€10–25k",
@@ -526,19 +571,28 @@
       "unsure": "Not sure yet"
     },
     "consultation": {
-      "discovery": "Discovery Call (Free)",
-      "strategy": "Cold Start Audit (€199)"
+      "discovery": {
+        "title": "Discovery Call",
+        "price": "free"
+      },
+      "strategy": {
+        "title": "Cold Start Audit",
+        "price": "€199"
+      }
     }
   },
   "consultation": {
     "eyebrow": "Consultation",
-    "title": "Start with the question that kills most platforms.",
-    "subtitle": "Choose a free fit check or a focused audit of your cold-start problem.",
+    "titleMain": "Start with a call,",
+    "titleStrike": "not a quote.",
+    "subtitle": "A free fit check, or a focused audit of what you already have running.",
+    "priceTimeLabel": "Price · time",
+    "inShortLabel": "In short",
     "whatsIncluded": "What's included",
     "bookCall": "Book a call",
     "bookSession": "Book the audit",
-    "discoveryBadge": "YOUR FIRST STEP",
-    "strategyBadge": "Most popular before large projects",
+    "discoveryBadge": "01 — Your first step",
+    "strategyBadge": "02 — Most popular before large projects",
     "discovery": {
       "title": "Discovery Call",
       "subtitle": "Tell us what you're building. We'll tell you whether it's ours, and whether it should exist.",
@@ -546,7 +600,7 @@
       "duration": "30 min",
       "items": {
         "projectOverview": "What you're building and for whom",
-        "feasibility": "Whether we're the right studio – often we're not",
+        "feasibility": "Whether we're the right studio — often we're not",
         "timelineBudget": "Rough scope, timeline and budget range",
         "qa": "Straight answers, no deck"
       }
@@ -555,22 +609,21 @@
       "title": "Cold Start Audit",
       "subtitle": "Ninety minutes on the one question most teams skip: who shows up on day one, and why do they stay while the other side is still empty?",
       "price": "€199",
-      "duration": "90 min",
+      "duration": "90 min · credited in full",
       "items": {
         "goalsAudience": "Which side you seed first, and how",
         "competitiveAnalysis": "Where similar platforms died, specifically",
         "techStack": "Trust, verification, tech stack and architecture",
         "roadmap": "Full roadmap with milestones and risks",
         "risk": "Cold-start risk assessment",
-        "recording": "Recorded, plus a written PDF summary",
-        "credit": "Credited in full toward the project"
+        "recording": "Recorded, plus a written PDF summary"
       }
     }
   },
   "cases": {
     "eyebrow": "Our work",
-    "title": "Five platforms that had to start empty.",
-    "subtitle": "P2P, community and logistics. Some are under NDA – we'll walk you through those on a call.",
+    "title": "Websites, apps and platforms we have shipped.",
+    "subtitle": "Marketing sites, booking flows, client portals and mobile apps – across P2P, community and logistics.",
     "ndaBanner": "Some projects are under NDA – we'll walk you through those on a call.",
     "filterIndustries": {
       "p2p": "P2P",
@@ -578,22 +631,35 @@
       "logistics": "Logistics",
       "brand": "Brand & Web"
     },
+    "tabs": {
+      "all": "All",
+      "websites": "Websites",
+      "webServices": "Web services",
+      "mobileApps": "Mobile apps",
+      "design": "Design"
+    },
+    "viewAllSuffix": "projects · incl. NDA work",
     "section": {
       "viewAll": "View all cases"
     },
     "page": {
       "label": "OUR WORK",
-      "title": "Selected projects",
-      "subtitle": "P2P, community and logistics. Some projects are under NDA – we'll walk you through those on a call.",
+      "title": "Selected projects.",
+      "subtitle": "Websites, web services, mobile apps and brand work — across P2P, community and logistics.",
       "filter": {
         "all": "All"
       },
       "viewCase": "View case study",
       "nda": "NDA · details on call",
+      "sameProblem": "Same problem?",
+      "yourProject": "your project",
+      "coverPlaceholder": "[case cover]",
+      "ndaProtected": "NDA protected",
+      "ndaLabel": "NDA",
+      "showing": "Showing {shown} of {total}",
       "cta": {
-        "title": "Working on something in one of these spaces?",
-        "sub": "If your product needs strangers to trust each other, that's our whole job.",
-        "primary": "Discuss your project",
+        "title": "Your project isn't on this page yet.",
+        "sub": "30 minutes, no pitch. We'll tell you which of these it's closest to.",
         "secondary": "Book a free call"
       },
       "metadata": {
@@ -609,16 +675,17 @@
     "inProgress": "In progress",
     "designBy": "Design by",
     "ndaDetails": "Book a call to learn more",
-    "ctaTitle": "Building something two-sided?",
-    "ctaText": "Marketplace, P2P product, member network, multi-party logistics – if your product needs strangers to trust each other, that's our whole job.",
+    "ctaTitle": "Something similar in mind?",
+    "ctaText": "A site that has to bring in real leads, an app your crew uses in the field, or the platform behind both – tell us what it has to do and we'll tell you what it takes.",
     "ctaButton": "Book a call",
     "ctaSecondary": "Get a quote",
-    "bottomCtaText": "See the same cold-start problem in your product?",
-    "bottomCtaLink": "Let's talk about your day one",
+    "bottomCtaText": "Want something like this built?",
+    "bottomCtaLink": "Tell us what you need",
     "nicheCta": {
       "p2p": "Same problem?",
       "community": "Same problem?",
       "logistics": "Same problem?",
+      "brand": "Working on something similar?",
       "letsTalk": "Let's talk about your day one"
     },
     "categoryBadge": {
@@ -630,48 +697,66 @@
     },
     "items": {
       "yachtmate": {
-        "summary": "Private network for yacht club members with real-time communication.",
-        "result": "Secure club platform with real-time chat, member roles, and event management."
+        "summary": "A private network for yacht club members with real-time communication.",
+        "result": "Secure club platform with real-time chat, member roles, and event management.",
+        "tags": "Platform · Real-time messaging",
+        "industryLabel": "Community"
       },
       "sharingground": {
-        "summary": "Peer-to-peer item sharing platform with trust and logistics system.",
-        "result": "Full P2P marketplace with verification, reviews, and item tracking."
+        "summary": "A peer-to-peer item sharing platform with trust and logistics built in.",
+        "result": "Full P2P marketplace with verification, reviews, and item tracking.",
+        "tags": "Platform · Trust · Logistics",
+        "industryLabel": "P2P"
       },
       "profitcraft": {
-        "summary": "Credit-building site – one product in the ProfitCraft ecosystem together with ProfitCraft Auto.",
-        "result": "Trust-first marketing site; we also built an internal CMS that cannot be shown publicly."
+        "summary": "A credit-building site — one product in the ProfitCraft ecosystem, alongside ProfitCraft Auto.",
+        "result": "Trust-first marketing site; we also built an internal CMS that cannot be shown publicly.",
+        "industryLabel": "Community"
       },
       "profitcraftauto": {
-        "summary": "Personal auto broker site – the auto arm of the unified ProfitCraft system with ProfitCraft (credit).",
-        "result": "Marketing website with applications and mobile UI; internal CMS delivered but not public."
+        "summary": "A personal auto broker site — the auto arm of the unified ProfitCraft system.",
+        "result": "Marketing website with applications and mobile UI; internal CMS delivered but not public.",
+        "industryLabel": "Community"
       },
       "skisailclub": {
-        "summary": "Digital platform for a yacht club – trip booking and community management.",
-        "result": "Seamless booking and community platform for both newcomers and experienced sailors."
+        "summary": "A digital platform for a yacht club: trip booking and community management in one place.",
+        "result": "Seamless booking and community platform for both newcomers and experienced sailors.",
+        "tags": "Booking · Community management",
+        "industryLabel": "Community"
       },
       "navexa": {
-        "summary": "Logistics platform for fleet and shipments – with product marketing support.",
-        "result": "Operations dashboard plus marketing to position the product and attract B2B clients."
+        "summary": "A fleet and shipment logistics platform, with product marketing support. Under NDA — we'll walk you through it on a call.",
+        "result": "Operations dashboard plus marketing to position the product and attract B2B clients.",
+        "tags": "Fleet & shipments platform · NDA",
+        "industryLabel": "Logistics"
       },
       "teya": {
-        "summary": "Modern landing page for a logistics company to attract new clients.",
-        "result": "Clean marketing website that clearly presents services and drives inbound leads."
+        "summary": "A modern landing page for a logistics company, built to win new clients.",
+        "result": "Clean marketing website that clearly presents services and drives inbound leads.",
+        "tags": "Website · Landing page",
+        "industryLabel": "Logistics"
       },
       "pachaca": {
-        "summary": "A full-stack cleaning and dry-cleaning service platform – mobile apps, web service, and an internal management system built from scratch.",
-        "result": "A complete digital ecosystem for an on-demand service business – from the customer's first tap to the operations team's last status update."
+        "summary": "A full-stack cleaning and dry-cleaning platform — customer and crew mobile apps, a web service and an internal management system built from scratch.",
+        "result": "A complete digital ecosystem for an on-demand service business – from the customer's first tap to the operations team's last status update.",
+        "tags": "Mobile apps · Web service · Internal system",
+        "industryLabel": "P2P"
       },
       "mie": {
         "summary": "AI-powered smart shopping list that tracks inventory and suggests purchases.",
         "result": "Intelligent shopping assistant with inventory tracking and smart reminders."
       },
       "reskin": {
-        "summary": "Modern brand identity for a skin and hair care product line.",
-        "result": "Minimalist brand system with organic shapes and a premium feel."
+        "summary": "A modern brand identity for a skin and hair care product line.",
+        "result": "Minimalist brand system with organic shapes and a premium feel.",
+        "tags": "Brand identity",
+        "industryLabel": "Brand & Web"
       },
       "gambit": {
-        "summary": "Modern website UI redesign with strong visual hierarchy.",
-        "result": "Clean interface with bold typography and strategic use of whitespace."
+        "summary": "A website UI redesign with a strong visual hierarchy.",
+        "result": "Clean interface with bold typography and strategic use of whitespace.",
+        "tags": "Website redesign · UI",
+        "industryLabel": "Brand & Web"
       },
       "navexa-logo": {
         "summary": "Professional logo for a logistics and fleet management company.",
@@ -686,7 +771,7 @@
   "caseStudies": {
     "shared": {
       "process": {
-        "title": "How we built it",
+        "title": "How we built it.",
         "steps": {
           "discovery": {
             "title": "Discovery",
@@ -707,7 +792,8 @@
         }
       },
       "features": {
-        "title": "Key features",
+        "eyebrow": "What you get",
+        "title": "Key features.",
         "subtitle": "What we designed and built for this project."
       },
       "gallery": {
@@ -757,6 +843,10 @@
       "hero": {
         "subtitle": "A private social network for yacht club members – secure communication, events, and a verified member directory in one place."
       },
+      "stackLine": "Brand · Design · Development · React + Node.js",
+      "problemStatement": "High-profile members couldn't talk on public channels without exposing personal data.",
+      "approachStatement": "Real-time messaging, member verification and event coordination — behind strict privacy controls.",
+      "processTitle": "Brand, then design, then build.",
       "stats": {
         "projectType": {
           "label": "Project type",
@@ -774,6 +864,8 @@
       "challenge": "Yacht clubs needed a closed network where high-profile members could communicate without exposing personal data on public channels. The challenge: real-time messaging, member verification, and event coordination – all behind strict privacy controls.",
       "solution": "We built YachtMate as an exclusive platform with member verification, role-based permissions, real-time chat, and event tools. React and Node.js power low-latency messaging while keeping member data private and access-controlled.",
       "features": {
+        "eyebrow": "Two sides, one platform",
+        "title": "Who got what.",
         "subtitle": "Core mechanics that keep a private club network secure and useful day to day.",
         "items": {
           "verification": {
@@ -1289,8 +1381,38 @@
       },
       "challenge": "Pachaca needed to digitise an on-demand cleaning and dry-cleaning business across multiple Ukrainian cities – giving customers a fast mobile booking experience while giving the operations team real-time control over orders, cleaners, and service areas.",
       "solution": "We built the entire digital stack from scratch: native iOS and Android apps for customers, a full web service for desktop users, and a custom internal CMS tailored to how the Pachaca team manages daily operations.",
+      "stackLine": "Mobile · Web · Internal tools · React Native + Node.js",
       "cms": {
         "internal": "Internal tool – screenshots not available."
+      },
+      "features": {
+        "subtitle": "The pieces that take a booking from a tap to a cleaner at the door.",
+        "items": {
+          "booking": {
+            "title": "Fast booking",
+            "description": "Choose a service, pick a time, and confirm in under a minute."
+          },
+          "mobile": {
+            "title": "Native iOS & Android apps",
+            "description": "Built around speed and simplicity, with push notifications at every step."
+          },
+          "web": {
+            "title": "Web booking service",
+            "description": "The same seamless booking flow for desktop users who prefer the browser."
+          },
+          "cms": {
+            "title": "Internal operations CMS",
+            "description": "Real-time control over orders, cleaner assignment, and service areas."
+          },
+          "notifications": {
+            "title": "Push notifications",
+            "description": "Keeps customers informed from confirmation to the cleaner's arrival."
+          },
+          "payments": {
+            "title": "Integrated payments",
+            "description": "Secure in-app payment processing built into the booking flow."
+          }
+        }
       },
       "sections": {
         "overview": {
@@ -1641,6 +1763,9 @@
     "overview": "Overview",
     "challenge": "Challenge",
     "solution": "Solution",
+    "theProblem": "The problem",
+    "whatItHadToDo": "What it had to do",
+    "howWeGotThere": "How we got there",
     "techStack": "Tech stack",
     "category": {
       "design": "Design",
@@ -1656,9 +1781,20 @@
     "ctaButton": "Get in touch"
   },
   "footer": {
+    "hook": "Got something that has to work on Monday morning?",
+    "description": "Websites, web services and mobile apps. Design and development from Poznań.",
+    "clutchReviews": "2 reviews",
     "nav": "Navigation",
     "getInTouch": "Get in touch",
     "services": "Services",
+    "serviceLinks": {
+      "website": "Websites",
+      "webService": "Web services",
+      "mobileApp": "Mobile apps",
+      "mvpDevelopment": "MVP development",
+      "improvingExisting": "Improving existing products",
+      "design": "Design"
+    },
     "technologies": "Technologies",
     "process": "Process",
     "about": "About",
@@ -1685,10 +1821,10 @@
     "nav": "Navigation"
   },
   "metadata": {
-    "title": "Ortvest – platforms for P2P, communities and logistics",
-    "description": "We build marketplaces, P2P products and member networks – the kind that only work once strangers trust each other. Design, development and go-to-market from Poznań, Poland.",
-    "ogTitle": "Ortvest – the hard part was never the code",
-    "ogDescription": "We build marketplaces, P2P products and member networks – the kind that only work once strangers trust each other."
+    "title": "Ortvest – websites, web services and mobile apps",
+    "description": "We design and build websites, web services and mobile apps – booking flows, client portals, iOS and Android. One team in Poznań, EU contracts.",
+    "ogTitle": "Ortvest – websites, web services and mobile apps",
+    "ogDescription": "Design, development and launch from one team in Poznań. Marketing sites, booking flows, client portals and mobile apps."
   },
   "cmsPage": {
     "hero": {
@@ -1832,10 +1968,14 @@
   "blog": {
     "label": "Field notes",
     "title": "What we've learned building platforms that start empty.",
-    "subtitle": "Cold starts, trust systems and the parts of marketplace building nobody puts in a case study.",
+    "subtitle": "Cold starts, trust systems and the parts of platform building nobody puts in a case study.",
+    "latest": "Latest",
     "viewAll": "View all articles",
     "readArticle": "Read article",
     "minRead": "{n} min read",
+    "minutes": "{n} min",
+    "bannerCount": "{n} field notes",
+    "bannerCadence": "new every few weeks",
     "filterAll": "All",
     "authorFallback": "Ortvest"
   },
@@ -1860,17 +2000,24 @@
     "metadata": {
       "title": "Blog | Ortvest",
       "description": "Insights on design, development, and growth from the Ortvest team."
+    },
+    "relatedServices": {
+      "title": "What we build around this",
+      "subtitle": "If this is the problem you are solving, these are the pages worth reading next."
     }
   },
   "reviews": {
     "label": "Reviews",
     "title": "What clients say.",
-    "readMore": "Read more",
+    "readMore": "Read full review",
     "readLess": "Show less",
     "ratingAriaLabel": "{n} out of 5 stars",
     "avatarAlt": "Avatar of {name}",
     "paginationLabel": "Reviews pagination",
     "pageLabel": "Page {n}",
+    "prev": "Previous review",
+    "next": "Next review",
+    "viewReview": "View review by {name}",
     "cta": {
       "text": "Worked with us? We'd love to hear from you.",
       "link": "Leave a review"
@@ -2889,6 +3036,872 @@
       "legal": "By submitting you agree to our",
       "legalLink": "Privacy Policy",
       "selectPlaceholder": "Select…"
+    }
+  },
+  "servicePages": {
+    "marketplace-development": {
+      "cardSummary": "Two-sided platforms with verification, payments, disputes and the admin tooling that keeps them running.",
+      "meta": {
+        "title": "Marketplace Development Company | Ortvest",
+        "description": "We build two-sided marketplaces that survive their empty first month – verification, payments, disputes and the admin tooling nobody demos. EU team in Poznań.",
+        "ogTitle": "Marketplace development for platforms that start empty",
+        "ogDescription": "Five platforms shipped with nobody on either side on day one. Trust, payments, disputes and admin tooling built in from the start."
+      },
+      "hero": {
+        "eyebrow": "Marketplace development",
+        "title": "Marketplace development for platforms that start empty",
+        "subtitle": "Matching, payments and disputes are easy to put in a spec and hard to get right. We have taken five platforms through a launch day where neither side existed yet.",
+        "ctaPrimary": "Book a cold-start audit",
+        "ctaSecondary": "See the platforms"
+      },
+      "problem": {
+        "title": "A marketplace is not a catalogue with a checkout.",
+        "paragraphs": [
+          "The part everyone quotes for is listings, search and payment. That part is well understood, and it is not where marketplaces die. They die in month two, when one side has signed up, the other has not, and nothing in the product gives either a reason to come back.",
+          "The mechanics that fix that – who gets verified, what a profile has to prove before a stranger transacts with it, what happens when a booking goes wrong at 9pm on a Saturday – get scoped as phase two. By phase two the platform is already empty and the team is arguing about ads.",
+          "We design for the empty state first. The opening question is not what you want built. It is who shows up on day one, and why they stay while the other side is still thin."
+        ]
+      },
+      "included": {
+        "title": "What a marketplace build actually includes",
+        "subtitle": "Not a feature list. The parts that decide whether the platform survives its first year.",
+        "items": [
+          {
+            "title": "Two-sided onboarding",
+            "body": "Separate flows for supply and demand, each of which has to be usable while the other side is still empty. This is the part that gets designed last and matters most."
+          },
+          {
+            "title": "Verification and trust states",
+            "body": "Identity checks, reputation, reviews, and the states in between – pending, limited, trusted, suspended. In a marketplace this is not compliance work, it is the product."
+          },
+          {
+            "title": "Payments, payouts and refunds",
+            "body": "Escrow or direct, split payments, partial refunds, payout schedules, and VAT handling for sellers across EU borders. Refunds are where most integrations turn out to be half-built."
+          },
+          {
+            "title": "Matching and search",
+            "body": "Ranking that works with fifty listings, not just fifty thousand. Geography, availability and relevance, tuned for a thin catalogue rather than a mature one."
+          },
+          {
+            "title": "Disputes and moderation",
+            "body": "Moderation queues, dispute flows, evidence handling, and a manual override on every automated decision. Your ops team will need all four in the first month."
+          },
+          {
+            "title": "Admin tooling",
+            "body": "User impersonation, refunds, roles and permissions, audit log. It never appears in a portfolio and it is the difference between a platform you can run and one you can only demo."
+          }
+        ]
+      },
+      "process": {
+        "title": "How the build runs",
+        "subtitle": "Weekly demos against working software. No status decks.",
+        "steps": [
+          {
+            "title": "Cold-start audit",
+            "body": "Ninety minutes on who joins first and why they stay. Sometimes the honest answer is that you do not need a platform yet, and we will say so.",
+            "duration": "Week 0"
+          },
+          {
+            "title": "Flows before pixels",
+            "body": "User flows, edge cases and trust states mapped end to end, including what every screen looks like with no data in it. Most projects are won or lost here.",
+            "duration": "2-3 weeks"
+          },
+          {
+            "title": "Build in one-week sprints",
+            "body": "Working staging environment from the first sprint, demo every week. Admin tooling ships with each feature rather than being promised for later.",
+            "duration": "8-16 weeks"
+          },
+          {
+            "title": "Launch and the first ninety days",
+            "body": "Instrumentation, a moderation playbook your team can actually operate, and the changes the first real users force. We stay through that part.",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Platforms we took through day one",
+        "subtitle": "Each of these launched with nothing on either side.",
+        "cta": "All case studies"
+      },
+      "stack": {
+        "title": "What we build it with",
+        "subtitle": "Boring, well-documented technology your next developer will recognise.",
+        "groups": [
+          {
+            "title": "Product",
+            "items": ["Next.js", "React", "TypeScript", "React Native"]
+          },
+          {
+            "title": "Services",
+            "items": ["Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis"]
+          },
+          {
+            "title": "Operations",
+            "items": ["AWS", "Docker", "CI/CD", "Monitoring", "Payment providers"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions we get before a marketplace build",
+        "items": [
+          {
+            "q": "How long does it take to build a marketplace?",
+            "a": "A two-sided MVP with verification, payments and working admin tooling runs three to four months with our team. Anything quoted at six weeks is either a catalogue with a checkout bolted on, or it is missing the trust layer – which you will pay for in month two instead."
+          },
+          {
+            "q": "What drives the cost of a marketplace build?",
+            "a": "Four things, in order: how many verification and trust states the product needs, how complex the money flow is (escrow, splits, cross-border VAT), how much moderation and dispute handling your category requires, and how much admin tooling your ops team needs on day one. We write out what is in scope and what is not before you sign, which is usually where quotes diverge."
+          },
+          {
+            "q": "Can you work with an existing platform instead of rebuilding it?",
+            "a": "Often, yes. We audit what is there, say plainly which parts are structurally fine and which have to be replaced, and tell you when patching is genuinely cheaper than a rebuild. We have done both, and we have talked clients out of rebuilds."
+          },
+          {
+            "q": "How do you handle the cold-start problem?",
+            "a": "Not with features. We work out which side is harder to acquire, design the product so that side gets value while the other is still empty, and make the launch plan match that. If the right answer is a concierge phase with a spreadsheet instead of a platform, we will tell you that on the first call."
+          },
+          {
+            "q": "Do you build the mobile apps as well?",
+            "a": "Yes. Most marketplaces eventually need at least one native app, usually for the supply side. We will also tell you when a responsive web app buys you another six months and the app can wait."
+          },
+          {
+            "q": "Who owns the code?",
+            "a": "You do, from the first commit. Clean architecture, tested code, documented systems, in your repositories. We work with EU contracts from our entity in Poznań, so data and IP stay inside the EU."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Worth reading before you brief anyone",
+        "subtitle": "What we have learned shipping platforms that start empty."
+      },
+      "cta": {
+        "title": "Tell us who shows up on day one.",
+        "body": "Thirty minutes, no pitch. If a marketplace is the wrong shape for what you are doing, that is a useful answer too.",
+        "button": "Book a call"
+      }
+    },
+    "p2p-platform-development": {
+      "cardSummary": "Peer-to-peer products where strangers transact: identity, deposits, handover, damage and disputes.",
+      "meta": {
+        "title": "P2P Platform Development | Ortvest",
+        "description": "Peer-to-peer platform development: identity and verification, deposits, handover, damage claims and dispute resolution between strangers. EU team in Poznań.",
+        "ogTitle": "P2P platform development – trust is the product",
+        "ogDescription": "In a peer-to-peer product, verification, deposits and dispute handling are not compliance work. They are the thing users are paying for."
+      },
+      "hero": {
+        "eyebrow": "P2P platform development",
+        "title": "P2P platform development, where trust is the product",
+        "subtitle": "Two strangers, one item, and real money moving between them. The hard part is not the listing page – it is everything that happens when the handover goes wrong.",
+        "ctaPrimary": "Book a cold-start audit",
+        "ctaSecondary": "See the platforms"
+      },
+      "problem": {
+        "title": "A P2P product is a marketplace with the safety net removed.",
+        "paragraphs": [
+          "In a managed marketplace the operator stands behind the transaction. In a peer-to-peer product the two users carry the risk themselves, which means every mechanic that makes them feel safe is load-bearing. Take it out and the listings never convert.",
+          "That changes what has to exist on day one. Identity that is strong enough for a stranger to hand over a drill, a car or an apartment key. Deposits that can be held and released without a support ticket. Evidence capture at handover, because damage claims are not an edge case, they are a weekly occurrence.",
+          "We have built this twice in anger – an item-sharing platform with real logistics, and an on-demand service product where the person arriving at your door is not an employee. Most of the work is in the states nobody demos."
+        ]
+      },
+      "included": {
+        "title": "What a P2P build has to cover",
+        "subtitle": "The mechanics that let two strangers transact without you in the middle of every exchange.",
+        "items": [
+          {
+            "title": "Identity and verification",
+            "body": "Document checks, phone and email verification, selfie match where the category needs it, and a graded trust model rather than a single verified badge."
+          },
+          {
+            "title": "Deposits and held funds",
+            "body": "Authorisations, deposits, release rules and partial captures for damage. The flow has to work without a human approving every release, and still be reversible when it goes wrong."
+          },
+          {
+            "title": "Handover and evidence",
+            "body": "Photo capture at pickup and return, timestamped condition records, and a shared trail both sides can see. This is what turns a dispute from an argument into a decision."
+          },
+          {
+            "title": "Reputation that means something",
+            "body": "Two-sided reviews that cannot be gamed by one party, cancellation records, and a reputation that survives a user making one new account."
+          },
+          {
+            "title": "Disputes and resolution",
+            "body": "Structured claims, evidence review, partial outcomes, and an escalation path. Plus the admin side of it, because someone on your team resolves these every week."
+          },
+          {
+            "title": "Logistics where it applies",
+            "body": "Pickup windows, delivery handoff, no-show handling and the awkward middle state where an item is in transit and nobody is responsible for it."
+          }
+        ]
+      },
+      "process": {
+        "title": "How the build runs",
+        "subtitle": "Trust mechanics first, because everything else depends on them.",
+        "steps": [
+          {
+            "title": "Risk and trust mapping",
+            "body": "What can go wrong between two users in your category, how often, and what the product does in each case. This drives the whole build.",
+            "duration": "Week 0-1"
+          },
+          {
+            "title": "Flows before pixels",
+            "body": "Every trust state drawn end to end: unverified, pending, limited, trusted, suspended, in dispute. Including what each screen shows when the catalogue is nearly empty.",
+            "duration": "2-3 weeks"
+          },
+          {
+            "title": "Build in one-week sprints",
+            "body": "Verification, money movement and dispute handling ship early rather than last, because they change the data model and you do not want to retrofit them.",
+            "duration": "10-18 weeks"
+          },
+          {
+            "title": "Launch and first disputes",
+            "body": "The first real claims teach you more than the research did. We stay through them and tune the rules with your ops team.",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Peer-to-peer products we have shipped",
+        "subtitle": "Strangers, money and physical handover in all three.",
+        "cta": "All case studies"
+      },
+      "stack": {
+        "title": "What we build it with",
+        "subtitle": "Boring, well-documented technology your next developer will recognise.",
+        "groups": [
+          {
+            "title": "Product",
+            "items": ["Next.js", "React", "TypeScript", "React Native"]
+          },
+          {
+            "title": "Services",
+            "items": ["Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis"]
+          },
+          {
+            "title": "Trust layer",
+            "items": ["Identity providers", "Payment holds", "Media evidence", "Audit logging"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions we get before a P2P build",
+        "items": [
+          {
+            "q": "What is the difference between a P2P platform and a marketplace?",
+            "a": "A marketplace can operate with a managed supply side and the operator absorbing risk. A peer-to-peer product puts two private users on either end, so identity, deposits and dispute resolution move from back-office concerns to core product. We wrote this up in detail on the blog."
+          },
+          {
+            "q": "How long does a P2P platform take to build?",
+            "a": "Four to five months for a first version that handles verification, held funds and disputes properly. It is longer than a managed marketplace because the trust layer cannot be deferred – it shapes the data model."
+          },
+          {
+            "q": "Do we need identity verification from day one?",
+            "a": "Almost always, in some form. The strength should match what is being exchanged: a phone number is enough for a low-value swap, a document check is not optional when someone hands over car keys. We will help you pick the weakest verification your category tolerates, because every extra step costs you supply."
+          },
+          {
+            "q": "How do you handle damage and disputes?",
+            "a": "Evidence first: timestamped condition records at handover from both sides. Then a structured claim with partial outcomes, not a binary refund, and a resolution queue your team can work through. The product should make most disputes decidable without a phone call."
+          },
+          {
+            "q": "Can you integrate deposits with our existing payment provider?",
+            "a": "Usually. Deposits, authorisations and partial captures are supported by the major providers, with real differences in how long an authorisation holds and how partial captures behave. We check that against your category before committing to one."
+          },
+          {
+            "q": "What if we are not sure a P2P model is right?",
+            "a": "Then that is the first thing to settle. Some products are better as a managed service with suppliers you control, at least for the first year. We would rather lose the project on that call than watch it stall at month five."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Worth reading before you brief anyone",
+        "subtitle": "What we have learned building products where strangers transact."
+      },
+      "cta": {
+        "title": "Tell us what two strangers are exchanging.",
+        "body": "Thirty minutes, no pitch. We will tell you which trust mechanics are load-bearing in your category and which are theatre.",
+        "button": "Book a call"
+      }
+    },
+    "community-platform-development": {
+      "cardSummary": "Private member networks and club platforms: roles, directories, events, messaging and paid membership.",
+      "meta": {
+        "title": "Community & Member Platform Development | Ortvest",
+        "description": "We build private member networks and club platforms – verified directories, roles, events, real-time messaging and membership billing. EU team in Poznań.",
+        "ogTitle": "Community and member platform development",
+        "ogDescription": "Private networks where members have to find and trust each other: verified directories, roles, events, messaging and paid membership."
+      },
+      "hero": {
+        "eyebrow": "Community platform development",
+        "title": "Community and member platform development",
+        "subtitle": "A private network is worth nothing until the right people are in it and the wrong ones are not. Membership, roles, directories and events, built so a small community feels full rather than empty.",
+        "ctaPrimary": "Book a fit check",
+        "ctaSecondary": "See the platforms"
+      },
+      "problem": {
+        "title": "Engagement is not a feature you can add later.",
+        "paragraphs": [
+          "Most community platforms are specified as a forum plus a member list, and they launch into silence. Two hundred members and no posts is the normal outcome, not bad luck. People do not contribute into an empty room, and they do not come back to check whether it filled up.",
+          "What changes that is structure: a reason to open the product this week, a directory worth searching, and roles that make some members visibly responsible for keeping it alive. Events and recurring moments do more for retention than any notification setting.",
+          "We have built private club networks where members are verified against a real membership list, and platforms where the directory itself is the product. The quiet work is in permissions, privacy and the moderation your committee will actually use."
+        ]
+      },
+      "included": {
+        "title": "What a community platform needs to work",
+        "subtitle": "Beyond a member list and a feed nobody posts to.",
+        "items": [
+          {
+            "title": "Membership and access",
+            "body": "Invitation, application or verification against an existing member list, with approval queues and the states around them – pending, active, lapsed, suspended."
+          },
+          {
+            "title": "Roles and permissions",
+            "body": "Committee, moderator, member, guest. Different visibility for each, down to the field level on a profile, because privacy is why people joined a private network."
+          },
+          {
+            "title": "A directory worth searching",
+            "body": "Structured profiles, filters that match how members actually look for each other, and the controls that let people decide what is visible to whom."
+          },
+          {
+            "title": "Events and recurring moments",
+            "body": "Scheduling, RSVPs, capacity, waitlists and reminders. The calendar is usually the reason members open the product more than once a month."
+          },
+          {
+            "title": "Real-time communication",
+            "body": "Channels, direct messages and announcements with low-latency delivery, plus the moderation controls needed when a conversation goes sideways."
+          },
+          {
+            "title": "Membership billing",
+            "body": "Recurring dues, tiers, renewals, grace periods and the invoices your treasurer needs. Including what happens to access when a payment fails."
+          }
+        ]
+      },
+      "process": {
+        "title": "How the build runs",
+        "subtitle": "Start with who is allowed in and what they can see.",
+        "steps": [
+          {
+            "title": "Membership and privacy model",
+            "body": "Who joins, who approves, who sees what. Get this wrong and every later feature inherits the mistake.",
+            "duration": "Week 0-1"
+          },
+          {
+            "title": "Flows before pixels",
+            "body": "Joining, directory, events and messaging mapped end to end, including what the product looks like with thirty members instead of three thousand.",
+            "duration": "2-3 weeks"
+          },
+          {
+            "title": "Build in one-week sprints",
+            "body": "Weekly demos on a working staging environment, with the committee tooling shipping alongside the member-facing features.",
+            "duration": "8-14 weeks"
+          },
+          {
+            "title": "Launch with the first cohort",
+            "body": "Seed the directory, run the first events inside the product, and tune based on what the first hundred members actually do.",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Member networks we have built",
+        "subtitle": "Private communities where access and trust are the product.",
+        "cta": "All case studies"
+      },
+      "stack": {
+        "title": "What we build it with",
+        "subtitle": "Boring, well-documented technology your next developer will recognise.",
+        "groups": [
+          {
+            "title": "Product",
+            "items": ["Next.js", "React", "TypeScript", "React Native"]
+          },
+          {
+            "title": "Services",
+            "items": ["Node.js", "NestJS", "MongoDB", "PostgreSQL", "Redis"]
+          },
+          {
+            "title": "Real-time",
+            "items": ["WebSockets", "Push notifications", "Media handling", "Search"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions we get before a community build",
+        "items": [
+          {
+            "q": "Why not use an off-the-shelf community tool?",
+            "a": "If a ready-made tool fits, use it – we will say so on the first call. Custom becomes the right answer when membership rules, privacy or billing are specific to your organisation, when the directory is the product, or when the community has to live inside something you already operate."
+          },
+          {
+            "q": "How long does a community platform take to build?",
+            "a": "Two and a half to four months for a first version with membership, directory, events and messaging. Billing and mobile apps usually come after the first cohort is in and active."
+          },
+          {
+            "q": "How do you stop it from launching into silence?",
+            "a": "By designing for thirty members rather than three thousand, giving the committee tooling to seed and run activity, and anchoring the product to recurring events. We also plan the first ninety days with you, because software alone does not create engagement."
+          },
+          {
+            "q": "Can members have different levels of visibility?",
+            "a": "Yes, and they should. We model permissions down to individual profile fields, so a member can be findable by the committee but not by every guest. Privacy settings are usually the feature members test first."
+          },
+          {
+            "q": "Do you handle membership payments?",
+            "a": "Yes – recurring dues, tiers, renewals and failed payments, including what happens to access during a grace period. We also build the treasurer-facing side, which is where most off-the-shelf tools fall short."
+          },
+          {
+            "q": "Can you work with our existing member database?",
+            "a": "Usually. We import and reconcile existing lists, keep an authoritative source where one exists, and verify new joiners against it rather than asking your committee to approve everyone by hand."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Worth reading before you brief anyone",
+        "subtitle": "What we have learned building products that start with an empty room."
+      },
+      "cta": {
+        "title": "Tell us who is in the room.",
+        "body": "Thirty minutes, no pitch. We will tell you whether this needs custom software or a tool you can buy on Monday.",
+        "button": "Book a call"
+      }
+    },
+    "mvp-development": {
+      "cardSummary": "A first version narrow enough to ship in weeks and honest enough to prove whether the idea works.",
+      "meta": {
+        "title": "MVP Development for Two-Sided Products | Ortvest",
+        "description": "MVP development for marketplaces, P2P and member products: a narrow first version that proves whether the idea works, built on architecture you can keep.",
+        "ogTitle": "MVP development for two-sided products",
+        "ogDescription": "A first version narrow enough to ship in weeks, honest enough to answer the question, and built on code you will not have to throw away."
+      },
+      "hero": {
+        "eyebrow": "MVP development",
+        "title": "MVP development for two-sided products",
+        "subtitle": "An MVP is not a cheaper version of the full product. It is the smallest thing that answers the question you are actually unsure about – and for two-sided products, that question is almost never the feature list.",
+        "ctaPrimary": "Book a fit check",
+        "ctaSecondary": "See the platforms"
+      },
+      "problem": {
+        "title": "Most MVPs test the wrong thing.",
+        "paragraphs": [
+          "Teams build a thin version of every feature and launch it. What comes back is a vague signal: some signups, little usage, no clarity on why. The scope was decided by what was easy to cut rather than by what was genuinely uncertain.",
+          "For a two-sided product the uncertainty is nearly always on one side. Can we get supply without demand. Will anyone verify themselves before there is anything to transact. Will the second side come back a week later. A good MVP is shaped around that question and ruthless about everything else.",
+          "We also take the opposite position often enough to mention it: sometimes the first version should not be software. A spreadsheet, a group chat and a person doing the matching by hand will answer the question faster and cheaper, and we will tell you when that is the case."
+        ]
+      },
+      "included": {
+        "title": "What we mean by an MVP",
+        "subtitle": "Narrow in scope, not sloppy in construction.",
+        "items": [
+          {
+            "title": "One question, defined up front",
+            "body": "We write down what this version is supposed to prove and what result would count as a no. Scope arguments later resolve against that sentence."
+          },
+          {
+            "title": "One side done properly",
+            "body": "Usually the harder side gets a real experience and the other gets the minimum that makes a transaction possible. Splitting effort evenly is how both sides end up unusable."
+          },
+          {
+            "title": "Real trust mechanics, minimal version",
+            "body": "The weakest verification your category tolerates, and a manual process behind it where automation is not worth building yet."
+          },
+          {
+            "title": "Manual where manual is cheaper",
+            "body": "Matching, approvals and payouts can run through an admin panel and a human for the first months. We build the panel, not the automation."
+          },
+          {
+            "title": "Instrumentation from day one",
+            "body": "Events that answer the question, not a dashboard of vanity metrics. If the MVP cannot tell you why it failed, it has failed twice."
+          },
+          {
+            "title": "Architecture you can keep",
+            "body": "Clean, tested, documented code in your repositories. Narrow scope is a product decision, not an excuse for a codebase the next developer has to delete."
+          }
+        ]
+      },
+      "process": {
+        "title": "How the build runs",
+        "subtitle": "Eight to twelve weeks from first call to real users, when the scope holds.",
+        "steps": [
+          {
+            "title": "Define the question",
+            "body": "Ninety minutes to agree what this version has to prove and which side carries the risk. Half of what was in the brief usually leaves at this point.",
+            "duration": "Week 0"
+          },
+          {
+            "title": "Flows before pixels",
+            "body": "Only the paths that serve the question, drawn end to end, including the empty states that dominate the first weeks.",
+            "duration": "1-2 weeks"
+          },
+          {
+            "title": "Build in one-week sprints",
+            "body": "Working software from sprint one, demo every week, and scope traded openly against the deadline rather than quietly against quality.",
+            "duration": "6-10 weeks"
+          },
+          {
+            "title": "Launch and read the answer",
+            "body": "Instrumented launch, then a session on what the data says: continue, change shape, or stop. Stopping is a legitimate outcome and we will say it out loud.",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      "proof": {
+        "title": "First versions that turned into products",
+        "subtitle": "Each started narrow and kept its codebase.",
+        "cta": "All case studies"
+      },
+      "stack": {
+        "title": "What we build it with",
+        "subtitle": "The same stack as our full builds – an MVP is not a reason to pick throwaway tools.",
+        "groups": [
+          {
+            "title": "Product",
+            "items": ["Next.js", "React", "TypeScript", "React Native"]
+          },
+          {
+            "title": "Services",
+            "items": ["Node.js", "NestJS", "PostgreSQL", "MongoDB"]
+          },
+          {
+            "title": "Operations",
+            "items": ["AWS", "CI/CD", "Analytics", "Error tracking"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions we get before an MVP build",
+        "items": [
+          {
+            "q": "How long does an MVP take?",
+            "a": "Eight to twelve weeks for a two-sided product where the scope holds. The variable is not our speed, it is how quickly the question gets defined and how firmly the scope stays closed once it is."
+          },
+          {
+            "q": "What drives the cost of an MVP?",
+            "a": "Scope discipline, mostly. After that: how much verification and money movement the first version genuinely needs, whether one or both sides need a real experience, and whether a native app is required at launch. We write out what is in and what is not before you sign."
+          },
+          {
+            "q": "Can we use AI tools to build it faster and cheaper?",
+            "a": "For prototypes and internal tools, often yes. For a product that handles other people's money and identity, the audits we run on AI-assisted builds usually find the same gaps: no permission model, no admin tooling, and data models that cannot support the second feature. We wrote up what the rebuild actually costs."
+          },
+          {
+            "q": "Will we have to rebuild it after the MVP?",
+            "a": "Not if it is built properly. Narrow scope is a product decision, not a licence to write code nobody can extend. Several of our MVPs are still the same codebase two years on."
+          },
+          {
+            "q": "What if the MVP shows the idea does not work?",
+            "a": "Then it did its job for a fraction of the cost of finding out later. We would rather be the studio that told you on week ten than the one that kept billing until month twenty."
+          },
+          {
+            "q": "Do you take equity instead of fees?",
+            "a": "Sometimes, as part of a partnership rather than a standard contract. There is a separate page on how that works."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Worth reading before you brief anyone",
+        "subtitle": "On scope, quotes and what a first version should actually cost."
+      },
+      "cta": {
+        "title": "Tell us what you are unsure about.",
+        "body": "Thirty minutes, no pitch. If the fastest way to answer it is not software, we will say that first.",
+        "button": "Book a call"
+      }
+    },
+    "mobile-app-development": {
+      "cardSummary": "iOS and Android apps for marketplaces, on-demand products and the teams doing the work on the ground.",
+      "meta": {
+        "title": "Mobile App Development for Marketplaces | Ortvest",
+        "description": "iOS and Android development for marketplaces, on-demand products and field teams – booking, tracking, payments and offline-tolerant worker apps. EU team in Poznań.",
+        "ogTitle": "Mobile app development for marketplaces and on-demand products",
+        "ogDescription": "Native and cross-platform apps for products where the work happens away from a desk: booking, tracking, payments and offline tolerance."
+      },
+      "hero": {
+        "eyebrow": "Mobile app development",
+        "title": "Mobile app development for marketplaces and on-demand products",
+        "subtitle": "The customer books from a phone. The person doing the work is on one too, often with bad signal and one hand free. Those are two different apps and most briefs only budget for the first.",
+        "ctaPrimary": "Book a fit check",
+        "ctaSecondary": "See the platforms"
+      },
+      "problem": {
+        "title": "The question is rarely native versus cross-platform.",
+        "paragraphs": [
+          "Teams arrive with the technology decision already framed as the hard one. In practice it is the easy one, and it follows from a couple of facts: how often the app has to work without a connection, whether it needs hardware the web cannot reach, and how fast the product still has to change.",
+          "The real cost sits elsewhere. Push notifications that arrive when they matter and not at 2am. State that survives a dead zone and a killed app. App Store review when your release is tied to a marketing date. A worker-facing app that is usable with gloves on and a phone at twenty percent battery.",
+          "We build the customer side and the operator side as one system, because they share a backend, a permission model and the same support queue. Shipping them as separate projects is how the two drift apart."
+        ]
+      },
+      "included": {
+        "title": "What we build for mobile",
+        "subtitle": "Both ends of an on-demand product, not just the shiny one.",
+        "items": [
+          {
+            "title": "Customer apps",
+            "body": "Booking, scheduling, address and payment management, order history and live status. Designed to complete a booking in under a minute, because that is the number that decides conversion."
+          },
+          {
+            "title": "Worker and operator apps",
+            "body": "Job queues, accept and decline, navigation handoff, proof of completion with photos, and timekeeping. Built for one-handed use and poor signal."
+          },
+          {
+            "title": "Offline tolerance",
+            "body": "Local state, queued actions and conflict resolution when the connection comes back. A field app that needs full signal is not a field app."
+          },
+          {
+            "title": "Notifications that earn their place",
+            "body": "Push, quiet hours, batching and deep links into the right screen. Plus the fallbacks for when a user has notifications switched off, which many do."
+          },
+          {
+            "title": "Payments on device",
+            "body": "Saved methods, authorisations, tips, refunds and receipts, with the platform payment rules handled rather than discovered during review."
+          },
+          {
+            "title": "Release and store operations",
+            "body": "Store accounts, review cycles, staged rollouts, crash reporting and the ability to ship a fix the same week without waiting on a review queue."
+          }
+        ]
+      },
+      "process": {
+        "title": "How the build runs",
+        "subtitle": "The platform decision first, then one system with two front ends.",
+        "steps": [
+          {
+            "title": "Platform decision",
+            "body": "Web, cross-platform or native, decided from connectivity, hardware needs and release cadence. It takes a conversation, not a workshop.",
+            "duration": "Week 0"
+          },
+          {
+            "title": "Flows before pixels",
+            "body": "Both apps mapped against the same backend, including the states that only exist on a phone: interrupted, backgrounded, offline, out of battery.",
+            "duration": "2-3 weeks"
+          },
+          {
+            "title": "Build in one-week sprints",
+            "body": "Test builds in your hands from sprint one via TestFlight and internal tracks, so feedback arrives on a device rather than in a document.",
+            "duration": "8-16 weeks"
+          },
+          {
+            "title": "Store launch and beyond",
+            "body": "Store submission, staged rollout, crash monitoring, and the first round of changes real usage forces in week two.",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Apps we have shipped",
+        "subtitle": "Products where the work happens away from a desk.",
+        "cta": "All case studies"
+      },
+      "stack": {
+        "title": "What we build it with",
+        "subtitle": "One backend, two front ends, boring infrastructure.",
+        "groups": [
+          {
+            "title": "Apps",
+            "items": ["React Native", "TypeScript", "Native modules where needed"]
+          },
+          {
+            "title": "Services",
+            "items": ["Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis"]
+          },
+          {
+            "title": "Operations",
+            "items": ["App Store", "Google Play", "Push infrastructure", "Crash reporting"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions we get before a mobile build",
+        "items": [
+          {
+            "q": "Native, cross-platform or web app?",
+            "a": "Cross-platform covers most marketplace and on-demand products, including ours. Go native when you need sustained background location, deep hardware access or platform-specific performance. Stay on web when the product is occasional-use and you want to ship changes daily. We wrote a longer comparison on the blog."
+          },
+          {
+            "q": "How long does a mobile app take to build?",
+            "a": "Two to four months for a first version tied to an existing backend, longer when the platform behind it is being built at the same time. Store review adds days, not weeks, once the account setup is done early."
+          },
+          {
+            "q": "Do we need two apps, one for customers and one for workers?",
+            "a": "If the people doing the work are not your employees, usually yes – their needs are different enough that one app serves neither well. Sometimes the right answer is a customer app plus a mobile web tool for the workers, which is cheaper and we will say when it fits."
+          },
+          {
+            "q": "What drives the cost of a mobile build?",
+            "a": "Offline requirements, payments, real-time tracking and the number of distinct user roles. Store presence itself is a small fixed cost; the variable is how much of the product has to keep working when the network does not."
+          },
+          {
+            "q": "Can you take over an existing app?",
+            "a": "Yes, after an audit. We will tell you honestly whether the codebase is worth continuing or whether the remaining work is cheaper on a fresh foundation. We have recommended both."
+          },
+          {
+            "q": "Who owns the store accounts?",
+            "a": "You do. Apps are published under your developer accounts, with your certificates, so you are never locked to us for a release."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Worth reading before you brief anyone",
+        "subtitle": "On platform choice, booking flows and what a build actually costs."
+      },
+      "cta": {
+        "title": "Tell us where the work happens.",
+        "body": "Thirty minutes, no pitch. We will tell you which parts genuinely need an app and which are fine on the web.",
+        "button": "Book a call"
+      }
+    },
+    "booking-website-development": {
+      "cardSummary": "A site that takes bookings on its own, a portal clients come back to, and the panel your team runs the day on.",
+      "meta": {
+        "title": "Websites with Online Booking | Ortvest",
+        "description": "Websites that take bookings without a phone call – online booking, a client portal and the dispatch panel your team runs the day on. EU team in Poznań.",
+        "ogTitle": "Websites with online booking and a client portal",
+        "ogDescription": "For service businesses that still take orders by phone: a site that books on its own, a portal clients return to, and a panel your team runs the day on."
+      },
+      "hero": {
+        "eyebrow": "Booking websites",
+        "title": "Websites that take the booking without a phone call",
+        "subtitle": "If orders still arrive by phone, WhatsApp and a spreadsheet, the website is not the problem – it just stops at the contact form. We build the part that comes after it.",
+        "ctaPrimary": "Tell us what slows you down",
+        "ctaSecondary": "See the work"
+      },
+      "problem": {
+        "title": "The site ends where the work begins.",
+        "paragraphs": [
+          "Most service businesses already have a website. It describes the service, shows a phone number and a contact form, and that is where it stops. Everything that actually runs the business happens after that: someone answers the phone, writes the order into a chat, and matches it to whoever is free.",
+          "That gap costs in three ways at once. Customers who call outside working hours go elsewhere. Orders live in WhatsApp and a spreadsheet, so nobody can tell you what last month looked like. And aggregators take a cut of every booking precisely because they own the part your site does not do.",
+          "So the brief is not really a website. It is a site that completes a booking by itself, a place clients come back to, and a panel your team runs the day on. Those three are one system, and building them separately is how they drift apart."
+        ]
+      },
+      "included": {
+        "title": "What this build includes",
+        "subtitle": "The site is the front of it. These are the parts that make it run without you in the middle.",
+        "items": [
+          {
+            "title": "Site with online booking",
+            "body": "Service selection, address, date and time, in a flow that finishes in under a minute. The number that decides whether a visitor becomes an order."
+          },
+          {
+            "title": "Client portal",
+            "body": "Order history, repeat a previous booking in two taps, saved addresses and payment methods. The reason a one-off customer becomes a regular."
+          },
+          {
+            "title": "App or web tool for the team",
+            "body": "Job queue, accept and decline, route handoff, proof of completion with photos. Built for one hand and bad signal, not for a desk."
+          },
+          {
+            "title": "Dispatch and admin panel",
+            "body": "Who is working, what is unassigned, what went wrong. Manual override on every automated decision, because the first months run on overrides."
+          },
+          {
+            "title": "Payments and documents",
+            "body": "Online payment, prepayment or on completion, refunds and partial refunds, invoices and receipts your accountant accepts."
+          },
+          {
+            "title": "Integrations",
+            "body": "Calendar, accounting, SMS and messaging, analytics. Including the awkward one you already run the business on and cannot replace this year."
+          }
+        ]
+      },
+      "process": {
+        "title": "How the build runs",
+        "subtitle": "Starting with the smallest piece that pays for itself.",
+        "steps": [
+          {
+            "title": "One day with your operations",
+            "body": "We watch how an order actually travels today – the calls, the chat, the spreadsheet. Half the planned features usually disappear at this point.",
+            "duration": "Week 0"
+          },
+          {
+            "title": "Booking flow first",
+            "body": "The site and the booking go live before the apps. It starts paying for itself while the rest is still being built.",
+            "duration": "3-5 weeks"
+          },
+          {
+            "title": "Team side and panel",
+            "body": "Dispatch, the crew tool and the admin panel, shipped against real orders coming through the new flow.",
+            "duration": "4-8 weeks"
+          },
+          {
+            "title": "Hand over and stay",
+            "body": "Your team runs it, we stay through the first month of real load and fix what the real schedule breaks.",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      "proof": {
+        "title": "Businesses already running on this",
+        "subtitle": "Booking, dispatch and a team in the field.",
+        "cta": "All case studies"
+      },
+      "stack": {
+        "title": "What we build it with",
+        "subtitle": "Boring, well-documented technology your next developer will recognise.",
+        "groups": [
+          {
+            "title": "Site and portal",
+            "items": ["Next.js", "React", "TypeScript"]
+          },
+          {
+            "title": "Apps and services",
+            "items": ["React Native", "Node.js", "NestJS", "PostgreSQL"]
+          },
+          {
+            "title": "Operations",
+            "items": ["Payments", "SMS and messaging", "Calendars", "Analytics"]
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions we get before a booking build",
+        "items": [
+          {
+            "q": "We already have a website. Do we start over?",
+            "a": "Usually not. If the current site brings in traffic and the content is fine, we add the booking flow and the portal to it and leave the marketing pages alone. A rebuild is worth it when the site cannot be extended or when it loses people before they reach the form."
+          },
+          {
+            "q": "How long until bookings come through the site?",
+            "a": "Three to five weeks for the booking flow on an existing site, longer when the site is being rebuilt at the same time. We ship that part first on purpose, so the project starts paying before the apps are done."
+          },
+          {
+            "q": "Do we need a mobile app?",
+            "a": "Clients usually do not – a fast mobile site beats an app they have to install first. The people doing the work often do, because they are outside with one hand free. We will tell you when a mobile web tool is enough for the crew and saves you an app."
+          },
+          {
+            "q": "What does it cost?",
+            "a": "It depends on how many services and rules the booking has to express, whether payments are online, and whether the team side is a web tool or a native app. We write out what is in scope and what is not before you sign – that is usually where quotes diverge."
+          },
+          {
+            "q": "Can it work with the system we already use?",
+            "a": "Usually yes. Calendars, accounting and messaging have workable APIs. If something critical has none, we will say so on the first call rather than discover it in month three."
+          },
+          {
+            "q": "Who owns it?",
+            "a": "You do, from the first commit, in your repositories and your accounts. We work from our Poznań entity on EU contracts, so data and IP stay inside the EU."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Worth reading before you brief anyone",
+        "subtitle": "On two-sided service products, booking flows and what a build actually costs."
+      },
+      "cta": {
+        "title": "Tell us how an order reaches you today.",
+        "body": "Thirty minutes, no pitch. If the fix is a better phone script rather than software, we will say that first.",
+        "button": "Book a call"
+      }
+    }
+  },
+  "servicesIndex": {
+    "meta": {
+      "title": "Services | Ortvest",
+      "description": "Marketplace, P2P, community platform, MVP and mobile app development for products where participants have to find and trust each other.",
+      "ogTitle": "What Ortvest builds",
+      "ogDescription": "Marketplaces, P2P products, member networks, first versions and the mobile apps that go with them."
+    },
+    "hero": {
+      "eyebrow": "Services",
+      "title": "We build products that are worthless on launch day.",
+      "subtitle": "Marketplaces, peer-to-peer products and member networks only work once strangers start trusting each other. Pick the shape closest to what you are building."
+    },
+    "cta": {
+      "title": "Not sure which of these it is?",
+      "body": "That is a normal place to start. Thirty minutes on the call and we will tell you which shape fits, or that none of them do.",
+      "button": "Book a call"
     }
   }
 }

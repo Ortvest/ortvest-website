@@ -6,40 +6,44 @@ import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
 import { LangSwitch } from '@modules/Header/features/LangSwitch';
-import { IconBuildingSkyscraper, IconChevronDown, IconCpu, IconRoute, IconStack2 } from '@tabler/icons-react';
+import { serviceIcon } from '@modules/Services/serviceIcons';
+import { servicePagesForLocale, servicePath } from '@modules/Services/servicePages';
+import { IconChevronDown, type IconProps } from '@tabler/icons-react';
 
-export const servicesDropdownItems = [
-  {
-    key: 'what' as const,
-    Icon: IconStack2,
-    sublabelKey: 'what' as const,
-    href: '?tab=what#services',
-  },
-  {
-    key: 'industries' as const,
-    Icon: IconBuildingSkyscraper,
-    sublabelKey: 'industries' as const,
-    href: '?tab=industries#services',
-  },
-  {
-    key: 'process' as const,
-    Icon: IconRoute,
-    sublabelKey: 'process' as const,
-    href: '?tab=process#services',
-  },
-  {
-    key: 'technologies' as const,
-    Icon: IconCpu,
-    sublabelKey: 'technologies' as const,
-    href: '?tab=technologies#services',
-  },
-] as const;
+type DropdownIcon = React.ComponentType<IconProps>;
+
+export type ServicesDropdownItem = {
+  key: string;
+  Icon: DropdownIcon;
+  /** Resolved against the `nav` namespace. */
+  labelKey: string;
+  sublabelKey: string;
+  /** Appended to `/{locale}`. */
+  href: string;
+};
+
+/**
+ * Real /services/<slug> pages where they exist. Locales without translated
+ * service copy get no dropdown at all — the nav entry links to the home-page
+ * section instead.
+ */
+export function getServicesDropdownItems(locale: string): ServicesDropdownItem[] {
+  return servicePagesForLocale(locale).map((page) => ({
+    key: page.slug,
+    Icon: serviceIcon(page.slug),
+    labelKey: `servicePages.${page.slug}.label`,
+    sublabelKey: `servicePages.${page.slug}.sublabel`,
+    href: servicePath(locale, page.slug),
+  }));
+}
 
 export function Navigation() {
   const t = useTranslations('nav');
   const locale = useLocale();
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const containerRef = useRef<HTMLLIElement>(null);
+  const dropdownItems = getServicesDropdownItems(locale);
+  const hasServicePages = servicePagesForLocale(locale).length > 0;
 
   // Close on outside click
   useEffect(() => {
@@ -82,26 +86,35 @@ export function Navigation() {
           </Link>
         </li>
 
-        {/* Services – dropdown trigger */}
+        {/* Services – link to the index, with a dropdown for the individual pages */}
         <li ref={containerRef} className="relative">
-          <button
-            type="button"
-            aria-expanded={isServicesOpen}
-            aria-haspopup="menu"
-            onClick={() => setIsServicesOpen((prev) => !prev)}
-            className="flex items-center gap-1 text-body-sm font-medium text-black/70 transition hover:text-black">
-            {t('services')}
-            <IconChevronDown
-              size={14}
-              className={`transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}
-            />
-          </button>
+          <div className="flex items-center gap-1">
+            <Link
+              href={hasServicePages ? `/${locale}${servicePath(locale)}` : `/${locale}#services`}
+              className="text-body-sm font-medium text-black/70 transition hover:text-black">
+              {t('services')}
+            </Link>
+            {hasServicePages && (
+              <button
+                type="button"
+                aria-expanded={isServicesOpen}
+                aria-haspopup="menu"
+                aria-label={t('services')}
+                onClick={() => setIsServicesOpen((prev) => !prev)}
+                className="flex items-center text-black/70 transition hover:text-black">
+                <IconChevronDown
+                  size={14}
+                  className={`transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+            )}
+          </div>
 
-          {isServicesOpen && (
+          {isServicesOpen && hasServicePages && (
             <div
               role="menu"
               className="absolute left-0 top-full z-50 mt-2 min-w-[220px] rounded-2xl border border-zinc-800 bg-zinc-900 p-2 shadow-xl">
-              {servicesDropdownItems.map(({ key, Icon, sublabelKey, href }) => (
+              {dropdownItems.map(({ key, Icon, labelKey, sublabelKey, href }) => (
                 <Link
                   key={key}
                   href={`/${locale}${href}`}
@@ -112,11 +125,20 @@ export function Navigation() {
                     <Icon size={18} className="text-zinc-400" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-white">{t(key)}</p>
-                    <p className="mt-0.5 text-xs text-zinc-400">{t(`serviceSublabels.${sublabelKey}`)}</p>
+                    <p className="text-sm font-medium text-white">{t(labelKey)}</p>
+                    <p className="mt-0.5 text-xs text-zinc-400">{t(sublabelKey)}</p>
                   </div>
                 </Link>
               ))}
+              {hasServicePages && (
+                <Link
+                  href={`/${locale}${servicePath(locale)}`}
+                  role="menuitem"
+                  onClick={() => setIsServicesOpen(false)}
+                  className="mt-1 block rounded-xl px-3 py-2.5 text-sm font-medium text-accent transition hover:bg-zinc-800">
+                  {t('servicesAll')}
+                </Link>
+              )}
             </div>
           )}
         </li>
@@ -124,7 +146,7 @@ export function Navigation() {
         {/* Cases */}
         <li>
           <Link
-            href={`/${locale}#cases`}
+            href={`/${locale}/cases`}
             className="text-body-sm font-medium text-black/70 transition hover:text-black">
             {t('cases')}
           </Link>

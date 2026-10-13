@@ -1,65 +1,67 @@
 import { getTranslations } from 'next-intl/server';
 
+import { Container, SectionReveal } from '@shared/components';
+
 import { ContactForm } from '@modules/Contact/layout/Form';
-import { IconClock, IconMail, IconPhone, IconShieldCheck } from '@tabler/icons-react';
 
 const STEP_KEYS = ['1', '2', '3', '4'] as const;
-
-const TRUST_BADGES = [
-  { key: 'reply', Icon: IconClock },
-  { key: 'nospam', Icon: IconShieldCheck },
-  { key: 'call', Icon: IconPhone },
-] as const;
+const TRUST_KEYS = ['reply', 'nospam', 'call'] as const;
 
 export async function Contact() {
   const t = await getTranslations('contact');
 
   return (
-    <section id="contact" className="bg-white py-20" aria-labelledby="contact-heading">
-      <div className="container-main">
-        <div className="mb-12 text-center">
-          <div className="mb-3 flex items-center justify-center gap-2">
-            <IconMail size={13} className="text-accent" />
-            <span className="text-xs uppercase tracking-widest text-zinc-400">{t('label')}</span>
-          </div>
-          <h2 id="contact-heading" className="mb-3 text-h1 font-bold text-zinc-950">
-            {t('title')}
-          </h2>
-          <p className="mx-auto mb-6 max-w-lg text-body leading-relaxed text-zinc-400">{t('subtitle')}</p>
-
-          <div className="flex flex-wrap items-center justify-center gap-6">
-            {TRUST_BADGES.map(({ key, Icon }) => (
-              <div key={key} className="flex items-center gap-1.5 text-sm text-zinc-400">
-                <Icon size={13} className="text-zinc-400" />
-                <span>{t(`trust.${key}`)}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <p className="mb-5 text-[10px] uppercase tracking-widest text-zinc-500">{t('steps.label')}</p>
+    <section id="contact" className="section-padding bg-black" aria-labelledby="contact-heading">
+      <Container>
+        <SectionReveal direction="left">
+          <div className="mb-14 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div>
-              {STEP_KEYS.map((key) => (
-                <div
-                  key={key}
-                  className="flex items-start gap-4 border-b border-l-2 border-l-transparent border-zinc-100 py-5 pl-1 transition-all duration-200 last:border-b-0 hover:border-l-accent hover:pl-3">
-                  <div className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-zinc-200 text-xs text-zinc-400 transition-colors hover:border-accent/50">
-                    {key}
-                  </div>
-                  <div>
-                    <p className="mb-1 text-[15px] font-semibold text-zinc-950">{t(`steps.${key}.title`)}</p>
-                    <p className="text-body-sm leading-relaxed text-zinc-400">{t(`steps.${key}.desc`)}</p>
-                  </div>
-                </div>
-              ))}
+              <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-white/40">{t('label')}</p>
+              <h2 id="contact-heading" className="text-h1 font-extrabold leading-tight text-white">
+                {t('title')}
+              </h2>
+            </div>
+            <div className="max-w-xs lg:pt-2">
+              <p className="text-body-sm leading-relaxed text-white/50">{t('subtitle')}</p>
+              <p className="mt-4 font-mono text-xs text-white/35">
+                {TRUST_KEYS.map((key) => t(`trust.${key}`)).join(' · ')}
+              </p>
             </div>
           </div>
 
-          <ContactForm />
-        </div>
-      </div>
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-16">
+            <div className="flex flex-col lg:justify-end">
+              <div className="divide-y divide-white/10">
+                <p className="pb-5 text-xs uppercase tracking-widest text-white/40">{t('steps.label')}</p>
+
+                {STEP_KEYS.map((key, index) => (
+                  <div key={key} className="flex items-start gap-4 py-5">
+                    <div
+                      className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-semibold ${
+                        index === 0 ? 'bg-accent text-black' : 'border border-white/20 text-white/50'
+                      }`}>
+                      {key}
+                    </div>
+                    <div>
+                      <p className="mb-1 text-[15px] font-semibold text-white">{t(`steps.${key}.title`)}</p>
+                      <p className="text-body-sm leading-relaxed text-white/50">{t(`steps.${key}.desc`)}</p>
+                    </div>
+                  </div>
+                ))}
+
+                <p className="pt-6 text-sm text-white/50">
+                  {t('preferEmail')}{' '}
+                  <a href="mailto:contact@ortvest.com" className="font-medium text-white underline underline-offset-2">
+                    contact@ortvest.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <ContactForm />
+          </div>
+        </SectionReveal>
+      </Container>
     </section>
   );
 }

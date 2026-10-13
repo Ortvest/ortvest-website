@@ -86,6 +86,33 @@ export interface CaseStudyConfig {
   galleryType: CaseStudyGalleryType;
 }
 
+export type CaseServiceTagKey = 'website' | 'webService' | 'mobileApp' | 'design';
+
+/** Service-type tags shown on the case detail hero — mirrors the taxonomy used on /cases. */
+export const CASE_SERVICE_TAGS: Record<string, CaseServiceTagKey[]> = {
+  pachaca: ['mobileApp', 'webService'],
+  yachtmate: ['webService', 'design'],
+  sharingground: ['webService'],
+  skisailclub: ['webService', 'website'],
+  profitcraft: ['website'],
+  profitcraftauto: ['website'],
+  teya: ['website', 'design'],
+  gambit: ['website', 'design'],
+  reskin: ['design'],
+};
+
+/** Short, generic word for each section id, used to build a fallback tech/stage line. */
+export const SECTION_SHORT_LABEL: Record<string, string> = {
+  brand: 'Brand',
+  design: 'Design',
+  development: 'Development',
+  strategy: 'Strategy',
+  cms: 'Internal tools',
+  overview: 'Overview',
+  mobile: 'Mobile',
+  web: 'Web',
+};
+
 /** Display order for portfolio + brand cases (used for “next case” navigation). */
 export const CASE_STUDY_ORDER = [
   'yachtmate',
