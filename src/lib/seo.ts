@@ -1,6 +1,6 @@
 import { defaultLocale, type Locale, locales } from '../i18n/routing';
 
-/** Canonical site origin — always www, matching production redirects. */
+/** Canonical site origin - always www, matching production redirects. */
 export const SITE_URL = 'https://www.ortvest.com';
 
 /**

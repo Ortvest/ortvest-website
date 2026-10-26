@@ -88,7 +88,7 @@ export interface CaseStudyConfig {
 
 export type CaseServiceTagKey = 'website' | 'webService' | 'mobileApp' | 'design';
 
-/** Service-type tags shown on the case detail hero — mirrors the taxonomy used on /cases. */
+/** Service-type tags shown on the case detail hero - mirrors the taxonomy used on /cases. */
 export const CASE_SERVICE_TAGS: Record<string, CaseServiceTagKey[]> = {
   pachaca: ['mobileApp', 'webService'],
   yachtmate: ['webService', 'design'],

@@ -159,8 +159,8 @@ function comparableText(value: string): string {
 
 /**
  * True when a body heading just restates the post title. Exports rarely repeat
- * it verbatim — "Under a minute to book. Three minutes to a cleaner." against a
- * title that continues ": What We Built for Pachaca" — so a long shared prefix
+ * it verbatim - "Under a minute to book. Three minutes to a cleaner." against a
+ * title that continues ": What We Built for Pachaca" - so a long shared prefix
  * counts as an echo too.
  */
 function isTitleEcho(heading: string, title: string): boolean {
@@ -178,7 +178,7 @@ function isTitleEcho(heading: string, title: string): boolean {
  *
  * Posts come from several sources (AI agent, markdown import, hand-written in
  * the CMS) and historically carried two defects: a first heading restating the
- * post title — which renders as a second heading saying the same thing — and
+ * post title - which renders as a second heading saying the same thing - and
  * section headings starting at h3 with no h2 above them. Both are fixed at
  * render time so already-published posts are corrected too, not just new ones.
  */

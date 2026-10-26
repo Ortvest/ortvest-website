@@ -189,7 +189,7 @@ async function main() {
   for (const { url, message } of warnings) console.log(`  warn   ${url}\n         ${message}`);
   for (const { url, message } of errors) console.log(`  ERROR  ${url}\n         ${message}`);
 
-  console.log(`\n${pages.length} pages checked — ${errors.length} error(s), ${warnings.length} warning(s)`);
+  console.log(`\n${pages.length} pages checked - ${errors.length} error(s), ${warnings.length} warning(s)`);
   process.exit(errors.length > 0 ? 1 : 0);
 }
 

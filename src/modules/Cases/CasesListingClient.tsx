@@ -23,7 +23,7 @@ type RowConfig = {
 
 /**
  * Curated display order + service-type tags + cover treatment for the
- * selected-projects page. This is presentation metadata for this one page —
+ * selected-projects page. This is presentation metadata for this one page -
  * independent of `industries`/`serviceTags` in `data.ts`, which drive the
  * homepage grid and case detail pages.
  */

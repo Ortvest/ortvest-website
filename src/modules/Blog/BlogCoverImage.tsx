@@ -17,7 +17,7 @@ function isOptimizable(src: string): boolean {
 
 type BlogCoverImageProps = {
   src: string;
-  /** Post title — never empty: these covers carry the article's topic. */
+  /** Post title - never empty: these covers carry the article's topic. */
   alt: string;
   /** Set on the first cover above the fold (LCP element) to skip lazy loading. */
   priority?: boolean;

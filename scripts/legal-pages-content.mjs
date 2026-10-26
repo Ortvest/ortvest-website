@@ -1,4 +1,4 @@
-/** Canonical legal page content — July 2026 update. Applied to en, pl, and ua (English pending translation). */
+/** Canonical legal page content - July 2026 update. Applied to en, pl, and ua (English pending translation). */
 
 export const legalPages = {
   privacy: {

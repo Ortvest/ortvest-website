@@ -9,7 +9,7 @@ import { SERVICE_INDEX_LOCALES, SERVICE_PAGES, servicePath } from '@modules/Serv
 const baseUrl = 'https://www.ortvest.com';
 const locales = ['en', 'ua', 'pl'];
 
-// Re-generate at most every 6 hours instead of on every crawler hit — the
+// Re-generate at most every 6 hours instead of on every crawler hit - the
 // sitemap fans out to the CMS once per locale and used to answer in ~3s.
 export const revalidate = 21600;
 
@@ -31,7 +31,7 @@ const STATIC_ROUTE_UPDATED = {
 type ChangeFrequency = MetadataRoute.Sitemap[number]['changeFrequency'];
 
 /**
- * `xhtml:link` alternates for a localized path — one reciprocal set per URL,
+ * `xhtml:link` alternates for a localized path - one reciprocal set per URL,
  * with x-default pointing at English (or the first available locale).
  *
  * `pathFor` is a function because some paths are themselves localized:
@@ -85,7 +85,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'monthly',
       priority: 0.8,
     }),
-    // Only locales that actually have posts — an empty listing is noindexed.
+    // Only locales that actually have posts - an empty listing is noindexed.
     ...entriesFor('/blog', blogLocales, {
       lastModified: STATIC_ROUTE_UPDATED.blog,
       changeFrequency: 'weekly',

@@ -15,7 +15,7 @@ import { localeToHreflang, SITE_URL } from './seo';
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 
-/** Raster logo (180x180 PNG from app/apple-icon.tsx) — Google ignores SVG logos. */
+/** Raster logo (180x180 PNG from app/apple-icon.tsx) - Google ignores SVG logos. */
 const LOGO_URL = `${SITE_URL}/apple-icon`;
 
 /**
@@ -25,11 +25,11 @@ const LOGO_URL = `${SITE_URL}/apple-icon`;
  * (a LocalBusiness subtype) with a full postal address, which is what Google
  * needs to treat Ortvest as a local entity for "software house Poznań"-type
  * queries. Left empty, the markup stays an Organization with city-level address
- * only — incomplete address data is worse than none, so nothing is guessed.
+ * only - incomplete address data is worse than none, so nothing is guessed.
  */
 const CONTACT = {
   /**
-   * Must match the Google Business Profile listing character for character —
+   * Must match the Google Business Profile listing character for character -
    * a formatting mismatch is a common reason Google fails to merge the entity.
    * The official form is `ul. Augustyna Szamarzewskiego 21 lok. 2`.
    */

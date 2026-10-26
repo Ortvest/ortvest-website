@@ -56,16 +56,16 @@
   "divider": {
     "platforms": "two-sided platforms shipped",
     "people": "people. One squad per project.",
-    "industries": "industries. A fourth in build.",
-    "industryList": "Websites · Mobile apps · Web services · Platforms"
+    "industries": "industries.",
+    "industryList": "Logistics · Platforms · Agritech · Community"
   },
   "hero": {
     "badge": "Websites · Web services · Mobile apps",
-    "title1": "Websites, web services and mobile apps.",
-    "title2": "Built to work on Monday morning.",
+    "title1": "Software, designed and built",
+    "title2": "by one team.",
     "title3": "",
     "title3em": "",
-    "subtitle": "Design, development and launch from one team in Poznań. Marketing sites, booking flows, client portals, iOS and Android apps – and the platform underneath when the product needs one.",
+    "subtitle": "Logistics, platforms, agritech and community products. Discovery to launch in weekly sprints, fixed price after scope, one EU contract.",
     "cta": {
       "primary": "Tell us what you need built",
       "secondary": "See the work"
@@ -76,16 +76,16 @@
     },
     "nodes": {
       "shippers": {
-        "title": "Websites"
+        "title": "Logistics"
       },
       "clubs": {
-        "title": "Mobile apps"
+        "title": "Community"
       },
       "owners": {
-        "title": "Web services"
+        "title": "P2P"
       },
       "agritech": {
-        "title": "Platforms"
+        "title": "Agritech"
       }
     },
     "stats": {
@@ -102,7 +102,8 @@
     "nicheTags": {
       "p2p": "P2P",
       "community": "Community",
-      "logistics": "Logistics"
+      "logistics": "Logistics",
+      "agritech": "Agritech"
     },
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "See what we do",
@@ -241,14 +242,14 @@
     "proof": "For example",
     "disciplinesLabel": "Every build includes",
     "startAs": {
-      "label": "Any of these can start as —",
+      "label": "Any of these can start as -",
       "mvp": {
         "title": "An MVP",
         "desc": "A first version that answers one question before the full build."
       },
       "upgrade": {
         "title": "An upgrade",
-        "desc": "Already live? Audit, redesign and new features — without starting over."
+        "desc": "Already live? Audit, redesign and new features - without starting over."
       },
       "designOnly": {
         "title": "Design only",
@@ -404,8 +405,8 @@
     },
     "how": {
       "1": {
-        "title": "Every platform we built launched empty",
-        "desc": "No listings, no members, no other side. We know what breaks in month two and which features you'll wish you'd cut. That's what you're hiring – not a framework list."
+        "title": "One team, start to finish",
+        "desc": "The people who scope your project design it and build it. Nobody hands your product to a second team after the pitch."
       },
       "2": {
         "title": "We'll tell you not to build it",
@@ -413,7 +414,7 @@
       },
       "3": {
         "title": "Same timezone, EU contracts",
-        "desc": "Poznań, Poland. An EU entity your legal team can contract with, data and IP handled inside the EU, and a team working your hours. Nobody schedules a 6am standup."
+        "desc": "Poznań, Poland. An EU entity your legal team can contract with, and a team working your hours. Nobody schedules a 6am standup."
       },
       "label": "How we work"
     },
@@ -483,14 +484,14 @@
       "btn": "Ask it on a free call",
       "trust": "30 min · no pitch · reply within 24h"
     },
-    "q1": "Will you build my Uber for X?",
-    "a1": "Maybe. But on the first call we'll ask which side you can get 100 of by hand, without ads. If there's no answer, the product isn't ready and we'll say so instead of taking the money.",
-    "q2": "Why so few industries?",
-    "a2": "Because a fourth would be a claim we can't back with work yet – we're building our first agritech platform now and we'll say so plainly until it ships. We build platforms where participants have to find and trust each other. That shape repeats across marketplaces, clubs and logistics. Outside it we'd be guessing on your budget.",
+    "q1": "Will you build it if I don't have users yet?",
+    "a1": "We'll ask what you can test by hand, without ads, before we design anything. If there's no answer yet, we'll say the product isn't ready instead of taking the money.",
+    "q2": "Why only four industries?",
+    "a2": "Because we build where people have to find and trust each other, by hand, by a schedule, or across a border: logistics, platforms and marketplaces, agritech, and community. Outside that we'd be guessing on your budget.",
     "q3": "How much does a platform cost?",
     "a3": "It depends on the trust model, number of participant roles and operational tooling. We'll give you a rough budget range on the first call and a fixed price after scope. If a prototype is the smarter first step, we'll say so.",
     "q4": "Can I hire you for just design, or just development?",
-    "a4": "Yes. Design-only, build-only, or marketing-only all work. We'll scope it accordingly.",
+    "a4": "Yes. Design-only or build-only both work. We'll scope it accordingly.",
     "q5": "Do you work with existing codebases?",
     "a5": "Yes. We'll audit first and give you an honest verdict, including \"rewrite\" or \"keep your current team.\"",
     "q6": "What does working together look like?",
@@ -591,8 +592,8 @@
     "whatsIncluded": "What's included",
     "bookCall": "Book a call",
     "bookSession": "Book the audit",
-    "discoveryBadge": "01 — Your first step",
-    "strategyBadge": "02 — Most popular before large projects",
+    "discoveryBadge": "01 - Your first step",
+    "strategyBadge": "02 - Most popular before large projects",
     "discovery": {
       "title": "Discovery Call",
       "subtitle": "Tell us what you're building. We'll tell you whether it's ours, and whether it should exist.",
@@ -600,7 +601,7 @@
       "duration": "30 min",
       "items": {
         "projectOverview": "What you're building and for whom",
-        "feasibility": "Whether we're the right studio — often we're not",
+        "feasibility": "Whether we're the right studio - often we're not",
         "timelineBudget": "Rough scope, timeline and budget range",
         "qa": "Straight answers, no deck"
       }
@@ -645,7 +646,7 @@
     "page": {
       "label": "OUR WORK",
       "title": "Selected projects.",
-      "subtitle": "Websites, web services, mobile apps and brand work — across P2P, community and logistics.",
+      "subtitle": "Websites, web services, mobile apps and brand work - across P2P, community and logistics.",
       "filter": {
         "all": "All"
       },
@@ -709,12 +710,12 @@
         "industryLabel": "P2P"
       },
       "profitcraft": {
-        "summary": "A credit-building site — one product in the ProfitCraft ecosystem, alongside ProfitCraft Auto.",
+        "summary": "A credit-building site - one product in the ProfitCraft ecosystem, alongside ProfitCraft Auto.",
         "result": "Trust-first marketing site; we also built an internal CMS that cannot be shown publicly.",
         "industryLabel": "Community"
       },
       "profitcraftauto": {
-        "summary": "A personal auto broker site — the auto arm of the unified ProfitCraft system.",
+        "summary": "A personal auto broker site - the auto arm of the unified ProfitCraft system.",
         "result": "Marketing website with applications and mobile UI; internal CMS delivered but not public.",
         "industryLabel": "Community"
       },
@@ -725,7 +726,7 @@
         "industryLabel": "Community"
       },
       "navexa": {
-        "summary": "A fleet and shipment logistics platform, with product marketing support. Under NDA — we'll walk you through it on a call.",
+        "summary": "A fleet and shipment logistics platform, with product marketing support. Under NDA - we'll walk you through it on a call.",
         "result": "Operations dashboard plus marketing to position the product and attract B2B clients.",
         "tags": "Fleet & shipments platform · NDA",
         "industryLabel": "Logistics"
@@ -737,7 +738,7 @@
         "industryLabel": "Logistics"
       },
       "pachaca": {
-        "summary": "A full-stack cleaning and dry-cleaning platform — customer and crew mobile apps, a web service and an internal management system built from scratch.",
+        "summary": "A full-stack cleaning and dry-cleaning platform - customer and crew mobile apps, a web service and an internal management system built from scratch.",
         "result": "A complete digital ecosystem for an on-demand service business – from the customer's first tap to the operations team's last status update.",
         "tags": "Mobile apps · Web service · Internal system",
         "industryLabel": "P2P"
@@ -845,7 +846,7 @@
       },
       "stackLine": "Brand · Design · Development · React + Node.js",
       "problemStatement": "High-profile members couldn't talk on public channels without exposing personal data.",
-      "approachStatement": "Real-time messaging, member verification and event coordination — behind strict privacy controls.",
+      "approachStatement": "Real-time messaging, member verification and event coordination - behind strict privacy controls.",
       "processTitle": "Brand, then design, then build.",
       "stats": {
         "projectType": {
@@ -1222,7 +1223,7 @@
     },
     "navexa": {
       "meta": {
-        "title": "Navexa – Logistics Management Platform | Ortvest",
+        "title": "Teyos – Logistics Management Platform | Ortvest",
         "description": "How Ortvest built a logistics platform for fleet tracking, route optimization, and shipment monitoring. NDA project."
       },
       "hero": {
@@ -1636,8 +1637,8 @@
     },
     "navexa-logo": {
       "meta": {
-        "title": "Navexa Logo – Brand Identity | Ortvest",
-        "description": "Logo design for Navexa logistics – navigation, precision, and versatile light and dark variations."
+        "title": "Teyos Logo – Brand Identity | Ortvest",
+        "description": "Logo design for Teyos logistics – navigation, precision, and versatile light and dark variations."
       },
       "hero": {
         "subtitle": "A professional logo for a logistics company – precision, navigation, and modern technology in a versatile mark."
@@ -1656,7 +1657,7 @@
           "value": "Print + Digital"
         }
       },
-      "challenge": "Navexa needed a logo that communicates navigation and operational precision – working on dashboards, vehicles, documents, and marketing in both light and dark contexts.",
+      "challenge": "Teyos needed a logo that communicates navigation and operational precision – working on dashboards, vehicles, documents, and marketing in both light and dark contexts.",
       "solution": "We created a minimalist mark with clean geometry and color variations for digital products and print. The system scales from favicon to fleet branding without losing clarity.",
       "features": {
         "subtitle": "Logo system built for logistics and product environments.",
@@ -1787,14 +1788,7 @@
     "nav": "Navigation",
     "getInTouch": "Get in touch",
     "services": "Services",
-    "serviceLinks": {
-      "website": "Websites",
-      "webService": "Web services",
-      "mobileApp": "Mobile apps",
-      "mvpDevelopment": "MVP development",
-      "improvingExisting": "Improving existing products",
-      "design": "Design"
-    },
+    "allServicesLink": "All services",
     "technologies": "Technologies",
     "process": "Process",
     "about": "About",
@@ -1961,14 +1955,14 @@
     }
   },
   "blogSection": {
-    "title": "What we've learned building platforms that start empty.",
-    "subtitle": "Cold starts, trust systems and the parts of marketplace building nobody puts in a case study.",
+    "title": "What we've learned building logistics, platform, agritech and community software.",
+    "subtitle": "Written for the people paying for it, not for other developers.",
     "viewAll": "View all articles"
   },
   "blog": {
     "label": "Field notes",
-    "title": "What we've learned building platforms that start empty.",
-    "subtitle": "Cold starts, trust systems and the parts of platform building nobody puts in a case study.",
+    "title": "What we've learned building logistics, platform, agritech and community software.",
+    "subtitle": "Written for the people paying for it, not for other developers.",
     "latest": "Latest",
     "viewAll": "View all articles",
     "readArticle": "Read article",
@@ -1980,8 +1974,8 @@
     "authorFallback": "Ortvest"
   },
   "blogPage": {
-    "title": "Blog",
-    "subtitle": "Insights on design, development & growth.",
+    "title": "Field notes.",
+    "subtitle": "What we've learned building logistics, platform, agritech and community software. Written for the people paying for it, not for other developers.",
     "readArticle": "Read article",
     "loadMore": "Load more",
     "back": "Back to Blog",
@@ -1993,9 +1987,9 @@
     "filterAll": "All",
     "tableOfContents": "Table of contents",
     "articleCta": {
-      "title": "Building a platform that starts empty?",
-      "body": "We help marketplaces, member networks and logistics platforms solve the cold start before they spend on the wrong build.",
-      "button": "Discuss your platform"
+      "title": "Building something in logistics, platforms, agritech or community?",
+      "body": "One team for design and build, weekly demos, fixed price once scope is set.",
+      "button": "Discuss your project"
     },
     "metadata": {
       "title": "Blog | Ortvest",
@@ -2932,7 +2926,7 @@
         "number": "01",
         "title": "Embedded team",
         "who": "You have a product vision and need a full-stack squad without managing five separate vendors.",
-        "what": "Engineering, design and go-to-market embedded into your team for the duration. One point of contact, one squad, weekly demos.",
+        "what": "Engineering and design embedded into your team for the duration. One point of contact, one squad, weekly demos.",
         "terms": "Fixed-scope or rolling monthly. Rates on request."
       },
       "equity": {
@@ -2970,11 +2964,11 @@
       "cards": {
         "1": {
           "title": "A team deep enough not to be your bottleneck",
-          "body": "Fifteen people, and the ones on your project aren't split across six others. Backend, product and go-to-market sit in one room – so the platform and the admin tooling get built in parallel, not one after the other while you wait."
+          "body": "Thirteen people, and the ones on your project aren't split across six others. Backend, product and design sit in one room – so the platform and the admin tooling get built in parallel, not one after the other while you wait."
         },
         "2": {
           "title": "We've made these calls with our own money",
-          "body": "We fund Yachtly ourselves: pricing model, which side to seed first, which features to cut. That's why we argue about your business model instead of just implementing it. A studio that has never owned the downside will build whatever you ask for."
+          "body": "We fund YachtMate ourselves: pricing model, which side to seed first, which features to cut. That's why we argue about your business model instead of just implementing it. A studio that has never owned the downside will build whatever you ask for."
         },
         "3": {
           "title": "You don't need to know what to ask for",
@@ -3166,7 +3160,7 @@
           },
           {
             "q": "Who owns the code?",
-            "a": "You do, from the first commit. Clean architecture, tested code, documented systems, in your repositories. We work with EU contracts from our entity in Poznań, so data and IP stay inside the EU."
+            "a": "You do, from the first commit. Clean architecture, tested code, documented systems, in your repositories. We work with EU contracts from our entity in Poznań."
           }
         ]
       },
@@ -3871,7 +3865,7 @@
           },
           {
             "q": "Who owns it?",
-            "a": "You do, from the first commit, in your repositories and your accounts. We work from our Poznań entity on EU contracts, so data and IP stay inside the EU."
+            "a": "You do, from the first commit, in your repositories and your accounts. We work from our Poznań entity on EU contracts."
           }
         ]
       },
@@ -3895,8 +3889,8 @@
     },
     "hero": {
       "eyebrow": "Services",
-      "title": "We build products that are worthless on launch day.",
-      "subtitle": "Marketplaces, peer-to-peer products and member networks only work once strangers start trusting each other. Pick the shape closest to what you are building."
+      "title": "Websites, apps and platforms. Built by one team.",
+      "subtitle": "Booking websites, mobile apps, MVPs, marketplaces and member networks. Pick the shape closest to what you are building."
     },
     "cta": {
       "title": "Not sure which of these it is?",

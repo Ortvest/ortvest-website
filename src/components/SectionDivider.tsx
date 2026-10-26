@@ -13,7 +13,7 @@ export async function SectionDivider() {
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-nowrap sm:items-center sm:justify-center sm:gap-4 md:gap-8">
               <div className="flex flex-col items-center sm:min-w-0">
                 <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
-                  3
+                  5
                 </p>
                 <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:whitespace-nowrap sm:text-[11px]">
                   {t('platforms')}
@@ -24,7 +24,7 @@ export async function SectionDivider() {
 
               <div className="flex flex-col items-center sm:min-w-0">
                 <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
-                  15
+                  13
                 </p>
                 <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:whitespace-nowrap sm:text-[11px]">
                   {t('people')}
@@ -35,7 +35,7 @@ export async function SectionDivider() {
 
               <div className="flex flex-col items-center sm:min-w-0">
                 <p className="text-center text-[15px] font-bold text-accent sm:text-[24px] sm:font-extrabold sm:tracking-tight sm:text-white">
-                  3
+                  4
                 </p>
                 <p className="mt-0.5 text-center text-[12px] leading-tight text-zinc-400 sm:mt-0.5 sm:whitespace-nowrap sm:text-[11px]">
                   {t('industries')}

@@ -6,20 +6,20 @@ Scope: the current working tree of `ortvest-website`. This is a literal code/con
 
 Render order from `src/app/[locale]/page.tsx`:
 
-1. **Header** — `src/modules/Header/index.tsx` — client component.
-2. **Hero** — `src/modules/Hero/index.tsx` — client component.
-3. **SectionDivider** — `src/components/SectionDivider.tsx` — async server component.
-4. **About / approach** — `src/modules/About/index.tsx` — async server component.
-5. **Team** — `src/modules/Team/index.tsx` — client component.
-6. **ServicesSection** — `src/modules/Services/ServicesSection.tsx` — client component inside `Suspense`.
-7. **Reviews** — `src/modules/Reviews/index.tsx` — client component.
-8. **Cases** — `src/modules/Cases/index.tsx` — client component.
-9. **Consultation** — `src/modules/Consultation/index.tsx` — client component.
-10. **BlogSection** — `src/modules/Blog/BlogSection.tsx` — async server component; renders `src/modules/Blog/BlogSectionClient.tsx`, a client component.
-11. **FAQ** — `src/modules/FAQ/index.tsx` — client component.
-12. **Contact** — `src/modules/Contact/index.tsx` — client component.
-13. **Footer** — `src/modules/Footer/index.tsx` — client component.
-14. **Modal host** — `src/modules/Modals/index.tsx` — client component; conditionally renders success/error overlays rather than a page section.
+1. **Header** - `src/modules/Header/index.tsx` - client component.
+2. **Hero** - `src/modules/Hero/index.tsx` - client component.
+3. **SectionDivider** - `src/components/SectionDivider.tsx` - async server component.
+4. **About / approach** - `src/modules/About/index.tsx` - async server component.
+5. **Team** - `src/modules/Team/index.tsx` - client component.
+6. **ServicesSection** - `src/modules/Services/ServicesSection.tsx` - client component inside `Suspense`.
+7. **Reviews** - `src/modules/Reviews/index.tsx` - client component.
+8. **Cases** - `src/modules/Cases/index.tsx` - client component.
+9. **Consultation** - `src/modules/Consultation/index.tsx` - client component.
+10. **BlogSection** - `src/modules/Blog/BlogSection.tsx` - async server component; renders `src/modules/Blog/BlogSectionClient.tsx`, a client component.
+11. **FAQ** - `src/modules/FAQ/index.tsx` - client component.
+12. **Contact** - `src/modules/Contact/index.tsx` - client component.
+13. **Footer** - `src/modules/Footer/index.tsx` - client component.
+14. **Modal host** - `src/modules/Modals/index.tsx` - client component; conditionally renders success/error overlays rather than a page section.
 
 The page itself, `src/app/[locale]/page.tsx`, is a server component wrapped by the client component `src/global/store/ReduxProvider.tsx`.
 
@@ -41,10 +41,10 @@ Visible English:
 - Desktop/mobile CTA: `Get a quote`
 - Navigation: `About`, `Team`, `Services`, `Cases`, `Blog`, `FAQ`
 - Services dropdown:
-  - `What we do` — `Design, Dev & Marketing`
-  - `Industries` — `P2P, Community, Logistics…`
-  - `Process` — `How we work, step by step`
-  - `Technologies` — `Our tech stack`
+  - `What we do` - `Design, Dev & Marketing`
+  - `Industries` - `P2P, Community, Logistics…`
+  - `Process` - `How we work, step by step`
+  - `Technologies` - `Our tech stack`
 - Language selector: `Language`, `EN`, `UA`, `PL`
 - Mobile menu slogan: `From idea to launch. One team.`
 - Mobile accessibility labels: `Open menu`, `Close menu`
@@ -74,7 +74,7 @@ Visible English:
 - Eyebrow: `For marketplaces, P2P products and member networks`
 - Heading line 1: `The hard part was never the code.`
 - Heading line 2: `It's the empty platform.`
-- Subheading: `Marketplaces, P2P products and member networks only work when strangers start trusting each other. That's the problem we specialise in — and we've solved day one five times.`
+- Subheading: `Marketplaces, P2P products and member networks only work when strangers start trusting each other. That's the problem we specialise in - and we've solved day one five times.`
 - Primary CTA: `See how we handle the cold start`
 - Secondary CTA: `Look at the work`
 - Under-CTA text: `Not sure it's us? 30 minutes, no pitch →`
@@ -104,9 +104,9 @@ Structural constraints:
 
 Visible English:
 
-- `5` — `two-sided platforms shipped`
-- `1` — `product we fund ourselves — YachtMate`
-- `3` — `industries. No others claimed.`
+- `5` - `two-sided platforms shipped`
+- `1` - `product we fund ourselves - YachtMate`
+- `3` - `industries. No others claimed.`
 - Caption: `P2P · Community · Logistics`
 
 Structural constraints:
@@ -130,21 +130,21 @@ Visible English:
 
 - Eyebrow: `How we think`
 - Heading: `Most studios ask what you want built. We ask who shows up first.`
-- Body: `A two-sided product is worthless on launch day and nobody warns you. Owners won't join without renters. Renters won't join without owners. Clubs won't pay for a network with three clubs in it. We start there, before a single screen exists — because that's the question that decides whether the thing lives.`
+- Body: `A two-sided product is worthless on launch day and nobody warns you. Owners won't join without renters. Renters won't join without owners. Clubs won't pay for a network with three clubs in it. We start there, before a single screen exists - because that's the question that decides whether the thing lives.`
 - Quote: `Design comes after the cold start.`
 - Quote body: `The empty platform is the first product state we design for.`
 - Group label: `How we work`
 - Card 1 title: `We've been the client`
-- Card 1 body: `We build and fund YachtMate ourselves — a platform for yacht clubs. We pay for our own mistakes, our own churn, our own empty first month. Very few studios can say that, and it changes how we argue with you.`
+- Card 1 body: `We build and fund YachtMate ourselves - a platform for yacht clubs. We pay for our own mistakes, our own churn, our own empty first month. Very few studios can say that, and it changes how we argue with you.`
 - Card 2 title: `We'll tell you not to build it`
-- Card 2 body: `Sometimes the answer is a spreadsheet, an existing tool, or nothing. We'd rather lose the project at the discovery call than six months in. Ask us for an example — we have them.`
+- Card 2 body: `Sometimes the answer is a spreadsheet, an existing tool, or nothing. We'd rather lose the project at the discovery call than six months in. Ask us for an example - we have them.`
 - Card 3 title: `Same timezone, EU contracts`
 - Card 3 body: `Poznań, Poland. Your legal team gets an EU entity, your PM gets a team that's awake when they are, and nobody schedules a 6am standup.`
 - Group label: `What the product needs`
 - Card 1 title: `Cold start before pixels`
 - Card 1 body: `The first question in every project: who joins on day one, and why do they stay while the other side is still empty?`
 - Card 2 title: `Trust is a feature, not a policy page`
-- Card 2 body: `Verification, reputation, disputes, moderation. In a P2P product this isn't compliance — it's the product.`
+- Card 2 body: `Verification, reputation, disputes, moderation. In a P2P product this isn't compliance - it's the product.`
 - Card 3 title: `We ship the boring 20%`
 - Card 3 body: `Admin panels, moderation queues, refund flows, dispute handling. Unglamorous, never in the portfolio, and the reason platforms survive their first year.`
 
@@ -176,7 +176,7 @@ Visible English:
 - Card 2 title: `Product & Design`
 - Card 2 body: `Interfaces for products where two different people want two different things from the same screen. Owner and renter. Club and member. Shipper and carrier.`
 - Card 3 title: `Go-to-market (optional add-on)`
-- Card 3 body: `The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach — and we'll say so when paid acquisition is the wrong answer.`
+- Card 3 body: `The first hundred users on each side don't arrive through ads. We've done manual onboarding, seeded supply, and founder-led outreach - and we'll say so when paid acquisition is the wrong answer.`
 - Carousel accessibility caption: `Team pagination`
 
 Structural constraints:
@@ -211,7 +211,7 @@ Always visible:
 Exactly three expandable cards:
 
 1. **Design**
-   - Body: `UX for two-sided flows, verification and trust states, production-ready UI in Figma. We design the empty state first — it's what most of your early users will actually see.`
+   - Body: `UX for two-sided flows, verification and trust states, production-ready UI in Figma. We design the empty state first - it's what most of your early users will actually see.`
    - Tags: `Figma`, `Design systems`, `Prototyping`
    - Hint: `Tap to see what's included`
    - Expanded label: `What's included`
@@ -224,7 +224,7 @@ Exactly three expandable cards:
    - Bullets: `Multi-tenant web and mobile`; `Roles and permissions`; `Verification and payments`; `Moderation and disputes`; `Admin tooling`
 3. **Marketing**
    - Badge: `Optional`
-   - Body: `Cold-start acquisition, positioning, SEO, paid, CRM. Available as an add-on — and we'll tell you when your product isn't ready for traffic yet.`
+   - Body: `Cold-start acquisition, positioning, SEO, paid, CRM. Available as an add-on - and we'll tell you when your product isn't ready for traffic yet.`
    - Tags: `Positioning`, `SEO`, `Ads`, `Content`, `CRM`
    - Tier `Basic`: `SEO optimization`; `Analytics setup`; `Targeted advertising`; `Social media marketing`
    - Tier `Advanced`: `Email marketing & automation`; `Content strategy`; `Persuasive copywriting`; `CRM setup & marketing`
@@ -236,15 +236,15 @@ The Marketing card spans both columns at `sm+`; its expanded tiers become three 
 
 Exactly three expandable cards:
 
-1. `01` — `P2P`
+1. `01` - `P2P`
    - Tags: `Verification`, `Matching`, `Payouts`
    - Hint: `Tap to learn more`
    - Expanded body: `Verification, trust, matching, disputes and payouts.`
-2. `02` — `Community & clubs`
+2. `02` - `Community & clubs`
    - Tags: `Membership`, `Roles`, `Events`
    - Hint: `Tap to learn more`
    - Expanded body: `Membership, roles, events, dues and member directories.`
-3. `03` — `Logistics`
+3. `03` - `Logistics`
    - Tags: `Fleet`, `Shipments`, `Multi-party workflows`, `Integrations`
    - Hint: `Tap to learn more`
    - Expanded body: `Fleet, shipments, multi-party workflows and integrations.`
@@ -351,8 +351,8 @@ Visible English:
 
 - Eyebrow: `Our work`
 - Heading: `Five platforms that had to start empty.`
-- Subheading: `P2P, community and logistics. Some are under NDA — we'll walk you through those on a call.`
-- Banner: `Some projects are under NDA — we'll walk you through those on a call.`
+- Subheading: `P2P, community and logistics. Some are under NDA - we'll walk you through those on a call.`
+- Banner: `Some projects are under NDA - we'll walk you through those on a call.`
 - Featured titles: `YachtMate`, `SharingGround`, `Pachaca`
 - Featured tags: `Community`, `P2P`, `P2P`
 - YachtMate summary: `Private network for yacht club members with real-time communication.`
@@ -365,7 +365,7 @@ Visible English:
 - Lower prompt: `See the same cold-start problem in your product?`
 - Lower link: `Let's talk about your day one →`
 - CTA-band heading: `Building something two-sided?`
-- CTA-band body: `Marketplace, P2P product, member network, multi-party logistics — if your product needs strangers to trust each other, that's our whole job.`
+- CTA-band body: `Marketplace, P2P product, member network, multi-party logistics - if your product needs strangers to trust each other, that's our whole job.`
 - CTA-band buttons: `Book a call`, `Get a quote`
 
 Structural constraints:
@@ -553,25 +553,25 @@ Cases are defined in `src/modules/Cases/data.ts`. Localized case-detail narrativ
 
 | Name             | Industry    | Service tags | Appears in listing/filter              | Homepage featured | NDA |
 | ---------------- | ----------- | ------------ | -------------------------------------- | ----------------- | --- |
-| YachtMate        | `community` | —            | Yes: All, Community                    | Yes               | No  |
-| SharingGround    | `p2p`       | —            | Yes: All, P2P                          | Yes               | No  |
-| ProfitCraft      | `community` | —            | Yes: All, Community                    | No                | No  |
-| ProfitCraft Auto | `community` | —            | Yes: All, Community                    | No                | No  |
-| Ski&Sail Club    | `community` | —            | Yes: All, Community                    | No                | No  |
-| Navexa           | `logistics` | `marketing`  | Yes: All, Logistics                    | No                | Yes |
-| Teya Logistics   | `logistics` | —            | Yes: All, Logistics                    | No                | No  |
-| Pachaca          | `p2p`       | —            | Yes: All, P2P                          | Yes               | No  |
-| Gambit           | —           | `brand`      | Yes: All only                          | No                | No  |
-| [Re.] skin&hair  | —           | `brand`      | Yes: All only                          | No                | No  |
-| Navexa - Logo    | —           | —            | No; excluded from `portfolioGridCases` | No                | Yes |
-| Ortvest          | —           | —            | No; excluded from `portfolioGridCases` | No                | No  |
+| YachtMate        | `community` | -            | Yes: All, Community                    | Yes               | No  |
+| SharingGround    | `p2p`       | -            | Yes: All, P2P                          | Yes               | No  |
+| ProfitCraft      | `community` | -            | Yes: All, Community                    | No                | No  |
+| ProfitCraft Auto | `community` | -            | Yes: All, Community                    | No                | No  |
+| Ski&Sail Club    | `community` | -            | Yes: All, Community                    | No                | No  |
+| Teyos           | `logistics` | `marketing`  | Yes: All, Logistics                    | No                | Yes |
+| Teya Logistics   | `logistics` | -            | Yes: All, Logistics                    | No                | No  |
+| Pachaca          | `p2p`       | -            | Yes: All, P2P                          | Yes               | No  |
+| Gambit           | -           | `brand`      | Yes: All only                          | No                | No  |
+| [Re.] skin&hair  | -           | `brand`      | Yes: All only                          | No                | No  |
+| Teyos - Logo    | -           | -            | No; excluded from `portfolioGridCases` | No                | Yes |
+| Ortvest          | -           | -            | No; excluded from `portfolioGridCases` | No                | No  |
 
 Exact `CasesListingClient.tsx` filter keys:
 
-1. `all` — label `All`
-2. `p2p` — label `P2P`
-3. `community` — label `Community`
-4. `logistics` — label `Logistics`
+1. `all` - label `All`
+2. `p2p` - label `P2P`
+3. `community` - label `Community`
+4. `logistics` - label `Logistics`
 
 `cases.filterIndustries.all` contains `All projects`, but the listing uses `cases.page.filter.all` (`All`) instead.
 
@@ -615,10 +615,10 @@ The form permits one budget selection.
 
 ### “What happens next”
 
-1. **You send the details** — `What you're building, who it's for, rough budget and timing.`
-2. **We reply in 24h** — `Relevant cases and an honest read on whether we're the right studio.`
-3. **Free 30-min call** — `Scope, cold start and next steps.`
-4. **Proposal** — `Fixed scope, fixed price, clear timeline. If it fits, we start.`
+1. **You send the details** - `What you're building, who it's for, rough budget and timing.`
+2. **We reply in 24h** - `Relevant cases and an honest read on whether we're the right studio.`
+3. **Free 30-min call** - `Scope, cold start and next steps.`
+4. **Proposal** - `Fixed scope, fixed price, clear timeline. If it fits, we start.`
 
 ## 5. FAQ
 
@@ -630,7 +630,7 @@ Order is fixed by `FAQ_KEYS` in `src/modules/FAQ/index.tsx`.
 
 2. **Why only three industries?**
 
-   `Because a fourth would be a claim we can't back with work. We build platforms where participants have to find and trust each other — that shape repeats across P2P, clubs and logistics. Outside it we'd be guessing on your budget.`
+   `Because a fourth would be a claim we can't back with work. We build platforms where participants have to find and trust each other - that shape repeats across P2P, clubs and logistics. Outside it we'd be guessing on your budget.`
 
 3. **How much does a platform cost?**
 
@@ -650,7 +650,7 @@ Order is fixed by `FAQ_KEYS` in `src/modules/FAQ/index.tsx`.
 
 7. **What happens after launch?**
 
-   `Retainers for ongoing development and iteration. Most clients stay — but the first version is the one that decides whether there's anything to iterate on.`
+   `Retainers for ongoing development and iteration. Most clients stay - but the first version is the one that decides whether there's anything to iterate on.`
 
 8. **How do we start?**
 
@@ -674,7 +674,7 @@ Section copy:
 - Duration: `30 min`
 - Bullets:
   1. `What you're building and for whom`
-  2. `Whether we're the right studio — often we're not`
+  2. `Whether we're the right studio - often we're not`
   3. `Rough scope, timeline and budget range`
   4. `Straight answers, no deck`
 - CTA: `Book a call`
@@ -700,10 +700,10 @@ Section copy:
 
 Current English global metadata from `messages/en.json`:
 
-- Title: `Ortvest — platforms for P2P, communities and logistics`
-- Description: `We build marketplaces, P2P products and member networks — the kind that only work once strangers trust each other. Design, development and go-to-market from Poznań, Poland.`
-- OG title: `Ortvest — the hard part was never the code`
-- OG description: `We build marketplaces, P2P products and member networks — the kind that only work once strangers trust each other.`
+- Title: `Ortvest - platforms for P2P, communities and logistics`
+- Description: `We build marketplaces, P2P products and member networks - the kind that only work once strangers trust each other. Design, development and go-to-market from Poznań, Poland.`
+- OG title: `Ortvest - the hard part was never the code`
+- OG description: `We build marketplaces, P2P products and member networks - the kind that only work once strangers trust each other.`
 
 `src/app/[locale]/layout.tsx` emits:
 
@@ -758,28 +758,28 @@ No homepage case, FAQ, team, service, consultation, contact, header, or footer c
 
 Public/page routes:
 
-- `/[locale]` — homepage.
-- `/[locale]/cases` — masonry portfolio listing with All/P2P/Community/Logistics filters and the contact section.
-- `/[locale]/cases/[slug]` — generated case detail for each item in `cases[]`.
-- `/[locale]/blog` — server-fetched CMS blog listing.
-- `/[locale]/blog/[slug]` — server-fetched CMS article and related posts.
-- `/[locale]/privacy-policy` — hardcoded English privacy policy; `noindex, nofollow`.
-- `/[locale]/terms-of-use` — hardcoded English terms; `noindex, nofollow`.
-- `/[locale]/leave-a-review` — review submission form; `noindex, nofollow`.
-- `/[locale]/[...rest]` — catch-all that calls `notFound()`.
-- Locale-specific and root `not-found` components — 404 pages.
-- `/robots.txt` — allows the site, disallows `/api/`, links the sitemap.
-- `/sitemap.xml` — contains only the three locale homepage URLs.
-- `/icon` — generated 32×32 favicon.
-- `/apple-icon` — generated 180×180 Apple icon.
+- `/[locale]` - homepage.
+- `/[locale]/cases` - masonry portfolio listing with All/P2P/Community/Logistics filters and the contact section.
+- `/[locale]/cases/[slug]` - generated case detail for each item in `cases[]`.
+- `/[locale]/blog` - server-fetched CMS blog listing.
+- `/[locale]/blog/[slug]` - server-fetched CMS article and related posts.
+- `/[locale]/privacy-policy` - hardcoded English privacy policy; `noindex, nofollow`.
+- `/[locale]/terms-of-use` - hardcoded English terms; `noindex, nofollow`.
+- `/[locale]/leave-a-review` - review submission form; `noindex, nofollow`.
+- `/[locale]/[...rest]` - catch-all that calls `notFound()`.
+- Locale-specific and root `not-found` components - 404 pages.
+- `/robots.txt` - allows the site, disallows `/api/`, links the sitemap.
+- `/sitemap.xml` - contains only the three locale homepage URLs.
+- `/icon` - generated 32×32 favicon.
+- `/apple-icon` - generated 180×180 Apple icon.
 
 API routes:
 
-- `GET/POST /api/reviews` — list published reviews or submit an unpublished review.
-- `GET /api/admin/reviews` — admin review list.
-- `PATCH/DELETE /api/admin/reviews/[id]` — publish/unpublish or delete.
-- `POST /api/contact` — contact submission to MongoDB plus optional external backend/websocket notification.
-- `POST /api/cms-subscribe` — proxy to the CMS Stripe checkout endpoint.
+- `GET/POST /api/reviews` - list published reviews or submit an unpublished review.
+- `GET /api/admin/reviews` - admin review list.
+- `PATCH/DELETE /api/admin/reviews/[id]` - publish/unpublish or delete.
+- `POST /api/contact` - contact submission to MongoDB plus optional external backend/websocket notification.
+- `POST /api/cms-subscribe` - proxy to the CMS Stripe checkout endpoint.
 
 `src/modules/CMSPage/index.tsx` and `src/modules/OrtvestCMS/index.tsx` contain a complete CMS marketing UI, but no route mounts either component.
 
@@ -792,7 +792,7 @@ Literal inconsistencies and production-visible/code-visible gaps:
 3. The Reviews section initially emits skeletons and then disappears if `/api/reviews` returns no rows. It is not absent from the initial render.
 4. The blog section disappears entirely when the CMS returns no posts. In production, `src/lib/cms-api.ts` resolves to no CMS base URL if `ORTVEST_CMS_API_URL` is missing.
 5. `mie` has case copy/configuration but no `CaseItem`, so there is no `/cases/mie` generated from `data.ts`.
-6. `Navexa - Logo` is marked NDA and included in `cases[]`, but excluded from the listing. `Navexa` is also marked NDA, appears in the listing as non-clickable, while its detail route still exists.
+6. `Teyos - Logo` is marked NDA and included in `cases[]`, but excluded from the listing. `Teyos` is also marked NDA, appears in the listing as non-clickable, while its detail route still exists.
 7. Homepage `CaseCard` builds links as `/cases/{id}` without the locale prefix. The listing card builds `/{locale}/cases/{id}`. The homepage links therefore do not follow the app’s locale-prefixed route convention.
 8. The root `<html>` language is fixed to `en`; the locale is assigned only to an inner `<div lang={locale}>`. PL/UA documents still announce English at the document root.
 9. Header services-dropdown sublabels, service tags, process tags, technology names and several accessibility labels are hardcoded English and remain English in PL/UA.

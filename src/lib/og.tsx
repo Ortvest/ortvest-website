@@ -6,7 +6,7 @@ import type { ReactElement } from 'react';
  * Text is kept Latin-only on the generic card: `next/og` renders with its
  * bundled fallback font, so Cyrillic/extended glyphs are not guaranteed.
  * Dynamic cards (post / case titles) inherit whatever the content provides.
- * Titles are rendered on a flat brand background — covers are not used as a
+ * Titles are rendered on a flat brand background - covers are not used as a
  * backdrop, they are already busy accent-coloured title cards.
  */
 export const OG_SIZE = { width: 1200, height: 630 } as const;

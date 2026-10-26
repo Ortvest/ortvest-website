@@ -15,7 +15,7 @@ import { ClutchWidget } from '../../components/ClutchWidget';
 
 /**
  * Visible NAP (name / address / phone). These strings must stay identical to
- * CONTACT in `@lib/schema` and to the Google Business Profile listing —
+ * CONTACT in `@lib/schema` and to the Google Business Profile listing -
  * a formatting mismatch is a common reason Google fails to merge the entity.
  */
 const CONTACT_PHONE = '+48 731 728 031';
@@ -35,15 +35,6 @@ const NAV_COLUMN_2 = [
   { key: 'blog', href: 'blog' as const },
   { key: 'partnership', href: 'partnership' as const },
   { key: 'contact', href: '#contact' },
-] as const;
-
-const SERVICE_LINK_KEYS = [
-  'website',
-  'webService',
-  'mobileApp',
-  'mvpDevelopment',
-  'improvingExisting',
-  'design',
 ] as const;
 
 const LOCALES = [
@@ -160,7 +151,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Navigation — two sub-columns */}
+          {/* Navigation - two sub-columns */}
           <div>
             <p className="text-xs uppercase tracking-widest text-black/40">{t('nav')}</p>
             <div className="mt-4 grid grid-cols-2 gap-x-8">
@@ -173,13 +164,11 @@ export function Footer() {
           <div>
             <p className="text-xs uppercase tracking-widest text-black/40">{t('services')}</p>
             <ul className="mt-4 space-y-2.5" role="list">
-              {SERVICE_LINK_KEYS.map((key) => (
-                <li key={key}>
-                  <Link href={servicesHref} className="text-body-sm text-black/70 transition hover:text-black">
-                    {t(`serviceLinks.${key}`)}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href={servicesHref} className="text-body-sm text-black/70 transition hover:text-black">
+                  {t('allServicesLink')}
+                </Link>
+              </li>
             </ul>
           </div>
 

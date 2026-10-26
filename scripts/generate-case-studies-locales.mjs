@@ -180,7 +180,7 @@ const caseLocales = {
     },
     navexa: {
       meta: {
-        title: 'Navexa – Platforma logistyczna | Ortvest',
+        title: 'Teyos – Platforma logistyczna | Ortvest',
         description: 'Flota, trasy, monitoring przesyłek oraz marketing produktu. Projekt NDA.',
       },
       hero: {
@@ -250,7 +250,7 @@ const caseLocales = {
       solution: 'Skala typograficzna, komponenty i whitespace – jasna hierarchia na każdej sekcji.',
     },
     'navexa-logo': {
-      meta: { title: 'Logo Navexa | Ortvest', description: 'Logo logistyczne – precyzja i warianty jasne/ciemne.' },
+      meta: { title: 'Logo Teyos | Ortvest', description: 'Logo logistyczne – precyzja i warianty jasne/ciemne.' },
       hero: { subtitle: 'Logo dla firmy logistycznej – nawigacja, precyzja, warianty na każde medium.' },
       stats: {
         projectType: { label: 'Typ projektu', value: 'Logo' },
@@ -339,7 +339,7 @@ const caseLocales = {
     },
     navexa: {
       meta: {
-        title: 'Navexa – Логістична платформа | Ortvest',
+        title: 'Teyos – Логістична платформа | Ortvest',
         description: 'Флот, маршрути, моніторинг відправлень і маркетинг продукту. NDA.',
       },
       hero: {
@@ -408,7 +408,7 @@ const caseLocales = {
       solution: 'Типографічна шкала, компоненти та whitespace – чітка ієрархія на кожній секції.',
     },
     'navexa-logo': {
-      meta: { title: 'Логотип Navexa | Ortvest', description: 'Логотип логістики – точність і світлі/темні варіанти.' },
+      meta: { title: 'Логотип Teyos | Ortvest', description: 'Логотип логістики – точність і світлі/темні варіанти.' },
       hero: { subtitle: 'Логотип логістичної компанії – навігація, точність, варіанти для будь-якого носія.' },
       stats: {
         projectType: { label: 'Тип проєкту', value: 'Logo Design' },

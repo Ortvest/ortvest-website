@@ -3,7 +3,7 @@ type IntlMessages = {
   [key: string]: string | IntlMessages;
 };
 
-/** Shared across all routes — Header, Footer, Modals, not-found. */
+/** Shared across all routes - Header, Footer, Modals, not-found. */
 export const LAYOUT_CLIENT_NAMESPACES = ['nav', 'footer', 'modals', 'notFound'] as const;
 
 export const HOME_CLIENT_NAMESPACES = [

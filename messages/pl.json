@@ -246,7 +246,7 @@
     "proof": "Na przykład",
     "disciplinesLabel": "W każdym wdrożeniu",
     "startAs": {
-      "label": "Każde z tego może zacząć się jako —",
+      "label": "Każde z tego może zacząć się jako -",
       "mvp": {
         "title": "MVP",
         "desc": "Pierwsza wersja, która odpowiada na jedno pytanie przed pełną budową."
@@ -601,8 +601,8 @@
     "whatsIncluded": "Co zawiera",
     "bookCall": "Umów rozmowę",
     "bookSession": "Umów audyt",
-    "discoveryBadge": "01 — Twój pierwszy krok",
-    "strategyBadge": "02 — Najpopularniejsze przed dużymi projektami",
+    "discoveryBadge": "01 - Twój pierwszy krok",
+    "strategyBadge": "02 - Najpopularniejsze przed dużymi projektami",
     "discovery": {
       "title": "Discovery Call",
       "subtitle": "Powiedz, co budujesz. Powiemy, czy to nasza działka i czy ten produkt powinien powstać.",
@@ -655,7 +655,7 @@
     "page": {
       "label": "NASZE PROJEKTY",
       "title": "Wybrane projekty.",
-      "subtitle": "Strony, usługi webowe, aplikacje mobilne i branding — w P2P, społecznościach i logistyce.",
+      "subtitle": "Strony, usługi webowe, aplikacje mobilne i branding - w P2P, społecznościach i logistyce.",
       "filter": {
         "all": "Wszystkie"
       },
@@ -871,7 +871,7 @@
       "solution": "Zbudowaliśmy YachtMate z weryfikacją członków, rolami, czatem w czasie rzeczywistym i narzędziami eventowymi. React i Node.js zapewniają niskie opóźnienia przy zachowaniu prywatności danych.",
       "stackLine": "Marka · Design · Development · React + Node.js",
       "problemStatement": "Znani członkowie nie mogli rozmawiać na publicznych kanałach bez ujawniania danych osobowych.",
-      "approachStatement": "Czat w czasie rzeczywistym, weryfikacja członków i koordynacja wydarzeń — przy ścisłej kontroli prywatności.",
+      "approachStatement": "Czat w czasie rzeczywistym, weryfikacja członków i koordynacja wydarzeń - przy ścisłej kontroli prywatności.",
       "processTitle": "Najpierw marka, potem design, potem development.",
       "features": {
         "eyebrow": "Dwie strony, jedna platforma",
@@ -1232,7 +1232,7 @@
     },
     "navexa": {
       "meta": {
-        "title": "Navexa – Platforma logistyczna | Ortvest",
+        "title": "Teyos – Platforma logistyczna | Ortvest",
         "description": "Flota, trasy, monitoring przesyłek oraz marketing produktu. Projekt NDA."
       },
       "hero": {
@@ -1646,7 +1646,7 @@
     },
     "navexa-logo": {
       "meta": {
-        "title": "Logo Navexa | Ortvest",
+        "title": "Logo Teyos | Ortvest",
         "description": "Logo logistyczne – precyzja i warianty jasne/ciemne."
       },
       "hero": {
@@ -1797,6 +1797,7 @@
     "nav": "Nawigacja",
     "getInTouch": "Skontaktuj się",
     "services": "Usługi",
+    "allServicesLink": "Wszystkie usługi",
     "serviceLinks": {
       "website": "Strony internetowe",
       "webService": "Serwisy webowe",

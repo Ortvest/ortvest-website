@@ -9,23 +9,23 @@
  *
  * URLs are localized in both segments: `/en/services/marketplace-development`
  * and `/pl/uslugi/tworzenie-marketplace`. The App Router directory stays
- * `[locale]/services/[slug]` with the English slug as the param — `middleware`
+ * `[locale]/services/[slug]` with the English slug as the param - `middleware`
  * rewrites the localized path onto it and redirects the English path under a
  * non-English locale to the localized one, so each page has exactly one
  * reachable URL per locale.
  *
- * `locales` is the list of locales the page exists in — anything else 404s, the
+ * `locales` is the list of locales the page exists in - anything else 404s, the
  * same way /business does. Add a locale here only once its copy is written and
  * reviewed, because hreflang and the sitemap read this list.
  */
 export type ServicePageDefinition = {
-  /** Canonical (English) slug — also the App Router `[slug]` param. */
+  /** Canonical (English) slug - also the App Router `[slug]` param. */
   slug: string;
   /** Per-locale URL slug. Locales missing here fall back to `slug`. */
   slugs: Record<string, string>;
   /** Case study ids from @modules/Cases/data used as proof on this page. */
   caseIds: string[];
-  /** Blog slugs offered as related reading — the page's outbound internal links. */
+  /** Blog slugs offered as related reading - the page's outbound internal links. */
   postSlugs: string[];
   locales: string[];
 };
@@ -138,7 +138,7 @@ export function findServicePageByLocalizedSlug(
 }
 
 /**
- * Service pages that list this post as related reading — the inverse of
+ * Service pages that list this post as related reading - the inverse of
  * `postSlugs`, so the blog links back into the commercial pages without a
  * second mapping to keep in sync.
  */

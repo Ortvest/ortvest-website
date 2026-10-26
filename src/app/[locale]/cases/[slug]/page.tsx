@@ -36,7 +36,7 @@ export const dynamicParams = false;
 
 export async function generateMetadata({ params }: CasePageProps) {
   const { slug, locale } = params;
-  // Must be called before getTranslations — generateMetadata runs in its
+  // Must be called before getTranslations - generateMetadata runs in its
   // own execution context, separate from the page component.
   unstable_setRequestLocale(locale);
 

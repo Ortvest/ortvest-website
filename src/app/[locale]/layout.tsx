@@ -21,7 +21,7 @@ const GA_MEASUREMENT_ID = process.env.GOOGLE_ANALYTICS_ID?.trim();
 const LINKEDIN_PARTNER_ID = process.env.LINKEDIN_PARTNER_ID?.trim();
 const COOKIEYES_SITE_ID = process.env.COOKIEYES_SITE_ID?.trim();
 
-// Pre-generate all locale segments statically — no headers() needed.
+// Pre-generate all locale segments statically - no headers() needed.
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }

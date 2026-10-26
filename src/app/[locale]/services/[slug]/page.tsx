@@ -70,7 +70,7 @@ export default async function ServiceDetailPage({ params: { locale, slug } }: Pr
     getTranslations({ locale, namespace: 'nav' }),
   ]);
 
-  // The same questions rendered in the FAQ accordion below — Google requires
+  // The same questions rendered in the FAQ accordion below - Google requires
   // the marked-up Q&A to be visible on the page.
   const faqItems = t.raw('faq.items') as FaqItem[];
 

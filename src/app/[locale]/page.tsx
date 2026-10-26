@@ -35,7 +35,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
   unstable_setRequestLocale(locale);
 
   // FAQPage markup lives here because this is where the questions are
-  // actually rendered — not in the layout.
+  // actually rendered - not in the layout.
   const faqItems = await getHomeFaqItems(locale);
 
   return (

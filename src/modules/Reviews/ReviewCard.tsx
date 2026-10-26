@@ -1,4 +1,4 @@
-/** Client-safe review DTO — only fields rendered by the reviews spotlight. */
+/** Client-safe review DTO - only fields rendered by the reviews spotlight. */
 export interface ReviewItem {
   name: string;
   role: string;

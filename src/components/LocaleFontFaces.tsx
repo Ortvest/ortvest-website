@@ -1,6 +1,6 @@
 /**
  * Extends the next/font Inter family with extra unicode-range files.
- * These are NOT preloaded on /en — the browser fetches them only when glyphs
+ * These are NOT preloaded on /en - the browser fetches them only when glyphs
  * in that range appear (or when we explicitly preload on /ua).
  *
  * Must use the same font-family name as next/font's hashed Inter instance.

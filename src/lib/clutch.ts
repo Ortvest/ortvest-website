@@ -1,4 +1,4 @@
-/** Clutch profile id — shared across every widget on the site (clutch.co/profile/ortvest). */
+/** Clutch profile id - shared across every widget on the site (clutch.co/profile/ortvest). */
 export const CLUTCH_COMPANY_ID = '2663892';
 
 /** Compact "Reviewed on Clutch" badge used in the hero, under the CTA buttons. */

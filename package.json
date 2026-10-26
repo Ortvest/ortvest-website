@@ -2,6 +2,7 @@
   "name": "ortvest-website",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@11.24.0",
   "browserslist": [
     "chrome >= 91",
     "safari >= 15",

@@ -24,7 +24,7 @@ export type ServicesDropdownItem = {
 
 /**
  * Real /services/<slug> pages where they exist. Locales without translated
- * service copy get no dropdown at all — the nav entry links to the home-page
+ * service copy get no dropdown at all - the nav entry links to the home-page
  * section instead.
  */
 export function getServicesDropdownItems(locale: string): ServicesDropdownItem[] {

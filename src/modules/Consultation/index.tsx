@@ -109,6 +109,9 @@ export async function Consultation() {
 
                 <div className="mt-6 flex items-baseline gap-3 border-t border-white/10 pt-6">
                   <span className="text-3xl font-extrabold text-accent">{t(`${card.key}.price`)}</span>
+                  <span className="text-sm text-white/50" aria-hidden>
+                    ·
+                  </span>
                   <span className="text-sm text-white/50">{t(`${card.key}.duration`)}</span>
                 </div>
 
@@ -131,14 +134,14 @@ export async function Consultation() {
             ))}
           </div>
 
-          {/* Desktop: shared comparison table — one label gutter, two card columns */}
+          {/* Desktop: shared comparison table - one label gutter, two card columns */}
           <div className="relative hidden lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-x-10">
             <div
               aria-hidden
               className="absolute inset-0 col-start-3 col-end-4 row-start-1 row-end-6 rounded-2xl border border-accent/50 bg-white/[0.02]"
             />
 
-            {/* Row 1 — header */}
+            {/* Row 1 - header */}
             <div aria-hidden />
             <div>
               <p className="font-mono text-xs text-white/40">{t('discoveryBadge')}</p>
@@ -149,20 +152,26 @@ export async function Consultation() {
               <h3 className="mt-2 text-h3 font-bold text-white">{t('strategy.title')}</h3>
             </div>
 
-            {/* Row 2 — price · time */}
+            {/* Row 2 - price · time */}
             <div className="flex items-center border-t border-white/10 pt-6">
               <p className="text-xs uppercase tracking-widest text-white/40">{t('priceTimeLabel')}</p>
             </div>
             <div className="flex items-baseline gap-3 border-t border-white/10 pt-6">
               <span className="text-4xl font-extrabold text-accent">{t('discovery.price')}</span>
+              <span className="text-sm text-white/50" aria-hidden>
+                ·
+              </span>
               <span className="text-sm text-white/50">{t('discovery.duration')}</span>
             </div>
             <div className="relative flex items-baseline gap-3 border-t border-white/10 px-8 pt-6">
               <span className="text-4xl font-extrabold text-accent">{t('strategy.price')}</span>
+              <span className="text-sm text-white/50" aria-hidden>
+                ·
+              </span>
               <span className="text-sm text-white/50">{t('strategy.duration')}</span>
             </div>
 
-            {/* Row 3 — in short */}
+            {/* Row 3 - in short */}
             <div className="border-t border-white/10 pt-6">
               <p className="text-xs uppercase tracking-widest text-white/40">{t('inShortLabel')}</p>
             </div>
@@ -173,7 +182,7 @@ export async function Consultation() {
               {t('strategy.subtitle')}
             </p>
 
-            {/* Row 4 — what's included */}
+            {/* Row 4 - what's included */}
             <div className="border-t border-white/10 pt-6">
               <p className="text-xs uppercase tracking-widest text-white/40">{t('whatsIncluded')}</p>
             </div>
@@ -184,7 +193,7 @@ export async function Consultation() {
               <BulletList items={CARDS[1].items} prefix="strategy" t={t} />
             </div>
 
-            {/* Row 5 — CTA */}
+            {/* Row 5 - CTA */}
             <div aria-hidden />
             <div className="pt-10">
               <BookButton label={t('bookCall')} variant="ghost" />

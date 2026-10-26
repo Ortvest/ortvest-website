@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
   const expectedSecret = process.env.REVALIDATE_SECRET;
 
   if (!expectedSecret) {
-    console.error('[Revalidate] REVALIDATE_SECRET is not set — webhook endpoint is disabled.');
+    console.error('[Revalidate] REVALIDATE_SECRET is not set - webhook endpoint is disabled.');
     return NextResponse.json({ error: 'Revalidation is not configured.' }, { status: 503 });
   }
 

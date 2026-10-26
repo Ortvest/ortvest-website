@@ -20,7 +20,7 @@ const inputClass =
 const pillBase = 'cursor-pointer select-none rounded-full border px-4 py-2 text-sm font-medium transition';
 
 /**
- * Selected/unselected text colors are mutually exclusive — never combine them
+ * Selected/unselected text colors are mutually exclusive - never combine them
  * via string concatenation. Tailwind's generated stylesheet order (not the
  * order classes appear in the className string) decides which `text-*`
  * utility wins when both are present, so returning one exclusive string per

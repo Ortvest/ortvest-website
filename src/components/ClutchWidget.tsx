@@ -16,7 +16,7 @@ const INIT_RETRY_LIMIT = 20;
 /**
  * Clutch's widget script used to load from the root layout with
  * `afterInteractive`, so it competed with hydration on every page. It lives
- * here instead, loaded after window load — next/script dedupes by id, so the
+ * here instead, loaded after window load - next/script dedupes by id, so the
  * three widgets on the site still share one request.
  */
 const CLUTCH_SCRIPT_ID = 'clutch-widget-script';

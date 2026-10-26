@@ -67,7 +67,7 @@ function handleServiceUrl(request: NextRequest): NextResponse | null {
     if (!slug) return rewriteTo(request, `/${locale}/${INTERNAL_SERVICE_SEGMENT}`);
 
     const page = findServicePageByLocalizedSlug(locale, slug);
-    if (!page) return null; // unknown slug — let it 404 through the catch-all
+    if (!page) return null; // unknown slug - let it 404 through the catch-all
     return rewriteTo(request, `/${locale}/${INTERNAL_SERVICE_SEGMENT}/${page.slug}`);
   }
 

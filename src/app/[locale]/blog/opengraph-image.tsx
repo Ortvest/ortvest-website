@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 import { OG_CONTENT_TYPE, OG_SIZE, OgCard } from '@lib/og';
 
-export const alt = 'Ortvest blog — building platforms that start empty';
+export const alt = 'Ortvest blog - building platforms that start empty';
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

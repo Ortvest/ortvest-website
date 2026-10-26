@@ -11,7 +11,7 @@ export default function Image() {
     <OgCard
       eyebrow="Selected work"
       headline="Platforms for P2P, community and logistics products"
-      subline="Five platforms that had to start empty — and what made them fill up."
+      subline="Five platforms that had to start empty - and what made them fill up."
     />,
     { ...size }
   );

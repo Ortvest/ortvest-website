@@ -62,7 +62,7 @@ export function pickRelatedCards(
 /**
  * Locales that currently have at least one published post. A locale with an
  * empty blog must not be advertised through hreflang, linked from the sitemap
- * or indexed — an empty listing is a low-quality page for Google.
+ * or indexed - an empty listing is a low-quality page for Google.
  *
  * A failed CMS request counts as "has posts" on purpose. The caller uses this
  * to decide `noindex`, and a transient outage during an ISR revalidation must
