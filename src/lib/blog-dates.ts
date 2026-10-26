@@ -24,3 +24,20 @@ export function formatBlogPostDateShort(iso: string, siteLocale: string, options
     ...(options?.withYear ? { year: 'numeric' } : {}),
   }).format(d);
 }
+
+/** `October 2026` form used to group the full blog listing by month. */
+export function formatBlogPostMonthYear(iso: string, siteLocale: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  return new Intl.DateTimeFormat(blogLocaleTag(siteLocale), {
+    month: 'long',
+    year: 'numeric',
+  }).format(d);
+}
+
+/** Stable `YYYY-M` key for grouping posts by calendar month. */
+export function blogPostMonthKey(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  return `${d.getUTCFullYear()}-${d.getUTCMonth()}`;
+}

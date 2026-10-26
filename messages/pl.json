@@ -2002,7 +2002,17 @@
     "errorText": "Blog jest chwilowo niedostępny. Spróbuj ponownie za moment.",
     "minRead": "{n} min czytania",
     "filterAll": "Wszystkie",
+    "eyebrow": "Blog",
+    "byline": "Autor: {name} · {n, plural, one {# artykuł} few {# artykuły} many {# artykułów} other {# artykułu}}",
+    "startWithQuestion": "Zacznij od swojego pytania",
+    "searchPlaceholder": "Szukaj w notatkach",
+    "noResults": "Brak artykułów pasujących do wyszukiwania.",
     "tableOfContents": "Spis treści",
+    "cta": {
+      "title": "Nie znalazłeś odpowiedzi na swoje pytanie?",
+      "body": "Przynieś je na bezpłatną 30-minutową rozmowę. Konkretne odpowiedzi, bez prezentacji.",
+      "button": "Zarezerwuj rozmowę"
+    },
     "articleCta": {
       "title": "Budujesz platformę, która na początku będzie pusta?",
       "body": "Pomagamy marketplace'om, sieciom członkowskim i platformom logistycznym rozwiązać cold start, zanim wydadzą budżet na niewłaściwy produkt.",

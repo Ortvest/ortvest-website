@@ -136,8 +136,7 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
               </div>
 
               {mainImage && (
-                <div className="relative mt-4 lg:mt-2">
-                  <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-accent sm:-inset-6" aria-hidden />
+                <div className="relative mt-4 pb-6 pl-5 lg:mt-2 lg:pb-8 lg:pl-7">
                   <div className="overflow-hidden rounded-2xl border border-black/10 bg-white shadow-xl">
                     <div className="relative aspect-[4/3]">
                       <Image
@@ -152,7 +151,7 @@ export function CaseStudyDetail({ caseItem }: CaseStudyDetailProps) {
                   </div>
 
                   {secondaryImage && (
-                    <div className="absolute -bottom-6 -left-5 w-[42%] overflow-hidden rounded-xl border border-black/10 bg-white shadow-xl sm:-bottom-8 sm:-left-7">
+                    <div className="absolute bottom-0 left-0 w-[42%] overflow-hidden rounded-xl border-4 border-white bg-white shadow-xl ring-1 ring-black/10">
                       <div className="relative aspect-[3/4]">
                         <Image
                           src={secondaryImage}

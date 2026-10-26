@@ -1985,11 +1985,21 @@
     "errorText": "The blog is temporarily unavailable. Please try again shortly.",
     "minRead": "{n} min read",
     "filterAll": "All",
+    "eyebrow": "Blog",
+    "byline": "By {name} · {n, plural, one {# article} other {# articles}}",
+    "startWithQuestion": "Start with your question",
+    "searchPlaceholder": "Search field notes",
+    "noResults": "No articles match your search.",
     "tableOfContents": "Table of contents",
     "articleCta": {
       "title": "Building something in logistics, platforms, agritech or community?",
       "body": "One team for design and build, weekly demos, fixed price once scope is set.",
       "button": "Discuss your project"
+    },
+    "cta": {
+      "title": "Your question isn't answered here?",
+      "body": "Bring it to a free 30-minute call. Straight answers, no deck.",
+      "button": "Book a free call"
     },
     "metadata": {
       "title": "Blog | Ortvest",
