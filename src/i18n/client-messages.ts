@@ -24,7 +24,7 @@ export const CASES_CLIENT_NAMESPACES = ['cases', 'contact', 'hero'] as const;
 
 export const CASE_DETAIL_CLIENT_NAMESPACES = ['caseStudies', 'caseDetail', 'hero', 'cases'] as const;
 
-export const PARTNERSHIP_CLIENT_NAMESPACES = ['partnership'] as const;
+export const PARTNERSHIP_CLIENT_NAMESPACES = ['partnership', 'contact'] as const;
 
 export const REVIEWS_CLIENT_NAMESPACES = ['reviews'] as const;
 

@@ -9,10 +9,25 @@ import {
   isContactProjectType,
 } from '@lib/contact-options';
 import { getCollection } from '@lib/mongodb';
+import type { ContactFormField } from '@shared/interfaces/Order.interfaces';
 
 const COLLECTION = 'contact_submissions';
 const EXTERNAL_BACKEND = process.env.BACKEND_APP || process.env.NEXT_PUBLIC_BACKEND_APP;
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
+function getCmsConnection() {
+  return {
+    CMS_API_URL: process.env.ORTVEST_CMS_API_URL?.trim()
+      || (process.env.NODE_ENV === 'development' ? 'http://localhost:3200' : undefined),
+    CMS_API_KEY: process.env.ORTVEST_CMS_API_KEY?.trim(),
+  };
+}
+
+function missingCmsKeyResponse() {
+  return NextResponse.json({
+    code: 'CMS_API_KEY_MISSING',
+    error: 'ORTVEST_CMS_API_KEY is missing from the website server environment. Configure the organization API key to connect the form to CMS.',
+  }, { status: 503, headers: { 'Cache-Control': 'no-store' } });
+}
 
 export interface ContactBody {
   clientName: string;
@@ -29,10 +44,11 @@ export interface ContactBody {
   businessNeed?: string;
 }
 
-type NormalizedContactBody = Omit<ContactBody, 'productDescription' | 'budget' | 'consultationType'> & {
+type NormalizedContactBody = Omit<ContactBody, 'productDescription' | 'selectedServices' | 'budget' | 'consultationType'> & {
   productDescription: string;
-  budget: ContactBudgetOption | '';
-  consultationType: ContactConsultationOption | '';
+  selectedServices: string[];
+  budget: string;
+  consultationType: string;
 };
 
 interface ContactDoc {
@@ -51,10 +67,55 @@ interface ContactDoc {
   createdAt: string;
 }
 
-interface OrderNotificationPayload extends ContactBody {
+interface OrderNotificationPayload extends NormalizedContactBody {
   createdAt: string;
   source: string;
   orderId?: string;
+  fields?: Record<string, unknown>;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+}
+
+function isContactFormField(value: unknown): value is ContactFormField {
+  if (!isRecord(value)) return false;
+  return typeof value.id === 'string'
+    && typeof value.value === 'string'
+    && typeof value.key === 'string'
+    && typeof value.label === 'string'
+    && ['text', 'email', 'number', 'date', 'textarea'].includes(String(value.type))
+    && typeof value.required === 'boolean';
+}
+
+function getFieldText(fields: Record<string, unknown>, key: string): string {
+  const value = fields[key];
+  if (Array.isArray(value)) return value.map((item) => String(item)).join(', ').trim();
+  return typeof value === 'string' || typeof value === 'number' ? String(value).trim() : '';
+}
+
+function normalizeDynamicFields(fields: Record<string, unknown>): NormalizedContactBody {
+  const selectedServicesValue = fields.selected_services ?? fields.selectedServices;
+  const selectedServices = Array.isArray(selectedServicesValue)
+    ? selectedServicesValue.map(String)
+    : typeof selectedServicesValue === 'string' && selectedServicesValue.trim()
+      ? [selectedServicesValue.trim()]
+      : [];
+
+  return {
+    clientName: getFieldText(fields, 'name') || getFieldText(fields, 'clientName'),
+    clientEmail: getFieldText(fields, 'email') || getFieldText(fields, 'clientEmail'),
+    productDescription: getFieldText(fields, 'message') || getFieldText(fields, 'productDescription'),
+    selectedServices,
+    budget: getFieldText(fields, 'budget'),
+    consultationType: getFieldText(fields, 'consultation_type') || getFieldText(fields, 'consultationType'),
+    source: getFieldText(fields, 'source') || 'website',
+    partnerStage: getFieldText(fields, 'partner_stage') || getFieldText(fields, 'partnerStage'),
+    partnerFunding: getFieldText(fields, 'partner_funding') || getFieldText(fields, 'partnerFunding'),
+    partnerModel: getFieldText(fields, 'partner_model') || getFieldText(fields, 'partnerModel'),
+    businessIndustry: getFieldText(fields, 'business_industry') || getFieldText(fields, 'businessIndustry'),
+    businessNeed: getFieldText(fields, 'business_need') || getFieldText(fields, 'businessNeed'),
+  };
 }
 
 function validate(body: unknown): body is ContactBody {
@@ -140,31 +201,135 @@ async function publishOrderToWebSocket(payload: OrderNotificationPayload) {
   });
 }
 
-export async function POST(request: NextRequest) {
+export async function GET() {
+  const { CMS_API_URL, CMS_API_KEY } = getCmsConnection();
+  if (!CMS_API_KEY) return missingCmsKeyResponse();
+  if (!CMS_API_URL) {
+    console.error('ORTVEST_CMS_API_URL is required when ORTVEST_CMS_API_KEY is set');
+    return NextResponse.json({ error: 'Contact service not configured' }, { status: 503 });
+  }
+
   try {
-    const body = await request.json();
-    if (!validate(body)) {
-      return NextResponse.json(
-        { error: 'Invalid body: required fields or contact option keys are invalid' },
-        { status: 400 }
-      );
+    const response = await fetch(new URL('/api/contacts', CMS_API_URL), {
+      headers: { Authorization: `Bearer ${CMS_API_KEY}` },
+      cache: 'no-store',
+      signal: AbortSignal.timeout(10_000),
+    });
+    if (!response.ok) {
+      console.error(`Ortvest CMS contact fields API returned ${response.status}`);
+      return NextResponse.json({ error: 'Could not load contact form configuration' }, { status: 502 });
     }
 
-    const payload: NormalizedContactBody = {
-      clientName: body.clientName.trim(),
-      clientEmail: body.clientEmail.trim(),
-      productDescription: typeof body.productDescription === 'string' ? body.productDescription.trim() : '',
-      selectedServices: body.selectedServices,
-      budget: body.budget || '',
-      consultationType: body.consultationType || '',
-      source: typeof body.source === 'string' ? body.source : undefined,
-      partnerStage: typeof body.partnerStage === 'string' ? body.partnerStage : undefined,
-      partnerFunding: typeof body.partnerFunding === 'string' ? body.partnerFunding : undefined,
-      partnerModel: typeof body.partnerModel === 'string' ? body.partnerModel : undefined,
-      businessIndustry: typeof body.businessIndustry === 'string' ? body.businessIndustry : undefined,
-      businessNeed: typeof body.businessNeed === 'string' ? body.businessNeed : undefined,
-    };
+    const result = await response.json() as { fields?: unknown };
+    const fields = Array.isArray(result.fields) && result.fields.every(isContactFormField) ? result.fields : null;
+    if (!fields) {
+      console.error('Ortvest CMS contact fields API returned an invalid schema');
+      return NextResponse.json({ error: 'Invalid contact form configuration' }, { status: 502 });
+    }
+
+    return NextResponse.json({ fields }, { headers: { 'Cache-Control': 'no-store' } });
+  } catch (error) {
+    console.error('Ortvest CMS contact fields request failed:', error);
+    return NextResponse.json({ error: 'Could not load contact form configuration' }, { status: 502 });
+  }
+}
+
+export async function POST(request: NextRequest) {
+  const { CMS_API_URL, CMS_API_KEY } = getCmsConnection();
+  try {
+    const body: unknown = await request.json();
+    const dynamicFields = isRecord(body) && isRecord(body.fields) ? body.fields : null;
+    if (dynamicFields && !CMS_API_KEY) {
+      return missingCmsKeyResponse();
+    }
+
+    let payload: NormalizedContactBody;
+    if (dynamicFields) {
+      payload = normalizeDynamicFields(dynamicFields);
+      if (isRecord(body) && typeof body.source === 'string') payload.source = body.source.trim().slice(0, 100) || 'website';
+    } else {
+      if (!validate(body)) {
+        return NextResponse.json(
+          { error: 'Invalid body: required fields or contact option keys are invalid' },
+          { status: 400 }
+        );
+      }
+      payload = {
+        clientName: body.clientName.trim(),
+        clientEmail: body.clientEmail.trim(),
+        productDescription: typeof body.productDescription === 'string' ? body.productDescription.trim() : '',
+        selectedServices: body.selectedServices,
+        budget: body.budget || '',
+        consultationType: body.consultationType || '',
+        source: typeof body.source === 'string' ? body.source : undefined,
+        partnerStage: typeof body.partnerStage === 'string' ? body.partnerStage : undefined,
+        partnerFunding: typeof body.partnerFunding === 'string' ? body.partnerFunding : undefined,
+        partnerModel: typeof body.partnerModel === 'string' ? body.partnerModel : undefined,
+        businessIndustry: typeof body.businessIndustry === 'string' ? body.businessIndustry : undefined,
+        businessNeed: typeof body.businessNeed === 'string' ? body.businessNeed : undefined,
+      };
+    }
     const createdAt = new Date().toISOString();
+
+    // The organization API key stays on the website server. Never expose it to
+    // the browser; the public form only calls this route.
+    if (CMS_API_KEY) {
+      if (!CMS_API_URL) {
+        console.error('ORTVEST_CMS_API_URL is required when ORTVEST_CMS_API_KEY is set');
+        return NextResponse.json({ error: 'Contact service not configured' }, { status: 503 });
+      }
+
+      let res: Response;
+      try {
+        res = await fetch(new URL('/api/contacts', CMS_API_URL), {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${CMS_API_KEY}`,
+          },
+          body: JSON.stringify(dynamicFields
+            ? { fields: dynamicFields, source: payload.source || 'website' }
+            : {
+                name: payload.clientName,
+                email: payload.clientEmail,
+                message: payload.productDescription,
+                selectedServices: payload.selectedServices,
+                budget: payload.budget,
+                consultationType: payload.consultationType,
+                source: payload.source,
+                partnerStage: payload.partnerStage,
+                partnerFunding: payload.partnerFunding,
+                partnerModel: payload.partnerModel,
+                businessIndustry: payload.businessIndustry,
+                businessNeed: payload.businessNeed,
+              }),
+          cache: 'no-store',
+          signal: AbortSignal.timeout(10_000),
+        });
+      } catch (error) {
+        console.error('Ortvest CMS contact API request failed:', error);
+        return NextResponse.json({ error: 'Could not submit contact request' }, { status: 502 });
+      }
+
+      if (!res.ok) {
+        console.error(`Ortvest CMS contact API returned ${res.status}`);
+        return NextResponse.json({ error: 'Could not submit contact request' }, { status: 502 });
+      }
+
+      const data = await res.json();
+      const wsSource = payload.source ? `ortvest-website/${payload.source}` : 'ortvest-website/api/contact';
+      await publishOrderToWebSocket({
+        ...payload,
+        createdAt,
+        source: wsSource,
+        ...(dynamicFields ? { fields: dynamicFields } : {}),
+        orderId: typeof data?.id === 'string' ? data.id : undefined,
+      }).catch((error) => {
+        console.error('Failed to publish order to websocket:', error);
+      });
+
+      return NextResponse.json(data, { status: 201 });
+    }
 
     if (EXTERNAL_BACKEND && ACCESS_TOKEN) {
       const res = await fetch(`${EXTERNAL_BACKEND.replace(/\/$/, '')}/orders/new`, {
